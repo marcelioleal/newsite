@@ -11,3 +11,15 @@ weight       = 1
 [languages.en]
 contentDir   = "content/en"
 weight       = 2
+
+[params]
+disableThemeToggle = true
+ShowBreadCrumbs = false
+ShowShareButtons = false
+ShowReadingTime = false
+ShowCodeCopyButtons = true
+defaultTheme = "light"
+ShowPostNavLinks = false
+
+[params.profileMode]
+enabled = false
