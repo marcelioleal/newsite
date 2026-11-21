@@ -43,12 +43,8 @@
       "notes": null,
       "branch": null,
       "dir": "phase-1-foundation",
-      "status": "planned",
-      "claim": {
-        "claimedBy": "plan-execute-1795288550-49501",
-        "claimedAt": "2026-11-21T19:15:50Z",
-        "claimedPid": 49501
-      }
+      "status": "completed",
+      "claim": null
     },
     {
       "id": 2,

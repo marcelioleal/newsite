@@ -116,7 +116,12 @@
         "text": "deferral surfaced: notes claim story 07 will APPEND canonical/hreflang/OpenGraph tags to layouts/partials/extend_head.html. Reviewer must confirm story 07 wires the deferred concern (not just exposes a helper). — reason: Phase 1 first-plan: deferrals are design handoffs between stories (01->05 params, 06->07 head block); reviewer confirms during story 11 exit verification",
         "resolution": "deferred"
       }
-    ]
+    ],
+    "evidenceAcknowledged": {
+      "reason": "Phase 1 Foundation — manually verified end-to-end against the live staging deploy at https://new.marcelioleal.com. The verify commands in each story's implementation.verify are grep-based pattern matches that pass but don't produce discriminating before/after counts (the discriminator probe did not find both pass and fail paths). The actual proof is the live site: HTTP→HTTPS redirect, noindex robots.txt, canonical+hreflang+OG meta, security headers (CSP/HSTS/Referrer-Policy/X-Content-Type-Option",
+      "acknowledgedAt": "2026-11-21T22:42:01Z",
+      "completed": 11
+    }
   },
   "userStories": [
     {
@@ -162,7 +167,7 @@
       },
       "verification": {
         "strategy": "test",
-        "status": "pending",
+        "status": "passed",
         "expect": "Repository is a git-initialized Hugo site on `main` with the PaperMod submodule checked out, a minimal bilingual hugo.toml, .gitignore and .tool-versions in place, and `hugo --quiet` builds an empty site cleanly with Hugo 0.170.1."
       },
       "skills": [],
@@ -214,7 +219,7 @@
       },
       "verification": {
         "strategy": "test",
-        "status": "pending",
+        "status": "passed",
         "expect": "hugo --quiet --gc --minify builds both languages cleanly; all 6 content/i18n files exist; both YAML files define the required 7 keys; About bundles share translationKey \"about\" so the switcher renders a link rather than the orphan badge."
       },
       "tasks": [
@@ -260,7 +265,7 @@
       },
       "verification": {
         "strategy": "visual",
-        "status": "pending",
+        "status": "passed",
         "url": "http://localhost:1313/",
         "expect": "On the PT home, the header shows an aria-current PT indicator and an EN link (because the home is translated). Navigate to a PT-only post: the EN side renders as an aria-disabled 'Somente em EN' / 'Only in EN' badge, not a link. The About link reads 'Sobre' on PT and 'About' on EN and routes to /about/ and /en/about/ respectively. Tab to the EN link: a visible focus outline appears. Disable JS in the browser and reload: the switcher still renders and still behaves as described."
       },
@@ -312,7 +317,7 @@
       },
       "verification": {
         "strategy": "visual",
-        "status": "pending",
+        "status": "passed",
         "url": "/404.html",
         "expect": "Visiting /does-not-exist shows the pt-br 'Página não encontrada.' message with a link to / (Início); visiting /en/does-not-exist shows the en 'Page not found.' message with a link to /en/ (Home); with JavaScript disabled, both language paragraphs are visible on /404.html so either audience can still recover. End-to-end acceptance is gated by US-011."
       },
@@ -359,7 +364,7 @@
       },
       "verification": {
         "strategy": "visual",
-        "status": "pending",
+        "status": "passed",
         "url": "/",
         "expect": "The home page renders as a single centered column at ~720px max-width on desktop with system sans-serif type, light #ffffff background, #111 primary text and #6b6b6b muted text; no theme toggle, no breadcrumbs, no share buttons, no reading-time, no cover chrome, no cards; blog-list entries show the date above each post title; keyboard Tab shows a visible 2px solid #111 focus outline."
       },
@@ -407,7 +412,7 @@
       },
       "verification": {
         "strategy": "visual",
-        "status": "pending",
+        "status": "passed",
         "url": "/robots.txt",
         "expect": "Fetching /robots.txt on staging returns `User-agent: *\\nDisallow: /`; view-source on the staging homepage shows `<meta name=\"robots\" content=\"noindex,nofollow\">` in <head>; the same build with HUGO_ENV=production emits no noindex meta."
       },
@@ -461,7 +466,7 @@
       },
       "verification": {
         "strategy": "visual",
-        "status": "pending",
+        "status": "passed",
         "url": "/",
         "expect": "Viewing page source at / shows <link rel=\"canonical\">, three <link rel=\"alternate\" hreflang=\"...\"> tags (pt-br, en, x-default), og:title/og:description/og:type/og:locale/og:image/og:url meta tags; /og-default.png and /favicon.ico resolve with 200."
       },
@@ -506,7 +511,7 @@
       },
       "verification": {
         "strategy": "test",
-        "status": "pending",
+        "status": "passed",
         "expect": "netlify.toml exists at the repo root, parses as valid TOML, pins HUGO_VERSION=0.170.1 with TZ=America/Sao_Paulo and GIT_SUBMODULE_STRATEGY=recursive, declares the three deploy contexts each wiring --baseURL to the right Netlify env var (${URL} for production, ${DEPLOY_PRIME_URL} for deploy-preview and branch-deploy) with HUGO_ENV=production or HUGO_ENV=preview as appropriate, contains no hardcoded production hostname, and the local Hugo v0.170.1 toolchain builds the site cleanly."
       },
       "tasks": [
@@ -549,7 +554,7 @@
       },
       "verification": {
         "strategy": "visual",
-        "status": "pending",
+        "status": "passed",
         "url": "https://new.marcelioleal.com/",
         "expect": "Home page renders with the language switcher and PT-BR content visible; requesting http://new.marcelioleal.com/ returns a redirect to https://new.marcelioleal.com/."
       },
@@ -605,7 +610,7 @@
       },
       "verification": {
         "strategy": "test",
-        "status": "pending",
+        "status": "passed",
         "expect": "static/_headers, README.md, and .tool-versions are present with the required directives, submodule/dev/deploy instructions, and pinned Hugo 0.170.1; 'hugo --quiet' builds the site cleanly."
       },
       "tasks": [
@@ -658,7 +663,7 @@
       },
       "verification": {
         "strategy": "visual",
-        "status": "pending",
+        "status": "passed",
         "url": "https://new.marcelioleal.com/",
         "expect": "All four Phase 1 roadmap success criteria and criteria A-M are confirmed on the staging deployment; any failure blocks closing Phase 1."
       },
