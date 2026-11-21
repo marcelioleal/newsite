@@ -7,14 +7,14 @@ defaultContentLanguageInSubdir = false
 [languages.pt-br]
 contentDir   = "content/pt-br"
 weight       = 1
-languageName = "Português"
-languageCode = "pt-BR"
+label        = "Português"
+locale       = "pt-BR"
 
 [languages.en]
 contentDir   = "content/en"
 weight       = 2
-languageName = "English"
-languageCode = "en-US"
+label        = "English"
+locale       = "en-US"
 
 [params]
 description = "Marcelio Leal's personal site — pt-br default, bilingual"
