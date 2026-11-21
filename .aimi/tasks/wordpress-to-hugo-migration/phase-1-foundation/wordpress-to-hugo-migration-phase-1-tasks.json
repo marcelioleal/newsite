@@ -534,7 +534,7 @@
         "Dry local sanity command succeeds in the repo and writes the expected output: `test -f netlify.toml && hugo --quiet --baseURL \"https://new.marcelioleal.com/\" --gc --minify && test -f public/index.html`.",
         "`bash -n` on any shell snippets this story introduces passes (there are no shell files committed by this story; the check applies to the verify script itself)."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 9,
       "dependsOn": [
         "US-001",
@@ -632,7 +632,7 @@
         "The repo-local smoke checks in `implementation.verify` all pass, confirming the files behind criteria A-M are still present and `hugo --quiet` builds the site cleanly.",
         "`bash -n` passes on the inline verify script (the project is bash-only; no typed build step applies to this gate story)."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 11,
       "dependsOn": [
         "US-003",

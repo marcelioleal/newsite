@@ -19,16 +19,16 @@
       "dependsOn": [],
       "creates": [
         {
-          "identity": "hugo_site_skeleton",
-          "description": "Hugo site based on PaperMod with layouts simplified to a minimal single-column sans-serif aesthetic"
+          "identity": "hugo.toml",
+          "description": "Hugo site configuration — bilingual pt-BR/en, PaperMod theme, minimal single-column aesthetic"
         },
         {
-          "identity": "netlify_staging_deploy",
-          "description": "Netlify project linked to the GitHub newsite repo, serving the staging subdomain"
+          "identity": "netlify.toml",
+          "description": "Netlify build + per-context environment — pinned Hugo 0.170.1, context-aware baseURL, submodule checkout"
         },
         {
-          "identity": "language_switcher",
-          "description": "Bilingual switcher that renders an only-in- badge when the translation is missing"
+          "identity": "layouts/partials/header.html",
+          "description": "Bilingual language switcher with orphan-aware only-in-X badge"
         }
       ],
       "needs": [],
@@ -84,8 +84,8 @@
       ],
       "needs": [
         {
-          "identity": "hugo_site_skeleton",
-          "description": "Layouts and i18n setup from Phase 1"
+          "identity": "hugo.toml",
+          "description": "Hugo site configuration — bilingual pt-BR/en, PaperMod theme, minimal single-column aesthetic"
         }
       ],
       "areas": [
