@@ -1,0 +1,7 @@
+site_description: "Site pessoal de Marcelio Leal — notas sobre tecnologia, café, música e kitesurf."
+nav_about: "Sobre"
+only_in_language: "apenas em %s"
+switch_to_language: "Mudar para %s"
+not_found_title: "Página não encontrada."
+not_found_body: "A página que você procura não existe ou foi movida."
+back_to_home: "Voltar ao início"

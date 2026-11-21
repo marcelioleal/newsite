@@ -1,0 +1,7 @@
+site_description: "Marcelio Leal's personal site — notes on tech, coffee, music, and kitesurfing."
+nav_about: "About"
+only_in_language: "only in %s"
+switch_to_language: "Switch to %s"
+not_found_title: "Page not found."
+not_found_body: "The page you're looking for doesn't exist or has been moved."
+back_to_home: "Back to home"
