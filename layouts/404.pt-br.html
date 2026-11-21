@@ -1,0 +1,12 @@
+{{- /* Per-language PT-BR 404 — served at /404.html when the default language is pt-br. */ -}}
+{{ define "main" }}
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">{{ i18n "not_found_title" }}</h1>
+  </header>
+  <div class="post-content">
+    <p>{{ i18n "not_found_body" }}</p>
+    <p><a href="{{ "" | absLangURL }}">{{ i18n "back_to_home" }}</a></p>
+  </div>
+</article>
+{{ end }}

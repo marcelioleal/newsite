@@ -1,0 +1,25 @@
+{{- /* Bilingual fallback 404 — Netlify serves this at /404.html for any unknown path.
+       Both language paragraphs render with JS off; a small inline script hides
+       the wrong one when the URL starts with /en/. */ -}}
+{{ define "main" }}
+<article class="post-single">
+  <header class="post-header">
+    <h1 class="post-title">404</h1>
+  </header>
+  <div class="post-content">
+    <p lang="pt-br" data-lang="pt-br">Página não encontrada.</p>
+    <p lang="en" data-lang="en">Page not found.</p>
+    <p>
+      <a href="/">Início</a> · <a href="/en/">Home</a>
+    </p>
+  </div>
+</article>
+<script>
+  (function () {
+    var isEn = window.location.pathname.indexOf('/en/') === 0;
+    var hide = isEn ? 'pt-br' : 'en';
+    var el = document.querySelector('p[data-lang="' + hide + '"]');
+    if (el) { el.style.display = 'none'; }
+  })();
+</script>
+{{ end }}
