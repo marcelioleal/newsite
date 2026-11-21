@@ -1,6 +1,6 @@
 {{- /* Phase 1 — staging noindex + canonical/hreflang + Open Graph defaults.
-     Netlify sets HUGO_ENV per context. Only apex production (Phase 3) emits index,follow. */ -}}
-{{ if ne hugo.Environment "production" }}
+     Noindex until Phase 3 flips baseURL to the apex marcelioleal.com. */ -}}
+{{ if ne .Site.BaseURL "https://marcelioleal.com/" }}
 <meta name="robots" content="noindex,nofollow">
 {{ end }}
 
