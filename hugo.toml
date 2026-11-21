@@ -1,0 +1,13 @@
+baseURL = "https://new.marcelioleal.com/"
+title = "Marcelio Leal"
+theme = "PaperMod"
+defaultContentLanguage = "pt-br"
+defaultContentLanguageInSubdir = false
+
+[languages.pt-br]
+contentDir   = "content/pt-br"
+weight       = 1
+
+[languages.en]
+contentDir   = "content/en"
+weight       = 2
