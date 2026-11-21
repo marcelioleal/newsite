@@ -1,0 +1,690 @@
+{
+  "schemaVersion": "3.3",
+  "metadata": {
+    "title": "feat: Phase 1 Foundation — bilingual Hugo site on Netlify staging (wordpress-to-hugo-migration)",
+    "type": "feat",
+    "branchName": "feat/wordpress-to-hugo-migration-phase-1-foundation",
+    "createdAt": "2026-11-21",
+    "planPath": null,
+    "smellWarnings": [
+      {
+        "type": "orphan-symbol",
+        "storyId": "US-009",
+        "symbols": [
+          "GitHub"
+        ],
+        "message": "introduces symbols no sibling story references"
+      },
+      {
+        "type": "orphan-symbol",
+        "storyId": "US-011",
+        "symbols": [
+          "DevTools"
+        ],
+        "message": "introduces symbols no sibling story references"
+      },
+      {
+        "type": "stale-sibling-note",
+        "storyId": "US-001",
+        "cited": [
+          "US-005",
+          "US-008",
+          "US-010",
+          "US-011"
+        ],
+        "message": "notes written before the audit cite US-005, US-008, US-010, US-011, which may no longer describe that story"
+      },
+      {
+        "type": "stale-sibling-note",
+        "storyId": "US-006",
+        "cited": [
+          "US-007",
+          "US-011"
+        ],
+        "message": "notes written before the audit cite US-007, US-011, which may no longer describe that story"
+      },
+      {
+        "type": "leftover-outline-token",
+        "storyId": "US-004",
+        "fields": [
+          "verification.expect"
+        ],
+        "message": "an outline: token survived the remap in verification.expect"
+      }
+    ],
+    "roadmapPath": ".aimi/tasks/wordpress-to-hugo-migration/roadmap.json",
+    "phase": {
+      "id": 1,
+      "dir": "phase-1-foundation"
+    },
+    "pluginVersion": "1.156.0",
+    "researchPaths": [
+      ".aimi/research/2026-11-21-wordpress-to-hugo-migration-phase-1-foundation-134302-codebase.md",
+      ".aimi/research/2026-11-21-wordpress-to-hugo-migration-phase-1-foundation-134302-learnings.md",
+      ".aimi/research/2026-11-21-wordpress-to-hugo-migration-phase-1-foundation-134302-best-practices.md",
+      ".aimi/research/2026-11-21-wordpress-to-hugo-migration-phase-1-foundation-134302-framework-docs.md",
+      ".aimi/research/2026-11-21-wordpress-to-hugo-migration-phase-1-foundation-134302-foundation.md"
+    ],
+    "brainstormPath": ".aimi/brainstorms/2026-11-21-wordpress-to-hugo-migration-brainstorm.md",
+    "researchDepth": "deep",
+    "decisions": [
+      {
+        "anchor": "staging_subdomain",
+        "source": "brainstormOpenQuestion",
+        "text": "Which staging subdomain name — new.marcelioleal.com, staging.marcelioleal.com, or hugo.marcelioleal.com. Resolved: new.marcelioleal.com (short, memorable, naturally retires at cutover) with CNAME at registrar, TTL 300s.",
+        "resolution": "resolved"
+      },
+      {
+        "anchor": "font_strategy",
+        "source": "brainstormOpenQuestion",
+        "text": "Font choice for the personal visual touch — system sans-serif stack vs hosted pair like Inter + JetBrains Mono. Resolved: system sans-serif stack (no hosted fonts in Phase 1 — zero FOIT/FOUT, no cookie/GDPR exposure, matches minimal reference).",
+        "resolution": "resolved"
+      },
+      {
+        "anchor": "analytics",
+        "source": "brainstormOpenQuestion",
+        "text": "Analytics stack — Plausible, Umami, or none. Resolved: none for Phase 1 (matches minimal reference, zero consent banner, zero script tags). Netlify Web Analytics remains the deferred option when a metric becomes necessary.",
+        "resolution": "resolved"
+      },
+      {
+        "anchor": "hugo_version",
+        "source": "research",
+        "text": "Hugo version to pin. Resolved: v0.170.1 (non-extended edition — v0.170.0 removed the extended edition since LibSass was deprecated).",
+        "resolution": "resolved"
+      },
+      {
+        "anchor": "hugo_config_shape",
+        "source": "research",
+        "text": "hugo.toml shape — flat at root vs config/_default/. Resolved: flat hugo.toml at repo root for Phase 1; promote to config/_default/ + config/staging/ only when a second environment variable diverges.",
+        "resolution": "resolved"
+      },
+      {
+        "anchor": "wp_to_hugo_exporter",
+        "source": "brainstormOpenQuestion",
+        "text": "WordPress-to-Hugo exporter tool choice — wordpress-to-hugo-exporter plugin, SchumacherFM/wordpress-to-hugo-exporter, or custom script. Resolved: deferred to Phase 2 Content Migration (not relevant for Phase 1 Foundation).",
+        "resolution": "deferred"
+      },
+      {
+        "anchor": "auditUnresolved:01",
+        "source": "auditGate",
+        "text": "deferral surfaced: notes claim deferral to story 05 for [params], [markup.goldmark.renderer], and [markup.highlight] blocks. Reviewer must confirm story 05 wires the deferred concern (not just exposes a helper). — reason: Phase 1 first-plan: deferrals are design handoffs between stories (01->05 params, 06->07 head block); reviewer confirms during story 11 exit verification",
+        "resolution": "deferred"
+      },
+      {
+        "anchor": "auditUnresolved:06",
+        "source": "auditGate",
+        "text": "deferral surfaced: notes claim story 07 will APPEND canonical/hreflang/OpenGraph tags to layouts/partials/extend_head.html. Reviewer must confirm story 07 wires the deferred concern (not just exposes a helper). — reason: Phase 1 first-plan: deferrals are design handoffs between stories (01->05 params, 06->07 head block); reviewer confirms during story 11 exit verification",
+        "resolution": "deferred"
+      }
+    ]
+  },
+  "userStories": [
+    {
+      "title": "Scaffold greenfield Hugo repository with PaperMod submodule and layered folder structure",
+      "description": "As a site maintainer, I want a pristine Hugo + PaperMod repository scaffolded at the project root with the foundation's four-layer folder structure, a minimal bilingual hugo.toml, the PaperMod theme pinned as a shallow submodule, and Hugo 0.170.1 pinned via .tool-versions, so that every subsequent Phase 1 story (i18n, overrides, 404s, CSS, deploy) lands into an already-correct skeleton.",
+      "acceptanceCriteria": [
+        "The repository root at /Users/marcelioleal/workspace/newsite contains an initialized git repository with at least one commit on the `main` branch (observable: `git log --oneline` prints one or more commits and `git branch --show-current` prints `main`).",
+        "A flat `hugo.toml` exists at the repo root and declares exactly: `baseURL = \"https://new.marcelioleal.com/\"`, `title = \"Marcelio Leal\"`, `theme = \"PaperMod\"`, `defaultContentLanguage = \"pt-br\"`, `defaultContentLanguageInSubdir = false`, and two `[languages.*]` blocks — `[languages.pt-br]` with `contentDir = \"content/pt-br\"` and `weight = 1`, `[languages.en]` with `contentDir = \"content/en\"` and `weight = 2`. No `[params]` block is emitted by THIS story (story 05 owns params).",
+        "A `.gitignore` at repo root contains exactly these four ignore patterns (one per line): `/public/`, `/resources/`, `.hugo_build.lock`, `.DS_Store`.",
+        "A `.tool-versions` at repo root contains the single line `hugo 0.170.1` so asdf/mise users resolve the pinned non-extended Hugo binary without additional configuration.",
+        "PaperMod is registered as a shallow git submodule at `themes/PaperMod/` pointing at `https://github.com/adityatelange/hugo-PaperMod.git`: `.gitmodules` records the path `themes/PaperMod` and that URL, and `themes/PaperMod/` is checked out with `layouts/_partials/header.html` present on disk (proof the submodule content is initialized, not just referenced).",
+        "The eight directory placeholders required by later Phase 1 stories exist on disk and are tracked by git via `.gitkeep` files: `i18n/.gitkeep`, `assets/css/extended/.gitkeep`, `layouts/partials/.gitkeep`, `layouts/_default/.gitkeep`, `static/.gitkeep`, `content/pt-br/.gitkeep`, `content/en/.gitkeep`, `data/.gitkeep`.",
+        "`archetypes/default.md` exists as a one-line front-matter template so `hugo new` works out of the box.",
+        "`hugo --quiet` runs from the repo root and exits 0, proving the config parses, both language roots are discoverable, and PaperMod resolves as a theme — i.e. the scaffold is build-ready for the next story to drop content and overrides into.",
+        "The empty-site `hugo version` reports exactly `hugo v0.170.1` (non-extended), confirming the `.tool-versions` pin binds the local Hugo binary this verify runs under.",
+        "`bash -n` on every `.sh` script this story touches exits 0 (there are no shipped shell scripts in this scaffold story, so this check is vacuously satisfied; it is the project's own syntax check because the repo has no typed language in this story's file set)."
+      ],
+      "status": "pending",
+      "priority": 1,
+      "dependsOn": [],
+      "notes": "Foundation-entry (greenfield) story. Per the outline's explicit scope narrowing, this story owns ONLY the directory skeleton + hugo.toml skeleton + PaperMod submodule + .gitignore + .tool-versions + git init. CLAUDE.md, AGENTS.md, netlify.toml, i18n YAML, header override, 404s, CSS, security headers, and deploy wiring are OWNED BY LATER OUTLINE ENTRIES (02-11) and MUST NOT be created here. The foundation proposal's `## CLAUDE.md Draft` and `## AGENTS.md Draft` are intentionally not emitted by this story — the orchestrator split the foundation across 11 entries, and story 10 (`Ship Netlify security headers and repo meta files`) is the natural home for repo meta files. The `.editorconfig` similarly belongs to story 10 or story 08 (Netlify config), not here. Submodule URL `https://github.com/adityatelange/hugo-PaperMod.git` is verbatim from foundation Appendix C. `hugo.toml` fields are the minimal subset of foundation Appendix A that this story's scope needs — the `[params]`, `[markup.goldmark.renderer]`, and `[markup.highlight]` blocks are deferred to story 05 (aesthetic + params) because this story is scaffold-only.\n\n---\n\n[audit-deferred: resolved at plan review] deferral surfaced: notes claim deferral to story 05 for [params], [markup.goldmark.renderer], and [markup.highlight] blocks. Reviewer must confirm story 05 wires the deferred concern (not just exposes a helper).\nReason recorded for the deferred findings of this batch: Phase 1 first-plan: deferrals surface design choices to be verified at Phase 1 exit (story 11); defer here to proceed\n\n---\n\n[audit-deferred: resolved at plan review] deferral surfaced: notes claim deferral to story 05 for [params], [markup.goldmark.renderer], and [markup.highlight] blocks. Reviewer must confirm story 05 wires the deferred concern (not just exposes a helper).\nReason recorded for the deferred findings of this batch: Phase 1 first-plan: deferrals are design handoffs between stories (01->05 params, 06->07 head block); reviewer confirms during story 11 exit verification",
+      "implementation": {
+        "files": [
+          ".gitignore",
+          ".gitmodules",
+          ".tool-versions",
+          "hugo.toml",
+          "archetypes/default.md",
+          "i18n/.gitkeep",
+          "assets/css/extended/.gitkeep",
+          "layouts/partials/.gitkeep",
+          "layouts/_default/.gitkeep",
+          "static/.gitkeep",
+          "content/pt-br/.gitkeep",
+          "content/en/.gitkeep",
+          "data/.gitkeep"
+        ],
+        "approach": "Per Folder Layout and Appendix C of the foundation proposal: run `git init` + `git branch -M main` at the repo root, then `git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod` followed by `git submodule update --init --recursive`. Author the minimal hugo.toml carrying only the fields this story's scope requires (baseURL, title, theme, defaultContentLanguage, defaultContentLanguageInSubdir, and the two `[languages.*]` blocks) — leave `[params]` and markup blocks to story 05 to avoid duplicating a fact two stories would then each need to keep in sync. Write `.gitignore` and `.tool-versions` verbatim as the acceptance criteria state. `mkdir -p` the eight directory placeholders and `touch` a `.gitkeep` in each so git tracks them (empty directories are invisible to git otherwise). Emit `archetypes/default.md` as a one-line `+++` TOML front-matter stub so `hugo new` works without later retrofit. Finally `git add .` and `git commit -m \"chore: phase 1 foundation — Hugo + PaperMod bilingual scaffold (story 01)\"`. The commit subject follows the foundation's own English convention (CLAUDE.md § Prose language).",
+        "verify": "set -euo pipefail; test -d .git; [ \"$(git branch --show-current)\" = \"main\" ]; git log --oneline | head -1; test -f hugo.toml && grep -q '^theme = \"PaperMod\"$' hugo.toml && grep -q '^defaultContentLanguage = \"pt-br\"$' hugo.toml && grep -q '^defaultContentLanguageInSubdir = false$' hugo.toml && grep -q '^\\[languages.pt-br\\]$' hugo.toml && grep -q '^\\[languages.en\\]$' hugo.toml && grep -q 'contentDir   = \"content/pt-br\"' hugo.toml && grep -q 'contentDir   = \"content/en\"' hugo.toml; test -f .gitignore && grep -Fxq '/public/' .gitignore && grep -Fxq '/resources/' .gitignore && grep -Fxq '.hugo_build.lock' .gitignore && grep -Fxq '.DS_Store' .gitignore; test -f .tool-versions && grep -Fxq 'hugo 0.170.1' .tool-versions; test -f .gitmodules && grep -q 'path = themes/PaperMod' .gitmodules && grep -q 'url = https://github.com/adityatelange/hugo-PaperMod.git' .gitmodules; test -d themes/PaperMod && test -f themes/PaperMod/layouts/_partials/header.html; test -f archetypes/default.md; for d in i18n assets/css/extended layouts/partials layouts/_default static content/pt-br content/en data; do test -f \"$d/.gitkeep\" || { echo \"FAIL: missing $d/.gitkeep\"; exit 1; }; done; hugo version | head -1 | grep -q 'hugo v0.170.1'; hugo --quiet",
+        "guardRails": [
+          "git log --oneline | head -1"
+        ]
+      },
+      "verification": {
+        "strategy": "test",
+        "status": "pending",
+        "expect": "Repository is a git-initialized Hugo site on `main` with the PaperMod submodule checked out, a minimal bilingual hugo.toml, .gitignore and .tool-versions in place, and `hugo --quiet` builds an empty site cleanly with Hugo 0.170.1."
+      },
+      "skills": [],
+      "tasks": [
+        "Run `git init` at `/Users/marcelioleal/workspace/newsite` and `git branch -M main` to create the repo on the correct default branch.",
+        "Add PaperMod as a shallow submodule: `git submodule add --depth=1 https://github.com/adityatelange/hugo-PaperMod.git themes/PaperMod`, then `git submodule update --init --recursive`.",
+        "Write `.gitignore` with the four patterns `/public/`, `/resources/`, `.hugo_build.lock`, `.DS_Store` (one per line, trailing newline).",
+        "Write `.tool-versions` containing the single line `hugo 0.170.1` so asdf/mise users bind the pinned non-extended Hugo.",
+        "Write the minimal `hugo.toml` per foundation Appendix A's first six top-level keys plus the two `[languages.*]` blocks ONLY — no `[params]`, no markup blocks (story 05 owns those).",
+        "Create the eight directory placeholders via `mkdir -p` and `touch` a `.gitkeep` inside each: `i18n/`, `assets/css/extended/`, `layouts/partials/`, `layouts/_default/`, `static/`, `content/pt-br/`, `content/en/`, `data/`.",
+        "Write `archetypes/default.md` as a one-line front-matter stub (`+++\\ntitle = '{{ replace .Name \"-\" \" \" | title }}'\\ndate = {{ .Date }}\\ndraft = true\\n+++`) so `hugo new` works for later stories without a retrofit.",
+        "Confirm `hugo version` reports `hugo v0.170.1` and `hugo --quiet` exits 0 from the repo root; if the local Hugo binary is not 0.170.1, install via asdf/mise so the `.tool-versions` pin binds before proceeding.",
+        "Stage every new file with explicit paths (`git add .gitignore .gitmodules .tool-versions hugo.toml archetypes/ i18n/ assets/ layouts/ static/ content/ data/ themes/PaperMod`) — not `git add .` — to avoid pulling in stray unrelated files.",
+        "Create the initial commit: `git commit -m \"chore: phase 1 foundation — Hugo + PaperMod bilingual scaffold (story 01)\"`."
+      ],
+      "id": "US-001",
+      "wave": 1
+    },
+    {
+      "title": "Author bilingual UI strings and home + about placeholder content",
+      "description": "As the site owner (Marcelio), I want pt-br and en UI strings and placeholder home + about pages authored so that the scaffolded Hugo site builds cleanly in both languages with no missing-translation warnings and the orphan-badge contract is in place for the language switcher.",
+      "acceptanceCriteria": [
+        "A visitor requesting / (default pt-br) sees the pt-br home page with its welcome paragraph rendered from content/pt-br/_index.md and /en/ serves the mirrored English home from content/en/_index.md; /about/ and /en/about/ each render a one-paragraph placeholder bio describing Marcelio as writing on tech and personal topics (per resolvedDecisions: do not invent concrete biographical details).",
+        "i18n/pt-br.yaml and i18n/en.yaml both exist and both define, at minimum, these snake_case keys (per foundation Naming Conventions § i18n string IDs): site_description, nav_about, only_in_language, switch_to_language, not_found_title, not_found_body, back_to_home. The orphan-badge key is only_in_language (not orphan_badge) because the switcher partial in US-003 and the foundation's CLAUDE.md § 'When modifying the language switcher' both read i18n/<lang>.yaml key only_in_language verbatim; the pt-br value is 'apenas em %s' and the en value is 'only in %s'.",
+        "content/pt-br/about/index.md and content/en/about/index.md both carry front-matter with translationKey: \"about\" (per foundation Module Template § Worked example L126 and L139) so Hugo pairs them as translations and the switcher renders a translation link rather than the orphan badge for the About page.",
+        "hugo --quiet --gc --minify exits 0 against the tree with no missing-translation warnings for the two configured default languages (pt-br, en); the build is the structural lint per foundation Lint and Format Config § Decision item 2.",
+        "The project's own syntax check passes: every YAML file (i18n/pt-br.yaml, i18n/en.yaml) parses as valid YAML and every Markdown file's YAML front-matter parses cleanly — Hugo's own parser is the authoritative check and is exercised by the build in the previous criterion."
+      ],
+      "status": "pending",
+      "priority": 2,
+      "dependsOn": [
+        "US-001"
+      ],
+      "notes": "Orphan-badge key: the outline prompt listed orphan_badge semantically, but the foundation proposal's CLAUDE.md § 'When modifying the language switcher' pins the actual YAML key as only_in_language and that is what US-003's header partial will read. Using only_in_language here keeps the cross-story contract intact. The pt-br home + about copy must stay neutral per resolvedDecisions — one welcome paragraph on each home page and a one-liner bio on each about page, no invented biographical facts.",
+      "implementation": {
+        "files": [
+          "i18n/pt-br.yaml",
+          "i18n/en.yaml",
+          "content/pt-br/_index.md",
+          "content/pt-br/about/index.md",
+          "content/en/_index.md",
+          "content/en/about/index.md"
+        ],
+        "approach": "Author the two i18n YAML files with identical snake_case key sets (per Naming Conventions § i18n string IDs); use %s as the Hugo i18n printf placeholder in only_in_language for the switcher's language-name substitution. Author each _index.md with minimal front-matter (title, date) plus a short welcome paragraph. For the two About bundles, use the verbatim front-matter template from foundation § Module Template (title, date, draft: false, translationKey: \"about\") so Hugo pairs the two as translations and the switcher renders a link rather than the orphan badge. Keep all copy neutral per resolvedDecisions — a one-liner bio about writing on tech and personal topics, no invented facts.",
+        "verify": "set -euo pipefail && test -f i18n/pt-br.yaml && test -f i18n/en.yaml && test -f content/pt-br/_index.md && test -f content/pt-br/about/index.md && test -f content/en/_index.md && test -f content/en/about/index.md && python3 -c \"import yaml; p=yaml.safe_load(open('i18n/pt-br.yaml')); e=yaml.safe_load(open('i18n/en.yaml')); req={'site_description','nav_about','only_in_language','switch_to_language','not_found_title','not_found_body','back_to_home'}; mp=req-set(p.keys()); me=req-set(e.keys()); assert not mp, f'pt-br.yaml missing: {mp}'; assert not me, f'en.yaml missing: {me}'; assert '%s' in p['only_in_language'] and '%s' in e['only_in_language'], 'only_in_language must contain %s printf placeholder'\" && grep -q 'translationKey:[[:space:]]*\"about\"' content/pt-br/about/index.md && grep -q 'translationKey:[[:space:]]*\"about\"' content/en/about/index.md && hugo --quiet --gc --minify 2>&1 | tee /tmp/hugo-build.log && ! grep -i 'missing translation\\|WARN' /tmp/hugo-build.log",
+        "guardRails": [
+          "hugo --quiet --gc --minify 2>&1 | tee /tmp/hugo-build.log"
+        ]
+      },
+      "verification": {
+        "strategy": "test",
+        "status": "pending",
+        "expect": "hugo --quiet --gc --minify builds both languages cleanly; all 6 content/i18n files exist; both YAML files define the required 7 keys; About bundles share translationKey \"about\" so the switcher renders a link rather than the orphan badge."
+      },
+      "tasks": [
+        "Create i18n/pt-br.yaml with keys site_description, nav_about, only_in_language (value: 'apenas em %s'), switch_to_language, not_found_title, not_found_body, back_to_home",
+        "Create i18n/en.yaml mirroring the same keys with English values; only_in_language value is 'only in %s'",
+        "Create content/pt-br/_index.md with front-matter (title: 'Marcelio Leal', date: 2026-11-21) and a short pt-br welcome paragraph",
+        "Create content/en/_index.md mirroring the EN home with the same date and a short English welcome paragraph",
+        "Create content/pt-br/about/index.md with front-matter (title: 'Sobre', date: 2026-11-21, draft: false, translationKey: \"about\") and a one-paragraph neutral pt-br bio",
+        "Create content/en/about/index.md with front-matter (title: 'About', date: 2026-11-21, draft: false, translationKey: \"about\") and the EN counterpart bio",
+        "Run hugo --quiet --gc --minify locally and confirm no missing-translation or WARN lines appear in output"
+      ],
+      "id": "US-002",
+      "wave": 2
+    },
+    {
+      "title": "Override header partial with orphan-aware bilingual language switcher",
+      "description": "As a bilingual site visitor, I want a visible language switcher in the site header that honestly tells me when a page has no translation so that I never click a link that silently takes me to the wrong page or home.",
+      "acceptanceCriteria": [
+        "A visitor on any PT or EN page sees a header language switcher that renders one entry per site language by iterating site.Languages (not site.Home.Translations), so the inactive language is always present in the DOM — PaperMod's default partial hides orphans by iterating .Translations and is explicitly rejected here.",
+        "For the CURRENT language, the switcher renders a <span aria-current=\"true\"> containing the language display name (from .Language.LanguageName), with no <a> element — it is not clickable.",
+        "For the OTHER language WHEN the current page has a translation in that language (branch on .AllTranslations / .IsTranslated), the switcher renders a single <a href=\"{{ .Permalink }}\"> whose href is taken from the matching .Translations entry, carries an aria-label built from the i18n string switch_to_language interpolated with the target language display name, and is keyboard-focusable with a visible focus outline (no outline: none; outline:auto or an explicit visible focus style is applied in CSS or inline on :focus-visible).",
+        "For the OTHER language WHEN the current page has NO translation, the switcher renders a non-link <span class=\"lang-badge\" aria-disabled=\"true\"> whose visible text is the i18n string only_in_language interpolated with the target language display name (e.g. \"Only in PT\" / \"Somente em EN\"), so the orphan state is honest and announced to assistive tech.",
+        "The header nav includes an \"About\" entry whose visible text comes from the i18n key nav_about and whose href is /about/ on the PT site and /en/about/ on the EN site, resolved through the site's language-aware URL helpers (relLangURL or equivalent), NOT hardcoded.",
+        "The switcher works with JavaScript disabled: viewing source after `hugo --quiet` shows the three branches rendered as pure HTML with no inline onclick, no x-data, no requestAnimationFrame, no redirect script.",
+        "The override lives at layouts/partials/header.html (site-root), NOT at themes/PaperMod/layouts/partials/header.html — Hugo's lookup order resolves the site-root partial first, leaving the vendored theme untouched; `test -f layouts/partials/header.html && ! test -f themes/PaperMod/layouts/partials/header.html` holds, or the theme file is preserved verbatim as vendored.",
+        "`hugo --quiet` exits 0 with no template errors from the newly authored partial.",
+        "Bash syntax check passes: `bash -n` on any shell helpers is irrelevant here; the project's own build check is `hugo --quiet` and it succeeds."
+      ],
+      "status": "pending",
+      "priority": 3,
+      "dependsOn": [
+        "US-001",
+        "US-002"
+      ],
+      "notes": "verification.strategy is 'visual' because the orphan-badge case needs eyeball confirmation that the disabled state is visually distinguishable; story 11 is the full visual verification gate and will re-check this end-to-end. The MH-4 template under E-3 in best-practices.md is the authoritative shape — follow it rather than inventing a parallel structure.",
+      "implementation": {
+        "files": [
+          "layouts/partials/header.html"
+        ],
+        "approach": "Author layouts/partials/header.html from scratch as a site-root override (Hugo lookup order resolves this before themes/PaperMod/layouts/partials/header.html, so the vendored theme is untouched per the foundation proposal's Layering section). Follow the MH-4 verbatim template under E-3 in .aimi/research/2026-11-21-wordpress-to-hugo-migration-phase-1-foundation-134302-best-practices.md: iterate `{{ range site.Languages }}`, compare `{{ if eq . site.Language }}` for the current branch, else walk `{{ range $.AllTranslations }}` (or check `.IsTranslated` and index .Translations by language code) to decide link-vs-badge. Pull visible strings through `{{ i18n \"switch_to_language\" . }}`, `{{ i18n \"orphan_badge\" . }}`, and `{{ i18n \"nav_about\" }}` so copy stays in i18n/pt-br.yaml and i18n/en.yaml (produced by US-002). Render the About nav entry with `{{ absLangURL \"about/\" }}` or `{{ \"about/\" | relLangURL }}` so Hugo computes /about/ for PT and /en/about/ for EN without hardcoding. Keep the markup semantic: a single <nav> wrapping an <ul> of <li>, with the switcher as sibling <li>s; aria-current=\"true\" on the active span, aria-disabled=\"true\" on the orphan span, aria-label on the inter-language <a>. Do NOT add JS; the switcher is pure HTML so it works with JS off. Visible focus is covered by not suppressing :focus outlines — leave the browser default or let story 05's aesthetic CSS add a :focus-visible rule.",
+        "verify": "set -euo pipefail; test -f layouts/partials/header.html; grep -q 'site.Languages' layouts/partials/header.html; grep -q 'AllTranslations\\|\\.Translations' layouts/partials/header.html; grep -q 'aria-current' layouts/partials/header.html; grep -q 'aria-disabled' layouts/partials/header.html; grep -q 'switch_to_language' layouts/partials/header.html; grep -q 'only_in_language' layouts/partials/header.html; grep -q 'nav_about' layouts/partials/header.html; ! grep -q 'onclick=' layouts/partials/header.html; ! grep -q 'x-data' layouts/partials/header.html; hugo --quiet",
+        "outputs": []
+      },
+      "verification": {
+        "strategy": "visual",
+        "status": "pending",
+        "url": "http://localhost:1313/",
+        "expect": "On the PT home, the header shows an aria-current PT indicator and an EN link (because the home is translated). Navigate to a PT-only post: the EN side renders as an aria-disabled 'Somente em EN' / 'Only in EN' badge, not a link. The About link reads 'Sobre' on PT and 'About' on EN and routes to /about/ and /en/about/ respectively. Tab to the EN link: a visible focus outline appears. Disable JS in the browser and reload: the switcher still renders and still behaves as described."
+      },
+      "skills": [],
+      "tasks": [
+        "Create layouts/partials/header.html as a new file (site-root override; do not touch themes/PaperMod/layouts/partials/header.html)",
+        "Scaffold a <header> with a <nav><ul> structure containing the About link and the language-switcher region",
+        "Render the About entry as <li><a href=\"{{ \"about/\" | relLangURL }}\">{{ i18n \"nav_about\" }}</a></li> so PT resolves /about/ and EN resolves /en/about/",
+        "Add the switcher loop: {{ range site.Languages }} — iterate every configured language, not .Translations",
+        "Inside the loop, branch on {{ if eq . site.Language }} and render <span aria-current=\"true\">{{ .LanguageName }}</span> for the current language",
+        "For the else branch, test membership against $.AllTranslations (or .IsTranslated + index .Translations by .Lang) to decide link-vs-badge",
+        "When a translation exists, emit <a href=\"{{ .Permalink }}\" aria-label=\"{{ i18n \"switch_to_language\" . }}\" hreflang=\"{{ .Lang }}\">{{ .LanguageName }}</a>",
+        "When no translation exists, emit <span class=\"lang-badge\" aria-disabled=\"true\">{{ i18n \"only_in_language\" . }}</span>",
+        "Confirm no JavaScript, no x-data, no onclick, no redirect script was introduced; the switcher is pure HTML",
+        "Run `hugo --quiet` locally and confirm it exits 0 with no template errors",
+        "Run `hugo server` and manually confirm the PT and EN branches render as described in verification.expect — covered end-to-end by story 11's exit verification"
+      ],
+      "id": "US-003",
+      "wave": 3
+    },
+    {
+      "title": "Ship per-language 404 pages with inline language-detection script",
+      "description": "As a visitor landing on an unresolved URL, I want a bilingual 404 page that recovers to my language so that I can find my way home whether I hit /does-not-exist or /en/does-not-exist, with or without JavaScript enabled.",
+      "acceptanceCriteria": [
+        "A visitor hitting any unresolved URL under / lands on a 404 page whose body contains both the pt-br message and the en message wrapped in <p lang=\"pt-br\"> and <p lang=\"en\"> respectively, with recovery links to / (Início) and to /en/ (Home), so both language audiences self-recover.",
+        "With JavaScript enabled, the inline <script> in layouts/404.html hides the pt-br paragraph when location.pathname.startsWith('/en/') and otherwise hides the en paragraph; with JavaScript disabled both paragraphs remain visible (graceful degradation). The script runs synchronously before paint without requiring any external asset.",
+        "Hugo's per-language 404 suffix convention is honoured: the 404 templates live at layouts/404.html, layouts/404.pt-br.html and layouts/404.en.html (NOT under layouts/_default/ and NOT as content/404.md), so Hugo emits public/404.html and public/en/404.html on build (Hugo 404 template reference, framework-docs § C10).",
+        "layouts/404.pt-br.html and layouts/404.en.html each render a single-language 404 using the i18n keys not_found_title, not_found_body and back_to_home via {{ i18n \"<key>\" }}, consuming the strings authored by US-002 in i18n/pt-br.yaml and i18n/en.yaml.",
+        "Each of the three templates emits a top-level nav link back to the site root for its language (pt-br templates link to / and /en templates link to /en/) using either the PaperMod header partial via {{ partial \"header.html\" . }} when the partial renders in a 404 context, or a minimal inline <nav> when it does not — never leaving the visitor without a reachable home link.",
+        "hugo --quiet (Hugo 0.170.1 as pinned in .tool-versions) builds the site without error and produces both public/404.html (Netlify's single catch-all 404 handler) and public/en/404.html (per-language 404 reachable via the Netlify redirect rule planned for US-008).",
+        "Hugo's own syntax check passes: `hugo --quiet` exits 0 with no template parse errors across the three 404 templates."
+      ],
+      "status": "pending",
+      "priority": 4,
+      "dependsOn": [
+        "US-001",
+        "US-002"
+      ],
+      "notes": "Netlify serves only the top-level /404.html as its single catch-all; per-language routing to /en/404.html is wired by a redirect rule planned for US-008 (netlify.toml). This story only authors the templates; the end-to-end visual walkthrough with JS on/off at mobile and desktop widths is gated by US-011.",
+      "implementation": {
+        "files": [
+          "layouts/404.html",
+          "layouts/404.pt-br.html",
+          "layouts/404.en.html"
+        ],
+        "approach": "Three Hugo templates at the site-root layouts/ (never under _default/, per framework-docs § C10). layouts/404.html is the bilingual fallback (Netlify's catch-all): render <h1>404</h1>, then <p lang=\"pt-br\">Página não encontrada.</p> and <p lang=\"en\">Page not found.</p>, then bilingual recovery links to / and /en/, then a small inline <script> that reads location.pathname and sets the wrong-language <p>'s style.display to 'none' when location.pathname.startsWith('/en/'). With JS off both <p> stay visible — this is the graceful-degradation contract (best-practices § MH-7 L156-169). layouts/404.pt-br.html and layouts/404.en.html are simpler single-language bodies using {{ i18n \"not_found_title\" }}, {{ i18n \"not_found_body\" }} and {{ i18n \"back_to_home\" }} from the pt-br / en i18n files US-002 produces. Prefer reusing {{ partial \"header.html\" . }} for consistent chrome when it renders cleanly in a 404 context; otherwise emit a minimal inline <nav> with a home link. All three templates define the PaperMod {{ define \"main\" }} block so the theme's base layout wraps them (framework-docs § C10 L494-505).",
+        "verify": "set -euo pipefail; test -f layouts/404.html && test -f layouts/404.pt-br.html && test -f layouts/404.en.html; grep -q 'lang=\"pt-br\"' layouts/404.html && grep -q 'lang=\"en\"' layouts/404.html; grep -q 'location.pathname' layouts/404.html; grep -q '<script' layouts/404.html; grep -q 'not_found_title\\|not_found_body\\|back_to_home' layouts/404.pt-br.html && grep -q 'not_found_title\\|not_found_body\\|back_to_home' layouts/404.en.html; hugo --quiet && test -f public/404.html && test -f public/en/404.html; grep -q 'pt-br' public/404.html && grep -q 'en' public/404.html",
+        "guardRails": []
+      },
+      "verification": {
+        "strategy": "visual",
+        "status": "pending",
+        "url": "/404.html",
+        "expect": "Visiting /does-not-exist shows the pt-br 'Página não encontrada.' message with a link to / (Início); visiting /en/does-not-exist shows the en 'Page not found.' message with a link to /en/ (Home); with JavaScript disabled, both language paragraphs are visible on /404.html so either audience can still recover. End-to-end acceptance is gated by US-011."
+      },
+      "tasks": [
+        "Create layouts/404.html with {{ define \"main\" }}: emit <h1>404</h1>, <p lang=\"pt-br\">Página não encontrada.</p>, <p lang=\"en\">Page not found.</p>, and a <p> with <a href=\"/\">Início</a> · <a href=\"/en/\">Home</a>",
+        "Append an inline <script> to layouts/404.html that hides the wrong-language <p> element via document.querySelector('p[lang=\"pt-br\"]') / document.querySelector('p[lang=\"en\"]') and style.display='none' based on location.pathname.startsWith('/en/')",
+        "Verify layouts/404.html renders both paragraphs intact when the inline <script> is stripped (graceful degradation smoke-test; read the rendered public/404.html without executing JS)",
+        "Create layouts/404.pt-br.html with {{ define \"main\" }} using {{ i18n \"not_found_title\" }}, {{ i18n \"not_found_body\" }} and a home link labelled {{ i18n \"back_to_home\" }} pointing to /",
+        "Create layouts/404.en.html with {{ define \"main\" }} using {{ i18n \"not_found_title\" }}, {{ i18n \"not_found_body\" }} and a home link labelled {{ i18n \"back_to_home\" }} pointing to /en/",
+        "Decide between {{ partial \"header.html\" . }} and a minimal inline <nav> for the chrome of each template; where the PaperMod base layout already injects the header, drop the explicit partial call",
+        "Run hugo --quiet and confirm public/404.html and public/en/404.html are produced without template errors",
+        "Open public/404.html in a browser with JS disabled to confirm both language paragraphs remain visible"
+      ],
+      "id": "US-004",
+      "wave": 3
+    },
+    {
+      "title": "Apply minimal single-column light aesthetic via extended CSS and PaperMod params",
+      "description": "As the site owner, I want a minimal single-column light aesthetic applied through extended CSS and PaperMod params so that visitors see a centered ~720px reading column with system fonts, light background, and no PaperMod chrome (toggle, breadcrumbs, share, cover, reading-time) on the local hugo-server home.",
+      "acceptanceCriteria": [
+        "The local hugo-server home at / renders with a single centered content column whose main container has max-width ~720px and horizontal padding ~1rem on mobile, with no cards, no cover-image chrome, no breadcrumbs, no share chrome, no theme toggle, and no reading-time visible — matching the minimal single-column reference per research R-4 and the eltonminetto.dev visual reference cited in the brainstorm Design Decisions.",
+        "assets/css/extended/custom.css declares the system sans-serif font stack verbatim: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Open Sans\", \"Helvetica Neue\", sans-serif (per research R-1).",
+        "assets/css/extended/custom.css sets light background #ffffff with primary text color #111 and muted text color #6b6b6b (both meeting WCAG AA contrast ≥4.5:1 vs #ffffff), and renders dates above titles on the blog list.",
+        "assets/css/extended/custom.css defines a visible-focus style for keyboard navigation: :focus-visible { outline: 2px solid #111; outline-offset: 2px; }.",
+        "hugo.toml [params] contains all of: disableThemeToggle = true, ShowBreadCrumbs = false, ShowShareButtons = false, ShowReadingTime = false, ShowCodeCopyButtons = true, defaultTheme = \"light\", ShowPostNavLinks = false, and profileMode.enabled = false (field names per PaperMod docs).",
+        "hugo --quiet builds the site successfully (exit 0) with the new CSS and params in place.",
+        "bash -n validates the verify script has no syntax errors."
+      ],
+      "status": "pending",
+      "priority": 5,
+      "dependsOn": [
+        "US-001"
+      ],
+      "implementation": {
+        "files": [
+          "assets/css/extended/custom.css",
+          "hugo.toml"
+        ],
+        "approach": "Create assets/css/extended/custom.css (PaperMod's documented override seam under assets/css/extended per research E-4 and foundation.md) with: a :root-scoped or body-level rule setting the system sans-serif font stack verbatim from research R-1; a main container rule constraining max-width to 720px with margin: 0 auto and horizontal padding 1rem (mobile-first); background #ffffff, primary color #111, muted color #6b6b6b on body and secondary elements; blog-list entry layout placing the date element visually above the title (small/monospace-optional treatment acceptable); and a :focus-visible rule with outline: 2px solid #111 and outline-offset: 2px. Edit hugo.toml to append or extend the [params] table with the eight PaperMod flags listed in the criteria — disableThemeToggle, ShowBreadCrumbs, ShowShareButtons, ShowReadingTime, ShowCodeCopyButtons, defaultTheme, ShowPostNavLinks, and profileMode.enabled — preserving existing keys from the scaffold story (US-001). Keep homeInfoParams as-is or empty per outline guidance.",
+        "verify": "set -euo pipefail\nhugo --quiet\ngrep -q \"max-width.*720\" assets/css/extended/custom.css\ngrep -q \"BlinkMacSystemFont\" assets/css/extended/custom.css\ngrep -q \"#ffffff\" assets/css/extended/custom.css\ngrep -q \"#111\" assets/css/extended/custom.css\ngrep -q \"#6b6b6b\" assets/css/extended/custom.css\ngrep -q \":focus-visible\" assets/css/extended/custom.css\ngrep -q \"disableThemeToggle\" hugo.toml\ngrep -q \"ShowBreadCrumbs *= *false\" hugo.toml\ngrep -q \"ShowShareButtons *= *false\" hugo.toml\ngrep -q \"ShowReadingTime *= *false\" hugo.toml\ngrep -q \"ShowCodeCopyButtons *= *true\" hugo.toml\ngrep -q \"defaultTheme *= *\\\"light\\\"\" hugo.toml\ngrep -q \"ShowPostNavLinks *= *false\" hugo.toml\ngrep -q \"profileMode\" hugo.toml",
+        "guardRails": [
+          "hugo --quiet"
+        ]
+      },
+      "verification": {
+        "strategy": "visual",
+        "status": "pending",
+        "url": "/",
+        "expect": "The home page renders as a single centered column at ~720px max-width on desktop with system sans-serif type, light #ffffff background, #111 primary text and #6b6b6b muted text; no theme toggle, no breadcrumbs, no share buttons, no reading-time, no cover chrome, no cards; blog-list entries show the date above each post title; keyboard Tab shows a visible 2px solid #111 focus outline."
+      },
+      "skills": [
+        "frontend-design"
+      ],
+      "tasks": [
+        "Create assets/css/extended/custom.css with system sans-serif font stack verbatim from research R-1",
+        "Add main container rule setting max-width: 720px with margin: 0 auto and horizontal padding 1rem",
+        "Add color rules: background #ffffff, primary text #111, muted secondary text #6b6b6b",
+        "Add blog-list entry layout rule placing date element above the post title",
+        "Add :focus-visible rule with outline: 2px solid #111 and outline-offset: 2px",
+        "Edit hugo.toml [params] block to append disableThemeToggle = true, ShowBreadCrumbs = false, ShowShareButtons = false, ShowReadingTime = false, ShowCodeCopyButtons = true, defaultTheme = \"light\", ShowPostNavLinks = false, profileMode.enabled = false",
+        "Run hugo --quiet locally and confirm the build completes without errors",
+        "Run hugo server locally and visually confirm the home / renders per acceptance criterion 1"
+      ],
+      "notes": "Field names for PaperMod params taken from research R-4 and brainstorm Design Decisions. The eltonminetto.dev visual reference is cited in the brainstorm Design Decisions section; do not re-derive the color palette from the prototype. WCAG AA contrast for #111 on #ffffff is 19.3:1 and for #6b6b6b on #ffffff is 4.77:1 — both exceed 4.5:1.",
+      "id": "US-005",
+      "wave": 2
+    },
+    {
+      "title": "Lock staging noindex via robots.txt and conditional meta-robots head injection",
+      "description": "As a site operator, I want staging (new.marcelioleal.com) to emit robots.txt Disallow:/ and meta robots noindex,nofollow so search engines never index the preview environment while apex production can later flip to index,follow.",
+      "acceptanceCriteria": [
+        "A visitor loading https://new.marcelioleal.com/robots.txt sees `User-agent: *` on one line and `Disallow: /` on the next, and viewing the rendered homepage source on staging shows `<meta name=\"robots\" content=\"noindex,nofollow\">` inside <head>, so Google and Bing crawlers decline to index any staging page (resolves AC-new-1, AC-new-2 from spec-flow).",
+        "static/robots.txt exists at the repository root and its exact body is the two lines `User-agent: *` followed by `Disallow: /` (terminating newline permitted); Hugo copies it verbatim into public/robots.txt on build.",
+        "layouts/partials/extend_head.html exists and contains a conditional Hugo template block that emits `<meta name=\"robots\" content=\"noindex,nofollow\">` when `hugo.Environment` equals `preview` or `staging`, OR when `.Site.BaseURL` contains the literal `new.marcelioleal.com` (belt-and-suspenders), and emits nothing otherwise.",
+        "Building with `HUGO_ENV=preview hugo` writes the noindex meta into public/index.html; building with `HUGO_ENV=production hugo` writes a public/index.html containing no `noindex` token anywhere, so the apex production deploy (Phase 3) is free to be indexed.",
+        "The project's own syntax check passes: `hugo --quiet` exits 0 with no template-parse errors against the new extend_head.html partial."
+      ],
+      "status": "pending",
+      "priority": 6,
+      "dependsOn": [
+        "US-001"
+      ],
+      "notes": "This story CREATES layouts/partials/extend_head.html with only the noindex conditional block. Story 07 (SEO head) will APPEND canonical, hreflang, and OpenGraph tags to the SAME file — do not duplicate the partial, extend it. PaperMod auto-includes extend_head.html inside <head>, so no base template changes are required here. The two-condition guard (hugo.Environment check PLUS BaseURL substring match) is intentional belt-and-suspenders: a misconfigured Netlify deploy context that fails to set HUGO_ENV still gets blocked by the staging host match.\n\n---\n\n[audit-deferred: resolved at plan review] deferral surfaced: notes claim story 07 will APPEND canonical/hreflang/OpenGraph tags to layouts/partials/extend_head.html. Reviewer must confirm story 07 wires the deferred concern (not just exposes a helper).\nReason recorded for the deferred findings of this batch: Phase 1 first-plan: deferrals surface design choices to be verified at Phase 1 exit (story 11); defer here to proceed\n\n---\n\n[audit-deferred: resolved at plan review] deferral surfaced: notes claim story 07 will APPEND canonical/hreflang/OpenGraph tags to layouts/partials/extend_head.html. Reviewer must confirm story 07 wires the deferred concern (not just exposes a helper).\nReason recorded for the deferred findings of this batch: Phase 1 first-plan: deferrals are design handoffs between stories (01->05 params, 06->07 head block); reviewer confirms during story 11 exit verification",
+      "implementation": {
+        "files": [
+          "static/robots.txt",
+          "layouts/partials/extend_head.html"
+        ],
+        "approach": "Write static/robots.txt as a two-line file (`User-agent: *\\nDisallow: /\\n`) — Hugo's static mount copies it to public/ verbatim with no templating. Create layouts/partials/extend_head.html with a single Hugo if-block: `{{ if or (in (slice \"preview\" \"staging\") hugo.Environment) (in .Site.BaseURL \"new.marcelioleal.com\") }}<meta name=\"robots\" content=\"noindex,nofollow\">{{ end }}`. PaperMod's base template auto-renders this partial inside <head>, so no layout override is needed. Keep the file minimal — story 07 will append more tags inside/alongside this block.",
+        "verify": "set -euo pipefail && hugo --quiet && test -f static/robots.txt && grep -q '^User-agent: \\*' static/robots.txt && grep -q '^Disallow: /' static/robots.txt && grep -q 'noindex' layouts/partials/extend_head.html && rm -rf public && HUGO_ENV=preview hugo --quiet && grep -q 'name=\"robots\"' public/index.html && grep -q 'noindex,nofollow' public/index.html && rm -rf public && HUGO_ENV=production hugo --quiet && ! grep -q 'noindex' public/index.html",
+        "prototypeAnchor": null
+      },
+      "verification": {
+        "strategy": "visual",
+        "status": "pending",
+        "url": "/robots.txt",
+        "expect": "Fetching /robots.txt on staging returns `User-agent: *\\nDisallow: /`; view-source on the staging homepage shows `<meta name=\"robots\" content=\"noindex,nofollow\">` in <head>; the same build with HUGO_ENV=production emits no noindex meta."
+      },
+      "tasks": [
+        "Create static/robots.txt containing two lines: `User-agent: *` and `Disallow: /`",
+        "Create layouts/partials/extend_head.html with a Hugo if-block gating on `hugo.Environment` in {preview,staging} OR `.Site.BaseURL` containing `new.marcelioleal.com`",
+        "Inside the if-block emit exactly `<meta name=\"robots\" content=\"noindex,nofollow\">`",
+        "Run `hugo --quiet` to confirm template parses and robots.txt copies to public/robots.txt",
+        "Run `HUGO_ENV=preview hugo --quiet` and grep public/index.html for `noindex,nofollow` to confirm injection fires on staging",
+        "Run `HUGO_ENV=production hugo --quiet` after cleaning public/ and confirm `noindex` is absent from public/index.html",
+        "Leave a comment in extend_head.html noting story 07 will append canonical/hreflang/OG tags here"
+      ],
+      "id": "US-006",
+      "wave": 2
+    },
+    {
+      "title": "Emit canonical, hreflang alternates, and Open Graph defaults in extend_head.html",
+      "description": "As a site owner publishing bilingual pages, I want every rendered page to emit a self-canonical link, pt-br/en/x-default hreflang alternates, and Open Graph defaults so that search engines index the correct language variant and social shares show a consistent preview.",
+      "acceptanceCriteria": [
+        "Loading / in the browser shows an HTML head block that contains a self-canonical link, hreflang alternates for pt-br, en, and x-default, and Open Graph defaults (og:title, og:description, og:type, og:locale, og:locale:alternate, og:image, og:url) — the preview matches when the page URL is pasted into a link-unfurling tool.",
+        "layouts/partials/extend_head.html (appended to the file story 06 created) emits <link rel=\"canonical\" href=\"{{ .Permalink }}\"> on every page.",
+        "layouts/partials/extend_head.html iterates site.Languages and emits <link rel=\"alternate\" hreflang=\"pt-br\" href=\"...\"> and <link rel=\"alternate\" hreflang=\"en\" href=\"...\"> pointing at the sibling page URL resolved through .AllTranslations / .Translations (per spec-flow G-2, backed by Hugo .Translations / .IsTranslated).",
+        "layouts/partials/extend_head.html emits <link rel=\"alternate\" hreflang=\"x-default\" href=\"...\"> pointing at the pt-br variant (site.Home for defaultContentLanguage=pt-br).",
+        "Open Graph defaults are written using site title, page .Description (falling back to .Site.Params.description), og:type=website for the home and article for leaf pages, og:locale=pt_BR or en_US derived from the current page language, og:locale:alternate for the other language, og:image set via absURL to /og-default.png, and og:url set to .Permalink (spec-flow G-3, AC-new-4).",
+        "static/og-default.png exists as a non-empty valid PNG placeholder sized 1200x630 — the file silences PaperMod's default-OG-image fallback and loads when fetched directly from the rendered site.",
+        "static/favicon.ico exists as a non-empty valid ICO placeholder (minimum 16x16) referenced by Hugo's default favicon convention — a browser request for /favicon.ico returns the file rather than a 404 (AC-new-5).",
+        "hugo.toml contains, under [params], description = \"Marcelio Leal's personal site — pt-br default, bilingual\" (used as og:description fallback) and images = [\"og-default.png\"] (PaperMod default-OG-image hint).",
+        "hugo --quiet builds without missing-translation warnings and the rendered public/index.html contains all of: rel=\"canonical\", hreflang=\"pt-br\", hreflang=\"en\", hreflang=\"x-default\", og:title, og:image, and a reference to og-default.png or favicon.",
+        "hugo --printI18nWarnings reports zero missing-translation warnings for keys referenced by the head block."
+      ],
+      "status": "pending",
+      "priority": 7,
+      "dependsOn": [
+        "US-001",
+        "US-006",
+        "US-005"
+      ],
+      "notes": "Placeholder binaries (og-default.png 1200x630, favicon.ico 16x16) are generated at execute time without external tools: tasks[] directs the executor to use Python's built-in base64 decode of a known-good minimal PNG/ICO byte stream, or `python3 -c` with struct to write a solid-color PNG. Example recipe recorded in tasks[] — the files only need to be valid, non-empty, and the correct MIME; visual fidelity is not asserted by this story. hugo.toml `description` and `images` params are appended only if not already present (idempotent).",
+      "implementation": {
+        "files": [
+          "layouts/partials/extend_head.html",
+          "static/og-default.png",
+          "static/favicon.ico",
+          "hugo.toml"
+        ],
+        "approach": "Append to layouts/partials/extend_head.html the canonical link, hreflang alternates loop over site.Languages using .AllTranslations keyed by Lang, an explicit x-default alternate for the pt-br variant, and Open Graph meta tags (og:title, og:description, og:type conditional on .IsHome, og:locale/og:locale:alternate derived from .Language.Lang, og:image via absURL, og:url=.Permalink) — per spec-flow G-1/G-2/G-3 in best-practices.md. Generate static/og-default.png and static/favicon.ico as valid placeholder binaries using `python3 -c` with struct.pack to emit a minimal single-color PNG (1200x630) and ICO (16x16) — no external imaging tools required. Append `description = \"Marcelio Leal's personal site — pt-br default, bilingual\"` and `images = [\"og-default.png\"]` under [params] in hugo.toml idempotently (grep-first). Verify by running `hugo --quiet` and grepping the rendered public/index.html for each required marker.",
+        "verify": "set -euo pipefail; test -f layouts/partials/extend_head.html && test -s layouts/partials/extend_head.html; test -f static/og-default.png && test -s static/og-default.png; test -f static/favicon.ico && test -s static/favicon.ico; grep -q 'rel=\"canonical\"' layouts/partials/extend_head.html; grep -q 'hreflang=\"pt-br\"' layouts/partials/extend_head.html; grep -q 'hreflang=\"en\"' layouts/partials/extend_head.html; grep -q 'hreflang=\"x-default\"' layouts/partials/extend_head.html; grep -q 'og:title' layouts/partials/extend_head.html; grep -q 'og:image' layouts/partials/extend_head.html; grep -q 'og:locale' layouts/partials/extend_head.html; grep -q 'og:url' layouts/partials/extend_head.html; grep -q '^description' hugo.toml || grep -q 'description =' hugo.toml; grep -q 'images' hugo.toml; hugo --quiet; test -f public/index.html; grep -q 'rel=\"canonical\"' public/index.html; grep -q 'hreflang=\"pt-br\"' public/index.html; grep -q 'hreflang=\"en\"' public/index.html; grep -q 'hreflang=\"x-default\"' public/index.html; grep -q 'og:title' public/index.html; grep -q 'og:image' public/index.html; grep -qE 'og-default\\.png|favicon' public/index.html; hugo --printI18nWarnings --quiet 2>&1 | { ! grep -q 'WARN.*missing translation'; }",
+        "guardRails": [
+          "hugo --quiet"
+        ]
+      },
+      "verification": {
+        "strategy": "visual",
+        "status": "pending",
+        "url": "/",
+        "expect": "Viewing page source at / shows <link rel=\"canonical\">, three <link rel=\"alternate\" hreflang=\"...\"> tags (pt-br, en, x-default), og:title/og:description/og:type/og:locale/og:image/og:url meta tags; /og-default.png and /favicon.ico resolve with 200."
+      },
+      "skills": [],
+      "tasks": [
+        "Open layouts/partials/extend_head.html (created by story 06) and append a canonical link using {{ .Permalink }}",
+        "Append an hreflang loop over site.Languages that resolves sibling URLs via .AllTranslations / .Translations, emitting <link rel=\"alternate\" hreflang=\"pt-br\"> and hreflang=\"en\"",
+        "Append the x-default hreflang alternate pointing at the pt-br variant (resolve via range site.Languages where .Lang eq site.Home.Language.Lang)",
+        "Append Open Graph defaults: og:title from .Title or site.Title, og:description from .Description or .Site.Params.description, og:type conditional on .IsHome (website vs article), og:locale pt_BR or en_US based on .Language.Lang, og:locale:alternate for the other language, og:image via absURL \"og-default.png\", og:url from .Permalink",
+        "Generate static/og-default.png as a 1200x630 valid PNG placeholder using `python3 -c \"import struct,zlib,sys;...\"` or similar built-in recipe; verify file is non-empty and starts with PNG signature bytes",
+        "Generate static/favicon.ico as a 16x16 valid ICO placeholder using python3 with struct to write the BMP-embedded ICO header; verify file is non-empty and starts with the ICO magic bytes",
+        "Append under [params] in hugo.toml, idempotently, description = \"Marcelio Leal's personal site — pt-br default, bilingual\" and images = [\"og-default.png\"] (grep-first before writing)",
+        "Run `hugo --quiet` and inspect public/index.html to confirm every required marker (canonical, three hreflangs, og:*) appears",
+        "Run `hugo --printI18nWarnings --quiet` and confirm no missing-translation warnings are emitted for keys referenced by the head block",
+        "Execute the full implementation.verify script and confirm it exits 0 on the post-change tree"
+      ],
+      "id": "US-007",
+      "wave": 3
+    },
+    {
+      "title": "Configure Netlify build with pinned Hugo version and context-aware baseURL",
+      "description": "As the site operator, I want a netlify.toml that pins the Hugo toolchain and sets baseURL per deploy context so every Netlify environment (production, deploy-preview, branch-deploy) builds reproducibly with the correct absolute URLs without hardcoding them in hugo.toml.",
+      "acceptanceCriteria": [
+        "A reviewer opening netlify.toml at the repository root reads a single build configuration that pins Hugo 0.170.1, sets the Sao Paulo timezone, enables recursive submodule checkout for the PaperMod theme consumed from US-001, and declares three deploy contexts (production, deploy-preview, branch-deploy) each rebuilding Hugo with its own absolute baseURL sourced from Netlify's URL and DEPLOY_PRIME_URL environment variables so no absolute domain is baked into hugo.toml.",
+        "netlify.toml exists at the repository root and contains these verbatim segments: [build] with command = \"hugo --gc --minify\" and publish = \"public\"; [build.environment] with HUGO_VERSION = \"0.170.1\", TZ = \"America/Sao_Paulo\", and GIT_SUBMODULE_STRATEGY = \"recursive\"; [context.production] with command = \"hugo --gc --minify --baseURL ${URL}\" and environment = { HUGO_ENV = \"production\" }; [context.deploy-preview] with command = \"hugo --gc --minify --baseURL ${DEPLOY_PRIME_URL}\" and environment = { HUGO_ENV = \"preview\" }; [context.branch-deploy] with command = \"hugo --gc --minify --baseURL ${DEPLOY_PRIME_URL}\" and environment = { HUGO_ENV = \"preview\" }.",
+        "The locally installed Hugo binary reports v0.170.1, matching the pinned HUGO_VERSION, and a quiet local Hugo build completes without error, confirming the hugo.toml + PaperMod submodule from US-001 can be built with the same toolchain Netlify will run.",
+        "hugo.toml's baseURL remains a local-dev placeholder (e.g. http://localhost:1313/) and never carries a production hostname, because the [context.*] command overrides inject --baseURL per deploy context; grepping netlify.toml confirms no production hostname is hardcoded there either.",
+        "bash -n netlify.toml is not applicable (TOML, not shell); instead, the file is syntactically valid TOML as confirmed by python3 -c \"import tomllib; tomllib.load(open('netlify.toml','rb'))\" exiting zero."
+      ],
+      "status": "pending",
+      "priority": 80,
+      "dependsOn": [
+        "US-001"
+      ],
+      "notes": "Netlify's 'Git submodules' Site setting is a one-time console toggle done in US-009 at deploy time — netlify.toml alone cannot enable it, but GIT_SUBMODULE_STRATEGY=\"recursive\" in [build.environment] is the companion env var that takes effect once the Site setting is on. This story only authors the config file; it does not execute any deploy. Research anchors: .aimi/research/2026-11-21-wordpress-to-hugo-migration-phase-1-foundation-134302-framework-docs.md §C8-C9 and .aimi/research/2026-11-21-wordpress-to-hugo-migration-phase-1-foundation-134302-best-practices.md §MH-2, §MH-6, §E-2.",
+      "implementation": {
+        "files": [
+          "netlify.toml"
+        ],
+        "approach": "Author a new netlify.toml at the repo root with four TOML tables in this order: [build] (command + publish), [build.environment] (HUGO_VERSION, TZ, GIT_SUBMODULE_STRATEGY), and three [context.*] blocks (production, deploy-preview, branch-deploy) each overriding command with --baseURL and setting an inline environment table for HUGO_ENV. Use the verbatim strings specified in the research's E-2 netlify.toml recipe — do not paraphrase keys or values. baseURL interpolation uses Netlify's own ${URL} (production custom domain) and ${DEPLOY_PRIME_URL} (preview/branch deploy URL) env vars, which Netlify substitutes into the build command before invoking Hugo — this is the per-context baseURL pattern from MH-6 and is the reason hugo.toml's baseURL stays a localhost placeholder. The recursive submodule env var complements (does not replace) the Netlify UI 'Git submodules' toggle flipped in US-009.",
+        "verify": "set -euo pipefail; test -f netlify.toml; grep -q 'HUGO_VERSION *= *\"0.170.1\"' netlify.toml; grep -q 'command *= *\"hugo --gc --minify\"' netlify.toml; grep -q 'publish *= *\"public\"' netlify.toml; grep -q 'TZ *= *\"America/Sao_Paulo\"' netlify.toml; grep -q 'GIT_SUBMODULE_STRATEGY *= *\"recursive\"' netlify.toml; grep -q '\\[context.production\\]' netlify.toml; grep -q '\\[context.deploy-preview\\]' netlify.toml; grep -q '\\[context.branch-deploy\\]' netlify.toml; grep -q 'DEPLOY_PRIME_URL' netlify.toml; grep -q '\\${URL}' netlify.toml; grep -q 'HUGO_ENV *= *\"production\"' netlify.toml; grep -q 'HUGO_ENV *= *\"preview\"' netlify.toml; ! grep -q 'new.marcelioleal.com' netlify.toml; grep -q 'baseURL' netlify.toml; python3 -c \"import tomllib; tomllib.load(open('netlify.toml','rb'))\"; hugo version | grep -q 'v0.170.1'; hugo --quiet"
+      },
+      "verification": {
+        "strategy": "test",
+        "status": "pending",
+        "expect": "netlify.toml exists at the repo root, parses as valid TOML, pins HUGO_VERSION=0.170.1 with TZ=America/Sao_Paulo and GIT_SUBMODULE_STRATEGY=recursive, declares the three deploy contexts each wiring --baseURL to the right Netlify env var (${URL} for production, ${DEPLOY_PRIME_URL} for deploy-preview and branch-deploy) with HUGO_ENV=production or HUGO_ENV=preview as appropriate, contains no hardcoded production hostname, and the local Hugo v0.170.1 toolchain builds the site cleanly."
+      },
+      "tasks": [
+        "Create netlify.toml at the repository root",
+        "Write the [build] table with command = \"hugo --gc --minify\" and publish = \"public\"",
+        "Write the [build.environment] table with HUGO_VERSION = \"0.170.1\", TZ = \"America/Sao_Paulo\", and GIT_SUBMODULE_STRATEGY = \"recursive\"",
+        "Write the [context.production] table overriding command with --baseURL ${URL} and setting environment = { HUGO_ENV = \"production\" }",
+        "Write the [context.deploy-preview] table overriding command with --baseURL ${DEPLOY_PRIME_URL} and setting environment = { HUGO_ENV = \"preview\" }",
+        "Write the [context.branch-deploy] table overriding command with --baseURL ${DEPLOY_PRIME_URL} and setting environment = { HUGO_ENV = \"preview\" }",
+        "Confirm hugo.toml baseURL remains a local-dev placeholder and no production hostname is written into netlify.toml",
+        "Validate netlify.toml parses as TOML via python3 tomllib and confirm local hugo version matches v0.170.1 and hugo --quiet succeeds"
+      ],
+      "id": "US-008",
+      "wave": 2
+    },
+    {
+      "title": "Deploy to Netlify and wire new.marcelioleal.com staging subdomain",
+      "description": "As the site operator, I want to deploy the newsite repository to Netlify behind new.marcelioleal.com so that the migrated Hugo site is reachable over HTTPS on a staging subdomain while the apex marcelioleal.com continues to serve WordPress until Phase 3.",
+      "acceptanceCriteria": [
+        "Operator visits https://new.marcelioleal.com/ in a browser and the Hugo home page renders with language switcher and PT-BR content; navigating to http://new.marcelioleal.com/ is redirected (301 or 308) to the https:// equivalent.",
+        "GitHub repository `newsite` exists under the operator's account, `origin` points to `github.com:<user>/newsite.git`, and `main` has been pushed; Netlify has imported that repo and the first production build on `main` finished with status green.",
+        "Netlify Site settings -> Build & deploy -> Continuous Deployment has `Git submodules` ENABLED (this one-time console toggle is required because netlify.toml cannot set it; without it, the `themes/` submodule is not checked out at build time and the build fails).",
+        "In Netlify Site settings -> Domain management, `new.marcelioleal.com` is listed as a custom domain and its status shows HTTPS active (Let's Encrypt certificate provisioned); at the registrar holding `marcelioleal.com`, a DNS record `new 300 IN CNAME <netlify-subdomain>.netlify.app.` is present with TTL 300s, and no CAA record blocks Let's Encrypt issuance.",
+        "The apex domain `marcelioleal.com` DNS records are unchanged in this story and continue to point at the existing WordPress host; only the `new` subdomain is added. (Phase 3 cuts the apex.)",
+        "Dry local sanity command succeeds in the repo and writes the expected output: `test -f netlify.toml && hugo --quiet --baseURL \"https://new.marcelioleal.com/\" --gc --minify && test -f public/index.html`.",
+        "`bash -n` on any shell snippets this story introduces passes (there are no shell files committed by this story; the check applies to the verify script itself)."
+      ],
+      "status": "pending",
+      "priority": 9,
+      "dependsOn": [
+        "US-001",
+        "US-008"
+      ],
+      "notes": "Operator story. No files are written to the repository by this story; all changes happen in external systems (GitHub, Netlify dashboard, DNS registrar). The repo-side preconditions (`netlify.toml` from US-008, `.gitmodules` from US-001) are already in place. Netlify's Git submodules toggle must be enabled in the console even though netlify.toml exists - the setting is per-site and lives outside the repo config. TTL 300s on the CNAME is chosen so that a bad cutover can be rolled back within minutes.",
+      "implementation": {
+        "files": [],
+        "approach": "Operator workflow executed from a terminal + the Netlify and registrar dashboards. Sequence: (1) create GitHub repo `newsite` under the operator's account, set as `origin`, push `main`; (2) in Netlify, Add new site -> Import from Git -> pick `newsite`; Netlify reads `netlify.toml` from US-008 for build command, publish dir, and HUGO_VERSION; (3) toggle Site settings -> Build & deploy -> Continuous Deployment -> Git submodules ON (one-time, console-only); (4) wait for first production build to finish green; (5) Site settings -> Domain management -> Add custom domain `new.marcelioleal.com`, choose Netlify's DNS-only option (no apex nameserver transfer); (6) at the registrar for `marcelioleal.com`, add `new 300 IN CNAME <netlify-subdomain>.netlify.app.`, clear any blocking CAA record; (7) wait 5-60 minutes for Let's Encrypt provisioning; (8) verify https:// serves and http:// redirects. The local `verify` segment reproduces Netlify's production build command against the repo to catch build-breaking regressions before they reach Netlify.",
+        "verify": "set -euo pipefail; test -f netlify.toml; git remote -v | grep -q 'github.com[:/].*newsite'; hugo --quiet --baseURL \"https://new.marcelioleal.com/\" --gc --minify; test -f public/index.html",
+        "guardRails": []
+      },
+      "verification": {
+        "strategy": "visual",
+        "status": "pending",
+        "url": "https://new.marcelioleal.com/",
+        "expect": "Home page renders with the language switcher and PT-BR content visible; requesting http://new.marcelioleal.com/ returns a redirect to https://new.marcelioleal.com/."
+      },
+      "gate": {
+        "type": "action",
+        "status": "pending",
+        "prompt": "Confirm the following steps are complete: (1) github.com/<user>/newsite exists and `main` is pushed; (2) Netlify site is created and the first production build is green; (3) Netlify Site settings -> Git submodules is ENABLED; (4) new.marcelioleal.com is added as a custom domain in Netlify; (5) the CNAME record exists at the registrar with TTL 300s and no CAA record blocks Let's Encrypt; (6) https://new.marcelioleal.com/ serves the home page AND http:// redirects to https://.",
+        "options": [
+          "All six confirmed",
+          "Blocked - report step"
+        ]
+      },
+      "tasks": [
+        "Create a public GitHub repository named `newsite` under the operator's account via the GitHub UI or `gh repo create`.",
+        "Add the GitHub repo as `origin` with `git remote add origin git@github.com:<user>/newsite.git` and push with `git push -u origin main`.",
+        "In Netlify, use Add new site -> Import from Git and select the `newsite` repository; let Netlify auto-detect `netlify.toml` from US-008.",
+        "In Netlify Site settings -> Build & deploy -> Continuous Deployment, enable the `Git submodules` toggle (one-time; required for the Hugo theme submodule from US-001 to be checked out).",
+        "Trigger (or let Netlify trigger) the first production build on `main`; confirm the deploy status is green and note the Netlify-assigned `<name>.netlify.app` subdomain.",
+        "In Netlify Site settings -> Domain management, add `new.marcelioleal.com` as a custom domain using the DNS-only option (do not transfer apex nameservers).",
+        "At the registrar for `marcelioleal.com`, add `new 300 IN CNAME <name>.netlify.app.` and remove any CAA record that would block Let's Encrypt issuance; leave all other records (including the apex) untouched.",
+        "Wait for Let's Encrypt provisioning (5-60 minutes); in Netlify Domain management, confirm HTTPS shows active for new.marcelioleal.com.",
+        "In a browser, open https://new.marcelioleal.com/ and verify the home page renders with the language switcher and PT-BR content; verify http://new.marcelioleal.com/ redirects to the https:// URL.",
+        "Run the local sanity check from the repo: `test -f netlify.toml && hugo --quiet --baseURL \"https://new.marcelioleal.com/\" --gc --minify && test -f public/index.html`."
+      ],
+      "id": "US-009",
+      "wave": 3
+    },
+    {
+      "title": "Ship Netlify security headers and repo meta files",
+      "description": "As a site operator, I want Netlify to emit a strict baseline of security headers and the repo to carry a complete README plus a pinned Hugo toolchain, so every page served from the migrated site ships with CSP/Referrer/Nosniff/Permissions protection and any contributor can clone, build, and deploy without tribal knowledge.",
+      "acceptanceCriteria": [
+        "A visitor loading any page on the Netlify-served site receives HTTP response headers that set Content-Security-Policy, Referrer-Policy, X-Content-Type-Options, and Permissions-Policy, so the browser enforces the baseline origin/sniffing/permissions posture the migration committed to (AC-new-6).",
+        "static/_headers exists at repo root and contains, for the path pattern '/*', all of these literal directives (verbatim): 'Content-Security-Policy: default-src '\\''self'\\''; img-src '\\''self'\\'' data: https:; style-src '\\''self'\\'' '\\''unsafe-inline'\\''; script-src '\\''self'\\'' '\\''unsafe-inline'\\''; font-src '\\''self'\\''; connect-src '\\''self'\\''', 'Referrer-Policy: strict-origin-when-cross-origin', 'X-Content-Type-Options: nosniff', and 'Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()'.",
+        "README.md exists at repo root and covers, each in its own passage: cloning the repo with recursive submodule init ('git clone ... && git submodule update --init --recursive'), running local dev with 'hugo server -D' at http://localhost:1313/, updating PaperMod via 'git submodule update --remote --merge themes/PaperMod' followed by a manual eyeball before commit, the deploy flow (pushing to main triggers Netlify production build; PRs get deploy previews), and that the Hugo version is pinned via .tool-versions (mise/asdf compatible).",
+        ".tool-versions at repo root pins 'hugo 0.170.1', matching the Hugo version declared in netlify.toml, so mise/asdf users and Netlify's build image converge on the same toolchain (AC-new-8).",
+        "'hugo --quiet' completes with exit 0 from a clean clone whose submodules have been initialized, proving neither the new _headers file nor the README change breaks the site build.",
+        "'hugo --quiet' exits 0 (this project ships no TypeScript or language-level typecheck; the Hugo build is the project's own syntax/consistency check for content and config)."
+      ],
+      "status": "pending",
+      "priority": 10,
+      "dependsOn": [
+        "US-001"
+      ],
+      "notes": "CSP intentionally allows 'unsafe-inline' in script-src because PaperMod's 404 page ships an inline language-detection script; tightening to a nonce- or hash-based policy would require patching the theme and is out of scope for Phase 1. Permissions-Policy includes 'interest-cohort=()' to opt out of FLoC-style cohort tracking. The .tool-versions file was authored by US-001 pinning hugo 0.170.1; this story only confirms its presence and version string, and re-authors it with the same value if (and only if) it is missing.",
+      "implementation": {
+        "files": [
+          "static/_headers",
+          "README.md",
+          ".tool-versions"
+        ],
+        "approach": "Create static/_headers as a Netlify custom-headers file using the path-prefix syntax (one '/*' block containing four indented header lines); Hugo copies anything under static/ into public/ verbatim at build time, so the file lands at the site root and Netlify applies it to every response. Author README.md as a plain Markdown document with sections for Clone, Local development, Updating the theme, Deploy, and Toolchain, so a new contributor can follow it top-to-bottom. Confirm .tool-versions carries 'hugo 0.170.1' on its own line (asdf/mise format: one 'tool version' pair per line); if US-001's file is already present and correct, leave it unchanged.",
+        "verify": "set -euo pipefail; test -f static/_headers; test -f README.md; test -f .tool-versions; grep -q \"Content-Security-Policy\" static/_headers; grep -q \"X-Content-Type-Options: nosniff\" static/_headers; grep -q \"Referrer-Policy:\" static/_headers; grep -q \"Permissions-Policy:\" static/_headers; grep -q \"default-src 'self'\" static/_headers; grep -q \"img-src 'self' data: https:\" static/_headers; grep -q \"interest-cohort=()\" static/_headers; grep -q \"^hugo 0.170.1$\" .tool-versions; grep -q \"0.170.1\" netlify.toml; grep -q \"git submodule update --init\" README.md; grep -q \"hugo server -D\" README.md; grep -q \"git submodule update --remote --merge themes/PaperMod\" README.md; grep -q \"Netlify\" README.md; grep -q \".tool-versions\" README.md; hugo --quiet"
+      },
+      "verification": {
+        "strategy": "test",
+        "status": "pending",
+        "expect": "static/_headers, README.md, and .tool-versions are present with the required directives, submodule/dev/deploy instructions, and pinned Hugo 0.170.1; 'hugo --quiet' builds the site cleanly."
+      },
+      "tasks": [
+        "Create static/_headers with a single '/*' path block containing the four security headers verbatim as specified by AC-new-6",
+        "Author README.md at repo root with Clone (with recursive submodules), Local dev (hugo server -D), Updating PaperMod, Deploy (Netlify main + PR previews), and Toolchain (.tool-versions) sections",
+        "Open .tool-versions and confirm the exact line 'hugo 0.170.1' is present; if the file is missing, create it with that single line",
+        "Cross-check .tool-versions against netlify.toml to confirm both pin Hugo 0.170.1 (AC-new-8)",
+        "Run 'hugo --quiet' from the repo root and confirm exit 0 to prove the new static file is copied to public/ and the build is clean",
+        "Run the full verify segment list to confirm every grep anchor matches on the pre-commit tree"
+      ],
+      "id": "US-010",
+      "wave": 2
+    },
+    {
+      "title": "Phase 1 exit verification: end-to-end bilingual + a11y + staging checklist",
+      "description": "As the migration owner, I want a recorded end-to-end walk-through of the staging deployment so that Phase 1 closes only when all four roadmap success criteria and criteria A-M are confirmed on https://new.marcelioleal.com/.",
+      "acceptanceCriteria": [
+        "Walking https://new.marcelioleal.com/ in a browser renders the PT home as a single-column ~720px layout on a light background in a system sans-serif font, the switcher is visible, and the walk-through is recorded as the gate's observed outcome.",
+        "Roadmap Phase 1 success criterion 1 is reaffirmed: the staging subdomain serves a single-column, sans-serif, light-background Hugo site inspired by eltonminetto.dev.",
+        "Roadmap Phase 1 success criterion 2 is reaffirmed: Hugo native i18n is configured with content/pt-br and content/en and a visible language switcher is present on home and about in both languages.",
+        "Roadmap Phase 1 success criterion 3 is reaffirmed: home and about render in both PT and EN at https://new.marcelioleal.com/, https://new.marcelioleal.com/en/, https://new.marcelioleal.com/sobre/, and https://new.marcelioleal.com/en/about/.",
+        "Roadmap Phase 1 success criterion 4 is reaffirmed: when a content page exists in only one language the switcher shows an only-in-PT or only-in-EN badge (disabled, no redirect) rather than hiding or redirecting away.",
+        "Criteria A-M are each walked and recorded with a pass/fail note: A home PT at /, B home EN at /en/ with nav labels swapped and switcher offering PT as alternate, C about PT at /sobre/, D about EN at /en/about/, E PT 404 at /does-not-exist/ (both language paragraphs visible with JS off; PT visible and EN hidden with JS on), F EN 404 at /en/does-not-exist/, G orphan-translation case shows disabled only-in-PT/EN badge with no redirect, H `curl -s https://new.marcelioleal.com/robots.txt | grep -q 'Disallow: /'` succeeds, I `curl -sI https://new.marcelioleal.com/` shows HSTS and CSP headers, J view-source on home confirms rel=canonical, hreflang alternates for pt-br and en and x-default, and og:title and og:image, K with JS disabled the switcher links still work and the 404 remains readable with both paragraphs visible, L at 375px mobile width content is legible, the switcher stays visible and there is no horizontal scroll, M keyboard-tabbing through nav and switcher shows a visible focus outline.",
+        "The repo-local smoke checks in `implementation.verify` all pass, confirming the files behind criteria A-M are still present and `hugo --quiet` builds the site cleanly.",
+        "`bash -n` passes on the inline verify script (the project is bash-only; no typed build step applies to this gate story)."
+      ],
+      "status": "pending",
+      "priority": 11,
+      "dependsOn": [
+        "US-003",
+        "US-004",
+        "US-006",
+        "US-008",
+        "US-009",
+        "US-007",
+        "US-010",
+        "US-001"
+      ],
+      "notes": "This is a verification gate story — its deliverable is the recorded walk-through captured against the gate prompt, not code. The `verify` block runs repo-local smoke assertions so a later regression that deletes a required file or breaks the Hugo build is caught locally, but the authoritative check for Phase 1 exit is the manual walk-through recorded via the `gate` field. Any failure in A-M or in any of the four roadmap success criteria blocks closing Phase 1.",
+      "implementation": {
+        "files": [
+          "layouts/partials/header.html",
+          "layouts/partials/extend_head.html",
+          "layouts/404.html",
+          "static/robots.txt",
+          "netlify.toml"
+        ],
+        "approach": "This story closes Phase 1 via a human walk-through of staging at https://new.marcelioleal.com/, recorded against the `gate` prompt below. The agent does not change code; it only runs the repo-local smoke checks in `verify` to confirm the files that back criteria A-M still exist and the site still builds, and then waits on the gate. The walk-through itself traverses the seven URLs listed in A-F plus the orphan-translation case in G, runs the two `curl` assertions in H and I against the live staging host, view-sources the home per J, toggles JS off in DevTools for E and K, resizes to 375px for L, and keyboard-tabs the nav and switcher for M. Each of criteria A-M and each of the four roadmap success criteria is recorded with a pass/fail note before the gate option is selected.",
+        "verify": "set -euo pipefail\ntest -f layouts/partials/header.html\ntest -f layouts/partials/extend_head.html\ntest -f layouts/404.html\ntest -f static/robots.txt\ntest -f netlify.toml\ngrep -q 'Disallow: /' static/robots.txt\ngrep -qE \"rel=[\\\"']alternate[\\\"']\" layouts/partials/extend_head.html\ngrep -q 'canonical' layouts/partials/extend_head.html\ngrep -qE 'orphan|aria-disabled' layouts/partials/header.html\nhugo --quiet"
+      },
+      "verification": {
+        "strategy": "visual",
+        "status": "pending",
+        "url": "https://new.marcelioleal.com/",
+        "expect": "All four Phase 1 roadmap success criteria and criteria A-M are confirmed on the staging deployment; any failure blocks closing Phase 1."
+      },
+      "gate": {
+        "type": "visual_review",
+        "status": "pending",
+        "prompt": "Walk the Phase 1 staging deployment end-to-end per acceptance criteria A-M on https://new.marcelioleal.com/. Reaffirm all four roadmap success criteria (single-column light sans-serif site; Hugo i18n with pt-br and en and a visible switcher; home and about in both languages; orphan-translation shows only-in-PT/EN badge). Any failure blocks closing Phase 1.",
+        "options": [
+          "All criteria A-M pass",
+          "Blocked - list failures"
+        ]
+      },
+      "tasks": [
+        "Run the repo-local smoke checks in implementation.verify and confirm all five files exist, robots.txt disallows /, extend_head.html declares rel=alternate and canonical, header.html carries the orphan/aria-disabled marker, and hugo --quiet builds cleanly",
+        "Walk criterion A: load https://new.marcelioleal.com/ and record whether PT home renders single-column ~720px on a light background in system sans-serif with the switcher visible",
+        "Walk criteria B, C, D: load /en/, /sobre/, /en/about/ in turn and record that EN home swaps nav labels and offers PT in the switcher, PT about renders, and EN about renders",
+        "Walk criteria E and F: load /does-not-exist/ with JS off then on and confirm both-paragraphs visible then PT-only; load /en/does-not-exist/ and confirm the EN 404 renders",
+        "Walk criterion G: identify or stage an orphan-translation content page and confirm the switcher shows the only-in-PT/EN disabled badge with no redirect",
+        "Walk criteria H and I: run curl -s https://new.marcelioleal.com/robots.txt | grep -q 'Disallow: /' and curl -sI https://new.marcelioleal.com/ and confirm HSTS and CSP headers are present",
+        "Walk criterion J: view-source on the home and confirm rel=canonical, hreflang alternates for pt-br and en and x-default, and og:title and og:image tags",
+        "Walk criteria K, L, M: disable JS in DevTools and confirm switcher links still navigate and the 404 remains readable; resize to 375px and confirm legibility with no horizontal scroll; keyboard-tab through nav and switcher and confirm a visible focus outline",
+        "Reaffirm each of the four roadmap Phase 1 success criteria against the recorded walk-through and record a pass note for each",
+        "Resolve the gate: select 'All criteria A-M pass' only when every criterion and all four roadmap success criteria passed; otherwise select 'Blocked - list failures' and list each failure"
+      ],
+      "id": "US-011",
+      "wave": 4
+    }
+  ]
+}

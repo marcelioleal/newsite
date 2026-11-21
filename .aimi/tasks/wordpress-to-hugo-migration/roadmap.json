@@ -1,0 +1,139 @@
+{
+  "roadmapVersion": "2.0",
+  "feature": "wordpress-to-hugo-migration",
+  "createdAt": "2026-11-21T16:42:17Z",
+  "brainstormPath": ".aimi/brainstorms/2026-11-21-wordpress-to-hugo-migration-brainstorm.md",
+  "integrationBranch": null,
+  "phases": [
+    {
+      "id": 1,
+      "name": "Foundation",
+      "slug": "foundation",
+      "goal": "A Hugo site styled like eltonminetto.dev is live on a staging subdomain with bilingual scaffolding, home, about, and 404 pages.",
+      "successCriteria": [
+        "Staging subdomain serves a single-column, sans-serif, light-background Hugo site inspired by eltonminetto.dev.",
+        "Hugo native i18n is configured with content/pt-br and content/en and a visible language switcher.",
+        "Home and About render in both languages.",
+        "The switcher shows an only-in-PT/EN badge when a translation is missing instead of hiding or redirecting away."
+      ],
+      "dependsOn": [],
+      "creates": [
+        {
+          "identity": "hugo_site_skeleton",
+          "description": "Hugo site based on PaperMod with layouts simplified to a minimal single-column sans-serif aesthetic"
+        },
+        {
+          "identity": "netlify_staging_deploy",
+          "description": "Netlify project linked to the GitHub newsite repo, serving the staging subdomain"
+        },
+        {
+          "identity": "language_switcher",
+          "description": "Bilingual switcher that renders an only-in- badge when the translation is missing"
+        }
+      ],
+      "needs": [],
+      "areas": [
+        "themes/**",
+        "layouts/**",
+        "content/pt-br/**",
+        "content/en/**",
+        "hugo.toml",
+        "netlify.toml"
+      ],
+      "notes": null,
+      "branch": null,
+      "dir": "phase-1-foundation",
+      "status": "planned",
+      "claim": null
+    },
+    {
+      "id": 2,
+      "name": "Content Migration",
+      "slug": "content-migration",
+      "goal": "Every WordPress post, page, and image is versioned in the Hugo repo and renders on staging, including Recomendacoes sub-pages and the TCC/ClassGenerator pair.",
+      "successCriteria": [
+        "All WordPress posts are converted to Markdown with front-matter (title, date, tags, language) under content//posts/.",
+        "All WordPress media is downloaded and versioned under static/images/ and referenced from Markdown.",
+        "Recomendacoes renders with sub-pages for Books/Cafes, Kitesurf, Musica, Sites e Podcasts, Posts Especiais, and Arte em SP where content exists.",
+        "TCC/ClassGenerator exists in both PT and EN variants as standalone pages."
+      ],
+      "dependsOn": [
+        1
+      ],
+      "creates": [
+        {
+          "identity": "migrated_posts",
+          "description": "WordPress posts converted to Markdown files under content//posts/"
+        },
+        {
+          "identity": "migrated_media",
+          "description": "WordPress media downloaded and versioned under static/images/"
+        },
+        {
+          "identity": "recomendacoes_section",
+          "description": "Recomendacoes page with its sub-pages rendered in the languages where content exists"
+        },
+        {
+          "identity": "tcc_pages",
+          "description": "TCC/ClassGenerator pages in PT and EN as standalone content"
+        }
+      ],
+      "needs": [
+        {
+          "identity": "hugo_site_skeleton",
+          "description": "Layouts and i18n setup from Phase 1"
+        }
+      ],
+      "areas": [
+        "content/**",
+        "static/images/**",
+        "data/**"
+      ],
+      "notes": null,
+      "branch": null,
+      "dir": "phase-2-content-migration",
+      "status": "pending",
+      "claim": null
+    },
+    {
+      "id": 3,
+      "name": "SEO Preservation and Cutover",
+      "slug": "seo-cutover",
+      "goal": "marcelioleal.com serves the Hugo site without breaking inbound links and WordPress is decommissioned.",
+      "successCriteria": [
+        "Every WordPress post URL is either preserved as the same slug on Hugo or served via a 301 redirect.",
+        "A Netlify _redirects file covers every slug change and is verified end-to-end with a crawler.",
+        "DNS of marcelioleal.com points at Netlify production and WordPress is turned off.",
+        "Google Search Console reports no new 404 errors after the cutover window."
+      ],
+      "dependsOn": [
+        2
+      ],
+      "creates": [
+        {
+          "identity": "redirect_map",
+          "description": "Netlify _redirects file mapping legacy WordPress URLs to Hugo URLs"
+        },
+        {
+          "identity": "production_cutover",
+          "description": "Production deployment serving marcelioleal.com with WordPress decommissioned"
+        }
+      ],
+      "needs": [
+        {
+          "identity": "migrated_posts",
+          "description": "Hugo posts with final slugs so redirects can be authored"
+        }
+      ],
+      "areas": [
+        "static/_redirects",
+        "netlify.toml"
+      ],
+      "notes": null,
+      "branch": null,
+      "dir": "phase-3-seo-cutover",
+      "status": "pending",
+      "claim": null
+    }
+  ]
+}
