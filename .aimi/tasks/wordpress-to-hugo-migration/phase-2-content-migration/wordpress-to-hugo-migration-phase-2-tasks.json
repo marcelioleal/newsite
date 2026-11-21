@@ -1,0 +1,606 @@
+{
+  "schemaVersion": "3.3",
+  "metadata": {
+    "title": "feat: Phase 2 Content Migration — 107 WordPress posts, 20 pages, 134 media (wordpress-to-hugo-migration)",
+    "type": "feat",
+    "branchName": "feat/wordpress-to-hugo-migration-phase-2-content-migration",
+    "createdAt": "2026-11-21",
+    "planPath": null,
+    "roadmapPath": ".aimi/tasks/wordpress-to-hugo-migration/roadmap.json",
+    "phase": {
+      "id": 2,
+      "dir": "phase-2-content-migration"
+    },
+    "pluginVersion": "1.156.0",
+    "researchPaths": [
+      ".aimi/research/2026-11-21-wordpress-to-hugo-mig-phase-2-content-migration-202803-codebase.md",
+      ".aimi/research/2026-11-21-wordpress-to-hugo-mig-phase-2-content-migration-202803-best-practices.md"
+    ],
+    "brainstormPath": ".aimi/brainstorms/2026-11-21-wordpress-to-hugo-migration-brainstorm.md",
+    "researchDepth": "deep",
+    "decisions": [
+      {
+        "anchor": "wp_to_hugo_exporter",
+        "source": "phase2Research",
+        "text": "Use WordPress.com public REST API + pandoc + Python regex post-processor via scripts/wp_to_hugo.py. NO third-party exporter plugin.",
+        "resolution": "resolved"
+      },
+      {
+        "anchor": "conversion_pipeline",
+        "source": "phase2Research",
+        "text": "pandoc --from html --to gfm --wrap=none + 10-regex Python post-processor (Gutenberg comments, [caption]/[gallery]/[embed]/[youtube] shortcodes, wp-block-image wrappers, SyntaxHighlighter, smart-quotes, wpautop artifacts, newline collapse).",
+        "resolution": "resolved"
+      },
+      {
+        "anchor": "language_detection",
+        "source": "phase2Research",
+        "text": "lingua-language-detector + hard category override (22748652 Uncategorized-en + 22748979 Product Management = EN; else PT).",
+        "resolution": "resolved"
+      },
+      {
+        "anchor": "permalinks",
+        "source": "phase2Research",
+        "text": "posts = /:slug/ in hugo.toml [permalinks] to match WordPress URLs 1:1. Pages keep Hugo default.",
+        "resolution": "resolved"
+      },
+      {
+        "anchor": "menu_strategy",
+        "source": "phase2Research",
+        "text": "Per-language [[languages.X.menu.main]] entries drive nav; header.html refactored to range site.Menus.main. PT: Sobre + Recomendações; EN: About + Recommendations.",
+        "resolution": "resolved"
+      },
+      {
+        "anchor": "content_layout",
+        "source": "phase2Research",
+        "text": "Hugo page bundles (dir + index.md + co-located media) not flat .md. Branch bundles (_index.md) for Recomendacoes/Recommendations section listings.",
+        "resolution": "resolved"
+      },
+      {
+        "anchor": "media_paths",
+        "source": "phase2Research",
+        "text": "Images: static/images/<YYYY>/<MM>/<basename> matching WP upload path. Videos: static/videos/<basename> flat. PDFs: static/assets/<basename> flat. HEIC converted to JPEG via heif-convert -q 92.",
+        "resolution": "resolved"
+      },
+      {
+        "anchor": "videopress",
+        "source": "phase2Research",
+        "text": "Download VideoPress MP4s from videos.files.wordpress.com into static/videos/ to self-host; WordPress site decommissioned in Phase 3 would otherwise break external video references.",
+        "resolution": "resolved"
+      },
+      {
+        "anchor": "translation_keys",
+        "source": "phase2Research",
+        "text": "Shared translationKey front-matter for pairs with divergent slugs: tcc-classgenerator (TCC PT + Thesis EN), coffee (cafes PT + coffee EN), books (livros PT + books EN), recomendacoes (Recomendacoes PT + Recommendations EN). File-path convention everywhere else.",
+        "resolution": "resolved"
+      },
+      {
+        "anchor": "home_page_dated_list",
+        "source": "phase2Research",
+        "text": "mainSections=[\"posts\"] in hugo.toml [params]; custom layouts/_default/list.html renders home as chronological dated list (eltonminetto.dev aesthetic), paginated 50/page.",
+        "resolution": "resolved"
+      },
+      {
+        "anchor": "front_matter_dialect",
+        "source": "phase2Codebase",
+        "text": "YAML --- front-matter (matches Phase 1 shipped content). Archetype uses TOML +++ but that archetype is not consulted during migration since the conversion script writes YAML.",
+        "resolution": "resolved"
+      }
+    ]
+  },
+  "userStories": [
+    {
+      "title": "Extend hugo.toml with permalinks, per-language menus, and mainSections",
+      "description": "As a Hugo site maintainer, I want hugo.toml to declare slug-only permalinks for posts, per-language main menu entries for About/Sobre and Recommendations/Recomendações, and mainSections=['posts'] so that migrated WordPress URLs stay 1:1, both language menus render, and the home page lists only dated posts.",
+      "acceptanceCriteria": [
+        "After the edit, running `hugo --quiet` from the repository root builds the site without error and `tomllib.load` parses hugo.toml, exposing `permalinks.posts == '/:slug/'`, `params.mainSections == ['posts']`, and a non-empty `languages.pt-br.menu.main` and `languages.en.menu.main` — this is the end-to-end outcome a maintainer observes when they open the generated site and see WP-style slug URLs on posts and the translated menu per language.",
+        "hugo.toml declares a top-level `[permalinks]` table containing exactly `posts = \"/:slug/\"` so post URLs match the WordPress /:slug/ shape and pages continue to be served at their section path (Hugo default, unchanged).",
+        "hugo.toml declares two array-of-tables menu blocks: `[[languages.pt-br.menu.main]]` with the pair {name=\"Sobre\", pageRef=\"/about\", weight=10} and {name=\"Recomendações\", pageRef=\"/recomendacoes\", weight=20}; and `[[languages.en.menu.main]]` with {name=\"About\", pageRef=\"/about\", weight=10} and {name=\"Recommendations\", pageRef=\"/recommendations\", weight=20}.",
+        "hugo.toml's existing `[params]` table gains `mainSections = [\"posts\"]` so `.Site.RegularPages` on the home page filters to the posts section only; the eight pre-existing params (disableThemeToggle, ShowBreadCrumbs, ShowShareButtons, ShowReadingTime, ShowCodeCopyButtons, defaultTheme, ShowPostNavLinks, description, images) and the `[params.profileMode]` subtable remain unchanged.",
+        "Syntax check passes: `python3 -c \"import tomllib; tomllib.load(open('hugo.toml','rb'))\"` exits 0, confirming hugo.toml is valid TOML after the edits."
+      ],
+      "status": "pending",
+      "priority": 1,
+      "dependsOn": [],
+      "notes": "pageRef='/about' resolves to /sobre/ in PT via the slug front-matter set in Phase 1 and to /en/about/ in EN; pageRef='/recomendacoes' resolves to /recomendacoes/ in PT, and the EN block's pageRef='/recommendations' resolves to /en/recommendations/.",
+      "implementation": {
+        "files": [
+          "hugo.toml"
+        ],
+        "approach": "Append three TOML blocks to the end of hugo.toml without touching the existing baseURL, title, theme, defaultContentLanguage, [languages.*] or [params]/[params.profileMode] tables. Block 1: top-level `[permalinks]` with `posts = \"/:slug/\"` (slug-only, matching WordPress). Block 2: four `[[languages.pt-br.menu.main]]` / `[[languages.en.menu.main]]` array-of-tables entries for Sobre/About + Recomendações/Recommendations with pageRef targeting content paths ('/about' and '/recomendacoes'/'/recommendations') so Hugo resolves them through the slug front-matter laid down in Phase 1. Block 3: add `mainSections = [\"posts\"]` as a key inside the existing `[params]` table (place the key below the existing params keys, above `[params.profileMode]`, so it remains inside `[params]` and does not land under the profileMode subtable). See research example 2 in 2026-11-21-wordpress-to-hugo-mig-phase-2-content-migration-202803-best-practices.md for the verbatim shape of these blocks.",
+        "verify": "set -e && grep -q '^\\[permalinks\\]' hugo.toml && grep -q 'posts *= *\"/:slug/\"' hugo.toml && grep -q 'mainSections *= *\\[\"posts\"\\]' hugo.toml && grep -q '\\[\\[languages.pt-br.menu.main\\]\\]' hugo.toml && grep -q '\\[\\[languages.en.menu.main\\]\\]' hugo.toml && grep -q 'name = \"Recomendações\"' hugo.toml && grep -q 'name = \"Recommendations\"' hugo.toml && grep -q 'name = \"Sobre\"' hugo.toml && grep -q 'name = \"About\"' hugo.toml && python3 -c \"import tomllib; d=tomllib.load(open('hugo.toml','rb')); assert d.get('permalinks',{}).get('posts') == '/:slug/', 'missing permalinks.posts'; assert 'posts' in d['params'].get('mainSections',[]), 'missing mainSections'; pt=d['languages']['pt-br']['menu']['main']; en=d['languages']['en']['menu']['main']; assert any(e['name']=='Sobre' for e in pt) and any(e['name']=='Recomendações' for e in pt), 'pt menu incomplete'; assert any(e['name']=='About' for e in en) and any(e['name']=='Recommendations' for e in en), 'en menu incomplete'; print('OK')\" && hugo --quiet"
+      },
+      "verification": {
+        "strategy": "test",
+        "status": "pending",
+        "expect": "hugo.toml parses as valid TOML, declares permalinks.posts='/:slug/', params.mainSections=['posts'], and two non-empty per-language menu.main arrays; `hugo --quiet` builds the site without error."
+      },
+      "tasks": [
+        "Open hugo.toml and locate the end of the file as well as the existing `[params]` table boundary (above `[params.profileMode]`)",
+        "Append a top-level `[permalinks]` block containing `posts = \"/:slug/\"` at the end of the file",
+        "Append `[[languages.pt-br.menu.main]]` array-of-tables entries: Sobre (pageRef=\"/about\", weight=10) and Recomendações (pageRef=\"/recomendacoes\", weight=20)",
+        "Append `[[languages.en.menu.main]]` array-of-tables entries: About (pageRef=\"/about\", weight=10) and Recommendations (pageRef=\"/recommendations\", weight=20)",
+        "Add `mainSections = [\"posts\"]` as a key inside the existing `[params]` table, placed above `[params.profileMode]` so it stays scoped to [params]",
+        "Run `python3 -c \"import tomllib; tomllib.load(open('hugo.toml','rb'))\"` to confirm the file remains valid TOML",
+        "Run `hugo --quiet` from the repo root to confirm the site builds with the new configuration",
+        "Run the full `implementation.verify` command string locally to confirm every grep + tomllib assertion passes"
+      ],
+      "id": "US-001",
+      "wave": 1
+    },
+    {
+      "title": "Refactor header.html to a menu-driven nav with the orphan-aware switcher preserved",
+      "description": "As a site visitor on either language, I want the header nav to render the per-language menu entries declared in hugo.toml so that PT and EN each show their own slugs (/sobre/, /recomendacoes/ and /en/about/, /en/recommendations/) instead of a single hardcoded About link.",
+      "acceptanceCriteria": [
+        "A visitor loading the PT home sees header nav links pointing to /sobre/ and (once story 07 lands) /recomendacoes/, and a visitor loading the EN home sees header nav links pointing to /en/about/ and (once story 07 lands) /en/recommendations/ — both driven by the per-language site.Menus.main entries from hugo.toml rather than by a hardcoded site.GetPage \"/about\" lookup.",
+        "layouts/partials/header.html replaces the single `{{ with site.GetPage \"/about\" }}<li>...<a href=\"{{ .RelPermalink }}\">{{ i18n \"nav_about\" }}</a>...</li>{{ end }}` block with `{{ range site.Menus.main }}<li><a href=\"{{ .URL }}\">{{ .Name }}</a></li>{{ end }}`, and no `site.GetPage \"/about\"` call remains in the file.",
+        "The orphan-aware language switcher block in layouts/partials/header.html stays byte-identical to Phase 1: the `site.Languages` loop, the `aria-current` span for the current language, the inter-language `<a>` for translated pages via `.AllTranslations`, and the `aria-disabled` `<span class=\"lang-badge\">` rendered with `{{ printf (i18n \"only_in_language\") $lang.Label }}` for orphans are all preserved unchanged.",
+        "hugo --quiet exits 0 with no warnings emitted to stderr.",
+        "The project's syntax check passes — `hugo --quiet` parses layouts/partials/header.html as a valid Go template with no parse error."
+      ],
+      "status": "pending",
+      "priority": 2,
+      "dependsOn": [
+        "US-001"
+      ],
+      "notes": "Verify stops at `hugo --quiet` for this story. The four `grep -q 'href=\"/sobre/\"'`-style checks against public/index.html and public/en/index.html depend on the Recomendações section content existing on disk, which story 07 creates; story 07's own verify and story 10's exit verification re-check the full rendered nav. Running those greps here would fail for a reason unrelated to this story's edit.",
+      "implementation": {
+        "files": [
+          "layouts/partials/header.html"
+        ],
+        "approach": "Open layouts/partials/header.html and locate the single `<li>` that currently wraps `{{ with site.GetPage \"/about\" }}...<a href=\"{{ .RelPermalink }}\">{{ i18n \"nav_about\" }}</a>...{{ end }}`. Replace that one `<li>` with a `{{ range site.Menus.main }}<li><a href=\"{{ .URL }}\">{{ .Name }}</a></li>{{ end }}` block — Hugo's menu system (populated per-language from the `[languages.pt.menu.main]` / `[languages.en.menu.main]` tables that story 01 added to hugo.toml) resolves `.URL` to the already-language-prefixed relative URL of each menu entry and `.Name` to the localized label, so no `i18n` call is needed here. Do not touch the logo `<li>` above or the language-switcher block below: the `site.Languages` loop, the current-language `aria-current` span, the inter-language `<a>` for `.AllTranslations`, and the `aria-disabled` orphan `<span class=\"lang-badge\">` with its `printf (i18n \"only_in_language\") $lang.Label` must remain byte-identical to Phase 1.",
+        "verify": "set -euo pipefail\ngrep -q 'range site.Menus.main' layouts/partials/header.html\n! grep -q 'site.GetPage \"/about\"' layouts/partials/header.html\ngrep -q 'site.Languages' layouts/partials/header.html\ngrep -q 'aria-disabled' layouts/partials/header.html\ngrep -q 'only_in_language' layouts/partials/header.html\nhugo --quiet",
+        "guardRails": [
+          "hugo --quiet"
+        ]
+      },
+      "verification": {
+        "strategy": "test",
+        "status": "pending",
+        "expect": "layouts/partials/header.html uses `range site.Menus.main` in place of the old `site.GetPage \"/about\"` block, the orphan-aware language switcher block is preserved, and `hugo --quiet` builds the site with no warnings."
+      },
+      "tasks": [
+        "Open layouts/partials/header.html and locate the current `<li>` wrapping the `{{ with site.GetPage \"/about\" }}` block",
+        "Replace that single `<li>` with `{{ range site.Menus.main }}<li><a href=\"{{ .URL }}\">{{ .Name }}</a></li>{{ end }}`",
+        "Confirm the logo `<li>` above the menu loop is untouched",
+        "Confirm the language-switcher block below (site.Languages loop, aria-current span, inter-language <a>, aria-disabled lang-badge with only_in_language printf) is byte-identical to Phase 1",
+        "Run `hugo --quiet` from the project root and confirm exit 0 with no warnings",
+        "Run the verify segments above locally to confirm each grep passes"
+      ],
+      "id": "US-002",
+      "wave": 2
+    },
+    {
+      "title": "Author scripts/wp_to_hugo.py: WP MCP fetch, pandoc convert, Hugo bundle writer",
+      "description": "As a content migration operator, I want a Python script that reads a manifest.json and produces Hugo page bundles and media files from marcelioleal.com's WordPress REST API so that posts, pages, and media are converted to Markdown with YAML front-matter in one idempotent, scriptable pass.",
+      "acceptanceCriteria": [
+        "Running `python3 scripts/wp_to_hugo.py --manifest <path>` against a two-item manifest (one post id, one media id) produces, on disk, content/<lang>/posts/<slug>/index.md (page bundle with YAML front-matter + Markdown body) and static/images/<year>/<month>/<filename> (downloaded media), proving the end-to-end WP→Hugo conversion pipeline works for the content-migration operator persona.",
+        "Script reads env var WP_SITE (defaults to marcelioleal.com) and OPTIONAL WPCOM_TOKEN; when WPCOM_TOKEN is set it adds `Authorization: Bearer <token>` to REST calls, when unset it calls the public REST API unauthenticated (public posts succeed; private/draft posts return 401 and are counted as failed).",
+        "Script accepts `--manifest <path>` naming a JSON file whose top-level is an array of {id:int, kind:'post'|'page'|'media', lang:'pt-br'|'en'|'auto', slug:str, path?:str}; items with kind='post'|'page' are fetched from https://public-api.wordpress.com/wp/v2/sites/$WP_SITE/{kind}s/{id} and must capture rendered HTML from content.rendered, title.rendered, date, slug, categories (ids), tags (ids), excerpt.rendered.",
+        "For each post/page the rendered HTML is piped through `pandoc --from html --to gfm --wrap=none` (stdin→stdout) via subprocess.run, and the resulting Markdown is then passed through a WP-residue post-processor that applies these 10 regex classes in order: (1) strip <!-- wp:* --> and <!-- /wp:* --> Gutenberg block comments, (2) strip [caption ...]...[/caption] shortcodes keeping inner content, (3) strip [gallery ...] shortcodes, (4) strip [embed]...[/embed] and [youtube ...] shortcodes, (5) unwrap wp-block-image <figure> wrappers to leave only the img/caption, (6) drop VideoPress <iframe> tags, (7) unwrap SyntaxHighlighter `brush:` <pre> wrappers, (8) convert WP smart-quotes (“”‘’), em-dash entities and horizontal-ellipsis entities back to UTF-8, (9) strip trailing whitespace from each paragraph, (10) collapse 3+ consecutive newlines to exactly 2.",
+        "On script startup, both /wp/v2/sites/$WP_SITE/categories and /tags are fetched once (paginated to exhaustion) into in-memory id→slug maps; each post's categories[] and tags[] id arrays are resolved to slug arrays and emitted into the YAML front-matter as `categories: [slug1, slug2]` and `tags: [slug1, slug2]`.",
+        "When a manifest item has lang='auto', language is detected as follows: hard-override ids 22748652 and 22748979 appearing in the post's categories[] force lang='en'; otherwise the first 500 chars of the post-processed Markdown body are passed to lingua-language-detector's Language.PORTUGUESE-vs-Language.ENGLISH detector, with the returned language mapped to 'pt-br' or 'en' (ties or detection failures default to 'pt-br').",
+        "The page bundle is written to content/<lang>/posts/<slug>/index.md (parent dirs created with mkdir -p / os.makedirs(exist_ok=True)) with YAML front-matter delimited by `---` lines carrying exactly these keys in order: title (double-quoted, inner double-quotes escaped), date (ISO8601 from the REST `date` field), slug, wp_id, categories, tags, and optionally translationKey when the manifest item includes one, followed by a blank line and then the post-processed Markdown body.",
+        "For kind='media' items, the REST endpoint /wp/v2/sites/$WP_SITE/media/{id} is fetched and source_url is downloaded via requests streaming to static/images/<year>/<month>/<filename> for image/*, static/videos/<year>/<month>/<filename> for video/*, and static/assets/<year>/<month>/<filename> for application/pdf (year/month derived from the media item's `date`); HEIC/HEIF files are converted to JPEG via `heif-convert -q 92 <src> <dst>.jpg` and the original filename stem is preserved.",
+        "The script is idempotent: when the target output path (index.md for posts/pages, the downloaded filename for media) already exists on disk, the item is skipped and logged as `SKIP <path>` to stderr; passing `--force` overrides this and overwrites existing targets.",
+        "Passing `--dry-run` causes the script to perform all REST fetches and pandoc conversions but to print `WOULD WRITE <path> (<bytes> bytes)` to stderr for each target instead of writing it, and to make zero disk mutations under content/, static/, or elsewhere.",
+        "All progress and error logging goes to stderr (never stdout); on exit the script prints a final summary line to stderr of the form `summary: fetched=N converted=N written=N skipped=N failed=N` and exits 0 iff failed=0, exits 1 otherwise.",
+        "scripts/README.md documents the three-command installation prerequisite: (1) `brew install pandoc libheif`, (2) `pip3 install --user --break-system-packages requests pyyaml lingua-language-detector`, and (3) the optional `export WPCOM_TOKEN=...` env var, plus a usage example showing `python3 scripts/wp_to_hugo.py --manifest manifest.json --dry-run` and a note explaining that the public REST API is unauthenticated for public posts so WPCOM_TOKEN is optional. README references the WP source path convention `wp-content/uploads/<year>/<month>/<file>` that mirrors into `static/images/<year>/<month>/<file>`.",
+        "`python3 -c \"import ast; ast.parse(open('scripts/wp_to_hugo.py').read())\"` parses cleanly (the script is syntactically valid Python 3).",
+        "The script accepts --kind post|page|media as an argparse flag; when present it filters the manifest to entries of that kind, letting stories 04/05/07/08 drive the same script with kind-specific manifests without hand-filtering.",
+        "The script detects branch-bundle targets: when a manifest entry's target_path ends in '/_index.md' (or carries 'type: branch_bundle'), the script writes an _index.md file (Hugo branch bundle) instead of index.md (leaf bundle); this lets story 07 migrate the Recomendacoes and Recommendations listing pages as proper Hugo section bundles.",
+        "Media target paths: images route to static/images/<year>/<month>/<basename> (year/month derived from the WP upload URL path); videos (video/videopress, video/*) route to static/videos/<basename> (no year/month — flat); PDFs (application/pdf) route to static/assets/<basename> (no year/month — flat). This matches the regex-rewrite assumptions in stories 05 and 06."
+      ],
+      "status": "pending",
+      "priority": 3,
+      "dependsOn": [],
+      "notes": "The outline mandates script responsibilities 1-12; each is mapped 1:1 to an acceptanceCriteria entry above. The 10 WP-residue regex classes are enumerated verbatim in one criterion (per field-ownership: one criterion may enumerate cases). lingua-language-detector is the specified detector (not langdetect).",
+      "implementation": {
+        "files": [
+          "scripts/wp_to_hugo.py",
+          "scripts/README.md"
+        ],
+        "approach": "Single-file CLI in Python 3 using argparse (--manifest, --force, --dry-run, --help). Structure: (1) parse_args → load manifest JSON → fetch category+tag id→slug maps once via paginated GET to /wp/v2/sites/$WP_SITE/categories?per_page=100&page=N (break when response is empty). (2) Dispatch loop over manifest items calling handle_post(), handle_page(), or handle_media() based on kind. (3) handle_post/page: GET /{kind}s/{id}, subprocess.run(['pandoc','--from','html','--to','gfm','--wrap=none'], input=rendered_html, text=True, capture_output=True), then run postprocess_markdown(md) which applies the 10 regex passes in a fixed order, then resolve_lang() (hard-override category ids 22748652/22748979 → 'en', else lingua Language.PORTUGUESE vs Language.ENGLISH on md[:500]), then write_bundle() emitting YAML front-matter via pyyaml.safe_dump with sort_keys=False and a hand-written '---\\n' envelope (pyyaml does not emit the triple-dash). (4) handle_media: GET /media/{id}, derive year/month from date, route by mime_type prefix (image/ → static/images, video/ → static/videos, application/pdf → static/assets), requests.get(source_url, stream=True) chunked to disk, and when the filename ends .heic/.HEIC run subprocess.run(['heif-convert','-q','92',src,dst_jpg]) and delete the HEIC. (5) Idempotence gate: each write path checks os.path.exists(target) and short-circuits unless args.force. (6) --dry-run short-circuits at the write boundary, printing WOULD WRITE lines. (7) Counters incremented in each handler; finally block prints summary and sys.exit(0 if failed==0 else 1). Make the file executable with chmod +x via a shebang `#!/usr/bin/env python3`.",
+        "verify": "test -f scripts/wp_to_hugo.py && test -x scripts/wp_to_hugo.py && test -f scripts/README.md && python3 scripts/wp_to_hugo.py --help 2>&1 | grep -q -E 'manifest|dry-run' && python3 -c \"import ast; ast.parse(open('scripts/wp_to_hugo.py').read())\" && grep -q 'pandoc' scripts/wp_to_hugo.py && grep -q 'heif-convert' scripts/wp_to_hugo.py && grep -q -E 'wp:|Gutenberg|shortcode' scripts/wp_to_hugo.py && grep -q 'lingua' scripts/wp_to_hugo.py && grep -q 'wp-content/uploads' scripts/README.md",
+        "outputs": []
+      },
+      "verification": {
+        "strategy": "test",
+        "status": "pending",
+        "expect": "scripts/wp_to_hugo.py exists, is executable, parses as valid Python 3, exposes --manifest and --dry-run flags via --help, and contains the pandoc, heif-convert, Gutenberg/shortcode handling, and lingua detector hooks. scripts/README.md documents the installation and the wp-content/uploads path convention."
+      },
+      "skills": [
+        "typescript-node-conventions"
+      ],
+      "tasks": [
+        "Create scripts/wp_to_hugo.py with `#!/usr/bin/env python3` shebang and chmod +x it; scaffold argparse with --manifest (required), --force, --dry-run, --help",
+        "Implement load_manifest(path) returning a list of dicts with id/kind/lang/slug/path validated by shape",
+        "Implement fetch_taxonomy_maps(wp_site) that paginates /wp/v2/sites/$WP_SITE/categories and /tags with per_page=100 and returns two id→slug dicts",
+        "Implement http_get(url) wrapping requests.get that reads WPCOM_TOKEN from env and attaches `Authorization: Bearer <token>` when set, else makes an unauthenticated call",
+        "Implement handle_post_or_page(item, maps) that fetches rendered HTML, runs pandoc via subprocess.run, calls postprocess_markdown, resolves language, and calls write_bundle",
+        "Implement postprocess_markdown(md) applying the 10 WP-residue regex classes in the order listed in the acceptance criterion (Gutenberg comments → shortcodes → wp-block-image → VideoPress iframes → SyntaxHighlighter → smart-quote decoding → trailing whitespace → newline collapse)",
+        "Implement resolve_lang(item, category_ids, md_body) with hard-override ids 22748652 and 22748979 forcing 'en' and otherwise calling lingua-language-detector on md_body[:500]",
+        "Implement write_bundle(lang, slug, front_matter_dict, body, force, dry_run) that mkdirs content/<lang>/posts/<slug>/, writes YAML front-matter (ordered keys: title, date, slug, wp_id, categories, tags, translationKey?) between `---` delimiters, then the Markdown body",
+        "Implement handle_media(item, maps) routing image/* → static/images, video/* → static/videos, application/pdf → static/assets by year/month, with heif-convert fallback for HEIC files and preserving the original filename stem",
+        "Wire the idempotence gate: every write path skips when os.path.exists(target) unless args.force, logging `SKIP <path>` to stderr",
+        "Wire --dry-run: replace every disk write with `print('WOULD WRITE', path, '(', bytes, 'bytes)', file=sys.stderr)` and perform zero mutations under content/ or static/",
+        "Wire counters and final summary: print `summary: fetched=N converted=N written=N skipped=N failed=N` to stderr and sys.exit(0 if failed==0 else 1)",
+        "Create scripts/README.md documenting the three install commands (brew install pandoc libheif; pip3 install --user --break-system-packages requests pyyaml lingua-language-detector; optional WPCOM_TOKEN), a usage example with --dry-run, and the wp-content/uploads → static/images/<year>/<month> path convention",
+        "Run the verify locally: confirm --help prints manifest/dry-run flags and `ast.parse` accepts the file"
+      ],
+      "id": "US-003",
+      "wave": 1
+    },
+    {
+      "title": "Migrate 107 WordPress posts into content/<lang>/posts/ page bundles",
+      "description": "As a site maintainer, I want all 107 WordPress posts converted into Hugo page bundles under content/pt-br/posts/ and content/en/posts/ so that the Hugo site renders every historical post at its original slug with language-correct routing.",
+      "acceptanceCriteria": [
+        "Running `python3 scripts/wp_to_hugo.py --manifest scripts/posts-manifest.json --kind post` from the repo root produces at least 100 page bundles distributed across content/pt-br/posts/<slug>/index.md and content/en/posts/<slug>/index.md, with posts in categories 22748652 (Uncategorized-en) and 22748979 (Product Management) routed to content/en/posts/ and every other post routed to content/pt-br/posts/ via lingua-language-detector, and `hugo --quiet` builds the resulting site with exit 0.",
+        "scripts/posts-manifest.json exists, is a JSON array of >=100 objects fetched from https://public-api.wordpress.com/wp/v2/sites/marcelioleal.com/posts (per_page=100 pagination), and each entry projects to `{id, slug, categories, kind: \"post\", lang: \"auto\"}`.",
+        "No converted `index.md` under content/pt-br/posts/ or content/en/posts/ contains residual `<!-- wp:` block-editor comments or unexpanded `[caption`, `[gallery`, or `[embed` shortcodes.",
+        "Spot-checking the first, a middle, and the last post (sorted by WP id) by rendering with `hugo` yields HTML containing the expected post title and body paragraph text with no raw WordPress block comments.",
+        "`python3 -c 'import py_compile; py_compile.compile(\"scripts/wp_to_hugo.py\", doraise=True)'` succeeds (project syntax check for the Python converter driven by this story)."
+      ],
+      "status": "pending",
+      "priority": 4,
+      "dependsOn": [
+        "US-001",
+        "US-003"
+      ],
+      "notes": "Posts total 107 confirmed via WP REST API pagination; date range 2007-2026. Verify tolerates a small number of conversion failures (floor is 100, logged to stderr by the script). The hugo i18n-warnings line in verify is advisory (|| true) because orphan posts without a translation pair are expected.",
+      "implementation": {
+        "files": [
+          "scripts/posts-manifest.json",
+          "content/pt-br/posts",
+          "content/en/posts"
+        ],
+        "approach": "Fetch the manifest in two paginated requests (per_page=100, pages 1-2) against https://public-api.wordpress.com/wp/v2/sites/marcelioleal.com/posts, project each entry to `{id, slug, categories, kind: \"post\", lang: \"auto\"}`, and write scripts/posts-manifest.json. Then invoke the converter from US-003 (`scripts/wp_to_hugo.py`) with `--kind post`; the script resolves language per entry by hard-overriding categories 22748652 and 22748979 to EN and otherwise delegating to lingua-language-detector, and writes one page bundle per post at content/<lang>/posts/<slug>/index.md using the permalink scheme configured in hugo.toml by US-001. Finally run `hugo --quiet` to prove the generated tree builds, and grep the output trees for any residual `<!-- wp:` comments or unexpanded shortcodes.",
+        "verify": "set -euo pipefail; test -f scripts/posts-manifest.json; python3 -c \"import json; m=json.load(open('scripts/posts-manifest.json')); assert len(m) >= 100, f'expected >=100 posts, got {len(m)}'; print(f'manifest has {len(m)} posts')\"; POSTS_PT=$(find content/pt-br/posts -name 'index.md' 2>/dev/null | wc -l | tr -d ' '); POSTS_EN=$(find content/en/posts -name 'index.md' 2>/dev/null | wc -l | tr -d ' '); TOTAL=$((POSTS_PT + POSTS_EN)); echo \"pt=$POSTS_PT en=$POSTS_EN total=$TOTAL\"; [ \"$TOTAL\" -ge 100 ]; hugo --quiet; WPCOUNT=$(grep -rc '<!-- wp:' content/pt-br/posts/ content/en/posts/ 2>/dev/null | awk -F: '{s+=$2} END{print s+0}'); [ \"$WPCOUNT\" -eq 0 ] || { echo \"FAIL: $WPCOUNT residual wp: comments\"; exit 1; }; SHORTCODE=$(grep -rE '\\[caption|\\[gallery|\\[embed' content/pt-br/posts/ content/en/posts/ 2>/dev/null | wc -l | tr -d ' '); [ \"$SHORTCODE\" -eq 0 ] || { echo \"FAIL: $SHORTCODE unexpanded shortcodes\"; exit 1; }; python3 -c 'import py_compile; py_compile.compile(\"scripts/wp_to_hugo.py\", doraise=True)'"
+      },
+      "verification": {
+        "strategy": "test",
+        "status": "pending",
+        "expect": "scripts/posts-manifest.json has >=100 entries, the converter produces >=100 index.md bundles across content/pt-br/posts/ and content/en/posts/ with English routing enforced for categories 22748652 and 22748979, `hugo --quiet` builds clean, no residual wp: comments or [caption/[gallery/[embed shortcodes remain, and the Python converter syntax-check passes."
+      },
+      "tasks": [
+        "Fetch https://public-api.wordpress.com/wp/v2/sites/marcelioleal.com/posts with per_page=100 across pages 1-2 to collect all 107 posts",
+        "Project each post to {id, slug, categories, kind: \"post\", lang: \"auto\"} and write the array to scripts/posts-manifest.json",
+        "Run `python3 scripts/wp_to_hugo.py --manifest scripts/posts-manifest.json --kind post` from the repo root",
+        "Confirm script exit 0 and inspect stderr for any conversion failures; tolerate up to 7 failures (floor is 100 out of 107)",
+        "Verify category 22748652 and 22748979 posts landed under content/en/posts/ and the remainder under content/pt-br/posts/",
+        "Run `hugo --quiet` and confirm the build exits 0",
+        "Grep both content/pt-br/posts/ and content/en/posts/ for `<!-- wp:` comments and for `[caption`, `[gallery`, `[embed` shortcodes; abort if any remain",
+        "Spot-check the first, a middle, and the last post (sorted by WP id) by rendering with `hugo` and inspecting the output HTML for expected title and body paragraph text",
+        "Stage scripts/posts-manifest.json and the generated content/pt-br/posts/ and content/en/posts/ trees for commit"
+      ],
+      "id": "US-004",
+      "wave": 2
+    },
+    {
+      "title": "Migrate 134 media assets: download, HEIC-convert, VideoPress self-host",
+      "description": "As a site migrator, I want every WordPress media asset downloaded and placed under static/ at paths matching the WordPress upload layout so that a trivial regex-rewrite preserves alt text and inline positioning across posts.",
+      "acceptanceCriteria": [
+        "A visitor loading a migrated post in the local Hugo preview sees every inline image, video and PDF render from the local static/ tree with original alt text and placement preserved — no remote wp.com URLs remain in rendered HTML.",
+        "scripts/media-manifest.json exists and enumerates at least 130 media items projected from the WordPress /wp/v2/sites/marcelioleal.com/media feed, each with id, source_url, mime_type, kind=\"media\" and a target_path derived by MIME class: image/jpeg|image/png|image/heic map to static/images/<year>/<month>/<basename> (year and month parsed from the source_url upload path, .heic basename rewritten to .jpg), video/videopress|video/* map to static/videos/<basename>, and application/pdf maps to static/assets/<basename>.",
+        "Running `python3 scripts/wp_to_hugo.py --manifest scripts/media-manifest.json --kind media` downloads every source_url by streaming, converts each image/heic entry to JPEG via `heif-convert -q 92` preserving the basename (sans .heic to .jpg), and writes each file to the manifest's target_path.",
+        "After migration, static/images/ holds at least 100 files with extension .jpg, .jpeg or .png; static/videos/ holds at least 5 .mp4 files; static/assets/ClassGenerator-Thesis-EN.pdf exists; and no file with extension .heic remains anywhere under static/.",
+        "`hugo --quiet` exits 0 against the migrated tree — static files are copied unchanged and no template was touched.",
+        "bash -n scripts/wp_to_hugo.py passes (python syntax check: `python3 -m py_compile scripts/wp_to_hugo.py`)."
+      ],
+      "status": "pending",
+      "priority": 5,
+      "dependsOn": [
+        "US-003"
+      ],
+      "notes": "Media inventory: 134 items — mostly jpeg/png, some video/videopress (self-host from videos.files.wordpress.com), 1 application/pdf (ClassGenerator thesis), some image/heic needing heif-convert. The WordPress /wp/v2 media endpoint caps per_page at 100, so the manifest build issues two paginated requests to cover 134 items. The year/month path segments are not metadata on the API response — they are extracted from the source_url's path (e.g. .../wp-content/uploads/2024/03/foo.jpg → 2024/03). The verify asserts >=130 (not ==134) so a single API-side deletion between manifest build and verify does not falsely fail the story; the hugo build check is the end-to-end gate.",
+      "implementation": {
+        "files": [
+          "scripts/media-manifest.json",
+          "static/images",
+          "static/videos",
+          "static/assets/ClassGenerator-Thesis-EN.pdf"
+        ],
+        "approach": "Reuse the scripts/wp_to_hugo.py scaffolding from US-003 with its existing --manifest/--kind interface. Build the manifest in two stages: first paginate GET https://public-api.wordpress.com/wp/v2/sites/marcelioleal.com/media?per_page=100 across two pages, then project each response item to {id, source_url, mime_type, kind:\"media\", target_path}, computing target_path by MIME class as stated in the acceptance criteria. Parse year/month from the source_url path's /uploads/YYYY/MM/ segment (a regex over the URL path, not from any metadata field — the API does not expose the on-disk layout directly). The script streams each source_url to its target_path, creating parent directories as needed; for image/heic entries it pipes the downloaded bytes through `heif-convert -q 92` (which must be present on PATH — a precondition captured by US-003's bootstrap) and writes the result with the basename's .heic suffix rewritten to .jpg. Keep the download idempotent (skip an existing target_path file with matching size) so a partial run can be resumed. No template or content file is touched — this story only populates static/, which Hugo copies verbatim.",
+        "verify": "set -euo pipefail\ntest -f scripts/media-manifest.json\npython3 -m py_compile scripts/wp_to_hugo.py\npython3 -c \"import json; m=json.load(open('scripts/media-manifest.json')); assert len(m) >= 130, f'expected >=130 media items, got {len(m)}'; print(f'manifest has {len(m)} media')\"\nIMG_COUNT=$(find static/images -type f \\( -name '*.jpg' -o -name '*.jpeg' -o -name '*.png' \\) 2>/dev/null | wc -l | tr -d ' ')\necho \"images: $IMG_COUNT\"\n[ \"$IMG_COUNT\" -ge 100 ]\nVID_COUNT=$(find static/videos -type f -name '*.mp4' 2>/dev/null | wc -l | tr -d ' ')\necho \"videos: $VID_COUNT\"\n[ \"$VID_COUNT\" -ge 5 ]\ntest -f static/assets/ClassGenerator-Thesis-EN.pdf\nHEIC_LEFT=$(find static/ -type f -name '*.heic' 2>/dev/null | wc -l | tr -d ' ')\n[ \"$HEIC_LEFT\" -eq 0 ] || { echo \"FAIL: $HEIC_LEFT .heic file(s) remain under static/ — all should have been converted\"; exit 1; }\nhugo --quiet",
+        "guardRails": [
+          "hugo --quiet"
+        ]
+      },
+      "verification": {
+        "strategy": "test",
+        "status": "pending",
+        "expect": "Manifest file enumerates >=130 media items; at least 100 images and 5 videos land in their mapped static/ subdirectories; the ClassGenerator thesis PDF lands in static/assets/; no .heic file remains under static/; hugo --quiet builds clean."
+      },
+      "skills": [],
+      "tasks": [
+        "Paginate GET https://public-api.wordpress.com/wp/v2/sites/marcelioleal.com/media?per_page=100 (two pages for 134 items) and collect every item",
+        "Project each item to {id, source_url, mime_type, kind:'media', target_path}, parsing year/month from the source_url /uploads/YYYY/MM/ path segment",
+        "Map target_path by MIME class: image/* (incl. heic rewritten to .jpg) to static/images/<year>/<month>/<basename>, video/* to static/videos/<basename>, application/pdf to static/assets/<basename>",
+        "Write the projection to scripts/media-manifest.json",
+        "Run python3 scripts/wp_to_hugo.py --manifest scripts/media-manifest.json --kind media to stream each source_url to its target_path",
+        "In wp_to_hugo.py's media branch, pipe image/heic bytes through `heif-convert -q 92` before writing, and rewrite the basename's .heic suffix to .jpg",
+        "Make the per-file download idempotent (skip when target exists and size matches) so a resumed run does not redownload the whole corpus",
+        "Create parent directories for every target_path on demand so a fresh checkout populates static/images/<year>/<month>/ from empty",
+        "Run the verify locally: confirm manifest length, image/video/pdf counts under static/, zero .heic residue, and hugo --quiet success",
+        "cases the manifest projection and the heic-to-jpg basename rewrite cover each criterion"
+      ],
+      "id": "US-005",
+      "wave": 2
+    },
+    {
+      "title": "Rewrite WordPress media URLs in migrated Markdown to local static paths",
+      "description": "As a Hugo site maintainer, I want every migrated post's body to reference locally served images and videos instead of marcelioleal.com WordPress URLs, so that the static site serves its own assets with no external dependencies and no broken .heic links.",
+      "acceptanceCriteria": [
+        "A reader loading any migrated post at any Hugo baseURL sees every inline image and video rendered from the local /images/YYYY/MM/<file> and /videos/<file> paths, with no request issued to marcelioleal.com/wp-content/uploads or videos.files.wordpress.com, and no .heic reference remaining that the browser cannot decode.",
+        "scripts/rewrite_media_urls.py iterates every content/pt-br/posts/*/index.md and content/en/posts/*/index.md, rewrites https://marcelioleal.com/wp-content/uploads/<year>/<month>/<file> to /images/<year>/<month>/<file>, rewrites https://videos.files.wordpress.com/<token>/<file>.mp4 to /videos/<file>.mp4, and rewrites any trailing .heic extension in a media reference to .jpg to match the heif-convert output produced in the prior static-assets story.",
+        "The script writes each modified file back atomically (temp file plus os.replace) and leaves every file whose content did not change byte-identical on disk; running the script a second time against the already-rewritten tree reports zero files changed and exits 0 (idempotent).",
+        "The script alters URL tokens only — no body prose, no front-matter key other than title or excerpt that itself contains an inline URL, and no other field is modified; a diff of a post before and after rewrite shows only URL substitutions.",
+        "After the pass, grep returns no match for 'marcelioleal.com/wp-content/uploads' under content/, no match for 'videos.files.wordpress.com' under content/, and no '.heic' extension under content/pt-br/posts/ or content/en/posts/.",
+        "hugo --quiet builds the full site successfully (exit 0) with the rewritten content tree, confirming no broken shortcode or reference was introduced by the substitutions.",
+        "bash -n scripts/rewrite_media_urls.py-equivalent syntax check passes: python3 -m py_compile scripts/rewrite_media_urls.py exits 0."
+      ],
+      "status": "pending",
+      "priority": 6,
+      "dependsOn": [
+        "US-004",
+        "US-005"
+      ],
+      "notes": "Script is small (~60 lines) and single-purpose: three regex substitutions plus atomic file rewrite. The three substitutions are compiled once at module scope. The --dry-run flag reports counts without writing; without --dry-run, writes happen only when a file's content actually changed, preserving mtimes on untouched files and making the idempotency check mechanical.",
+      "implementation": {
+        "files": [
+          "scripts/rewrite_media_urls.py"
+        ],
+        "approach": "Create scripts/rewrite_media_urls.py as a short standalone module: compile three regex patterns at import time — (1) r'https://marcelioleal\\.com/wp-content/uploads/(\\d{4})/(\\d{2})/([^\\s)\"\\']+)' -> r'/images/\\1/\\2/\\3', (2) r'https://videos\\.files\\.wordpress\\.com/[A-Za-z0-9]+/([^\\s)\"\\']+\\.mp4)' -> r'/videos/\\1', (3) r'(/images/\\d{4}/\\d{2}/[^\\s)\"\\']+)\\.heic\\b' -> r'\\1.jpg' (applied after substitution 1 so previously-external .heic URLs are already local by the time .heic is rewritten). Use pathlib to glob content/pt-br/posts/*/index.md and content/en/posts/*/index.md. For each file: read text, apply all three subs in order, compare to original; when unchanged skip; when changed write via tempfile + os.replace() atomic swap in the same directory, print 'rewrote <path>' to stdout, and increment a counter. Support --dry-run (compute diffs but write nothing, print '<n> files would change' or 'no changes needed'). Final line prints '<n> files changed'. Exit 0 always on successful scan.",
+        "verify": "set -euo pipefail\ntest -f scripts/rewrite_media_urls.py\npython3 -m py_compile scripts/rewrite_media_urls.py\npython3 scripts/rewrite_media_urls.py\n! grep -rn 'marcelioleal\\.com/wp-content/uploads' content/ 2>/dev/null | head -1\n! grep -rn 'videos\\.files\\.wordpress\\.com' content/ 2>/dev/null | head -1\n! grep -rn '\\.heic\\b' content/pt-br/posts/ content/en/posts/ 2>/dev/null | head -1\ngrep -rl 'marcelioleal.com' content/pt-br/posts/ content/en/posts/ 2>/dev/null | head -1 || true\ngrep -rc '/images/' content/pt-br/posts/ content/en/posts/ 2>/dev/null | awk -F: '{s+=$2} END {exit !(s>0)}'\nSECOND_RUN=$(python3 scripts/rewrite_media_urls.py 2>&1)\necho \"$SECOND_RUN\" | grep -Eq '0 files changed|no changes needed'\nhugo --quiet",
+        "guardRails": [
+          "hugo --quiet"
+        ]
+      },
+      "verification": {
+        "strategy": "test",
+        "status": "pending",
+        "expect": "scripts/rewrite_media_urls.py exists and compiles; after a first run, no content file still references marcelioleal.com/wp-content/uploads, videos.files.wordpress.com, or a .heic extension; a second run is a no-op (reports 0 files changed); the Hugo site builds successfully against the rewritten tree."
+      },
+      "skills": [],
+      "tasks": [
+        "Create scripts/rewrite_media_urls.py with a module-level docstring stating its three substitutions and the atomic-write invariant",
+        "Compile the three regex patterns (wp-content uploads, videos.files.wordpress.com, trailing .heic) as module-scope constants",
+        "Implement rewrite_text(text) that applies substitutions 1, 2, 3 in order and returns the new text",
+        "Implement rewrite_file(path, dry_run=False) that reads, rewrites, skips when unchanged, and otherwise writes via tempfile.NamedTemporaryFile in the same dir + os.replace",
+        "Add main() that globs content/pt-br/posts/*/index.md and content/en/posts/*/index.md, calls rewrite_file on each, counts changes, and prints '<n> files changed' (or 'no changes needed' when n is 0)",
+        "Parse --dry-run via argparse and thread it through main() so dry-run never writes",
+        "Run python3 scripts/rewrite_media_urls.py once to perform the migration on the staged content tree",
+        "Run python3 scripts/rewrite_media_urls.py a second time and confirm the output reports 0 files changed",
+        "Run grep assertions to confirm no residual marcelioleal.com/wp-content/uploads, videos.files.wordpress.com, or .heic references remain under content/",
+        "Run hugo --quiet and confirm the site builds successfully against the rewritten tree"
+      ],
+      "id": "US-006",
+      "wave": 3
+    },
+    {
+      "title": "Migrate Recomendacoes PT tree and Recommendations EN tree",
+      "description": "As a reader of marcelioleal.com, I want the Recomendacoes (PT) and Recommendations (EN) section trees migrated to Hugo so that I can browse the same listing pages and their sub-category pages (books/livros, coffee/cafes, kitesurf, etc.) under the PT and EN URLs the WordPress site serves.",
+      "acceptanceCriteria": [
+        "Visiting /recomendacoes/ on the local Hugo preview renders the PT Recomendacoes listing page and shows links to every PT sub-page (livros, musica, kitesurf, sites-e-podcasts, posts-especiais, cafes, arte-em-sp, viagem-pra-belem); visiting /en/recommendations/ renders the EN Recommendations listing with links to books, coffee, and tech-articles.",
+        "All 13 _index.md files exist at the paths listed in implementation.files (9 under content/pt-br/recomendacoes/ including the root _index.md, 4 under content/en/recommendations/ including the root _index.md).",
+        "The PT/EN pairs share translationKey values so Hugo's language switcher links them: the root pair uses translationKey=recomendacoes; livros/books share translationKey=books; cafes/coffee share translationKey=coffee. (The PT-only pages musica, kitesurf, sites-e-podcasts, posts-especiais, arte-em-sp, viagem-pra-belem and the EN-only page tech-articles each carry their own slug as translationKey.)",
+        "scripts/recomendacoes-manifest.json lists all 13 WP page ids (143, 247, 250, 252, 255, 258, 263, 405, 151 for PT and 232, 323, 296, 1607 for EN) mapped to their target _index.md paths, and running `python3 scripts/wp_to_hugo.py --manifest scripts/recomendacoes-manifest.json --kind page` writes branch-bundle _index.md files (not leaf index.md) at every listed path.",
+        "`hugo --quiet` exits 0 and generates public/recomendacoes/index.html, public/recomendacoes/livros/index.html, public/en/recommendations/index.html, and public/en/recommendations/books/index.html.",
+        "bash -n scripts/recomendacoes-manifest.json is skipped (JSON file); the project's `hugo --quiet` build serves as the syntax/typecheck for generated content front matter."
+      ],
+      "status": "pending",
+      "priority": 7,
+      "dependsOn": [
+        "US-001",
+        "US-003"
+      ],
+      "notes": "Branch bundles use _index.md (not index.md); the manifest entry signals this by ending the target path in '/_index.md' or by carrying a type: branch_bundle hint, per US-003's script contract. PT-only sub-pages (musica, kitesurf, sites-e-podcasts, posts-especiais, arte-em-sp, viagem-pra-belem) and EN-only tech-articles have no cross-language pair; their translationKey is their own slug so Hugo does not treat unrelated pages as translations.",
+      "implementation": {
+        "files": [
+          "scripts/recomendacoes-manifest.json",
+          "content/pt-br/recomendacoes/_index.md",
+          "content/pt-br/recomendacoes/livros/_index.md",
+          "content/pt-br/recomendacoes/musica/_index.md",
+          "content/pt-br/recomendacoes/kitesurf/_index.md",
+          "content/pt-br/recomendacoes/sites-e-podcasts/_index.md",
+          "content/pt-br/recomendacoes/posts-especiais/_index.md",
+          "content/pt-br/recomendacoes/cafes/_index.md",
+          "content/pt-br/recomendacoes/arte-em-sp/_index.md",
+          "content/pt-br/recomendacoes/viagem-pra-belem/_index.md",
+          "content/en/recommendations/_index.md",
+          "content/en/recommendations/books/_index.md",
+          "content/en/recommendations/coffee/_index.md",
+          "content/en/recommendations/tech-articles/_index.md"
+        ],
+        "approach": "Author scripts/recomendacoes-manifest.json as a JSON array of 13 entries, each naming the WP page id, the target Hugo path ending in /_index.md, the slug, the translationKey, and the language (pt-br or en). Drive US-003's scripts/wp_to_hugo.py with --manifest and --kind page; the script detects the /_index.md suffix (or a type: branch_bundle hint on the entry) and emits a branch-bundle file with the right front matter instead of a leaf index.md. Assign translationKey values to pair the three true PT/EN pairs (recomendacoes root, livros/books, cafes/coffee) and give every PT-only or EN-only sub-page its own slug as translationKey so Hugo's i18n lookup does not mistake them for translations. After generation, run `hugo --quiet` locally to verify the tree builds and the listing pages resolve.",
+        "verify": "set -euo pipefail\ntest -f scripts/recomendacoes-manifest.json\nfor f in recomendacoes/_index.md recomendacoes/livros/_index.md recomendacoes/musica/_index.md recomendacoes/kitesurf/_index.md recomendacoes/sites-e-podcasts/_index.md recomendacoes/posts-especiais/_index.md recomendacoes/cafes/_index.md recomendacoes/arte-em-sp/_index.md recomendacoes/viagem-pra-belem/_index.md; do test -f \"content/pt-br/$f\" || { echo \"missing content/pt-br/$f\"; exit 1; }; done\nfor f in recommendations/_index.md recommendations/books/_index.md recommendations/coffee/_index.md recommendations/tech-articles/_index.md; do test -f \"content/en/$f\" || { echo \"missing content/en/$f\"; exit 1; }; done\nBOOKS_PAIR=$(grep -l \"translationKey:[[:space:]]*books\" content/pt-br/recomendacoes/livros/_index.md content/en/recommendations/books/_index.md | wc -l | tr -d ' ')\n[ \"$BOOKS_PAIR\" = \"2\" ] || { echo \"FAIL: books translationKey pair not found in both livros and books _index.md\"; exit 1; }\nCOFFEE_PAIR=$(grep -l \"translationKey:[[:space:]]*coffee\" content/pt-br/recomendacoes/cafes/_index.md content/en/recommendations/coffee/_index.md | wc -l | tr -d ' ')\n[ \"$COFFEE_PAIR\" = \"2\" ] || { echo \"FAIL: coffee translationKey pair not found in both cafes and coffee _index.md\"; exit 1; }\nhugo --quiet\ntest -f public/recomendacoes/index.html && test -f public/recomendacoes/livros/index.html\ntest -f public/en/recommendations/index.html && test -f public/en/recommendations/books/index.html",
+        "guardRails": [
+          "hugo --quiet"
+        ]
+      },
+      "verification": {
+        "strategy": "visual",
+        "status": "pending",
+        "url": "/recomendacoes/",
+        "expect": "The PT Recomendacoes listing page renders at /recomendacoes/ and shows links to all eight PT sub-pages (livros, musica, kitesurf, sites-e-podcasts, posts-especiais, cafes, arte-em-sp, viagem-pra-belem); the EN listing at /en/recommendations/ shows links to books, coffee, tech-articles."
+      },
+      "tasks": [
+        "Author scripts/recomendacoes-manifest.json as a JSON array of 13 entries covering WP ids 143, 247, 250, 252, 255, 258, 263, 405, 151, 232, 323, 296, 1607 with target _index.md paths, slugs, translationKeys, and language",
+        "Set translationKey=recomendacoes for both root _index.md entries (WP 143 PT and WP 232 EN)",
+        "Set translationKey=books on the PT livros entry (WP 247) and the EN books entry (WP 323); set translationKey=coffee on the PT cafes entry (WP 263) and the EN coffee entry (WP 296)",
+        "Give each PT-only sub-page (musica, kitesurf, sites-e-podcasts, posts-especiais, arte-em-sp, viagem-pra-belem) its own slug as translationKey, and give EN tech-articles its own slug as translationKey",
+        "Run `python3 scripts/wp_to_hugo.py --manifest scripts/recomendacoes-manifest.json --kind page` to generate the 13 branch-bundle _index.md files",
+        "Confirm every target _index.md file was written (9 under content/pt-br/recomendacoes/, 4 under content/en/recommendations/) and that each is a branch bundle (_index.md, not index.md)",
+        "Run `hugo --quiet` and confirm public/recomendacoes/index.html, public/recomendacoes/livros/index.html, public/en/recommendations/index.html, public/en/recommendations/books/index.html all exist",
+        "Open /recomendacoes/ and /en/recommendations/ in the Hugo preview and visually confirm each sub-page link appears and resolves"
+      ],
+      "id": "US-007",
+      "wave": 2
+    },
+    {
+      "title": "Migrate TCC/ClassGenerator PT and EN standalone pages with the thesis PDF",
+      "description": "As a bilingual visitor of the Hugo site, I want the TCC/ClassGenerator thesis page available in both Portuguese and English with a working PDF download link so that I can read the thesis context and fetch the full document in my preferred language.",
+      "acceptanceCriteria": [
+        "A visitor opening /tcc-classgenerator/ sees the Portuguese TCC — ClassGenerator page rendered by Hugo, and opening /en/thesis-classgenerator/ shows the English counterpart with the same body content translated; the language switcher on each page points at the other because both share translationKey 'tcc-classgenerator'.",
+        "scripts/tcc-manifest.json exists and enumerates the two WP page ids (1591, 1592) with their target Hugo paths (content/pt-br/tcc-classgenerator/index.md and content/en/thesis-classgenerator/index.md) and the shared translationKey 'tcc-classgenerator'.",
+        "content/pt-br/tcc-classgenerator/index.md and content/en/thesis-classgenerator/index.md are produced by `python3 scripts/wp_to_hugo.py --manifest scripts/tcc-manifest.json --kind page`, each carrying front-matter with translationKey: \"tcc-classgenerator\" (or the unquoted form), the WP title, and the migrated body.",
+        "After the rewrite pass, no occurrence of 'marcelioleal.com/wp-content/uploads' linking to ClassGenerator-Thesis-EN.pdf remains inside either page body; the EN page body contains at least one '/assets/ClassGenerator-Thesis-EN.pdf' download link pointing at the file staged by US-005.",
+        "`hugo --quiet` builds the site to ./public with exit code 0, and the generated outputs public/tcc-classgenerator/index.html and public/en/thesis-classgenerator/index.html both exist on disk.",
+        "cases cover: (a) manifest exists; (b) both index.md files exist; (c) translationKey present in PT; (d) translationKey present in EN; (e) PDF file present under static/assets; (f) no WP uploads URL for ClassGenerator remains in either page; (g) EN page contains /assets/ClassGenerator-Thesis-EN.pdf; (h) hugo build succeeds; (i) PT output HTML exists; (j) EN output HTML exists.",
+        "`hugo --quiet` build passes (the project's own syntax/build check for a Hugo site; no TypeScript or bash scripts are introduced by this story)."
+      ],
+      "status": "pending",
+      "priority": 8,
+      "dependsOn": [
+        "US-003",
+        "US-005",
+        "US-006"
+      ],
+      "notes": "Slugs intentionally differ between languages (PT: tcc-classgenerator, EN: thesis-classgenerator). The shared translationKey front-matter is what makes Hugo treat them as translations of each other, which the Phase 1 language switcher consumes via site.Languages and .Translations. The PDF itself is staged by US-005; this story only rewrites references to it.",
+      "implementation": {
+        "files": [
+          "scripts/tcc-manifest.json",
+          "content/pt-br/tcc-classgenerator/index.md",
+          "content/en/thesis-classgenerator/index.md"
+        ],
+        "approach": "Author scripts/tcc-manifest.json listing the two WP page ids (1591 PT, 1592 EN) with target Hugo paths and the shared translationKey 'tcc-classgenerator'. Run the scripts/wp_to_hugo.py fetcher from US-003 in --kind page mode against that manifest to materialize both index.md files with translated front-matter and body. Follow with a URL-rewrite pass (reuse scripts/rewrite_media_urls.py from US-006 or inline an equivalent sed/python rewrite) that converts every https://marcelioleal.com/wp-content/uploads/*/ClassGenerator-Thesis-EN.pdf occurrence inside the two generated pages to /assets/ClassGenerator-Thesis-EN.pdf, matching the static/assets layout US-005 produced. Verify the result by running `hugo --quiet` and asserting the two expected HTML outputs materialize under public/.",
+        "verify": "set -euo pipefail\ntest -f scripts/tcc-manifest.json\ntest -f content/pt-br/tcc-classgenerator/index.md\ntest -f content/en/thesis-classgenerator/index.md\ngrep -q 'translationKey:[[:space:]]*\"tcc-classgenerator\"\\|translationKey:[[:space:]]*tcc-classgenerator' content/pt-br/tcc-classgenerator/index.md\ngrep -q 'translationKey:[[:space:]]*\"tcc-classgenerator\"\\|translationKey:[[:space:]]*tcc-classgenerator' content/en/thesis-classgenerator/index.md\ntest -f static/assets/ClassGenerator-Thesis-EN.pdf\nLEAK=$(grep -r 'marcelioleal.com/wp-content/uploads.*ClassGenerator' content/pt-br/tcc-classgenerator content/en/thesis-classgenerator | head -1 || true)\n[ -z \"$LEAK\" ] || { echo \"FAIL: WP uploads URL still referenced: $LEAK\"; exit 1; }\ngrep -q '/assets/ClassGenerator-Thesis-EN.pdf' content/en/thesis-classgenerator/index.md\nhugo --quiet\ntest -f public/tcc-classgenerator/index.html\ntest -f public/en/thesis-classgenerator/index.html",
+        "guardRails": [
+          "hugo --quiet"
+        ]
+      },
+      "verification": {
+        "strategy": "visual",
+        "status": "pending",
+        "url": "/tcc-classgenerator/",
+        "expect": "The Portuguese TCC — ClassGenerator page renders at /tcc-classgenerator/ with the thesis body text, the English counterpart renders at /en/thesis-classgenerator/, and the language switcher on each page links to the other because both share translationKey 'tcc-classgenerator'. The EN page exposes a working download link to /assets/ClassGenerator-Thesis-EN.pdf."
+      },
+      "tasks": [
+        "Create scripts/tcc-manifest.json listing WP pages 1591 (PT) and 1592 (EN) with target Hugo paths and shared translationKey 'tcc-classgenerator'",
+        "Run `python3 scripts/wp_to_hugo.py --manifest scripts/tcc-manifest.json --kind page` to materialize content/pt-br/tcc-classgenerator/index.md and content/en/thesis-classgenerator/index.md",
+        "Verify each generated index.md carries the shared translationKey front-matter value",
+        "Run the URL-rewrite pass (reuse scripts/rewrite_media_urls.py from US-006 or inline sed/python) against both generated pages to replace marcelioleal.com/wp-content/uploads/*/ClassGenerator-Thesis-EN.pdf with /assets/ClassGenerator-Thesis-EN.pdf",
+        "Confirm static/assets/ClassGenerator-Thesis-EN.pdf is present (staged by US-005) before building",
+        "Run `hugo --quiet` to build the site and confirm public/tcc-classgenerator/index.html and public/en/thesis-classgenerator/index.html exist",
+        "Open /tcc-classgenerator/ and /en/thesis-classgenerator/ in a local hugo server to confirm the language switcher cross-links the two pages and the EN download link resolves to /assets/ClassGenerator-Thesis-EN.pdf"
+      ],
+      "id": "US-008",
+      "wave": 4
+    },
+    {
+      "title": "Author list.html override for dated post list (eltonminetto.dev aesthetic)",
+      "description": "As a site visitor, I want the home and section pages to show a chronological list of posts with dates above titles and one-line excerpts so that I can scan recent content in the eltonminetto.dev-inspired aesthetic.",
+      "acceptanceCriteria": [
+        "A visitor opening / (home) sees a chronological list of posts from the sections named in [params.mainSections] (newest first), each entry rendering the post date on a line above the linked title with a one-line summary beneath, and pagination capped at 50 posts per page (prototype: layouts/_default/list.html §home-list).",
+        "A visitor opening /recomendacoes/ (and its i18n sibling /en/recommendations/) sees each immediate sub-page rendered as a linked title in a <ul class=\"section-children\"> list, with no date/summary chrome applied.",
+        "layouts/_default/list.html exists and uses {{ define \"main\" }} so PaperMod's base layout (header, extend_head, Phase 1 language switcher) wraps it automatically.",
+        "The template branches on $.IsHome: the true branch iterates .Paginator.Pages scoped to .Site.Params.mainSections (newest first, 50/page) and emits <article class=\"post-entry\"> with <time datetime=\"...\" class=\"post-date\">YYYY-MM-DD</time>, <h2 class=\"post-title\"><a href=\"...\">Title</a></h2>, and <p class=\"post-summary\">...</p>; the false branch iterates .Pages and emits a <ul class=\"section-children\"> of <li><a href=\"...\">{{ .Title }}</a></li>.",
+        "Post titles render via the i18n-aware .Title field so Portuguese and English posts display their localized titles when the active site language changes.",
+        "`hugo --quiet` builds the site without error and produces public/index.html plus public/recomendacoes/index.html; public/index.html contains the post-date and post-entry class markers that prove the custom list.html is active.",
+        "`hugo --quiet` exits 0 — Hugo's build is the project's own syntax/template check for this story."
+      ],
+      "status": "pending",
+      "priority": 9,
+      "dependsOn": [
+        "US-001",
+        "US-004",
+        "US-007"
+      ],
+      "notes": "Phase 1 CSS already covers .post-entry .entry-header date-above-title treatment per the outline's invariants, so no assets/css/extended/custom.css change is required by this story unless a .post-date rule is missing on inspection; if it is, append it in a follow-up rather than expanding this slice.",
+      "implementation": {
+        "files": [
+          "layouts/_default/list.html"
+        ],
+        "approach": "Define a single {{ define \"main\" }} block that branches on $.IsHome. Home branch: use Hugo's built-in paginator — `{{ $paginator := .Paginate (where .Site.RegularPages \"Section\" \"in\" .Site.Params.mainSections) 50 }}` — then range `$paginator.Pages` emitting the <article class=\"post-entry\"> structure with <time datetime=\"{{ .Date.Format \"2006-01-02T15:04:05Z07:00\" }}\" class=\"post-date\">{{ .Date.Format \"2006-01-02\" }}</time>, the linked <h2 class=\"post-title\">, and a <p class=\"post-summary\">{{ .Summary | plainify | truncate 160 }}</p>. Close with `{{ template \"_internal/pagination.html\" . }}` so Hugo's default paginator UI appears. Section branch (else): range `.Pages` and emit the <ul class=\"section-children\"> structure. Preserve PaperMod chrome by never defining `header` or `footer` — only `main`.",
+        "verify": "test -f layouts/_default/list.html && grep -q '{{ define \"main\"' layouts/_default/list.html && grep -q '.IsHome' layouts/_default/list.html && grep -q '.Paginator\\|.Paginate\\|.Site.RegularPages' layouts/_default/list.html && grep -q 'post-entry' layouts/_default/list.html && grep -q 'post-date' layouts/_default/list.html && grep -q 'post-title' layouts/_default/list.html && grep -q 'section-children' layouts/_default/list.html && hugo --quiet && test -f public/index.html && grep -q 'post-date' public/index.html && grep -q 'post-entry' public/index.html && test -f public/recomendacoes/index.html"
+      },
+      "verification": {
+        "strategy": "visual",
+        "status": "pending",
+        "url": "/",
+        "expect": "The home page renders a chronological list of posts with YYYY-MM-DD dates above linked titles and one-line summaries, paginated 50/page; /recomendacoes/ renders its sub-pages as a linked-title list."
+      },
+      "tasks": [
+        "Create layouts/_default/list.html with a {{ define \"main\" }} block",
+        "Implement the $.IsHome true branch: paginate .Site.RegularPages filtered by .Site.Params.mainSections at 50/page, newest first",
+        "Emit <article class=\"post-entry\"> per post with <time class=\"post-date\">, <h2 class=\"post-title\"><a>, and <p class=\"post-summary\">",
+        "Implement the $.IsHome false branch rendering <ul class=\"section-children\"> of <li><a>{{ .Title }}</a></li> over .Pages",
+        "Insert {{ template \"_internal/pagination.html\" . }} after the home list to render the paginator UI",
+        "Confirm no header/footer definitions leak — only main — so PaperMod base chrome and the Phase 1 language switcher wrap the template",
+        "Run `hugo --quiet` and open public/index.html plus public/recomendacoes/index.html to confirm the custom list.html is active"
+      ],
+      "id": "US-009",
+      "wave": 3
+    },
+    {
+      "title": "Phase 2 exit verification: live staging shows every migrated artifact",
+      "description": "As the site owner, I want a walkthrough of the Phase 2 staging deploy so that I can confirm every migrated post, media asset, and bilingual page renders correctly before closing the content-migration phase.",
+      "acceptanceCriteria": [
+        "Site owner visits https://new.marcelioleal.com/ and observes a dated chronological post list (home), a Recomendacoes PT tree with every sub-page link visible, a Recommendations EN tree, a TCC/ClassGenerator pair with a working PDF download, and a language switcher that shows the orphan-aware badge on PT-only posts while offering an EN link when a translationKey match exists.",
+        "A: Deploy the site by running `HUGO_ENV=staging hugo --gc --minify --baseURL \"https://new.marcelioleal.com/\" && netlify deploy --prod --dir=public --message \"Phase 2 Content Migration\"` from the repo root and record a non-error exit status for both commands.",
+        "B: `curl -s https://new.marcelioleal.com/sitemap.xml | grep -oE '<loc>[^<]+</loc>' | wc -l` returns a count of at least 125 URLs (107 posts + 13 Recomendacoes pages + about + TCC pair + home list = ~127; small slack allowed).",
+        "C: Five spot-checked post URLs return HTTP 200 and non-empty body text. Verify with `for u in $(curl -s https://new.marcelioleal.com/sitemap.xml | grep -oE 'https://new.marcelioleal.com/[^<]+/' | shuf -n 5); do curl -sI \"$u\" | head -1; curl -s \"$u\" | grep -c '<article' ; done` — every status is `HTTP/2 200` and every article count is >= 1.",
+        "D: No WordPress residue on a sampled migrated post body: `curl -s https://new.marcelioleal.com/eu-deveria-estar-gravando-videos-mas/ | grep -E '<!-- wp:|\\[caption|videos\\.files\\.wordpress\\.com|wp-content/uploads'` returns no match (exit 1 from grep).",
+        "E: Image asset resolves at the expected static path: `curl -sI https://new.marcelioleal.com/images/2026/05/carneiros.jpg | head -1` is `HTTP/2 200` (sampled from the first migrated image under static/images/<year>/<month>/).",
+        "F: VideoPress MP4 served from staging: `curl -sI https://new.marcelioleal.com/videos/$(ls static/videos/ | grep -iE '\\.mp4$|\\.mov$' | head -1) | head -1` is `HTTP/2 200`.",
+        "G: Thesis PDF downloads: `curl -sI https://new.marcelioleal.com/assets/ClassGenerator-Thesis-EN.pdf | head -1` is `HTTP/2 200`.",
+        "H: Home page shows a dated chronological post list: `curl -s https://new.marcelioleal.com/ | grep -cE 'post-entry|post-date'` returns at least 2 and `curl -s https://new.marcelioleal.com/ | grep -cE '<h2 class=\"post-title\"'` returns at least 10.",
+        "I: Recomendacoes renders bilingual with sub-pages: `curl -s https://new.marcelioleal.com/recomendacoes/ | grep -c 'href=\"/recomendacoes/livros/\"'` returns at least 1 and `curl -s https://new.marcelioleal.com/en/recommendations/ | grep -c 'href=\"/en/recommendations/books/\"'` returns at least 1.",
+        "J: Language switcher on a migrated post behaves per translationKey — `curl -s https://new.marcelioleal.com/eu-deveria-estar-gravando-videos-mas/ | grep -E 'only_in_language|only in Portugues|aria-disabled'` returns at least one match for a PT-only post, and a translated PT/EN pair yields a working cross-link (grep for `hreflang=\"en\"` or `hreflang=\"pt-br\"` on the switcher).",
+        "K: TCC pair resolves and references the EN PDF: `curl -sI https://new.marcelioleal.com/tcc-classgenerator/ | head -1` is `HTTP/2 200`; `curl -sI https://new.marcelioleal.com/en/thesis-classgenerator/ | head -1` is `HTTP/2 200`; `curl -s https://new.marcelioleal.com/en/thesis-classgenerator/ | grep -c '/assets/ClassGenerator-Thesis-EN.pdf'` returns at least 1.",
+        "L: Staging stays noindex — `curl -sI https://new.marcelioleal.com/robots.txt` body contains `Disallow: /` and any sampled page's head contains a meta robots noindex directive: `curl -s https://new.marcelioleal.com/ | grep -c 'name=\"robots\"[^>]*noindex'` returns at least 1.",
+        "M: No broken internal links on a recursive crawl: `wget --spider --recursive --level=2 --no-verbose https://new.marcelioleal.com/ 2>&1 | grep -cE '404|broken link'` returns 0 (up to 2 known orphan references tolerated, documented in notes).",
+        "Pre-deploy local smoke: `hugo --quiet` builds the site without errors, the expected content tree exists on disk (PT posts >= 50, EN posts >= 2, Recomendacoes _index, Recommendations _index, TCC pair, thesis PDF), and `grep -r '<!-- wp:' content/` plus `grep -r 'marcelioleal.com/wp-content/uploads' content/` each find zero matches.",
+        "Hugo build succeeds locally before deploy (`hugo --quiet` exits 0)."
+      ],
+      "status": "pending",
+      "priority": 10,
+      "dependsOn": [
+        "US-002",
+        "US-004",
+        "US-005",
+        "US-006",
+        "US-007",
+        "US-008",
+        "US-009"
+      ],
+      "notes": "Verification-only gate story — no files written to the repo. If criterion M surfaces up to 2 orphan references that are known-residual (e.g. a legacy embed removed in Phase 3), document them in the gate response rather than blocking phase close. The deploy command in criterion A assumes `netlify` CLI is authenticated for this project; if the authenticated context is missing, re-run `netlify link` before criterion A.",
+      "implementation": {
+        "files": [],
+        "approach": "Run the two-step smoke (local Hugo build + content-tree assertions) in `implementation.verify` to catch any pre-deploy regression, then the executor performs the live deploy (criterion A) and walks criteria B through M as curl/wget probes against https://new.marcelioleal.com/. Keep each live probe isolated so a single failure (e.g. a 404 on one post) is a specific blocker to list in the gate response rather than a blanket fail. The verify script covers every assertion that is executable before deploy; criteria A through M are routed to the gate prompt because they can only run after `netlify deploy` and the site owner must confirm the end-to-end walkthrough.",
+        "verify": "hugo --quiet && test -f layouts/_default/list.html && [ \"$(find content/pt-br/posts -name 'index.md' -type f | wc -l)\" -ge 50 ] && [ \"$(find content/en/posts -name 'index.md' -type f | wc -l)\" -ge 2 ] && test -f content/pt-br/recomendacoes/_index.md && test -f content/en/recommendations/_index.md && test -f content/pt-br/tcc-classgenerator/index.md && test -f content/en/thesis-classgenerator/index.md && test -f static/assets/ClassGenerator-Thesis-EN.pdf && WP_RESIDUE=$(grep -rE '<!-- wp:' content/ | wc -l) && [ \"$WP_RESIDUE\" -eq 0 ] && WP_UPLOADS=$(grep -rE 'marcelioleal\\.com/wp-content/uploads' content/ | wc -l) && [ \"$WP_UPLOADS\" -eq 0 ]"
+      },
+      "verification": {
+        "strategy": "visual",
+        "status": "pending",
+        "url": "https://new.marcelioleal.com/",
+        "expect": "127+ URLs resolve 200, no WordPress residue in post bodies, Recomendacoes/Recommendations bilingual with sub-pages, TCC pair with EN PDF download, home shows dated post list, staging stays noindex, language switcher honors translationKey."
+      },
+      "gate": {
+        "type": "decision",
+        "status": "pending",
+        "prompt": "Walk the Phase 2 staging deploy at https://new.marcelioleal.com/ end-to-end per acceptance criteria A through M. Confirm the four Phase 2 roadmap success criteria: (1) posts converted (>= 125 URLs in sitemap, no WP residue), (2) media migrated (images + videos + PDF resolve 200), (3) Recomendacoes and Recommendations render with sub-pages, (4) TCC/ClassGenerator pair resolves bilingually with the EN PDF download. Any single A-M failure blocks Phase 2 close; list the specific failing criterion IDs.",
+        "options": [
+          "All A-M pass — close Phase 2",
+          "Blocked — list failing criterion IDs"
+        ]
+      },
+      "tasks": [
+        "Confirm the repo root holds a buildable Hugo site before deploy: run `hugo --quiet` and inspect exit status",
+        "Assert pre-deploy content tree counts (PT posts >= 50, EN posts >= 2, Recomendacoes + Recommendations _index files, TCC pair, thesis PDF)",
+        "Grep the full content/ tree for leftover `<!-- wp:` Gutenberg comments and `wp-content/uploads` URLs; both must be zero",
+        "Run criterion A: execute `HUGO_ENV=staging hugo --gc --minify --baseURL \"https://new.marcelioleal.com/\"` then `netlify deploy --prod --dir=public --message \"Phase 2 Content Migration\"` and capture both exit codes",
+        "Run criterion B: curl the live sitemap and assert the URL count is >= 125",
+        "Run criteria C through G: spot-check 5 random post URLs, a WP-residue grep on a sample post body, an image under /images/, a VideoPress MP4 under /videos/, and the thesis PDF under /assets/",
+        "Run criterion H: curl the home and confirm `post-entry`, `post-date`, and at least 10 `<h2 class=\"post-title\">` occurrences",
+        "Run criterion I: curl /recomendacoes/ and /en/recommendations/ and confirm each root lists its sub-page links (livros, books)",
+        "Run criterion J: curl a PT post and confirm the language switcher either shows the only_in_language badge or offers a working EN cross-link per translationKey",
+        "Run criterion K: curl both TCC pair URLs and assert the EN page body references /assets/ClassGenerator-Thesis-EN.pdf",
+        "Run criterion L: curl /robots.txt for `Disallow: /` and confirm a sampled page carries `name=\"robots\"` noindex meta",
+        "Run criterion M: `wget --spider --recursive --level=2` the staging root, count 404/broken-link mentions, and record any up-to-2 orphan references for the gate notes",
+        "Populate the gate decision with either 'All A-M pass' or 'Blocked' plus the list of failing criterion IDs for Phase 2 closure"
+      ],
+      "id": "US-010",
+      "wave": 5
+    }
+  ]
+}
