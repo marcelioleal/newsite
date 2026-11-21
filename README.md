@@ -1,0 +1,53 @@
+# newsite — marcelioleal.com
+
+Marcelio Leal's personal site, built with Hugo + PaperMod and deployed to Netlify. Bilingual (pt-BR default, en), single-column light aesthetic inspired by [eltonminetto.dev](https://eltonminetto.dev/).
+
+## Clone
+
+```bash
+git clone git@github.com:<you>/newsite.git
+cd newsite
+git submodule update --init --recursive
+```
+
+The `git submodule update --init` step is required — the PaperMod theme is pulled in as a Git submodule at `themes/PaperMod/`.
+
+## Local development
+
+```bash
+hugo server -D
+```
+
+Open <http://localhost:1313/> (pt-BR) and <http://localhost:1313/en/>. Hugo picks the pinned version from `.tool-versions` (requires [`mise`](https://mise.jdx.dev/) or [`asdf`](https://asdf-vm.com/)).
+
+## Updating the theme
+
+```bash
+git submodule update --remote --merge themes/PaperMod
+hugo server -D   # eyeball the diff before committing
+git add themes/PaperMod
+git commit -m "chore: bump PaperMod"
+```
+
+Never edit anything under `themes/PaperMod/` — override via `assets/css/extended/*.css`, `layouts/partials/extend_head.html`, `layouts/partials/extend_footer.html`, or by copying a theme layout to the matching site-root path (e.g. `layouts/partials/header.html`).
+
+## Deploy
+
+Pushing to `main` triggers a **Netlify** production build at <https://new.marcelioleal.com/> (Phase 1 staging subdomain). Pull requests get automatic deploy previews. The build command, Hugo version pin, and context-aware `baseURL` live in `netlify.toml`.
+
+## Toolchain
+
+- **Hugo** — pinned to `0.170.1` (non-extended) via `.tool-versions` and `netlify.toml`. Install locally with `brew install hugo`, or `mise install` / `asdf install` once the plugin is set up.
+- **Node** — not required; this site has no JavaScript build step.
+- **PaperMod** — current `master`, tracked as a shallow submodule.
+
+## Project layout
+
+- `content/pt-br/`, `content/en/` — Markdown content per language.
+- `i18n/pt-br.yaml`, `i18n/en.yaml` — UI strings (navigation, orphan badge, 404).
+- `layouts/` — site-root overrides (header, extend_head, 404s). Never edit `themes/PaperMod/`.
+- `assets/css/extended/custom.css` — minimal aesthetic overrides (Hugo auto-concatenates last).
+- `static/` — assets copied verbatim (robots.txt, _headers, favicon, og-default.png).
+- `netlify.toml` — build, publish, and per-context environment.
+
+See `.aimi/brainstorms/` and `.aimi/tasks/` for the planning record.
