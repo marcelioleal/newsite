@@ -1,0 +1,23 @@
+[build]
+command = "hugo --gc --minify"
+publish = "public"
+
+[build.environment]
+HUGO_VERSION = "0.170.1"
+TZ = "America/Sao_Paulo"
+GIT_SUBMODULE_STRATEGY = "recursive"
+
+[context.production]
+command = "hugo --gc --minify --baseURL ${URL}"
+[context.production.environment]
+HUGO_ENV = "production"
+
+[context.deploy-preview]
+command = "hugo --gc --minify --baseURL ${DEPLOY_PRIME_URL}"
+[context.deploy-preview.environment]
+HUGO_ENV = "preview"
+
+[context.branch-deploy]
+command = "hugo --gc --minify --baseURL ${DEPLOY_PRIME_URL}"
+[context.branch-deploy.environment]
+HUGO_ENV = "preview"
