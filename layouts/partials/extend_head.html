@@ -1,0 +1,5 @@
+{{/* Phase 1 — staging noindex. Netlify sets HUGO_ENV per context (preview/staging/production).
+     Only apex production (Phase 3) emits index,follow. Story 07 appends canonical/hreflang/OG below. */}}
+{{ if ne hugo.Environment "production" }}
+<meta name="robots" content="noindex,nofollow">
+{{ end }}
