@@ -17,6 +17,8 @@ languageName = "English"
 languageCode = "en-US"
 
 [params]
+description = "Marcelio Leal's personal site — pt-br default, bilingual"
+images = ["og-default.png"]
 disableThemeToggle = true
 ShowBreadCrumbs = false
 ShowShareButtons = false
