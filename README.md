@@ -51,3 +51,11 @@ Pushing to `main` triggers a **Netlify** production build at <https://new.marcel
 - `netlify.toml` — build, publish, and per-context environment.
 
 See `.aimi/brainstorms/` and `.aimi/tasks/` for the planning record.
+
+## Phase 1 Foundation artifacts
+
+The three artifacts delivered by Phase 1 (per `.aimi/tasks/wordpress-to-hugo-migration/roadmap.json`):
+
+- `hugo_site_skeleton` — this repository: a PaperMod-based Hugo site with the four-layer folder structure (configuration · content · presentation · distribution), bilingual pt-BR/en i18n, and the minimal single-column light aesthetic. See `hugo.toml`, `layouts/`, `assets/css/extended/custom.css`.
+- `netlify_staging_deploy` — the Netlify project `newsite-marcelioleal` connected to `github.com/marcelioleal/newsite`, serving the staging subdomain `new.marcelioleal.com`. See `netlify.toml`.
+- `language_switcher` — `layouts/partials/header.html` — the bilingual switcher that renders an `aria-disabled` "only in X" badge driven by i18n strings when a translation is missing.
