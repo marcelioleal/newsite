@@ -7,10 +7,14 @@ defaultContentLanguageInSubdir = false
 [languages.pt-br]
 contentDir   = "content/pt-br"
 weight       = 1
+languageName = "Português"
+languageCode = "pt-BR"
 
 [languages.en]
 contentDir   = "content/en"
 weight       = 2
+languageName = "English"
+languageCode = "en-US"
 
 [params]
 disableThemeToggle = true

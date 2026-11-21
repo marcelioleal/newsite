@@ -1,0 +1,60 @@
+{{- /*
+  Phase 1 — bilingual header + orphan-aware language switcher.
+
+  Overrides themes/PaperMod/layouts/_partials/header.html.
+  Iterates site.Languages (not site.Home.Translations — the theme default
+  silently hides pages that exist only in one language). For each language:
+    - current language → <span aria-current="true"> (no link)
+    - other language WITH a translation → <a href="..."> switch link
+    - other language WITHOUT a translation → <span aria-disabled="true">
+      carrying the i18n orphan badge "only in <lang>"
+  Pure HTML, no JS; works with JS off.
+*/ -}}
+<header class="header">
+  <nav class="nav">
+    <div class="logo">
+      <a href="{{ "" | absLangURL }}" accesskey="h">{{ site.Title }}</a>
+    </div>
+    <ul id="menu">
+      <li>
+        <a href="{{ "about/" | relLangURL }}">{{ i18n "nav_about" }}</a>
+      </li>
+      {{- /* Language switcher: iterate every configured language. */ -}}
+      {{- $currentPage := . -}}
+      {{- range $i, $lang := site.Languages -}}
+        {{- if eq $lang.Lang site.Language.Lang -}}
+          {{- /* Current language: non-link indicator. */ -}}
+          <li>
+            <span aria-current="true" lang="{{ $lang.Lang }}">{{ $lang.LanguageName }}</span>
+          </li>
+        {{- else -}}
+          {{- /* Find a translation of the CURRENT page in this language, if any. */ -}}
+          {{- $translation := "" -}}
+          {{- range $currentPage.AllTranslations -}}
+            {{- if eq .Lang $lang.Lang -}}
+              {{- $translation = . -}}
+            {{- end -}}
+          {{- end -}}
+          {{- if $translation -}}
+            <li>
+              <a href="{{ $translation.Permalink }}"
+                 hreflang="{{ $lang.Lang }}"
+                 lang="{{ $lang.Lang }}"
+                 aria-label="{{ printf (i18n "switch_to_language") $lang.LanguageName }}">
+                {{ $lang.LanguageName }}
+              </a>
+            </li>
+          {{- else -}}
+            <li>
+              <span class="lang-badge"
+                    aria-disabled="true"
+                    lang="{{ $lang.Lang }}">
+                {{ printf (i18n "only_in_language") $lang.LanguageName }}
+              </span>
+            </li>
+          {{- end -}}
+        {{- end -}}
+      {{- end }}
+    </ul>
+  </nav>
+</header>
