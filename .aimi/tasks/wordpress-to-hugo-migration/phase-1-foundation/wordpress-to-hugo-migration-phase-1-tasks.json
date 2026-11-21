@@ -134,7 +134,7 @@
         "The empty-site `hugo version` reports exactly `hugo v0.170.1` (non-extended), confirming the `.tool-versions` pin binds the local Hugo binary this verify runs under.",
         "`bash -n` on every `.sh` script this story touches exits 0 (there are no shipped shell scripts in this scaffold story, so this check is vacuously satisfied; it is the project's own syntax check because the repo has no typed language in this story's file set)."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 1,
       "dependsOn": [],
       "notes": "Foundation-entry (greenfield) story. Per the outline's explicit scope narrowing, this story owns ONLY the directory skeleton + hugo.toml skeleton + PaperMod submodule + .gitignore + .tool-versions + git init. CLAUDE.md, AGENTS.md, netlify.toml, i18n YAML, header override, 404s, CSS, security headers, and deploy wiring are OWNED BY LATER OUTLINE ENTRIES (02-11) and MUST NOT be created here. The foundation proposal's `## CLAUDE.md Draft` and `## AGENTS.md Draft` are intentionally not emitted by this story — the orchestrator split the foundation across 11 entries, and story 10 (`Ship Netlify security headers and repo meta files`) is the natural home for repo meta files. The `.editorconfig` similarly belongs to story 10 or story 08 (Netlify config), not here. Submodule URL `https://github.com/adityatelange/hugo-PaperMod.git` is verbatim from foundation Appendix C. `hugo.toml` fields are the minimal subset of foundation Appendix A that this story's scope needs — the `[params]`, `[markup.goldmark.renderer]`, and `[markup.highlight]` blocks are deferred to story 05 (aesthetic + params) because this story is scaffold-only.\n\n---\n\n[audit-deferred: resolved at plan review] deferral surfaced: notes claim deferral to story 05 for [params], [markup.goldmark.renderer], and [markup.highlight] blocks. Reviewer must confirm story 05 wires the deferred concern (not just exposes a helper).\nReason recorded for the deferred findings of this batch: Phase 1 first-plan: deferrals surface design choices to be verified at Phase 1 exit (story 11); defer here to proceed\n\n---\n\n[audit-deferred: resolved at plan review] deferral surfaced: notes claim deferral to story 05 for [params], [markup.goldmark.renderer], and [markup.highlight] blocks. Reviewer must confirm story 05 wires the deferred concern (not just exposes a helper).\nReason recorded for the deferred findings of this batch: Phase 1 first-plan: deferrals are design handoffs between stories (01->05 params, 06->07 head block); reviewer confirms during story 11 exit verification",
@@ -191,7 +191,7 @@
         "hugo --quiet --gc --minify exits 0 against the tree with no missing-translation warnings for the two configured default languages (pt-br, en); the build is the structural lint per foundation Lint and Format Config § Decision item 2.",
         "The project's own syntax check passes: every YAML file (i18n/pt-br.yaml, i18n/en.yaml) parses as valid YAML and every Markdown file's YAML front-matter parses cleanly — Hugo's own parser is the authoritative check and is exercised by the build in the previous criterion."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 2,
       "dependsOn": [
         "US-001"
@@ -243,7 +243,7 @@
         "`hugo --quiet` exits 0 with no template errors from the newly authored partial.",
         "Bash syntax check passes: `bash -n` on any shell helpers is irrelevant here; the project's own build check is `hugo --quiet` and it succeeds."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 3,
       "dependsOn": [
         "US-001",
@@ -293,7 +293,7 @@
         "hugo --quiet (Hugo 0.170.1 as pinned in .tool-versions) builds the site without error and produces both public/404.html (Netlify's single catch-all 404 handler) and public/en/404.html (per-language 404 reachable via the Netlify redirect rule planned for US-008).",
         "Hugo's own syntax check passes: `hugo --quiet` exits 0 with no template parse errors across the three 404 templates."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 4,
       "dependsOn": [
         "US-001",
@@ -341,7 +341,7 @@
         "hugo --quiet builds the site successfully (exit 0) with the new CSS and params in place.",
         "bash -n validates the verify script has no syntax errors."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 5,
       "dependsOn": [
         "US-001"
@@ -390,7 +390,7 @@
         "Building with `HUGO_ENV=preview hugo` writes the noindex meta into public/index.html; building with `HUGO_ENV=production hugo` writes a public/index.html containing no `noindex` token anywhere, so the apex production deploy (Phase 3) is free to be indexed.",
         "The project's own syntax check passes: `hugo --quiet` exits 0 with no template-parse errors against the new extend_head.html partial."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 6,
       "dependsOn": [
         "US-001"
@@ -438,7 +438,7 @@
         "hugo --quiet builds without missing-translation warnings and the rendered public/index.html contains all of: rel=\"canonical\", hreflang=\"pt-br\", hreflang=\"en\", hreflang=\"x-default\", og:title, og:image, and a reference to og-default.png or favicon.",
         "hugo --printI18nWarnings reports zero missing-translation warnings for keys referenced by the head block."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 7,
       "dependsOn": [
         "US-001",
@@ -491,7 +491,7 @@
         "hugo.toml's baseURL remains a local-dev placeholder (e.g. http://localhost:1313/) and never carries a production hostname, because the [context.*] command overrides inject --baseURL per deploy context; grepping netlify.toml confirms no production hostname is hardcoded there either.",
         "bash -n netlify.toml is not applicable (TOML, not shell); instead, the file is syntactically valid TOML as confirmed by python3 -c \"import tomllib; tomllib.load(open('netlify.toml','rb'))\" exiting zero."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 80,
       "dependsOn": [
         "US-001"
@@ -588,7 +588,7 @@
         "'hugo --quiet' completes with exit 0 from a clean clone whose submodules have been initialized, proving neither the new _headers file nor the README change breaks the site build.",
         "'hugo --quiet' exits 0 (this project ships no TypeScript or language-level typecheck; the Hugo build is the project's own syntax/consistency check for content and config)."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 10,
       "dependsOn": [
         "US-001"
