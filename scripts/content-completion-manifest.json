@@ -1,0 +1,7 @@
+[
+  {"id":185,"slug":"sobre","kind":"page","lang":"pt-br","translationKey":"about","target_path":"content/pt-br/about/index.md"},
+  {"id":193,"slug":"about","kind":"page","lang":"en","translationKey":"about","target_path":"content/en/about/index.md"},
+  {"id":226,"slug":"posts-populares","kind":"page","lang":"pt-br","translationKey":"popular-posts","target_path":"content/pt-br/posts-populares/_index.md"},
+  {"id":237,"slug":"popular-posts","kind":"page","lang":"en","translationKey":"popular-posts","target_path":"content/en/popular-posts/_index.md"},
+  {"id":1606,"slug":"artigos-tech","kind":"page","lang":"pt-br","translationKey":"tech-articles","target_path":"content/pt-br/recomendacoes/artigos-tech/_index.md"}
+]
