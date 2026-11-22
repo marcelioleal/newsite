@@ -96,6 +96,175 @@
       "claim": null
     },
     {
+      "id": 2.1,
+      "name": "Pending Tech Fixes",
+      "slug": "pending-tech-fixes",
+      "goal": "Technical debt from Phase 2 migration is resolved — the 139MB video self-hosted on YouTube, broken VideoPress embeds replaced, external images no longer proxied through Jetpack, and GitHub pushes auto-deploy via Netlify without manual CLI.",
+      "successCriteria": [
+        "The 139MB video (static/videos/20250201095728000070.mp4) is published on a YouTube channel owned by the site owner and referenced via a YouTube iframe embed in its originating post.",
+        "Every WordPress post that originally embedded a VideoPress iframe either plays a self-hosted video or embeds a YouTube video — with no empty iframe divs remaining.",
+        "External images proxied through i0.wp.com (Giphy, Medium, softwarelivre.org and similar) are either downloaded and self-hosted or replaced with direct source URLs.",
+        "Pushing to main on github.com/marcelioleal/newsite triggers an automatic Netlify production deploy without a manual netlify deploy invocation."
+      ],
+      "dependsOn": [
+        2
+      ],
+      "creates": [
+        {
+          "identity": "youtube_video_embeds",
+          "description": "YouTube iframe embeds (or self-hosted video tags) replacing empty VideoPress iframe divs in migrated posts"
+        },
+        {
+          "identity": "netlify_github_autodeploy",
+          "description": "Netlify site linked to the GitHub repo via OAuth webhook so push to main triggers an auto-build"
+        }
+      ],
+      "needs": [
+        {
+          "identity": "content/pt-br/posts",
+          "description": "Migrated post bundles from Phase 2 whose empty iframes need swapping"
+        }
+      ],
+      "areas": [
+        "content/**",
+        "scripts/**",
+        "netlify.toml"
+      ],
+      "notes": null,
+      "branch": null,
+      "dir": "phase-2.1-pending-tech-fixes",
+      "status": "pending",
+      "claim": null
+    },
+    {
+      "id": 2.2,
+      "name": "Content Completion",
+      "slug": "content-completion",
+      "goal": "WordPress pages left behind in Phase 2 are migrated into the Hugo site, replacing Phase 1 placeholder content with real WordPress authoring and filling in Popular Posts and Artigos Tech.",
+      "successCriteria": [
+        "content/pt-br/about/index.md replaces the Phase 1 placeholder with migrated content of WordPress page 185 (Sobre Mim).",
+        "content/en/about/index.md replaces the Phase 1 placeholder with migrated content of WordPress page 193 (About me).",
+        "Popular Posts PT (WP page 226) is migrated to content/pt-br/posts-populares/_index.md and linked in the nav or home page.",
+        "Popular Posts EN (WP page 237) is migrated to content/en/popular-posts/_index.md and linked in the nav or home page.",
+        "WordPress page 1606 (Artigos Tech) is migrated to content/pt-br/recomendacoes/artigos-tech/_index.md, replacing the Phase 2 placeholder."
+      ],
+      "dependsOn": [
+        2
+      ],
+      "creates": [
+        {
+          "identity": "content/pt-br/about/index.md",
+          "description": "Real Sobre Mim bio replacing the Phase 1 placeholder, migrated from WP page 185"
+        },
+        {
+          "identity": "content/en/about/index.md",
+          "description": "Real About me bio replacing the Phase 1 placeholder, migrated from WP page 193"
+        },
+        {
+          "identity": "content/pt-br/posts-populares",
+          "description": "Popular Posts PT branch bundle migrated from WP page 226"
+        },
+        {
+          "identity": "content/en/popular-posts",
+          "description": "Popular Posts EN branch bundle migrated from WP page 237"
+        }
+      ],
+      "needs": [
+        {
+          "identity": "scripts/wp_to_hugo.py",
+          "description": "Migration script from Phase 2 reused for the remaining pages"
+        }
+      ],
+      "areas": [
+        "content/**"
+      ],
+      "notes": null,
+      "branch": null,
+      "dir": "phase-2.2-content-completion",
+      "status": "pending",
+      "claim": null
+    },
+    {
+      "id": 2.3,
+      "name": "Design Polish (dark-default theme)",
+      "slug": "design-polish",
+      "goal": "The site ships with a dark theme by default and a light toggle, extending the Phase 1 minimal single-column aesthetic into a cohesive dark palette.",
+      "successCriteria": [
+        "disableThemeToggle in hugo.toml [params] is set to false, exposing PaperMod's theme toggle in the header.",
+        "defaultTheme in hugo.toml [params] is set to dark.",
+        "assets/css/extended/custom.css defines a dark palette (background, foreground, muted, accent) that preserves the ~720px single-column layout, system font stack, and dates-above-titles typography.",
+        "The language switcher aria-disabled badge and the dated post-list both maintain WCAG AA contrast (ratio at or above 4.5:1) in dark mode.",
+        "static/og-default.png and static/favicon.ico are regenerated or validated for dark-default rendering."
+      ],
+      "dependsOn": [
+        2
+      ],
+      "creates": [
+        {
+          "identity": "assets/css/extended/custom.css",
+          "description": "Extended CSS with a dark-default palette and a light override triggered by PaperMod data-theme attribute"
+        }
+      ],
+      "needs": [
+        {
+          "identity": "hugo.toml",
+          "description": "Hugo config with Phase 1 aesthetic params that this phase amends (disableThemeToggle=false, defaultTheme=dark)"
+        }
+      ],
+      "areas": [
+        "assets/**",
+        "layouts/**",
+        "hugo.toml"
+      ],
+      "notes": null,
+      "branch": null,
+      "dir": "phase-2.3-design-polish",
+      "status": "pending",
+      "claim": null
+    },
+    {
+      "id": 2.4,
+      "name": "Features — Search, RSS, Analytics",
+      "slug": "features-search-rss-analytics",
+      "goal": "The site has static search, discoverable RSS feeds, and privacy-friendly analytics that count both humans and bot traffic — all free or near-free, no cookie banner, GDPR-safe.",
+      "successCriteria": [
+        "Pagefind is wired into the Hugo build; a search field in the header returns ranked results across all posts and pages.",
+        "An RSS link is visible in the header or footer pointing at /index.xml (PT) and /en/index.xml (EN).",
+        "GoatCounter free tier is wired via a small inline script in layouts/partials/extend_head.html; visits are visible on the GoatCounter dashboard, including bot classifications.",
+        "The analytics script loads only in production/staging (not local dev) and respects Do-Not-Track.",
+        "CSP in static/_headers is updated to allow the GoatCounter script origin without compromising the strict baseline."
+      ],
+      "dependsOn": [
+        2
+      ],
+      "creates": [
+        {
+          "identity": "pagefind_index",
+          "description": "Pagefind static search index built at Hugo build time and served from /pagefind/"
+        },
+        {
+          "identity": "goatcounter_integration",
+          "description": "GoatCounter analytics script in layouts/partials/extend_head.html with bot visibility"
+        }
+      ],
+      "needs": [
+        {
+          "identity": "layouts/partials/extend_head.html",
+          "description": "Head partial from Phase 1 where the analytics script and search toggle land"
+        }
+      ],
+      "areas": [
+        "layouts/**",
+        "static/**",
+        "hugo.toml"
+      ],
+      "notes": null,
+      "branch": null,
+      "dir": "phase-2.4-features-search-rss-analytics",
+      "status": "pending",
+      "claim": null
+    },
+    {
       "id": 3,
       "name": "SEO Preservation and Cutover",
       "slug": "seo-cutover",
