@@ -1,0 +1,228 @@
+{
+  "schemaVersion": "3.3",
+  "metadata": {
+    "title": "feat: Phase 2.2 Content Completion — migrate 5 remaining WP pages + Popular Posts nav",
+    "type": "feat",
+    "branchName": "feat/wordpress-to-hugo-migration-phase-2-2-content-completion",
+    "createdAt": "2026-11-22",
+    "planPath": null,
+    "smellWarnings": [
+      {
+        "type": "orphan-symbol",
+        "storyId": "US-001",
+        "symbols": [
+          "translationKey",
+          "translationKey",
+          "translationKey",
+          "translationKey",
+          "translationKey",
+          "wp_to_hugo"
+        ],
+        "message": "introduces symbols no sibling story references"
+      },
+      {
+        "type": "orphan-symbol",
+        "storyId": "US-002",
+        "symbols": [
+          "pageRef",
+          "pageRef",
+          "PaperMod"
+        ],
+        "message": "introduces symbols no sibling story references"
+      },
+      {
+        "type": "orphan-symbol",
+        "storyId": "US-003",
+        "symbols": [
+          "acceptanceCriteria"
+        ],
+        "message": "introduces symbols no sibling story references"
+      }
+    ],
+    "roadmapPath": ".aimi/tasks/wordpress-to-hugo-migration/roadmap.json",
+    "phase": {
+      "id": 2.2,
+      "dir": "phase-2.2-content-completion"
+    },
+    "pluginVersion": "1.156.0",
+    "brainstormPath": ".aimi/brainstorms/2026-11-22-polish-and-pendings-brainstorm.md",
+    "researchDepth": "skip",
+    "decisions": [
+      {
+        "anchor": "force_migration",
+        "source": "brainstorm",
+        "text": "Use scripts/wp_to_hugo.py --force to overwrite Phase 1 placeholder About pages and Phase 2 placeholder Artigos Tech.",
+        "resolution": "resolved"
+      },
+      {
+        "anchor": "popular_posts_slugs",
+        "source": "plan",
+        "text": "Popular Posts PT at /posts-populares/ (slug \"posts-populares\"), EN at /en/popular-posts/ (slug \"popular-posts\"). Shared translationKey \"popular-posts\" so the language switcher pairs them.",
+        "resolution": "resolved"
+      },
+      {
+        "anchor": "about_slug_preservation",
+        "source": "plan",
+        "text": "content/pt-br/about/index.md keeps slug=\"sobre\" (URL /sobre/, matching Phase 1). EN keeps slug=\"about\" (URL /en/about/). Shared translationKey \"about\".",
+        "resolution": "resolved"
+      },
+      {
+        "anchor": "nav_entry_weight",
+        "source": "plan",
+        "text": "Posts Populares (PT) and Popular Posts (EN) sit at weight 15 — between Sobre (10) and Recomendações (20) in the nav order.",
+        "resolution": "resolved"
+      }
+    ]
+  },
+  "userStories": [
+    {
+      "title": "Migrate 5 remaining WordPress pages with --force to replace placeholders",
+      "description": "As the site owner, I want the final 5 WordPress pages (About PT/EN, Popular Posts PT/EN, Artigos Tech) migrated into Hugo so that every page the live site renders is backed by the real WP content instead of Phase 1/2 placeholders.",
+      "acceptanceCriteria": [
+        "A visitor landing on /sobre/, /en/about/, /posts-populares/, /en/popular-posts/, and /recomendacoes/artigos-tech/ sees real content migrated from the WP pages (185, 193, 226, 237, 1606) and no Phase 1 / Phase 2 placeholder sentence remains on any of them.",
+        "scripts/content-completion-manifest.json exists at the repo root and is a JSON array of exactly 5 objects, one per WP page id in {185, 193, 226, 237, 1606}, each carrying id, slug, kind=\"page\", lang, target_path, and (for 226/237/1606) translationKey.",
+        "Entry 185 uses slug=\"sobre\", lang=\"pt-br\", target_path=\"content/pt-br/about/index.md\", translationKey=\"about\"; entry 193 uses slug=\"about\", lang=\"en\", target_path=\"content/en/about/index.md\", translationKey=\"about\"; entries 226 and 237 share translationKey=\"popular-posts\" so the language switcher pairs them; entry 1606 uses slug=\"artigos-tech\", lang=\"pt-br\", target_path=\"content/pt-br/recomendacoes/artigos-tech/_index.md\".",
+        "Running `python3 scripts/wp_to_hugo.py --manifest scripts/content-completion-manifest.json --force` exits 0 and overwrites the three files that already existed (content/pt-br/about/index.md, content/en/about/index.md, content/pt-br/recomendacoes/artigos-tech/_index.md) while creating the two new leaf-bundle files (content/pt-br/posts-populares/_index.md, content/en/popular-posts/_index.md).",
+        "Neither the Phase 1 PT placeholder sentence \"Olá — sou o Marcelio\" nor the Phase 1 EN placeholder sentence \"Hey — I'm Marcelio\" remains anywhere under content/pt-br/about/index.md or content/en/about/index.md; both files carry a translationKey front-matter line of value \"about\".",
+        "content/pt-br/about/index.md carries a front-matter line `slug: sobre` so the PT page continues to serve at /sobre/ for URL preservation; content/pt-br/posts-populares/_index.md and content/en/popular-posts/_index.md both carry a translationKey front-matter line of value \"popular-posts\".",
+        "A full `hugo --quiet` build from the repo root succeeds and writes public/sobre/index.html, public/en/about/index.html, public/posts-populares/index.html, and public/en/popular-posts/index.html, proving every migrated page renders through the live theme.",
+        "`python3 -m py_compile scripts/wp_to_hugo.py` succeeds — the manifest-driven migration path remains syntactically valid Python."
+      ],
+      "status": "pending",
+      "priority": 1,
+      "dependsOn": [],
+      "notes": "wp_to_hugo.py derives the on-disk URL from the manifest's `slug` field; using slug=\"sobre\" for id 185 preserves /sobre/ while slug=\"about\" for id 193 serves /en/about/. translationKey=\"about\" on both keeps them paired in the language switcher exactly as Phase 1 configured.",
+      "implementation": {
+        "files": [
+          "scripts/content-completion-manifest.json",
+          "content/pt-br/posts-populares/_index.md",
+          "content/en/popular-posts/_index.md",
+          "content/pt-br/about/index.md",
+          "content/en/about/index.md",
+          "content/pt-br/recomendacoes/artigos-tech/_index.md"
+        ],
+        "approach": "Author scripts/content-completion-manifest.json as a JSON array of 5 objects following the shape documented in the outline context (185 slug=sobre/translationKey=about, 193 slug=about/translationKey=about, 226 slug=posts-populares/translationKey=popular-posts, 237 slug=popular-posts/translationKey=popular-posts, 1606 slug=artigos-tech/translationKey=tech-articles). Invoke the existing migrator with `python3 scripts/wp_to_hugo.py --manifest scripts/content-completion-manifest.json --force`; the --force flag (confirmed available by Phase 2.1) is what authorizes overwriting the Phase 1 placeholder about pages and the Phase 2 artigos-tech _index.md. The writer composes each page's URL from the manifest `slug`, so the per-entry slug choice above is what preserves /sobre/ for PT while the EN sibling lives at /en/about/. Finally re-run `hugo --quiet` to prove every page renders cleanly through the live theme.",
+        "verify": "set -euo pipefail\ntest -f scripts/content-completion-manifest.json\npython3 -c \"import json; m=json.load(open('scripts/content-completion-manifest.json')); assert len(m)==5, len(m); ids={e['id'] for e in m}; assert ids=={185,193,226,237,1606}, ids; print('manifest ok')\"\npython3 -m py_compile scripts/wp_to_hugo.py\npython3 scripts/wp_to_hugo.py --manifest scripts/content-completion-manifest.json --force\ntest -f content/pt-br/posts-populares/_index.md\ntest -f content/en/popular-posts/_index.md\ntest -f content/pt-br/about/index.md\ntest -f content/en/about/index.md\ntest -f content/pt-br/recomendacoes/artigos-tech/_index.md\n! grep -q 'Olá — sou o Marcelio' content/pt-br/about/index.md\n! grep -q \"Hey — I'm Marcelio\" content/en/about/index.md\ngrep -qE '^slug:[[:space:]]*\"?sobre\"?[[:space:]]*$' content/pt-br/about/index.md\ngrep -qE 'translationKey:[[:space:]]*\"?about\"?' content/pt-br/about/index.md\ngrep -qE 'translationKey:[[:space:]]*\"?about\"?' content/en/about/index.md\ngrep -qE 'translationKey:[[:space:]]*\"?popular-posts\"?' content/pt-br/posts-populares/_index.md\ngrep -qE 'translationKey:[[:space:]]*\"?popular-posts\"?' content/en/popular-posts/_index.md\ngrep -qE 'title:' content/pt-br/about/index.md\ngrep -qE 'title:' content/en/about/index.md\nhugo --quiet\ntest -f public/sobre/index.html\ntest -f public/en/about/index.html\ntest -f public/posts-populares/index.html\ntest -f public/en/popular-posts/index.html\ntest -f public/recomendacoes/artigos-tech/index.html"
+      },
+      "verification": {
+        "strategy": "test",
+        "status": "pending",
+        "expect": "The migrator runs end-to-end against the 5-entry manifest, overwrites every existing placeholder file, creates the two popular-posts bundles, and a full Hugo build renders /sobre/, /en/about/, /posts-populares/, /en/popular-posts/, and /recomendacoes/artigos-tech/ without errors."
+      },
+      "tasks": [
+        "Create scripts/content-completion-manifest.json as a JSON array with the 5 entries for WP ids 185, 193, 226, 237, 1606 using the slug/lang/translationKey/target_path mapping from the approach",
+        "Set entry 185 slug to sobre (not about) so wp_to_hugo.py's URL composition keeps the PT about page serving at /sobre/ for URL preservation",
+        "Give entries 185 and 193 the same translationKey about so Hugo's language switcher pairs the PT and EN about pages",
+        "Give entries 226 and 237 the shared translationKey popular-posts so the PT posts-populares page pairs with the EN popular-posts page",
+        "Run python3 -m py_compile scripts/wp_to_hugo.py to confirm the migrator module still parses before invoking it",
+        "Invoke python3 scripts/wp_to_hugo.py --manifest scripts/content-completion-manifest.json --force and confirm it exits 0 with the three overwritten and two created files on disk",
+        "Confirm the Phase 1 PT placeholder sentence Olá — sou o Marcelio and the Phase 1 EN placeholder sentence Hey — I'm Marcelio no longer appear anywhere under content/pt-br/about/index.md or content/en/about/index.md",
+        "Run hugo --quiet from the repo root and verify public/sobre/index.html, public/en/about/index.html, public/posts-populares/index.html, public/en/popular-posts/index.html, and public/recomendacoes/artigos-tech/index.html all exist"
+      ],
+      "id": "US-001",
+      "wave": 1
+    },
+    {
+      "title": "Add Popular Posts links to the per-language nav menu",
+      "description": "As a bilingual site visitor, I want a Popular Posts link in the header nav of each language so that I can reach the curated list in one click from any page.",
+      "acceptanceCriteria": [
+        "After the site is rebuilt, the rendered PT home page (public/index.html) contains a header nav link to /posts-populares/ labeled \"Posts Populares\", and the EN home page (public/en/index.html) contains a header nav link to /en/popular-posts/ labeled \"Popular Posts\" — the existing header.html `{{ range site.Menus.main }}` loop surfaces them with no template change.",
+        "hugo.toml declares `[[languages.pt-br.menu.main]]` with `name = \"Posts Populares\"`, `pageRef = \"/posts-populares\"`, `weight = 15`, and `[[languages.en.menu.main]]` with `name = \"Popular Posts\"`, `pageRef = \"/popular-posts\"`, `weight = 15`, so Popular Posts slots between Sobre/About (weight 10) and Recomendações/Recommendations (weight 20).",
+        "hugo.toml remains valid TOML (tomllib.load succeeds) and `hugo --quiet` builds the site clean with the new menu entries (pageRefs resolve to the content pages produced by US-001 with no \"REF_NOT_FOUND\" error).",
+        "`bash -n` on any shell snippet the story adds passes, and `hugo --quiet` exits 0 — the project's own build/syntax check."
+      ],
+      "status": "pending",
+      "priority": 2,
+      "dependsOn": [
+        "US-001"
+      ],
+      "implementation": {
+        "files": [
+          "hugo.toml"
+        ],
+        "approach": "Append two array-of-tables entries to hugo.toml: one `[[languages.pt-br.menu.main]]` block with name=\"Posts Populares\", pageRef=\"/posts-populares\", weight=15 placed after the existing Sobre block (lines 16-19) and before Recomendações (lines 21-24); one `[[languages.en.menu.main]]` block with name=\"Popular Posts\", pageRef=\"/popular-posts\", weight=15 placed after About (lines 32-35) and before Recommendations (lines 37-40). Weight 15 slots Popular Posts between the weight-10 and weight-20 neighbours, keeping the ordering Sobre → Posts Populares → Recomendações (and the English mirror). No change to themes/PaperMod/layouts/partials/header.html — its existing `{{ range site.Menus.main }}` loop surfaces any menu entry declared under the current language.",
+        "verify": "set -e\ngrep -q 'name = \"Posts Populares\"' hugo.toml\ngrep -q 'name = \"Popular Posts\"' hugo.toml\ngrep -q 'pageRef = \"/posts-populares\"' hugo.toml\ngrep -q 'pageRef = \"/popular-posts\"' hugo.toml\npython3 -c \"import tomllib; tomllib.load(open('hugo.toml','rb'))\"\nrm -rf public && hugo --quiet\ngrep -Eq 'href=\"?/posts-populares/\"?' public/index.html\ngrep -Eq 'href=\"?/en/popular-posts/\"?' public/en/index.html"
+      },
+      "verification": {
+        "strategy": "test",
+        "status": "pending",
+        "expect": "hugo rebuilds cleanly and both rendered language home pages carry a header nav link to their respective Popular Posts page."
+      },
+      "tasks": [
+        "Open hugo.toml and locate the `[[languages.pt-br.menu.main]]` block for Sobre (weight 10) and the one for Recomendações (weight 20).",
+        "Insert a new `[[languages.pt-br.menu.main]]` block between them with name=\"Posts Populares\", pageRef=\"/posts-populares\", weight=15.",
+        "Locate the `[[languages.en.menu.main]]` blocks for About (weight 10) and Recommendations (weight 20).",
+        "Insert a new `[[languages.en.menu.main]]` block between them with name=\"Popular Posts\", pageRef=\"/popular-posts\", weight=15.",
+        "Confirm hugo.toml still parses as TOML with `python3 -c \"import tomllib; tomllib.load(open('hugo.toml','rb'))\"`.",
+        "Run `rm -rf public && hugo --quiet` to rebuild the site and confirm no `REF_NOT_FOUND` warnings for the new pageRefs.",
+        "Grep public/index.html for the PT nav link to /posts-populares/ and public/en/index.html for the EN nav link to /en/popular-posts/."
+      ],
+      "id": "US-002",
+      "wave": 2
+    },
+    {
+      "title": "Phase 2.2 exit verification: live staging shows real About, Popular Posts navigable, Artigos Tech with content",
+      "description": "As the site owner closing Phase 2.2, I want a pre-deploy local smoke check followed by a live verification of the deployed staging URLs so that I can confirm the About bio, Popular Posts listings, and Artigos Tech page render real content with the new nav entries present in both languages.",
+      "acceptanceCriteria": [
+        "Pre-deploy smoke passes locally: hugo --quiet builds without error; content/pt-br/posts-populares/_index.md and content/en/popular-posts/_index.md exist; content/pt-br/about/index.md no longer contains the Phase 1 placeholder 'Olá — sou o Marcelio'; content/en/about/index.md no longer contains the Phase 1 placeholder 'Hey — I'm Marcelio'; hugo.toml declares a nav entry named 'Posts Populares'.",
+        "After the commit lands on main, Netlify auto-deploys (wired in Phase 2.1) and reaches state=ready for the new HEAD commit within 3 minutes of the push, observable via the Netlify deploy status for site new.marcelioleal.com.",
+        "Live GET https://new.marcelioleal.com/sobre/ returns HTTP 200, body does NOT contain the Phase 1 placeholder 'Ol&aacute; &mdash; sou o Marcelio' (nor its unescaped form 'Olá — sou o Marcelio'), and contains at least one paragraph of Marcelio's real bio text.",
+        "Live GET https://new.marcelioleal.com/en/about/ returns HTTP 200, body does NOT contain the Phase 1 placeholder 'Hey &mdash; I&#39;m Marcelio' (nor 'Hey — I'm Marcelio'), and contains at least one paragraph of real English bio text.",
+        "Live GET https://new.marcelioleal.com/posts-populares/ and https://new.marcelioleal.com/en/popular-posts/ each return HTTP 200 and render list content (non-empty body).",
+        "Live GET https://new.marcelioleal.com/recomendacoes/artigos-tech/ returns HTTP 200 and the body differs from the Phase 2 placeholder stub (contains the migrated WordPress article content, not the placeholder sentinel).",
+        "Live GET https://new.marcelioleal.com/ body contains a nav link with text 'Posts Populares' pointing at /posts-populares/, and GET https://new.marcelioleal.com/en/ body contains a nav link with text 'Popular Posts' pointing at /en/popular-posts/.",
+        "No regression on live staging: robots.txt still serves 'Disallow: /'; response headers on / still include Content-Security-Policy and Strict-Transport-Security; 5 pre-selected sample post URLs (one per language, mixed years) each return HTTP 200.",
+        "Visual gate reviewer confirms via the Phase 2.2 prompt that all A-E checks pass, or lists the specific failures that block closing Phase 2.2.",
+        "hugo --quiet exits 0 with no build errors or warnings-as-errors."
+      ],
+      "status": "pending",
+      "priority": 3,
+      "dependsOn": [
+        "US-001",
+        "US-002"
+      ],
+      "notes": "Verification-only gate story: implementation.files is intentionally empty. The local pre-deploy smoke runs in implementation.verify; the live post-deploy checks are enumerated as acceptanceCriteria and confirmed through the visual gate because the Netlify deploy wait and live curl loop are human-observable and consume criteria that no single local command executes. Sample post URLs for the no-regression check should be chosen at execute time from the 5 most-recently-migrated posts (pick before pushing).",
+      "implementation": {
+        "files": [],
+        "approach": "Pre-deploy: run the local smoke (hugo build + file-existence + placeholder-absence greps + nav-entry grep) via implementation.verify to prove the tree is ready to ship. Then commit and push to main; Netlify's Phase 2.1 wiring triggers an auto-deploy. Poll the Netlify deploy status (via the Netlify CLI or API for site new.marcelioleal.com) until state=ready for the pushed commit, max 3 minutes. Then run the live curl loop described in acceptanceCriteria against new.marcelioleal.com, including HTTP 200 checks, placeholder-string negations on /sobre/ and /en/about/, body-content assertions for /posts-populares/, /en/popular-posts/ and /recomendacoes/artigos-tech/, nav-link assertions on / and /en/, and the no-regression sweep (robots.txt, CSP/HSTS headers, 5 sample post URLs). Close the visual gate with the Phase 2.2 prompt once every check reports pass.",
+        "verify": "set -euo pipefail; hugo --quiet; test -f content/pt-br/posts-populares/_index.md; test -f content/en/popular-posts/_index.md; ! grep -q 'Olá — sou o Marcelio' content/pt-br/about/index.md; ! grep -q \"Hey — I'm Marcelio\" content/en/about/index.md; grep -q 'name = \"Posts Populares\"' hugo.toml; grep -q 'Marcelio' content/pt-br/about/index.md; grep -q 'Marcelio' content/en/about/index.md",
+        "guardRails": [
+          "hugo --quiet"
+        ]
+      },
+      "verification": {
+        "strategy": "visual",
+        "status": "pending",
+        "url": "https://new.marcelioleal.com/",
+        "expect": "Live staging: /sobre/ and /en/about/ show the real bio (no Phase 1 placeholder); /posts-populares/ and /en/popular-posts/ are navigable and render list content; /recomendacoes/artigos-tech/ shows the migrated WordPress content (not the Phase 2 stub); the PT nav shows 'Posts Populares' and the EN nav shows 'Popular Posts'; robots.txt still serves Disallow:/, CSP/HSTS headers intact, 5 sample post URLs return 200."
+      },
+      "gate": {
+        "type": "decision",
+        "status": "pending",
+        "prompt": "Phase 2.2 live verify: /sobre/ and /en/about/ show the real bio (not placeholders), /posts-populares/ and /en/popular-posts/ are navigable, /recomendacoes/artigos-tech/ loads real content. Nav shows the new entries on both languages. OK to close Phase 2.2?",
+        "options": [
+          "All A-E pass",
+          "Blocked — list failures"
+        ]
+      },
+      "tasks": [
+        "Run hugo --quiet locally and confirm the build completes with no errors",
+        "Confirm content/pt-br/posts-populares/_index.md and content/en/popular-posts/_index.md both exist on disk",
+        "Grep content/pt-br/about/index.md and content/en/about/index.md to confirm no Phase 1 placeholder strings remain",
+        "Grep hugo.toml to confirm the 'Posts Populares' nav entry is declared",
+        "Commit the Phase 2.2 changes with a descriptive subject and push to main",
+        "Poll Netlify deploy status for new.marcelioleal.com until state=ready for the pushed commit (max 3 min)",
+        "curl https://new.marcelioleal.com/sobre/ and assert 200 + no Phase 1 placeholder + real bio paragraph present",
+        "curl https://new.marcelioleal.com/en/about/ and assert 200 + no English placeholder + real bio paragraph present",
+        "curl /posts-populares/ and /en/popular-posts/ and assert 200 with non-empty list body on both",
+        "curl /recomendecoes/artigos-tech/ and assert 200 + body differs from the Phase 2 placeholder stub",
+        "curl / and /en/ homepages and assert the PT nav has 'Posts Populares' and the EN nav has 'Popular Posts'",
+        "Fetch robots.txt + response headers on / and verify Disallow:/ still served and CSP/HSTS headers intact",
+        "Pick 5 sample post URLs and curl each, confirming HTTP 200 on all 5 (no regression)",
+        "Record each check's pass/fail outcome and resolve the visual gate with either 'All A-E pass' or 'Blocked — list failures'"
+      ],
+      "id": "US-003",
+      "wave": 3
+    }
+  ]
+}

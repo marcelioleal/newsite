@@ -67,15 +67,19 @@
         },
         {
           "identity": "static/images",
-          "description": "134 WordPress media assets migrated (HEIC→JPEG, VideoPress self-hosted, images under year/month paths)"
+          "description": "134 WordPress media assets migrated (HEIC to JPEG, VideoPress self-hosted, images under year/month paths)"
         },
         {
           "identity": "content/pt-br/recomendacoes",
-          "description": "Recomendações PT branch bundle with 9 sub-pages (livros, música, kitesurf, sites-e-podcasts, posts-especiais, cafés, arte em SP, viagem pra Belém, artigos-tech)"
+          "description": "Recomendacoes PT branch bundle with 9 sub-pages"
         },
         {
           "identity": "content/pt-br/tcc-classgenerator",
-          "description": "TCC/ClassGenerator PT page with EN pair at content/en/thesis-classgenerator/ via shared translationKey, PDF at static/assets/"
+          "description": "TCC PT page with EN pair via shared translationKey"
+        },
+        {
+          "identity": "scripts/wp_to_hugo.py",
+          "description": "WordPress to Hugo conversion script reusable by Phase 2.2+"
         }
       ],
       "needs": [
@@ -181,7 +185,7 @@
       "notes": null,
       "branch": null,
       "dir": "phase-2.2-content-completion",
-      "status": "pending",
+      "status": "planned",
       "claim": null
     },
     {
