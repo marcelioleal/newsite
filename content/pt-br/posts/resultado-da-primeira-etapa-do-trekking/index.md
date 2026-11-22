@@ -5,13 +5,13 @@ slug: resultado-da-primeira-etapa-do-trekking
 wp_id: 15
 ---
 
-<img src="https://i0.wp.com/img210.imageshack.us/img210/8202/dsc00328uj5.jpg?resize=247%2C185" data-recalc-dims="1" loading="lazy" decoding="async" width="247" height="185" />
+
 
 A prova foi muito estaile, embora tenho sentido falta de uma prova especial.
 
 O meu começo, como sempre, foi desastrado. Erramos a primeira entrada, ai quando enchergamos ela e fomos voltar eu fui querer dar uma de ninja e cai num pulo sensacional. 🙂
 
-<img src="https://i0.wp.com/img115.imageshack.us/img115/6421/dsc00314vv3.jpg?w=1100" data-recalc-dims="1" decoding="async" />\
+\
 **Francival, Deuzinei, Otávio e eu. - Os Parasitas\**
 
 Mas a primeira parte da prova, até o primeiro PC, foi tranquila. Nós chegamos bem no tempo, mas não com a precisão que tinhamos planejado.
@@ -28,7 +28,7 @@ Até ai, parecia tudo bem, estavamos tranquilos e teoricamente perto de um neutr
 
 No PC 4 perguntaram o nome da nossa equipe, ai o Capitão Deuzinei, falou Parasitas. As brincadeiras foram inevitáveis pelos membros de outras equipes... 🙂
 
-<img src="https://i0.wp.com/img209.imageshack.us/img209/676/dsc00270nu8.jpg?w=1100" data-recalc-dims="1" decoding="async" />\
+\
 **Galera rindo do nome de nossa equipe, isso no início. No fim, a história foi outra. 😀**
 
 Mas daí em diante, nossa equipe foi seguida pelo menos por mais umas 4 equipes durantes os próximos trechos até o fim. (Quem era parasita? heheheeh)
@@ -41,7 +41,7 @@ Do PC 6 até a chegada, foi um trecho mais difícil, mas conseguimos achar o cam
 
 Ai foi só correr pra mesa de frutas e pra piscina.
 
-<img src="https://i0.wp.com/img204.imageshack.us/img204/7919/dsc00381gt4.jpg?w=1100" data-recalc-dims="1" decoding="async" />
+
 
 Fomos a terceira equipe a chegar. E a quarta no <a href="http://www.kaluana.com/trekking/resultado_1_etapa_2007.asp" target="_blank">resultado geral</a> da etapa.
 
@@ -70,6 +70,6 @@ PS.:
 
 Uma coisa ruim, foi o machucado da nossa ex-colega-de-equipe Andrea. Mas ela levou numa boa, eu acho, e já está pronta pras próximas provas. Ela está na categoria Race.
 
-<img src="https://i0.wp.com/img250.imageshack.us/img250/5205/dsc00382sa6.jpg?w=1100" data-recalc-dims="1" decoding="async" />
+
 
 Mais fotos na [galeria](http://www.kaluana.com/trekking/galeria.htm).

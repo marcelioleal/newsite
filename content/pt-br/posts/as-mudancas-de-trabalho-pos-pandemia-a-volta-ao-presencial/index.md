@@ -25,7 +25,7 @@ Uma série de fatores levaram a adoção acelerada do trabalho remoto. Dois, esp
 Desde 2018, o volume de capital aportado nas startups cresceu muito. Como há uma concentração de startups em determinadas cidades, por exemplo, São Paulo, Berlin e Londres. O que era difícil, se tornou mais ainda. Adicionando o contexto que muitas startups buscavam o crescimento de seu faturamento a todo custo, isso significou em uma pressão sem precedentes de contratação em muitos mercados.
 
 <figure class="wp-caption">
-<img src="https://i0.wp.com/cdn-images-1.medium.com/max/800/1%2A5fwzgE4P4ETwnP3qIqSmbw.png?w=1100&amp;ssl=1" data-recalc-dims="1" decoding="async" data-width="1000" data-height="743" />
+<img src="/images/external/cdn-images-1.medium.com/1_5fwzgE4P4ETwnP3qIqSmbw.png" data-recalc-dims="1" decoding="async" data-width="1000" data-height="743" />
 <figcaption>Número de Empregados do Spotify</figcaption>
 </figure>
 

@@ -7,7 +7,7 @@ wp_id: 76
 
 Hoje faço 26 anos, mas continuo me sentindo com 23...
 
-<a href="http://img388.imageshack.us/my.php?image=eucarvo0.jpg" target="_blank"><img src="https://i0.wp.com/img388.imageshack.us/img388/3600/eucarvo0.th.jpg?w=1100" data-recalc-dims="1" decoding="async" data-border="0" alt="Free Image Hosting at www.ImageShack.us" /></a>
+<a href="http://img388.imageshack.us/my.php?image=eucarvo0.jpg" target="_blank"></a>
 
 Isso é o que é importante 😀
 

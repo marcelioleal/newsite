@@ -5,7 +5,7 @@ slug: what-is-startup-culture
 wp_id: 345
 ---
 
-<img src="https://i0.wp.com/cdn-images-1.medium.com/max/2560/1%2ArBUKCpSMh2n0fjTFZK1Tbw.jpeg?w=1100&amp;ssl=1" data-recalc-dims="1" decoding="async" />
+<img src="/images/external/cdn-images-1.medium.com/1_rBUKCpSMh2n0fjTFZK1Tbw.jpeg" data-recalc-dims="1" decoding="async" />
 <figcaption>Bobsleigh team. <a href="https://flic.kr/p/8WWbjz" target="_blank" rel="noopener">https://flic.kr/p/8WWbjz</a></figcaption>
 
 <a href="http://www.businessdictionary.com/definition/organizational-culture.html" target="_blank" rel="noopener">Organizational culture</a> is important for all kind of companies. For Startups, the high-risk ones, keeping it under control is mandatory. We can see the difference using Soccer and <a href="https://en.wikipedia.org/wiki/Bobsleigh" target="_blank" rel="noopener">Bobsleigh</a> teams.

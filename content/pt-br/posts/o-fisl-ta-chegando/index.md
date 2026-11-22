@@ -7,7 +7,7 @@ wp_id: 50
 
 [Porto Alegre](http://pt.wikipedia.org/wiki/Alessandra_Ambrosio) é fenomenal... ops, é sobre o [FISL](http://fisl.softwarelivre.org/)...
 
-<img src="https://i0.wp.com/www.softwarelivre.org/imgNews/ASL-160X120.jpeg?resize=160%2C120" data-recalc-dims="1" decoding="async" width="160" height="120" />
+
 
 Enfim, o FISL tá chegando.
 

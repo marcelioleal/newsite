@@ -15,6 +15,6 @@ Agora com a Palavra [Pedrox](http://pedrox.brogui.com/):
 
 > "*se você é blogueiro, nasceu e/ou mora no Pará, essa é a sua comunidade*"
 
-<img src="https://i0.wp.com/img204.imageshack.us/img204/2590/blogueirosparaensesev4.gif?w=1100" data-recalc-dims="1" decoding="async" />
+
 
 Para quem não utiliza Orkut: [Facebook](http://www.facebook.com/group.php?gid=20154412670), [Multiply](http://blogueirosparaenses.multiply.com/), [MySpace](http://groups.myspace.com/blogueirosparaenses), [Sonico](http://www.sonico.com/blogueirosparaenses) (Égua! até aqui!).

@@ -8,7 +8,7 @@ wp_id: 349
 *Este é o terceiro artigo da série Startup e CTO. Você pode ler o primeiro* <a href="https://medium.com/@marcleal/startup-e-o-cto-procurando-o-cto-na-vis%C3%A3o-da-startup-2e3601e61293#.m8cheradj" target="_blank" rel="noopener"><em>aqui</em></a> *e o segundo* <a href="https://medium.com/@marcleal/startup-e-o-cto-a-vis%C3%A3o-do-cto-470d59e0689b#.96j43i2zv" target="_blank" rel="noopener"><em>aqui</em></a>*.*
 
 <figure class="wp-caption">
-<img src="https://i0.wp.com/cdn-images-1.medium.com/max/800/1%2AIFEttcz6ILIMtH_WysAyHQ.jpeg?w=1100&amp;ssl=1" data-recalc-dims="1" decoding="async" data-width="2048" data-height="1367" />
+<img src="/images/external/cdn-images-1.medium.com/1_IFEttcz6ILIMtH_WysAyHQ.jpeg" data-recalc-dims="1" decoding="async" data-width="2048" data-height="1367" />
 <figcaption><a href="https://www.flickr.com/photos/wocintechchat/25900650882/" target="_blank" rel="noopener">https://www.flickr.com/photos/wocintechchat/25900650882/</a></figcaption>
 </figure>
 
@@ -27,7 +27,7 @@ Porém sabemos como é difícil a solução ideal acontecer, principalmente quan
 #### Aspectos Importantes para a contratação de um CTO
 
 <figure class="wp-caption">
-<img src="https://i0.wp.com/cdn-images-1.medium.com/max/800/1%2AGDgT_eZ-8lbm1A7D065hSA.jpeg?w=1100&amp;ssl=1" data-recalc-dims="1" decoding="async" data-width="600" data-height="360" />
+<img src="/images/external/cdn-images-1.medium.com/1_GDgT_eZ-8lbm1A7D065hSA.jpeg" data-recalc-dims="1" decoding="async" data-width="600" data-height="360" />
 <figcaption>A procura do entrosamento ideal. <a href="http://taroba.fm.br/wp-content/uploads/2013/12/victoreleo.jpg" target="_blank" rel="noopener">http://taroba.fm.br/wp-content/uploads/2013/12/victoreleo.jpg</a></figcaption>
 </figure>
 

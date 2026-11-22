@@ -6,7 +6,7 @@ wp_id: 340
 ---
 
 <figure class="wp-caption">
-<img src="https://i0.wp.com/cdn-images-1.medium.com/max/800/1%2AJx8UsM2ugmVJ1WVwW8eh8w.jpeg?w=1100&amp;ssl=1" data-recalc-dims="1" decoding="async" data-width="5760" data-height="3840" />
+<img src="/images/external/cdn-images-1.medium.com/1_Jx8UsM2ugmVJ1WVwW8eh8w.jpeg" data-recalc-dims="1" decoding="async" data-width="5760" data-height="3840" />
 <figcaption>Photo by <a href="https://unsplash.com/@wocintechchat?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener">Christina @ wocintechchat.com</a> on <a href="https://unsplash.com/s/photos/interview?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener">Unsplash</a></figcaption>
 </figure>
 

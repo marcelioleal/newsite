@@ -7,7 +7,7 @@ wp_id: 341
 ---
 
 <figure class="wp-caption">
-<img src="https://i0.wp.com/cdn-images-1.medium.com/max/800/1%2AFCItoYOS9cwwlxSdm_QQIw.jpeg?w=1100&amp;ssl=1" data-recalc-dims="1" decoding="async" data-width="3999" data-height="2666" />
+<img src="/images/external/cdn-images-1.medium.com/1_FCItoYOS9cwwlxSdm_QQIw.jpeg" data-recalc-dims="1" decoding="async" data-width="3999" data-height="2666" />
 <figcaption>Photo by <a href="https://unsplash.com/@markuswinkler?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener">Markus Winkler</a> on <a href="https://unsplash.com/s/photos/resume?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener">Unsplash</a></figcaption>
 </figure>
 
@@ -85,7 +85,7 @@ Outro ponto é se vale escrever em português ou inglês. Isso vai depender de d
 ### Portfólio
 
 <figure class="wp-caption">
-<img src="https://i0.wp.com/cdn-images-1.medium.com/max/800/1%2A5DHlUVtb787w_NKS-sJQmA.png?w=1100&amp;ssl=1" data-recalc-dims="1" decoding="async" data-width="384" data-height="347" />
+<img src="/images/external/cdn-images-1.medium.com/1_5DHlUVtb787w_NKS-sJQmA.png" data-recalc-dims="1" decoding="async" data-width="384" data-height="347" />
 <figcaption>Coloque seu trabalho disponível em algum lugar</figcaption>
 </figure>
 

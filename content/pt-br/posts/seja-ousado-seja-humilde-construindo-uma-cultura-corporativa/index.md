@@ -6,7 +6,7 @@ wp_id: 353
 ---
 
 <figure>
-<img src="https://i0.wp.com/cdn-images-1.medium.com/max/800/1%2AvviLBp4BsSndk_31dnA3Tw.png?w=1100&amp;ssl=1" data-recalc-dims="1" decoding="async" data-width="880" data-height="404" />
+<img src="/images/external/cdn-images-1.medium.com/1_vviLBp4BsSndk_31dnA3Tw.png" data-recalc-dims="1" decoding="async" data-width="880" data-height="404" />
 </figure>
 
 Cultura é algo que pode ser guiado, mas não totalmente definido. É algo que é temporal, e que é constantemente modificado. No <a href="http://qedu.org.br" target="_blank" rel="noopener">QEdu</a> nós resolvemos estabelecer 5 valores pra começar a moldar nossa cultura, são eles: Confiança e Transparência (Trust and Transparency); Efetividade (Accountability); Aprendizado Constante (Lifelong Learning); Seja Ousado, seja Humilde (Be Bold, Be Humble); e Guiado por Dados (Data Driven). Nós tivemos várias influências pra escolher esses valores iniciais, dentre as quais eu posso citar a <a href="https://thenextweb.com/insider/2013/04/27/the-5-values-that-drive-500-startups/#.tnw_Hy8IMPsB" target="_blank" rel="noopener">500 Startups</a>, <a href="https://pt.slideshare.net/avarteq/kanban-kaizen-culture-of-continuous-improvement" target="_blank" rel="noopener">Kanban</a> e o <a href="https://twitter.com/bhorowitz?lang=pt" target="_blank" rel="noopener">Ben Horowitz</a>.
@@ -30,7 +30,7 @@ Por outro lado, é muito importante distinguir humildade de passividade. Já est
 Trabalhar em uma startup em estágio inicial é ter um monte de ideias e uma visão que são, na maioria das vezes, saltos de fé, hipóteses não testadas, ou simplesmente "achismos". A humildade entra como fator-chave nesse contexto, pois achar que você sabe o essencial no início é ficar cego e acelerar pro abismo ou pro eterno caos.
 
 <figure class="wp-caption">
-<img src="https://i0.wp.com/cdn-images-1.medium.com/max/800/1%2Aj7tA0QHx7dYJ5jvIvYOFlw.png?w=1100&amp;ssl=1" data-recalc-dims="1" decoding="async" data-width="1056" data-height="372" />
+<img src="/images/external/cdn-images-1.medium.com/1_j7tA0QHx7dYJ5jvIvYOFlw.png" data-recalc-dims="1" decoding="async" data-width="1056" data-height="372" />
 <figcaption>Frase que so Stephen Hawking que eu roubei da parede da Jusbrasil</figcaption>
 </figure>
 
@@ -52,7 +52,7 @@ Entender técnicas como <a href="https://papodehomem.com.br/comunicacao-nao-viol
 #### **Formalização**
 
 <figure>
-<img src="https://i0.wp.com/cdn-images-1.medium.com/max/800/1%2A3R3J3RRtMj9QjTInVPY7YQ.png?w=1100&amp;ssl=1" data-recalc-dims="1" decoding="async" data-width="1058" data-height="274" />
+<img src="/images/external/cdn-images-1.medium.com/1_3R3J3RRtMj9QjTInVPY7YQ.png" data-recalc-dims="1" decoding="async" data-width="1058" data-height="274" />
 </figure>
 
 É quase impossível receber feedback se isso escrito e formalizado, afinal, não estamos lhe dando com coisas triviais. Por exemplo, dar qualquer dica pra uma startup sem entender o contexto geral dela, por exemplo ver um <a href="https://strategyzer.com/canvas/business-model-canvas" target="_blank" rel="noopener">Canvas</a>, pode levá-la a seguir um caminho bem errado.
@@ -90,7 +90,7 @@ O relacionamento com investidores também é bem importante nesse sentido. Inves
 Meu conceito de ousadia e coragem foi atualizado quando eu vi um vídeo do <a href="https://steveblank.com/" target="_blank" rel="noopener">Steve Blank</a> durante o período que estive fazendo o curso dele. Ele falava que se você falar que não consegue entrevistas durante a semana do curso significa que você não está falando sério em empreender. Eu complemento que isso não deve ser somente coisa de fundador ou CEO, deve ser geral!
 
 <figure>
-<img src="https://i0.wp.com/cdn-images-1.medium.com/max/800/1%2ACB1k5owjdynX8FC330VHaA.png?w=1100&amp;ssl=1" data-recalc-dims="1" decoding="async" data-width="858" data-height="285" />
+<img src="/images/external/cdn-images-1.medium.com/1_CB1k5owjdynX8FC330VHaA.png" data-recalc-dims="1" decoding="async" data-width="858" data-height="285" />
 </figure>
 
 Não crie barreiras pra você mesmo, já existem muitas que vão aparecer e que você vai enfrentar, vide <a href="https://rafaelcosta.jusbrasil.com.br/artigos/454529208/o-jusbrasil-pode-acabar-em-6-meses-sim-definitivamente" target="_blank" rel="noopener">o post da Jusbrasil</a>. O dinheiro vai complicar, o investidor vai intervir, o cenário econômico vai mudar, o conservadorismo da sua área de atuação vai te atrapalhar, o servidor vai cair, etc. Então você não precisa criar mais desculpas. Vai lá e muda!

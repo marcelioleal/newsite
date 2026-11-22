@@ -5,7 +5,7 @@ slug: hiring-a-hard-thing-about-hard-things
 wp_id: 335
 ---
 
-<img src="https://i0.wp.com/cdn-images-1.medium.com/max/800/1%2AogOCz_hw_3GNfaXDaFBZ8w.jpeg?w=1100&amp;ssl=1" data-recalc-dims="1" decoding="async" />
+<img src="/images/external/cdn-images-1.medium.com/1_ogOCz_hw_3GNfaXDaFBZ8w.jpeg" data-recalc-dims="1" decoding="async" />
 <figcaption>Hiring is hard and a one way door-- Photo by <a href="https://unsplash.com/@eprouzet?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash" target="_blank" rel="noopener">Eric Prouzet</a> on <a href="https://unsplash.com/photos/B3UFXwcVbc4?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash" target="_blank" rel="noopener">Unsplash</a>.</figcaption>
 
 I completely agree with the <a href="https://www.forbes.com/sites/forbescoachescouncil/2018/11/20/why-does-culture-eat-strategy-for-breakfast/?sh=1243c371e098" target="_blank" rel="noopener">statement that "<em>Culture eats strategy for breakfast</em>"</a>. However, a company can only foster culture; it cannot impose it on all employees. To establish a healthy and positive culture, it's essential to have a well-structured hiring process.
@@ -22,7 +22,7 @@ Everything starts with a structured and well-designed hiring process. To create 
 
 If your company lacks a structured process, it can begin implementing one right now. Many other aspects discussed in this post are based on this foundational step. For inspiration, you can examine the <a href="https://handbook.gitlab.com/handbook/hiring/" target="_blank" rel="noopener">GitLab Hiring Process</a>.
 
-<img src="https://i0.wp.com/cdn-images-1.medium.com/max/800/1%2AaLz-1KHZWCZJ4ev9NlSx0A.jpeg?w=1100&amp;ssl=1" data-recalc-dims="1" decoding="async" />
+<img src="/images/external/cdn-images-1.medium.com/1_aLz-1KHZWCZJ4ev9NlSx0A.jpeg" data-recalc-dims="1" decoding="async" />
 <figcaption>Just like brainstorming in general, creativity and adaptation in interviews often result on negative effect. Photo by <a href="https://unsplash.com/@byfortytwo?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash" target="_blank" rel="noopener">FORTYTWO</a> on <a href="https://unsplash.com/photos/MDu-53qRVr4?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash" target="_blank" rel="noopener">Unsplash</a>.</figcaption>
 
 #### Don't assume you are smarter than the candidate
@@ -70,7 +70,7 @@ In this context, while configurations and process setup are important, **it's of
 
 When the company believes that they need more the candidate than the candidate needs the job, everything changes. You witness an environment where candidates are at the center, with more kindness and more opportunities for a fair evaluation. Interviewers strive to extract the best from the candidates, and the process can have a positive impact on both sides. Ultimately, you don't see wastage.
 
-<img src="https://i0.wp.com/cdn-images-1.medium.com/max/800/1%2A1kt4cD0IWKFbDL5u-7C9EA.jpeg?w=1100&amp;ssl=1" data-recalc-dims="1" decoding="async" />
+<img src="/images/external/cdn-images-1.medium.com/1_1kt4cD0IWKFbDL5u-7C9EA.jpeg" data-recalc-dims="1" decoding="async" />
 <figcaption>Beyond the title, the real cases Ben Horowitz shares in this book are really impactful.</figcaption>
 
 #### Hire for strengths, not lack of weaknesses

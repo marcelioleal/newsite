@@ -6,7 +6,7 @@ wp_id: 346
 ---
 
 <figure class="wp-caption">
-<img src="https://i0.wp.com/cdn-images-1.medium.com/max/800/1%2Ad377OtMcA6FsjDjoUGenaA.jpeg?w=1100&amp;ssl=1" data-recalc-dims="1" decoding="async" data-width="640" data-height="428" />
+<img src="/images/external/cdn-images-1.medium.com/1_d377OtMcA6FsjDjoUGenaA.jpeg" data-recalc-dims="1" decoding="async" data-width="640" data-height="428" />
 <figcaption><a href="https://www.flickr.com/photos/wocintechchat/" target="_blank" rel="noopener">https://www.flickr.com/photos/wocintechchat/</a></figcaption>
 </figure>
 

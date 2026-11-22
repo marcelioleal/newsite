@@ -29,12 +29,12 @@ Abaixo destaco alguns:
 **[Tulip](http://tulip.solis.coop.br/us/index.php)**\
 Editor PHP desenvolvido em [PHP-GTK](http://www.php-gtk.com.br/) pelo [Pablo Dall'Oglio](http://pablo.blog.br/). Muito bom, muito leve e independente de plataforma. Não sei se ele será atualizado, já que a última versão, que tive acesso, foi lançada em 2005.
 
-<a href="https://i0.wp.com/tulip.solis.coop.br/gthumb/img000.jpeg" target="_blank"><img src="https://i0.wp.com/tulip.solis.coop.br/gthumb/img000.jpeg?resize=300%2C205" data-recalc-dims="1" loading="lazy" decoding="async" width="300" height="205" /></a>
+
 
 [**Quanta Plus**](http://quanta.kdewebdev.org/)\
 Um dos meus atuais editores PHP. Acho ele razoável, no meu [Gnome](http://www.gnome.org/) ele é um pouco instável, mas no geral o achei bem melhor que os plugins do [Eclipse](http://www.eclipse.org/).
 
-<a href="https://i0.wp.com/quanta.kdewebdev.org/screenshots//shot2.png" target="_blank"><img src="https://i0.wp.com/quanta.kdewebdev.org/screenshots//shot2.png?resize=300%2C205" data-recalc-dims="1" loading="lazy" decoding="async" width="300" height="205" /></a>
+
 
 **[PDT Project](http://www.eclipse.org/pdt/)**\
 O Projeto PHP Development Tolls promete, é apoiado por diversas empresas, inclusive a [Zend](http://www.zend.com). A versão 1.0 está prevista pra este mês. Utilizei por algum tempo, e não gostei muito. Na verdade, não gostei de desenvolver PHP no Eclipse, em todos os plugins que utilizei([PHP Eclipse](http://www.phpeclipse.de/tiki-view_articles.php), [Xored Web Studio](http://www.xored.com/products.php)). Em geral, vão requerer memória considerável, e são bem grandes na instalação devido a reutilizarem outros plugins do própio Eclipse.
@@ -42,12 +42,12 @@ O Projeto PHP Development Tolls promete, é apoiado por diversas empresas, inclu
 [Zend Studio](http://www.zend.com/store/software/zend_studio/lp?engine=google&cmpg=zend_studio&k_id=editor_php)\
 É o melhor, mas é pago.
 
-<a href="https://i0.wp.com/www.zend.com/var/corporate/storage/images/media/images/products/zend_studio/code_completion/6526-1-eng-US/code_completion.gif" target="_blank"><img src="https://i0.wp.com/www.zend.com/var/corporate/storage/images/media/images/products/zend_studio/code_completion/6526-1-eng-US/code_completion.gif?resize=300%2C205" data-recalc-dims="1" loading="lazy" decoding="async" width="300" height="205" /></a>
+
 
 [Komodo](http://www.activestate.com/products/komodo_edit/)\
 Me parece ser interessante, prometo que vou testá-lo logo. É o preferido do [ASF](http://antoniofonseca.wordpress.com/).
 
-<a href="https://i0.wp.com/www.visualperl.com/_images/untour/screenshots/maintenance_made_easy.png" target="_blank"><img src="https://i0.wp.com/www.visualperl.com/_images/untour/screenshots/maintenance_made_easy.png?resize=300%2C205" data-recalc-dims="1" loading="lazy" decoding="async" width="300" height="205" /></a>
+
 
 [Dreamweaver](http://www.adobe.com/br/products/dreamweaver/)\
 É bonito, vicia, é pago, acostuma mal e tá ficando mais pesado. Portanto quem quer usar mesmo assim tem que saber o que está fazendo e ter cuidado pra não gerar código excessivo e fora dos padrões, o que não deixaria feliz o meu amigo [Karlisson](http://nerdson.com/).
