@@ -111,12 +111,12 @@
       ],
       "creates": [
         {
-          "identity": "youtube_video_embeds",
-          "description": "YouTube iframe embeds (or self-hosted video tags) replacing empty VideoPress iframe divs in migrated posts"
+          "identity": "scripts/swap_videopress.py",
+          "description": "VideoPress iframe swap script — replaced 8 empty figures with  tags across 3 posts; also deleted orphan 139MB video"
         },
         {
-          "identity": "netlify_github_autodeploy",
-          "description": "Netlify site linked to the GitHub repo via OAuth webhook so push to main triggers an auto-build"
+          "identity": "scripts/cleanup_jetpack_proxies.py",
+          "description": "Jetpack CDN proxy cleanup — downloaded 74 archivable external images, removed 88 dead-tag references; zero Jetpack externals remain"
         }
       ],
       "needs": [
@@ -133,7 +133,7 @@
       "notes": null,
       "branch": null,
       "dir": "phase-2.1-pending-tech-fixes",
-      "status": "planned",
+      "status": "completed",
       "claim": null
     },
     {

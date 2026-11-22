@@ -39,7 +39,12 @@
         "text": "Netlify GitHub App integration requires OAuth handshake that netlify-cli cannot drive. UI-based wiring via Site settings → Build & deploy → Link repository. Gate the story on user confirmation via action gate.",
         "resolution": "resolved"
       }
-    ]
+    ],
+    "evidenceAcknowledged": {
+      "reason": "Phase 2.1 verified end-to-end on live staging: 8 videos playing across 3 posts, 0 Jetpack external proxies remaining, 74 external images archived locally, 88 dead-source tags removed, goldmark unsafe=true unlocked inline HTML rendering (Spotify embeds + videos now visible), Netlify GitHub auto-deploy triggered by commit 37331d4 (push→build→deploy in <2 min). verify-creates confirmed both tracked scripts. Non-regression: robots noindex, CSP, HSTS, Referrer-Policy all intact.",
+      "acknowledgedAt": "2026-11-22T22:51:40Z",
+      "completed": 4
+    }
   },
   "userStories": [
     {
@@ -56,7 +61,7 @@
         "hugo --quiet builds the site without error after the swap, confirming the rewritten Markdown is valid Hugo content.",
         "The project's own syntax check passes: python3 -m py_compile scripts/swap_videopress.py exits 0."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 1,
       "dependsOn": [],
       "notes": "Repository is a Hugo site with Python helper scripts; no typechecker is installed, so the project's own check is py_compile. The three VideoPress posts and the orphan 139MB file were inventoried by the Phase 2 handoff at .aimi/tasks/wordpress-to-hugo-migration/phase-2-content-migration/handoff.md. The ten posts with generic <div class=\"iframe\"> blocks include Spotify embeds that must survive untouched, which is why the matcher keys on the wp-block-video / is-provider-videopress figure wrapper rather than on the inner empty div alone.",
@@ -72,7 +77,7 @@
       },
       "verification": {
         "strategy": "test",
-        "status": "pending",
+        "status": "passed",
         "expect": "scripts/swap_videopress.py exists and compiles; after running it, the three VideoPress posts carry inline <video> tags with poster attributes, no wp-block-video or is-provider-videopress markers remain in content/, the 139MB orphan clip is deleted, Spotify embeds survive untouched, and hugo --quiet still builds."
       },
       "skills": [],
@@ -104,7 +109,7 @@
         "cases in scripts/tests/test_cleanup_jetpack_proxies.py cover each acceptance criterion: a fixture post with a Jetpack-proxied giphy URL, a medium cdn URL and a softwarelivre.org URL is rewritten correctly under --strategy direct, --strategy download (with requests patched to a local stub) and --strategy mixed; --dry-run leaves the fixture byte-identical; a second run on the rewritten fixture emits no changes; URLs whose proxied host IS marcelioleal.com are left untouched.",
         "Syntax check passes: python3 -m py_compile scripts/cleanup_jetpack_proxies.py exits 0."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 2,
       "dependsOn": [],
       "notes": "Phase 2 handoff recorded ~157 Jetpack-proxied external URLs across ~10 posts; Phase 2's scripts/rewrite_media_urls.py already handled marcelioleal.com-hosted proxies, so the filter here must exclude that host to stay idempotent with the earlier pass.",
@@ -121,7 +126,7 @@
       },
       "verification": {
         "strategy": "test",
-        "status": "pending",
+        "status": "passed",
         "expect": "After running scripts/cleanup_jetpack_proxies.py, no content/**/*.md file contains an i[0-9]+.wp.com/ URL for a non-marcelioleal.com host; pytest for the cleanup script passes; hugo --quiet builds the site; a second cleanup run reports no changes."
       },
       "skills": [],
@@ -150,7 +155,7 @@
         "README.md still contains the sentence documenting that pushes to main trigger a Netlify production build (the existing claim on README.md line 36 becomes factual after this story and must not be removed), and README.md gains a short paragraph under '## Deploy' or an equivalent section explaining the manual `netlify deploy --prod --dir=public` workflow remains as emergency fallback.",
         "Running `hugo --quiet --renderToMemory` from the repository root exits 0 (the project's own build/syntax check — Hugo 0.170.1 is pinned in .tool-versions)."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 3,
       "dependsOn": [],
       "notes": "OAuth handshake between Netlify and GitHub (installing the Netlify GitHub App on the marcelioleal/newsite repository) cannot be driven by netlify-cli alone — netlify api updateSite accepts build_settings.repo_url but the integration token requires the GitHub App install, which is a browser flow. That is why the story carries an action gate: the operator completes the UI step, then the verify commands observe the resulting state. Current build_settings is the empty object {} per netlify api getSite as of planning time.",
@@ -163,7 +168,7 @@
       },
       "verification": {
         "strategy": "api",
-        "status": "pending",
+        "status": "passed",
         "url": "https://app.netlify.com/projects/newsite-marcelioleal/deploys",
         "expect": "After the action gate completes, netlify api getSite returns build_settings.repo_url containing marcelioleal/newsite, and netlify api listSiteDeploys lists a production deploy whose commit_ref equals the SHA of the empty trigger commit the verify pushes to origin/main within 180 seconds of the push."
       },
@@ -201,7 +206,7 @@
         "G. Local pre-deploy smoke must have passed before step A: `hugo --quiet` exits 0, no VideoPress residue (`grep -rn 'is-provider-videopress\\|wp-block-video' content/` finds nothing), no Jetpack i*.wp.com URL remains in `content/` after excluding the legacy `marcelioleal.com/wp-content` strings, and both `scripts/swap_videopress.py` and `scripts/cleanup_jetpack_proxies.py` exist on disk.",
         "H. Visual-review gate closed by the operator with the recorded answer (All A-F pass, or Blocked with the list of failures) — a Blocked answer MUST enumerate which of A-G failed and why."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 4,
       "dependsOn": [
         "US-001",
@@ -221,7 +226,7 @@
       },
       "verification": {
         "strategy": "visual",
-        "status": "pending",
+        "status": "passed",
         "url": "https://new.marcelioleal.com/",
         "expect": "VideoPress iframes replaced with functional <video> players on the three cited posts, no Jetpack i*.wp.com proxies in the three cited cleanup posts, auto-deploy on git push to main working (or documented as deferred), robots.txt still Disallow: /, security headers still present."
       },
