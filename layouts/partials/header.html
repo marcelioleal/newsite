@@ -16,12 +16,13 @@
       <a href="{{ "" | absLangURL }}" accesskey="h">{{ site.Title }}</a>
     </div>
     <ul id="menu">
+      {{- /* Menu-driven nav: iterate the current language's [[languages.X.menu.main]] entries from hugo.toml.
+             pageRef resolves per-language slugs (e.g. /about → /sobre/ in PT, /en/about/ in EN). */ -}}
+      {{- range site.Menus.main }}
       <li>
-        {{- /* Look the About page up by content path so the PT slug (sobre) and EN slug (about) each resolve correctly. */ -}}
-        {{- with site.GetPage "/about" -}}
-        <a href="{{ .RelPermalink }}">{{ i18n "nav_about" }}</a>
-        {{- end }}
+        <a href="{{ .URL }}">{{ .Name }}</a>
       </li>
+      {{- end }}
       {{- /* Language switcher: iterate every configured language. */ -}}
       {{- $currentPage := . -}}
       {{- range $i, $lang := site.Languages -}}
