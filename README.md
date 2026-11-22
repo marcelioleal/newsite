@@ -33,7 +33,14 @@ Never edit anything under `themes/PaperMod/` — override via `assets/css/extend
 
 ## Deploy
 
-Pushing to `main` triggers a **Netlify** production build at <https://new.marcelioleal.com/> (Phase 1 staging subdomain). Pull requests get automatic deploy previews. The build command, Hugo version pin, and context-aware `baseURL` live in `netlify.toml`.
+Netlify auto-deploy is wired to `github.com/marcelioleal/newsite`. Pushing to `main` triggers a production build at <https://new.marcelioleal.com/> (Phase 1 staging subdomain). Pull requests get automatic deploy previews. The build command, Hugo version pin, and context-aware `baseURL` all live in `netlify.toml`.
+
+**Manual deploy (fallback)** — when GitHub-to-Netlify sync is paused (e.g. for a hotfix before pushing):
+
+```bash
+HUGO_ENV=staging hugo --gc --minify --baseURL "https://new.marcelioleal.com/"
+netlify deploy --prod --dir=public --message "manual deploy: <reason>"
+```
 
 ## Toolchain
 
