@@ -93,7 +93,11 @@
       "branch": null,
       "dir": "phase-2-content-migration",
       "status": "planned",
-      "claim": null
+      "claim": {
+        "claimedBy": "plan-execute-1795365870-12638",
+        "claimedAt": "2026-11-22T16:44:30Z",
+        "claimedPid": 12638
+      }
     },
     {
       "id": 3,

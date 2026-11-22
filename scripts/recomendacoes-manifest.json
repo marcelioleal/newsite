@@ -1,0 +1,16 @@
+[
+  {"id":143,"slug":"recomendacoes","kind":"page","lang":"pt-br","translationKey":"recomendacoes","target_path":"content/pt-br/recomendacoes/_index.md"},
+  {"id":247,"slug":"livros","kind":"page","lang":"pt-br","translationKey":"books","target_path":"content/pt-br/recomendacoes/livros/_index.md"},
+  {"id":250,"slug":"musica","kind":"page","lang":"pt-br","translationKey":"musica","target_path":"content/pt-br/recomendacoes/musica/_index.md"},
+  {"id":252,"slug":"kitesurf","kind":"page","lang":"pt-br","translationKey":"kitesurf","target_path":"content/pt-br/recomendacoes/kitesurf/_index.md"},
+  {"id":255,"slug":"sites-e-podcasts","kind":"page","lang":"pt-br","translationKey":"sites-e-podcasts","target_path":"content/pt-br/recomendacoes/sites-e-podcasts/_index.md"},
+  {"id":258,"slug":"posts-especiais","kind":"page","lang":"pt-br","translationKey":"posts-especiais","target_path":"content/pt-br/recomendacoes/posts-especiais/_index.md"},
+  {"id":263,"slug":"cafes","kind":"page","lang":"pt-br","translationKey":"coffee","target_path":"content/pt-br/recomendacoes/cafes/_index.md"},
+  {"id":405,"slug":"arte-em-sp","kind":"page","lang":"pt-br","translationKey":"arte-em-sp","target_path":"content/pt-br/recomendacoes/arte-em-sp/_index.md"},
+  {"id":151,"slug":"viagem-pra-belem","kind":"page","lang":"pt-br","translationKey":"viagem-pra-belem","target_path":"content/pt-br/recomendacoes/viagem-pra-belem/_index.md"},
+  {"id":1606,"slug":"artigos-tech","kind":"page","lang":"pt-br","translationKey":"tech-articles","target_path":"content/pt-br/recomendacoes/artigos-tech/_index.md"},
+  {"id":232,"slug":"recommendations","kind":"page","lang":"en","translationKey":"recomendacoes","target_path":"content/en/recommendations/_index.md"},
+  {"id":323,"slug":"books","kind":"page","lang":"en","translationKey":"books","target_path":"content/en/recommendations/books/_index.md"},
+  {"id":296,"slug":"coffee","kind":"page","lang":"en","translationKey":"coffee","target_path":"content/en/recommendations/coffee/_index.md"},
+  {"id":1607,"slug":"tech-articles","kind":"page","lang":"en","translationKey":"tech-articles","target_path":"content/en/recommendations/tech-articles/_index.md"}
+]

@@ -5,3 +5,14 @@
 
 # Local Netlify folder
 .netlify
+
+# Oversized media (> GitHub's 100MB limit). Deployed to Netlify via the CLI,
+# not via git. Candidate for YouTube/external host migration.
+static/videos/20250201095728000070.mp4
+
+# Aimi session state (ephemeral, per-run)
+.aimi/.state.lock
+.aimi/cli-path
+.aimi/current-branch
+.aimi/current-tasks
+.aimi/last-result

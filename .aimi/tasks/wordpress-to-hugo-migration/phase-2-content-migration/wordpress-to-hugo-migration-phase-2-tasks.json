@@ -98,7 +98,7 @@
         "hugo.toml's existing `[params]` table gains `mainSections = [\"posts\"]` so `.Site.RegularPages` on the home page filters to the posts section only; the eight pre-existing params (disableThemeToggle, ShowBreadCrumbs, ShowShareButtons, ShowReadingTime, ShowCodeCopyButtons, defaultTheme, ShowPostNavLinks, description, images) and the `[params.profileMode]` subtable remain unchanged.",
         "Syntax check passes: `python3 -c \"import tomllib; tomllib.load(open('hugo.toml','rb'))\"` exits 0, confirming hugo.toml is valid TOML after the edits."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 1,
       "dependsOn": [],
       "notes": "pageRef='/about' resolves to /sobre/ in PT via the slug front-matter set in Phase 1 and to /en/about/ in EN; pageRef='/recomendacoes' resolves to /recomendacoes/ in PT, and the EN block's pageRef='/recommendations' resolves to /en/recommendations/.",
@@ -137,7 +137,7 @@
         "hugo --quiet exits 0 with no warnings emitted to stderr.",
         "The project's syntax check passes — `hugo --quiet` parses layouts/partials/header.html as a valid Go template with no parse error."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 2,
       "dependsOn": [
         "US-001"
@@ -190,7 +190,7 @@
         "The script detects branch-bundle targets: when a manifest entry's target_path ends in '/_index.md' (or carries 'type: branch_bundle'), the script writes an _index.md file (Hugo branch bundle) instead of index.md (leaf bundle); this lets story 07 migrate the Recomendacoes and Recommendations listing pages as proper Hugo section bundles.",
         "Media target paths: images route to static/images/<year>/<month>/<basename> (year/month derived from the WP upload URL path); videos (video/videopress, video/*) route to static/videos/<basename> (no year/month — flat); PDFs (application/pdf) route to static/assets/<basename> (no year/month — flat). This matches the regex-rewrite assumptions in stories 05 and 06."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 3,
       "dependsOn": [],
       "notes": "The outline mandates script responsibilities 1-12; each is mapped 1:1 to an acceptanceCriteria entry above. The 10 WP-residue regex classes are enumerated verbatim in one criterion (per field-ownership: one criterion may enumerate cases). lingua-language-detector is the specified detector (not langdetect).",
@@ -240,7 +240,7 @@
         "Spot-checking the first, a middle, and the last post (sorted by WP id) by rendering with `hugo` yields HTML containing the expected post title and body paragraph text with no raw WordPress block comments.",
         "`python3 -c 'import py_compile; py_compile.compile(\"scripts/wp_to_hugo.py\", doraise=True)'` succeeds (project syntax check for the Python converter driven by this story)."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 4,
       "dependsOn": [
         "US-001",
@@ -286,7 +286,7 @@
         "`hugo --quiet` exits 0 against the migrated tree — static files are copied unchanged and no template was touched.",
         "bash -n scripts/wp_to_hugo.py passes (python syntax check: `python3 -m py_compile scripts/wp_to_hugo.py`)."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 5,
       "dependsOn": [
         "US-003"
@@ -338,7 +338,7 @@
         "hugo --quiet builds the full site successfully (exit 0) with the rewritten content tree, confirming no broken shortcode or reference was introduced by the substitutions.",
         "bash -n scripts/rewrite_media_urls.py-equivalent syntax check passes: python3 -m py_compile scripts/rewrite_media_urls.py exits 0."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 6,
       "dependsOn": [
         "US-004",
@@ -387,7 +387,7 @@
         "`hugo --quiet` exits 0 and generates public/recomendacoes/index.html, public/recomendacoes/livros/index.html, public/en/recommendations/index.html, and public/en/recommendations/books/index.html.",
         "bash -n scripts/recomendacoes-manifest.json is skipped (JSON file); the project's `hugo --quiet` build serves as the syntax/typecheck for generated content front matter."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 7,
       "dependsOn": [
         "US-001",
@@ -448,7 +448,7 @@
         "cases cover: (a) manifest exists; (b) both index.md files exist; (c) translationKey present in PT; (d) translationKey present in EN; (e) PDF file present under static/assets; (f) no WP uploads URL for ClassGenerator remains in either page; (g) EN page contains /assets/ClassGenerator-Thesis-EN.pdf; (h) hugo build succeeds; (i) PT output HTML exists; (j) EN output HTML exists.",
         "`hugo --quiet` build passes (the project's own syntax/build check for a Hugo site; no TypeScript or bash scripts are introduced by this story)."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 8,
       "dependsOn": [
         "US-003",
@@ -498,7 +498,7 @@
         "`hugo --quiet` builds the site without error and produces public/index.html plus public/recomendacoes/index.html; public/index.html contains the post-date and post-entry class markers that prove the custom list.html is active.",
         "`hugo --quiet` exits 0 — Hugo's build is the project's own syntax/template check for this story."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 9,
       "dependsOn": [
         "US-001",

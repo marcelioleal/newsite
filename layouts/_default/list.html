@@ -1,0 +1,49 @@
+{{- /*
+  layouts/_default/list.html — site-root override for list pages.
+
+  Two branches, driven by $.IsHome:
+  - Home: paginated chronological list of posts in mainSections (dated, eltonminetto aesthetic).
+  - Section (e.g. /recomendacoes/, /en/recommendations/): list of immediate child pages as links.
+
+  Wraps in PaperMod's base layout via {{ define "main" }}, so extend_head + header + switcher
+  (Phase 1 overrides) still frame it automatically.
+*/ -}}
+{{ define "main" }}
+<section class="list">
+  {{- if .IsHome }}
+    {{- /* Home: paginated post list, newest first. */ -}}
+    {{- $pages := where .Site.RegularPages "Section" "in" .Site.Params.mainSections -}}
+    {{- $paginator := .Paginate (sort $pages "Date" "desc") 50 -}}
+    {{- range $paginator.Pages }}
+    <article class="post-entry">
+      <header class="entry-header">
+        <time datetime="{{ .Date.Format "2006-01-02" }}" class="post-date">{{ .Date.Format "2006-01-02" }}</time>
+        <h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      </header>
+      {{- with .Summary }}
+      <div class="post-summary">{{ . | plainify | truncate 180 }}</div>
+      {{- end }}
+    </article>
+    {{- end }}
+    {{- /* Minimal numeric pagination; PaperMod ships pagination styles. */ -}}
+    {{- if gt $paginator.TotalPages 1 }}
+    <nav class="paginav">
+      {{- with $paginator.Prev }}<a class="prev" href="{{ .URL }}" aria-label="Previous page">&larr; Previous</a>{{- end }}
+      {{- with $paginator.Next }}<a class="next" href="{{ .URL }}" aria-label="Next page">Next &rarr;</a>{{- end }}
+    </nav>
+    {{- end }}
+  {{- else }}
+    {{- /* Non-home listing (sections like /recomendacoes/): show the page's own content, then its child pages. */ -}}
+    {{- with .Content }}
+    <div class="section-intro">{{ . }}</div>
+    {{- end }}
+    {{- if .Pages }}
+    <ul class="section-children">
+      {{- range .Pages.ByWeight }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{- end }}
+    </ul>
+    {{- end }}
+  {{- end }}
+</section>
+{{ end }}
