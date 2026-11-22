@@ -1,0 +1,253 @@
+{
+  "schemaVersion": "3.3",
+  "metadata": {
+    "title": "feat: Phase 2.1 Pending Tech Fixes — VideoPress swap, Jetpack cleanup, GitHub auto-deploy",
+    "type": "feat",
+    "branchName": "feat/wordpress-to-hugo-migration-phase-2-1-pending-tech-fixes",
+    "createdAt": "2026-11-22",
+    "planPath": null,
+    "roadmapPath": ".aimi/tasks/wordpress-to-hugo-migration/roadmap.json",
+    "phase": {
+      "id": 2.1,
+      "dir": "phase-2.1-pending-tech-fixes"
+    },
+    "pluginVersion": "1.156.0",
+    "brainstormPath": ".aimi/brainstorms/2026-11-22-polish-and-pendings-brainstorm.md",
+    "researchDepth": "skip",
+    "decisions": [
+      {
+        "anchor": "videopress_strategy",
+        "source": "brainstorm",
+        "text": "Swap empty VideoPress iframes for self-hosted <video> tags pointing at /videos/<file>; match thumbnail suffix pattern (_mp4_std.original, _mov_avc_240p.original) to video filename.",
+        "resolution": "resolved"
+      },
+      {
+        "anchor": "orphan_video_139mb",
+        "source": "brainstorm",
+        "text": "The 139MB static/videos/20250201095728000070.mp4 is NOT referenced from any migrated post. Delete it rather than upload to YouTube — no post needs an embed.",
+        "resolution": "resolved"
+      },
+      {
+        "anchor": "jetpack_strategy",
+        "source": "brainstorm",
+        "text": "Default mixed: strip i0.wp.com/ prefix for most hosts (direct reference), download for archive-risky hosts (giphy.com rotates URLs). Script supports --strategy direct|download|mixed.",
+        "resolution": "resolved"
+      },
+      {
+        "anchor": "netlify_github_wiring",
+        "source": "brainstorm",
+        "text": "Netlify GitHub App integration requires OAuth handshake that netlify-cli cannot drive. UI-based wiring via Site settings → Build & deploy → Link repository. Gate the story on user confirmation via action gate.",
+        "resolution": "resolved"
+      }
+    ]
+  },
+  "userStories": [
+    {
+      "title": "Inventory and swap VideoPress empty iframes for self-hosted HTML5 video tags",
+      "description": "As a site visitor reading a migrated post, I want the inline videos to play in place instead of showing an empty iframe placeholder, so that posts referencing VideoPress clips become watchable after the Hugo migration.",
+      "acceptanceCriteria": [
+        "A reader visiting any of the three posts o-perigo-da-musica-reflexiva-e-a-relacao-austro-paraense, sounds-of-quartzo and 2025-um-ano-que-tem-tudo-pra-ser-incrivel sees an inline HTML5 <video> element with controls and a poster thumbnail in place of the previous empty VideoPress iframe, and the clip plays when the controls are activated.",
+        "scripts/swap_videopress.py exists, is executable with python3, scans content/pt-br/posts and content/en/posts for Markdown files containing the tokens wp-block-video or is-provider-videopress, and for each matched file replaces every empty VideoPress figure (an empty <div class=\"iframe\"> wrapped in <figure class=\"wp-block-video ... is-provider-videopress\">) with <video src=\"/videos/<file>\" controls poster=\"/images/<yyyy>/<mm>/<thumb>\" class=\"w-full max-w-[720px]\" preload=\"metadata\"></video>.",
+        "The script matches each VideoPress figure to its clip by reading the sibling thumbnail <img> src inside or adjacent to the figure (pattern /images/<yyyy>/<mm>/<basename>_<ext>_<profile>.original.jpg where <ext> is mp4 or mov and <profile> is e.g. std, avc_240p), stripping the _<ext>_<profile>.original suffix to recover <basename>, and locating the matching file in static/videos/ by checking for both <basename>.mp4 and <basename>.mov; when no matching video file is found the script reports the unmatched figure to stderr with the post path and does not rewrite that figure.",
+        "Spotify and other non-VideoPress embeds using <div class=\"iframe\"> that are NOT wrapped in <figure class=\"wp-block-video ...\"> are left untouched by the script; after the run, grepping content/pt-br/posts and content/en/posts for the literal strings wp-block-video and is-provider-videopress returns zero matches.",
+        "Running the script a second time on the already-converted tree is idempotent: no additional rewrites occur and the script reports zero changes; passing --dry-run on the pre-converted tree prints the planned rewrites and the orphan deletion without touching disk, and prints a no-changes message on the post-converted tree.",
+        "The orphan file static/videos/20250201095728000070.mp4 is deleted by the script (it is referenced by zero posts and weighs ~139MB); when the file is already absent the script reports it as already deleted and does not fail.",
+        "At least three <video src=\"/videos/ occurrences are present across content/pt-br/posts after the run, matching the three posts enumerated above (one post may carry more than one video, so the count is a lower bound).",
+        "hugo --quiet builds the site without error after the swap, confirming the rewritten Markdown is valid Hugo content.",
+        "The project's own syntax check passes: python3 -m py_compile scripts/swap_videopress.py exits 0."
+      ],
+      "status": "pending",
+      "priority": 1,
+      "dependsOn": [],
+      "notes": "Repository is a Hugo site with Python helper scripts; no typechecker is installed, so the project's own check is py_compile. The three VideoPress posts and the orphan 139MB file were inventoried by the Phase 2 handoff at .aimi/tasks/wordpress-to-hugo-migration/phase-2-content-migration/handoff.md. The ten posts with generic <div class=\"iframe\"> blocks include Spotify embeds that must survive untouched, which is why the matcher keys on the wp-block-video / is-provider-videopress figure wrapper rather than on the inner empty div alone.",
+      "implementation": {
+        "files": [
+          "scripts/swap_videopress.py"
+        ],
+        "approach": "Author scripts/swap_videopress.py as a ~150 LOC standalone Python 3 script using only the standard library (re, pathlib, argparse, sys). Module shape: (1) a VIDEOPRESS_FIGURE_RE regex that captures the whole <figure class=\"wp-block-video ... is-provider-videopress\">...</figure> block including the empty inner <div class=\"iframe\"></div>; (2) a THUMBNAIL_RE that locates the sibling <img ... src=\"/images/<yyyy>/<mm>/<basename>_<ext>_<profile>.original.jpg\"> either inside the figure or on an immediately adjacent line; (3) a resolve_video(basename) helper that checks static/videos/<basename>.mp4 then static/videos/<basename>.mov and returns the first hit or None; (4) a rewrite_file(path, dry_run) function that reads the file, walks all VideoPress figure matches, builds the replacement <video> tag using the resolved filename and the original thumbnail src as the poster, substitutes in place, and writes back only when the content changed and dry_run is False; (5) a main() entry point with argparse flags --dry-run and --content-root (default content), that iterates content/pt-br/posts/*/index.md and content/en/posts/*/index.md via pathlib.Path.rglob, calls rewrite_file on each, and prints a one-line summary per file (rewrote N figures, skipped M unmatched, unchanged, or dry-run preview); (6) orphan handling block at the end of main() that attempts to unlink static/videos/20250201095728000070.mp4 and prints 'deleted orphan' or 'orphan already absent'. Idempotency is naturally provided by the regex: once a figure has been replaced by a <video> tag, no wp-block-video wrapper remains to match, so a second run is a no-op. Follow the existing scripts/wp_to_hugo.py conventions (argparse, pathlib, plain stdlib, print-based reporting) rather than introducing a new style.",
+        "verify": "set -euo pipefail\ntest -f scripts/swap_videopress.py\npython3 -m py_compile scripts/swap_videopress.py\npython3 scripts/swap_videopress.py --dry-run 2>&1 | grep -E -q 'would|no changes'\npython3 scripts/swap_videopress.py\n! grep -r -E 'is-provider-videopress|wp-block-video' content/pt-br/posts content/en/posts\ntest ! -f static/videos/20250201095728000070.mp4\ngrep -r -c '<video src=\"/videos/' content/pt-br/posts | awk -F: 'BEGIN{t=0} {t+=$2} END{if(t<3){print \"FAIL: only \"t\" <video> tags inserted, expected >= 3\"; exit 1}}'\nhugo --quiet",
+        "guardRails": [
+          "hugo --quiet"
+        ]
+      },
+      "verification": {
+        "strategy": "test",
+        "status": "pending",
+        "expect": "scripts/swap_videopress.py exists and compiles; after running it, the three VideoPress posts carry inline <video> tags with poster attributes, no wp-block-video or is-provider-videopress markers remain in content/, the 139MB orphan clip is deleted, Spotify embeds survive untouched, and hugo --quiet still builds."
+      },
+      "skills": [],
+      "tasks": [
+        "Create scripts/swap_videopress.py with argparse, pathlib and re imports, following scripts/wp_to_hugo.py conventions",
+        "Implement VIDEOPRESS_FIGURE_RE capturing the full <figure class=\"wp-block-video ... is-provider-videopress\"> ... </figure> block",
+        "Implement thumbnail extraction to pull the /images/<yyyy>/<mm>/<basename>_<ext>_<profile>.original.jpg src adjacent to each figure",
+        "Implement resolve_video(basename) that probes static/videos/<basename>.mp4 then .mov and returns the first existing path or None",
+        "Implement rewrite_file(path, dry_run) that substitutes each matched figure with <video src=\"/videos/<file>\" controls poster=\"/images/<yyyy>/<mm>/<thumb>\" class=\"w-full max-w-[720px]\" preload=\"metadata\"></video>",
+        "Report unmatched figures to stderr with the post path and skip them without raising",
+        "Add orphan-deletion block that unlinks static/videos/20250201095728000070.mp4 when present and prints the outcome",
+        "Add --dry-run flag that prints planned rewrites and the orphan deletion without touching disk",
+        "Iterate content/pt-br/posts/*/index.md and content/en/posts/*/index.md and print a one-line summary per file",
+        "Run python3 -m py_compile scripts/swap_videopress.py to confirm syntax",
+        "Run python3 scripts/swap_videopress.py --dry-run and inspect the planned rewrites",
+        "Run python3 scripts/swap_videopress.py to apply the changes, then rerun to confirm idempotency (zero further rewrites)",
+        "Run hugo --quiet to confirm the rewritten Markdown still builds"
+      ],
+      "id": "US-001",
+      "wave": 1
+    },
+    {
+      "title": "Clean up Jetpack-proxied external images in migrated posts",
+      "description": "As a site maintainer, I want all remaining Jetpack image-proxy URLs in migrated posts rewritten to direct sources (or locally mirrored) so that the Hugo site no longer silently depends on the retired WordPress.com Jetpack CDN for third-party imagery.",
+      "acceptanceCriteria": [
+        "Running python3 scripts/cleanup_jetpack_proxies.py from the repo root rewrites every https?://i[0-9]+.wp.com/<external-host>/<path>?... URL inside content/pt-br/posts and content/en/posts so that, after the run, grep -rE 'https?://i[0-9]*\\.wp\\.com/' content/ returns zero lines whose proxied host is not marcelioleal.com (the ~157 Jetpack-proxied external references identified in Phase 2 handoff are gone), and hugo --quiet still builds the site without errors.",
+        "scripts/cleanup_jetpack_proxies.py exposes a --strategy flag with values direct|download|mixed (default mixed): direct strips the https?://i\\d+\\.wp\\.com/ prefix and the query string to reconstruct the direct external URL (e.g. https://giphy.com/media/... , https://cdn-images-1.medium.com/...); download fetches every proxied image via requests into static/images/external/<host>/<basename> and rewrites to /images/external/<host>/<basename>; mixed applies direct by default but downloads any URL whose host matches the archive-risk list (giphy.com and media*.giphy.com by default, configurable in a module-level constant).",
+        "scripts/cleanup_jetpack_proxies.py exposes a --dry-run flag that prints each intended rewrite as 'would rewrite <old> -> <new>' (or 'no changes') to stdout and leaves content/**/*.md and static/images/external/ untouched; a second invocation without --dry-run after the first full run is idempotent (zero further rewrites, zero re-downloads, and the second run's stdout reports no changes).",
+        "cases in scripts/tests/test_cleanup_jetpack_proxies.py cover each acceptance criterion: a fixture post with a Jetpack-proxied giphy URL, a medium cdn URL and a softwarelivre.org URL is rewritten correctly under --strategy direct, --strategy download (with requests patched to a local stub) and --strategy mixed; --dry-run leaves the fixture byte-identical; a second run on the rewritten fixture emits no changes; URLs whose proxied host IS marcelioleal.com are left untouched.",
+        "Syntax check passes: python3 -m py_compile scripts/cleanup_jetpack_proxies.py exits 0."
+      ],
+      "status": "pending",
+      "priority": 2,
+      "dependsOn": [],
+      "notes": "Phase 2 handoff recorded ~157 Jetpack-proxied external URLs across ~10 posts; Phase 2's scripts/rewrite_media_urls.py already handled marcelioleal.com-hosted proxies, so the filter here must exclude that host to stay idempotent with the earlier pass.",
+      "implementation": {
+        "files": [
+          "scripts/cleanup_jetpack_proxies.py",
+          "scripts/tests/test_cleanup_jetpack_proxies.py"
+        ],
+        "approach": "Author scripts/cleanup_jetpack_proxies.py (~120 LOC) with: a JETPACK_RE = re.compile(r'https?://i\\d+\\.wp\\.com/([^/\\s]+)(/[^\\s?\"\\)]*)(\\?[^\\s\"\\)]*)?') that captures (host, path, query); an ARCHIVE_RISK_HOSTS = {'giphy.com'} plus a prefix check for 'media*.giphy.com'; a resolve(url, strategy) function returning either the reconstructed direct URL (strategy a: 'https://' + host + path) or a local /images/external/<host>/<basename> path after downloading via requests.get with a 30s timeout and streaming to static/images/external/<host>/<basename> (creating parent dirs with pathlib.Path.mkdir(parents=True, exist_ok=True); skip the download when the target file already exists for idempotency); a walk() over pathlib.Path('content/pt-br/posts').rglob('*.md') and pathlib.Path('content/en/posts').rglob('*.md') that skips URLs whose captured host == 'marcelioleal.com'; argparse exposes --strategy {direct,download,mixed} (default mixed), --dry-run, and --content-root (default content). Follow the pattern established by Phase 2's scripts/rewrite_media_urls.py for file iteration and rewrite accounting.",
+        "verify": "test -f scripts/cleanup_jetpack_proxies.py && python3 -m py_compile scripts/cleanup_jetpack_proxies.py && python3 scripts/cleanup_jetpack_proxies.py --dry-run 2>&1 | grep -qE 'would rewrite|no changes' && python3 -m pytest scripts/tests/test_cleanup_jetpack_proxies.py -q && python3 scripts/cleanup_jetpack_proxies.py && JETPACK=$(grep -rE 'https?://i[0-9]*\\.wp\\.com/' content/ 2>/dev/null | grep -vE 'marcelioleal\\.com/wp-content' | wc -l | tr -d ' ') && echo \"remaining Jetpack external proxies: $JETPACK\" && [ \"$JETPACK\" -eq 0 ] && SECOND=$(python3 scripts/cleanup_jetpack_proxies.py 2>&1 | grep -cE 'rewrote|downloaded' || true) && [ \"$SECOND\" -eq 0 ] && hugo --quiet",
+        "guardRails": [
+          "hugo --quiet"
+        ]
+      },
+      "verification": {
+        "strategy": "test",
+        "status": "pending",
+        "expect": "After running scripts/cleanup_jetpack_proxies.py, no content/**/*.md file contains an i[0-9]+.wp.com/ URL for a non-marcelioleal.com host; pytest for the cleanup script passes; hugo --quiet builds the site; a second cleanup run reports no changes."
+      },
+      "skills": [],
+      "tasks": [
+        "Create scripts/cleanup_jetpack_proxies.py with the module-level JETPACK_RE regex capturing host, path, and query; add ARCHIVE_RISK_HOSTS constant containing 'giphy.com' and the media*.giphy.com prefix rule",
+        "Implement resolve_direct(host, path) that returns 'https://' + host + path (strategy a: strip Jetpack prefix and query string)",
+        "Implement resolve_download(host, path, static_root) that downloads via requests.get(timeout=30) into static/images/external/<host>/<basename>, creates parent dirs with Path.mkdir(parents=True, exist_ok=True), skips re-download when target exists (idempotency), and returns the site-relative /images/external/<host>/<basename> path",
+        "Implement walk_posts(content_root) iterating pathlib.Path(content_root + '/pt-br/posts').rglob('*.md') and the en/posts equivalent, skipping rewrites whose captured host equals 'marcelioleal.com'",
+        "Wire argparse for --strategy {direct,download,mixed} (default mixed), --dry-run, --content-root (default 'content'); in --dry-run mode emit 'would rewrite <old> -> <new>' lines and write nothing, else overwrite files in place and print a rewrite count summary",
+        "Add a mixed-strategy dispatcher that calls resolve_download for ARCHIVE_RISK_HOSTS matches and resolve_direct otherwise",
+        "Create scripts/tests/test_cleanup_jetpack_proxies.py covering: direct/download/mixed rewrites on a fixture post, --dry-run leaves fixtures byte-identical, second run is a no-op, marcelioleal.com proxied URLs are left untouched; patch requests.get for the download tests with a local stub",
+        "Run python3 -m py_compile scripts/cleanup_jetpack_proxies.py and python3 -m pytest scripts/tests/test_cleanup_jetpack_proxies.py -q locally",
+        "Execute python3 scripts/cleanup_jetpack_proxies.py --dry-run then a live run against content/pt-br/posts and content/en/posts; confirm the post-run grep count of non-marcelioleal Jetpack URLs is zero and hugo --quiet still builds",
+        "cases test_cleanup_jetpack_proxies_* in scripts/tests/test_cleanup_jetpack_proxies.py cover each acceptance criterion"
+      ],
+      "id": "US-002",
+      "wave": 1
+    },
+    {
+      "title": "Wire Netlify to GitHub for push-to-main auto-deploy",
+      "description": "As the site operator, I want pushes to the main branch of github.com/marcelioleal/newsite to trigger an automatic Netlify production build so that deploys stop depending on running the netlify CLI by hand.",
+      "acceptanceCriteria": [
+        "Pushing a commit to main on github.com/marcelioleal/newsite causes Netlify project newsite-marcelioleal (site_id 00c6970d-3ce5-412d-bef3-5a3f1e1c9625) to start a production build within 2 minutes, visible at https://app.netlify.com/projects/newsite-marcelioleal/deploys without any netlify-cli invocation.",
+        "netlify api getSite for site_id 00c6970d-3ce5-412d-bef3-5a3f1e1c9625 returns build_settings.repo_url containing the substring 'marcelioleal/newsite' (currently build_settings is {}).",
+        "netlify api listSiteDeploys for the same site_id returns at least one deploy whose context is 'production' and whose commit_ref equals the SHA of the trigger commit this verification pushes to origin/main.",
+        "README.md still contains the sentence documenting that pushes to main trigger a Netlify production build (the existing claim on README.md line 36 becomes factual after this story and must not be removed), and README.md gains a short paragraph under '## Deploy' or an equivalent section explaining the manual `netlify deploy --prod --dir=public` workflow remains as emergency fallback.",
+        "Running `hugo --quiet --renderToMemory` from the repository root exits 0 (the project's own build/syntax check — Hugo 0.170.1 is pinned in .tool-versions)."
+      ],
+      "status": "pending",
+      "priority": 3,
+      "dependsOn": [],
+      "notes": "OAuth handshake between Netlify and GitHub (installing the Netlify GitHub App on the marcelioleal/newsite repository) cannot be driven by netlify-cli alone — netlify api updateSite accepts build_settings.repo_url but the integration token requires the GitHub App install, which is a browser flow. That is why the story carries an action gate: the operator completes the UI step, then the verify commands observe the resulting state. Current build_settings is the empty object {} per netlify api getSite as of planning time.",
+      "implementation": {
+        "files": [
+          "README.md"
+        ],
+        "approach": "Primarily an operator workflow with an action gate, followed by a verification trigger push. (1) Open the Netlify Web UI at https://app.netlify.com/projects/newsite-marcelioleal → Site settings → Build & deploy → Continuous Deployment → Link site to Git → authorize GitHub → select marcelioleal/newsite → confirm; Netlify installs its GitHub App on the repo and populates build_settings.repo_url / provider / repo_branch. (2) Update README.md: the existing auto-deploy sentence on line 36 becomes factual (no edit needed for that line); add a short note that `netlify deploy --prod --dir=public` remains as emergency fallback. (3) The verify (below) confirms linkage via getSite, pushes an empty trigger commit to main, polls listSiteDeploys for a matching commit_ref, and exercises `hugo --quiet --renderToMemory`. Build command, Hugo pin and baseURL stay in netlify.toml — do not re-declare them in the Netlify UI.",
+        "verify": "set -euo pipefail; SITE_ID='00c6970d-3ce5-412d-bef3-5a3f1e1c9625'; REPO_URL=$(netlify api getSite --data \"{\\\"site_id\\\":\\\"$SITE_ID\\\"}\" | python3 -c 'import sys,json; d=json.load(sys.stdin); print(d.get(\"build_settings\",{}).get(\"repo_url\",\"\"))'); [ -n \"$REPO_URL\" ] || { echo 'FAIL: build_settings.repo_url is empty — Netlify is not linked to any Git repo'; exit 1; }; echo \"$REPO_URL\" | grep -q 'marcelioleal/newsite' || { echo \"FAIL: build_settings.repo_url=$REPO_URL does not contain marcelioleal/newsite\"; exit 1; }; echo \"OK: linked to $REPO_URL\"; git fetch origin main --quiet; git checkout main --quiet 2>/dev/null || git switch main --quiet; git commit --allow-empty -m 'chore: trigger Netlify auto-deploy verification' && git push origin main; TRIGGER_SHA=$(git rev-parse HEAD); echo \"trigger commit: $TRIGGER_SHA\"; DEADLINE=$((SECONDS + 180)); MATCHED=''; while [ $SECONDS -lt $DEADLINE ]; do MATCHED=$(netlify api listSiteDeploys --data \"{\\\"site_id\\\":\\\"$SITE_ID\\\"}\" | python3 -c 'import sys,json; sha=sys.argv[1]; d=json.load(sys.stdin); print(next((x.get(\"id\",\"\") for x in d if x.get(\"commit_ref\")==sha and x.get(\"context\")==\"production\"), \"\"))' \"$TRIGGER_SHA\" || true); [ -n \"$MATCHED\" ] && break; sleep 10; done; [ -n \"$MATCHED\" ] || { echo \"FAIL: no production deploy with commit_ref=$TRIGGER_SHA appeared in listSiteDeploys within 180s\"; exit 1; }; echo \"OK: production deploy $MATCHED matched commit $TRIGGER_SHA\"; grep -q 'Pushing to .main. triggers a .*Netlify.* production build' README.md || { echo 'FAIL: README.md no longer documents Netlify auto-deploy on main'; exit 1; }; grep -qi 'netlify deploy --prod' README.md || { echo 'FAIL: README.md does not mention the manual netlify deploy --prod fallback'; exit 1; }; hugo --quiet --renderToMemory"
+      },
+      "verification": {
+        "strategy": "api",
+        "status": "pending",
+        "url": "https://app.netlify.com/projects/newsite-marcelioleal/deploys",
+        "expect": "After the action gate completes, netlify api getSite returns build_settings.repo_url containing marcelioleal/newsite, and netlify api listSiteDeploys lists a production deploy whose commit_ref equals the SHA of the empty trigger commit the verify pushes to origin/main within 180 seconds of the push."
+      },
+      "gate": {
+        "type": "action",
+        "status": "pending",
+        "prompt": "Netlify requires a browser-based OAuth handshake to install its GitHub App on marcelioleal/newsite — this cannot be driven from netlify-cli. Please: (1) open https://app.netlify.com/projects/newsite-marcelioleal → Site settings → Build & deploy → Continuous Deployment → Link site to Git; (2) choose GitHub and authorize; (3) select marcelioleal/newsite, branch main; (4) confirm. Do NOT edit the build command, publish directory, or environment variables in the UI — those stay sourced from netlify.toml. When the UI shows 'Linked to github.com/marcelioleal/newsite' and the first auto-build has started (or finished), reply here to let the verify run.",
+        "options": [
+          "Done — Netlify shows the repository linked",
+          "Blocked — report the specific UI error or missing permission"
+        ]
+      },
+      "tasks": [
+        "Confirm pre-state: run `netlify api getSite --data '{\"site_id\":\"00c6970d-3ce5-412d-bef3-5a3f1e1c9625\"}' | jq '.build_settings'` and record that the object is empty (planning-time observation)",
+        "Present the action gate to the operator with the exact Netlify UI path (Site settings → Build & deploy → Continuous Deployment → Link site to Git → GitHub → marcelioleal/newsite → main)",
+        "After the gate resolves Done, re-run `netlify api getSite` and confirm build_settings.repo_url is now populated and contains marcelioleal/newsite before issuing any trigger commit",
+        "Update README.md: leave the existing 'Pushing to main triggers a Netlify production build' sentence intact (it is now factual) and add a short paragraph noting that `netlify deploy --prod --dir=public` remains as emergency fallback for cases when GitHub or the Netlify GitHub App is unreachable",
+        "On the main branch, create an empty trigger commit (`git commit --allow-empty -m 'chore: trigger Netlify auto-deploy verification'`) and push it to origin/main; capture its SHA for the deploy-match assertion",
+        "Poll `netlify api listSiteDeploys` for up to 180 seconds (10-second intervals) for a deploy whose commit_ref equals the trigger SHA and context is production; fail the verify if none appears",
+        "Run `hugo --quiet --renderToMemory` from the repo root to confirm the pinned Hugo (0.170.1 per .tool-versions) still builds the site without template or content errors"
+      ],
+      "id": "US-003",
+      "wave": 1
+    },
+    {
+      "title": "Phase 2.1 exit verification: live site has no empty iframes, no Jetpack proxies, GitHub push auto-deploys",
+      "description": "As the site owner, I want a single verification pass over https://new.marcelioleal.com that proves the Phase 2.1 fixes (VideoPress swap, Jetpack-proxy cleanup, GitHub-Netlify wire-up) actually landed in production so that the phase can close without a hidden regression.",
+      "acceptanceCriteria": [
+        "A. Deploy: if US-003 completed the GitHub-Netlify wire-up, a `git commit --allow-empty -m 'Phase 2.1 exit'` pushed to main triggers a Netlify build; otherwise run the manual fallback `HUGO_ENV=staging hugo --gc --minify --baseURL \"https://new.marcelioleal.com/\" && netlify deploy --prod --dir=public --message \"Phase 2.1 exit\"` and record which path was taken in `notes`.",
+        "B. VideoPress swap verified on live: each of `curl -s https://new.marcelioleal.com/o-perigo-da-musica-reflexiva-e-a-relacao-austro-paraense/`, `curl -s https://new.marcelioleal.com/sounds-of-quartzo/`, and `curl -s https://new.marcelioleal.com/2025-um-ano-que-tem-tudo-pra-ser-incrivel/` returns HTML whose `grep -c '<video'` is >= 1, AND `grep -c '<div class=\"iframe\"></div>'` on each of those three URLs is 0 (no empty wrapper left behind).",
+        "C. Jetpack cleanup verified on live: for each of `https://new.marcelioleal.com/os-tres-livros-mais-pesados-que-eu-ja-li/`, `https://new.marcelioleal.com/o-fisl-ta-chegando/`, `https://new.marcelioleal.com/ainda-continuo-com-23/`, `curl -s <url> | grep -cE 'i[0-9]*\\.wp\\.com'` returns 0 — no Jetpack image proxy survived to production.",
+        "D. Auto-deploy verified (conditional on US-003): if US-003 completed, `netlify api listSiteDeploys` shows at least one deploy with `context: production` and `source: github` created within the last 10 minutes of the test push; if US-003 was deferred, this criterion is marked N/A in `notes` with the reason the user deferred the UI step.",
+        "E. Site-wide smoke: 10 random post URLs sampled from content/pt-br/posts/**/index.md and content/en/posts/**/index.md slugs each return HTTP 200 when curled against https://new.marcelioleal.com/<slug>/ — recorded as curl -o /dev/null -s -w '%{http_code}\\n' <url> output, all 200.",
+        "F. No regression: `curl -s https://new.marcelioleal.com/robots.txt | grep -c 'Disallow: /'` is >= 1 AND the security headers set in prior phases are still present — `curl -sI https://new.marcelioleal.com/ | grep -ciE '^(x-frame-options|x-content-type-options|referrer-policy|strict-transport-security):'` is >= 1.",
+        "G. Local pre-deploy smoke must have passed before step A: `hugo --quiet` exits 0, no VideoPress residue (`grep -rn 'is-provider-videopress\\|wp-block-video' content/` finds nothing), no Jetpack i*.wp.com URL remains in `content/` after excluding the legacy `marcelioleal.com/wp-content` strings, and both `scripts/swap_videopress.py` and `scripts/cleanup_jetpack_proxies.py` exist on disk.",
+        "H. Visual-review gate closed by the operator with the recorded answer (All A-F pass, or Blocked with the list of failures) — a Blocked answer MUST enumerate which of A-G failed and why."
+      ],
+      "status": "pending",
+      "priority": 4,
+      "dependsOn": [
+        "US-001",
+        "US-002",
+        "US-003"
+      ],
+      "notes": "Verification-only story — produces no code artifacts. Record in this field: (a) which Deploy path was taken for A (push-triggered vs manual netlify deploy), (b) the N/A reason for D if US-003 was deferred, (c) the 10 random post slugs sampled for E so a later audit can reproduce them. A `grep -rE 'https?://i[0-9]*\\.wp\\.com/'` sweep is deliberately scoped to exclude `marcelioleal.com/wp-content` because those strings appear in legacy prose and are not Jetpack proxies.",
+      "implementation": {
+        "files": [],
+        "approach": "Run the local pre-deploy smoke script first (step G) to catch regressions before pushing. Then deploy per step A — prefer the push-triggered path, falling back to the manual `netlify deploy --prod` only when US-003 was deferred. Then exercise live assertions B, C, D, E, F via curl + `netlify api listSiteDeploys`. Each assertion is written as a self-contained shell expression so the verify is the exact script a human would re-run during review. The visual-review gate wraps the whole thing: a human walks the three VideoPress posts in a browser, confirms the players are functional, confirms Jetpack-proxied images now load from either the original source or `/images/external/`, and confirms the auto-deploy status before marking Done.",
+        "verify": "set -euo pipefail; hugo --quiet; ! grep -rn 'is-provider-videopress\\|wp-block-video' content/ | head -1; JETPACK=$(grep -rE 'https?://i[0-9]*\\.wp\\.com/' content/ 2>/dev/null | grep -vE 'marcelioleal.com/wp-content' | wc -l | tr -d ' '); [ \"$JETPACK\" -eq 0 ]; test -f scripts/swap_videopress.py; test -f scripts/cleanup_jetpack_proxies.py; for url in https://new.marcelioleal.com/o-perigo-da-musica-reflexiva-e-a-relacao-austro-paraense/ https://new.marcelioleal.com/sounds-of-quartzo/ https://new.marcelioleal.com/2025-um-ano-que-tem-tudo-pra-ser-incrivel/; do body=$(curl -sf \"$url\"); vcount=$(printf '%s' \"$body\" | grep -c '<video' || true); [ \"$vcount\" -ge 1 ] || { echo \"FAIL: $url has no <video> tag\"; exit 1; }; empty=$(printf '%s' \"$body\" | grep -c '<div class=\"iframe\"></div>' || true); [ \"$empty\" -eq 0 ] || { echo \"FAIL: $url still has empty iframe wrapper\"; exit 1; }; done; for url in https://new.marcelioleal.com/os-tres-livros-mais-pesados-que-eu-ja-li/ https://new.marcelioleal.com/o-fisl-ta-chegando/ https://new.marcelioleal.com/ainda-continuo-com-23/; do jp=$(curl -sf \"$url\" | grep -cE 'i[0-9]*\\.wp\\.com' || true); [ \"$jp\" -eq 0 ] || { echo \"FAIL: $url still proxies through i*.wp.com ($jp matches)\"; exit 1; }; done; rcount=$(curl -sf https://new.marcelioleal.com/robots.txt | grep -c 'Disallow: /' || true); [ \"$rcount\" -ge 1 ] || { echo \"FAIL: robots.txt no longer blocks crawlers\"; exit 1; }; hcount=$(curl -sIf https://new.marcelioleal.com/ | grep -ciE '^(x-frame-options|x-content-type-options|referrer-policy|strict-transport-security):' || true); [ \"$hcount\" -ge 1 ] || { echo \"FAIL: security headers absent\"; exit 1; }; echo 'Phase 2.1 exit verification: PASS'",
+        "guardRails": [
+          "hugo --quiet",
+          "test -f scripts/swap_videopress.py",
+          "test -f scripts/cleanup_jetpack_proxies.py"
+        ]
+      },
+      "verification": {
+        "strategy": "visual",
+        "status": "pending",
+        "url": "https://new.marcelioleal.com/",
+        "expect": "VideoPress iframes replaced with functional <video> players on the three cited posts, no Jetpack i*.wp.com proxies in the three cited cleanup posts, auto-deploy on git push to main working (or documented as deferred), robots.txt still Disallow: /, security headers still present."
+      },
+      "gate": {
+        "type": "decision",
+        "status": "pending",
+        "prompt": "Walk the Phase 2.1 fixes on live staging. Confirm: (1) three VideoPress posts have functional <video> players; (2) Jetpack-proxied external images either load directly from source or from /images/external/; (3) pushing to main auto-deploys (or deferred, documented). Any issue = block close.",
+        "options": [
+          "All A-F pass",
+          "Blocked — list failures"
+        ]
+      },
+      "tasks": [
+        "Run local pre-deploy smoke: hugo --quiet, confirm no VideoPress residue in content/, confirm no Jetpack i*.wp.com survivors in content/, confirm both helper scripts exist on disk",
+        "Deploy to production: if US-003 wired GitHub-Netlify, push an empty commit `git commit --allow-empty -m 'Phase 2.1 exit' && git push origin main`; otherwise run the manual `HUGO_ENV=staging hugo --gc --minify --baseURL ... && netlify deploy --prod --dir=public --message 'Phase 2.1 exit'`",
+        "Record in notes which of the two Deploy paths was taken for step A",
+        "Curl each of the 3 VideoPress-affected URLs and assert each HTML body has grep -c '<video' >= 1 and grep -c empty-iframe-wrapper == 0",
+        "Curl each of the 3 Jetpack-cleanup URLs and assert grep -cE 'i[0-9]*\\.wp\\.com' == 0",
+        "If US-003 completed: run `netlify api listSiteDeploys` and confirm a production/github-sourced deploy appears within the last 10 minutes of the test push; otherwise record the N/A reason in notes",
+        "Sample 10 random post slugs from content/post/**/index.md, curl each at its live URL, confirm every one returns HTTP 200, and record the sampled slugs in notes",
+        "Curl robots.txt and the root-page headers to confirm Disallow: / is still present and the security headers set in prior phases survived",
+        "Walk the three VideoPress posts and three Jetpack-cleanup posts in a browser for the visual-review gate and record Yes/No for each",
+        "Answer the gate prompt with either 'All A-F pass' or 'Blocked — list failures' enumerating which step failed and why"
+      ],
+      "id": "US-004",
+      "wave": 2
+    }
+  ]
+}
