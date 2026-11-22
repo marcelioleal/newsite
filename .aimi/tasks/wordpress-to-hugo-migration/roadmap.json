@@ -62,20 +62,20 @@
       ],
       "creates": [
         {
-          "identity": "migrated_posts",
-          "description": "WordPress posts converted to Markdown files under content//posts/"
+          "identity": "content/pt-br/posts",
+          "description": "107 WordPress posts migrated to Hugo page bundles — 103 PT + 4 EN, bilingual"
         },
         {
-          "identity": "migrated_media",
-          "description": "WordPress media downloaded and versioned under static/images/"
+          "identity": "static/images",
+          "description": "134 WordPress media assets migrated (HEIC→JPEG, VideoPress self-hosted, images under year/month paths)"
         },
         {
-          "identity": "recomendacoes_section",
-          "description": "Recomendacoes page with its sub-pages rendered in the languages where content exists"
+          "identity": "content/pt-br/recomendacoes",
+          "description": "Recomendações PT branch bundle with 9 sub-pages (livros, música, kitesurf, sites-e-podcasts, posts-especiais, cafés, arte em SP, viagem pra Belém, artigos-tech)"
         },
         {
-          "identity": "tcc_pages",
-          "description": "TCC/ClassGenerator pages in PT and EN as standalone content"
+          "identity": "content/pt-br/tcc-classgenerator",
+          "description": "TCC/ClassGenerator PT page with EN pair at content/en/thesis-classgenerator/ via shared translationKey, PDF at static/assets/"
         }
       ],
       "needs": [
@@ -92,12 +92,8 @@
       "notes": null,
       "branch": null,
       "dir": "phase-2-content-migration",
-      "status": "planned",
-      "claim": {
-        "claimedBy": "plan-execute-1795365870-12638",
-        "claimedAt": "2026-11-22T16:44:30Z",
-        "claimedPid": 12638
-      }
+      "status": "completed",
+      "claim": null
     },
     {
       "id": 3,
@@ -125,8 +121,8 @@
       ],
       "needs": [
         {
-          "identity": "migrated_posts",
-          "description": "Hugo posts with final slugs so redirects can be authored"
+          "identity": "content/pt-br/posts",
+          "description": "107 WordPress posts migrated to Hugo page bundles — 103 PT + 4 EN, bilingual"
         }
       ],
       "areas": [

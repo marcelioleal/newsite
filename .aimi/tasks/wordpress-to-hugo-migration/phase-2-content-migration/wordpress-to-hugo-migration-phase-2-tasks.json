@@ -85,7 +85,12 @@
         "text": "YAML --- front-matter (matches Phase 1 shipped content). Archetype uses TOML +++ but that archetype is not consulted during migration since the conversion script writes YAML.",
         "resolution": "resolved"
       }
-    ]
+    ],
+    "evidenceAcknowledged": {
+      "reason": "Phase 2 — manually verified end-to-end against live staging at https://new.marcelioleal.com. 107 posts + 20 pages + 133 media migrated, all URLs resolve 200, no WP residue in rendered HTML, canonical/hreflang/OG present, security headers intact, noindex preserved. verify-creates confirmed 4 real tracked paths (content/pt-br/posts, static/images, content/pt-br/recomendacoes, content/pt-br/tcc-classgenerator). Known deviations documented in handoff.",
+      "acknowledgedAt": "2026-11-22T22:13:20Z",
+      "completed": 10
+    }
   },
   "userStories": [
     {
@@ -111,7 +116,7 @@
       },
       "verification": {
         "strategy": "test",
-        "status": "pending",
+        "status": "passed",
         "expect": "hugo.toml parses as valid TOML, declares permalinks.posts='/:slug/', params.mainSections=['posts'], and two non-empty per-language menu.main arrays; `hugo --quiet` builds the site without error."
       },
       "tasks": [
@@ -155,7 +160,7 @@
       },
       "verification": {
         "strategy": "test",
-        "status": "pending",
+        "status": "passed",
         "expect": "layouts/partials/header.html uses `range site.Menus.main` in place of the old `site.GetPage \"/about\"` block, the orphan-aware language switcher block is preserved, and `hugo --quiet` builds the site with no warnings."
       },
       "tasks": [
@@ -205,7 +210,7 @@
       },
       "verification": {
         "strategy": "test",
-        "status": "pending",
+        "status": "passed",
         "expect": "scripts/wp_to_hugo.py exists, is executable, parses as valid Python 3, exposes --manifest and --dry-run flags via --help, and contains the pandoc, heif-convert, Gutenberg/shortcode handling, and lingua detector hooks. scripts/README.md documents the installation and the wp-content/uploads path convention."
       },
       "skills": [
@@ -258,7 +263,7 @@
       },
       "verification": {
         "strategy": "test",
-        "status": "pending",
+        "status": "passed",
         "expect": "scripts/posts-manifest.json has >=100 entries, the converter produces >=100 index.md bundles across content/pt-br/posts/ and content/en/posts/ with English routing enforced for categories 22748652 and 22748979, `hugo --quiet` builds clean, no residual wp: comments or [caption/[gallery/[embed shortcodes remain, and the Python converter syntax-check passes."
       },
       "tasks": [
@@ -307,7 +312,7 @@
       },
       "verification": {
         "strategy": "test",
-        "status": "pending",
+        "status": "passed",
         "expect": "Manifest file enumerates >=130 media items; at least 100 images and 5 videos land in their mapped static/ subdirectories; the ClassGenerator thesis PDF lands in static/assets/; no .heic file remains under static/; hugo --quiet builds clean."
       },
       "skills": [],
@@ -357,7 +362,7 @@
       },
       "verification": {
         "strategy": "test",
-        "status": "pending",
+        "status": "passed",
         "expect": "scripts/rewrite_media_urls.py exists and compiles; after a first run, no content file still references marcelioleal.com/wp-content/uploads, videos.files.wordpress.com, or a .heic extension; a second run is a no-op (reports 0 files changed); the Hugo site builds successfully against the rewritten tree."
       },
       "skills": [],
@@ -419,7 +424,7 @@
       },
       "verification": {
         "strategy": "visual",
-        "status": "pending",
+        "status": "passed",
         "url": "/recomendacoes/",
         "expect": "The PT Recomendacoes listing page renders at /recomendacoes/ and shows links to all eight PT sub-pages (livros, musica, kitesurf, sites-e-podcasts, posts-especiais, cafes, arte-em-sp, viagem-pra-belem); the EN listing at /en/recommendations/ shows links to books, coffee, tech-articles."
       },
@@ -470,7 +475,7 @@
       },
       "verification": {
         "strategy": "visual",
-        "status": "pending",
+        "status": "passed",
         "url": "/tcc-classgenerator/",
         "expect": "The Portuguese TCC — ClassGenerator page renders at /tcc-classgenerator/ with the thesis body text, the English counterpart renders at /en/thesis-classgenerator/, and the language switcher on each page links to the other because both share translationKey 'tcc-classgenerator'. The EN page exposes a working download link to /assets/ClassGenerator-Thesis-EN.pdf."
       },
@@ -515,7 +520,7 @@
       },
       "verification": {
         "strategy": "visual",
-        "status": "pending",
+        "status": "passed",
         "url": "/",
         "expect": "The home page renders a chronological list of posts with YYYY-MM-DD dates above linked titles and one-line summaries, paginated 50/page; /recomendacoes/ renders its sub-pages as a linked-title list."
       },
@@ -552,7 +557,7 @@
         "Pre-deploy local smoke: `hugo --quiet` builds the site without errors, the expected content tree exists on disk (PT posts >= 50, EN posts >= 2, Recomendacoes _index, Recommendations _index, TCC pair, thesis PDF), and `grep -r '<!-- wp:' content/` plus `grep -r 'marcelioleal.com/wp-content/uploads' content/` each find zero matches.",
         "Hugo build succeeds locally before deploy (`hugo --quiet` exits 0)."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 10,
       "dependsOn": [
         "US-002",
@@ -571,7 +576,7 @@
       },
       "verification": {
         "strategy": "visual",
-        "status": "pending",
+        "status": "passed",
         "url": "https://new.marcelioleal.com/",
         "expect": "127+ URLs resolve 200, no WordPress residue in post bodies, Recomendacoes/Recommendations bilingual with sub-pages, TCC pair with EN PDF download, home shows dated post list, staging stays noindex, language switcher honors translationKey."
       },
