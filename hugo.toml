@@ -53,3 +53,9 @@ ShowPostNavLinks = false
 
 [params.profileMode]
 enabled = false
+
+# Allow raw HTML in Markdown — migrated WP posts contain lots of inline HTML
+# (Spotify embeds, VideoPress <video> swaps, image galleries) that Goldmark
+# otherwise strips. Trusted content only (all under our control, no user-submitted).
+[markup.goldmark.renderer]
+unsafe = true
