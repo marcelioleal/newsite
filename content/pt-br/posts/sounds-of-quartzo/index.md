@@ -117,16 +117,7 @@ PS4.: o céu estrelado é outra coisa incrível, mas que por motivo de "só sabe
 
 **Alguns vídeos abaixo**
 
-<figure class="wp-block-video wp-block-embed is-type-video is-provider-videopress">
-<div class="wp-block-embed__wrapper" style="max-width:360px;margin:auto">
-<div class="iframe">
-<div id="video" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%;">
-
-</div>
-</div>
-</div>
-<figcaption>Dançar e Filmar e difícil - Final do ano de 2023</figcaption>
-</figure>
+<figure class="video"><video src="/videos/vid-20230611-wa0054.mp4" controls preload="metadata" class="w-full" style="max-width:720px"></video><figcaption>Dançar e Filmar e difícil – Final do ano de 2023</figcaption></figure>
 
 <figure class="wp-block-embed is-type-rich is-provider-instagram wp-block-embed-instagram">
 <div class="wp-block-embed__wrapper">
@@ -206,38 +197,11 @@ View this post on Instagram
 </div>
 </figure>
 
-<figure class="wp-block-video wp-block-embed is-type-video is-provider-videopress">
-<div class="wp-block-embed__wrapper" style="max-width:330px;margin:auto">
-<div class="iframe">
-<div id="video" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%;">
+<figure class="video"><video src="/videos/img_6676.mov" controls preload="metadata" class="w-full" style="max-width:720px"></video><figcaption>Impressiona 🙂</figcaption></figure>
 
-</div>
-</div>
-</div>
-<figcaption>Impressiona 🙂</figcaption>
-</figure>
+<figure class="video"><video src="/videos/vid-20230611-wa0077.mp4" controls preload="metadata" class="w-full" style="max-width:720px"></video><figcaption>After 2023 – Bhaskar, gratidão!</figcaption></figure>
 
-<figure class="wp-block-video wp-block-embed is-type-video is-provider-videopress">
-<div class="wp-block-embed__wrapper" style="max-width:326px;margin:auto">
-<div class="iframe">
-<div id="video" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%;">
-
-</div>
-</div>
-</div>
-<figcaption>After 2023 - Bhaskar, gratidão!</figcaption>
-</figure>
-
-<figure class="wp-block-video wp-block-embed is-type-video is-provider-videopress">
-<div class="wp-block-embed__wrapper" style="max-width:362px;margin:auto">
-<div class="iframe">
-<div id="video" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%;">
-
-</div>
-</div>
-</div>
-<figcaption>Ou o pôr do sol é realmente deslumbrante ou estamos precisando sair mais de SP? Você decide.</figcaption>
-</figure>
+<figure class="video"><video src="/videos/videodif.mov" controls preload="metadata" class="w-full" style="max-width:720px"></video><figcaption>Ou o pôr do sol é realmente deslumbrante ou estamos precisando sair mais de SP? Você decide.</figcaption></figure>
 
 **Últimas fotchenhas** (Tudo meus amigos, não pode roubar não!)
 

@@ -7,16 +7,7 @@ wp_id: 1046
 
 <a href="/images/2025/09/IMG_7134.jpg?ssl=1"><img src="/images/2025/09/IMG_7134-edited-1024x576.jpg?resize=1024%2C576&amp;ssl=1" class="wp-image-1077" style="aspect-ratio:1.7767522353619845;width:695px;height:auto" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="1077" data-permalink="https://marcelioleal.com/img_7134-2/" data-orig-file="/images/2025/09/IMG_7134-edited.jpg?fit=1114%2C627&amp;ssl=1" data-orig-size="1114,627" data-comments-opened="1" data-image-title="IMG_7134" data-image-description="" data-image-caption="" data-large-file="/images/2025/09/IMG_7134-edited.jpg?fit=1024%2C576&amp;ssl=1" srcset="/images/2025/09/IMG_7134-edited.jpg?resize=1024%2C576&amp;ssl=1 1024w, /images/2025/09/IMG_7134-edited.jpg?resize=300%2C169&amp;ssl=1 300w, /images/2025/09/IMG_7134-edited.jpg?resize=768%2C432&amp;ssl=1 768w, /images/2025/09/IMG_7134-edited.jpg?resize=1100%2C619&amp;ssl=1 1100w, /images/2025/09/IMG_7134-edited.jpg?w=1114&amp;ssl=1 1114w" sizes="auto, (max-width: 1024px) 100vw, 1024px" width="1024" height="576" alt="Um baterista se apresentando em um show ao vivo, com uma imagem projetada em grande tela atrás dele em tons de vermelho e uma multidão ao fundo." /></a>
 
-<figure class="wp-block-video alignleft wp-block-embed is-type-video is-provider-videopress">
-<div class="wp-block-embed__wrapper">
-<div class="iframe">
-<div id="video" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%;">
-
-</div>
-</div>
-</div>
-<figcaption>Amanhecendo no Vale do Anhangabaú, SP, com &amp;ME &amp; Adam Port.</figcaption>
-</figure>
+<figure class="video"><video src="/videos/img_3124.mov" controls preload="metadata" class="w-full" style="max-width:720px"></video><figcaption>Amanhecendo no Vale do Anhangabaú, SP, com &ME & Adam Port.</figcaption></figure>
 
 Em Belém, a gente vê a tristeza batendo quando o dj coloca uma música como "Pais e Filhos" ou "Tempo Perdido" na parte final de uma festa. Nesse momento você imediatamente entende o recado, a festa vai acabar em no máximo 2 ou 3 músicas dependendo do quanto o dj é fã do Legião Urbana (ou do quanto ele tá reflexivo naquele dia). Legião é fim de festa.
 
@@ -190,15 +181,7 @@ E quando o dj solta uma reflexiva no meio da festa?
 
 ## Tudo tem sua hora e seu lugar
 
-<figure class="wp-block-video alignleft wp-block-embed is-type-video is-provider-videopress">
-<div class="wp-block-embed__wrapper">
-<div class="iframe">
-<div id="video" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%;">
-
-</div>
-</div>
-</div>
-</figure>
+<figure class="video"><video src="/videos/whatsapp-video-2025-09-27-at-04.24.41.mp4" controls preload="metadata" class="w-full" style="max-width:720px"></video></figure>
 
 Na maioria da festa eu não quero pensar sobre as possibilidades da vida, sobre teorias sociais complexas, sobre o futuro do meu país, se eu sou parecido com meus irmãos ou não, etc. Nessa hora meu negócio é dançar, aproveitar o drop, put my hands up, seguir comandos simples e efetivos para minha pura diversão.
 
@@ -321,15 +304,7 @@ O show dos caras foi incrível! Do lado musical, no visual, na dinâmica complet
 
 **É isso.**
 
-<figure class="wp-block-video wp-block-embed is-type-video is-provider-videopress">
-<div class="wp-block-embed__wrapper">
-<div class="iframe">
-<div id="video" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%;">
-
-</div>
-</div>
-</div>
-</figure>
+<figure class="video"><video src="/videos/20250201095728000070.mp4" controls preload="metadata" class="w-full" style="max-width:720px"></video></figure>
 
 Voltando pro The Town, eu fiquei extremamente feliz por mais uma conquista/show de Joelma. Do começo lá no interior do Pará, passando como principal responsável pela popularização de um estilo musical popular, até onde ela chegou (e não para de avançar) é algo surreal pra mim. E não é tão maluco dizer que ela passa por diversos ritmos dentro do mesmo show, na abertura do The Town a guitarra de Rock não me deixa mentir.
 

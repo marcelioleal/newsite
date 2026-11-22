@@ -5,7 +5,7 @@ slug: fisl-9-caravana-e-chamada-para-avaliadores
 wp_id: 51
 ---
 
-<img src="https://i0.wp.com/fisl.softwarelivre.org/9.0/www/sites/fislix.softwarelivre.org/themes/fisl/images/logo.png?resize=805%2C109" data-recalc-dims="1" loading="lazy" decoding="async" width="805" height="109" />
+
 
 Estamos tentando organizar uma caravana pro FISL deste ano.
 

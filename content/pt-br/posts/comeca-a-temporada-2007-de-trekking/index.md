@@ -14,7 +14,7 @@ A nossa equipe, os Parasitas(Reloaded) está preparadíssima para esse desafio. 
 - Francisval SERPRO
 - Otávio Rodrigues(Charles Bronson)
 
-<img src="https://i0.wp.com/img396.imageshack.us/img396/1619/p1010023xw7.jpg?w=1100" data-recalc-dims="1" decoding="async" alt="Deuzinei" /> <img src="https://i0.wp.com/img250.imageshack.us/img250/4376/p1010024sw1.jpg?w=1100" data-recalc-dims="1" decoding="async" alt="Guga Boy" /> <img src="https://i0.wp.com/img483.imageshack.us/img483/3412/euilhadoburacofc1.jpg?w=1100" data-recalc-dims="1" decoding="async" />
+  
 
 Da direita pra esquerda, Deuzinei, que não larga o colete nem em terra. Guga boy, fora da água num fim de semana. Eu, na ilha buraco.
 

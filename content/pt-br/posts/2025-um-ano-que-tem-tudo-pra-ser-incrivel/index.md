@@ -222,16 +222,7 @@ Mesmo com mais mudanças, com mais incertezas, as coisas só iam num caminho que
 
 Mas aqui o que eu queria compartilhar é que eu ainda me surpreendo como mesmo depois de dias, semanas e meses complicados, quando isso passa, eu to muito melhor, eu to muito mais perto do que eu quero na minha vida. Não, nunca aconteceu antes e vai ser difícil eu me acostumar com isso. Eu sempre vou chamar de sorte.
 
-<figure class="wp-block-video wp-block-embed is-type-video is-provider-videopress">
-<div class="wp-block-embed__wrapper" style="max-width:201px;margin:auto">
-<div class="iframe">
-<div id="video" style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; width: 100%; height: 100%;">
-
-</div>
-</div>
-</div>
-<figcaption>Barcelona 2023 foi parte importante do tipping point. Amigos de amigos, comidas incríveis e muita música boa.</figcaption>
-</figure>
+<figure class="video"><video src="/videos/snapinsta.app_video_2e47b643889aba2c37b0fad5842adb89_video_dashinit.mp4" controls preload="metadata" class="w-full" style="max-width:720px"></video><figcaption>Barcelona 2023 foi parte importante do tipping point. Amigos de amigos, comidas incríveis e muita música boa.</figcaption></figure>
 
 ## O fator sorte
 

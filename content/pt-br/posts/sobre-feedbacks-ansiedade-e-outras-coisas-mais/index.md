@@ -6,7 +6,7 @@ wp_id: 337
 ---
 
 <figure class="wp-caption">
-<img src="https://i0.wp.com/cdn-images-1.medium.com/max/800/1%2AC_3xIEIlXNvm921AKUJWjA.jpeg?w=1100&amp;ssl=1" data-recalc-dims="1" decoding="async" data-width="3810" data-height="2551" alt="Duas pessoas sentadas conversando em frente ao mar em um lugar frio." />
+<img src="/images/external/cdn-images-1.medium.com/1_C_3xIEIlXNvm921AKUJWjA.jpeg" data-recalc-dims="1" decoding="async" data-width="3810" data-height="2551" alt="Duas pessoas sentadas conversando em frente ao mar em um lugar frio." />
 <figcaption>Photo by <a href="https://unsplash.com/@reka?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener">Korney Violin</a> on Unsplash.</figcaption>
 </figure>
 
@@ -25,7 +25,7 @@ Esse constante sentimento de fricção, onde as pessoas estão sempre se pressio
 ### Processo, os Tipos e Timeboxes
 
 <figure class="wp-caption">
-<img src="https://i0.wp.com/cdn-images-1.medium.com/max/800/1%2Aey6xxD8Zzm37ekvgHohabQ.jpeg?w=1100&amp;ssl=1" data-recalc-dims="1" decoding="async" data-width="5184" data-height="3888" />
+<img src="/images/external/cdn-images-1.medium.com/1_ey6xxD8Zzm37ekvgHohabQ.jpeg" data-recalc-dims="1" decoding="async" data-width="5184" data-height="3888" />
 <figcaption>Photo by <a href="https://unsplash.com/@brett_jordan?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener">Brett Jordan</a> on Unsplash.</figcaption>
 </figure>
 

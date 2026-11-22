@@ -6,7 +6,7 @@ wp_id: 350
 ---
 
 <figure>
-<img src="https://i0.wp.com/cdn-images-1.medium.com/max/800/1%2AOG9WEB8Q_4C5mPQ5eo-LWw.jpeg?w=1100&amp;ssl=1" data-recalc-dims="1" decoding="async" data-width="1200" data-height="817" />
+<img src="/images/external/cdn-images-1.medium.com/1_OG9WEB8Q_4C5mPQ5eo-LWw.jpeg" data-recalc-dims="1" decoding="async" data-width="1200" data-height="817" />
 </figure>
 
 É de conhecimento geral o impacto que um CTO/Head de Tecnologia tem desde o começo em uma startup. Mas é muito difícil conseguir um bom CTO sem um bom investimento. Em geral o que se tem é uma relação de muito desperdício pra ambas as partes e que impacta negativamente pra o ecossistema de empreendedorismo.
@@ -22,7 +22,7 @@ A terceirização surge como uma primeira solução, desta forma, os fundadores 
 É nessa hora que começa a busca (desesperada) por alguém que possa resolver os problemas da empresa. E aqui, no Brasil, vemos muitos problemas que impactam a empresa e o ecossistema de startups como um todo. Abaixo listo as soluções iniciais e alguns erros relacionados com elas.
 
 <figure>
-<img src="https://i0.wp.com/cdn-images-1.medium.com/max/800/1%2AvNyjWesxm7YbrV0tHlhvzw.jpeg?w=1100&amp;ssl=1" data-recalc-dims="1" decoding="async" data-width="4316" data-height="2877" />
+<img src="/images/external/cdn-images-1.medium.com/1_vNyjWesxm7YbrV0tHlhvzw.jpeg" data-recalc-dims="1" decoding="async" data-width="4316" data-height="2877" />
 </figure>
 
 #### **Contratar qualquer desenvolvedor**
@@ -52,7 +52,7 @@ Se esse ponto chegou é quase certo que não há ninguém certo, nem empresa nem
 Nesse caso, seja transparente e lide com as consequências. É melhor pra todos e pro ecossistema.
 
 <figure>
-<img src="https://i0.wp.com/cdn-images-1.medium.com/max/800/1%2A9zUWhnxw5EUUiU093MrdQw.jpeg?w=1100&amp;ssl=1" data-recalc-dims="1" decoding="async" data-width="1200" data-height="800" />
+<img src="/images/external/cdn-images-1.medium.com/1_9zUWhnxw5EUUiU093MrdQw.jpeg" data-recalc-dims="1" decoding="async" data-width="1200" data-height="800" />
 </figure>
 
 #### **Convencer alguém bom por pouco dinheiro**
@@ -100,7 +100,7 @@ Então aqui o melhor é seguir o mercado, usar stock ou equity como ferramenta d
 Por fim, o pior contexto aqui é quando se une o desenvolvedor mal pago com o sócio/não-sócio. Por favor, não façam isso!
 
 <figure>
-<img src="https://i0.wp.com/cdn-images-1.medium.com/max/800/1%2Aq-qSgKxq39yxez7j6jWY1w.jpeg?w=1100&amp;ssl=1" data-recalc-dims="1" decoding="async" data-width="5472" data-height="3648" />
+<img src="/images/external/cdn-images-1.medium.com/1_q-qSgKxq39yxez7j6jWY1w.jpeg" data-recalc-dims="1" decoding="async" data-width="5472" data-height="3648" />
 </figure>
 
 #### **Continuar com terceirização de escopo fechado**

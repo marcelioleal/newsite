@@ -5,7 +5,7 @@ slug: os-servicos-que-eu-assino-em-2018
 wp_id: 343
 ---
 
-<img src="https://i0.wp.com/cdn-images-1.medium.com/max/800/1%2AtXqRtqrMUFlUjPaFmdkaTA.png?w=1100&amp;ssl=1" data-recalc-dims="1" decoding="async" />
+<img src="/images/external/cdn-images-1.medium.com/1_tXqRtqrMUFlUjPaFmdkaTA.png" data-recalc-dims="1" decoding="async" />
 
 Tudo tem virado serviço. <a href="https://www.moobie.com.br/" target="_blank" rel="noopener">Carro</a>, <a href="https://www.yellow.app/" target="_blank" rel="noopener">bike</a>, <a href="https://www.zenfinance.com.br/" target="_blank" rel="noopener">capital de giro</a>, e mais milhares de ferramentas de produtividade. Tudo isso acessível a partir de um número de cartão ou um clique do seu marketplace preferido. Ficou bem normal se perder nas assinaturas, na imensidade de serviços que resolvem problemas muito específicos.
 

@@ -13,15 +13,15 @@ Não pude assistir muitas palestras, mas as que presenciei foram muito boas, em 
 
 Abaixo algumas fotos do evento.
 
-<img src="https://i0.wp.com/farm2.static.flickr.com/1250/1268227638_a9ac977a6a.jpg?resize=500%2C375" data-recalc-dims="1" loading="lazy" decoding="async" data-align="middle" width="500" height="375" alt="Palestrantes e Organização ao fim do evento" />
 
-<img src="https://i0.wp.com/farm2.static.flickr.com/1156/1268227626_4484b50781.jpg?resize=500%2C375" data-recalc-dims="1" loading="lazy" decoding="async" data-align="absmiddle" width="500" height="375" />\
+
+\
 ***Organização e Palestrantes ao fim do evento.***
 
-<img src="https://i0.wp.com/farm2.static.flickr.com/1315/1268428987_8ee97eb047.jpg?resize=500%2C375" data-recalc-dims="1" loading="lazy" decoding="async" data-align="absmiddle" width="500" height="375" />\
+\
 ***A organização reunida ao fim do evento para realizar os sorteios dos brindes.***
 
-<img src="https://i0.wp.com/farm2.static.flickr.com/1177/1268428937_4cfa8b513c.jpg?resize=500%2C375" data-recalc-dims="1" loading="lazy" decoding="async" data-align="absmiddle" width="500" height="375" />\
+\
 ***A galera do PHP(Otávio, eu e o Guilherme).***
 
 Mais fotos estão num <a href="http://www.flickr.com/photos/48101388@N00/sets/72157601753475975/" target="_blank">albúm</a> do Flickr.

@@ -14,4 +14,4 @@ Os temas serão os seguintes:
 - Escrita de mais algumas páginas do texto de rastreabilidade pro mestrado
 - Mais uma etapa do circuito de trekking, em Mosqueiro. Pará-sitas!!!!
 
-<img src="https://i0.wp.com/img467.imageshack.us/img467/2715/equipefimxq4.jpg?w=1100" data-recalc-dims="1" decoding="async" />
+

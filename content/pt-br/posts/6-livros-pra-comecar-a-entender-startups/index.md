@@ -6,7 +6,7 @@ wp_id: 356
 ---
 
 <figure>
-<img src="https://i0.wp.com/cdn-images-1.medium.com/max/800/1%2AE2GmufsSmKJ5oq7BNRDjdw.png?w=1100&amp;ssl=1" data-recalc-dims="1" decoding="async" data-width="834" data-height="592" />
+<img src="/images/external/cdn-images-1.medium.com/1_E2GmufsSmKJ5oq7BNRDjdw.png" data-recalc-dims="1" decoding="async" data-width="834" data-height="592" />
 </figure>
 
 Várias pessoas do mercado tradicional quando têm o primeiro contato com o mundo de startups entendem que precisam se aprofundar e me pedem algumas recomendações. Há várias formas de traçar um plano de estudo pra isso, mas existem alguns aspectos que são importantes independentemente do perfil e da estratégia de entrada na área.
