@@ -72,7 +72,12 @@
         "text": "Posts Populares (PT) and Popular Posts (EN) sit at weight 15 — between Sobre (10) and Recomendações (20) in the nav order.",
         "resolution": "resolved"
       }
-    ]
+    ],
+    "evidenceAcknowledged": {
+      "reason": "Phase 2.2 verified end-to-end on live staging: all 5 URLs 200 (/sobre/, /en/about/, /posts-populares/, /en/popular-posts/, /recomendacoes/artigos-tech/), real bios replacing placeholders, Popular Posts and About nav entries render on both languages, non-regression intact (robots noindex + HSTS). 4 creates verified as real tracked paths.",
+      "acknowledgedAt": "2026-11-22T23:10:13Z",
+      "completed": 3
+    }
   },
   "userStories": [
     {
@@ -88,7 +93,7 @@
         "A full `hugo --quiet` build from the repo root succeeds and writes public/sobre/index.html, public/en/about/index.html, public/posts-populares/index.html, and public/en/popular-posts/index.html, proving every migrated page renders through the live theme.",
         "`python3 -m py_compile scripts/wp_to_hugo.py` succeeds — the manifest-driven migration path remains syntactically valid Python."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 1,
       "dependsOn": [],
       "notes": "wp_to_hugo.py derives the on-disk URL from the manifest's `slug` field; using slug=\"sobre\" for id 185 preserves /sobre/ while slug=\"about\" for id 193 serves /en/about/. translationKey=\"about\" on both keeps them paired in the language switcher exactly as Phase 1 configured.",
@@ -106,7 +111,7 @@
       },
       "verification": {
         "strategy": "test",
-        "status": "pending",
+        "status": "passed",
         "expect": "The migrator runs end-to-end against the 5-entry manifest, overwrites every existing placeholder file, creates the two popular-posts bundles, and a full Hugo build renders /sobre/, /en/about/, /posts-populares/, /en/popular-posts/, and /recomendacoes/artigos-tech/ without errors."
       },
       "tasks": [
@@ -131,7 +136,7 @@
         "hugo.toml remains valid TOML (tomllib.load succeeds) and `hugo --quiet` builds the site clean with the new menu entries (pageRefs resolve to the content pages produced by US-001 with no \"REF_NOT_FOUND\" error).",
         "`bash -n` on any shell snippet the story adds passes, and `hugo --quiet` exits 0 — the project's own build/syntax check."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 2,
       "dependsOn": [
         "US-001"
@@ -145,7 +150,7 @@
       },
       "verification": {
         "strategy": "test",
-        "status": "pending",
+        "status": "passed",
         "expect": "hugo rebuilds cleanly and both rendered language home pages carry a header nav link to their respective Popular Posts page."
       },
       "tasks": [
@@ -175,7 +180,7 @@
         "Visual gate reviewer confirms via the Phase 2.2 prompt that all A-E checks pass, or lists the specific failures that block closing Phase 2.2.",
         "hugo --quiet exits 0 with no build errors or warnings-as-errors."
       ],
-      "status": "pending",
+      "status": "completed",
       "priority": 3,
       "dependsOn": [
         "US-001",
@@ -192,7 +197,7 @@
       },
       "verification": {
         "strategy": "visual",
-        "status": "pending",
+        "status": "passed",
         "url": "https://new.marcelioleal.com/",
         "expect": "Live staging: /sobre/ and /en/about/ show the real bio (no Phase 1 placeholder); /posts-populares/ and /en/popular-posts/ are navigable and render list content; /recomendacoes/artigos-tech/ shows the migrated WordPress content (not the Phase 2 stub); the PT nav shows 'Posts Populares' and the EN nav shows 'Popular Posts'; robots.txt still serves Disallow:/, CSP/HSTS headers intact, 5 sample post URLs return 200."
       },

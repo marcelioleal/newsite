@@ -158,11 +158,11 @@
       "creates": [
         {
           "identity": "content/pt-br/about/index.md",
-          "description": "Real Sobre Mim bio replacing the Phase 1 placeholder, migrated from WP page 185"
+          "description": "Real Sobre Mim bio migrated from WP page 185, replacing Phase 1 placeholder"
         },
         {
           "identity": "content/en/about/index.md",
-          "description": "Real About me bio replacing the Phase 1 placeholder, migrated from WP page 193"
+          "description": "Real About me bio migrated from WP page 193, replacing Phase 1 placeholder"
         },
         {
           "identity": "content/pt-br/posts-populares",
@@ -185,7 +185,7 @@
       "notes": null,
       "branch": null,
       "dir": "phase-2.2-content-completion",
-      "status": "planned",
+      "status": "completed",
       "claim": null
     },
     {
