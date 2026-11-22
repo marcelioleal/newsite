@@ -4,11 +4,24 @@ theme = "PaperMod"
 defaultContentLanguage = "pt-br"
 defaultContentLanguageInSubdir = false
 
+[permalinks]
+posts = "/:slug/"
+
 [languages.pt-br]
 contentDir   = "content/pt-br"
 weight       = 1
 label        = "Português"
 locale       = "pt-BR"
+
+[[languages.pt-br.menu.main]]
+name = "Sobre"
+pageRef = "/about"
+weight = 10
+
+[[languages.pt-br.menu.main]]
+name = "Recomendações"
+pageRef = "/recomendacoes"
+weight = 20
 
 [languages.en]
 contentDir   = "content/en"
@@ -16,9 +29,20 @@ weight       = 2
 label        = "English"
 locale       = "en-US"
 
+[[languages.en.menu.main]]
+name = "About"
+pageRef = "/about"
+weight = 10
+
+[[languages.en.menu.main]]
+name = "Recommendations"
+pageRef = "/recommendations"
+weight = 20
+
 [params]
 description = "Marcelio Leal's personal site — pt-br default, bilingual"
 images = ["og-default.png"]
+mainSections = ["posts"]
 disableThemeToggle = true
 ShowBreadCrumbs = false
 ShowShareButtons = false
