@@ -19,6 +19,11 @@ pageRef = "/about"
 weight = 10
 
 [[languages.pt-br.menu.main]]
+name = "Posts Populares"
+pageRef = "/posts-populares"
+weight = 15
+
+[[languages.pt-br.menu.main]]
 name = "Recomendações"
 pageRef = "/recomendacoes"
 weight = 20
@@ -33,6 +38,11 @@ locale       = "en-US"
 name = "About"
 pageRef = "/about"
 weight = 10
+
+[[languages.en.menu.main]]
+name = "Popular Posts"
+pageRef = "/popular-posts"
+weight = 15
 
 [[languages.en.menu.main]]
 name = "Recommendations"
