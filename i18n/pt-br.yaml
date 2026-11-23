@@ -16,6 +16,13 @@ hero_cta_about: "Sobre mim →"
 hero_cta_newsletter: "Newsletter"
 hero_avatar_alt: "Foto de Marcelio Leal"
 
+# Header — search + RSS
+search_placeholder: "Buscar…"
+search_no_results: "Sem resultados para"
+search_one_result: "[COUNT] resultado para [SEARCH_TERM]"
+search_many_results: "[COUNT] resultados para [SEARCH_TERM]"
+rss_aria_label: "Feed RSS"
+
 # Filter pills
 filter_label: "Filtrar:"
 filter_all: "Todos"

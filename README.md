@@ -42,10 +42,28 @@ HUGO_ENV=staging hugo --gc --minify --baseURL "https://new.marcelioleal.com/"
 netlify deploy --prod --dir=public --message "manual deploy: <reason>"
 ```
 
+## Search (Pagefind)
+
+Search is built by [Pagefind](https://pagefind.app/) as a post-Hugo step. The Netlify build runs:
+
+```bash
+hugo --gc --minify && npx pagefind --site public --output-subdir pagefind
+```
+
+Locally, `hugo server` alone does NOT build the search index — the search field in the header shows disabled. To test search locally, run the two-step build:
+
+```bash
+rm -rf public && hugo --minify && npx pagefind --site public --output-subdir pagefind
+# then serve public/ with any static server, e.g.:
+npx serve public
+```
+
+Pagefind is pinned in `package.json` as a devDependency; Netlify caches it between builds.
+
 ## Toolchain
 
 - **Hugo** — pinned to `0.170.1` (non-extended) via `.tool-versions` and `netlify.toml`. Install locally with `brew install hugo`, or `mise install` / `asdf install` once the plugin is set up.
-- **Node** — not required; this site has no JavaScript build step.
+- **Node** — `NODE_VERSION=20` pinned in `netlify.toml` for Pagefind (search index builder).
 - **PaperMod** — current `master`, tracked as a shallow submodule.
 
 ## Project layout

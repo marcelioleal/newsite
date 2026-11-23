@@ -1,11 +1,11 @@
 {{- /*
   Phase 2.3+ — bilingual header with ML signature + name on the left,
-  nav + language switcher + theme toggle on the right.
+  nav + search + lang switcher + RSS + theme toggle on the right.
 
   Overrides themes/PaperMod/layouts/_partials/header.html.
-  Language-switching logic is unchanged from the original: iterates
-  site.Languages and emits a translation link, current-language indicator,
-  or "only in <lang>" orphan badge.
+  Language-switching logic is unchanged: iterates site.Languages and emits
+  a translation link, current-language indicator, or "only in <lang>"
+  orphan badge.
 */ -}}
 <header class="header">
   <nav class="nav">
@@ -64,6 +64,21 @@
           {{- end -}}
         {{- end -}}
       {{- end }}
+      {{- /* Pagefind search input. Rendered as an empty host div; the Pagefind UI
+             widget mounts into it via extend_head.html. Flattened to inline via .pm-search CSS. */ -}}
+      <li class="header-search-item">
+        <div id="search" class="pm-search" data-placeholder="{{ i18n "search_placeholder" }}"></div>
+      </li>
+      {{- /* RSS feed anchor: resolves per-language via relLangURL (/index.xml PT, /en/index.xml EN). */ -}}
+      <li>
+        <a class="header-rss" href="{{ "index.xml" | relLangURL }}" rel="alternate" type="application/rss+xml" aria-label="{{ i18n "rss_aria_label" }}" title="{{ i18n "rss_aria_label" }}">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 11a9 9 0 0 1 9 9"/>
+            <path d="M4 4a16 16 0 0 1 16 16"/>
+            <circle cx="5" cy="19" r="1"/>
+          </svg>
+        </a>
+      </li>
       {{- if (not site.Params.disableThemeToggle) }}
       <li>
         <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
