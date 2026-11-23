@@ -10,9 +10,13 @@
 # not via git. Candidate for YouTube/external host migration.
 static/videos/20250201095728000070.mp4
 
+# Node (pagefind devDependency; package-lock.json is tracked)
+node_modules/
+
 # Aimi session state (ephemeral, per-run)
 .aimi/.state.lock
 .aimi/cli-path
 .aimi/current-branch
 .aimi/current-tasks
 .aimi/last-result
+.aimi/default-branch-*
