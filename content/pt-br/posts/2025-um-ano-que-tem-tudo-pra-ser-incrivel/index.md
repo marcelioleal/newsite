@@ -6,10 +6,10 @@ wp_id: 705
 categories: [software-dev, musica]
 ---
 
-<div class="wp-block-image">
+<div >
 
 <figure class="aligncenter size-large">
-<a href="/images/2025/01/cristo.jpg?ssl=1"><img src="/images/2025/01/cristo.jpg?resize=1024%2C524&amp;ssl=1" class="wp-image-772" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="772" data-permalink="https://marcelioleal.com/2025/01/18/2025-um-ano-que-tem-tudo-pra-ser-incrivel/cristo/" data-orig-file="/images/2025/01/cristo.jpg?fit=2981%2C1524&amp;ssl=1" data-orig-size="2981,1524" data-comments-opened="1" data-image-meta="{&quot;orientation&quot;:&quot;1&quot;}" data-image-title="cristo" data-image-description="" data-image-caption="" data-large-file="/images/2025/01/cristo.jpg?fit=1024%2C524&amp;ssl=1" srcset="/images/2025/01/cristo.jpg?resize=1024%2C524&amp;ssl=1 1024w, /images/2025/01/cristo.jpg?resize=300%2C153&amp;ssl=1 300w, /images/2025/01/cristo.jpg?resize=768%2C393&amp;ssl=1 768w, /images/2025/01/cristo.jpg?resize=1536%2C785&amp;ssl=1 1536w, /images/2025/01/cristo.jpg?resize=2048%2C1047&amp;ssl=1 2048w, /images/2025/01/cristo.jpg?resize=1200%2C613&amp;ssl=1 1200w, /images/2025/01/cristo.jpg?resize=1100%2C562&amp;ssl=1 1100w, /images/2025/01/cristo.jpg?w=2200&amp;ssl=1 2200w" sizes="auto, (max-width: 1024px) 100vw, 1024px" width="1024" height="524" /></a>
+<a href="/images/2025/01/cristo.jpg?ssl=1"><img src="/images/2025/01/cristo.jpg?resize=1024%2C524&amp;ssl=1" loading="lazy" decoding="async" width="1024" height="524" /></a>
 <figcaption>E assim foi o primeiro fim de semana do ano.</figcaption>
 </figure>
 
@@ -25,10 +25,10 @@ Mas eu já aproveito pra deixar um Feliz 2025 pra todos!
 
 ## Os anos que me trouxeram até aqui
 
-<div class="wp-block-image">
+<div >
 
 <figure class="aligncenter size-large">
-<a href="/images/2025/01/IMG_20191227_164718-EFFECTS.jpg?ssl=1"><img src="/images/2025/01/IMG_20191227_164718-EFFECTS-1024x768.jpg?resize=1024%2C768&amp;ssl=1" class="wp-image-712" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="712" data-permalink="https://marcelioleal.com/2025/01/18/2025-um-ano-que-tem-tudo-pra-ser-incrivel/img_20191227_164718-effects/" data-orig-file="/images/2025/01/IMG_20191227_164718-EFFECTS.jpg?fit=4032%2C3024&amp;ssl=1" data-orig-size="4032,3024" data-comments-opened="1" data-image-meta="{&quot;camera&quot;:&quot;POCOPHONE F1&quot;,&quot;created_timestamp&quot;:&quot;1577465238&quot;,&quot;focal_length&quot;:&quot;3.9400000572205&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="IMG_20191227_164718-EFFECTS" data-image-description="" data-image-caption="" data-large-file="/images/2025/01/IMG_20191227_164718-EFFECTS.jpg?fit=1024%2C768&amp;ssl=1" srcset="/images/2025/01/IMG_20191227_164718-EFFECTS.jpg?resize=1024%2C768&amp;ssl=1 1024w, /images/2025/01/IMG_20191227_164718-EFFECTS.jpg?resize=300%2C225&amp;ssl=1 300w, /images/2025/01/IMG_20191227_164718-EFFECTS.jpg?resize=768%2C576&amp;ssl=1 768w, /images/2025/01/IMG_20191227_164718-EFFECTS.jpg?resize=1536%2C1152&amp;ssl=1 1536w, /images/2025/01/IMG_20191227_164718-EFFECTS.jpg?resize=2048%2C1536&amp;ssl=1 2048w, /images/2025/01/IMG_20191227_164718-EFFECTS.jpg?resize=1100%2C825&amp;ssl=1 1100w, /images/2025/01/IMG_20191227_164718-EFFECTS.jpg?w=2200&amp;ssl=1 2200w, /images/2025/01/IMG_20191227_164718-EFFECTS.jpg?w=3300&amp;ssl=1 3300w" sizes="auto, (max-width: 1024px) 100vw, 1024px" width="1024" height="768" /></a>
+<a href="/images/2025/01/IMG_20191227_164718-EFFECTS.jpg?ssl=1"><img src="/images/2025/01/IMG_20191227_164718-EFFECTS-1024x768.jpg?resize=1024%2C768&amp;ssl=1" loading="lazy" decoding="async" width="1024" height="768" /></a>
 <figcaption>Pipa 2019/2020 - Como foi bom passar esse ano novo aqui no Brasil.</figcaption>
 </figure>
 
@@ -67,10 +67,10 @@ Ouvindo um podcast relativamente aleatório onde o autor respondia uma pergunta 
 
 E, de verdade, pelo menos umas 3 vezes parecia que jogaram uma luz absurda sobre algumas coisas que eu não conseguia entender em partes da minha vida. E todas elas relacionadas com amor, em dar, receber ou reconhecer esse sentimento.
 
-<div class="wp-block-image is-style-rounded">
+<div class="is-style-rounded">
 
 <figure class="aligncenter size-large is-resized">
-<a href="/images/2025/01/DE81CF6F-4691-4BE8-BA79-AF6C3E960571.jpg?ssl=1"><img src="/images/2025/01/DE81CF6F-4691-4BE8-BA79-AF6C3E960571.jpg?resize=1024%2C1024&amp;ssl=1" class="wp-image-745" style="width:359px;height:auto" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="745" data-permalink="https://marcelioleal.com/2025/01/18/2025-um-ano-que-tem-tudo-pra-ser-incrivel/de81cf6f-4691-4be8-ba79-af6c3e960571/" data-orig-file="/images/2025/01/DE81CF6F-4691-4BE8-BA79-AF6C3E960571.jpg?fit=1440%2C1440&amp;ssl=1" data-orig-size="1440,1440" data-comments-opened="1" data-image-meta="{&quot;orientation&quot;:&quot;1&quot;}" data-image-title="DE81CF6F-4691-4BE8-BA79-AF6C3E960571" data-image-description="" data-image-caption="" data-large-file="/images/2025/01/DE81CF6F-4691-4BE8-BA79-AF6C3E960571.jpg?fit=1024%2C1024&amp;ssl=1" srcset="/images/2025/01/DE81CF6F-4691-4BE8-BA79-AF6C3E960571.jpg?resize=1024%2C1024&amp;ssl=1 1024w, /images/2025/01/DE81CF6F-4691-4BE8-BA79-AF6C3E960571.jpg?resize=300%2C300&amp;ssl=1 300w, /images/2025/01/DE81CF6F-4691-4BE8-BA79-AF6C3E960571.jpg?resize=150%2C150&amp;ssl=1 150w, /images/2025/01/DE81CF6F-4691-4BE8-BA79-AF6C3E960571.jpg?resize=768%2C768&amp;ssl=1 768w, /images/2025/01/DE81CF6F-4691-4BE8-BA79-AF6C3E960571.jpg?resize=1100%2C1100&amp;ssl=1 1100w, /images/2025/01/DE81CF6F-4691-4BE8-BA79-AF6C3E960571.jpg?w=1440&amp;ssl=1 1440w" sizes="auto, (max-width: 1024px) 100vw, 1024px" width="1024" height="1024" /></a>
+<a href="/images/2025/01/DE81CF6F-4691-4BE8-BA79-AF6C3E960571.jpg?ssl=1"><img src="/images/2025/01/DE81CF6F-4691-4BE8-BA79-AF6C3E960571.jpg?resize=1024%2C1024&amp;ssl=1" style="width:359px;height:auto" loading="lazy" decoding="async" width="1024" height="1024" /></a>
 <figcaption>Acredito que o primeiro passo pra uma kura é reconhecer o problema.</figcaption>
 </figure>
 
@@ -96,10 +96,10 @@ Como extra, eu consegui melhorar algo que eu já era relativamente bom - Ficar c
 
 ## **O Reveillon de Alter**
 
-<div class="wp-block-image">
+<div >
 
 <figure class="aligncenter size-full is-resized">
-<a href="/images/2025/01/alterTodos.jpg?ssl=1"><img src="/images/2025/01/alterTodos.jpg?resize=951%2C520&amp;ssl=1" class="wp-image-750" style="width:620px;height:auto" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="750" data-permalink="https://marcelioleal.com/2025/01/18/2025-um-ano-que-tem-tudo-pra-ser-incrivel/altertodos/" data-orig-file="/images/2025/01/alterTodos.jpg?fit=951%2C520&amp;ssl=1" data-orig-size="951,520" data-comments-opened="1" data-image-meta="{&quot;orientation&quot;:&quot;1&quot;}" data-image-title="alterTodos" data-image-description="" data-image-caption="" data-large-file="/images/2025/01/alterTodos.jpg?fit=951%2C520&amp;ssl=1" srcset="/images/2025/01/alterTodos.jpg?w=951&amp;ssl=1 951w, /images/2025/01/alterTodos.jpg?resize=300%2C164&amp;ssl=1 300w, /images/2025/01/alterTodos.jpg?resize=768%2C420&amp;ssl=1 768w" sizes="auto, (max-width: 951px) 100vw, 951px" width="951" height="520" /></a>
+<a href="/images/2025/01/alterTodos.jpg?ssl=1"><img src="/images/2025/01/alterTodos.jpg?resize=951%2C520&amp;ssl=1" style="width:620px;height:auto" loading="lazy" decoding="async" width="951" height="520" /></a>
 <figcaption>Como a gente falaria em Belém - "Égua da sorte reunir essa galera"</figcaption>
 </figure>
 
@@ -109,10 +109,10 @@ No fim de 2020, eu e alguns amigos fomos pra Alter do Chão, um paraíso no Par�
 
 Mas esse, especialmente, me mudou profundamente. Foram dias incríveis com amigos especiais (novos e antigos), conversas profundas com o pé na areia, tomando vinho branco e [comendo bejus com pirarucu defumado](https://www.instagram.com/p/B5h32empR2_/?hl=en) na [Ty](https://www.instagram.com/tycomedoriaebar/?hl=en). Foram tardes maravilhosas nos rios de água transparente do oeste do Pará, regados de música boa.
 
-<div class="wp-block-image">
+<div >
 
 <figure class="alignleft size-large is-resized">
-<a href="/images/2025/01/IMG_20201231_184559.jpg?ssl=1"><img src="/images/2025/01/IMG_20201231_184559.jpg?resize=1024%2C768&amp;ssl=1" class="wp-image-715" style="width:379px;height:auto" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="715" data-permalink="https://marcelioleal.com/2025/01/18/2025-um-ano-que-tem-tudo-pra-ser-incrivel/img_20201231_184559/" data-orig-file="/images/2025/01/IMG_20201231_184559.jpg?fit=4032%2C3024&amp;ssl=1" data-orig-size="4032,3024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;1.9&quot;,&quot;camera&quot;:&quot;POCOPHONE F1&quot;,&quot;created_timestamp&quot;:&quot;1609440358&quot;,&quot;focal_length&quot;:&quot;3.94&quot;,&quot;iso&quot;:&quot;100&quot;,&quot;shutter_speed&quot;:&quot;0.00061957868649318&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="IMG_20201231_184559" data-image-description="" data-image-caption="" data-large-file="/images/2025/01/IMG_20201231_184559.jpg?fit=1024%2C768&amp;ssl=1" srcset="/images/2025/01/IMG_20201231_184559.jpg?resize=1024%2C768&amp;ssl=1 1024w, /images/2025/01/IMG_20201231_184559.jpg?resize=300%2C225&amp;ssl=1 300w, /images/2025/01/IMG_20201231_184559.jpg?resize=768%2C576&amp;ssl=1 768w, /images/2025/01/IMG_20201231_184559.jpg?resize=1536%2C1152&amp;ssl=1 1536w, /images/2025/01/IMG_20201231_184559.jpg?resize=2048%2C1536&amp;ssl=1 2048w, /images/2025/01/IMG_20201231_184559.jpg?resize=1100%2C825&amp;ssl=1 1100w, /images/2025/01/IMG_20201231_184559.jpg?w=2200&amp;ssl=1 2200w, /images/2025/01/IMG_20201231_184559.jpg?w=3300&amp;ssl=1 3300w" sizes="auto, (max-width: 1024px) 100vw, 1024px" width="1024" height="768" /></a>
+<a href="/images/2025/01/IMG_20201231_184559.jpg?ssl=1"><img src="/images/2025/01/IMG_20201231_184559.jpg?resize=1024%2C768&amp;ssl=1" style="width:379px;height:auto" loading="lazy" decoding="async" width="1024" height="768" /></a>
 <figcaption>Mais um pôr do sol em Alter do Chão</figcaption>
 </figure>
 
@@ -124,10 +124,10 @@ Só que um desses dias foi beeeem especial pra mim, a tarde que passamos na [Cas
 
 ## **Aftersun**
 
-<div class="wp-block-image">
+<div >
 
 <figure class="alignleft size-full is-resized">
-<a href="/images/2025/01/Aftersun.jpg?ssl=1"><img src="/images/2025/01/Aftersun-edited.jpg?resize=206%2C305&amp;ssl=1" class="wp-image-718" style="width:255px;height:auto" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="718" data-permalink="https://marcelioleal.com/aftersun-2/" data-orig-file="/images/2025/01/Aftersun-edited.jpg?fit=206%2C305&amp;ssl=1" data-orig-size="206,305" data-comments-opened="1" data-image-title="Aftersun" data-image-description="" data-image-caption="" data-large-file="/images/2025/01/Aftersun-edited.jpg?fit=206%2C305&amp;ssl=1" srcset="/images/2025/01/Aftersun-edited.jpg?w=206&amp;ssl=1 206w, /images/2025/01/Aftersun-edited.jpg?resize=203%2C300&amp;ssl=1 203w" sizes="auto, (max-width: 206px) 100vw, 206px" width="206" height="305" /></a>
+<a href="/images/2025/01/Aftersun.jpg?ssl=1"><img src="/images/2025/01/Aftersun-edited.jpg?resize=206%2C305&amp;ssl=1" style="width:255px;height:auto" loading="lazy" decoding="async" width="206" height="305" /></a>
 <figcaption>Que filme!</figcaption>
 </figure>
 
@@ -141,10 +141,10 @@ Foi numa dessas noites que eu vi o filme [Aftersun](https://www.imdb.com/title/t
 
 ## **Dormir e acordar**
 
-<div class="wp-block-image">
+<div >
 
 <figure class="alignleft size-large is-resized">
-<a href="/images/2025/01/IMG_0188.jpg?ssl=1"><img src="/images/2025/01/IMG_0188.jpg?resize=671%2C1024&amp;ssl=1" class="wp-image-740" style="width:236px;height:auto" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="740" data-permalink="https://marcelioleal.com/2025/01/18/2025-um-ano-que-tem-tudo-pra-ser-incrivel/img_0188/" data-orig-file="/images/2025/01/IMG_0188.jpg?fit=1290%2C1968&amp;ssl=1" data-orig-size="1290,1968" data-comments-opened="1" data-image-meta="{&quot;orientation&quot;:&quot;1&quot;}" data-image-title="IMG_0188" data-image-description="" data-image-caption="" data-large-file="/images/2025/01/IMG_0188.jpg?fit=671%2C1024&amp;ssl=1" srcset="/images/2025/01/IMG_0188.jpg?resize=671%2C1024&amp;ssl=1 671w, /images/2025/01/IMG_0188.jpg?resize=197%2C300&amp;ssl=1 197w, /images/2025/01/IMG_0188.jpg?resize=768%2C1172&amp;ssl=1 768w, /images/2025/01/IMG_0188.jpg?resize=1007%2C1536&amp;ssl=1 1007w, /images/2025/01/IMG_0188.jpg?resize=1100%2C1678&amp;ssl=1 1100w, /images/2025/01/IMG_0188.jpg?w=1290&amp;ssl=1 1290w" sizes="auto, (max-width: 671px) 100vw, 671px" width="671" height="1024" /></a>
+<a href="/images/2025/01/IMG_0188.jpg?ssl=1"><img src="/images/2025/01/IMG_0188.jpg?resize=671%2C1024&amp;ssl=1" style="width:236px;height:auto" loading="lazy" decoding="async" width="671" height="1024" /></a>
 </figure>
 
 </div>
@@ -169,10 +169,10 @@ Aí lá em 2023 eu percebi uma mudança profunda em mim. Aconteceu durante um fe
 
 ## **Embrace the music and yourself**
 
-<div class="wp-block-image">
+<div >
 
 <figure class="alignleft size-large is-resized">
-<a href="/images/2025/01/musicaMusica.jpg?ssl=1"><img src="/images/2025/01/musicaMusica.jpg?resize=1024%2C936&amp;ssl=1" class="wp-image-761" style="width:429px;height:auto" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="761" data-permalink="https://marcelioleal.com/2025/01/18/2025-um-ano-que-tem-tudo-pra-ser-incrivel/musicamusica/" data-orig-file="/images/2025/01/musicaMusica.jpg?fit=1281%2C1171&amp;ssl=1" data-orig-size="1281,1171" data-comments-opened="1" data-image-meta="{&quot;orientation&quot;:&quot;1&quot;}" data-image-title="musicaMusica" data-image-description="" data-image-caption="" data-large-file="/images/2025/01/musicaMusica.jpg?fit=1024%2C936&amp;ssl=1" srcset="/images/2025/01/musicaMusica.jpg?resize=1024%2C936&amp;ssl=1 1024w, /images/2025/01/musicaMusica.jpg?resize=300%2C274&amp;ssl=1 300w, /images/2025/01/musicaMusica.jpg?resize=768%2C702&amp;ssl=1 768w, /images/2025/01/musicaMusica.jpg?resize=1100%2C1006&amp;ssl=1 1100w, /images/2025/01/musicaMusica.jpg?w=1281&amp;ssl=1 1281w" sizes="auto, (max-width: 1024px) 100vw, 1024px" width="1024" height="936" /></a>
+<a href="/images/2025/01/musicaMusica.jpg?ssl=1"><img src="/images/2025/01/musicaMusica.jpg?resize=1024%2C936&amp;ssl=1" style="width:429px;height:auto" loading="lazy" decoding="async" width="1024" height="936" /></a>
 <figcaption>Mais uma vez que o não planejado criou um dia incrível.</figcaption>
 </figure>
 
@@ -184,10 +184,10 @@ Percebi também que o ambiente estava influenciando fortemente em tudo que estav
 
 ## **Vai que dá certo**
 
-<div class="wp-block-image">
+<div >
 
 <figure class="alignleft size-large is-resized">
-<a href="/images/2025/01/IMG_8706.jpg?ssl=1"><img src="/images/2025/01/IMG_8706.jpg?resize=768%2C1024&amp;ssl=1" class="wp-image-729" style="width:237px;height:auto" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="729" data-permalink="https://marcelioleal.com/2025/01/18/2025-um-ano-que-tem-tudo-pra-ser-incrivel/img_8706/" data-orig-file="/images/2025/01/IMG_8706.jpg?fit=3024%2C4032&amp;ssl=1" data-orig-size="3024,4032" data-comments-opened="1" data-image-title="IMG_8706" data-image-description="" data-image-caption="" data-large-file="/images/2025/01/IMG_8706.jpg?fit=768%2C1024&amp;ssl=1" srcset="/images/2025/01/IMG_8706.jpg?resize=768%2C1024&amp;ssl=1 768w, /images/2025/01/IMG_8706.jpg?resize=225%2C300&amp;ssl=1 225w, /images/2025/01/IMG_8706.jpg?resize=1152%2C1536&amp;ssl=1 1152w, /images/2025/01/IMG_8706.jpg?resize=1536%2C2048&amp;ssl=1 1536w, /images/2025/01/IMG_8706.jpg?resize=1100%2C1467&amp;ssl=1 1100w, /images/2025/01/IMG_8706.jpg?w=2200&amp;ssl=1 2200w" sizes="auto, (max-width: 768px) 100vw, 768px" width="768" height="1024" /></a>
+<a href="/images/2025/01/IMG_8706.jpg?ssl=1"><img src="/images/2025/01/IMG_8706.jpg?resize=768%2C1024&amp;ssl=1" style="width:237px;height:auto" loading="lazy" decoding="async" width="768" height="1024" /></a>
 <figcaption>A arte em SP está em todo lugar.</figcaption>
 </figure>
 
@@ -197,10 +197,10 @@ Acho que isso gerou um grande ciclo positivo. Quanto mais intensificava o proces
 
 Dado que as coisas estavam caminhando pra um caminho muito positivo, eu resolvi intensificar o processo. Eu sabia que não ia rolar pra sempre, precisa de muita energia e abertura. Aí eu conscientemente eu expandi muito minha rede de amigos. Dobrei, tripliquei, quadrupliquei música na minha vida, principalmente os eventos que reuniram pessoas e música. Pulei de cabeça em outras artes e vi que não era só música. Por exemplo, as artes plásticas tiveram um papel central também. E mais gente legal veio junto como resultado final.
 
-<div class="wp-block-image">
+<div >
 
 <figure class="alignleft size-large is-resized">
-<a href="/images/2025/01/warungDay.jpg?ssl=1"><img src="/images/2025/01/warungDay.jpg?resize=942%2C1024&amp;ssl=1" class="wp-image-749" style="width:397px;height:auto" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="749" data-permalink="https://marcelioleal.com/2025/01/18/2025-um-ano-que-tem-tudo-pra-ser-incrivel/warungday/" data-orig-file="/images/2025/01/warungDay.jpg?fit=1170%2C1272&amp;ssl=1" data-orig-size="1170,1272" data-comments-opened="1" data-image-meta="{&quot;orientation&quot;:&quot;1&quot;}" data-image-title="warungDay" data-image-description="" data-image-caption="" data-large-file="/images/2025/01/warungDay.jpg?fit=942%2C1024&amp;ssl=1" srcset="/images/2025/01/warungDay.jpg?resize=942%2C1024&amp;ssl=1 942w, /images/2025/01/warungDay.jpg?resize=276%2C300&amp;ssl=1 276w, /images/2025/01/warungDay.jpg?resize=768%2C835&amp;ssl=1 768w, /images/2025/01/warungDay.jpg?resize=1100%2C1196&amp;ssl=1 1100w, /images/2025/01/warungDay.jpg?w=1170&amp;ssl=1 1170w" sizes="auto, (max-width: 942px) 100vw, 942px" width="942" height="1024" /></a>
+<a href="/images/2025/01/warungDay.jpg?ssl=1"><img src="/images/2025/01/warungDay.jpg?resize=942%2C1024&amp;ssl=1" style="width:397px;height:auto" loading="lazy" decoding="async" width="942" height="1024" /></a>
 <figcaption>O melhor dia do ano, muito bem acompanhado.</figcaption>
 </figure>
 
@@ -210,10 +210,10 @@ Intensificar isso também gerou momentos de frustração, também me levou pra l
 
 ## **Mais mudanças**
 
-<div class="wp-block-image">
+<div >
 
 <figure class="alignleft size-large is-resized">
-<a href="/images/2025/01/IMG_9820.jpg?ssl=1"><img src="/images/2025/01/IMG_9820.jpg?resize=768%2C1024&amp;ssl=1" class="wp-image-726" style="width:227px;height:auto" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="726" data-permalink="https://marcelioleal.com/2025/01/18/2025-um-ano-que-tem-tudo-pra-ser-incrivel/img_9820/" data-orig-file="/images/2025/01/IMG_9820.jpg?fit=3024%2C4032&amp;ssl=1" data-orig-size="3024,4032" data-comments-opened="1" data-image-title="IMG_9820" data-image-description="" data-image-caption="" data-large-file="/images/2025/01/IMG_9820.jpg?fit=768%2C1024&amp;ssl=1" srcset="/images/2025/01/IMG_9820.jpg?resize=768%2C1024&amp;ssl=1 768w, /images/2025/01/IMG_9820.jpg?resize=225%2C300&amp;ssl=1 225w, /images/2025/01/IMG_9820.jpg?resize=1152%2C1536&amp;ssl=1 1152w, /images/2025/01/IMG_9820.jpg?resize=1536%2C2048&amp;ssl=1 1536w, /images/2025/01/IMG_9820.jpg?resize=1100%2C1467&amp;ssl=1 1100w, /images/2025/01/IMG_9820.jpg?w=2200&amp;ssl=1 2200w" sizes="auto, (max-width: 768px) 100vw, 768px" width="768" height="1024" /></a>
+<a href="/images/2025/01/IMG_9820.jpg?ssl=1"><img src="/images/2025/01/IMG_9820.jpg?resize=768%2C1024&amp;ssl=1" style="width:227px;height:auto" loading="lazy" decoding="async" width="768" height="1024" /></a>
 <figcaption>Minhas terças, quartas e quintas acabam aqui.</figcaption>
 </figure>
 
@@ -231,10 +231,10 @@ Ontem eu li [esse artigo bem legal sobre a sorte](https://medium.com/the-narrati
 
 Mas ela cita [alguns fatores da sorte](https://youtu.be/w6gY8EouXzE) que eu acho que vale a pena compartilhar: 1) Estar aberto a oportunidades; 2) Confiar no seu sexto sentido (em tradução livre); 3) Ser otimista e resiliente; 4) "Pessoas sortudas sempre buscam pelo ganha-ganha".
 
-<div class="wp-block-image">
+<div >
 
 <figure class="aligncenter size-large is-resized">
-<a href="/images/2025/01/carneiros2.jpg?ssl=1"><img src="/images/2025/01/carneiros2.jpg?resize=1024%2C755&amp;ssl=1" class="wp-image-800" style="width:494px;height:auto" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="800" data-permalink="https://marcelioleal.com/2025/01/18/2025-um-ano-que-tem-tudo-pra-ser-incrivel/carneiros2/" data-orig-file="/images/2025/01/carneiros2.jpg?fit=2989%2C2203&amp;ssl=1" data-orig-size="2989,2203" data-comments-opened="1" data-image-meta="{&quot;orientation&quot;:&quot;1&quot;}" data-image-title="carneiros2" data-image-description="" data-image-caption="" data-large-file="/images/2025/01/carneiros2.jpg?fit=1024%2C755&amp;ssl=1" srcset="/images/2025/01/carneiros2.jpg?resize=1024%2C755&amp;ssl=1 1024w, /images/2025/01/carneiros2.jpg?resize=300%2C221&amp;ssl=1 300w, /images/2025/01/carneiros2.jpg?resize=768%2C566&amp;ssl=1 768w, /images/2025/01/carneiros2.jpg?resize=1536%2C1132&amp;ssl=1 1536w, /images/2025/01/carneiros2.jpg?resize=2048%2C1509&amp;ssl=1 2048w, /images/2025/01/carneiros2.jpg?resize=1200%2C884&amp;ssl=1 1200w, /images/2025/01/carneiros2.jpg?resize=1100%2C811&amp;ssl=1 1100w, /images/2025/01/carneiros2.jpg?w=2200&amp;ssl=1 2200w" sizes="auto, (max-width: 1024px) 100vw, 1024px" width="1024" height="755" /></a>
+<a href="/images/2025/01/carneiros2.jpg?ssl=1"><img src="/images/2025/01/carneiros2.jpg?resize=1024%2C755&amp;ssl=1" style="width:494px;height:auto" loading="lazy" decoding="async" width="1024" height="755" /></a>
 <figcaption>Nessa praia eu tive sorte</figcaption>
 </figure>
 
@@ -244,10 +244,10 @@ Como expliquei, o primeiro fator eu fui hard nesses últimos 18 meses. O segundo
 
 Eu não consigo não chamar de sorte uma sequência como: sounds of quartzo, uma van pra um after, barcelona, keinemusik, um super after da d-edge, um monte gente, um monte de momentos felizes. Tudo isso em 6 meses.
 
-<div class="wp-block-image">
+<div >
 
 <figure class="aligncenter size-full is-resized">
-<a href="/images/2025/01/Screenshot-2025-01-18-at-22.55.48.png?ssl=1"><img src="/images/2025/01/Screenshot-2025-01-18-at-22.55.48.png?resize=976%2C386&amp;ssl=1" class="wp-image-795" style="width:521px;height:auto" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="795" data-permalink="https://marcelioleal.com/2025/01/18/2025-um-ano-que-tem-tudo-pra-ser-incrivel/screenshot-2025-01-18-at-22-55-48/" data-orig-file="/images/2025/01/Screenshot-2025-01-18-at-22.55.48.png?fit=976%2C386&amp;ssl=1" data-orig-size="976,386" data-comments-opened="1" data-image-title="Screenshot 2025-01-18 at 22.55.48" data-image-description="" data-image-caption="" data-large-file="/images/2025/01/Screenshot-2025-01-18-at-22.55.48.png?fit=976%2C386&amp;ssl=1" srcset="/images/2025/01/Screenshot-2025-01-18-at-22.55.48.png?w=976&amp;ssl=1 976w, /images/2025/01/Screenshot-2025-01-18-at-22.55.48.png?resize=300%2C119&amp;ssl=1 300w, /images/2025/01/Screenshot-2025-01-18-at-22.55.48.png?resize=768%2C304&amp;ssl=1 768w" sizes="auto, (max-width: 976px) 100vw, 976px" width="976" height="386" /></a>
+<a href="/images/2025/01/Screenshot-2025-01-18-at-22.55.48.png?ssl=1"><img src="/images/2025/01/Screenshot-2025-01-18-at-22.55.48.png?resize=976%2C386&amp;ssl=1" style="width:521px;height:auto" loading="lazy" decoding="async" width="976" height="386" /></a>
 <figcaption>E não é?</figcaption>
 </figure>
 
@@ -255,10 +255,10 @@ Eu não consigo não chamar de sorte uma sequência como: sounds of quartzo, uma
 
 ## **2025 - O fim da expansão, o começo da consolidação**
 
-<div class="wp-block-image">
+<div >
 
 <figure class="alignleft size-large is-resized">
-<a href="/images/2025/01/carneiros-1.jpg?ssl=1"><img src="/images/2025/01/carneiros-1.jpg?resize=1024%2C886&amp;ssl=1" class="wp-image-759" style="width:479px;height:auto" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="759" data-permalink="https://marcelioleal.com/2025/01/18/2025-um-ano-que-tem-tudo-pra-ser-incrivel/carneiros-2/" data-orig-file="/images/2025/01/carneiros-1.jpg?fit=3016%2C2610&amp;ssl=1" data-orig-size="3016,2610" data-comments-opened="1" data-image-meta="{&quot;orientation&quot;:&quot;1&quot;}" data-image-title="carneiros" data-image-description="" data-image-caption="" data-large-file="/images/2025/01/carneiros-1.jpg?fit=1024%2C886&amp;ssl=1" srcset="/images/2025/01/carneiros-1.jpg?resize=1024%2C886&amp;ssl=1 1024w, /images/2025/01/carneiros-1.jpg?resize=300%2C260&amp;ssl=1 300w, /images/2025/01/carneiros-1.jpg?resize=768%2C665&amp;ssl=1 768w, /images/2025/01/carneiros-1.jpg?resize=1536%2C1329&amp;ssl=1 1536w, /images/2025/01/carneiros-1.jpg?resize=2048%2C1772&amp;ssl=1 2048w, /images/2025/01/carneiros-1.jpg?resize=1200%2C1038&amp;ssl=1 1200w, /images/2025/01/carneiros-1.jpg?resize=1100%2C952&amp;ssl=1 1100w, /images/2025/01/carneiros-1.jpg?w=2200&amp;ssl=1 2200w" sizes="auto, (max-width: 1024px) 100vw, 1024px" width="1024" height="886" /></a>
+<a href="/images/2025/01/carneiros-1.jpg?ssl=1"><img src="/images/2025/01/carneiros-1.jpg?resize=1024%2C886&amp;ssl=1" style="width:479px;height:auto" loading="lazy" decoding="async" width="1024" height="886" /></a>
 <figcaption>Mais um ano começando da melhor forma</figcaption>
 </figure>
 

@@ -8,7 +8,7 @@ categories: [musica, software-dev]
 
 ## Eu sei, eu deveria estar gravando vídeos, mas...
 
-<a href="/images/2026/05/Screenshot-2026-05-12-at-01.23.31.png?ssl=1"><img src="/images/2026/05/Screenshot-2026-05-12-at-01.23.31.png?resize=1018%2C484&amp;ssl=1" class="wp-image-1389" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="1389" data-permalink="https://marcelioleal.com/2026/05/12/eu-deveria-estar-gravando-videos-mas/screenshot-2026-05-12-at-01-23-31/" data-orig-file="/images/2026/05/Screenshot-2026-05-12-at-01.23.31.png?fit=1018%2C484&amp;ssl=1" data-orig-size="1018,484" data-comments-opened="1" data-image-title="Screenshot 2026-05-12 at 01.23.31" data-image-description="" data-image-caption="" data-large-file="/images/2026/05/Screenshot-2026-05-12-at-01.23.31.png?fit=1018%2C484&amp;ssl=1" srcset="/images/2026/05/Screenshot-2026-05-12-at-01.23.31.png?w=1018&amp;ssl=1 1018w, /images/2026/05/Screenshot-2026-05-12-at-01.23.31.png?resize=300%2C143&amp;ssl=1 300w, /images/2026/05/Screenshot-2026-05-12-at-01.23.31.png?resize=768%2C365&amp;ssl=1 768w" sizes="auto, (max-width: 1018px) 100vw, 1018px" width="1018" height="484" alt="Imagem de um código-fonte em uma tela escura, destacando trechos de programação em Python com várias cores." /></a>
+<a href="/images/2026/05/Screenshot-2026-05-12-at-01.23.31.png?ssl=1"><img src="/images/2026/05/Screenshot-2026-05-12-at-01.23.31.png?resize=1018%2C484&amp;ssl=1" loading="lazy" decoding="async" width="1018" height="484" alt="Imagem de um código-fonte em uma tela escura, destacando trechos de programação em Python com várias cores." /></a>
 
 Eu sei, eu deveria estar gravando vídeos em 2026, mas nem sempre o caminho padrão é o que gostamos e seguimos.
 

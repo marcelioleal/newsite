@@ -6,7 +6,7 @@ wp_id: 343
 categories: [software-dev, musica]
 ---
 
-<img src="/images/external/cdn-images-1.medium.com/1_tXqRtqrMUFlUjPaFmdkaTA.png" data-recalc-dims="1" decoding="async" />
+<img src="/images/external/cdn-images-1.medium.com/1_tXqRtqrMUFlUjPaFmdkaTA.png" decoding="async" />
 
 Tudo tem virado serviço. <a href="https://www.moobie.com.br/" target="_blank" rel="noopener noreferrer">Carro</a>, <a href="https://www.yellow.app/" target="_blank" rel="noopener noreferrer">bike</a>, <a href="https://www.zenfinance.com.br/" target="_blank" rel="noopener noreferrer">capital de giro</a>, e mais milhares de ferramentas de produtividade. Tudo isso acessível a partir de um número de cartão ou um clique do seu marketplace preferido. Ficou bem normal se perder nas assinaturas, na imensidade de serviços que resolvem problemas muito específicos.
 

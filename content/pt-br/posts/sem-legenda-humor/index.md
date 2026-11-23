@@ -8,7 +8,7 @@ categories: [outros]
 
 Copiado de ASF Web. -\> Noblat -\> LiberatiNews
 
-<img src="http://antoniofonseca.files.wordpress.com/2007/11/129_90-pobre.jpg?w=1100" data-recalc-dims="1" decoding="async" />
+<img src="http://antoniofonseca.files.wordpress.com/2007/11/129_90-pobre.jpg?w=1100" decoding="async" />
 
 O que um "pouquinho" de petróleo não faz...
 

@@ -6,10 +6,10 @@ wp_id: 1292
 categories: [musica]
 ---
 
-<div class="wp-block-image">
+<div >
 
 <figure class="alignleft size-large is-resized">
-<a href="/images/2026/05/CFA5E276-DE9D-4B2D-8DC1-14C47A4C5AD5.jpg?ssl=1"><img src="/images/2026/05/CFA5E276-DE9D-4B2D-8DC1-14C47A4C5AD5.jpg?resize=576%2C1024&amp;ssl=1" class="wp-image-1294" style="aspect-ratio:0.563056762129132;width:285px;height:auto" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="1294" data-permalink="https://marcelioleal.com/2026/05/07/festival-do-sul-rock-do-norte/cfa5e276-de9d-4b2d-8dc1-14c47a4c5ad5/" data-orig-file="/images/2026/05/CFA5E276-DE9D-4B2D-8DC1-14C47A4C5AD5.jpg?fit=1180%2C2096&amp;ssl=1" data-orig-size="1180,2096" data-comments-opened="1" data-image-meta="{&quot;orientation&quot;:&quot;1&quot;}" data-image-title="CFA5E276-DE9D-4B2D-8DC1-14C47A4C5AD5" data-image-description="" data-image-caption="" data-large-file="/images/2026/05/CFA5E276-DE9D-4B2D-8DC1-14C47A4C5AD5.jpg?fit=576%2C1024&amp;ssl=1" srcset="/images/2026/05/CFA5E276-DE9D-4B2D-8DC1-14C47A4C5AD5.jpg?resize=576%2C1024&amp;ssl=1 576w, /images/2026/05/CFA5E276-DE9D-4B2D-8DC1-14C47A4C5AD5.jpg?resize=169%2C300&amp;ssl=1 169w, /images/2026/05/CFA5E276-DE9D-4B2D-8DC1-14C47A4C5AD5.jpg?resize=768%2C1364&amp;ssl=1 768w, /images/2026/05/CFA5E276-DE9D-4B2D-8DC1-14C47A4C5AD5.jpg?resize=865%2C1536&amp;ssl=1 865w, /images/2026/05/CFA5E276-DE9D-4B2D-8DC1-14C47A4C5AD5.jpg?resize=1153%2C2048&amp;ssl=1 1153w, /images/2026/05/CFA5E276-DE9D-4B2D-8DC1-14C47A4C5AD5.jpg?resize=1100%2C1954&amp;ssl=1 1100w, /images/2026/05/CFA5E276-DE9D-4B2D-8DC1-14C47A4C5AD5.jpg?w=1180&amp;ssl=1 1180w" sizes="auto, (max-width: 576px) 100vw, 576px" width="576" height="1024" alt="Vista interna de uma cúpula de estrutura metálica com revestimento vermelho translúcido, formando um padrão radial." /></a>
+<a href="/images/2026/05/CFA5E276-DE9D-4B2D-8DC1-14C47A4C5AD5.jpg?ssl=1"><img src="/images/2026/05/CFA5E276-DE9D-4B2D-8DC1-14C47A4C5AD5.jpg?resize=576%2C1024&amp;ssl=1" style="aspect-ratio:0.563056762129132;width:285px;height:auto" loading="lazy" decoding="async" width="576" height="1024" alt="Vista interna de uma cúpula de estrutura metálica com revestimento vermelho translúcido, formando um padrão radial." /></a>
 <figcaption>Ópera de Arame. Photo by: @ekatekp.</figcaption>
 </figure>
 
@@ -30,10 +30,10 @@ Neste post, eu vou explorar essa conexão com a música, o momento inicial em qu
 > E a adolescência em Seattle teve sua versão em Belém.\
 > Fã do Nirvana - Molho Negro.
 
-<div class="wp-block-image">
+<div >
 
 <figure class="alignleft size-full is-resized">
-<a href="/images/2026/05/IMG_0276.jpeg?ssl=1"><img src="/images/2026/05/IMG_0276.jpeg?resize=453%2C462&amp;ssl=1" class="wp-image-1299" style="width:411px;height:auto" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="1299" data-permalink="https://marcelioleal.com/2026/05/07/festival-do-sul-rock-do-norte/img_0276/" data-orig-file="/images/2026/05/IMG_0276.jpeg?fit=453%2C462&amp;ssl=1" data-orig-size="453,462" data-comments-opened="1" data-image-meta="{&quot;orientation&quot;:&quot;1&quot;}" data-image-title="IMG_0276" data-image-description="" data-image-caption="" data-large-file="/images/2026/05/IMG_0276.jpeg?fit=453%2C462&amp;ssl=1" srcset="/images/2026/05/IMG_0276.jpeg?w=453&amp;ssl=1 453w, /images/2026/05/IMG_0276.jpeg?resize=294%2C300&amp;ssl=1 294w" sizes="auto, (max-width: 453px) 100vw, 453px" width="453" height="462" alt="Homem sentado em uma mesa de gravação, usando fones de ouvido e ajustando um equipamento de áudio, vestido com uma camisa com padrões coloridos." /></a>
+<a href="/images/2026/05/IMG_0276.jpeg?ssl=1"><img src="/images/2026/05/IMG_0276.jpeg?resize=453%2C462&amp;ssl=1" style="width:411px;height:auto" loading="lazy" decoding="async" width="453" height="462" alt="Homem sentado em uma mesa de gravação, usando fones de ouvido e ajustando um equipamento de áudio, vestido com uma camisa com padrões coloridos." /></a>
 <figcaption>Papai (@lealmaurony) mixando raiz!</figcaption>
 </figure>
 
@@ -61,7 +61,7 @@ Daí, foi só ir pros lugares certos (já em Belém), como o Se Rasgum, The Pub,
 
 ## **O Festival do Sul**
 
-<a href="/images/2026/05/76055F71-9FA6-46FC-9FF3-371DF189C975_1_105_c-e1778121755808.jpeg?ssl=1"><img src="/images/2026/05/76055F71-9FA6-46FC-9FF3-371DF189C975_1_105_c-e1778121755808.jpeg?resize=1024%2C536&amp;ssl=1" class="wp-image-1308" style="width:757px;height:auto" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="1308" data-permalink="https://marcelioleal.com/2026/05/07/festival-do-sul-rock-do-norte/76055f71-9fa6-46fc-9ff3-371df189c975_1_105_c/" data-orig-file="/images/2026/05/76055F71-9FA6-46FC-9FF3-371DF189C975_1_105_c-e1778121755808.jpeg?fit=1024%2C536&amp;ssl=1" data-orig-size="1024,536" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.2&quot;,&quot;camera&quot;:&quot;iPhone 14 Pro Max&quot;,&quot;created_timestamp&quot;:&quot;1777738982&quot;,&quot;focal_length&quot;:&quot;2.22&quot;,&quot;iso&quot;:&quot;320&quot;,&quot;shutter_speed&quot;:&quot;0.016666666666667&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="76055F71-9FA6-46FC-9FF3-371DF189C975_1_105_c" data-image-description="" data-image-caption="" data-large-file="/images/2026/05/76055F71-9FA6-46FC-9FF3-371DF189C975_1_105_c-e1778121755808.jpeg?fit=1024%2C536&amp;ssl=1" srcset="/images/2026/05/76055F71-9FA6-46FC-9FF3-371DF189C975_1_105_c-e1778121755808.jpeg?w=1024&amp;ssl=1 1024w, /images/2026/05/76055F71-9FA6-46FC-9FF3-371DF189C975_1_105_c-e1778121755808.jpeg?resize=300%2C157&amp;ssl=1 300w, /images/2026/05/76055F71-9FA6-46FC-9FF3-371DF189C975_1_105_c-e1778121755808.jpeg?resize=768%2C402&amp;ssl=1 768w" sizes="auto, (max-width: 1024px) 100vw, 1024px" width="1024" height="536" alt="Público assistindo a um show em um espaço coberto com estrutura de vidro. Luzes vermelhas iluminam o ambiente e um grande telão exibe imagens ao fundo." /></a>
+<a href="/images/2026/05/76055F71-9FA6-46FC-9FF3-371DF189C975_1_105_c-e1778121755808.jpeg?ssl=1"><img src="/images/2026/05/76055F71-9FA6-46FC-9FF3-371DF189C975_1_105_c-e1778121755808.jpeg?resize=1024%2C536&amp;ssl=1" style="width:757px;height:auto" loading="lazy" decoding="async" width="1024" height="536" alt="Público assistindo a um show em um espaço coberto com estrutura de vidro. Luzes vermelhas iluminam o ambiente e um grande telão exibe imagens ao fundo." /></a>
 <figcaption>Aquela sensação boa ao chegar no Warung Day 2026.</figcaption>
 
 Adoro ouvir música, se minha vida profissional não fosse hoje 80% reuniões, eu bateria recordes e recordes de ouvir música no spotify/soundcloud. Acho também que ouvir música com um bom sistema de som e usando uma mídia física é uma experiência diferente, uma das que valem a pena reunir amigos, apreciar. Pegar um LP Abbey Road original pra ouvir é como se você passasse por outra versão dessa maravilha. Música é experiência! 
@@ -92,10 +92,10 @@ Assim, pra você, meu amigo, que nunca ouviu os artistas aqui listados, o que eu
 
 ### **O Público**
 
-<div class="wp-block-image">
+<div >
 
 <figure class="alignleft size-full is-resized">
-<a href="/images/2026/05/0DECC57F-EC31-4F02-8565-ED5C90144CC3_1_105_c.jpeg?ssl=1"><img src="/images/2026/05/0DECC57F-EC31-4F02-8565-ED5C90144CC3_1_105_c-e1778123136442.jpeg?resize=657%2C750&amp;ssl=1" class="wp-image-1315" style="aspect-ratio:0.7500038855473182;width:368px;height:auto" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="1315" data-permalink="https://marcelioleal.com/2026/05/07/festival-do-sul-rock-do-norte/0decc57f-ec31-4f02-8565-ed5c90144cc3_1_105_c/" data-orig-file="/images/2026/05/0DECC57F-EC31-4F02-8565-ED5C90144CC3_1_105_c-e1778123136442.jpeg?fit=657%2C750&amp;ssl=1" data-orig-size="657,750" data-comments-opened="1" data-image-title="0DECC57F-EC31-4F02-8565-ED5C90144CC3_1_105_c" data-image-description="" data-image-caption="" data-large-file="/images/2026/05/0DECC57F-EC31-4F02-8565-ED5C90144CC3_1_105_c-e1778123136442.jpeg?fit=657%2C750&amp;ssl=1" srcset="/images/2026/05/0DECC57F-EC31-4F02-8565-ED5C90144CC3_1_105_c-e1778123136442.jpeg?w=657&amp;ssl=1 657w, /images/2026/05/0DECC57F-EC31-4F02-8565-ED5C90144CC3_1_105_c-e1778123136442.jpeg?resize=263%2C300&amp;ssl=1 263w" sizes="auto, (max-width: 657px) 100vw, 657px" width="657" height="750" alt="Grupo de amigos sorrindo em um evento no Warung Beach Club, com luzes coloridas ao fundo e todos usando óculos escuros." /></a>
+<a href="/images/2026/05/0DECC57F-EC31-4F02-8565-ED5C90144CC3_1_105_c.jpeg?ssl=1"><img src="/images/2026/05/0DECC57F-EC31-4F02-8565-ED5C90144CC3_1_105_c-e1778123136442.jpeg?resize=657%2C750&amp;ssl=1" style="aspect-ratio:0.7500038855473182;width:368px;height:auto" loading="lazy" decoding="async" width="657" height="750" alt="Grupo de amigos sorrindo em um evento no Warung Beach Club, com luzes coloridas ao fundo e todos usando óculos escuros." /></a>
 <figcaption>Diria que essas pessoas aí estão no top 1% do público do WD. Não é porque são meus amigos, não. 🙂</figcaption>
 </figure>
 
@@ -112,10 +112,10 @@ Nunca vou esquecer nossa galera no ano passado (2025) numa track do Black Coffee
 > **La vida no es la que uno vivió sino la que uno recuerda y como la recuerda para contarla**\
 > ― Gabriel García Márquez
 
-<div class="wp-block-image">
+<div >
 
 <figure class="alignleft size-full">
-<a href="/images/2026/05/images.jpeg?ssl=1"><img src="/images/2026/05/images.jpeg?resize=225%2C225&amp;ssl=1" class="wp-image-1306" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="1306" data-permalink="https://marcelioleal.com/2026/05/07/festival-do-sul-rock-do-norte/images/" data-orig-file="/images/2026/05/images.jpeg?fit=225%2C225&amp;ssl=1" data-orig-size="225,225" data-comments-opened="1" data-image-title="images" data-image-description="" data-image-caption="" data-large-file="/images/2026/05/images.jpeg?fit=225%2C225&amp;ssl=1" srcset="/images/2026/05/images.jpeg?w=225&amp;ssl=1 225w, /images/2026/05/images.jpeg?resize=150%2C150&amp;ssl=1 150w, /images/2026/05/images.jpeg?resize=200%2C200&amp;ssl=1 200w" sizes="auto, (max-width: 225px) 100vw, 225px" width="225" height="225" alt="Arte de capa de álbum com a frase &#39;fique online&#39; e o nome &#39;dkukas&#39;, apresentando uma ilustração em tons de cinza e detalhes coloridos em verde e roxo." /></a>
+<a href="/images/2026/05/images.jpeg?ssl=1"><img src="/images/2026/05/images.jpeg?resize=225%2C225&amp;ssl=1" loading="lazy" decoding="async" width="225" height="225" alt="Arte de capa de álbum com a frase &#39;fique online&#39; e o nome &#39;dkukas&#39;, apresentando uma ilustração em tons de cinza e detalhes coloridos em verde e roxo." /></a>
 </figure>
 
 </div>
@@ -140,10 +140,10 @@ O álbum é legal no geral, mas curti bastante 3 tracks: Poesia, show de vocal! 
 
 <p><a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer">Ouvir no Spotify ↗</a></p>
 
-<div class="wp-block-image">
+<div >
 
 <figure class="alignleft size-full is-resized">
-<a href="/images/2026/05/marcelio-leal-69fbfad853046-e1778121782483.png?ssl=1"><img src="/images/2026/05/marcelio-leal-69fbfad853046-e1778121782483.png?resize=723%2C770&amp;ssl=1" class="wp-image-1305" style="aspect-ratio:0.9389991476926823;width:190px;height:auto" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="1305" data-permalink="https://marcelioleal.com/marcelio-leal-69fbfad853046/" data-orig-file="/images/2026/05/marcelio-leal-69fbfad853046-e1778121782483.png?fit=723%2C770&amp;ssl=1" data-orig-size="723,770" data-comments-opened="1" data-image-title="marcelio-leal-69fbfad853046" data-image-description="" data-image-caption="" data-large-file="/images/2026/05/marcelio-leal-69fbfad853046-e1778121782483.png?fit=768%2C1024&amp;ssl=1" srcset="/images/2026/05/marcelio-leal-69fbfad853046-e1778121782483.png?w=723&amp;ssl=1 723w, /images/2026/05/marcelio-leal-69fbfad853046-e1778121782483.png?resize=282%2C300&amp;ssl=1 282w" sizes="auto, (max-width: 723px) 100vw, 723px" width="723" height="770" alt="Increase overall brightness, keep natural tones" /></a>
+<a href="/images/2026/05/marcelio-leal-69fbfad853046-e1778121782483.png?ssl=1"><img src="/images/2026/05/marcelio-leal-69fbfad853046-e1778121782483.png?resize=723%2C770&amp;ssl=1" style="aspect-ratio:0.9389991476926823;width:190px;height:auto" loading="lazy" decoding="async" width="723" height="770" alt="Increase overall brightness, keep natural tones" /></a>
 <figcaption>Eu dando umas dicas de vida pra o meu amigo Mohamad no segundo after. Com certeza ele vai ser uma outra pessoa depois dessas dicas.</figcaption>
 </figure>
 
@@ -157,7 +157,7 @@ Ouvir álbuns inteiros no avião é uma experiência. Foram várias grandes desc
 
 Quem já foi pra after sabe que muitas vezes você cai em lugares onde você se pergunta por que você tomou essa decisão bastante questionável. Só que tem um ponto, no fim do arco-íris dos afters, tem um pote de ouro. Só quem insiste aprende e está pronto para receber essa recompensa.
 
-<a href="/images/2026/05/43F8158D-B23C-4066-9E73-5DB5F573662D_1_105_c-e1778124311339.jpeg?ssl=1"><img src="/images/2026/05/43F8158D-B23C-4066-9E73-5DB5F573662D_1_105_c-e1778124311339.jpeg?resize=942%2C628&amp;ssl=1" class="wp-image-1324" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="1324" data-permalink="https://marcelioleal.com/2026/05/07/festival-do-sul-rock-do-norte/43f8158d-b23c-4066-9e73-5db5f573662d_1_105_c/" data-orig-file="/images/2026/05/43F8158D-B23C-4066-9E73-5DB5F573662D_1_105_c-e1778124311339.jpeg?fit=942%2C628&amp;ssl=1" data-orig-size="942,628" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;1.78&quot;,&quot;camera&quot;:&quot;iPhone 14 Pro Max&quot;,&quot;created_timestamp&quot;:&quot;1777827549&quot;,&quot;focal_length&quot;:&quot;6.86&quot;,&quot;iso&quot;:&quot;250&quot;,&quot;shutter_speed&quot;:&quot;0.016666666666667&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="43F8158D-B23C-4066-9E73-5DB5F573662D_1_105_c" data-image-description="" data-image-caption="" data-large-file="/images/2026/05/43F8158D-B23C-4066-9E73-5DB5F573662D_1_105_c-e1778124311339.jpeg?fit=942%2C628&amp;ssl=1" srcset="/images/2026/05/43F8158D-B23C-4066-9E73-5DB5F573662D_1_105_c-e1778124311339.jpeg?w=942&amp;ssl=1 942w, /images/2026/05/43F8158D-B23C-4066-9E73-5DB5F573662D_1_105_c-e1778124311339.jpeg?resize=300%2C200&amp;ssl=1 300w, /images/2026/05/43F8158D-B23C-4066-9E73-5DB5F573662D_1_105_c-e1778124311339.jpeg?resize=768%2C512&amp;ssl=1 768w" sizes="auto, (max-width: 942px) 100vw, 942px" width="942" height="628" alt="Pés de pessoas usando chinelos laranjas e pantufas azuis, com calças largas, em um ambiente interno." /></a>
+<a href="/images/2026/05/43F8158D-B23C-4066-9E73-5DB5F573662D_1_105_c-e1778124311339.jpeg?ssl=1"><img src="/images/2026/05/43F8158D-B23C-4066-9E73-5DB5F573662D_1_105_c-e1778124311339.jpeg?resize=942%2C628&amp;ssl=1" loading="lazy" decoding="async" width="942" height="628" alt="Pés de pessoas usando chinelos laranjas e pantufas azuis, com calças largas, em um ambiente interno." /></a>
 <figcaption>After é bem calçado. Começando pelos DJs - @julia_cruvinel b2b @patrick.cwb</figcaption>
 
 Nesse ano não foi diferente, saímos por volta da meia-noite e fomos pra mais música boa. Diferente de um grande festival, os afters são pequenos, ali, o público importa mais ainda. Mas como expliquei acima, a diferença é grande numa cidade onde as pessoas são fluentes em eletrônico. Incontável o número de amigos que eu fiz nos afters do WD, incontável o número de gente da maior qualidade em que eu esbarrei por lá.
@@ -178,28 +178,28 @@ PS.2: Eu já falei de eletrônico e música paraense [aqui](https://marcelioleal
 
 PS.3: Obrigado a todos os DJs **@d2ble, @julia_cruvinel, @patrick.cwb, @phellipcarvalho, @drmatheusguedes, @micheleabreus e @wendelcubas! Sou fã de vocês!** E também ao meu amigo da seleção sueca de ski e grande apreciador de tacacá, **@atauaaa**.
 
-<div class="wp-block-image">
+<div >
 
 <figure class="aligncenter size-full is-resized">
-<a href="/images/2026/05/C0D40ADD-8005-4485-8A69-DC727B06B2B9_1_105_c-e1778124399514.jpeg?ssl=1"><img src="/images/2026/05/C0D40ADD-8005-4485-8A69-DC727B06B2B9_1_105_c-e1778124399514.jpeg?resize=690%2C445&amp;ssl=1" class="wp-image-1326" style="width:404px;height:auto" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="1326" data-permalink="https://marcelioleal.com/2026/05/07/festival-do-sul-rock-do-norte/c0d40add-8005-4485-8a69-dc727b06b2b9_1_105_c/" data-orig-file="/images/2026/05/C0D40ADD-8005-4485-8A69-DC727B06B2B9_1_105_c-e1778124399514.jpeg?fit=690%2C445&amp;ssl=1" data-orig-size="690,445" data-comments-opened="1" data-image-title="C0D40ADD-8005-4485-8A69-DC727B06B2B9_1_105_c" data-image-description="" data-image-caption="" data-large-file="/images/2026/05/C0D40ADD-8005-4485-8A69-DC727B06B2B9_1_105_c-e1778124399514.jpeg?fit=690%2C445&amp;ssl=1" srcset="/images/2026/05/C0D40ADD-8005-4485-8A69-DC727B06B2B9_1_105_c-e1778124399514.jpeg?w=690&amp;ssl=1 690w, /images/2026/05/C0D40ADD-8005-4485-8A69-DC727B06B2B9_1_105_c-e1778124399514.jpeg?resize=300%2C193&amp;ssl=1 300w" sizes="auto, (max-width: 690px) 100vw, 690px" width="690" height="445" alt="Selfie de duas pessoas em um show, com uma multidão ao fundo e luzes do palco iluminando o ambiente." /></a>
+<a href="/images/2026/05/C0D40ADD-8005-4485-8A69-DC727B06B2B9_1_105_c-e1778124399514.jpeg?ssl=1"><img src="/images/2026/05/C0D40ADD-8005-4485-8A69-DC727B06B2B9_1_105_c-e1778124399514.jpeg?resize=690%2C445&amp;ssl=1" style="width:404px;height:auto" loading="lazy" decoding="async" width="690" height="445" alt="Selfie de duas pessoas em um show, com uma multidão ao fundo e luzes do palco iluminando o ambiente." /></a>
 <figcaption>Eu e a Sheila Mello.</figcaption>
 </figure>
 
 </div>
 
-<div class="wp-block-image">
+<div >
 
 <figure class="aligncenter size-full is-resized">
-<a href="/images/2026/05/C6F8F930-1364-4661-AA28-B85FEAB8ECD4_1_105_c.jpeg?ssl=1"><img src="/images/2026/05/C6F8F930-1364-4661-AA28-B85FEAB8ECD4_1_105_c.jpeg?resize=768%2C1024&amp;ssl=1" class="wp-image-1328" style="width:335px;height:auto" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="1328" data-permalink="https://marcelioleal.com/2026/05/07/festival-do-sul-rock-do-norte/c6f8f930-1364-4661-aa28-b85feab8ecd4_1_105_c/" data-orig-file="/images/2026/05/C6F8F930-1364-4661-AA28-B85FEAB8ECD4_1_105_c.jpeg?fit=768%2C1024&amp;ssl=1" data-orig-size="768,1024" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;1.9&quot;,&quot;camera&quot;:&quot;iPhone 14 Pro Max&quot;,&quot;created_timestamp&quot;:&quot;1777735329&quot;,&quot;focal_length&quot;:&quot;2.69&quot;,&quot;iso&quot;:&quot;200&quot;,&quot;shutter_speed&quot;:&quot;0.016666666666667&quot;,&quot;orientation&quot;:&quot;1&quot;}" data-image-title="C6F8F930-1364-4661-AA28-B85FEAB8ECD4_1_105_c" data-image-description="" data-image-caption="" data-large-file="/images/2026/05/C6F8F930-1364-4661-AA28-B85FEAB8ECD4_1_105_c.jpeg?fit=768%2C1024&amp;ssl=1" srcset="/images/2026/05/C6F8F930-1364-4661-AA28-B85FEAB8ECD4_1_105_c.jpeg?w=768&amp;ssl=1 768w, /images/2026/05/C6F8F930-1364-4661-AA28-B85FEAB8ECD4_1_105_c.jpeg?resize=225%2C300&amp;ssl=1 225w, /images/2026/05/C6F8F930-1364-4661-AA28-B85FEAB8ECD4_1_105_c.jpeg?resize=600%2C800&amp;ssl=1 600w, /images/2026/05/C6F8F930-1364-4661-AA28-B85FEAB8ECD4_1_105_c.jpeg?resize=450%2C600&amp;ssl=1 450w, /images/2026/05/C6F8F930-1364-4661-AA28-B85FEAB8ECD4_1_105_c.jpeg?resize=300%2C400&amp;ssl=1 300w, /images/2026/05/C6F8F930-1364-4661-AA28-B85FEAB8ECD4_1_105_c.jpeg?resize=150%2C200&amp;ssl=1 150w" sizes="auto, (max-width: 768px) 100vw, 768px" width="768" height="1024" alt="Um homem sorridente usando óculos de sol, segurando dois cães fofos: um Pomerânia branco e um poodle marrom." /></a>
+<a href="/images/2026/05/C6F8F930-1364-4661-AA28-B85FEAB8ECD4_1_105_c.jpeg?ssl=1"><img src="/images/2026/05/C6F8F930-1364-4661-AA28-B85FEAB8ECD4_1_105_c.jpeg?resize=768%2C1024&amp;ssl=1" style="width:335px;height:auto" loading="lazy" decoding="async" width="768" height="1024" alt="Um homem sorridente usando óculos de sol, segurando dois cães fofos: um Pomerânia branco e um poodle marrom." /></a>
 <figcaption>Eu e os cachorrinhos bonitinhos dos meus amigos Brendha e Felipe. Claro que isso é pra eu conseguir likes.</figcaption>
 </figure>
 
 </div>
 
-<div class="wp-block-image">
+<div >
 
 <figure class="aligncenter size-large is-resized">
-<a href="/images/2026/05/WhatsApp-Image-2026-05-08-at-03.00.27.jpeg?ssl=1"><img src="/images/2026/05/WhatsApp-Image-2026-05-08-at-03.00.27.jpeg?resize=1024%2C768&amp;ssl=1" class="wp-image-1338" style="width:584px;height:auto" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="1338" data-permalink="https://marcelioleal.com/2026/05/07/festival-do-sul-rock-do-norte/whatsapp-image-2026-05-08-at-03-00-27/" data-orig-file="/images/2026/05/WhatsApp-Image-2026-05-08-at-03.00.27.jpeg?fit=4032%2C3024&amp;ssl=1" data-orig-size="4032,3024" data-comments-opened="1" data-image-title="WhatsApp Image 2026-05-08 at 03.00.27" data-image-description="" data-image-caption="" data-large-file="/images/2026/05/WhatsApp-Image-2026-05-08-at-03.00.27.jpeg?fit=1024%2C768&amp;ssl=1" srcset="/images/2026/05/WhatsApp-Image-2026-05-08-at-03.00.27.jpeg?resize=1024%2C768&amp;ssl=1 1024w, /images/2026/05/WhatsApp-Image-2026-05-08-at-03.00.27.jpeg?resize=300%2C225&amp;ssl=1 300w, /images/2026/05/WhatsApp-Image-2026-05-08-at-03.00.27.jpeg?resize=768%2C576&amp;ssl=1 768w, /images/2026/05/WhatsApp-Image-2026-05-08-at-03.00.27.jpeg?resize=1536%2C1152&amp;ssl=1 1536w, /images/2026/05/WhatsApp-Image-2026-05-08-at-03.00.27.jpeg?resize=2048%2C1536&amp;ssl=1 2048w, /images/2026/05/WhatsApp-Image-2026-05-08-at-03.00.27.jpeg?resize=1200%2C900&amp;ssl=1 1200w, /images/2026/05/WhatsApp-Image-2026-05-08-at-03.00.27.jpeg?resize=800%2C600&amp;ssl=1 800w, /images/2026/05/WhatsApp-Image-2026-05-08-at-03.00.27.jpeg?resize=600%2C450&amp;ssl=1 600w, /images/2026/05/WhatsApp-Image-2026-05-08-at-03.00.27.jpeg?resize=400%2C300&amp;ssl=1 400w, /images/2026/05/WhatsApp-Image-2026-05-08-at-03.00.27.jpeg?resize=200%2C150&amp;ssl=1 200w, /images/2026/05/WhatsApp-Image-2026-05-08-at-03.00.27.jpeg?resize=1100%2C825&amp;ssl=1 1100w, /images/2026/05/WhatsApp-Image-2026-05-08-at-03.00.27.jpeg?w=2200&amp;ssl=1 2200w, /images/2026/05/WhatsApp-Image-2026-05-08-at-03.00.27.jpeg?w=3300&amp;ssl=1 3300w" sizes="auto, (max-width: 1024px) 100vw, 1024px" width="1024" height="768" alt="Homem segurando a caixa de um aparelho, com uma etiqueta que diz &#39;não pise&#39;, em um ambiente externo." /></a>
+<a href="/images/2026/05/WhatsApp-Image-2026-05-08-at-03.00.27.jpeg?ssl=1"><img src="/images/2026/05/WhatsApp-Image-2026-05-08-at-03.00.27.jpeg?resize=1024%2C768&amp;ssl=1" style="width:584px;height:auto" loading="lazy" decoding="async" width="1024" height="768" alt="Homem segurando a caixa de um aparelho, com uma etiqueta que diz &#39;não pise&#39;, em um ambiente externo." /></a>
 <figcaption>Somente uma regra no after - Não pise na CDJ! by Manso.</figcaption>
 </figure>
 

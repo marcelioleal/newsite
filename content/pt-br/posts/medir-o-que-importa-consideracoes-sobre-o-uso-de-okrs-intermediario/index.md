@@ -6,7 +6,7 @@ wp_id: 334
 categories: [software-dev]
 ---
 
-<figure class="wp-caption">
+<figure >
 <img src="https://cdn-images-1.medium.com/max/800/0*6svX2MlVCE22ZaU3" decoding="async" data-width="3000" data-height="2000" />
 <figcaption>Photo by <a href="https://unsplash.com/@patrickperkins?utm_source=medium&amp;utm_medium=referral" target="_blank" rel="noopener noreferrer">Patrick Perkins</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" target="_blank" rel="noopener noreferrer">Unsplash</a></figcaption>
 </figure>
@@ -84,8 +84,8 @@ Há diversas fontes para essa definição. Recomendo as seguintes perguntas para
 - O que precisamos melhorar para evoluir na nossa missão de time?
 - O que nossos parceiros precisam para terem melhores resultados?
 
-<figure class="wp-caption">
-<img src="/images/external/cdn-images-1.medium.com/1_5yCmH2YwjI9cWaMze0DDhA.png" data-recalc-dims="1" decoding="async" data-width="1706" data-height="686" />
+<figure >
+<img src="/images/external/cdn-images-1.medium.com/1_5yCmH2YwjI9cWaMze0DDhA.png" decoding="async" data-width="1706" data-height="686" />
 <figcaption><strong>Sinais para a construção dos objetivos do ciclo.</strong></figcaption>
 </figure>
 
@@ -135,8 +135,8 @@ Muitas vezes a velocidade da empresa começa a baixar (metabolismo de produto le
 
 > Disclaimer: Isso aqui tá errado. Como um método não prescritivo, não deve existir um algoritmo para definição de OKRs. O ideal é entender o porquê da metodologia e aplicar de acordo com o seu contexto/maturidade. Não existe um jeito de fazer OKRs, existem jeitos melhores e piores pro seu contexto.
 
-<figure class="wp-caption">
-<img src="/images/external/cdn-images-1.medium.com/1_GKdd8J5NendLt5uM3CeFpQ.png" data-recalc-dims="1" decoding="async" data-width="896" data-height="872" />
+<figure >
+<img src="/images/external/cdn-images-1.medium.com/1_GKdd8J5NendLt5uM3CeFpQ.png" decoding="async" data-width="896" data-height="872" />
 <figcaption><strong><em>Uma abordagem de criação de OKRs bottom-up</em></strong></figcaption>
 </figure>
 

@@ -27,10 +27,10 @@ Hoje estou na [ALEPA](http://www.alepa.pa.gov.br/ "Assembléia Legislativa do Es
 
 Abaixo dois diagramas fundamentais pra lugares "um pouco" sem o rumo.
 
-<img src="/images/external/images.uncyc.org/Algoritmo.jpg" data-recalc-dims="1" decoding="async" />
+<img src="/images/external/images.uncyc.org/Algoritmo.jpg" decoding="async" />
 
 Agora um claro exemplo onde a [UML](https://pt.wikipedia.org/wiki/Uml) foi fundamental na especificação e modelagem do sistema.
 
-<img src="/images/external/images.uncyc.org/MOG.gif" data-recalc-dims="1" decoding="async" />
+<img src="/images/external/images.uncyc.org/MOG.gif" decoding="async" />
 
 Essas figuras foram tiradas da [desciclopedia](http://desciclo.pedia.ws/wiki/P%C3%A1gina_principal), um lugar muito estaile e interessante.

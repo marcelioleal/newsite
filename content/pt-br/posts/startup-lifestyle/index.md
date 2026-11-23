@@ -7,7 +7,7 @@ categories: [software-dev]
 ---
 
 <figure>
-<img src="/images/external/cdn-images-1.medium.com/1_HdiJvLr8UIk0-0YORaT9KQ.jpeg" data-recalc-dims="1" decoding="async" data-width="5580" data-height="3720" />
+<img src="/images/external/cdn-images-1.medium.com/1_HdiJvLr8UIk0-0YORaT9KQ.jpeg" decoding="async" data-width="5580" data-height="3720" />
 </figure>
 
 #### Porque sai do serviço público e mergulhei no mundo das startups
@@ -73,7 +73,7 @@ Eu não tinha a mínima ideia do que era o mestrado, isso provocou uma série de
 ### Trabalhando no governo
 
 <figure>
-<img src="/images/external/cdn-images-1.medium.com/1_uvc14MG92LHEHnDsR05U9g.jpeg" data-recalc-dims="1" decoding="async" data-width="1059" data-height="794" />
+<img src="/images/external/cdn-images-1.medium.com/1_uvc14MG92LHEHnDsR05U9g.jpeg" decoding="async" data-width="1059" data-height="794" />
 </figure>
 
 Seis meses depois de entrar no mestrado eu fiz o concurso do SERPRO, passei. No momento que passei no SERPRO fiquei feliz por principalmente por dois motivos: seria minha primeira experiência "enterprise"; e era um bom salário pra Belém. Além dos meus pais ficarem felizes por ser funcionário público.
@@ -123,7 +123,7 @@ Depois de um tempo as hipóteses se mostraram falsas. Primeiro que eu não havia
 Recebi um convite de dois amigos pra fazer uma consultoria pra uma startup que estava começando, a <a href="http://www.ons.ee/" target="_blank" rel="noopener noreferrer">Onsee</a>. Depois de uns 6 meses comecei a experimentar paralelamente. Nessa época eu já estava lendo sem parar sobre tudo: Cauda Longa, Free, etc. Já tinha começado o fascínio.
 
 <figure>
-<img src="/images/external/cdn-images-1.medium.com/1_AqUJuRTlsx-i_nkoxh6VDA.png" data-recalc-dims="1" decoding="async" data-width="900" data-height="1350" />
+<img src="/images/external/cdn-images-1.medium.com/1_AqUJuRTlsx-i_nkoxh6VDA.png" decoding="async" data-width="900" data-height="1350" />
 </figure>
 
 Até que lendo o livro Startup (<a href="https://www.amazon.com/Founders-Work-Stories-Startups-Early/dp/1430210788" target="_blank" rel="noopener noreferrer">Founders at Work</a>) da Jéssica Livingston as coisas ficaram mais claras pra mim. Foi quando eu decidi que iria sair do SERPRO e aceitar a proposta full time da Onsee. Tentei me preparar e aguentar uns 3 meses pra juntar alguma coisa. Acabei nem conseguindo ficar esse tempo. Já não conseguia render no SERPRO e isso me afetava negativamente.
@@ -147,7 +147,7 @@ Como eu sabia que o risco era alto, era a minha primeira startup, criei alguns p
 ### Então tudo foi bem. Não, pera!
 
 <figure>
-<img src="/images/external/cdn-images-1.medium.com/1_TsqY3XB-Xr6fVIdnS7Oe6Q.jpeg" data-recalc-dims="1" decoding="async" data-width="600" data-height="388" />
+<img src="/images/external/cdn-images-1.medium.com/1_TsqY3XB-Xr6fVIdnS7Oe6Q.jpeg" decoding="async" data-width="600" data-height="388" />
 </figure>
 
 No segundo semestre de 2009 começava uma nova história. E não foram coisas boas a partir daí. Nessa época em que percebi o quanto havia ficado parado, não estava acompanhando a evolução da área. Evolui muito depois disso.
