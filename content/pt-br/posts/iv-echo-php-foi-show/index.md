@@ -22,7 +22,7 @@ A [SEDUC](http://www.seduc.pa.gov.br/)(Secretária de Educação do Pará) apres
 
 Para concluir com sucesso o evento a última apresentação foi ministrada pelo [Adler Medrado-DF](http://neshertech.net/adler/), "[PHP e Webservices](http://www.neshertech.net/adler/palestrascursos)". Apresentou a tecnologia de Webservices e suas alternativas de implementação com PHP. Foi bem interessante, principalmente pela apresentação de exemplos.
 
-Enfim, foi muito show o evento. Obrigado à todos que participaram do evento, bem como todos que palestraram e participaram da organização. Valeu ae [Márcel](http://flickr.com/photos/mahrcel), Deuzinei, Luiz, Gustavo, Diego Viegas, Adler, Galera da SEDUC e a galera do PHP Pai d'Égua.
+Enfim, foi muito show o evento. Obrigado à todos que participaram do evento, bem como todos que palestraram e participaram da organização. Valeu ae [Márcel](https://flickr.com/photos/mahrcel), Deuzinei, Luiz, Gustavo, Diego Viegas, Adler, Galera da SEDUC e a galera do PHP Pai d'Égua.
 
 Começamos um blog do Grupo a partir do evento, o endereço é <a href="http://phppaidegua.wordpress.com" rel="nofollow">http://phppaidegua.wordpress.com</a>, vai contar com as participações dos membros mais participantes do nosso grupo. As fotos estão disponíveis no flicker.
 

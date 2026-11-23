@@ -9,7 +9,7 @@ categories: [software-dev]
 <img src="https://cdn-images-1.medium.com/max/800/0*2DGL_swFhkn3gm0t" decoding="async" />
 <figcaption>Like the approaches, the role of PM follows a learning cycle as well -- Photo by <a href="https://unsplash.com/@austindistel?utm_source=medium&amp;utm_medium=referral" target="_blank" rel="noreferrer noopener">Austin Distel</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" target="_blank" rel="noreferrer noopener">Unsplash</a></figcaption>
 
-*In collaboration with* <a href="http://www.linkedin.com/in/alex-chastinet-037a919" target="_blank" rel="noopener noreferrer"><em>Alex Chastinet</em></a>*.*
+*In collaboration with* <a href="https://www.linkedin.com/in/alex-chastinet-037a919" target="_blank" rel="noopener noreferrer"><em>Alex Chastinet</em></a>*.*
 
 The lastest two years changed the Product Management Role in Startups and Tech Companies deeply. Among other changes, we see more seniority, marketing, and business requirements for most of the Product Manager(PM) job opportunities. Lean Startups is back, but now the Indie Hacker approach is also a strong option.
 

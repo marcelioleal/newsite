@@ -32,7 +32,7 @@ O Modelo de Dados desenvolvido é muito simples, no decorrer do post vamos expli
 
 Para baixar o modelo de dados desenvolvido no [DBDesigner](http://fabforce.net/dbdesigner4/) é só clicar [aqui](http://2.download-1.files-upload.com/50/2007/11/15/22-40/0/model.xml).
 
-As senhas serão armazenadas utilizando o algoritmo de encriptação [MD5](http://pt.wikipedia.org/wiki/MD5).
+As senhas serão armazenadas utilizando o algoritmo de encriptação [MD5](https://pt.wikipedia.org/wiki/MD5).
 
 **3. Projeto**
 

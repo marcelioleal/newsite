@@ -31,7 +31,7 @@ Utilizo o GDrive como repositório de arquivos e backups. Antes utilizava uma co
 
 O meu plano está no limite, entre 80Gb e 100Gb de uso, terei que fazer um upgrade em breve para 500Gb ou 1Tb, mas não sei se continuo no GDrive. Hoje a vantagem desse plano é que eu não tenho fidelidade anual.
 
-<a href="http://spotify.com" target="_blank" rel="noopener noreferrer"><strong>Spotify</strong></a> **(Entretenimento)\
+<a href="https://spotify.com" target="_blank" rel="noopener noreferrer"><strong>Spotify</strong></a> **(Entretenimento)\
 Plano:** *Premium -- R\$ 16,90 \*
 **Custo-benefício:** *Alto\*
 Música é parte essencial da minha vida, dita o meu ritmo e o meu humor. O Spotify é um serviço sensacional e eu passei a assinar por conta da integração com a Alexa, porém o plano Premium tem muito valor mesmo. Além de tudo é algo social, eu posso seguir as playlists do meu amigo <a href="https://twitter.com/luizleao" target="_blank" rel="noopener noreferrer">@luizleao</a>.
