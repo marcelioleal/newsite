@@ -1,39 +1,25 @@
 {{- /*
-  Phase 1 — bilingual header + orphan-aware language switcher.
+  Phase 2.3+ — bilingual header with ML signature + name on the left,
+  nav + language switcher + theme toggle on the right.
 
   Overrides themes/PaperMod/layouts/_partials/header.html.
-  Iterates site.Languages (not site.Home.Translations — the theme default
-  silently hides pages that exist only in one language). For each language:
-    - current language → <span aria-current="true"> (no link)
-    - other language WITH a translation → <a href="..."> switch link
-    - other language WITHOUT a translation → <span aria-disabled="true">
-      carrying the i18n orphan badge "only in <lang>"
-  Pure HTML, no JS; works with JS off.
+  Language-switching logic is unchanged from the original: iterates
+  site.Languages and emits a translation link, current-language indicator,
+  or "only in <lang>" orphan badge.
 */ -}}
 <header class="header">
   <nav class="nav">
-    <div class="logo">
-      {{- if (not site.Params.disableThemeToggle) }}
-      <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
-        <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
-            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    <a class="brand" href="{{ "" | relLangURL }}" aria-label="Marcelio Leal">
+      <span class="brand-mark" aria-hidden="true">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 120" fill="none" focusable="false">
+          <path d="M 28 86 L 64 20 L 76 70 L 114 22 L 116 80 L 160 18 L 136 86 L 208 72 L 194 84"
+                stroke="currentColor" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M 176 24 L 188 15" class="brand-tick" stroke-width="4.4" stroke-linecap="round"/>
+          <path d="M 188 33 L 202 27" class="brand-tick" stroke-width="4.4" stroke-linecap="round"/>
         </svg>
-        <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
-            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="5"></circle>
-          <line x1="12" y1="1" x2="12" y2="3"></line>
-          <line x1="12" y1="21" x2="12" y2="23"></line>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-          <line x1="1" y1="12" x2="3" y2="12"></line>
-          <line x1="21" y1="12" x2="23" y2="12"></line>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-      </button>
-      {{- end }}
-    </div>
+      </span>
+      <span class="brand-name">Marcelio Leal</span>
+    </a>
     <ul id="menu">
       {{- /* Menu-driven nav: iterate the current language's [[languages.X.menu.main]] entries from hugo.toml.
              pageRef resolves per-language slugs (e.g. /about → /sobre/ in PT, /en/about/ in EN). */ -}}
@@ -77,6 +63,28 @@
             </li>
           {{- end -}}
         {{- end -}}
+      {{- end }}
+      {{- if (not site.Params.disableThemeToggle) }}
+      <li>
+        <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+          <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+      </li>
       {{- end }}
     </ul>
   </nav>
