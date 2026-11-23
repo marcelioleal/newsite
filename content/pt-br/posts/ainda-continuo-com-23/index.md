@@ -8,7 +8,7 @@ categories: [software-dev]
 
 Hoje faço 26 anos, mas continuo me sentindo com 23...
 
-<a href="http://img388.imageshack.us/my.php?image=eucarvo0.jpg" target="_blank" rel="noopener noreferrer"></a>
+
 
 Isso é o que é importante 😀
 

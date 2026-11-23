@@ -14,14 +14,14 @@ Além da tradicional galera do SERPRO, foram mais pessoas por conta própia de q
 
 *Galera do SERPRO e do IESAM reunidas em uma apresentação. (Antonio Carlos, Edinéia, Xavier, Eu, Luiz Sanches, Calex, Romero)*
 
-<a href="http://img181.imageshack.us/my.php?image=24348159006c6c2306a3oey7.jpg" target="_blank" rel="noopener noreferrer"></a>
+
 
 Galera reunida na frente da PUC.
 
 O pessoal do [IESAM](http://www.iesam.br) estava presente lá para acompanhar a palestra show do nosso amigo Luiz Sanches.
 
 A [palestra do Salvatti](http://fisl.softwarelivre.org/9.0/papers/pub/programacao/79) foi a primeira dos paraenses no FISL 9, foi um sucesso conforme os relatos. Nosso amigo João teve vários "motivos" para inspiração em sua palestra conforme ele mesmo nos confidenciou. 🙂\
-<a href="http://img134.imageshack.us/my.php?image=2434910973809ee5077abaz7.jpg" target="_blank" rel="noopener noreferrer"></a>
+
 
 Luiz, eu e o Salvatti.
 
@@ -38,8 +38,8 @@ Depois eu apresentei... 🙂\
 
 Por fim tivemos a [apresentação do Luiz](http://fisl.softwarelivre.org/9.0/papers/pub/programacao/41), fechando bem nossa participação.
 
-<a href="http://img292.imageshack.us/my.php?image=2434814047cba10e8a8bbdf1.jpg" target="_blank" rel="noopener noreferrer"></a>
+
 
 O nosso amigo Reinaldo Carvalho também esteve presente no FISL, inclusive alguns dos seus fãs e mantenedores de códigos em linguagem C, Phyton e afins estiveram o cercando durante o evento e tirando fotos para a posteridade...
 
-<a href="http://img108.imageshack.us/my.php?image=reinaldoox4.jpg" target="_blank" rel="noopener noreferrer"></a>
+

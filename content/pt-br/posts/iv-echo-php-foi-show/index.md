@@ -14,7 +14,7 @@ Logo em seguida ministrei uma <a href="http://marcelioleal.com/2007/10/01/iv-ech
 
 Depois veio a palestra sobre [PHP e HTML 5](http://www.fabsoft.cesupa.br/~gustavo/apresentacoes/html5comphp-SEPAI-2007.pdf), ministrada pelo Gustavo Pinto. Esta apresentação mostrou as novas funcionalidades que estão vindo no HTML 5 e as bibliotecas em PHP que já estão implementando esta nova especificação. Muito boa apresentação.
 
-Pela parte da tarde começamos em alto-nível com a [Palestra de Web 2](http://marcelioleal.com/files/2007/10/web2.pdf "Palestra de Web 2")<a href="http://marcelioleal.com/2007/10/01/iv-echo-php-foi-show/palestra-de-web-2/" rel="attachment wp-att-20" title="Palestra de Web 2"></a> ministrada pelo Márcel. Como sempre, muito boa. A sala estava totalmente lotada.
+Pela parte da tarde começamos em alto-nível com a [Palestra de Web 2](http://marcelioleal.com/files/2007/10/web2.pdf "Palestra de Web 2") ministrada pelo Márcel. Como sempre, muito boa. A sala estava totalmente lotada.
 
 Posteriormente, houve a palestra de DotProject, ministrada por [Diego Viegas](http://www.dotproject.com.br/) -DF. Foi uma apresentação completa e detalhada sobre o gerenciador de projetos Web mais popular atualmente. Muito interessante, tirou as minhas dúvidas sobre essa ferramenta.
 
