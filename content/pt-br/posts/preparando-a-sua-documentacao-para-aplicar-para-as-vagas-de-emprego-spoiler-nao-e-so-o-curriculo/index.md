@@ -9,10 +9,10 @@ categories: [software-dev]
 
 <figure class="wp-caption">
 <img src="/images/external/cdn-images-1.medium.com/1_FCItoYOS9cwwlxSdm_QQIw.jpeg" data-recalc-dims="1" decoding="async" data-width="3999" data-height="2666" />
-<figcaption>Photo by <a href="https://unsplash.com/@markuswinkler?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener">Markus Winkler</a> on <a href="https://unsplash.com/s/photos/resume?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener">Unsplash</a></figcaption>
+<figcaption>Photo by <a href="https://unsplash.com/@markuswinkler?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Markus Winkler</a> on <a href="https://unsplash.com/s/photos/resume?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a></figcaption>
 </figure>
 
-Depois da primeira parte onde você <a href="https://medium.com/@marcelioleal/organizando-a-busca-do-seu-pr%C3%B3ximo-emprego-ab67216490b0" target="_blank" rel="noopener">já começou a se organizar e definir uma estratégia</a> para aplicar nas vagas de emprego, agora é a hora de preparar os documentos necessários para aplicar nos processos.
+Depois da primeira parte onde você <a href="https://medium.com/@marcelioleal/organizando-a-busca-do-seu-pr%C3%B3ximo-emprego-ab67216490b0" target="_blank" rel="noopener noreferrer">já começou a se organizar e definir uma estratégia</a> para aplicar nas vagas de emprego, agora é a hora de preparar os documentos necessários para aplicar nos processos.
 
 Ter um material que te apresente bem é essencial para a primeira fase do funil dos processos de seleção. É natural que não tenhamos sempre estes documentos atualizados mas não tem problema, vamos focar nos principais tipos de documentos e discutir boas práticas para cada um deles.
 
@@ -30,7 +30,7 @@ Recentemente quando eu apliquei para vagas fora do Brasil, uma consultora para p
 
 Sim, foi pesado, mas importante para eu entender que forma importa sim. Tive que me mexer depois disso.
 
-O currículo é uma espécie de <a href="https://www.sbcoaching.com.br/blog/pitch/" target="_blank" rel="noopener">pitch</a>, você precisa se apresentar em um formato conhecido, trazendo informações estruturadas para os recrutadores. Porém, a forma com que você escreve o conteúdo é livre, permitindo que você adapte para cada caso.
+O currículo é uma espécie de <a href="https://www.sbcoaching.com.br/blog/pitch/" target="_blank" rel="noopener noreferrer">pitch</a>, você precisa se apresentar em um formato conhecido, trazendo informações estruturadas para os recrutadores. Porém, a forma com que você escreve o conteúdo é livre, permitindo que você adapte para cada caso.
 
 Portanto, sempre faça duas perguntas com base no seu currículo:
 
@@ -59,7 +59,7 @@ Se você tem uma carreira longa, eu focaria mais na experiência profissional re
 
 Pense em tudo que o que você está adicionando no currículo. Por exemplo, não adicione coisas como inglês básico, pois provavelmente isso não é relevante. Às vezes, vale também customizar o seu currículo para alguma vaga específica, removendo conteúdo que não está relacionado.
 
-<a href="https://docs.google.com/document/d/1T3NSkY7yhQRxDCjw6ABapt3ChxwJyKage6N3hf4393M/edit?usp=sharing" target="_blank" rel="noopener">Aqui</a> você tem um modelo de currículo baseado no currículo de dois amigos (<a href="https://www.linkedin.com/in/eriksencosta/" target="_blank" rel="noopener">Eriksen</a> e <a href="https://www.linkedin.com/in/fevilanova/" target="_blank" rel="noopener">Fernando</a>).
+<a href="https://docs.google.com/document/d/1T3NSkY7yhQRxDCjw6ABapt3ChxwJyKage6N3hf4393M/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Aqui</a> você tem um modelo de currículo baseado no currículo de dois amigos (<a href="https://www.linkedin.com/in/eriksencosta/" target="_blank" rel="noopener noreferrer">Eriksen</a> e <a href="https://www.linkedin.com/in/fevilanova/" target="_blank" rel="noopener noreferrer">Fernando</a>).
 
 ### LinkedIn
 
@@ -75,7 +75,7 @@ Além de um breve contexto da empresa, você pode adicionar pontos relativos ao 
 
 Por fim, acho que você pode adicionar o máximo de informação complementar que tiver, como os artigos, cursos e treinamentos, e projetos que você participou. Desta forma, o Linkedin vira uma extensão do seu currículo.
 
-Compartilho alguns exemplos de perfis para melhorar seu Linkedin: <a href="https://www.linkedin.com/in/eriksencosta/" target="_blank" rel="noopener">Eriksen Costa</a>, <a href="https://www.linkedin.com/in/ricardoparro/" target="_blank" rel="noopener">Ricardo Parro</a>, <a href="https://www.linkedin.com/in/rmarlos/" target="_blank" rel="noopener">Rafael Mauro</a>, <a href="https://www.linkedin.com/in/caterineparro/" target="_blank" rel="noopener">Caterine Parro</a>, <a href="https://www.linkedin.com/in/almeidamarcell/" target="_blank" rel="noopener">Marcell Almeida</a>, <a href="https://www.linkedin.com/in/leandrovaranda/" target="_blank" rel="noopener">Leandro Varanda</a>.
+Compartilho alguns exemplos de perfis para melhorar seu Linkedin: <a href="https://www.linkedin.com/in/eriksencosta/" target="_blank" rel="noopener noreferrer">Eriksen Costa</a>, <a href="https://www.linkedin.com/in/ricardoparro/" target="_blank" rel="noopener noreferrer">Ricardo Parro</a>, <a href="https://www.linkedin.com/in/rmarlos/" target="_blank" rel="noopener noreferrer">Rafael Mauro</a>, <a href="https://www.linkedin.com/in/caterineparro/" target="_blank" rel="noopener noreferrer">Caterine Parro</a>, <a href="https://www.linkedin.com/in/almeidamarcell/" target="_blank" rel="noopener noreferrer">Marcell Almeida</a>, <a href="https://www.linkedin.com/in/leandrovaranda/" target="_blank" rel="noopener noreferrer">Leandro Varanda</a>.
 
 ------------------------------------------------------------------------
 
@@ -98,7 +98,7 @@ Mas isso depende muito do caso. Às vezes, somente a experiência já proporcion
 
 Eu normalmente recomendo desenvolvedores no começo de carreira colocar um projeto no GitHub. É mais fácil convencer que você é capaz de entregar uma aplicação de ponta à ponta se compartilhá-la publicamente.
 
-Para outros papéis, como Designers, há outras plataformas como o <a href="https://www.behance.net/" target="_blank" rel="noopener">Behance</a>, ou outras mais <a href="https://www.hongkiat.com/blog/online-portfolios-for-designers/" target="_blank" rel="noopener">aqui</a>.
+Para outros papéis, como Designers, há outras plataformas como o <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">Behance</a>, ou outras mais <a href="https://www.hongkiat.com/blog/online-portfolios-for-designers/" target="_blank" rel="noopener noreferrer">aqui</a>.
 
 ### Carta de Apresentação
 
@@ -116,10 +116,10 @@ Agora é começar a aplicar nos processos. Depois, entramos numa outra fase, a d
 
 ------------------------------------------------------------------------
 
-Têm mais alguma coisa pra adicionar ou ajudar nesse contexto? Fiquem a vontade pra comentar ou me chamar no <a href="https://www.linkedin.com/in/marcelioleal/" target="_blank" rel="noopener">Linkedin</a> e <a href="https://twitter.com/marcelioleal" target="_blank" rel="noopener">Twitter</a>.
+Têm mais alguma coisa pra adicionar ou ajudar nesse contexto? Fiquem a vontade pra comentar ou me chamar no <a href="https://www.linkedin.com/in/marcelioleal/" target="_blank" rel="noopener noreferrer">Linkedin</a> e <a href="https://twitter.com/marcelioleal" target="_blank" rel="noopener noreferrer">Twitter</a>.
 
 Se ver algum erro gramatical ou typo, vocês podem utilizar os comentários privados do medium também. Desde já eu agradeço.
 
 **Posts da série**
 
-- <a href="https://medium.com/@marcelioleal/organizando-a-busca-do-seu-pr%C3%B3ximo-emprego-ab67216490b0" target="_blank" rel="noopener">Organizando a busca do seu próximo emprego</a>
+- <a href="https://medium.com/@marcelioleal/organizando-a-busca-do-seu-pr%C3%B3ximo-emprego-ab67216490b0" target="_blank" rel="noopener noreferrer">Organizando a busca do seu próximo emprego</a>

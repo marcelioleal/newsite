@@ -6,7 +6,7 @@ wp_id: 23
 categories: [software-dev]
 ---
 
-Fiz uma apresentação sobre o Software Livre pra alunos do <a href="http://www.cefetpa.br/" target="_blank">CEFET-PA</a> no mês passado.
+Fiz uma apresentação sobre o Software Livre pra alunos do <a href="http://www.cefetpa.br/" target="_blank" rel="noopener noreferrer">CEFET-PA</a> no mês passado.
 
 Aqui o link para download: [Palestra Software Livre - Contexto e Oportunidades](http://marcelioleal.com/files/2007/10/apresentacaocefet.pdf "Palestra Software Livre - Contexto e Oportunidades") .
 

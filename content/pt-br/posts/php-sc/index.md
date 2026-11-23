@@ -16,15 +16,15 @@ Com a palavra o [Elton Minetto](http://www.eltonminetto.net/).
 >
 > A grade de palestras pode ser encontrada no endereço:
 >
-> <a href="http://www.phpsc.com.br/?page_id=10&amp;language=pt" target="_blank">http://www.phpsc.com.br/?page_id=10&amp;language=pt</a>
+> <a href="http://www.phpsc.com.br/?page_id=10&amp;language=pt" target="_blank" rel="noopener noreferrer">http://www.phpsc.com.br/?page_id=10&amp;language=pt</a>
 >
 > As inscrições podem ser realizadas no endereço:
 >
-> <a href="http://www.unochapeco.edu.br/inscricoes/" target="_blank">http://www.unochapeco.edu.br/inscricoes/</a>
+> <a href="http://www.unochapeco.edu.br/inscricoes/" target="_blank" rel="noopener noreferrer">http://www.unochapeco.edu.br/inscricoes/</a>
 >
 > E informações sobre hospedagem em Chapecó:
 >
-> <a href="http://www.phpsc.com.br/?page_id=11&amp;language=pt" target="_blank">http://www.phpsc.com.br/?page_id=11&amp;language=pt</a>
+> <a href="http://www.phpsc.com.br/?page_id=11&amp;language=pt" target="_blank" rel="noopener noreferrer">http://www.phpsc.com.br/?page_id=11&amp;language=pt</a>
 >
 > Contamos com sua presença"
 

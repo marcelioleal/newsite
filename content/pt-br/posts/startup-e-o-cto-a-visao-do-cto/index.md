@@ -8,14 +8,14 @@ categories: [software-dev]
 
 <figure class="wp-caption">
 <img src="/images/external/cdn-images-1.medium.com/1_HFUizBmqnAR9Afjc4-IA4Q.jpeg" data-recalc-dims="1" decoding="async" data-width="1200" data-height="800" />
-<figcaption>Markus Spiske / <a href="http://raumrot.com" target="_blank" rel="noopener">raumrot.com</a></figcaption>
+<figcaption>Markus Spiske / <a href="http://raumrot.com" target="_blank" rel="noopener noreferrer">raumrot.com</a></figcaption>
 </figure>
 
-CTO é uma importante posição de negócios dentro de uma Startup, mas muitas vezes o papel é entendido de forma errada. O André Faria faz <a href="http://blog.andrefaria.com/o-papel-do-cto-numa-organizacao" target="_blank" rel="noopener">uma boa explicação</a> da importância desse papel.
+CTO é uma importante posição de negócios dentro de uma Startup, mas muitas vezes o papel é entendido de forma errada. O André Faria faz <a href="http://blog.andrefaria.com/o-papel-do-cto-numa-organizacao" target="_blank" rel="noopener noreferrer">uma boa explicação</a> da importância desse papel.
 
 Para contratar um bom CTO ou formar o time técnico é necessário entender o contexto dentro da carreira de um desenvolvedor, o que buscar e esperar desta pessoa, e quais os conhecimentos que terão que ser desenvolvidos de forma mais intensiva.
 
-#### ***CTO em uma Startup pré*** <a href="https://en.wikipedia.org/wiki/Product/market_fit" target="_blank" rel="noopener"><strong><em>Product/Market fit</em></strong></a>
+#### ***CTO em uma Startup pré*** <a href="https://en.wikipedia.org/wiki/Product/market_fit" target="_blank" rel="noopener noreferrer"><strong><em>Product/Market fit</em></strong></a>
 
 Nesse contexto, podemos citar alguns conhecimentos necessarios pra um CTO:
 
@@ -33,7 +33,7 @@ Nesse contexto, podemos citar alguns conhecimentos necessarios pra um CTO:
 
 #### ***O contexto salarial e o contexto de carreira***
 
-Em geral, vejo um CTO mais preparado vindo de uma experiência dentro de startups ou empreendedorismo. O principal ponto é que grandes empresas geram especialistas, mas no papel de CTO você tende mais pra um generalista. Mais pra um <a href="https://medium.com/chris-messina/the-full-stack-employee-ed0db089f0a1#.udt4fjrgn" target="_blank" rel="noopener">Full Stack Employee</a>.
+Em geral, vejo um CTO mais preparado vindo de uma experiência dentro de startups ou empreendedorismo. O principal ponto é que grandes empresas geram especialistas, mas no papel de CTO você tende mais pra um generalista. Mais pra um <a href="https://medium.com/chris-messina/the-full-stack-employee-ed0db089f0a1#.udt4fjrgn" target="_blank" rel="noopener noreferrer">Full Stack Employee</a>.
 
 A carreira impacta diretamente na remuneração. Enquanto um CTO vindo de startups tende a aumentar a remuneração, um CTO/CFO/CMO que vem de uma grande empresa, em geral, vai ter um salário menor do que tinha antes. Isso se deve principalmente pela experiência específica nesse contexto de negócio. E pode apostar, isso faz uma diferença gritante.
 
@@ -42,7 +42,7 @@ A carreira impacta diretamente na remuneração. Enquanto um CTO vindo de startu
 <figcaption>Salário x Qualidade de vida de um desenvolvedor/CTO de Startup</figcaption>
 </figure>
 
-A qualidade de vida também é relativa. Enquanto um C Level que vem de uma grande empresa pra uma Startup vai ter uma melhora na qualidade de vida, qualquer desenvolvedor que assuma o cargo de CTO deve ter uma piora na sua qualidade de vida. <a href="http://www.bhorowitz.com/" target="_blank" rel="noopener">Ben Horowitz</a>, no <a href="https://www.amazon.ca/Hard-Thing-About-Things-Building/dp/0062273205" target="_blank" rel="noopener">livro Hard Things About Hard Things</a>, <a href="http://www.bhorowitz.com/peacetime_ceo_wartime_ceo" target="_blank" rel="noopener">cita</a> dois perfis: peacetime e wartime CEOs. Mas no caso de CTOs, não há opção vai ser sempre no modo wartime. Pode ser que exista o modo world war.
+A qualidade de vida também é relativa. Enquanto um C Level que vem de uma grande empresa pra uma Startup vai ter uma melhora na qualidade de vida, qualquer desenvolvedor que assuma o cargo de CTO deve ter uma piora na sua qualidade de vida. <a href="http://www.bhorowitz.com/" target="_blank" rel="noopener noreferrer">Ben Horowitz</a>, no <a href="https://www.amazon.ca/Hard-Thing-About-Things-Building/dp/0062273205" target="_blank" rel="noopener noreferrer">livro Hard Things About Hard Things</a>, <a href="http://www.bhorowitz.com/peacetime_ceo_wartime_ceo" target="_blank" rel="noopener noreferrer">cita</a> dois perfis: peacetime e wartime CEOs. Mas no caso de CTOs, não há opção vai ser sempre no modo wartime. Pode ser que exista o modo world war.
 
 No geral, um bom CTO ou técnico pra startup vai refletir em maior remuneração. Por isso diversas Startups tentam "amenizar" isto investindo pesado em melhorias para qualidade de vida como: trabalho remoto; ótimo ambiente de trabalho; ótimo potencial de aprendizado; benefícios diversos; etc.
 
@@ -51,13 +51,13 @@ No geral, um bom CTO ou técnico pra startup vai refletir em maior remuneração
 <figcaption>Benefícios na EventMobi. Pontos cada vez mais comuns em startups.</figcaption>
 </figure>
 
-Dois grandes casos brasileiros de culturas produtivas e com bom potencial de qualidade de vida são: <a href="http://jusbrasil.com.br" target="_blank" rel="noopener">JusBrasil</a> e <a href="http://predicta.net" target="_blank" rel="noopener">Predicta</a>. No Canadá um exemplo é a <a href="http://www.eventmobi.com/about/careers/" target="_blank" rel="noopener">EventMobi</a>.
+Dois grandes casos brasileiros de culturas produtivas e com bom potencial de qualidade de vida são: <a href="http://jusbrasil.com.br" target="_blank" rel="noopener noreferrer">JusBrasil</a> e <a href="http://predicta.net" target="_blank" rel="noopener noreferrer">Predicta</a>. No Canadá um exemplo é a <a href="http://www.eventmobi.com/about/careers/" target="_blank" rel="noopener noreferrer">EventMobi</a>.
 
 #### Os Perfis de CTOs
 
 <figure class="wp-caption">
 <img src="/images/external/cdn-images-1.medium.com/1_RzNjGWuLMn5qMYKlqvqDkg.jpeg" data-recalc-dims="1" decoding="async" data-width="920" data-height="675" />
-<figcaption>O Wozniac é um cara fueda. Quer entender um pouco mais a mente dele, leia o capítulo da Apple no <a href="http://www.foundersatwork.com/" target="_blank" rel="noopener">livro Founders at Work</a>. <a href="http://ww3.hdnux.com/photos/05/72/61/1551486/3/920x920.jpg" target="_blank" rel="noopener">http://ww3.hdnux.com/photos/05/72/61/1551486/3/920×920.jpg</a></figcaption>
+<figcaption>O Wozniac é um cara fueda. Quer entender um pouco mais a mente dele, leia o capítulo da Apple no <a href="http://www.foundersatwork.com/" target="_blank" rel="noopener noreferrer">livro Founders at Work</a>. <a href="http://ww3.hdnux.com/photos/05/72/61/1551486/3/920x920.jpg" target="_blank" rel="noopener noreferrer">http://ww3.hdnux.com/photos/05/72/61/1551486/3/920×920.jpg</a></figcaption>
 </figure>
 
 **O Técnico**
@@ -83,7 +83,7 @@ Outro ponto crítico é a contratação. Esse perfil tende a contratar pessoas c
 
 <figure class="wp-caption">
 <img src="/images/external/cdn-images-1.medium.com/1_N-sWjQsa6X1UiIOLtvPyhw.jpeg" data-recalc-dims="1" decoding="async" data-width="640" data-height="428" />
-<figcaption>Gestor. Boa organização, menos conhecimento técnico. <a href="https://www.flickr.com/photos/wocintechchat/25720964030/" target="_blank" rel="noopener">https://www.flickr.com/photos/wocintechchat/25720964030/</a></figcaption>
+<figcaption>Gestor. Boa organização, menos conhecimento técnico. <a href="https://www.flickr.com/photos/wocintechchat/25720964030/" target="_blank" rel="noopener noreferrer">https://www.flickr.com/photos/wocintechchat/25720964030/</a></figcaption>
 </figure>
 
 **O Gestor**
@@ -122,9 +122,9 @@ Esse é o perfil mais complicado, porque em geral vai ser útil apenas no começ
 
 ------------------------------------------------------------------------
 
-No <a href="https://medium.com/@marcleal/startup-e-cto-as-solu%C3%A7%C3%B5es-para-um-bom-casamento-967a9817fce9#.et8skk34y" target="_blank" rel="noopener">próximo artigo</a> eu vou abordar possíveis soluções considerando tanto o cenário da Startup (<a href="https://medium.com/@marcleal/startup-e-o-cto-procurando-o-cto-na-vis%C3%A3o-da-startup-2e3601e61293#.ui74bd6ah" target="_blank" rel="noopener">primeiro artigo</a>), quanto o cenário do CTO.
+No <a href="https://medium.com/@marcleal/startup-e-cto-as-solu%C3%A7%C3%B5es-para-um-bom-casamento-967a9817fce9#.et8skk34y" target="_blank" rel="noopener noreferrer">próximo artigo</a> eu vou abordar possíveis soluções considerando tanto o cenário da Startup (<a href="https://medium.com/@marcleal/startup-e-o-cto-procurando-o-cto-na-vis%C3%A3o-da-startup-2e3601e61293#.ui74bd6ah" target="_blank" rel="noopener noreferrer">primeiro artigo</a>), quanto o cenário do CTO.
 
-Caso você queira discutir mais sobre isso, por favor, me contacte por alguma rede social: <a href="http://about.me/marcelioleal" target="_blank" rel="noopener">about.me/marcelioleal</a>.
+Caso você queira discutir mais sobre isso, por favor, me contacte por alguma rede social: <a href="http://about.me/marcelioleal" target="_blank" rel="noopener noreferrer">about.me/marcelioleal</a>.
 
 ------------------------------------------------------------------------
 

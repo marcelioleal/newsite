@@ -8,7 +8,7 @@ categories: [software-dev]
 
 <figure class="wp-caption">
 <img src="/images/external/cdn-images-1.medium.com/1_d377OtMcA6FsjDjoUGenaA.jpeg" data-recalc-dims="1" decoding="async" data-width="640" data-height="428" />
-<figcaption><a href="https://www.flickr.com/photos/wocintechchat/" target="_blank" rel="noopener">https://www.flickr.com/photos/wocintechchat/</a></figcaption>
+<figcaption><a href="https://www.flickr.com/photos/wocintechchat/" target="_blank" rel="noopener noreferrer">https://www.flickr.com/photos/wocintechchat/</a></figcaption>
 </figure>
 
 Startups significa de forma simples estar em um ambiente com muitos riscos. Problemas vão acontecer, seu plano A vai falhar, imprevistos são o modo padrão, e é ai nesses momentos que times de alta performance vão tomar as decisões corretas e seguir em frente. É ir consciente no caos.
@@ -23,7 +23,7 @@ Um exemplo: o candidato pode ter 10 anos de experiência em desenvolvimento de s
 
 Ou seja, é complexo avaliar senioridade técnica em startups, e eu diria que esse não é o fator mais importante. O fit cultural é bem mais crítico.
 
-Não importa quanto você é bom, o que interessa é <a href="https://bothsidesofthetable.com/whom-should-you-hire-at-a-startup-attitude-over-aptitude-b19ebb7f0357#.n8nzdhys6" target="_blank" rel="noopener">quanto você pode contribuir trabalhando em equipe</a>. Pra isso, o fit cultural é essencial.
+Não importa quanto você é bom, o que interessa é <a href="https://bothsidesofthetable.com/whom-should-you-hire-at-a-startup-attitude-over-aptitude-b19ebb7f0357#.n8nzdhys6" target="_blank" rel="noopener noreferrer">quanto você pode contribuir trabalhando em equipe</a>. Pra isso, o fit cultural é essencial.
 
 Nesse contexto, uma startup tem que ter bem claro quais são seus valores e com base nisso ver se o candidato é altamente aderente ou aderente, caso contrário, ela já deve negar na hora.
 
@@ -60,7 +60,7 @@ Então não adianta montar uma equipe vinda das melhores universidades, mas sem 
 
 #### Gente Boa x Gente Medíocre
 
-Quando falo medíocre, estou usando a palavra em seu sentido original. aqui cito um trecho <a href="https://www.slideshare.net/marcelioleal/clipboards/best-people-x-average-people?rftp=success_toast" target="_blank" rel="noopener">da apresentação do Netflix</a>.
+Quando falo medíocre, estou usando a palavra em seu sentido original. aqui cito um trecho <a href="https://www.slideshare.net/marcelioleal/clipboards/best-people-x-average-people?rftp=success_toast" target="_blank" rel="noopener noreferrer">da apresentação do Netflix</a>.
 
 "Em trabalhos procedurais, gente boa\* é duas vezes melhor que gente medíocre.
 
@@ -76,9 +76,9 @@ No fim custa bastante para atrair os melhores. Não imagine que somente um aspec
 
 Quer entender mais sobre isso. Abaixo algumas fontes:
 
-- <a href="https://www.slideshare.net/reed2001/culture-1798664" target="_blank" rel="noopener">Apresentação de Cultura do Netflix</a>
-- <a href="https://www.amazon.com.br/Drive-Surprising-Truth-about-Motivates/dp/1594484805" target="_blank" rel="noopener">Livro Drive do Dan Pink</a>
-- <a href="https://bothsidesofthetable.com/whom-should-you-hire-at-a-startup-attitude-over-aptitude-b19ebb7f0357#.n8nzdhys6" target="_blank" rel="noopener">Esse post do Mark Suster que é super completo</a>
+- <a href="https://www.slideshare.net/reed2001/culture-1798664" target="_blank" rel="noopener noreferrer">Apresentação de Cultura do Netflix</a>
+- <a href="https://www.amazon.com.br/Drive-Surprising-Truth-about-Motivates/dp/1594484805" target="_blank" rel="noopener noreferrer">Livro Drive do Dan Pink</a>
+- <a href="https://bothsidesofthetable.com/whom-should-you-hire-at-a-startup-attitude-over-aptitude-b19ebb7f0357#.n8nzdhys6" target="_blank" rel="noopener noreferrer">Esse post do Mark Suster que é super completo</a>
 
 ------------------------------------------------------------------------
 

@@ -8,7 +8,7 @@ categories: [software-dev]
 
 <figure class="wp-caption">
 <img src="https://cdn-images-1.medium.com/max/800/0*UB2o3LKgFqQHCilP" decoding="async" data-width="3000" data-height="2002" />
-<figcaption>Photo by <a href="https://unsplash.com/@arlington_research?utm_source=medium&amp;utm_medium=referral" target="_blank" rel="noopener">Arlington Research</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></figcaption>
+<figcaption>Photo by <a href="https://unsplash.com/@arlington_research?utm_source=medium&amp;utm_medium=referral" target="_blank" rel="noopener noreferrer">Arlington Research</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" target="_blank" rel="noopener noreferrer">Unsplash</a></figcaption>
 </figure>
 
 A pandemia e a era do juro 0% no Capital de Risco(VC) impactaram diretamente nos modelos de trabalhos de times de tecnologia. Enquanto o primeiro forçou as empresas a adotarem um modelo remoto, o outro acirrou a disputa por talento e tornou muito mais difícil (e caro) montar times em grandes centros.
@@ -126,16 +126,16 @@ Enfim, essas são algumas das dúvidas que eu gostaria de discutir e entender o 
 
 ### Beyond Tech Conference
 
-Pessoal, eu e o <a href="https://medium.com/u/4c8e162888b7" target="_blank" rel="noopener">Alex Chastinet</a> estamos organizando um evento para discutir temas de tecnologia, produto e empreendedorismo. O objetivo do evento é reunir pessoas com experiência prática para discutir temas específicos e gerar um conteúdo prático, direto e que não segue padrões impostos, ou que não revisitamos e simplemeste aplicamos no nosso contexto.
+Pessoal, eu e o <a href="https://medium.com/u/4c8e162888b7" target="_blank" rel="noopener noreferrer">Alex Chastinet</a> estamos organizando um evento para discutir temas de tecnologia, produto e empreendedorismo. O objetivo do evento é reunir pessoas com experiência prática para discutir temas específicos e gerar um conteúdo prático, direto e que não segue padrões impostos, ou que não revisitamos e simplemeste aplicamos no nosso contexto.
 
-Se você tem interesse de receber esse conteúdo ou de participar. Basta preencher <a href="https://app.youform.io/forms/rv9dhh8y" target="_blank" rel="noopener">este formulário</a> para receber as novidades.
+Se você tem interesse de receber esse conteúdo ou de participar. Basta preencher <a href="https://app.youform.io/forms/rv9dhh8y" target="_blank" rel="noopener noreferrer">este formulário</a> para receber as novidades.
 
 ------------------------------------------------------------------------
 
 #### Referências
 
-- <a href="https://scottberkun.com/yearwithoutpants/" target="_blank" rel="noopener">The year without pants -- Wordpress.com and the future of work</a> -- Scott Berkun
-- <a href="https://newsletter.pragmaticengineer.com/p/zirp-software-engineers" target="_blank" rel="noopener">The end of 0% interest rates: what the new normal means for software engineers</a> -- <a href="https://substack.com/@pragmaticengineer" target="_blank" rel="noopener">Gergely Orosz</a>
-- <a href="https://exame.com/colunistas/florian-hagenbuch/estamos-assistindo-ao-fim-do-trabalho-remoto/" target="_blank" rel="noopener">Estamos assistindo ao fim do trabalho remoto?</a> -- <a href="https://exame.com/colunistas/florian-hagenbuch/ultimas-noticias/" target="_blank" rel="noopener">Florian Hagenbuch</a>
-- <a href="https://www.linkedin.com/pulse/2024-e-o-fim-do-trabalho-remoto-victor-vieira-dimer-daurf/?originalSubdomain=pt" target="_blank" rel="noopener">2024 e o fim do trabalho remoto</a> -- <a href="https://www.linkedin.com/in/victor-dimer/" target="_blank" rel="noopener">Victor Vieira Dimer</a>
-- <a href="https://coolbox.substack.com/p/o-trabalho-remoto-voltou-a-diminuir" target="_blank" rel="noopener">O trabalho remoto voltou a diminuir</a> -- <a href="https://coolbox.substack.com/" target="_blank" rel="noopener">CoolBox</a>
+- <a href="https://scottberkun.com/yearwithoutpants/" target="_blank" rel="noopener noreferrer">The year without pants -- Wordpress.com and the future of work</a> -- Scott Berkun
+- <a href="https://newsletter.pragmaticengineer.com/p/zirp-software-engineers" target="_blank" rel="noopener noreferrer">The end of 0% interest rates: what the new normal means for software engineers</a> -- <a href="https://substack.com/@pragmaticengineer" target="_blank" rel="noopener noreferrer">Gergely Orosz</a>
+- <a href="https://exame.com/colunistas/florian-hagenbuch/estamos-assistindo-ao-fim-do-trabalho-remoto/" target="_blank" rel="noopener noreferrer">Estamos assistindo ao fim do trabalho remoto?</a> -- <a href="https://exame.com/colunistas/florian-hagenbuch/ultimas-noticias/" target="_blank" rel="noopener noreferrer">Florian Hagenbuch</a>
+- <a href="https://www.linkedin.com/pulse/2024-e-o-fim-do-trabalho-remoto-victor-vieira-dimer-daurf/?originalSubdomain=pt" target="_blank" rel="noopener noreferrer">2024 e o fim do trabalho remoto</a> -- <a href="https://www.linkedin.com/in/victor-dimer/" target="_blank" rel="noopener noreferrer">Victor Vieira Dimer</a>
+- <a href="https://coolbox.substack.com/p/o-trabalho-remoto-voltou-a-diminuir" target="_blank" rel="noopener noreferrer">O trabalho remoto voltou a diminuir</a> -- <a href="https://coolbox.substack.com/" target="_blank" rel="noopener noreferrer">CoolBox</a>

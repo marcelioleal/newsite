@@ -38,7 +38,7 @@ O maior risco deste tipo de solução é ficar dando voltas e não achar o produ
 
 Uma equipe de especialistas vai se formando, porque o diagnostico é que é preciso mais velocidade. Então se contratam "frontends", "qas", "backends", "devs de apps", etc. Aqui surgem outros problemas relacionados a governança e comunicação. Em geral, decorrentes da falta de experiência, conhecimento e pressão.
 
-E ai todos aprendem que o difícil não é construir um produto de software, mas sim mantê-lo e evoluí-lo. Principalmente no contexto de startups, que se deve manter o <a href="http://www.venturefizz.com/blog/why-product-metabolism-every-startup-s-first-kpi" target="_blank" rel="noopener">metabolismo</a> sempre alto.
+E ai todos aprendem que o difícil não é construir um produto de software, mas sim mantê-lo e evoluí-lo. Principalmente no contexto de startups, que se deve manter o <a href="http://www.venturefizz.com/blog/why-product-metabolism-every-startup-s-first-kpi" target="_blank" rel="noopener noreferrer">metabolismo</a> sempre alto.
 
 ***As promessas de um futuro incrível***
 
@@ -62,7 +62,7 @@ O principal trabalho de um líder de time é saber gerir e planejar a evolução
 
 ***A remuneração***
 
-Quem não leu <a href="http://www.danpink.com/books/drive/" target="_blank" rel="noopener">Drive</a> e gerencia uma equipe de trabalho criativo (acho que hoje é quase todo mundo), por favor, leia!
+Quem não leu <a href="http://www.danpink.com/books/drive/" target="_blank" rel="noopener noreferrer">Drive</a> e gerencia uma equipe de trabalho criativo (acho que hoje é quase todo mundo), por favor, leia!
 
 A primeira coisa é que deve ser clara é que dinheiro importa. Estamos falando de empresa e não de brincadeira. Você deve ter claro na sua mente que se pagar menos que o mercado ou menos que a pessoa precisa pra viver, isso vai ter consequências.
 
@@ -89,7 +89,7 @@ Equity não é salário.
 Aqui entramos em um outro problema comum, o padrão sócio/não-sócio. Isso acontece quando:
 
 - O CTO ganha um equity ou stock padrão (até 5%).
-- Naturalmente seguindo regras de <a href="http://startupi.com.br/2014/04/como-funciona-vesting-e-cliff/" target="_blank" rel="noopener">Cliff e Vesting</a>.
+- Naturalmente seguindo regras de <a href="http://startupi.com.br/2014/04/como-funciona-vesting-e-cliff/" target="_blank" rel="noopener noreferrer">Cliff e Vesting</a>.
 - É cobrado como sócio
 
 Mas de fato, ele não participa das decisões da empresa e pode ser demitido antes de conseguir qualquer direito sobre as ações.
@@ -124,14 +124,14 @@ No fim, as soluções que eu listei aqui, embora sejam ruins na minha opinião, 
 
 ------------------------------------------------------------------------
 
-Agora, com o contexto das startups mais explicado, no <a href="https://medium.com/@marcleal/startup-e-o-cto-a-vis%C3%A3o-do-cto-470d59e0689b#.1rk7kzrp2" target="_blank" rel="noopener">próximo artigo</a> eu falo sobre a visão do CTO. No <a href="https://medium.com/@marcleal/startup-e-cto-as-solu%C3%A7%C3%B5es-para-um-bom-casamento-967a9817fce9#.et8skk34y" target="_blank" rel="noopener">terceiro artigo</a> falo sobre as soluções para um possível casamento.
+Agora, com o contexto das startups mais explicado, no <a href="https://medium.com/@marcleal/startup-e-o-cto-a-vis%C3%A3o-do-cto-470d59e0689b#.1rk7kzrp2" target="_blank" rel="noopener noreferrer">próximo artigo</a> eu falo sobre a visão do CTO. No <a href="https://medium.com/@marcleal/startup-e-cto-as-solu%C3%A7%C3%B5es-para-um-bom-casamento-967a9817fce9#.et8skk34y" target="_blank" rel="noopener noreferrer">terceiro artigo</a> falo sobre as soluções para um possível casamento.
 
-Caso você queira discutir mais sobre isso, por favor, me contacte por alguma rede social: <a href="http://about.me/marcelioleal" target="_blank" rel="noopener">about.me/marcelioleal</a>.
+Caso você queira discutir mais sobre isso, por favor, me contacte por alguma rede social: <a href="http://about.me/marcelioleal" target="_blank" rel="noopener noreferrer">about.me/marcelioleal</a>.
 
 Créditos fotos (CC)
 
-- Markus Spiske / <a href="http://raumrot.com" target="_blank" rel="noopener">raumrot.com</a>
-- <a href="http://www.laughandpee.com/" target="_blank" rel="noopener"><strong>RYAN MCGUIRE</strong></a> **/** <a href="http://www.gratisography.com/" target="_blank" rel="noopener">http://www.gratisography.com/</a>
+- Markus Spiske / <a href="http://raumrot.com" target="_blank" rel="noopener noreferrer">raumrot.com</a>
+- <a href="http://www.laughandpee.com/" target="_blank" rel="noopener noreferrer"><strong>RYAN MCGUIRE</strong></a> **/** <a href="http://www.gratisography.com/" target="_blank" rel="noopener noreferrer">http://www.gratisography.com/</a>
 
 ------------------------------------------------------------------------
 

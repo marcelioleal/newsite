@@ -8,7 +8,7 @@ categories: [software-dev]
 
 <figure class="wp-caption">
 <img src="/images/external/cdn-images-1.medium.com/1_C_3xIEIlXNvm921AKUJWjA.jpeg" data-recalc-dims="1" decoding="async" data-width="3810" data-height="2551" alt="Duas pessoas sentadas conversando em frente ao mar em um lugar frio." />
-<figcaption>Photo by <a href="https://unsplash.com/@reka?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener">Korney Violin</a> on Unsplash.</figcaption>
+<figcaption>Photo by <a href="https://unsplash.com/@reka?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Korney Violin</a> on Unsplash.</figcaption>
 </figure>
 
 No período Paleolítico de tech (até meados da década de 2000), os momentos de feedbacks corporativos eram formais e tensos. O resultado era um processo que não era só ineficiente, mas, muitas vezes, causava mais efeitos negativos do que positivos. Hoje, feedbacks são momentos incentivados e desejados. Nada muito surpreendente considerando que vivemos em um mundo fuzzy, hiper acelerado e ansioso. Essa foi uma mudança bem grande na perspectiva, mas será que essa mudança impactou em processos de feedback mais efetivos?
@@ -27,7 +27,7 @@ Esse constante sentimento de fricção, onde as pessoas estão sempre se pressio
 
 <figure class="wp-caption">
 <img src="/images/external/cdn-images-1.medium.com/1_ey6xxD8Zzm37ekvgHohabQ.jpeg" data-recalc-dims="1" decoding="async" data-width="5184" data-height="3888" />
-<figcaption>Photo by <a href="https://unsplash.com/@brett_jordan?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener">Brett Jordan</a> on Unsplash.</figcaption>
+<figcaption>Photo by <a href="https://unsplash.com/@brett_jordan?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Brett Jordan</a> on Unsplash.</figcaption>
 </figure>
 
 Não tem segredo, a gente já sabe que processo e timeboxes ajudam muito a controlar ansiedade, independentemente se estamos falando de melhoria de times ou melhoria individual. Processos claros explicitam seus objetivos e *modus operandis*. Timeboxes transformam processos que podem ser difíceis em algo comum e recorrente, focando na melhoria contínua gradual.
@@ -48,7 +48,7 @@ Vamos a alguns exemplos e formatos de *Quick Feedbacks*.
 
 #### Reforço de ação positiva
 
-Ações que extrapolam o bom desempenho, principalmente nos aspectos culturais merecem rapidamente serem reconhecidas. Nesses casos, costumo usar <a href="https://papodehomem.com.br/comunicacao-nao-violenta-o-que-e-e-como-praticar/" target="_blank" rel="noopener">comunicação não-violenta</a>(CNV) com algumas modificações, como por exemplo não expressar o sentimento individual, mas o impacto no time/empresa. De forma simples a estrutura é: contexto, exemplo, impacto, ação requerida.
+Ações que extrapolam o bom desempenho, principalmente nos aspectos culturais merecem rapidamente serem reconhecidas. Nesses casos, costumo usar <a href="https://papodehomem.com.br/comunicacao-nao-violenta-o-que-e-e-como-praticar/" target="_blank" rel="noopener noreferrer">comunicação não-violenta</a>(CNV) com algumas modificações, como por exemplo não expressar o sentimento individual, mas o impacto no time/empresa. De forma simples a estrutura é: contexto, exemplo, impacto, ação requerida.
 
 #### Problemas que impactam outras pessoas
 
@@ -91,9 +91,9 @@ Não adianta que você coloque 5-10 pontos de evolução profundos para uma pess
 
 #### Se a pessoa já evolui sozinha e num bom ritmo, não atrapalhe
 
-> <a href="https://pt.wikipedia.org/wiki/Primum_non_nocere" target="_blank" rel="noopener"><em>Primum non nocere</em></a> -- primeiro, não prejudicar.
+> <a href="https://pt.wikipedia.org/wiki/Primum_non_nocere" target="_blank" rel="noopener noreferrer"><em>Primum non nocere</em></a> -- primeiro, não prejudicar.
 
-Como premissa, evita a <a href="https://pt.wikipedia.org/wiki/Iatrogenia" target="_blank" rel="noopener">iatrogenia</a> no processo de feedback estruturado. Muita gente já se cobra e evolui de forma natural. Nesses casos, o ideal é o líder não atrapalhar, tentar reforçar a capacidade de aprendizado, e utilizar os pontos de melhoria como direcionamento e não como algo negativo.
+Como premissa, evita a <a href="https://pt.wikipedia.org/wiki/Iatrogenia" target="_blank" rel="noopener noreferrer">iatrogenia</a> no processo de feedback estruturado. Muita gente já se cobra e evolui de forma natural. Nesses casos, o ideal é o líder não atrapalhar, tentar reforçar a capacidade de aprendizado, e utilizar os pontos de melhoria como direcionamento e não como algo negativo.
 
 #### Distinguir sinal de ruído
 
@@ -119,7 +119,7 @@ O feedback estruturado tem um papel importante nesse contexto pois melhorar a au
 
 Nesses tempos de trabalhos remotos, perdemos algumas coisas, como o abraço, o aperto de mão, o sorriso durante uma reunião, etc. Para algumas culturas isso é bem importante. Era comum alguém fazer algo legal e a gente agradecer de imediato, brincar, tocar na mão, etc.
 
-Não deixem esses momentos acabarem, eu fortemente recomendo que o fim de cada timebox operacional (sprint, ciclo de kanban/okr) as pessoas reconheçam os esforços individuais entre elas. Um bom lugar pra achar a melhor forma de fazer isso nesses momentos é no site <a href="https://www.funretrospectives.com/pt/" target="_blank" rel="noopener">Fun Retrospectives</a>.
+Não deixem esses momentos acabarem, eu fortemente recomendo que o fim de cada timebox operacional (sprint, ciclo de kanban/okr) as pessoas reconheçam os esforços individuais entre elas. Um bom lugar pra achar a melhor forma de fazer isso nesses momentos é no site <a href="https://www.funretrospectives.com/pt/" target="_blank" rel="noopener noreferrer">Fun Retrospectives</a>.
 
 ------------------------------------------------------------------------
 

@@ -78,7 +78,7 @@ Esse tipo de ambiente produtivo é resultado de um cultura de respeito com um lu
 
 Não permita a "programação rosto a rosto", o compartilhamento de *mouses*, ou mesmo um desenvolvedor apoiar o seu pé no do seu colega de trabalho. São coisas chatas e que atrapalham a concentração. Eu já perdi as contas de quantos "*flows"* eu perdi porque alguém me chutou ou porque a cadeira do colega bateu em mim (e vice-versa).
 
-No caso da mesa, acho que o que vale é manter as coisas organizadas, por perto e com espaço. Como bônus, disponibilize algumas mesas altas proporcionando <a href="http://g1.globo.com/bemestar/noticia/2015/06/especialistas-recomendam-trabalhar-em-pe-por-pelo-menos-2-horas-diarias.html" target="_blank" rel="noopener">o trabalho em pé</a> (veja na imagem da Jusbrasil).
+No caso da mesa, acho que o que vale é manter as coisas organizadas, por perto e com espaço. Como bônus, disponibilize algumas mesas altas proporcionando <a href="http://g1.globo.com/bemestar/noticia/2015/06/especialistas-recomendam-trabalhar-em-pe-por-pelo-menos-2-horas-diarias.html" target="_blank" rel="noopener noreferrer">o trabalho em pé</a> (veja na imagem da Jusbrasil).
 
 O ambiente também não pode ser constrangedor. Tipo a sala do chefe de vidro onde todos tem que passar na frente (chefe-porteiro). A divisão por equipes é algo que muitas vezes gera mais do que barreiras geográficas dentro da empresa.
 
@@ -92,7 +92,7 @@ O ambiente também não pode ser constrangedor. Tipo a sala do chefe de vidro on
 <figcaption>Asana -- San Francisco</figcaption>
 </figure>
 
-Quanto mais decisões difíceis, mais você gasta energia mental. Trabalho com fome ? você vai tomar decisões ruins (<a href="http://segundaopiniao.jor.br/resenha-rapido-e-devagar-de-daniel-kahneman/" target="_blank" rel="noopener">vai parar de pensar e usar o padrão</a>). Então mesmo que um profissional não ache que precisa comer, ele deve fazer isso. Se não tem comida dentro da empresa, provavelmente a melhor opção é sair pra comer durante o horário de trabalho. Se quer otimizar aqui, tenha comida **boa e saudável** disponível.
+Quanto mais decisões difíceis, mais você gasta energia mental. Trabalho com fome ? você vai tomar decisões ruins (<a href="http://segundaopiniao.jor.br/resenha-rapido-e-devagar-de-daniel-kahneman/" target="_blank" rel="noopener noreferrer">vai parar de pensar e usar o padrão</a>). Então mesmo que um profissional não ache que precisa comer, ele deve fazer isso. Se não tem comida dentro da empresa, provavelmente a melhor opção é sair pra comer durante o horário de trabalho. Se quer otimizar aqui, tenha comida **boa e saudável** disponível.
 
 Cara, tem tanto lugar bacana com máquinas de café horríveis ou aquelas máquinas de "*snacks*" que vende comida processada ruim. Isso pra mim é inacreditável hoje, o cara investe dezenas de milhares em pinturas, plantas, *puffs*, e não investe no combustível oficial. Pior é quando você ainda paga pelo cappuccino *capenga* porque você não tem opção.
 
@@ -126,7 +126,7 @@ Os líderes tem que dar exemplo, tem que usar também. Não só eles como a outr
 <figcaption>GitHub -- San Francisco</figcaption>
 </figure>
 
-Se estiver montando um escritório legal se inspire em escritórios que foram concebidos claramente e propositalmente. A <a href="http://www.jusbrasil.com.br/" target="_blank" rel="noopener">Jusbrasil</a> por exemplo.
+Se estiver montando um escritório legal se inspire em escritórios que foram concebidos claramente e propositalmente. A <a href="http://www.jusbrasil.com.br/" target="_blank" rel="noopener noreferrer">Jusbrasil</a> por exemplo.
 
 Quem tem escritórios com os problemas descritos, ainda dá tempo de corrigir. Devolva a máquina alugada de café e acabe com a venda de snacks no seu escritório. Invista e você verá o retorno na felicidade das pessoas e na sustentação da empresa. Faça um pouco de cada vez e de forma transparente. Conecte com o aspecto da sua cultura que você quer implantar ou melhorar. Por exemplo, se quer aumentar o foco do time, tente espaçar mais as pessoas, deixar mais silenciosa a área principal com regras. Se o seu time tiver cansado quase sempre, tente criar uma área de descompressão, coloque jogos, instrumentos musicais, etc. Permita que as pessoas a utilizem quando quiserem.
 
@@ -134,13 +134,13 @@ Quem tem escritórios com os problemas descritos, ainda dá tempo de corrigir. D
 
 #### Se curtiu o texto, dá um clicada no ❤ para dar a ele mais força no Medium.
 
-Eu escrevi <a href="https://medium.com/startup-mindset/what-is-startup-culture-ca77aca2de30#.s5nd5u29q" target="_blank" rel="noopener">um artigo sobre cultura</a> que pode lhe ajudar.
+Eu escrevi <a href="https://medium.com/startup-mindset/what-is-startup-culture-ca77aca2de30#.s5nd5u29q" target="_blank" rel="noopener noreferrer">um artigo sobre cultura</a> que pode lhe ajudar.
 
 Abaixo listo alguns livros que ajudam a você guiar a construção da cultura/lugar:
 
-- <a href="https://www.amazon.com.br/Drive-Surprising-Truth-about-Motivates/dp/1594484805" target="_blank" rel="noopener"><strong>Drive</strong></a>
-- <a href="https://www.amazon.com.br/R%C3%A1pido-E-Devagar-Daniel-Kahneman/dp/853900383X/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1475436757&amp;sr=1-1&amp;keywords=rapido+e+devagar" target="_blank" rel="noopener"><strong>Rápido e Devagar</strong></a>
-- <a href="https://www.amazon.com.br/Year-Without-Pants-WordPress-com-Future-ebook/dp/B00DVJXI4M/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1475436793&amp;sr=1-1&amp;keywords=A+year+without+pants" target="_blank" rel="noopener"><strong>A Year Without Pants</strong></a>
-- <a href="https://www.amazon.com.br/Flow-Psychology-Experience-Perennial-Classics-ebook/dp/B000W94FE6/ref=sr_1_1?s=digital-text&amp;ie=UTF8&amp;qid=1475436935&amp;sr=1-1&amp;keywords=flow" target="_blank" rel="noopener"><strong>Flow</strong></a>
+- <a href="https://www.amazon.com.br/Drive-Surprising-Truth-about-Motivates/dp/1594484805" target="_blank" rel="noopener noreferrer"><strong>Drive</strong></a>
+- <a href="https://www.amazon.com.br/R%C3%A1pido-E-Devagar-Daniel-Kahneman/dp/853900383X/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1475436757&amp;sr=1-1&amp;keywords=rapido+e+devagar" target="_blank" rel="noopener noreferrer"><strong>Rápido e Devagar</strong></a>
+- <a href="https://www.amazon.com.br/Year-Without-Pants-WordPress-com-Future-ebook/dp/B00DVJXI4M/ref=sr_1_1?s=books&amp;ie=UTF8&amp;qid=1475436793&amp;sr=1-1&amp;keywords=A+year+without+pants" target="_blank" rel="noopener noreferrer"><strong>A Year Without Pants</strong></a>
+- <a href="https://www.amazon.com.br/Flow-Psychology-Experience-Perennial-Classics-ebook/dp/B000W94FE6/ref=sr_1_1?s=digital-text&amp;ie=UTF8&amp;qid=1475436935&amp;sr=1-1&amp;keywords=flow" target="_blank" rel="noopener noreferrer"><strong>Flow</strong></a>
 
-Quer ver mais escritórios, veja o <a href="http://www.officelovin.com/" target="_blank" rel="noopener">Office Lovin</a>. Foi daqui que eu peguei a maioria das imagens aqui disponibilizadas.
+Quer ver mais escritórios, veja o <a href="http://www.officelovin.com/" target="_blank" rel="noopener noreferrer">Office Lovin</a>. Foi daqui que eu peguei a maioria das imagens aqui disponibilizadas.

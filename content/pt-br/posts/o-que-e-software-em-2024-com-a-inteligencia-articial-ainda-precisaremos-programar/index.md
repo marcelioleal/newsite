@@ -8,13 +8,13 @@ categories: [software-dev]
 ---
 
 <img src="https://cdn-images-1.medium.com/max/800/0*VtnfLVmXeVYHaJdi" style="width:770px;height:auto" decoding="async" />
-<figcaption>Código Python -- Photo by <a href="https://unsplash.com/@cdr6934?utm_source=medium&amp;utm_medium=referral" target="_blank" rel="noopener">Chris Ried</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></figcaption>
+<figcaption>Código Python -- Photo by <a href="https://unsplash.com/@cdr6934?utm_source=medium&amp;utm_medium=referral" target="_blank" rel="noopener noreferrer">Chris Ried</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" target="_blank" rel="noopener noreferrer">Unsplash</a></figcaption>
 
 Estamos passando por mais uma reviravolta na maneira como construímos empresas de tecnologia. Desta vez, várias coisas têm contribuído pra isso, como por exemplo: No-code/Low-code, muitas empresas sendo acessíveis via APIs, muita facilidade de uso de Big Data e, principalmente, Inteligência Artificial (IA). O resultado disso tudo é que temos muitas possibilidades para a **construção de software de forma mais fácil, barata, adequada a diferentes contextos e escalável**.
 
 Acesse <https://cyclicaltech.substack.com/> para receber todos os posts de tecnologia.
 
-O impacto disso é claro no processo de desenvolvimento de software. Isso inclui até o que chamamos de software, pois a partir de uma linguagem quase natural(humana), podemos criar e manter um programa de computador. Além disso, em algumas ferramentas, podemos escrever um software desenhando um fluxo, como, por exemplo, no <a href="https://www.pipefy.com/" target="_blank" rel="noopener">Pipefy</a>. Será que tudo isso passa a ser chamado de software ou somente os códigos "*complicadinhos"* como esse da figura acima?
+O impacto disso é claro no processo de desenvolvimento de software. Isso inclui até o que chamamos de software, pois a partir de uma linguagem quase natural(humana), podemos criar e manter um programa de computador. Além disso, em algumas ferramentas, podemos escrever um software desenhando um fluxo, como, por exemplo, no <a href="https://www.pipefy.com/" target="_blank" rel="noopener noreferrer">Pipefy</a>. Será que tudo isso passa a ser chamado de software ou somente os códigos "*complicadinhos"* como esse da figura acima?
 
 ------------------------------------------------------------------------
 
@@ -26,7 +26,7 @@ Neste texto, vamos partir de uma entrevista do CEO da NVIDIA, Jensen Huang, para
 
 ### **O milagre da Inteligência Artificial -- Ninguém vai precisar programar**
 
-É impressionante a forma que IA aulixia na criação de um programa, como por exemplo o que o <a href="https://github.com/features/copilot" target="_blank" rel="noopener">Copilot do GitHub</a> ajuda o desenvolvedor. Recentemente, vimos o <a href="https://chat.openai.com/" target="_blank" rel="noopener">ChatGPT</a> (<a href="https://cloud.google.com/use-cases/generative-ai?hl=pt-BR" target="_blank" rel="noopener">IA generativa</a>) gerando aplicações completas a partir de comandos (prompts) em linguagem natural. <span style="box-sizing: border-box; margin: 0px; padding: 0px;">Isso permite que pessoas sem muito conhecimento técnico possam construir coisas que eram relativamente complexas para elas, como <a href="https://en.wikipedia.org/wiki/Web_scraping" target="_blank">scrapers</a>.</span>
+É impressionante a forma que IA aulixia na criação de um programa, como por exemplo o que o <a href="https://github.com/features/copilot" target="_blank" rel="noopener noreferrer">Copilot do GitHub</a> ajuda o desenvolvedor. Recentemente, vimos o <a href="https://chat.openai.com/" target="_blank" rel="noopener noreferrer">ChatGPT</a> (<a href="https://cloud.google.com/use-cases/generative-ai?hl=pt-BR" target="_blank" rel="noopener noreferrer">IA generativa</a>) gerando aplicações completas a partir de comandos (prompts) em linguagem natural. <span style="box-sizing: border-box; margin: 0px; padding: 0px;">Isso permite que pessoas sem muito conhecimento técnico possam construir coisas que eram relativamente complexas para elas, como <a href="https://en.wikipedia.org/wiki/Web_scraping" target="_blank" rel="noopener noreferrer">scrapers</a>.</span>
 
 Nos últimos anos, como afirmou o CEO da NVIDIA, Jensen Huang, em entrevista recente, muitas pessoas afirmavam que as pessoas deveriam aprender a programar ou aprender ciência da computação. Mas nessa mesma entrevista, ele afirmou que na verdade deveríamos criar tecnologias para que a linguagem de programação seja humana e que, desta forma, não precisaríamos aprender algo para poder se comunicar com o computador (programar). Assim, poderíamos focar nosso aprendizado no domínio e nos tornar especialistas no assunto ao qual o problema está relacionado. Nas palavras dele:
 
@@ -37,9 +37,9 @@ Acredito que é fato que as novas tecnologias de IA vêm facilitando muito a cap
 ### **O que é programar?**
 
 <img src="https://cdn-images-1.medium.com/max/800/0*miD7DnALRHCaJVLl" decoding="async" />
-<figcaption>A gente passa mais tempo digitando ou somente olhando pra tela? -- Photo by <a href="https://unsplash.com/@kellysikkema?utm_source=medium&amp;utm_medium=referral" target="_blank" rel="noopener">Kelly Sikkema</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></figcaption>
+<figcaption>A gente passa mais tempo digitando ou somente olhando pra tela? -- Photo by <a href="https://unsplash.com/@kellysikkema?utm_source=medium&amp;utm_medium=referral" target="_blank" rel="noopener noreferrer">Kelly Sikkema</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" target="_blank" rel="noopener noreferrer">Unsplash</a></figcaption>
 
-Segundo o <a href="https://dictionary.cambridge.org/dictionary/english/programming" target="_blank" rel="noopener">Dicionário Cambridge</a>, programar é o processo ou a habilidade de escrever programas para computador. E no mercado, embora tenhamos diferenças, a gente pode considerar que programar é um sinônimo de <a href="https://en.wikipedia.org/wiki/Software_development" target="_blank" rel="noopener">desenvolver software</a>. **E pra gente desenvolver um software**, nós não focamos somente na **solução**. Existem pelo menos mais duas etapas essenciais em qualquer caso, **a definição do problema e o teste**.
+Segundo o <a href="https://dictionary.cambridge.org/dictionary/english/programming" target="_blank" rel="noopener noreferrer">Dicionário Cambridge</a>, programar é o processo ou a habilidade de escrever programas para computador. E no mercado, embora tenhamos diferenças, a gente pode considerar que programar é um sinônimo de <a href="https://en.wikipedia.org/wiki/Software_development" target="_blank" rel="noopener noreferrer">desenvolver software</a>. **E pra gente desenvolver um software**, nós não focamos somente na **solução**. Existem pelo menos mais duas etapas essenciais em qualquer caso, **a definição do problema e o teste**.
 
 > **Então, não adianta só construir algo que o computador vai entender, mas também garantir que o que foi construído está resolvendo o problema correto e corretamente.**
 
@@ -55,13 +55,13 @@ Depois fomos criando abstrações e mais abstrações. Os sistemas operacionais 
 
 A cada evolução, o discurso era o mesmo: os dias do programador estavam contados. De fato, as coisas ficaram muito mais fáceis. Se os problemas, os requisitos dos sistemas, os dispositivos e tecnologias não tivessem mudado também, talvez precisaríamos de menos gente mesmo. **Só que na realidade, cada vez que algo ficava mais fácil, os requisitos do mercado ficavam mais complexos, tínhamos possibilidades de resolver problemas mais complicados, e a necessidade de desenvolvedores aumentava.**
 
-Agora, novamente o potencial é alto. Dá pra fazer scrapers muito facilmente, interfaces em React <a href="https://vercel.com/" target="_blank" rel="noopener">conversando com um bot</a>, <a href="https://www.strictmode.io/articles/using-github-copilot-for-testing" target="_blank" rel="noopener">testes unitários quase que automáticos</a>, <a href="https://www.theverge.com/2024/1/9/24030667/rabbit-r1-ai-action-model-price-release-date" target="_blank" rel="noopener">software para dispositivos diferentes</a>, etc. Definitivamente isso vai permitir mais gente desenvolver, vai auxiliar desenvolvedores a entregarem resultados melhores ou mais rápidos, vai permitir desenvolvedores experientes a melhorarem sua capacidade e qualidade. Porém, ainda é difícil achar que vai diminuir a necessidade do entendimento de programação ou mesmo de programadores. Acho que na verdade o contrário novamente pode ser mais verdadeiro.
+Agora, novamente o potencial é alto. Dá pra fazer scrapers muito facilmente, interfaces em React <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">conversando com um bot</a>, <a href="https://www.strictmode.io/articles/using-github-copilot-for-testing" target="_blank" rel="noopener noreferrer">testes unitários quase que automáticos</a>, <a href="https://www.theverge.com/2024/1/9/24030667/rabbit-r1-ai-action-model-price-release-date" target="_blank" rel="noopener noreferrer">software para dispositivos diferentes</a>, etc. Definitivamente isso vai permitir mais gente desenvolver, vai auxiliar desenvolvedores a entregarem resultados melhores ou mais rápidos, vai permitir desenvolvedores experientes a melhorarem sua capacidade e qualidade. Porém, ainda é difícil achar que vai diminuir a necessidade do entendimento de programação ou mesmo de programadores. Acho que na verdade o contrário novamente pode ser mais verdadeiro.
 
 Será que veremos um Excel com esteroides ou gente trocando por soluções mais elegantes?
 
 ### **Software ate the world**
 
-Em 2011, Marc Andreessen escreveu um famoso artigo explicando por que o software está dominando o mundo. De fato, o software entrou na nossa vida e está nos impactando no dia a dia em vários aspectos essenciais. É só olhar que em 2022 <a href="https://oglobo.globo.com/economia/noticia/2023/11/09/no-brasil-85percent-das-criancas-tem-acesso-a-internet-e-mais-da-metade-ja-tem-celular.ghtml" target="_blank" rel="noopener">78% das pessoas no Brasil tinham celular</a>.
+Em 2011, Marc Andreessen escreveu um famoso artigo explicando por que o software está dominando o mundo. De fato, o software entrou na nossa vida e está nos impactando no dia a dia em vários aspectos essenciais. É só olhar que em 2022 <a href="https://oglobo.globo.com/economia/noticia/2023/11/09/no-brasil-85percent-das-criancas-tem-acesso-a-internet-e-mais-da-metade-ja-tem-celular.ghtml" target="_blank" rel="noopener noreferrer">78% das pessoas no Brasil tinham celular</a>.
 
 Nesse contexto, temos uma situação complicada. Quase todo mundo está fortemente influenciado/impactado por software, **mas pouquíssimas pessoas entendem como isso funciona.** E a parcela dessas pessoas que se aprofundam, estudam o que seria proporcional às operações aritméticas fundamentais na matemática, ou seja, muito pouco pra se entender o que é um software realmente. Não é o suficiente para se ter o mínimo de uma visão crítica.
 
@@ -97,10 +97,10 @@ Pessoal, na entrevista vários aspectos bem interessantes são conversados. Eu p
 
 ### Beyond Tech Conference
 
-Pessoal, eu e o <a href="https://medium.com/u/4c8e162888b7?source=post_page-----4a46662ca133--------------------------------" target="_blank" rel="noopener">Alex Chastinet</a> estamos organizando um evento para discutir temas de tecnologia, produto e empreendedorismo. O objetivo do evento é reunir pessoas com experiência prática para discutir temas específicos e gerar um conteúdo relevante, simples, direto e que não segue padrões impostos, leva em consideração nosso contexto atual.
+Pessoal, eu e o <a href="https://medium.com/u/4c8e162888b7?source=post_page-----4a46662ca133--------------------------------" target="_blank" rel="noopener noreferrer">Alex Chastinet</a> estamos organizando um evento para discutir temas de tecnologia, produto e empreendedorismo. O objetivo do evento é reunir pessoas com experiência prática para discutir temas específicos e gerar um conteúdo relevante, simples, direto e que não segue padrões impostos, leva em consideração nosso contexto atual.
 
-Se você tem interesse em ficar atualizado ou participar. Basta preencher <a href="https://app.youform.io/forms/rv9dhh8y" target="_blank" rel="noopener">este formulário</a> para receber as novidades.
+Se você tem interesse em ficar atualizado ou participar. Basta preencher <a href="https://app.youform.io/forms/rv9dhh8y" target="_blank" rel="noopener noreferrer">este formulário</a> para receber as novidades.
 
 ------------------------------------------------------------------------
 
-Fiquem à vontade pra falar comigo por e-mail ou qualquer outra rede social (<a href="https://medium.com/u/54200202d83e" target="_blank" rel="noopener">Marcelio Leal</a>).
+Fiquem à vontade pra falar comigo por e-mail ou qualquer outra rede social (<a href="https://medium.com/u/54200202d83e" target="_blank" rel="noopener noreferrer">Marcelio Leal</a>).
