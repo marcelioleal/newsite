@@ -3,6 +3,7 @@ title: Startups = Gente Boa
 date: '2017-03-03T10:02:33'
 slug: startups-gente-boa
 wp_id: 346
+categories: [software-dev]
 ---
 
 <figure class="wp-caption">

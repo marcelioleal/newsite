@@ -3,6 +3,7 @@ title: Fim de algumas bandas… Começo de outras…
 date: '2008-11-08T19:33:36'
 slug: fim-de-algumas-bandas-comeco-de-outras
 wp_id: 100
+categories: [musica]
 ---
 
 Tipo...

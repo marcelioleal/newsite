@@ -3,6 +3,7 @@ title: Sobre Feedbacks, Ansiedade e Outras Coisas Mais
 date: '2022-08-22T02:53:14'
 slug: sobre-feedbacks-ansiedade-e-outras-coisas-mais
 wp_id: 337
+categories: [software-dev]
 ---
 
 <figure class="wp-caption">

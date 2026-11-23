@@ -3,6 +3,7 @@ title: Como assistir a palestra II
 date: '2008-04-18T13:31:21'
 slug: como-assistir-a-palestra-ii
 wp_id: 69
+categories: [software-dev]
 ---
 
 Tipo,

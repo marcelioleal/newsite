@@ -3,6 +3,7 @@ title: Natal 2009
 date: '2008-12-25T02:54:19'
 slug: natal-2009
 wp_id: 108
+categories: [outros]
 ---
 
 Passou muito rápido esse ano. Lembro perfeitamente do Natal do ano passado.

@@ -4,6 +4,7 @@ title: O que é software em 2024 — Com a Inteligência Artificial ainda pr
 date: '2024-03-11T22:09:42'
 slug: o-que-e-software-em-2024-com-a-inteligencia-articial-ainda-precisaremos-programar
 wp_id: 332
+categories: [software-dev]
 ---
 
 <img src="https://cdn-images-1.medium.com/max/800/0*VtnfLVmXeVYHaJdi" style="width:770px;height:auto" decoding="async" />

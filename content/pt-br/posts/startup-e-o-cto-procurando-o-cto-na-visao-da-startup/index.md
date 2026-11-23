@@ -3,6 +3,7 @@ title: 'Startup e o CTO: procurando o CTO na visão da Startup.'
 date: '2016-06-08T04:13:18'
 slug: startup-e-o-cto-procurando-o-cto-na-visao-da-startup
 wp_id: 350
+categories: [software-dev]
 ---
 
 <figure>

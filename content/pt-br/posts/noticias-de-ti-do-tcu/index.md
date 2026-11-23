@@ -3,6 +3,7 @@ title: Notícias de TI do TCU
 date: '2007-11-22T02:59:59'
 slug: noticias-de-ti-do-tcu
 wp_id: 39
+categories: [outros]
 ---
 
 [TCU recomenda exigência de certificado nacional de sofware em licitações](http://www.presidencia.gov.br/estrutura_presidencia/Subsecretaria/noticias/clipping/noticias/assunto10/nt14ago2c/)

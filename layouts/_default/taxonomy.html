@@ -1,0 +1,53 @@
+{{- /*
+  layouts/_default/taxonomy.html — category / tag archive pages.
+  Reuses the home two-column structure, minus the hero: filter pills
+  reflect the active category, the feed shows posts in this term, and
+  the sidebar still carries recommendations + topic links.
+*/ -}}
+{{ define "main" }}
+<div class="pm-site">
+  <section class="taxonomy-intro">
+    <h1>{{ .Title }}</h1>
+    <p class="taxonomy-meta">
+      {{- $count := len .Pages -}}
+      {{- if eq .Language.Lang "pt-br" -}}
+        {{ $count }} {{ if eq $count 1 }}post{{ else }}posts{{ end }}
+      {{- else -}}
+        {{ $count }} {{ if eq $count 1 }}post{{ else }}posts{{ end }}
+      {{- end -}}
+    </p>
+  </section>
+
+  <div class="two-col-layout">
+    <div class="pm-feed-col">
+      {{ partial "home-filters.html" . }}
+      {{- $paginator := .Paginate (sort .Pages "Date" "desc") 50 -}}
+      <div data-list="taxonomy">
+        {{- range $paginator.Pages }}
+        {{- $topics := slice -}}
+        {{- with .Params.categories -}}{{- $topics = . -}}{{- end }}
+        <article class="pm-post post-item" data-topics="{{ delimit $topics " " }}">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">
+            {{ .Date.Format "2006-01-02" }}
+            {{- with $topics }} · {{ delimit . " · " }}{{- end }}
+          </time>
+          <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+          {{- with .Summary }}
+          <p>{{ . | plainify | truncate 180 }}</p>
+          {{- end }}
+        </article>
+        {{- end }}
+      </div>
+      {{- if gt $paginator.TotalPages 1 }}
+      <nav class="paginav">
+        {{- with $paginator.Prev }}<a class="prev" href="{{ .URL }}" rel="prev" aria-label="Previous page">&larr;</a>{{- end }}
+        <span class="page-indicator">{{ $paginator.PageNumber }} / {{ $paginator.TotalPages }}</span>
+        {{- with $paginator.Next }}<a class="next" href="{{ .URL }}" rel="next" aria-label="Next page">&rarr;</a>{{- end }}
+      </nav>
+      {{- end }}
+    </div>
+
+    {{ partial "home-sidebar.html" . }}
+  </div>
+</div>
+{{ end }}

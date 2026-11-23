@@ -3,6 +3,7 @@ title: Seja Ousado, Seja Humilde — Construindo uma Cultura Corporativa
 date: '2017-05-20T01:29:54'
 slug: seja-ousado-seja-humilde-construindo-uma-cultura-corporativa
 wp_id: 353
+categories: [software-dev]
 ---
 
 <figure>

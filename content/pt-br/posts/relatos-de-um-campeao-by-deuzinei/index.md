@@ -3,6 +3,7 @@ title: Relatos de um Campeão – By Deuzinei
 date: '2007-12-11T17:56:39'
 slug: relatos-de-um-campeao-by-deuzinei
 wp_id: 42
+categories: [outros]
 ---
 
 **II Torneio de Bilhar Computação Futebol Clube**

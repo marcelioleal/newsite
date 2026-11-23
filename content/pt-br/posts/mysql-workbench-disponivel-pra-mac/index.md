@@ -3,6 +3,7 @@ title: MySQL Workbench disponível pra Mac
 date: '2009-01-11T00:44:22'
 slug: mysql-workbench-disponivel-pra-mac
 wp_id: 114
+categories: [software-dev]
 ---
 
 Eu sou fã de um software feito em [Delphi](http://www.borland.com/br/products/delphi/index.html) e não tenho vergonha de afirmar. 🙂

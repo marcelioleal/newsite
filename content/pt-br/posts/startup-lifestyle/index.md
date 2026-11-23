@@ -3,6 +3,7 @@ title: Startup Lifestyle
 date: '2014-11-24T09:57:44'
 slug: startup-lifestyle
 wp_id: 352
+categories: [software-dev]
 ---
 
 <figure>

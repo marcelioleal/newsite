@@ -3,6 +3,7 @@ title: Paraenses no FISL – Palestras e Participações
 date: '2008-04-23T22:18:57'
 slug: paraenses-no-fisl-palestras-e-participacoes
 wp_id: 75
+categories: [software-dev]
 ---
 
 Me surpreendeu a galera paraense no FISL.

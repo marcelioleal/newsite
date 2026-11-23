@@ -3,6 +3,7 @@ title: FISL 9 – Caravana e Chamada para avaliadores
 date: '2008-01-31T20:04:37'
 slug: fisl-9-caravana-e-chamada-para-avaliadores
 wp_id: 51
+categories: [outros]
 ---
 
 

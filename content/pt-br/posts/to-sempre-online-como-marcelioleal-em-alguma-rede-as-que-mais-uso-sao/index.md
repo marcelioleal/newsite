@@ -3,6 +3,7 @@ title: 'Tô sempre online como marcelioleal em alguma rede. As que mais uso são
 date: '2016-09-13T02:50:48'
 slug: to-sempre-online-como-marcelioleal-em-alguma-rede-as-que-mais-uso-sao
 wp_id: 358
+categories: [outros]
 ---
 
 Tô sempre online como marcelioleal em alguma rede. As que mais uso são:

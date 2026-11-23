@@ -3,6 +3,7 @@ title: E o MySQL continua indo bem…
 date: '2008-02-14T16:09:32'
 slug: e-o-mysql-continua-indo-bem
 wp_id: 53
+categories: [software-dev]
 ---
 
 Mesmo após o anúncio de venda da [MySQL AB](http://www.mysql.com/) pra [SUN](http://www.sun.com) o MySQL continua evoluindo em um caminho bem interessante. 🙂

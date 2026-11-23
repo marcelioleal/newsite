@@ -3,6 +3,7 @@ title: Palestra Software Livre – Contexto e Oportunidades
 date: '2007-10-04T16:36:36'
 slug: palestra-software-livre-contexto-e-oportunidades
 wp_id: 23
+categories: [software-dev]
 ---
 
 Fiz uma apresentação sobre o Software Livre pra alunos do <a href="http://www.cefetpa.br/" target="_blank">CEFET-PA</a> no mês passado.

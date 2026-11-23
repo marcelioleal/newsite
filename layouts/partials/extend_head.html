@@ -35,3 +35,8 @@
 {{- range .AllTranslations }}
 <meta property="og:locale:alternate" content="{{ replace .Language.Lang "-" "_" }}">
 {{- end }}
+
+{{- /* Preload primary fonts (Inter variable roman + JetBrains Mono regular).
+     Italic + latin-ext + Mono-Bold are loaded on-demand via @font-face below. */ -}}
+<link rel="preload" href="/fonts/Inter-roman.var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin>

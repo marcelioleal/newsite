@@ -53,16 +53,20 @@ weight = 20
 description = "Marcelio Leal's personal site — pt-br default, bilingual"
 images = ["og-default.png"]
 mainSections = ["posts"]
-disableThemeToggle = true
+disableThemeToggle = false
 ShowBreadCrumbs = false
 ShowShareButtons = false
 ShowReadingTime = false
 ShowCodeCopyButtons = true
-defaultTheme = "light"
+defaultTheme = "dark"
 ShowPostNavLinks = false
 
 [params.profileMode]
 enabled = false
+
+[taxonomies]
+category = "categories"
+tag = "tags"
 
 # Allow raw HTML in Markdown — migrated WP posts contain lots of inline HTML
 # (Spotify embeds, VideoPress <video> swaps, image galleries) that Goldmark

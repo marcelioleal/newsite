@@ -3,6 +3,7 @@ title: 'Startup e CTO: As soluções para um bom casamento'
 date: '2016-06-21T02:16:02'
 slug: startup-e-cto-as-solucoes-para-um-bom-casamento
 wp_id: 349
+categories: [software-dev]
 ---
 
 *Este é o terceiro artigo da série Startup e CTO. Você pode ler o primeiro* <a href="https://medium.com/@marcleal/startup-e-o-cto-procurando-o-cto-na-vis%C3%A3o-da-startup-2e3601e61293#.m8cheradj" target="_blank" rel="noopener"><em>aqui</em></a> *e o segundo* <a href="https://medium.com/@marcleal/startup-e-o-cto-a-vis%C3%A3o-do-cto-470d59e0689b#.96j43i2zv" target="_blank" rel="noopener"><em>aqui</em></a>*.*

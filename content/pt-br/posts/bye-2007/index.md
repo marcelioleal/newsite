@@ -3,6 +3,7 @@ title: Bye 2007
 date: '2007-12-26T02:25:43'
 slug: bye-2007
 wp_id: 46
+categories: [software-dev]
 ---
 
 Tá chegando o fim do ano, muitas coisas boas aconteceram nesse ano...

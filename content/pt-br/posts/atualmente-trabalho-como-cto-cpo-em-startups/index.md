@@ -3,6 +3,7 @@ title: Atualmente trabalho como CTO/CPO em Startups.
 date: '2016-09-13T02:41:01'
 slug: atualmente-trabalho-como-cto-cpo-em-startups
 wp_id: 355
+categories: [software-dev]
 ---
 
 Atualmente trabalho como CTO/CPO em Startups. Estou vindo de um período de estudo de 3 meses depois da minha última experiência.

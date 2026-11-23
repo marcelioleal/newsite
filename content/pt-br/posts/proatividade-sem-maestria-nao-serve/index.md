@@ -3,6 +3,7 @@ title: Proatividade sem maestria não serve
 date: '2016-11-06T01:22:33'
 slug: proatividade-sem-maestria-nao-serve
 wp_id: 347
+categories: [software-dev]
 ---
 
 <figure>

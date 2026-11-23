@@ -3,6 +3,7 @@ title: O FISL tá chegando…
 date: '2008-01-17T19:19:01'
 slug: o-fisl-ta-chegando
 wp_id: 50
+categories: [software-dev]
 ---
 
 [Porto Alegre](http://pt.wikipedia.org/wiki/Alessandra_Ambrosio) é fenomenal... ops, é sobre o [FISL](http://fisl.softwarelivre.org/)...

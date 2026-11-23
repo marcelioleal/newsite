@@ -5,3 +5,25 @@ switch_to_language: "Switch to %s"
 not_found_title: "Page not found."
 not_found_body: "The page you're looking for doesn't exist or has been moved."
 back_to_home: "Back to home"
+
+# Home hero
+hero_name: "Marcelio Leal"
+hero_bio: "Brazilian from Pará (the Amazon), now in São Paulo (via Berlin). Engineering Lead at Google (previously Nubank, Amazon, GetYourGuide, QEdu, BHub) and co-founder of Beyond Tech. I write here about technology, leadership, music, coffee, art and kitesurfing."
+hero_badge_place: "📍 Belém → Berlin → SP"
+hero_badge_role: "💼 Eng Leader @ Google"
+hero_badge_kite: "🪁 Kitesurfing (CE/RN)"
+hero_badge_passions: "☕ Coffee & Music"
+hero_cta_about: "About me →"
+hero_cta_newsletter: "Newsletter"
+hero_avatar_alt: "Photo of Marcelio Leal"
+
+# Filter pills
+filter_label: "Filter:"
+filter_all: "All"
+filter_software_dev: "💻 Software Dev"
+filter_musica: "🎵 Music"
+filter_arte: "🎨 Art"
+
+# Home sidebar
+sidebar_recommend_title: "What I recommend"
+sidebar_topics_title: "Posts by Topic"

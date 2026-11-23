@@ -3,6 +3,7 @@ title: De Ubuntu para Mandriva
 date: '2007-11-06T18:07:02'
 slug: de-ubuntu-para-mandriva
 wp_id: 30
+categories: [outros]
 ---
 
 Um [relato](http://neshertech.net/adler/2007/11/01/de-ubuntu-para-mandriva/) interessante do amigo Adler.

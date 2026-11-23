@@ -3,6 +3,7 @@ title: As mudanças de trabalho pós pandemia — A volta ao presencial
 date: '2024-02-29T09:40:27'
 slug: as-mudancas-de-trabalho-pos-pandemia-a-volta-ao-presencial
 wp_id: 333
+categories: [software-dev]
 ---
 
 <figure class="wp-caption">

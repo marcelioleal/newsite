@@ -3,6 +3,7 @@ title: Comemoração do Aniversário da vitória sobre o Boca Jr. e outros
 date: '2008-04-25T21:06:37'
 slug: comemoracao-do-aniversario-da-vitoria-sobre-o-boca-jr-e-outros
 wp_id: 77
+categories: [musica]
 ---
 
 Ontem a noite fui comer uma isca de peixe no bar São Mateus, e alguns amigos foram me acompanhar nesse tira-gosto. Além disso estavamos comemorando o aniversário da vitória do [Paysandú](http://www.papao.net) sobre o [Boca Jr.](http://www.bocajuniors.com.ar/) em La bombonera(Estádio do Boca, que equivale ao famoso estádio da Curuzú em Belém).

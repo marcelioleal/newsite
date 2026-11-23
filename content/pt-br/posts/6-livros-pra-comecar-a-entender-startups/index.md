@@ -3,6 +3,7 @@ title: 6 livros pra começar a entender Startups
 date: '2016-11-05T00:31:02'
 slug: 6-livros-pra-comecar-a-entender-startups
 wp_id: 356
+categories: [musica, software-dev]
 ---
 
 <figure>

@@ -3,6 +3,7 @@ title: Organizando a busca do seu próximo emprego
 date: '2020-06-06T22:51:37'
 slug: organizando-a-busca-do-seu-proximo-emprego
 wp_id: 340
+categories: [software-dev]
 ---
 
 <figure class="wp-caption">

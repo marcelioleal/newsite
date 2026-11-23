@@ -3,6 +3,7 @@ title: Mudando de lado na carreira Y — Literatura para (futuros) gerentes 
 date: '2020-07-24T11:08:51'
 slug: mudando-de-lado-na-carreira-y-literatura-para-futuros-gerentes-de-desenvolvimento
 wp_id: 339
+categories: [software-dev, musica]
 ---
 
 <figure class="wp-caption">

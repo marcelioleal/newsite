@@ -3,6 +3,7 @@ title: Novos Posts
 date: '2009-08-21T21:27:18'
 slug: novos-posts
 wp_id: 124
+categories: [outros]
 ---
 
 Estou voltando...

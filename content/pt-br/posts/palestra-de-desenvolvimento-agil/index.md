@@ -3,6 +3,7 @@ title: Palestra de Desenvolvimento Ágil
 date: '2007-10-04T16:20:26'
 slug: palestra-de-desenvolvimento-agil
 wp_id: 21
+categories: [software-dev]
 ---
 
 Ontem ministrei uma [Palestra de Desenvolvimento Ágil](http://marcelioleal.com/files/2007/10/app.pdf "Palestra de Desenvolvimento Ágil") divertida no <a href="http://www2.iesam-pa.edu.br/" target="_blank">IESAM</a>.

@@ -3,6 +3,7 @@ title: Uma semana de processos de software
 date: '2007-08-30T18:09:34'
 slug: uma-semana-de-processos-de-software
 wp_id: 7
+categories: [software-dev]
 ---
 
 Nessa semana tive uma série de eventos ligados à processos de software.\

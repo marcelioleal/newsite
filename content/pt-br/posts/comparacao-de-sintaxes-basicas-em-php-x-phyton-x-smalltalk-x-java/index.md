@@ -3,6 +3,7 @@ title: Comparação de sintaxes básicas em PHP X Phyton X Smalltalk X Java
 date: '2007-09-03T03:53:08'
 slug: comparacao-de-sintaxes-basicas-em-php-x-phyton-x-smalltalk-x-java
 wp_id: 11
+categories: [software-dev]
 ---
 
 Tudo começou no blog [batteries not included](http://blog.danielfmartins.com) com o post sobre [Smalltalk X Java](http://blog.danielfmartins.com/2007/05/07/smalltalk-x-java/). Neste post são apresentados trechos de códigos básicos nas linguagens [Java](http://pt.wikipedia.org/wiki/Java_(linguagem_de_programa%C3%A7%C3%A3o)) e [Smalltalk](http://pt.wikipedia.org/wiki/Smalltalk), fazendo um comparativo entre as vantagens das sintaxes entre as linguagens. O resultado ficou subjetivo, mas com leve vantagem para a sintaxe do Smalltalk, embora os exemplos em Java pudessem ser melhorados, conforme foi descrito nos comentários.

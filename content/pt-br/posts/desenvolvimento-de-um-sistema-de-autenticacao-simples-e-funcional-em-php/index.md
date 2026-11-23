@@ -3,6 +3,7 @@ title: Desenvolvimento de um sistema de autenticação simples e funcional em PH
 date: '2007-11-17T00:19:57'
 slug: desenvolvimento-de-um-sistema-de-autenticacao-simples-e-funcional-em-php
 wp_id: 36
+categories: [software-dev]
 ---
 
 Um sistema de autenticação é parte da maioria dos sistemas. Um desenvolvedor ou instituição deve ter pelo menos uma base para utilização de um sistema desta natureza para que não perca muito tempo neste requisito.

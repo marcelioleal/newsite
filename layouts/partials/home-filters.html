@@ -1,0 +1,24 @@
+{{- /*
+  layouts/partials/home-filters.html — Topic filter pills above the home feed.
+  SEO-first: pills are anchors to /categories/<slug>/ pages. The "Todos" pill
+  points at the home itself. data-filter is set for future JS enhancement.
+*/ -}}
+{{- $cur := .RelPermalink -}}
+{{- $isHome := eq $cur site.Home.RelPermalink -}}
+<nav class="topic-bar" data-scope="home" aria-label="{{ i18n "filter_label" }}">
+  <span class="topic-bar-label">{{ i18n "filter_label" }}</span>
+  <a class="topic-pill{{ if $isHome }} active{{ end }}" data-filter="all"
+     href="{{ site.Home.RelPermalink }}">{{ i18n "filter_all" }}</a>
+  {{- $pills := slice
+        (dict "slug" "software-dev" "label" (i18n "filter_software_dev"))
+        (dict "slug" "musica"       "label" (i18n "filter_musica"))
+        (dict "slug" "arte"         "label" (i18n "filter_arte")) -}}
+  {{- range $pills }}
+    {{- $pill := . -}}
+    {{- $cat := site.GetPage (printf "/categories/%s" $pill.slug) -}}
+    {{- with $cat }}
+  <a class="topic-pill{{ if eq .RelPermalink $cur }} active{{ end }}"
+     data-filter="{{ $pill.slug }}" href="{{ .RelPermalink }}">{{ $pill.label }}</a>
+    {{- end }}
+  {{- end }}
+</nav>

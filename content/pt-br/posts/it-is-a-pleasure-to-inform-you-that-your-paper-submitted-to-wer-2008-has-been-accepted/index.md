@@ -4,6 +4,7 @@ title: It is a pleasure to inform you that your paper submitted to WER 2008 has 
 date: '2008-06-18T20:05:22'
 slug: it-is-a-pleasure-to-inform-you-that-your-paper-submitted-to-wer-2008-has-been-accepted
 wp_id: 89
+categories: [software-dev]
 ---
 
 Depois de tempos sem postar por estar totalmente focado no [mestrado](http://www.ufpa.br/ppgcc/) e trabalho recebo uma boa mensagem. 🙂

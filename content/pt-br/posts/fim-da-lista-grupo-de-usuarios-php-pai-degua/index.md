@@ -3,6 +3,7 @@ title: Fim da lista/grupo de usuários PHP Pai d'Égua
 date: '2015-03-15T01:42:57'
 slug: fim-da-lista-grupo-de-usuarios-php-pai-degua
 wp_id: 359
+categories: [software-dev]
 ---
 
 <figure>

@@ -3,6 +3,7 @@ title: Hiring — A Hard Thing About Hard Things
 date: '2023-10-15T06:21:19'
 slug: hiring-a-hard-thing-about-hard-things
 wp_id: 335
+categories: [software-dev]
 ---
 
 <img src="/images/external/cdn-images-1.medium.com/1_ogOCz_hw_3GNfaXDaFBZ8w.jpeg" data-recalc-dims="1" decoding="async" />

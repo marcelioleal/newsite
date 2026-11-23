@@ -3,6 +3,7 @@ title: Humor de novo – Novo Homem Aranha anuncia sua identidade
 date: '2007-11-09T20:06:53'
 slug: humor-de-novo-novo-homem-aranha-anuncia-sua-identidade
 wp_id: 33
+categories: [software-dev]
 ---
 
 Tenho um [amigo](http://php.leandrolages.com/) bastante parecido com o Homem aranha, ops com o Peter. Inclusive depois de ver o filme ele ficava copiando as roupas e o jeito de ser também.(como diria meu amigo Michel)

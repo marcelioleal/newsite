@@ -3,6 +3,7 @@ title: Concurso do SERPRO
 date: '2008-12-13T20:15:02'
 slug: concurso-do-serpro
 wp_id: 102
+categories: [software-dev]
 ---
 
 Neste último domingo fiz a prova do concurso do SERPRO realizado pelo CESPE.

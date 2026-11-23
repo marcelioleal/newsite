@@ -3,6 +3,7 @@ title: 'Startup e o CTO: a visão do CTO'
 date: '2016-06-16T11:40:08'
 slug: startup-e-o-cto-a-visao-do-cto
 wp_id: 351
+categories: [software-dev]
 ---
 
 <figure class="wp-caption">

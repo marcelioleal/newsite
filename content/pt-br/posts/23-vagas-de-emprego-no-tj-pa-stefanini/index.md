@@ -3,6 +3,7 @@ title: 23 Vagas de Emprego no TJ-PA – Stefanini
 date: '2009-11-04T03:54:12'
 slug: 23-vagas-de-emprego-no-tj-pa-stefanini
 wp_id: 131
+categories: [software-dev]
 ---
 
 É, eu fiquei impressionado com o número de vagas pra Belém.

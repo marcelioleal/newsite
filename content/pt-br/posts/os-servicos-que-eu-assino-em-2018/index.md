@@ -3,6 +3,7 @@ title: Os serviços que eu assino em 2018
 date: '2018-09-21T06:23:32'
 slug: os-servicos-que-eu-assino-em-2018
 wp_id: 343
+categories: [software-dev, musica]
 ---
 
 <img src="/images/external/cdn-images-1.medium.com/1_tXqRtqrMUFlUjPaFmdkaTA.png" data-recalc-dims="1" decoding="async" />

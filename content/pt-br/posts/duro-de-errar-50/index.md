@@ -3,6 +3,7 @@ title: Duro de Errar 5.0
 date: '2008-04-22T19:15:51'
 slug: duro-de-errar-50
 wp_id: 71
+categories: [software-dev]
 ---
 
 A minha expectativa para a palestra foi superada novamente.

@@ -3,6 +3,7 @@ title: Como assitir o FISL
 date: '2008-04-17T21:36:59'
 slug: como-assitir-o-fisl
 wp_id: 68
+categories: [software-dev]
 ---
 
 Pessoal,

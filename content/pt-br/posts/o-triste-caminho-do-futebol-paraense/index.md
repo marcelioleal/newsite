@@ -3,6 +3,7 @@ title: O triste caminho do futebol paraense
 date: '2007-08-30T18:37:36'
 slug: o-triste-caminho-do-futebol-paraense
 wp_id: 8
+categories: [outros]
 ---
 
 O Futebol Paraense está caminhando pra série C e a saída real mais próxima visível será se o [Paysandú](http://pt.wikipedia.org/wiki/Paysandu_Sport_Club) contratar um bom técnico e destruir a série C de 2008 e série B de 2009.

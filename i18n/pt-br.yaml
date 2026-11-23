@@ -5,3 +5,25 @@ switch_to_language: "Mudar para %s"
 not_found_title: "Página não encontrada."
 not_found_body: "A página que você procura não existe ou foi movida."
 back_to_home: "Voltar ao início"
+
+# Home hero
+hero_name: "Marcelio Leal"
+hero_bio: "Paraense de Belém vivendo em São Paulo (com passagem por Berlim). Líder de Engenharia no Google (ex-Nubank, Amazon, GetYourGuide, QEdu, BHub) e cofundador da Beyond Tech Conference. Escrevo aqui sobre tecnologia, liderança, música, café, arte e kitesurf."
+hero_badge_place: "📍 Belém → Berlim → SP"
+hero_badge_role: "💼 Eng Leader @ Google"
+hero_badge_kite: "🪁 Kitesurf (CE/RN)"
+hero_badge_passions: "☕ Café & Música"
+hero_cta_about: "Sobre mim →"
+hero_cta_newsletter: "Newsletter"
+hero_avatar_alt: "Foto de Marcelio Leal"
+
+# Filter pills
+filter_label: "Filtrar:"
+filter_all: "Todos"
+filter_software_dev: "💻 Software Dev"
+filter_musica: "🎵 Música"
+filter_arte: "🎨 Arte"
+
+# Home sidebar
+sidebar_recommend_title: "O que eu recomendo"
+sidebar_topics_title: "Posts por Assunto"

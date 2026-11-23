@@ -3,6 +3,7 @@ title: A razão por trás dos escritórios legais das startups
 date: '2016-10-03T02:39:24'
 slug: a-razao-por-tras-dos-escritorios-legais-das-startups
 wp_id: 344
+categories: [software-dev]
 ---
 
 <figure class="wp-caption">

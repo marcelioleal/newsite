@@ -3,6 +3,7 @@ title: Os três livros mais pesados que eu já li
 date: '2017-02-22T22:53:49'
 slug: os-tres-livros-mais-pesados-que-eu-ja-li
 wp_id: 348
+categories: [musica]
 ---
 
 [<img src="/images/external/media2.giphy.com/giphy.gif" data-recalc-dims="1" loading="lazy" decoding="async" width="600" height="338" alt="Don&#39;T Know Thinking GIF by 1LIVE - Find &amp; Share on GIPHY" />](https://giphy.com/gifs/1live-wdr-philipp-isterewicz-l41Yh5Xt2vTny6UfK)

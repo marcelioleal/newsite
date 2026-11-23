@@ -3,6 +3,7 @@ title: Temas do fim de semana
 date: '2007-11-08T14:41:10'
 slug: temas-do-fim-de-semana
 wp_id: 31
+categories: [outros]
 ---
 
 Chegando mais um fim de semana cheio, que estaile!!!
