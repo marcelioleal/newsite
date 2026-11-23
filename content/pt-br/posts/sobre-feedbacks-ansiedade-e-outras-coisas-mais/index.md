@@ -6,8 +6,8 @@ wp_id: 337
 categories: [software-dev]
 ---
 
-<figure class="wp-caption">
-<img src="/images/external/cdn-images-1.medium.com/1_C_3xIEIlXNvm921AKUJWjA.jpeg" data-recalc-dims="1" decoding="async" data-width="3810" data-height="2551" alt="Duas pessoas sentadas conversando em frente ao mar em um lugar frio." />
+<figure >
+<img src="/images/external/cdn-images-1.medium.com/1_C_3xIEIlXNvm921AKUJWjA.jpeg" decoding="async" data-width="3810" data-height="2551" alt="Duas pessoas sentadas conversando em frente ao mar em um lugar frio." />
 <figcaption>Photo by <a href="https://unsplash.com/@reka?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Korney Violin</a> on Unsplash.</figcaption>
 </figure>
 
@@ -25,8 +25,8 @@ Esse constante sentimento de fricção, onde as pessoas estão sempre se pressio
 
 ### Processo, os Tipos e Timeboxes
 
-<figure class="wp-caption">
-<img src="/images/external/cdn-images-1.medium.com/1_ey6xxD8Zzm37ekvgHohabQ.jpeg" data-recalc-dims="1" decoding="async" data-width="5184" data-height="3888" />
+<figure >
+<img src="/images/external/cdn-images-1.medium.com/1_ey6xxD8Zzm37ekvgHohabQ.jpeg" decoding="async" data-width="5184" data-height="3888" />
 <figcaption>Photo by <a href="https://unsplash.com/@brett_jordan?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Brett Jordan</a> on Unsplash.</figcaption>
 </figure>
 

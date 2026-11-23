@@ -6,8 +6,8 @@ wp_id: 344
 categories: [software-dev]
 ---
 
-<figure class="wp-caption">
-<img src="/images/external/cdn-images-1.medium.com/1_mnEN7Gkj8geHl0SfNSYXaw.jpeg" data-recalc-dims="1" decoding="async" data-width="1600" data-height="1067" />
+<figure >
+<img src="/images/external/cdn-images-1.medium.com/1_mnEN7Gkj8geHl0SfNSYXaw.jpeg" decoding="async" data-width="1600" data-height="1067" />
 <figcaption>Airbnb -- San Francisco</figcaption>
 </figure>
 
@@ -42,8 +42,8 @@ Em empresas que consideram profissionais como "recursos" ou mercadorias, em gera
 
 ### **A Análise Racional de um Escritório Funcional**
 
-<figure class="wp-caption">
-<img src="/images/external/cdn-images-1.medium.com/1_nGmoFoRgkxhDVjlBu-byaA.jpeg" data-recalc-dims="1" decoding="async" data-width="948" data-height="632" />
+<figure >
+<img src="/images/external/cdn-images-1.medium.com/1_nGmoFoRgkxhDVjlBu-byaA.jpeg" decoding="async" data-width="948" data-height="632" />
 <figcaption>Jusbrasil -- Salvador</figcaption>
 </figure>
 
@@ -67,8 +67,8 @@ A cadeira é algo essencial também, a economia pode sair bem caro pro empregado
 - O espaço de trabalho
 - Sala de reunião
 
-<figure class="wp-caption">
-<img src="/images/external/cdn-images-1.medium.com/1_INVTS5OedWZsTkF1bjgIpQ.jpeg" data-recalc-dims="1" decoding="async" data-width="1500" data-height="1000" />
+<figure >
+<img src="/images/external/cdn-images-1.medium.com/1_INVTS5OedWZsTkF1bjgIpQ.jpeg" decoding="async" data-width="1500" data-height="1000" />
 <figcaption>SoundCloud -- Berlin</figcaption>
 </figure>
 
@@ -87,8 +87,8 @@ O ambiente também não pode ser constrangedor. Tipo a sala do chefe de vidro on
 - Comida
 - Chá e Café
 
-<figure class="wp-caption">
-<img src="/images/external/cdn-images-1.medium.com/1_dXgBJtqXiojPt9SxH84YZA.png" data-recalc-dims="1" decoding="async" data-width="718" data-height="955" />
+<figure >
+<img src="/images/external/cdn-images-1.medium.com/1_dXgBJtqXiojPt9SxH84YZA.png" decoding="async" data-width="718" data-height="955" />
 <figcaption>Asana -- San Francisco</figcaption>
 </figure>
 
@@ -101,8 +101,8 @@ Cara, tem tanto lugar bacana com máquinas de café horríveis ou aquelas máqui
 - Sala de descanso
 - Distrações (música, games, bilhar, ping-pong, cervejinha, etc.)
 
-<figure class="wp-caption">
-<img src="/images/external/cdn-images-1.medium.com/1_zX4gK8iysMvzptvlvN0-aw.jpeg" data-recalc-dims="1" decoding="async" data-width="600" data-height="397" />
+<figure >
+<img src="/images/external/cdn-images-1.medium.com/1_zX4gK8iysMvzptvlvN0-aw.jpeg" decoding="async" data-width="600" data-height="397" />
 <figcaption>Predicta -- São Paulo</figcaption>
 </figure>
 
@@ -121,8 +121,8 @@ Os líderes tem que dar exemplo, tem que usar também. Não só eles como a outr
 - Cultura
 - Transparência
 
-<figure class="wp-caption">
-<img src="/images/external/cdn-images-1.medium.com/1_60G2iOoS7NZGj3NlOXo3ig.jpeg" data-recalc-dims="1" decoding="async" data-width="1840" data-height="1229" />
+<figure >
+<img src="/images/external/cdn-images-1.medium.com/1_60G2iOoS7NZGj3NlOXo3ig.jpeg" decoding="async" data-width="1840" data-height="1229" />
 <figcaption>GitHub -- San Francisco</figcaption>
 </figure>
 

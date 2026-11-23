@@ -14,13 +14,13 @@ Foi muito show, lotada a sala e o com a preseça de diversos amigos e celebridad
 
 <figure class="gallery-item">
 <div class="gallery-icon landscape">
-<a href="https://marcelioleal.com/2008/04/22/duro-de-errar-50/p1010027b/"><img src="/images/2008/04/p1010027b.jpg?resize=150%2C150&amp;ssl=1" class="attachment-thumbnail size-thumbnail" loading="lazy" decoding="async" data-attachment-id="72" data-permalink="https://marcelioleal.com/2008/04/22/duro-de-errar-50/p1010027b/" data-orig-file="/images/2008/04/p1010027b.jpg?fit=500%2C375&amp;ssl=1" data-orig-size="500,375" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;2.9&quot;,&quot;camera&quot;:&quot;X100,D540Z,C310Z&quot;,&quot;created_timestamp&quot;:&quot;943920000&quot;,&quot;focal_length&quot;:&quot;5.8&quot;,&quot;iso&quot;:&quot;320&quot;,&quot;shutter_speed&quot;:&quot;0.033333333333333&quot;}" data-image-title="p1010027b" data-image-description="" data-image-caption="" data-large-file="/images/2008/04/p1010027b.jpg?fit=500%2C375&amp;ssl=1" width="150" height="150" /></a>
+<a href="https://marcelioleal.com/2008/04/22/duro-de-errar-50/p1010027b/"><img src="/images/2008/04/p1010027b.jpg?resize=150%2C150&amp;ssl=1" class="attachment-thumbnail size-thumbnail" loading="lazy" decoding="async" width="150" height="150" /></a>
 </div>
 </figure>
 
 <figure class="gallery-item">
 <div class="gallery-icon landscape">
-<a href="https://marcelioleal.com/2008/04/22/duro-de-errar-50/p1010030b/"><img src="/images/2008/04/p1010030b.jpg?resize=150%2C150&amp;ssl=1" class="attachment-thumbnail size-thumbnail" loading="lazy" decoding="async" data-attachment-id="73" data-permalink="https://marcelioleal.com/2008/04/22/duro-de-errar-50/p1010030b/" data-orig-file="/images/2008/04/p1010030b.jpg?fit=500%2C375&amp;ssl=1" data-orig-size="500,375" data-comments-opened="1" data-comments-count="1" data-image-meta="{&quot;aperture&quot;:&quot;2.9&quot;,&quot;camera&quot;:&quot;X100,D540Z,C310Z&quot;,&quot;created_timestamp&quot;:&quot;943920000&quot;,&quot;focal_length&quot;:&quot;5.8&quot;,&quot;iso&quot;:&quot;203&quot;,&quot;shutter_speed&quot;:&quot;0.033333333333333&quot;}" data-image-title="p1010030b" data-image-description="" data-image-caption="" data-large-file="/images/2008/04/p1010030b.jpg?fit=500%2C375&amp;ssl=1" width="150" height="150" /></a>
+<a href="https://marcelioleal.com/2008/04/22/duro-de-errar-50/p1010030b/"><img src="/images/2008/04/p1010030b.jpg?resize=150%2C150&amp;ssl=1" class="attachment-thumbnail size-thumbnail" loading="lazy" decoding="async" data-comments-count="1" width="150" height="150" /></a>
 </div>
 </figure>
 

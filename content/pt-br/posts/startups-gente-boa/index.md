@@ -6,8 +6,8 @@ wp_id: 346
 categories: [software-dev]
 ---
 
-<figure class="wp-caption">
-<img src="/images/external/cdn-images-1.medium.com/1_d377OtMcA6FsjDjoUGenaA.jpeg" data-recalc-dims="1" decoding="async" data-width="640" data-height="428" />
+<figure >
+<img src="/images/external/cdn-images-1.medium.com/1_d377OtMcA6FsjDjoUGenaA.jpeg" decoding="async" data-width="640" data-height="428" />
 <figcaption><a href="https://www.flickr.com/photos/wocintechchat/" target="_blank" rel="noopener noreferrer">https://www.flickr.com/photos/wocintechchat/</a></figcaption>
 </figure>
 

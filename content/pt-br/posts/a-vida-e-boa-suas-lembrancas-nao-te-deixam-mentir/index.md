@@ -18,8 +18,8 @@ As memórias que mais têm aparecido não são aqueles dias únicos inesquecíve
 
 #### Os cafés da manhã na Delicidade
 
-<figure class="wp-caption">
-<img src="/images/external/cdn-images-1.medium.com/1_FCxPsVLlKl3qheLk8dF_xg.jpeg" data-recalc-dims="1" decoding="async" data-width="1024" data-height="768" />
+<figure >
+<img src="/images/external/cdn-images-1.medium.com/1_FCxPsVLlKl3qheLk8dF_xg.jpeg" decoding="async" data-width="1024" data-height="768" />
 <figcaption>Foto que pega um pouco da delicidade e Brás. Autor <a href="https://www.skyscrapercity.com/member.php?s=60ca57a48cd2ade4b110e15c63a0aff6&amp;u=805091" target="_blank" rel="noopener noreferrer">RicFelix</a>.</figcaption>
 </figure>
 
@@ -33,8 +33,8 @@ Ainda em Belém, mas na minha época mais "xovem", o <a href="https://www.google
 
 #### Os primeiros cafés de São Paulo
 
-<figure class="wp-caption">
-<img src="/images/external/cdn-images-1.medium.com/1_7y3NS440MHIjizEGx3e07w.png" data-recalc-dims="1" decoding="async" data-width="850" data-height="646" />
+<figure >
+<img src="/images/external/cdn-images-1.medium.com/1_7y3NS440MHIjizEGx3e07w.png" decoding="async" data-width="850" data-height="646" />
 <figcaption>Dentro e fora um lugar legal. Foto Dai Muller (via maps).</figcaption>
 </figure>
 
@@ -42,8 +42,8 @@ Sempre fui fã de café, mas em São Paulo isso virou uma paixão. Acho que uma 
 
 #### Almoço na Merça
 
-<figure class="wp-caption">
-<img src="/images/external/cdn-images-1.medium.com/1_naUEOVGqnS3ZcM9O_NvKUw.jpeg" data-recalc-dims="1" decoding="async" data-width="960" data-height="720" />
+<figure >
+<img src="/images/external/cdn-images-1.medium.com/1_naUEOVGqnS3ZcM9O_NvKUw.jpeg" decoding="async" data-width="960" data-height="720" />
 <figcaption>Livros, comida simples, atendimento indiferente = sucesso. Foto spcity.</figcaption>
 </figure>
 
@@ -61,8 +61,8 @@ Eles tem um lugar especial no meu coração. Dá pra listar: Ekoa, Le pain quoti
 
 #### O Aeropress e o Coffee Lab
 
-<figure class="wp-caption">
-<img src="/images/external/cdn-images-1.medium.com/1_mcKUGgKCVfKYJiE7-Ol6wA.jpeg" data-recalc-dims="1" decoding="async" data-width="612" data-height="612" />
+<figure >
+<img src="/images/external/cdn-images-1.medium.com/1_mcKUGgKCVfKYJiE7-Ol6wA.jpeg" decoding="async" data-width="612" data-height="612" />
 <figcaption>Eles preparam o café na tua mesa-- foto by Emerson D.(foursquare)</figcaption>
 </figure>
 
@@ -74,8 +74,8 @@ Esse ambiente todo inspira. Foram várias tardes de ótimo trabalho e café.
 
 #### Paris na Vila Mada
 
-<figure class="wp-caption">
-<img src="/images/external/cdn-images-1.medium.com/1_k7SI4IntRbqK7p0Pd4jbSw.jpeg" data-recalc-dims="1" decoding="async" data-width="960" data-height="720" />
+<figure >
+<img src="/images/external/cdn-images-1.medium.com/1_k7SI4IntRbqK7p0Pd4jbSw.jpeg" decoding="async" data-width="960" data-height="720" />
 <figcaption>Rolava uma paz depois das 20h por aí -- foto by Zvonko G. (foursquare)</figcaption>
 </figure>
 
@@ -85,8 +85,8 @@ O que acontece é que aquele momento parecia parte de um filme que se passava em
 
 #### Só um café da manhã
 
-<figure class="wp-caption">
-<img src="/images/external/cdn-images-1.medium.com/1_deMvfLBf9DfeI7HNQrSiHA.jpeg" data-recalc-dims="1" decoding="async" data-width="612" data-height="612" />
+<figure >
+<img src="/images/external/cdn-images-1.medium.com/1_deMvfLBf9DfeI7HNQrSiHA.jpeg" decoding="async" data-width="612" data-height="612" />
 <figcaption>Lembro muito desse café aí -- foto by Dani A. (foursquare)</figcaption>
 </figure>
 
