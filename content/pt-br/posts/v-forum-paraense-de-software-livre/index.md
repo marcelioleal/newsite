@@ -25,9 +25,9 @@ Abaixo algumas fotos do evento.
 \
 ***A galera do PHP(Otávio, eu e o Guilherme).***
 
-Mais fotos estão num <a href="http://www.flickr.com/photos/48101388@N00/sets/72157601753475975/" target="_blank" rel="noopener noreferrer">albúm</a> do Flickr.
+Mais fotos estão num <a href="https://www.flickr.com/photos/48101388@N00/sets/72157601753475975/" target="_blank" rel="noopener noreferrer">albúm</a> do Flickr.
 
-Há <a href="http://www.flickr.com/photos/helder84/589647743/" target="_blank" title="Hangar" rel="noopener noreferrer">aqui uma foto,</a> muito estaile, do [Hangar - Centro de Convenções da Amazônia](http://www.hangarcentrodeconvencoes.com.br/), feita por Helder Viana, acho que durante o Fórum.
+Há <a href="https://www.flickr.com/photos/helder84/589647743/" target="_blank" title="Hangar" rel="noopener noreferrer">aqui uma foto,</a> muito estaile, do [Hangar - Centro de Convenções da Amazônia](http://www.hangarcentrodeconvencoes.com.br/), feita por Helder Viana, acho que durante o Fórum.
 
 Aqui deixo meus agradecimentos para todos que colaboraram de alguma maneira com o evento. Desde a organização local, onde destaco a participação dos meus amigos Deuzinei Miranda(<a href="http://www.abstractbi.com/PortalAbstract/home.php" target="_blank" rel="noopener noreferrer">Abstract</a>), Otávio Rodrigues e Jack Bauer(Andrey Coelho - [Tecnologia em Rede de Computadores FAP](http://www.fap-pa.edu.br/)), dos palestrantes, como o pessoal da <a href="http://www.ufpa.br" target="_blank" title="UFPA" rel="noopener noreferrer">UFPA</a>, <a href="http://www.iesam.com.br" target="_blank" title="IESAM" rel="noopener noreferrer">IESAM</a>, ao pessoal que veio de outras cidades, como Boa Vista, Brasília, São Paulo, Manaus, João Pessoa, Curitiba, ...
 

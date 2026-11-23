@@ -6,9 +6,9 @@ wp_id: 11
 categories: [software-dev]
 ---
 
-Tudo começou no blog [batteries not included](http://blog.danielfmartins.com) com o post sobre [Smalltalk X Java](http://blog.danielfmartins.com/2007/05/07/smalltalk-x-java/). Neste post são apresentados trechos de códigos básicos nas linguagens [Java](http://pt.wikipedia.org/wiki/Java_(linguagem_de_programa%C3%A7%C3%A3o)) e [Smalltalk](http://pt.wikipedia.org/wiki/Smalltalk), fazendo um comparativo entre as vantagens das sintaxes entre as linguagens. O resultado ficou subjetivo, mas com leve vantagem para a sintaxe do Smalltalk, embora os exemplos em Java pudessem ser melhorados, conforme foi descrito nos comentários.
+Tudo começou no blog [batteries not included](http://blog.danielfmartins.com) com o post sobre [Smalltalk X Java](http://blog.danielfmartins.com/2007/05/07/smalltalk-x-java/). Neste post são apresentados trechos de códigos básicos nas linguagens [Java](https://pt.wikipedia.org/wiki/Java_(linguagem_de_programa%C3%A7%C3%A3o)) e [Smalltalk](https://pt.wikipedia.org/wiki/Smalltalk), fazendo um comparativo entre as vantagens das sintaxes entre as linguagens. O resultado ficou subjetivo, mas com leve vantagem para a sintaxe do Smalltalk, embora os exemplos em Java pudessem ser melhorados, conforme foi descrito nos comentários.
 
-Depois o negócio foi pro [Fecha Tag](http://blog.elcio.com.br/), por sinal um belo blog. Lá o autor escreveu um [post](http://blog.elcio.com.br/python-x-java-x-smalltalk/) com os exemplos em [Phyton](http://pt.wikipedia.org/wiki/Python).
+Depois o negócio foi pro [Fecha Tag](http://blog.elcio.com.br/), por sinal um belo blog. Lá o autor escreveu um [post](http://blog.elcio.com.br/python-x-java-x-smalltalk/) com os exemplos em [Phyton](https://pt.wikipedia.org/wiki/Python).
 
 Os exemplos comparados foram:
 
@@ -22,9 +22,9 @@ Nas comparações feitas entre o Smalltalk(vencedor do primeiro confronto) e o P
 
 - As implementações são bastantes parecidas
 - A simplicidade do Phyton é um pouco superior e elegante
-- Em Smalltak [Reflection](http://en.wikipedia.org/wiki/Reflection_%28computer_science%29) é muito style
+- Em Smalltak [Reflection](https://en.wikipedia.org/wiki/Reflection_%28computer_science%29) é muito style
 
-Nos comentários do fecha tag o leitor [Fábio](http://blog.elcio.com.br/python-x-java-x-smalltalk/#comment-54121) implementa os exemplos em [PHP](http://pt.wikipedia.org/wiki/PHP), abaixo transcrevo os códigos com uma modificação no fatorial.\
+Nos comentários do fecha tag o leitor [Fábio](http://blog.elcio.com.br/python-x-java-x-smalltalk/#comment-54121) implementa os exemplos em [PHP](https://pt.wikipedia.org/wiki/PHP), abaixo transcrevo os códigos com uma modificação no fatorial.\
 FATORIAL
 
 function factorial(\$n) {\
@@ -55,7 +55,7 @@ Reflection\
 \$o = new ReflectionClass('MyClass');\
 \$o-\>newInstance()-\>showMessage();
 
-Um dia desses conversando com o meu amigo [Antonio Fonseca](http://antoniofonseca.wordpress.com/) sobre linguagens, mais especificamente sobre Phyton e sua simplicidade e elegância. Sem dúvida Phyton é simples e elegante, mas esses fatores não colocam essa linguagem acima do PHP ou do [Ruby](http://pt.wikipedia.org/wiki/Ruby_(linguagem_de_programa%C3%A7%C3%A3o)), pois cada linguagem tem seu principal ramo de aplicação trazendo a tona os seus principais benefícios e simplicidades.
+Um dia desses conversando com o meu amigo [Antonio Fonseca](http://antoniofonseca.wordpress.com/) sobre linguagens, mais especificamente sobre Phyton e sua simplicidade e elegância. Sem dúvida Phyton é simples e elegante, mas esses fatores não colocam essa linguagem acima do PHP ou do [Ruby](https://pt.wikipedia.org/wiki/Ruby_(linguagem_de_programa%C3%A7%C3%A3o)), pois cada linguagem tem seu principal ramo de aplicação trazendo a tona os seus principais benefícios e simplicidades.
 
 Com estas implementações fica claro que em termos de simplicidade, Phyton e PHP se equivalem. Talvez em estilo alguns gostem mais de uma ou outra linguagem. Particularmente, existem pontos da sintaxe melhor em uma ou outra linguagem, o que, na minha opinião, as deixam num mesmo patamar.
 

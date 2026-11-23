@@ -31,6 +31,6 @@ A outra atividade que vou participar é uma repetição de um dos pontos de maio
 
 O debate vai acontecer no dia 27(quinta) no auditório das 18-20h. Serei o mediador. O debatedores serão: Rogério Carvalho (.NET) - [Adler Medrado](http://neshertech.net/adler/) (PHP) - [Maurício Leal](http://weblogs.java.net/blog/maltron/) (Java)
 
-Por fim, parabéns ao meu amigo [Márcel Abreu](http://flickr.com/photos/mahrcel) pela coordenação do IV Echo PHP.
+Por fim, parabéns ao meu amigo [Márcel Abreu](https://flickr.com/photos/mahrcel) pela coordenação do IV Echo PHP.
 
 Nos encontramos lá.

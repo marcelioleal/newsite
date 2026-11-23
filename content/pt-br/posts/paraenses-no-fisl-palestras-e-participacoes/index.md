@@ -10,7 +10,7 @@ Me surpreendeu a galera paraense no FISL.
 
 Além da tradicional galera do SERPRO, foram mais pessoas por conta própia de que das outras versões do evento.
 
-[](http://www.flickr.com/photos/48101388@N00/2437094028/ "Galera do Pará assitindo alguma palestra por Marcelio Leal, no Flickr")
+[](https://www.flickr.com/photos/48101388@N00/2437094028/ "Galera do Pará assitindo alguma palestra por Marcelio Leal, no Flickr")
 
 *Galera do SERPRO e do IESAM reunidas em uma apresentação. (Antonio Carlos, Edinéia, Xavier, Eu, Luiz Sanches, Calex, Romero)*
 
@@ -27,14 +27,14 @@ Luiz, eu e o Salvatti.
 
 Depois tivemos a [palestra do Edgar](http://portal.softwarelivre.org/news/11023), que como sempre esteve cheia e contou com seu bom humor para apresentar as soluções JBOSS.
 
-[](http://www.flickr.com/photos/48101388@N00/2436817762/ "Palestra do Edgar por Marcelio Leal, no Flickr")
+[](https://www.flickr.com/photos/48101388@N00/2436817762/ "Palestra do Edgar por Marcelio Leal, no Flickr")
 
 Depois eu apresentei... 🙂\
 [\
-](http://www.flickr.com/photos/48101388@N00/2436289131/ "Durante a palestra por Marcelio Leal, no Flickr")\
+](https://www.flickr.com/photos/48101388@N00/2436289131/ "Durante a palestra por Marcelio Leal, no Flickr")\
 [\
-](http://www.flickr.com/photos/48101388@N00/2436070575/ "Começo da palestra por Marcelio Leal, no Flickr")\
-[](http://www.flickr.com/photos/48101388@N00/2436078431/ "Durante a palestra por Marcelio Leal, no Flickr")
+](https://www.flickr.com/photos/48101388@N00/2436070575/ "Começo da palestra por Marcelio Leal, no Flickr")\
+[](https://www.flickr.com/photos/48101388@N00/2436078431/ "Durante a palestra por Marcelio Leal, no Flickr")
 
 Por fim tivemos a [apresentação do Luiz](http://fisl.softwarelivre.org/9.0/papers/pub/programacao/41), fechando bem nossa participação.
 

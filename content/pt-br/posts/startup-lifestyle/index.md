@@ -126,7 +126,7 @@ Recebi um convite de dois amigos pra fazer uma consultoria pra uma startup que e
 <img src="/images/external/cdn-images-1.medium.com/1_AqUJuRTlsx-i_nkoxh6VDA.png" data-recalc-dims="1" decoding="async" data-width="900" data-height="1350" />
 </figure>
 
-Até que lendo o livro Startup (<a href="http://www.amazon.com/Founders-Work-Stories-Startups-Early/dp/1430210788" target="_blank" rel="noopener noreferrer">Founders at Work</a>) da Jéssica Livingston as coisas ficaram mais claras pra mim. Foi quando eu decidi que iria sair do SERPRO e aceitar a proposta full time da Onsee. Tentei me preparar e aguentar uns 3 meses pra juntar alguma coisa. Acabei nem conseguindo ficar esse tempo. Já não conseguia render no SERPRO e isso me afetava negativamente.
+Até que lendo o livro Startup (<a href="https://www.amazon.com/Founders-Work-Stories-Startups-Early/dp/1430210788" target="_blank" rel="noopener noreferrer">Founders at Work</a>) da Jéssica Livingston as coisas ficaram mais claras pra mim. Foi quando eu decidi que iria sair do SERPRO e aceitar a proposta full time da Onsee. Tentei me preparar e aguentar uns 3 meses pra juntar alguma coisa. Acabei nem conseguindo ficar esse tempo. Já não conseguia render no SERPRO e isso me afetava negativamente.
 
 Foi nesse período que também percebi que eu não estava guiando minha carreira, não havia um plano de médio/longo prazo, havia apenas uma busca pra melhorar minha condição e diminuir meus riscos dentro de um mercado instável e pequeno.
 

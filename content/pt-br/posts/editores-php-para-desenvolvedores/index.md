@@ -8,20 +8,20 @@ categories: [software-dev]
 
 Todo mundo procura um editor style pra desenvolver seu trabalho de forma otimizada, mas editor de código é igual arquitetura de sistema de informação, cada um teu seu preferido. 🙂
 
-Primeiramente, devemos ter claro que o editor de código não é algo primordial para um bom desenvolvimento de software em [**PHP**](http://www.php.net), já no [Java](http://www.java.com) é algo primordial. Há outros fatores que são bem mais importantes para maior qualidade e produtividade, como a escolha de bons [frameworks](http://pt.wikipedia.org/wiki/Framework), [geradores](http://pt.wikipedia.org/wiki/Gerador_de_C%C3%B3digo) [de cógido](http://pt.wikipedia.org/wiki/Gerador_de_C%C3%B3digo) e de [artefatos](http://www.lbd.dcc.ufmg.br:8080/colecoes/sbes/2001/020.pdf), padrões, entre outros aspectos. Se hoje o editor é algo primordial em seu desenvolvimento PHP, repense seu processo de desenvolvimento, pois, ele não está atualizado, ou tem aspectos de desenvolvimento atrasados.
+Primeiramente, devemos ter claro que o editor de código não é algo primordial para um bom desenvolvimento de software em [**PHP**](http://www.php.net), já no [Java](http://www.java.com) é algo primordial. Há outros fatores que são bem mais importantes para maior qualidade e produtividade, como a escolha de bons [frameworks](https://pt.wikipedia.org/wiki/Framework), [geradores](https://pt.wikipedia.org/wiki/Gerador_de_C%C3%B3digo) [de cógido](https://pt.wikipedia.org/wiki/Gerador_de_C%C3%B3digo) e de [artefatos](http://www.lbd.dcc.ufmg.br:8080/colecoes/sbes/2001/020.pdf), padrões, entre outros aspectos. Se hoje o editor é algo primordial em seu desenvolvimento PHP, repense seu processo de desenvolvimento, pois, ele não está atualizado, ou tem aspectos de desenvolvimento atrasados.
 
 Acho que alguns aspectos são bem interessantes pra um editor PHP:
 
 - Project Manager;
-- Auto-completar de tag [HTML](http://pt.wikipedia.org/wiki/HTML), de preferência fechando as tags automaticamente, mas não sendo intrusivo;
-- Code Assist sobre as linguagens [JavaScript](http://pt.wikipedia.org/wiki/JavaScript), HTML e [CSS](http://pt.wikipedia.org/wiki/CSS);
+- Auto-completar de tag [HTML](https://pt.wikipedia.org/wiki/HTML), de preferência fechando as tags automaticamente, mas não sendo intrusivo;
+- Code Assist sobre as linguagens [JavaScript](https://pt.wikipedia.org/wiki/JavaScript), HTML e [CSS](https://pt.wikipedia.org/wiki/CSS);
 - PHP Syntax Check, Code Completion e Functions Hint;
 - Possibilidades de customização de templates;
 - Navegação entre os códigos PHP(Classes, métodos, includes,...);
 - PHP Debugger;
-- Integração com controles de versão, principalmente o [SVN](http://pt.wikipedia.org/wiki/Subversion);
+- Integração com controles de versão, principalmente o [SVN](https://pt.wikipedia.org/wiki/Subversion);
 
-Difícilmente teremos editores livres com todas essas características, particularmente, ainda não achei. É bem mais difícil se desenvolver um editor realmente bom em PHP, por ser de [tipagem dinâmica](http://en.wikipedia.org/wiki/Type_system#Dynamic_typing) e não [type-safe](http://en.wikipedia.org/wiki/Type_safety) por padrão. Por isso é admirável o Zend Studio, que na minha opinião, é o melhor editor de código independente de linguagem.
+Difícilmente teremos editores livres com todas essas características, particularmente, ainda não achei. É bem mais difícil se desenvolver um editor realmente bom em PHP, por ser de [tipagem dinâmica](https://en.wikipedia.org/wiki/Type_system#Dynamic_typing) e não [type-safe](https://en.wikipedia.org/wiki/Type_safety) por padrão. Por isso é admirável o Zend Studio, que na minha opinião, é o melhor editor de código independente de linguagem.
 
 No site [PHP Editors](http://www.php-editors.com/review/) temos uma lista dos principais editores PHP e uma descrição breve sobre suas funcionalidades.
 

@@ -19,7 +19,7 @@ A nossa equipe, os Parasitas(Reloaded) está preparadíssima para esse desafio. 
 
 Da direita pra esquerda, Deuzinei, que não larga o colete nem em terra. Guga boy, fora da água num fim de semana. Eu, na ilha buraco.
 
-O nosso amigo, e componente, Gustavo Carvalho, também faz parte da equipe, mas vai pra <a href="http://maps.google.com/maps/ms?f=q&amp;hl=en&amp;geocode=&amp;ie=UTF8&amp;msa=0&amp;msid=110992801024239873348.00043a1e31cbecddbc1ff&amp;ll=-0.60149,-47.346268&amp;spn=0.134575,0.32135&amp;z=12&amp;om=1" target="_blank" rel="noopener noreferrer">Salinas</a> e não participará desta etapa, na próxima acho que ele me substituirá, pois não irei estar aqui em Belém.
+O nosso amigo, e componente, Gustavo Carvalho, também faz parte da equipe, mas vai pra <a href="https://maps.google.com/maps/ms?f=q&amp;hl=en&amp;geocode=&amp;ie=UTF8&amp;msa=0&amp;msid=110992801024239873348.00043a1e31cbecddbc1ff&amp;ll=-0.60149,-47.346268&amp;spn=0.134575,0.32135&amp;z=12&amp;om=1" target="_blank" rel="noopener noreferrer">Salinas</a> e não participará desta etapa, na próxima acho que ele me substituirá, pois não irei estar aqui em Belém.
 
 Nós não tempos bons equipamentos.\
 Nós não temos o melhor dos preparos físicos.\

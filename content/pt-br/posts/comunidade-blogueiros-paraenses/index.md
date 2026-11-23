@@ -18,4 +18,4 @@ Agora com a Palavra [Pedrox](http://pedrox.brogui.com/):
 
 
 
-Para quem não utiliza Orkut: [Facebook](http://www.facebook.com/group.php?gid=20154412670), [Multiply](http://blogueirosparaenses.multiply.com/), [MySpace](http://groups.myspace.com/blogueirosparaenses), [Sonico](http://www.sonico.com/blogueirosparaenses) (Égua! até aqui!).
+Para quem não utiliza Orkut: [Facebook](https://www.facebook.com/group.php?gid=20154412670), [Multiply](http://blogueirosparaenses.multiply.com/), [MySpace](http://groups.myspace.com/blogueirosparaenses), [Sonico](http://www.sonico.com/blogueirosparaenses) (Égua! até aqui!).
