@@ -1,9 +1,10 @@
 [build]
-command = "hugo --gc --minify"
+command = "hugo --gc --minify && npx pagefind --site public --output-subdir pagefind"
 publish = "public"
 
 [build.environment]
 HUGO_VERSION = "0.170.1"
+NODE_VERSION = "20"
 TZ = "America/Sao_Paulo"
 GIT_SUBMODULE_STRATEGY = "recursive"
 
@@ -12,16 +13,16 @@ GIT_SUBMODULE_STRATEGY = "recursive"
 # (new.marcelioleal.com). HUGO_ENV is "staging" so PaperMod's robots meta emits
 # noindex, nofollow. Phase 3 cutover flips this to "production" when the apex
 # marcelioleal.com becomes the real production domain.
-command = "hugo --gc --minify --baseURL ${URL}"
+command = "hugo --gc --minify --baseURL ${URL} && npx pagefind --site public --output-subdir pagefind"
 [context.production.environment]
 HUGO_ENV = "staging"
 
 [context.deploy-preview]
-command = "hugo --gc --minify --baseURL ${DEPLOY_PRIME_URL}"
+command = "hugo --gc --minify --baseURL ${DEPLOY_PRIME_URL} && npx pagefind --site public --output-subdir pagefind"
 [context.deploy-preview.environment]
 HUGO_ENV = "preview"
 
 [context.branch-deploy]
-command = "hugo --gc --minify --baseURL ${DEPLOY_PRIME_URL}"
+command = "hugo --gc --minify --baseURL ${DEPLOY_PRIME_URL} && npx pagefind --site public --output-subdir pagefind"
 [context.branch-deploy.environment]
 HUGO_ENV = "preview"

@@ -48,3 +48,34 @@
 <link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/svg+xml" href="/brand/ml-logo.svg">
 <link rel="apple-touch-icon" href="/brand/icon-512.png">
+
+{{- /* Pagefind UI — static search built at `netlify.toml` build step.
+     Loads only when /pagefind/pagefind-ui.js is reachable (production build).
+     Local `hugo server` serves a missing index silently; the input stays
+     disabled with placeholder text instead of throwing. */ -}}
+<link rel="stylesheet" href="/pagefind/pagefind-ui.css" onerror="this.remove()">
+<script src="/pagefind/pagefind-ui.js" defer onerror="document.getElementById('search')?.setAttribute('data-unavailable','1')"></script>
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    if (typeof PagefindUI !== 'function') return;
+    new PagefindUI({
+      element: '#search',
+      showImages: false,
+      showSubResults: true,
+      resetStyles: false,
+      translations: {
+        placeholder: document.getElementById('search')?.dataset.placeholder || 'Search…',
+        clear_search: 'Clear',
+        load_more: 'Load more',
+        search_label: 'Search this site',
+        filters_label: 'Filters',
+        zero_results: '{{ i18n "search_no_results" }}',
+        many_results: '{{ i18n "search_many_results" }}',
+        one_result: '{{ i18n "search_one_result" }}',
+        alt_search: '{{ i18n "search_no_results" }} "[SEARCH_TERM]"',
+        search_suggestion: '',
+        searching: ''
+      }
+    });
+  });
+</script>
