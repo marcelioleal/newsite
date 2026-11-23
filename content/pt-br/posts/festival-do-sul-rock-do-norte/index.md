@@ -45,22 +45,7 @@ Eu não era fã de Nirvana, e como na [música do Molho Negro](https://www.youtu
 
 Era um pouco complicado eu me conectar com a música na minha cidade, não porque não tinha opção, mas porque ela não refletia o que eu passava ou de que eu gostava naquele momento. Eletrônica tinha a [Beer House](https://www.youtube.com/watch?v=nwhtifc9cZM) mas eu não sabia o que um DJ fazia de verdade. E também, o estilo não chegava a ser muito popular na cidade. Muitas vezes eles soltavam o "CD de grito", como meu amigo Chico comentava. Cê passava no muro e ouvia o tradicional "arrea! arrea! arrea!", aí pagava o ingresso com o dinheiro limitadíssimo e via umas 10 pessoas no *dance floor*. Frustrante. Com certeza isso adiou minha conexão com o eletrônico. Não estou julgando a Beer House. Eu agradeço muito por ter esse lugar na minha adolescência. Fui feliz lá.
 
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
-<div class="wp-block-embed__wrapper">
-<div class="iframe">
-<div id="player">
 
-</div>
-<div class="player-unavailable">
-<h1 id="ocorreu-um-erro." class="message">Ocorreu um erro.</h1>
-<div class="submessage">
-Não é possível executar o JavaScript.
-</div>
-</div>
-</div>
-</div>
-<figcaption>Assim eu era feliz na Beer House, pelo menos na minha cabeça.</figcaption>
-</figure>
 
 Tinha o forró, mas eu era muito tímido para aprender a dançar no nível esperado para um "nativo" de Castanhal. Só fui aprender a dançar Calcinha Preta em Belém. Tarde demais. Além disso, as letras não conectavam comigo. Embora tenha que admitir que as versões de [Scorpions](https://www.youtube.com/watch?v=qftBo2EVces) e de [U2](https://www.youtube.com/watch?v=Rb9XpWXykIs) marcaram época.
 
@@ -93,97 +78,11 @@ As coisas são muito bem pensadas. O som? Perfeito!
 
 As apresentações foram impecáveis. É muito difícil que isso aconteça. Não sei, acho que esse lugar e esse público impactam os DJs. Cheguei no [Chambord](https://open.spotify.com/artist/5S5jGEkiJMWHt6XYasZOLJ?si=AdGlwLGRR5aFPa5fgPP8WA), passei por [Zac](https://open.spotify.com/artist/5xUXAwPZ98FzFgjTNOIPyv?si=g8nd_5uZRvSuQf3bH_7kLg) B2B [Bhaskar](https://open.spotify.com/artist/6kT18gnkVrCz8xJQcrib7L?si=LIdWrDvdQu-bAO8I7sZ_Ug), [Desiree](https://open.spotify.com/artist/6TZbLCcOCv1DJvN28x3FBa?si=DKEDVDOHSMKV5KvINz_5Ig), [Guy J](https://open.spotify.com/artist/7Em4kWZ5atMYknHwSkp3gD?si=znZ2Oa32RMypRIqX-xsTXQ) e finalizei no [Deep Dish](https://open.spotify.com/artist/720JYpdCgHuTmDeryW0wEA?si=g-bXwhfMSBCmgX5Nsv-lUQ). Se o cara não chamar isso de bênção, não sei mais o que ele pode chamar.
 
-<figure class="wp-block-embed is-type-rich is-provider-spotify wp-block-embed-spotify wp-embed-aspect-21-9 wp-has-aspect-ratio">
-<div class="wp-block-embed__wrapper">
-<div class="iframe">
-<div id="__next">
-<div class="encore-dark-theme encore-layout-themes" data-testid="main-page">
-<div class="TrackWidget_widgetContainer__gADzr" data-testid="embed-widget-container" style="--dynamic-opacity:1;--dynamic-background-base:rgba(24, 80, 144, 255);--dynamic-background-tinted:rgba(0, 42, 103, 255);--dynamic-background-tinted-50:rgba(0, 42, 103, 0.5);--background-base:rgba(24, 80, 144, 255);--background-tinted:rgba(0, 42, 103, 255);--text-base:rgba(255, 255, 255, 255);--text-bright-accent:rgba(255, 255, 255, 255);--text-subdued:rgba(164, 210, 255, 255)">
-<div class="BackgroundColorContainer_backgroundColorContainer__YZSQ7">
-
-</div>
-<div class="TrackWidget_singleGridContainer__iYPj8" data-testid="initialized-false">
-<div class="TrackWidget_coverArtContainer__YVwp8">
-<div class="CoverArtBase_coverArtContainer__CYvXE CoverArtSingle_coverArtSingle__KLcKa">
-<img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02868f9f46dbce9c52024448d4" class="e-101111-legacy-image CoverArtBase_coverArt__ne0XI" style="--encore-image-border-radius:var(--encore-corner-radius-larger-2)" data-encore-id="image" alt="All I Need - DESIREE Remix cover" />
-</div>
-</div>
-<div class="TrackWidget_spotifyLogoContainer__9m41A">
-<a href="https://open.spotify.com" role="button" aria-label="Play on Spotify" data-testid="spotify-logo" title="Play on Spotify"><img src="data:image/svg+xml;base64,PHN2ZyBkYXRhLWVuY29yZS1pZD0iaWNvbiIgcm9sZT0iaW1nIiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9ImUtMTAxMTExLWljb24iIHN0eWxlPSItLWVuY29yZS1pY29uLWZpbGw6dmFyKC0tdGV4dC1iYXNlKTstLWVuY29yZS1pY29uLWhlaWdodDp2YXIoLS1lbmNvcmUtZ3JhcGhpYy1zaXplLWRlY29yYXRpdmUtbGFyZ2VyKTstLWVuY29yZS1pY29uLXdpZHRoOnZhcigtLWVuY29yZS1ncmFwaGljLXNpemUtZGVjb3JhdGl2ZS1sYXJnZXIpIiB2aWV3Ym94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xMi40MzggMS4wMDlDNi4zNjguNzY5IDEuMjUxIDUuNDk0IDEuMDA4IDExLjU2NWMtLjI0IDYuMDcgNC40ODUgMTEuMTg2IDEwLjU1NiAxMS40MjYgNi4wNy4yNDIgMTEuMTg1LTQuNDg0IDExLjQyNy0xMC41NTRTMTguNTA3IDEuMjUxIDEyLjQzOCAxLjAwOW00LjY0NCAxNi4xMTRhLjY1Ny42NTcgMCAwIDEtLjg5Ny4yNDYgMTMuMiAxMy4yIDAgMCAwLTQuNzEtMS42MDIgMTMuMiAxMy4yIDAgMCAwLTQuOTY4LjI0Mi42NTguNjU4IDAgMCAxLS4zMS0xLjI3OCAxNC41IDE0LjUgMCAwIDEgNS40Ni0uMjY1YzEuODM3LjI1NyAzLjU3OS44NTEgNS4xNzcgMS43Ni4zMTUuMTc4LjQyNS41OC4yNDYuODk2em0xLjQ0NS0yLjg4N2EuODUzLjg1MyAwIDAgMS0xLjE1OC4zNDQgMTYuMiAxNi4yIDAgMCAwLTUuNDc1LTEuNzk3IDE2LjIgMTYuMiAwIDAgMC01Ljc1OC4yMTkuODU1Ljg1NSAwIDAgMS0xLjAxOC0uNjUuODUuODUgMCAwIDEgLjY1LTEuMDE4IDE3LjkgMTcuOSAwIDAgMSA2LjM2Mi0uMjQxIDE3LjkgMTcuOSAwIDAgMSA2LjA0OSAxLjk4NWMuNDE1LjIyNC41Ny43NDMuMzQ0IDEuMTU4em0xLjYwMi0zLjI1NWExLjA1IDEuMDUgMCAwIDEtMS40MTguNDQ4IDE5LjcgMTkuNyAwIDAgMC02LjM0MS0yLjAyNSAxOS42IDE5LjYgMCAwIDAtNi42NTUuMTk5IDEuMDUgMS4wNSAwIDEgMS0uNDE3LTIuMDYgMjEuNyAyMS43IDAgMCAxIDcuMzY0LS4yMiAyMS43IDIxLjcgMCAwIDEgNy4wMTkgMi4yNGMuNTE1LjI2OC43MTUuOTAzLjQ0OCAxLjQxOCIgLz48L3N2Zz4=" class="e-101111-icon" /></a>
-</div>
-<div class="TrackWidget_metadataWrapper__GzypS">
-<h1 id="section" class="e-101111-text encore-text-body-medium TitleAndSubtitle_title__Nwyku" data-encore-id="text" data-testid="entity-title"></h1>
-<div class="Marquee_container__CV7du">
-<div class="Marquee_scrollableContainer__mcSox">
-<div class="Marquee_inner__UKCZf">
-<a href="" class="e-101111-text-link e-101111-overflow-wrap-anywhere encore-internal-color-text-base e-101111-text-link--standalone e-101111-text-link--use-focus" data-encore-id="textLink">All I Need - DESIREE Remix</a>
-</div>
-</div>
-</div>
-<span class="TrackWidget_labelsAndSubtitle__nBrZb"></span>
-<h2 id="section-1" class="TitleAndSubtitle_subtitle__P1cxq" data-testid="subtitle"></h2>
-<div class="Marquee_container__CV7du">
-<div class="Marquee_scrollableContainer__mcSox">
-<div class="Marquee_inner__UKCZf">
-<span class="TitleAndSubtitle_wrapper__xndXC"><a href="https://open.spotify.com/artist/3oKnyRhYWzNsTiss5n4Z1J?go=1&amp;sp_cid=321037156a3006d0894d3b1d815b2c0b" class="e-101111-text-link e-101111-overflow-wrap-anywhere encore-internal-color-text-subdued e-101111-text-link--standalone e-101111-text-link--use-focus" data-encore-id="textLink">LP Giobbi</a><span class="e-101111-text encore-text-body-medium encore-internal-color-text-subdued" data-encore-id="text">, </span><a href="https://open.spotify.com/artist/6TZbLCcOCv1DJvN28x3FBa?go=1&amp;sp_cid=321037156a3006d0894d3b1d815b2c0b" class="e-101111-text-link e-101111-overflow-wrap-anywhere encore-internal-color-text-subdued e-101111-text-link--standalone e-101111-text-link--use-focus" data-encore-id="textLink">DESIREE</a></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</figure>
+<p><a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer">Ouvir no Spotify ↗</a></p>
 
 A gente tá vivendo mais um momento incrível da música eletrônica. Há algumas semanas eu vi o gênio Laurent Garnier. E no último domingo teve mais uma missa (ou after da Time Warp) com o Papa [Sven Vath](https://open.spotify.com/artist/5TQaBSTOSypp7S4jfSnN3F?si=h3ELwcWzQLWhR61018lKUQ). Tempos bons!
 
-<figure class="wp-block-embed is-type-rich is-provider-spotify wp-block-embed-spotify wp-embed-aspect-21-9 wp-has-aspect-ratio">
-<div class="wp-block-embed__wrapper">
-<div class="iframe">
-<div id="__next">
-<div class="encore-dark-theme encore-layout-themes" data-testid="main-page">
-<div class="TrackWidget_widgetContainer__gADzr" data-testid="embed-widget-container" style="--dynamic-opacity:1;--dynamic-background-base:rgba(159, 0, 0, 255);--dynamic-background-tinted:rgba(97, 0, 0, 255);--dynamic-background-tinted-50:rgba(97, 0, 0, 0.5);--background-base:rgba(159, 0, 0, 255);--background-tinted:rgba(97, 0, 0, 255);--text-base:rgba(255, 255, 255, 255);--text-bright-accent:rgba(255, 255, 255, 255);--text-subdued:rgba(255, 190, 177, 255)">
-<div class="BackgroundColorContainer_backgroundColorContainer__YZSQ7">
-
-</div>
-<div class="TrackWidget_singleGridContainer__iYPj8" data-testid="initialized-false">
-<div class="TrackWidget_coverArtContainer__YVwp8">
-<div class="CoverArtBase_coverArtContainer__CYvXE CoverArtSingle_coverArtSingle__KLcKa">
-<img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02ce8d387821de3fe12b0e9bfb" class="e-101111-legacy-image CoverArtBase_coverArt__ne0XI" style="--encore-image-border-radius:var(--encore-corner-radius-larger-2)" data-encore-id="image" alt="Secret Garden - Chambord Remix cover" />
-</div>
-</div>
-<div class="TrackWidget_spotifyLogoContainer__9m41A">
-<a href="https://open.spotify.com" role="button" aria-label="Play on Spotify" data-testid="spotify-logo" title="Play on Spotify"><img src="data:image/svg+xml;base64,PHN2ZyBkYXRhLWVuY29yZS1pZD0iaWNvbiIgcm9sZT0iaW1nIiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9ImUtMTAxMTExLWljb24iIHN0eWxlPSItLWVuY29yZS1pY29uLWZpbGw6dmFyKC0tdGV4dC1iYXNlKTstLWVuY29yZS1pY29uLWhlaWdodDp2YXIoLS1lbmNvcmUtZ3JhcGhpYy1zaXplLWRlY29yYXRpdmUtbGFyZ2VyKTstLWVuY29yZS1pY29uLXdpZHRoOnZhcigtLWVuY29yZS1ncmFwaGljLXNpemUtZGVjb3JhdGl2ZS1sYXJnZXIpIiB2aWV3Ym94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xMi40MzggMS4wMDlDNi4zNjguNzY5IDEuMjUxIDUuNDk0IDEuMDA4IDExLjU2NWMtLjI0IDYuMDcgNC40ODUgMTEuMTg2IDEwLjU1NiAxMS40MjYgNi4wNy4yNDIgMTEuMTg1LTQuNDg0IDExLjQyNy0xMC41NTRTMTguNTA3IDEuMjUxIDEyLjQzOCAxLjAwOW00LjY0NCAxNi4xMTRhLjY1Ny42NTcgMCAwIDEtLjg5Ny4yNDYgMTMuMiAxMy4yIDAgMCAwLTQuNzEtMS42MDIgMTMuMiAxMy4yIDAgMCAwLTQuOTY4LjI0Mi42NTguNjU4IDAgMCAxLS4zMS0xLjI3OCAxNC41IDE0LjUgMCAwIDEgNS40Ni0uMjY1YzEuODM3LjI1NyAzLjU3OS44NTEgNS4xNzcgMS43Ni4zMTUuMTc4LjQyNS41OC4yNDYuODk2em0xLjQ0NS0yLjg4N2EuODUzLjg1MyAwIDAgMS0xLjE1OC4zNDQgMTYuMiAxNi4yIDAgMCAwLTUuNDc1LTEuNzk3IDE2LjIgMTYuMiAwIDAgMC01Ljc1OC4yMTkuODU1Ljg1NSAwIDAgMS0xLjAxOC0uNjUuODUuODUgMCAwIDEgLjY1LTEuMDE4IDE3LjkgMTcuOSAwIDAgMSA2LjM2Mi0uMjQxIDE3LjkgMTcuOSAwIDAgMSA2LjA0OSAxLjk4NWMuNDE1LjIyNC41Ny43NDMuMzQ0IDEuMTU4em0xLjYwMi0zLjI1NWExLjA1IDEuMDUgMCAwIDEtMS40MTguNDQ4IDE5LjcgMTkuNyAwIDAgMC02LjM0MS0yLjAyNSAxOS42IDE5LjYgMCAwIDAtNi42NTUuMTk5IDEuMDUgMS4wNSAwIDEgMS0uNDE3LTIuMDYgMjEuNyAyMS43IDAgMCAxIDcuMzY0LS4yMiAyMS43IDIxLjcgMCAwIDEgNy4wMTkgMi4yNGMuNTE1LjI2OC43MTUuOTAzLjQ0OCAxLjQxOCIgLz48L3N2Zz4=" class="e-101111-icon" /></a>
-</div>
-<div class="TrackWidget_metadataWrapper__GzypS">
-<h1 id="section" class="e-101111-text encore-text-body-medium TitleAndSubtitle_title__Nwyku" data-encore-id="text" data-testid="entity-title"></h1>
-<div class="Marquee_container__CV7du">
-<div class="Marquee_scrollableContainer__mcSox">
-<div class="Marquee_inner__UKCZf">
-<a href="" class="e-101111-text-link e-101111-overflow-wrap-anywhere encore-internal-color-text-base e-101111-text-link--standalone e-101111-text-link--use-focus" data-encore-id="textLink">Secret Garden - Chambord Remix</a>
-</div>
-</div>
-</div>
-<span class="TrackWidget_labelsAndSubtitle__nBrZb"></span>
-<h2 id="section-1" class="TitleAndSubtitle_subtitle__P1cxq" data-testid="subtitle"></h2>
-<div class="Marquee_container__CV7du">
-<div class="Marquee_scrollableContainer__mcSox">
-<div class="Marquee_inner__UKCZf">
-<span class="TitleAndSubtitle_wrapper__xndXC"><a href="https://open.spotify.com/artist/7DxGG5hXfOSgepxXa7UqRF?go=1&amp;sp_cid=415bb4dd9ec2edb2686433db950ec249" class="e-101111-text-link e-101111-overflow-wrap-anywhere encore-internal-color-text-subdued e-101111-text-link--standalone e-101111-text-link--use-focus" data-encore-id="textLink">Lamomali</a><span class="e-101111-text encore-text-body-medium encore-internal-color-text-subdued" data-encore-id="text">, </span><a href="https://open.spotify.com/artist/6soPpJHlCtN6SY8pWlfbC6?go=1&amp;sp_cid=415bb4dd9ec2edb2686433db950ec249" class="e-101111-text-link e-101111-overflow-wrap-anywhere encore-internal-color-text-subdued e-101111-text-link--standalone e-101111-text-link--use-focus" data-encore-id="textLink">-M-</a><span class="e-101111-text encore-text-body-medium encore-internal-color-text-subdued" data-encore-id="text">, </span><a href="https://open.spotify.com/artist/5S5jGEkiJMWHt6XYasZOLJ?go=1&amp;sp_cid=415bb4dd9ec2edb2686433db950ec249" class="e-101111-text-link e-101111-overflow-wrap-anywhere encore-internal-color-text-subdued e-101111-text-link--standalone e-101111-text-link--use-focus" data-encore-id="textLink">Chambord</a><span class="e-101111-text encore-text-body-medium encore-internal-color-text-subdued" data-encore-id="text">, </span><a href="https://open.spotify.com/artist/2nCACYdIndYchzX4bxLcTW?go=1&amp;sp_cid=415bb4dd9ec2edb2686433db950ec249" class="e-101111-text-link e-101111-overflow-wrap-anywhere encore-internal-color-text-subdued e-101111-text-link--standalone e-101111-text-link--use-focus" data-encore-id="textLink">Toumani Diabaté</a><span class="e-101111-text encore-text-body-medium encore-internal-color-text-subdued" data-encore-id="text">, </span><a href="https://open.spotify.com/artist/315I2IHM3SKeXen5SdTerA?go=1&amp;sp_cid=415bb4dd9ec2edb2686433db950ec249" class="e-101111-text-link e-101111-overflow-wrap-anywhere encore-internal-color-text-subdued e-101111-text-link--standalone e-101111-text-link--use-focus" data-encore-id="textLink">Balla Diabaté</a><span class="e-101111-text encore-text-body-medium encore-internal-color-text-subdued" data-encore-id="text">, </span><a href="https://open.spotify.com/artist/4G5ZJny3HvX6Il7eHVfnNC?go=1&amp;sp_cid=415bb4dd9ec2edb2686433db950ec249" class="e-101111-text-link e-101111-overflow-wrap-anywhere encore-internal-color-text-subdued e-101111-text-link--standalone e-101111-text-link--use-focus" data-encore-id="textLink">Fatoumata Diawara</a></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</figure>
+<p><a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer">Ouvir no Spotify ↗</a></p>
 
 Assim, pra você, meu amigo, que nunca ouviu os artistas aqui listados, o que eu posso lhe falar é que a experiência de vê-los ao vivo é muito diferente. Você ouvirá remixes nunca feitos, mashups que é difícil acreditar, tracks não lançadas, trechos longos sem build-ups, etc. A coisa é fina. O Spotify tem bem pouco do que um set proporciona, bem pouco mesmo. Outra experiência.
 
@@ -239,50 +138,7 @@ Uma outra coisa foi imediata pra mim: a capa do álbum Fique Online me lembrou d
 
 O álbum é legal no geral, mas curti bastante 3 tracks: Poesia, show de vocal! Portamento lindo na segunda parte da música; Apostas e; Me rendo. Sei que agora vocês vão querer mais rock nortista, então [aqui vai minha playlist](https://open.spotify.com/playlist/6uonlDCI2viFsnQbuCZsEX?si=342d79bea34c47c8).
 
-<figure class="wp-block-embed is-type-rich is-provider-spotify wp-block-embed-spotify wp-embed-aspect-21-9 wp-has-aspect-ratio">
-<div class="wp-block-embed__wrapper">
-<div class="iframe">
-<div id="__next">
-<div class="encore-dark-theme encore-layout-themes" data-testid="main-page">
-<div class="TrackWidget_widgetContainer__gADzr" data-testid="embed-widget-container" style="--dynamic-opacity:1;--dynamic-background-base:rgba(0, 96, 0, 255);--dynamic-background-tinted:rgba(0, 59, 0, 255);--dynamic-background-tinted-50:rgba(0, 59, 0, 0.5);--background-base:rgba(0, 96, 0, 255);--background-tinted:rgba(0, 59, 0, 255);--text-base:rgba(255, 255, 255, 255);--text-bright-accent:rgba(255, 255, 255, 255);--text-subdued:rgba(175, 216, 171, 255)">
-<div class="BackgroundColorContainer_backgroundColorContainer__YZSQ7">
-
-</div>
-<div class="TrackWidget_singleGridContainer__iYPj8" data-testid="initialized-false">
-<div class="TrackWidget_coverArtContainer__YVwp8">
-<div class="CoverArtBase_coverArtContainer__CYvXE CoverArtSingle_coverArtSingle__KLcKa">
-<img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02247d68bc502094664339bb4b" class="e-101111-legacy-image CoverArtBase_coverArt__ne0XI" style="--encore-image-border-radius:var(--encore-corner-radius-larger-2)" data-encore-id="image" alt="Poesia cover" />
-</div>
-</div>
-<div class="TrackWidget_spotifyLogoContainer__9m41A">
-<a href="https://open.spotify.com" role="button" aria-label="Play on Spotify" data-testid="spotify-logo" title="Play on Spotify"><img src="data:image/svg+xml;base64,PHN2ZyBkYXRhLWVuY29yZS1pZD0iaWNvbiIgcm9sZT0iaW1nIiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9ImUtMTAxMTExLWljb24iIHN0eWxlPSItLWVuY29yZS1pY29uLWZpbGw6dmFyKC0tdGV4dC1iYXNlKTstLWVuY29yZS1pY29uLWhlaWdodDp2YXIoLS1lbmNvcmUtZ3JhcGhpYy1zaXplLWRlY29yYXRpdmUtbGFyZ2VyKTstLWVuY29yZS1pY29uLXdpZHRoOnZhcigtLWVuY29yZS1ncmFwaGljLXNpemUtZGVjb3JhdGl2ZS1sYXJnZXIpIiB2aWV3Ym94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xMi40MzggMS4wMDlDNi4zNjguNzY5IDEuMjUxIDUuNDk0IDEuMDA4IDExLjU2NWMtLjI0IDYuMDcgNC40ODUgMTEuMTg2IDEwLjU1NiAxMS40MjYgNi4wNy4yNDIgMTEuMTg1LTQuNDg0IDExLjQyNy0xMC41NTRTMTguNTA3IDEuMjUxIDEyLjQzOCAxLjAwOW00LjY0NCAxNi4xMTRhLjY1Ny42NTcgMCAwIDEtLjg5Ny4yNDYgMTMuMiAxMy4yIDAgMCAwLTQuNzEtMS42MDIgMTMuMiAxMy4yIDAgMCAwLTQuOTY4LjI0Mi42NTguNjU4IDAgMCAxLS4zMS0xLjI3OCAxNC41IDE0LjUgMCAwIDEgNS40Ni0uMjY1YzEuODM3LjI1NyAzLjU3OS44NTEgNS4xNzcgMS43Ni4zMTUuMTc4LjQyNS41OC4yNDYuODk2em0xLjQ0NS0yLjg4N2EuODUzLjg1MyAwIDAgMS0xLjE1OC4zNDQgMTYuMiAxNi4yIDAgMCAwLTUuNDc1LTEuNzk3IDE2LjIgMTYuMiAwIDAgMC01Ljc1OC4yMTkuODU1Ljg1NSAwIDAgMS0xLjAxOC0uNjUuODUuODUgMCAwIDEgLjY1LTEuMDE4IDE3LjkgMTcuOSAwIDAgMSA2LjM2Mi0uMjQxIDE3LjkgMTcuOSAwIDAgMSA2LjA0OSAxLjk4NWMuNDE1LjIyNC41Ny43NDMuMzQ0IDEuMTU4em0xLjYwMi0zLjI1NWExLjA1IDEuMDUgMCAwIDEtMS40MTguNDQ4IDE5LjcgMTkuNyAwIDAgMC02LjM0MS0yLjAyNSAxOS42IDE5LjYgMCAwIDAtNi42NTUuMTk5IDEuMDUgMS4wNSAwIDEgMS0uNDE3LTIuMDYgMjEuNyAyMS43IDAgMCAxIDcuMzY0LS4yMiAyMS43IDIxLjcgMCAwIDEgNy4wMTkgMi4yNGMuNTE1LjI2OC43MTUuOTAzLjQ0OCAxLjQxOCIgLz48L3N2Zz4=" class="e-101111-icon" /></a>
-</div>
-<div class="TrackWidget_metadataWrapper__GzypS">
-<h1 id="section" class="e-101111-text encore-text-body-medium TitleAndSubtitle_title__Nwyku" data-encore-id="text" data-testid="entity-title"></h1>
-<div class="Marquee_container__CV7du">
-<div class="Marquee_scrollableContainer__mcSox">
-<div class="Marquee_inner__UKCZf">
-<a href="" class="e-101111-text-link e-101111-overflow-wrap-anywhere encore-internal-color-text-base e-101111-text-link--standalone e-101111-text-link--use-focus" data-encore-id="textLink">Poesia</a>
-</div>
-</div>
-</div>
-<span class="TrackWidget_labelsAndSubtitle__nBrZb"></span>
-<h2 id="section-1" class="TitleAndSubtitle_subtitle__P1cxq" data-testid="subtitle"></h2>
-<div class="Marquee_container__CV7du">
-<div class="Marquee_scrollableContainer__mcSox">
-<div class="Marquee_inner__UKCZf">
-<span class="TitleAndSubtitle_wrapper__xndXC"><a href="https://open.spotify.com/artist/2QfmJhZmW6Z9m1hIryoAT5?go=1&amp;sp_cid=046aec6f37f135278ddf1ba27b30e242" class="e-101111-text-link e-101111-overflow-wrap-anywhere encore-internal-color-text-subdued e-101111-text-link--standalone e-101111-text-link--use-focus" data-encore-id="textLink">Dkukas</a></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</figure>
+<p><a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer">Ouvir no Spotify ↗</a></p>
 
 <div class="wp-block-image">
 
@@ -308,50 +164,7 @@ Nesse ano não foi diferente, saímos por volta da meia-noite e fomos pra mais m
 
 Eu não paguei o valor que deveria pra assistir e conhecer tanta gente boa esse ano! Estou devendo aos meus amigos [Double](https://www.instagram.com/2ouble/) ([Twelve Afters](https://www.instagram.com/twelve_afters/)) e [Júlia](https://www.instagram.com/julia_cruvinel/). Senhorita Sheila Mello, você saiu no horário das crianças, hein?!? Pegou falta! 
 
-<figure class="wp-block-embed is-type-rich is-provider-spotify wp-block-embed-spotify wp-embed-aspect-21-9 wp-has-aspect-ratio">
-<div class="wp-block-embed__wrapper">
-<div class="iframe">
-<div id="__next">
-<div class="encore-dark-theme encore-layout-themes" data-testid="main-page">
-<div class="TrackWidget_widgetContainer__gADzr" data-testid="embed-widget-container" style="--dynamic-opacity:1;--dynamic-background-base:rgba(32, 64, 16, 255);--dynamic-background-tinted:rgba(64, 97, 49, 255);--dynamic-background-tinted-50:rgba(64, 97, 49, 0.5);--background-base:rgba(32, 64, 16, 255);--background-tinted:rgba(64, 97, 49, 255);--text-base:rgba(255, 255, 255, 255);--text-bright-accent:rgba(255, 255, 255, 255);--text-subdued:rgba(181, 215, 167, 255)">
-<div class="BackgroundColorContainer_backgroundColorContainer__YZSQ7">
-
-</div>
-<div class="TrackWidget_singleGridContainer__iYPj8" data-testid="initialized-false">
-<div class="TrackWidget_coverArtContainer__YVwp8">
-<div class="CoverArtBase_coverArtContainer__CYvXE CoverArtSingle_coverArtSingle__KLcKa">
-<img src="https://image-cdn-ak.spotifycdn.com/image/ab67616d00001e02c208a1e08803e798f221c146" class="e-101111-legacy-image CoverArtBase_coverArt__ne0XI" style="--encore-image-border-radius:var(--encore-corner-radius-larger-2)" data-encore-id="image" alt="Your House cover" />
-</div>
-</div>
-<div class="TrackWidget_spotifyLogoContainer__9m41A">
-<a href="https://open.spotify.com" role="button" aria-label="Play on Spotify" data-testid="spotify-logo" title="Play on Spotify"><img src="data:image/svg+xml;base64,PHN2ZyBkYXRhLWVuY29yZS1pZD0iaWNvbiIgcm9sZT0iaW1nIiBhcmlhLWhpZGRlbj0idHJ1ZSIgY2xhc3M9ImUtMTAxMTExLWljb24iIHN0eWxlPSItLWVuY29yZS1pY29uLWZpbGw6dmFyKC0tdGV4dC1iYXNlKTstLWVuY29yZS1pY29uLWhlaWdodDp2YXIoLS1lbmNvcmUtZ3JhcGhpYy1zaXplLWRlY29yYXRpdmUtbGFyZ2VyKTstLWVuY29yZS1pY29uLXdpZHRoOnZhcigtLWVuY29yZS1ncmFwaGljLXNpemUtZGVjb3JhdGl2ZS1sYXJnZXIpIiB2aWV3Ym94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xMi40MzggMS4wMDlDNi4zNjguNzY5IDEuMjUxIDUuNDk0IDEuMDA4IDExLjU2NWMtLjI0IDYuMDcgNC40ODUgMTEuMTg2IDEwLjU1NiAxMS40MjYgNi4wNy4yNDIgMTEuMTg1LTQuNDg0IDExLjQyNy0xMC41NTRTMTguNTA3IDEuMjUxIDEyLjQzOCAxLjAwOW00LjY0NCAxNi4xMTRhLjY1Ny42NTcgMCAwIDEtLjg5Ny4yNDYgMTMuMiAxMy4yIDAgMCAwLTQuNzEtMS42MDIgMTMuMiAxMy4yIDAgMCAwLTQuOTY4LjI0Mi42NTguNjU4IDAgMCAxLS4zMS0xLjI3OCAxNC41IDE0LjUgMCAwIDEgNS40Ni0uMjY1YzEuODM3LjI1NyAzLjU3OS44NTEgNS4xNzcgMS43Ni4zMTUuMTc4LjQyNS41OC4yNDYuODk2em0xLjQ0NS0yLjg4N2EuODUzLjg1MyAwIDAgMS0xLjE1OC4zNDQgMTYuMiAxNi4yIDAgMCAwLTUuNDc1LTEuNzk3IDE2LjIgMTYuMiAwIDAgMC01Ljc1OC4yMTkuODU1Ljg1NSAwIDAgMS0xLjAxOC0uNjUuODUuODUgMCAwIDEgLjY1LTEuMDE4IDE3LjkgMTcuOSAwIDAgMSA2LjM2Mi0uMjQxIDE3LjkgMTcuOSAwIDAgMSA2LjA0OSAxLjk4NWMuNDE1LjIyNC41Ny43NDMuMzQ0IDEuMTU4em0xLjYwMi0zLjI1NWExLjA1IDEuMDUgMCAwIDEtMS40MTguNDQ4IDE5LjcgMTkuNyAwIDAgMC02LjM0MS0yLjAyNSAxOS42IDE5LjYgMCAwIDAtNi42NTUuMTk5IDEuMDUgMS4wNSAwIDEgMS0uNDE3LTIuMDYgMjEuNyAyMS43IDAgMCAxIDcuMzY0LS4yMiAyMS43IDIxLjcgMCAwIDEgNy4wMTkgMi4yNGMuNTE1LjI2OC43MTUuOTAzLjQ0OCAxLjQxOCIgLz48L3N2Zz4=" class="e-101111-icon" /></a>
-</div>
-<div class="TrackWidget_metadataWrapper__GzypS">
-<h1 id="section" class="e-101111-text encore-text-body-medium TitleAndSubtitle_title__Nwyku" data-encore-id="text" data-testid="entity-title"></h1>
-<div class="Marquee_container__CV7du">
-<div class="Marquee_scrollableContainer__mcSox">
-<div class="Marquee_inner__UKCZf">
-<a href="" class="e-101111-text-link e-101111-overflow-wrap-anywhere encore-internal-color-text-base e-101111-text-link--standalone e-101111-text-link--use-focus" data-encore-id="textLink">Your House</a>
-</div>
-</div>
-</div>
-<span class="TrackWidget_labelsAndSubtitle__nBrZb"></span>
-<h2 id="section-1" class="TitleAndSubtitle_subtitle__P1cxq" data-testid="subtitle"></h2>
-<div class="Marquee_container__CV7du">
-<div class="Marquee_scrollableContainer__mcSox">
-<div class="Marquee_inner__UKCZf">
-<span class="TitleAndSubtitle_wrapper__xndXC"><a href="https://open.spotify.com/artist/0JEYyQFk5tOPOgWVDBynqd?go=1&amp;sp_cid=a8be9d50a9db3a4462160ff3f69ecbee" class="e-101111-text-link e-101111-overflow-wrap-anywhere encore-internal-color-text-subdued e-101111-text-link--standalone e-101111-text-link--use-focus" data-encore-id="textLink">Julia Cruvinel</a></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</figure>
+<p><a href="https://open.spotify.com" target="_blank" rel="noopener noreferrer">Ouvir no Spotify ↗</a></p>
 
 ------------------------------------------------------------------------
 

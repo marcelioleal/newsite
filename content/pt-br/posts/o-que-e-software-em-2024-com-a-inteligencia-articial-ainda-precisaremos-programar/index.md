@@ -75,21 +75,7 @@ Mais um último comentário baseado num feedback do meu amigo Raphael Soares. O 
 
 #### Entrevista completa de Jensen Huang
 
-<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
-<div class="wp-block-embed__wrapper">
-<div class="iframe">
-<div id="player">
 
-</div>
-<div class="player-unavailable">
-<h1 id="ocorreu-um-erro." class="message">Ocorreu um erro.</h1>
-<div class="submessage">
-Não é possível executar o JavaScript.
-</div>
-</div>
-</div>
-</div>
-</figure>
 
 Pessoal, na entrevista vários aspectos bem interessantes são conversados. Eu peguei apenas um pequeno trecho pra explorar, mas vale a pena assistir se você é um entusiasta da área.
 
