@@ -240,6 +240,21 @@ a:hover { color: var(--accent-hover); }
   color: var(--tag-text);
   background: var(--tag-bg);
   letter-spacing: -0.005em;
+  line-height: 1.5;
+}
+.pm-badge-wrap {
+  flex-basis: 100%;
+  white-space: normal;
+  align-items: flex-start;
+}
+.pm-badge a {
+  color: var(--tag-text);
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+}
+.pm-badge a:hover {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
 }
 
 .pm-ctas { display: flex; gap: 10px; flex-wrap: wrap; }
@@ -267,6 +282,32 @@ a:hover { color: var(--accent-hover); }
   border-color: var(--accent);
   color: var(--accent);
 }
+
+/* -- Socials row (below CTAs) -------------------------------------------- */
+.pm-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+.pm-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--secondary);
+  transition: color 0.15s;
+}
+.pm-social svg {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+}
+.pm-social:hover { color: var(--accent); }
+.pm-social span { letter-spacing: -0.005em; }
 
 /* -- Two-column layout --------------------------------------------------- */
 .two-col-layout {

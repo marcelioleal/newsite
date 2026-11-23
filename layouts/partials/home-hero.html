@@ -1,18 +1,17 @@
 {{- /*
-  layouts/partials/home-hero.html — Home hero block (avatar + bio + badges + CTAs).
+  layouts/partials/home-hero.html — Home hero block (avatar + bio + badges + CTAs + socials).
   i18n-driven: all user-facing text lives in i18n/*.yaml.
   Links honour per-language slugs via GetPage.
 */ -}}
 {{- $about := site.GetPage "/about" -}}
-<section class="pm-home-info" aria-labelledby="home-hero-name">
+<section class="pm-home-info" aria-labelledby="home-hero-bio">
   <img class="photo-avatar" src="/images/profile/avatar.png"
-       alt="{{ i18n "hero_avatar_alt" }}" width="96" height="96" loading="eager" decoding="async">
+       alt="{{ i18n "hero_avatar_alt" }}" width="104" height="104" loading="eager" decoding="async">
   <div class="pm-home-info-body">
-    <p>{{ i18n "hero_bio" }}</p>
+    <p id="home-hero-bio">{{ i18n "hero_bio" }}</p>
     <div class="pm-badges" aria-hidden="true">
       <span class="pm-badge">{{ i18n "hero_badge_place" }}</span>
-      <span class="pm-badge">{{ i18n "hero_badge_role" }}</span>
-      <span class="pm-badge">{{ i18n "hero_badge_kite" }}</span>
+      <span class="pm-badge pm-badge-wrap">{{ i18n "hero_badge_role" | safeHTML }}</span>
       <span class="pm-badge">{{ i18n "hero_badge_passions" }}</span>
     </div>
     <div class="pm-ctas">
@@ -20,6 +19,24 @@
       <a class="pm-cta pm-cta-primary" href="{{ .RelPermalink }}">{{ i18n "hero_cta_about" }}</a>
       {{- end }}
       <a class="pm-cta pm-cta-secondary" href="https://marcelioleal.substack.com/" rel="me noopener">{{ i18n "hero_cta_newsletter" }}</a>
+    </div>
+    <div class="pm-socials" aria-label="Social links">
+      <a class="pm-social" href="https://www.linkedin.com/in/marcelioleal/" rel="me noopener" target="_blank" title="LinkedIn — @marcelioleal">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
+        <span>marcelioleal</span>
+      </a>
+      <a class="pm-social" href="https://www.instagram.com/marcelioleal" rel="me noopener" target="_blank" title="Instagram — @marcelioleal">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        <span>marcelioleal</span>
+      </a>
+      <a class="pm-social" href="https://x.com/marcelioleal" rel="me noopener" target="_blank" title="X — @marcelioleal">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        <span>marcelioleal</span>
+      </a>
+      <a class="pm-social" href="https://www.instagram.com/blankframe.art" rel="noopener" target="_blank" title="Instagram — @blankframe.art">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        <span>blankframe.art</span>
+      </a>
     </div>
   </div>
 </section>
