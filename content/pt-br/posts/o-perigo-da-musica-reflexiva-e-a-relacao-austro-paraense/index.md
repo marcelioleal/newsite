@@ -26,83 +26,7 @@ Meus amigos, chegou a hora de fazer as pazes com o passado, ressignificar e expl
 
 ***É sério. Em Belém, se jogar é se jogar de verdade. Muitas vezes conhecido como [endoidar](https://www.youtube.com/shorts/ixL-y2KQMAo?t=15&feature=share).***
 
-<figure class="wp-block-embed alignleft is-type-rich is-provider-instagram wp-block-embed-instagram">
-<div class="wp-block-embed__wrapper">
-<blockquote>
-<div style="padding:16px;">
-<a href="https://www.instagram.com/reel/DLaL90YMvSf/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank" rel="noopener noreferrer"></a>
-<div style=" display: flex; flex-direction: row; align-items: center;">
-<div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
-
-</div>
-<div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;">
-<div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;">
-
-</div>
-<div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;">
-
-</div>
-</div>
-</div>
-<div style="padding: 19% 0;">
-
-</div>
-<div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
-<img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTBweCIgaGVpZ2h0PSI1MHB4IiB2aWV3Ym94PSIwIDAgNjAgNjAiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHBzOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHBzOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48ZyBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTExLjAwMDAwMCwgLTIwLjAwMDAwMCkiIGZpbGw9IiMwMDAwMDAiPjxnPjxwYXRoIGQ9Ik01NTYuODY5LDMwLjQxIEM1NTQuODE0LDMwLjQxIDU1My4xNDgsMzIuMDc2IDU1My4xNDgsMzQuMTMxIEM1NTMuMTQ4LDM2LjE4NiA1NTQuODE0LDM3Ljg1MiA1NTYuODY5LDM3Ljg1MiBDNTU4LjkyNCwzNy44NTIgNTYwLjU5LDM2LjE4NiA1NjAuNTksMzQuMTMxIEM1NjAuNTksMzIuMDc2IDU1OC45MjQsMzAuNDEgNTU2Ljg2OSwzMC40MSBNNTQxLDYwLjY1NyBDNTM1LjExNCw2MC42NTcgNTMwLjM0Miw1NS44ODcgNTMwLjM0Miw1MCBDNTMwLjM0Miw0NC4xMTQgNTM1LjExNCwzOS4zNDIgNTQxLDM5LjM0MiBDNTQ2Ljg4NywzOS4zNDIgNTUxLjY1OCw0NC4xMTQgNTUxLjY1OCw1MCBDNTUxLjY1OCw1NS44ODcgNTQ2Ljg4Nyw2MC42NTcgNTQxLDYwLjY1NyBNNTQxLDMzLjg4NiBDNTMyLjEsMzMuODg2IDUyNC44ODYsNDEuMSA1MjQuODg2LDUwIEM1MjQuODg2LDU4Ljg5OSA1MzIuMSw2Ni4xMTMgNTQxLDY2LjExMyBDNTQ5LjksNjYuMTEzIDU1Ny4xMTUsNTguODk5IDU1Ny4xMTUsNTAgQzU1Ny4xMTUsNDEuMSA1NDkuOSwzMy44ODYgNTQxLDMzLjg4NiBNNTY1LjM3OCw2Mi4xMDEgQzU2NS4yNDQsNjUuMDIyIDU2NC43NTYsNjYuNjA2IDU2NC4zNDYsNjcuNjYzIEM1NjMuODAzLDY5LjA2IDU2My4xNTQsNzAuMDU3IDU2Mi4xMDYsNzEuMTA2IEM1NjEuMDU4LDcyLjE1NSA1NjAuMDYsNzIuODAzIDU1OC42NjIsNzMuMzQ3IEM1NTcuNjA3LDczLjc1NyA1NTYuMDIxLDc0LjI0NCA1NTMuMTAyLDc0LjM3OCBDNTQ5Ljk0NCw3NC41MjEgNTQ4Ljk5Nyw3NC41NTIgNTQxLDc0LjU1MiBDNTMzLjAwMyw3NC41NTIgNTMyLjA1Niw3NC41MjEgNTI4Ljg5OCw3NC4zNzggQzUyNS45NzksNzQuMjQ0IDUyNC4zOTMsNzMuNzU3IDUyMy4zMzgsNzMuMzQ3IEM1MjEuOTQsNzIuODAzIDUyMC45NDIsNzIuMTU1IDUxOS44OTQsNzEuMTA2IEM1MTguODQ2LDcwLjA1NyA1MTguMTk3LDY5LjA2IDUxNy42NTQsNjcuNjYzIEM1MTcuMjQ0LDY2LjYwNiA1MTYuNzU1LDY1LjAyMiA1MTYuNjIzLDYyLjEwMSBDNTE2LjQ3OSw1OC45NDMgNTE2LjQ0OCw1Ny45OTYgNTE2LjQ0OCw1MCBDNTE2LjQ0OCw0Mi4wMDMgNTE2LjQ3OSw0MS4wNTYgNTE2LjYyMywzNy44OTkgQzUxNi43NTUsMzQuOTc4IDUxNy4yNDQsMzMuMzkxIDUxNy42NTQsMzIuMzM4IEM1MTguMTk3LDMwLjkzOCA1MTguODQ2LDI5Ljk0MiA1MTkuODk0LDI4Ljg5NCBDNTIwLjk0MiwyNy44NDYgNTIxLjk0LDI3LjE5NiA1MjMuMzM4LDI2LjY1NCBDNTI0LjM5MywyNi4yNDQgNTI1Ljk3OSwyNS43NTYgNTI4Ljg5OCwyNS42MjMgQzUzMi4wNTcsMjUuNDc5IDUzMy4wMDQsMjUuNDQ4IDU0MSwyNS40NDggQzU0OC45OTcsMjUuNDQ4IDU0OS45NDMsMjUuNDc5IDU1My4xMDIsMjUuNjIzIEM1NTYuMDIxLDI1Ljc1NiA1NTcuNjA3LDI2LjI0NCA1NTguNjYyLDI2LjY1NCBDNTYwLjA2LDI3LjE5NiA1NjEuMDU4LDI3Ljg0NiA1NjIuMTA2LDI4Ljg5NCBDNTYzLjE1NCwyOS45NDIgNTYzLjgwMywzMC45MzggNTY0LjM0NiwzMi4zMzggQzU2NC43NTYsMzMuMzkxIDU2NS4yNDQsMzQuOTc4IDU2NS4zNzgsMzcuODk5IEM1NjUuNTIyLDQxLjA1NiA1NjUuNTUyLDQyLjAwMyA1NjUuNTUyLDUwIEM1NjUuNTUyLDU3Ljk5NiA1NjUuNTIyLDU4Ljk0MyA1NjUuMzc4LDYyLjEwMSBNNTcwLjgyLDM3LjYzMSBDNTcwLjY3NCwzNC40MzggNTcwLjE2NywzMi4yNTggNTY5LjQyNSwzMC4zNDkgQzU2OC42NTksMjguMzc3IDU2Ny42MzMsMjYuNzAyIDU2NS45NjUsMjUuMDM1IEM1NjQuMjk3LDIzLjM2OCA1NjIuNjIzLDIyLjM0MiA1NjAuNjUyLDIxLjU3NSBDNTU4Ljc0MywyMC44MzQgNTU2LjU2MiwyMC4zMjYgNTUzLjM2OSwyMC4xOCBDNTUwLjE2OSwyMC4wMzMgNTQ5LjE0OCwyMCA1NDEsMjAgQzUzMi44NTMsMjAgNTMxLjgzMSwyMC4wMzMgNTI4LjYzMSwyMC4xOCBDNTI1LjQzOCwyMC4zMjYgNTIzLjI1NywyMC44MzQgNTIxLjM0OSwyMS41NzUgQzUxOS4zNzYsMjIuMzQyIDUxNy43MDMsMjMuMzY4IDUxNi4wMzUsMjUuMDM1IEM1MTQuMzY4LDI2LjcwMiA1MTMuMzQyLDI4LjM3NyA1MTIuNTc0LDMwLjM0OSBDNTExLjgzNCwzMi4yNTggNTExLjMyNiwzNC40MzggNTExLjE4MSwzNy42MzEgQzUxMS4wMzUsNDAuODMxIDUxMSw0MS44NTEgNTExLDUwIEM1MTEsNTguMTQ3IDUxMS4wMzUsNTkuMTcgNTExLjE4MSw2Mi4zNjkgQzUxMS4zMjYsNjUuNTYyIDUxMS44MzQsNjcuNzQzIDUxMi41NzQsNjkuNjUxIEM1MTMuMzQyLDcxLjYyNSA1MTQuMzY4LDczLjI5NiA1MTYuMDM1LDc0Ljk2NSBDNTE3LjcwMyw3Ni42MzQgNTE5LjM3Niw3Ny42NTggNTIxLjM0OSw3OC40MjUgQzUyMy4yNTcsNzkuMTY3IDUyNS40MzgsNzkuNjczIDUyOC42MzEsNzkuODIgQzUzMS44MzEsNzkuOTY1IDUzMi44NTMsODAuMDAxIDU0MSw4MC4wMDEgQzU0OS4xNDgsODAuMDAxIDU1MC4xNjksNzkuOTY1IDU1My4zNjksNzkuODIgQzU1Ni41NjIsNzkuNjczIDU1OC43NDMsNzkuMTY3IDU2MC42NTIsNzguNDI1IEM1NjIuNjIzLDc3LjY1OCA1NjQuMjk3LDc2LjYzNCA1NjUuOTY1LDc0Ljk2NSBDNTY3LjYzMyw3My4yOTYgNTY4LjY1OSw3MS42MjUgNTY5LjQyNSw2OS42NTEgQzU3MC4xNjcsNjcuNzQzIDU3MC42NzQsNjUuNTYyIDU3MC44Miw2Mi4zNjkgQzU3MC45NjYsNTkuMTcgNTcxLDU4LjE0NyA1NzEsNTAgQzU3MSw0MS44NTEgNTcwLjk2Niw0MC44MzEgNTcwLjgyLDM3LjYzMSIgLz48L2c+PC9nPjwvZz48L3N2Zz4=" />
-</div>
-<div style="padding-top: 8px;">
-<div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">
-View this post on Instagram
-</div>
-</div>
-<div style="padding: 12.5% 0;">
-
-</div>
-<div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;">
-<div>
-<div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);">
-
-</div>
-<div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;">
-
-</div>
-<div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);">
-
-</div>
-</div>
-<div style="margin-left: 8px;">
-<div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;">
-
-</div>
-<div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)">
-
-</div>
-</div>
-<div style="margin-left: auto;">
-<div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);">
-
-</div>
-<div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);">
-
-</div>
-<div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);">
-
-</div>
-</div>
-</div>
-<div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;">
-<div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;">
-
-</div>
-<div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;">
-
-</div>
-</div>
-<p><a href="https://www.instagram.com/reel/DLaL90YMvSf/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank" rel="noopener noreferrer">A post shared by OLÁ TICAS🐠 (@patrickpeixotos)</a></p>
-</div>
-</blockquote>
-</div>
-</figure>
+<p><a href="https://www.instagram.com/reel/DLaL90YMvSf/?amp%3Butm_campaign=loading" target="_blank" rel="noopener noreferrer">Ver no Instagram ↗</a></p>
 
 Quer entender o quanto uma festa em Belém é animada? Vá no TikTok e procure [Joelma no The Town](https://www.tiktok.com/search?q=joelma%20no%20the%20town&t=1759014547930). Os vídeos falam por si. Num grande festival, onde trouxeram vários astros internacionais, uma das paraenses mais consideradas de todos os tempos brilhou com todo direito.
 
@@ -124,22 +48,7 @@ Só tem um problema, eu não sei como tanta gente gosta de refletir ~~no final d
 
 ***Se esse trecho não for extremamente profundo e reflexivo, eu não sei o que é.***
 
-<figure class="wp-block-embed alignleft is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
-<div class="wp-block-embed__wrapper">
-<div class="iframe">
-<div id="player">
 
-</div>
-<div class="player-unavailable">
-<h1 id="ocorreu-um-erro." class="message">Ocorreu um erro.</h1>
-<div class="submessage">
-Não é possível executar o JavaScript.
-</div>
-</div>
-</div>
-</div>
-<figcaption>Menino endoidando em uma festa não reflexiva.</figcaption>
-</figure>
 
 Você tá numa festa (não reflexiva), a música tá dançante, a música tá mexendo com você. Mas agora é a hora dar o sinal para o público que a festa está acabando, aí vem o dj e manda uma música triste:
 
@@ -196,22 +105,7 @@ Não pela música em si, ela é boa e tem pelo menos mais duas versões que eu c
 
 ## A exceção à regra
 
-<figure class="wp-block-embed alignleft is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio">
-<div class="wp-block-embed__wrapper">
-<div class="iframe">
-<div id="player">
 
-</div>
-<div class="player-unavailable">
-<h1 id="ocorreu-um-erro." class="message">Ocorreu um erro.</h1>
-<div class="submessage">
-Não é possível executar o JavaScript.
-</div>
-</div>
-</div>
-</div>
-<figcaption>Negócio caótico festas jovens cariocas.</figcaption>
-</figure>
 
 Festas Cariocas Jovens, estilo Arca de Noé ou Esbórnia têm a licença poética para tocar músicas reflexivas.
 
@@ -227,22 +121,7 @@ Até hoje, são os únicos capazes de usar músicas reflexivas mantendo a vibe. 
 
 ## **O Hype**
 
-<figure class="wp-block-embed alignleft is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-4-3 wp-has-aspect-ratio">
-<div class="wp-block-embed__wrapper">
-<div class="iframe">
-<div id="player">
 
-</div>
-<div class="player-unavailable">
-<h1 id="ocorreu-um-erro." class="message">Ocorreu um erro.</h1>
-<div class="submessage">
-Não é possível executar o JavaScript.
-</div>
-</div>
-</div>
-</div>
-<figcaption>Essa é a melhor forma que o ser humano conseguiu explicar o que é Hype até hoje.</figcaption>
-</figure>
 
 Então tudo isso por conta de Innerbloom? É o certo criar preconceitos a partir de apenas uma música?
 
