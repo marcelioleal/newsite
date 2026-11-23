@@ -325,7 +325,7 @@ input:focus-visible,
   color: var(--content);
 }
 
-.pm-badges { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+.pm-badges { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0; }
 .pm-badge {
   display: inline-flex;
   align-items: center;
@@ -333,17 +333,13 @@ input:focus-visible,
   border: 1px solid var(--tag-border);
   border-radius: 8px;
   font-family: var(--font-mono);
-  font-size: 13px;
+  font-size: 12.5px;
   font-weight: 400;
   color: var(--tag-text);
   background: var(--tag-bg);
   letter-spacing: -0.005em;
-  line-height: 1.5;
-}
-.pm-badge-wrap {
-  flex-basis: 100%;
-  white-space: normal;
-  align-items: flex-start;
+  line-height: 1.4;
+  white-space: nowrap;
 }
 .pm-badge a {
   color: var(--tag-text);
@@ -355,7 +351,13 @@ input:focus-visible,
   border-bottom-color: var(--accent);
 }
 
-.pm-ctas { display: flex; gap: 10px; flex-wrap: wrap; }
+/* -- CTAs + socials row (same line) -------------------------------------- */
+.pm-ctas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+}
 .pm-cta {
   display: inline-block;
   padding: 7px 14px;
@@ -375,20 +377,11 @@ input:focus-visible,
   border-color: var(--accent-hover);
   color: #fff;
 }
-.pm-cta-secondary { color: var(--primary); }
-.pm-cta-secondary:hover {
-  border-color: var(--accent);
-  color: var(--accent);
-}
 
-/* -- Socials row (below CTAs) -------------------------------------------- */
 .pm-socials {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-top: 16px;
-  padding-top: 14px;
-  border-top: 1px solid var(--border);
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
 }
 .pm-social {
   display: inline-flex;
@@ -400,12 +393,13 @@ input:focus-visible,
   transition: color 0.15s;
 }
 .pm-social svg {
-  width: 15px;
-  height: 15px;
+  width: 17px;
+  height: 17px;
   flex-shrink: 0;
 }
 .pm-social:hover { color: var(--accent); }
 .pm-social span { letter-spacing: -0.005em; }
+.pm-social-icon { padding: 2px; }
 
 /* -- Two-column layout --------------------------------------------------- */
 .two-col-layout {

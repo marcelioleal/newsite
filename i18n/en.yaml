@@ -10,7 +10,7 @@ back_to_home: "Back to home"
 hero_name: "Marcelio Leal"
 hero_bio: "Brazilian from Pará (the Amazon), now in São Paulo. Engineering Lead at Google and co-founder of Beyond Tech. I write here about technology, leadership, music, coffee, art and kitesurfing."
 hero_badge_place: "📍 Belém → SP"
-hero_badge_role: '💼 <a href="https://www.linkedin.com/company/google/" rel="noopener" target="_blank">Engineering @ Google</a> — Former: <a href="https://www.linkedin.com/company/amazon/" rel="noopener" target="_blank">Amazon</a>, <a href="https://www.linkedin.com/company/nubank/" rel="noopener" target="_blank">Nubank</a>, <a href="https://www.linkedin.com/company/getyourguide-ag/" rel="noopener" target="_blank">GetYourGuide</a>, <a href="https://www.linkedin.com/company/qedu/" rel="noopener" target="_blank">QEdu</a>/<a href="https://www.linkedin.com/company/fundacao-lemann/" rel="noopener" target="_blank">F. Lemann</a>, <a href="https://www.linkedin.com/company/rocket-internet/" rel="noopener" target="_blank">Rocket</a>'
+hero_badge_role: '💼 <a href="https://www.linkedin.com/company/google/" rel="noopener noreferrer" target="_blank">Google</a> — Former (<a href="https://www.linkedin.com/company/amazon/" rel="noopener noreferrer" target="_blank">Amazon</a>, <a href="https://www.linkedin.com/company/nubank/" rel="noopener noreferrer" target="_blank">Nubank</a>)'
 hero_badge_passions: "❤️ Kitesurfing, Coffee, Music"
 hero_cta_about: "About me →"
 hero_cta_newsletter: "Newsletter"
