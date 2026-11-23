@@ -40,3 +40,11 @@
      Italic + latin-ext + Mono-Bold are loaded on-demand via @font-face below. */ -}}
 <link rel="preload" href="/fonts/Inter-roman.var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+{{- /* Favicon + touch icons. The multi-res ICO and 512 PNG land under /brand/
+     once the brand asset bundle (ML monogram variants) is dropped in.
+     Links below are safe to ship even when PNGs are absent — browsers
+     fall back silently. */ -}}
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="/brand/ml-logo.svg">
+<link rel="apple-touch-icon" href="/brand/icon-512.png">

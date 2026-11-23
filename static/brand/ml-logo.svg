@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 120" fill="none" aria-hidden="true">
+  <path d="M 28 86 L 64 20 L 76 70 L 114 22 L 116 80 L 160 18 L 136 86 L 208 72 L 194 84"
+        stroke="currentColor" stroke-width="5.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 176 24 L 188 15" stroke="var(--accent, #d9541b)" stroke-width="4.4" stroke-linecap="round"/>
+  <path d="M 188 33 L 202 27" stroke="var(--accent, #d9541b)" stroke-width="4.4" stroke-linecap="round"/>
+</svg>
