@@ -124,7 +124,7 @@ PS4.: o céu estrelado é outra coisa incrível, mas que por motivo de "só sabe
 <div class="wp-block-embed__wrapper">
 <blockquote>
 <div style="padding:16px;">
-<a href="https://www.instagram.com/p/C742VjQOES1/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"></a>
+<a href="https://www.instagram.com/p/C742VjQOES1/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank" rel="noopener noreferrer"></a>
 <div style=" display: flex; flex-direction: row; align-items: center;">
 <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;">
 
@@ -192,7 +192,7 @@ View this post on Instagram
 
 </div>
 </div>
-<p><a href="https://www.instagram.com/p/C742VjQOES1/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">A post shared by Deep Tech Minimal (@deeptechminimal)</a></p>
+<p><a href="https://www.instagram.com/p/C742VjQOES1/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank" rel="noopener noreferrer">A post shared by Deep Tech Minimal (@deeptechminimal)</a></p>
 </div>
 </blockquote>
 </div>

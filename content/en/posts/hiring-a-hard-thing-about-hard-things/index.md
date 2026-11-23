@@ -7,11 +7,11 @@ categories: [software-dev]
 ---
 
 <img src="/images/external/cdn-images-1.medium.com/1_ogOCz_hw_3GNfaXDaFBZ8w.jpeg" data-recalc-dims="1" decoding="async" />
-<figcaption>Hiring is hard and a one way door-- Photo by <a href="https://unsplash.com/@eprouzet?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash" target="_blank" rel="noopener">Eric Prouzet</a> on <a href="https://unsplash.com/photos/B3UFXwcVbc4?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash" target="_blank" rel="noopener">Unsplash</a>.</figcaption>
+<figcaption>Hiring is hard and a one way door-- Photo by <a href="https://unsplash.com/@eprouzet?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash" target="_blank" rel="noopener noreferrer">Eric Prouzet</a> on <a href="https://unsplash.com/photos/B3UFXwcVbc4?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash" target="_blank" rel="noopener noreferrer">Unsplash</a>.</figcaption>
 
-I completely agree with the <a href="https://www.forbes.com/sites/forbescoachescouncil/2018/11/20/why-does-culture-eat-strategy-for-breakfast/?sh=1243c371e098" target="_blank" rel="noopener">statement that "<em>Culture eats strategy for breakfast</em>"</a>. However, a company can only foster culture; it cannot impose it on all employees. To establish a healthy and positive culture, it's essential to have a well-structured hiring process.
+I completely agree with the <a href="https://www.forbes.com/sites/forbescoachescouncil/2018/11/20/why-does-culture-eat-strategy-for-breakfast/?sh=1243c371e098" target="_blank" rel="noopener noreferrer">statement that "<em>Culture eats strategy for breakfast</em>"</a>. However, a company can only foster culture; it cannot impose it on all employees. To establish a healthy and positive culture, it's essential to have a well-structured hiring process.
 
-Although many people may think that building and running a hiring process is easy, it can actually be quite challenging. Interviews are not simply a set of questions, and the outcome is not merely based on personal preferences like "*I liked her*" or "*I didn't like him*". The hiring process is more akin to a series of experiments aimed at <a href="https://dictionary.apa.org/latent-trait-theory" target="_blank" rel="noopener">assessing unobservable traits</a>, such as knowledge and competency.
+Although many people may think that building and running a hiring process is easy, it can actually be quite challenging. Interviews are not simply a set of questions, and the outcome is not merely based on personal preferences like "*I liked her*" or "*I didn't like him*". The hiring process is more akin to a series of experiments aimed at <a href="https://dictionary.apa.org/latent-trait-theory" target="_blank" rel="noopener noreferrer">assessing unobservable traits</a>, such as knowledge and competency.
 
 In this post, I will share some principles and techniques I've employed while working for startups. These strategies are geared towards recruiting the best talent for tech teams, in other words, individuals who have a variety of employment options.
 
@@ -21,10 +21,10 @@ In this post, I will share some principles and techniques I've employed while wo
 
 Everything starts with a structured and well-designed hiring process. To create this process, the company needs to comprehend all the key areas in which the candidate must be evaluated. Next, consider the abilities that must be tested at each step, whether it's an interview or a test. Finally, initiate the process and continuously refine it until you attain the desired success metrics.
 
-If your company lacks a structured process, it can begin implementing one right now. Many other aspects discussed in this post are based on this foundational step. For inspiration, you can examine the <a href="https://handbook.gitlab.com/handbook/hiring/" target="_blank" rel="noopener">GitLab Hiring Process</a>.
+If your company lacks a structured process, it can begin implementing one right now. Many other aspects discussed in this post are based on this foundational step. For inspiration, you can examine the <a href="https://handbook.gitlab.com/handbook/hiring/" target="_blank" rel="noopener noreferrer">GitLab Hiring Process</a>.
 
 <img src="/images/external/cdn-images-1.medium.com/1_aLz-1KHZWCZJ4ev9NlSx0A.jpeg" data-recalc-dims="1" decoding="async" />
-<figcaption>Just like brainstorming in general, creativity and adaptation in interviews often result on negative effect. Photo by <a href="https://unsplash.com/@byfortytwo?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash" target="_blank" rel="noopener">FORTYTWO</a> on <a href="https://unsplash.com/photos/MDu-53qRVr4?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash" target="_blank" rel="noopener">Unsplash</a>.</figcaption>
+<figcaption>Just like brainstorming in general, creativity and adaptation in interviews often result on negative effect. Photo by <a href="https://unsplash.com/@byfortytwo?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash" target="_blank" rel="noopener noreferrer">FORTYTWO</a> on <a href="https://unsplash.com/photos/MDu-53qRVr4?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash" target="_blank" rel="noopener noreferrer">Unsplash</a>.</figcaption>
 
 #### Don't assume you are smarter than the candidate
 
@@ -61,9 +61,9 @@ While in the first strategy you can assess candidates based on whether they have
 
 ### Principles over Configuration
 
-In 2000s, we saw a rise of great software development frameworks. One of most famous was Ruby on Rails, that followed the <a href="https://stackoverflow.com/questions/71985512/convention-over-configuration-in-rails" target="_blank" rel="noopener">"Conventions over Configurations" mantra</a>. In other words, if you followed the conventions, you didn't need to add everything to the configuration files. It was great!
+In 2000s, we saw a rise of great software development frameworks. One of most famous was Ruby on Rails, that followed the <a href="https://stackoverflow.com/questions/71985512/convention-over-configuration-in-rails" target="_blank" rel="noopener noreferrer">"Conventions over Configurations" mantra</a>. In other words, if you followed the conventions, you didn't need to add everything to the configuration files. It was great!
 
-In the context of hiring processes, it's common to see <a href="https://developers.google.com/machine-learning/crash-course/classification/true-false-positive-negative" target="_blank" rel="noopener">false-positives and false-negatives</a>. This is because such processes are far from being fair and precise experiments. It's also the reason that I strongly don't recommend AI-based hiring platforms. This process is not a simple fair bar.
+In the context of hiring processes, it's common to see <a href="https://developers.google.com/machine-learning/crash-course/classification/true-false-positive-negative" target="_blank" rel="noopener noreferrer">false-positives and false-negatives</a>. This is because such processes are far from being fair and precise experiments. It's also the reason that I strongly don't recommend AI-based hiring platforms. This process is not a simple fair bar.
 
 In this context, while configurations and process setup are important, **it's often better to prioritize clear principles over strict rules when evaluating candidates**.
 
@@ -76,13 +76,13 @@ When the company believes that they need more the candidate than the candidate n
 
 #### Hire for strengths, not lack of weaknesses
 
-For sure, one of the best books I've read in the startup environment is <a href="https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205" target="_blank" rel="noopener">"The Hard Thing About Hard Things"</a>. One of the greatest takeaways from the book is:
+For sure, one of the best books I've read in the startup environment is <a href="https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205" target="_blank" rel="noopener noreferrer">"The Hard Thing About Hard Things"</a>. One of the greatest takeaways from the book is:
 
 > When interviewing, it's easy to go with the well-rounded candidate who is good in many areas and doesn't have any identifiable weaknesses. But this can be a big mistake. Instead of hiring for a lack of weaknesses, hire for strengths. So if someone has amazing technical capabilities and average communication skills, hire that person over the candidate who is good, but not great at either skill.
 
 As a Hiring Manager, you must know which abilities are essential and which are desirable for the position you are hiring for. With that in mind, share this information with the interviewers to maximize consistency in the evaluation process. Avoid letting them search for weaknesses everywhere.
 
-On a personal note, one of the main reasons I joined Amazon was the hiring process. I had the opportunity to meet remarkable people during that time. After joining, a <a href="https://www.aboutamazon.eu/news/working-at-amazon/what-is-a-bar-raiser-at-amazon" target="_blank" rel="noopener">Bar Raiser</a> that interviewed me told me: 'If you were hired, it's because you are expected to bring something valuable to add to the team/organization.' This made me reflect, and every time I spoke to a new colleague at Amazon, I sought the strengths that brought that person to our team.
+On a personal note, one of the main reasons I joined Amazon was the hiring process. I had the opportunity to meet remarkable people during that time. After joining, a <a href="https://www.aboutamazon.eu/news/working-at-amazon/what-is-a-bar-raiser-at-amazon" target="_blank" rel="noopener noreferrer">Bar Raiser</a> that interviewed me told me: 'If you were hired, it's because you are expected to bring something valuable to add to the team/organization.' This made me reflect, and every time I spoke to a new colleague at Amazon, I sought the strengths that brought that person to our team.
 
 #### Keep the accountability
 
@@ -90,13 +90,13 @@ A company cannot have two different sources when it comes from goals and rewards
 
 Similarly, during the hiring process, it's crucial to uphold the accountability of the hiring managers(HM). At the end, they will have their skin in the game as a result of the process.
 
-During my time at <a href="https://www.getyourguide.com.br/" target="_blank" rel="noopener">GetYourGuide</a>, I encountered a situation where a candidate received more 'no' evaluations than 'yes' evaluations, and I was the HM. Following a debrief, our leader let me to decide if we would hire or not that candidate. Since I had previously worked with that person, I had a high level of confidence in hiring her due to the strengths she would bring to my team. That was a really good example of accountability in a hiring culture.
+During my time at <a href="https://www.getyourguide.com.br/" target="_blank" rel="noopener noreferrer">GetYourGuide</a>, I encountered a situation where a candidate received more 'no' evaluations than 'yes' evaluations, and I was the HM. Following a debrief, our leader let me to decide if we would hire or not that candidate. Since I had previously worked with that person, I had a high level of confidence in hiring her due to the strengths she would bring to my team. That was a really good example of accountability in a hiring culture.
 
 #### Culture fit is different to Culture aligned
 
 There are companies that believe culture is something static, there are others that take advantage from new people and evolve its culture. The first type of company don't hire people don't show almost all culture traits, whereas the latter welcomes those who are eager to learn and contribute to the culture's evolution.
 
-At <a href="https://nubank.com.br/" target="_blank" rel="noopener">Nubank</a> (2020), there was a recommendation that we should understand if the candidates were aligned with the culture and had the potential to understand and improve it. This is perfect for me because it can be challenging to fully grasp all the values and principles before working for companies like Amazon and Nubank.
+At <a href="https://nubank.com.br/" target="_blank" rel="noopener noreferrer">Nubank</a> (2020), there was a recommendation that we should understand if the candidates were aligned with the culture and had the potential to understand and improve it. This is perfect for me because it can be challenging to fully grasp all the values and principles before working for companies like Amazon and Nubank.
 
 ### Continuous Improvement
 
@@ -112,7 +112,7 @@ Pay particular attention to potentially undesirable outcomes, such as candidates
 
 When you hire a candidate, it's based on numerous assumptions derived from the tests applied during the hiring process. Onboarding and the ramp-up period serve as crucial timeframes to validate these assumptions and provide support to the new employee.
 
-In complex scenarios, such as engineering and product roles in fast-paced startups, onboarding can become the real bottleneck rather than the hiring process itself. In the <a href="https://www.amazon.com.br/Elegant-Puzzle-Systems-Engineering-Management-ebook/dp/B07QYCHJ7V" target="_blank" rel="noopener">book '<em>An Elegant Puzzle: Systems of Engineering Management</em>'</a> the author discusses Uber's experience when they were primarily focused on hiring and attempting to onboard new engineers. However, many of these engineers left the company before they could start generating real value. This issue might be attributed to a lack of accountability from the hiring team, which was not fully engaged in tracking and ensuring success metrics beyond the hiring stage.
+In complex scenarios, such as engineering and product roles in fast-paced startups, onboarding can become the real bottleneck rather than the hiring process itself. In the <a href="https://www.amazon.com.br/Elegant-Puzzle-Systems-Engineering-Management-ebook/dp/B07QYCHJ7V" target="_blank" rel="noopener noreferrer">book '<em>An Elegant Puzzle: Systems of Engineering Management</em>'</a> the author discusses Uber's experience when they were primarily focused on hiring and attempting to onboard new engineers. However, many of these engineers left the company before they could start generating real value. This issue might be attributed to a lack of accountability from the hiring team, which was not fully engaged in tracking and ensuring success metrics beyond the hiring stage.
 
 #### Evaluate after undesirable events -- after hiring
 
@@ -161,12 +161,12 @@ Any thoughts about this post? Let me know at twitter @marcelioleal or send an em
 
 ### References
 
-- GitLab has an amazing material for hiring. Take a look <a href="https://handbook.gitlab.com/handbook/hiring/" target="_blank" rel="noopener">here</a>.
-- <a href="https://www.amazon.com.br/Elegant-Puzzle-Systems-Engineering-Management-ebook/dp/B07QYCHJ7V" target="_blank" rel="noopener">An Elegant Puzzle: Systems of Engineering Management</a>
-- <a href="https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205" target="_blank" rel="noopener">The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers</a>
-- <a href="https://www.amazon.com.br/Psicometria-Teoria-testes-psicologia-educa%C3%A7%C3%A3o/dp/8532628893" target="_blank" rel="noopener">(Portuguese) Psicometria: Teoria dos testes na psicologia e na educação</a>
-- <a href="http://pepsic.bvsalud.org/scielo.php?script=sci_arttext&amp;pid=S1677-04712003000200002" target="_blank" rel="noopener">(Portuguese) Fundamentos da teoria da resposta ao item -TRI</a>
-- <a href="https://examen.emnuvens.com.br/rev/article/view/19" target="_blank" rel="noopener">(Portuguese) Validade dos Testes</a>
-- <a href="https://dictionary.apa.org/latent-trait-theory" target="_blank" rel="noopener">American Psychological Association</a>
-- <a href="https://www.madison.co.nz/2022/03/recruitment-rejection-how-to-bounce-back/" target="_blank" rel="noopener">Recruitment Rejection: How to Bounce Back</a>
-- <a href="https://thegeekyleader.com/2014/10/10/hire-for-strengths-not-lack-of-weaknesses/" target="_blank" rel="noopener">Article -- Hire For Strengths, Not Lack Of Weaknesses</a>
+- GitLab has an amazing material for hiring. Take a look <a href="https://handbook.gitlab.com/handbook/hiring/" target="_blank" rel="noopener noreferrer">here</a>.
+- <a href="https://www.amazon.com.br/Elegant-Puzzle-Systems-Engineering-Management-ebook/dp/B07QYCHJ7V" target="_blank" rel="noopener noreferrer">An Elegant Puzzle: Systems of Engineering Management</a>
+- <a href="https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205" target="_blank" rel="noopener noreferrer">The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers</a>
+- <a href="https://www.amazon.com.br/Psicometria-Teoria-testes-psicologia-educa%C3%A7%C3%A3o/dp/8532628893" target="_blank" rel="noopener noreferrer">(Portuguese) Psicometria: Teoria dos testes na psicologia e na educação</a>
+- <a href="http://pepsic.bvsalud.org/scielo.php?script=sci_arttext&amp;pid=S1677-04712003000200002" target="_blank" rel="noopener noreferrer">(Portuguese) Fundamentos da teoria da resposta ao item -TRI</a>
+- <a href="https://examen.emnuvens.com.br/rev/article/view/19" target="_blank" rel="noopener noreferrer">(Portuguese) Validade dos Testes</a>
+- <a href="https://dictionary.apa.org/latent-trait-theory" target="_blank" rel="noopener noreferrer">American Psychological Association</a>
+- <a href="https://www.madison.co.nz/2022/03/recruitment-rejection-how-to-bounce-back/" target="_blank" rel="noopener noreferrer">Recruitment Rejection: How to Bounce Back</a>
+- <a href="https://thegeekyleader.com/2014/10/10/hire-for-strengths-not-lack-of-weaknesses/" target="_blank" rel="noopener noreferrer">Article -- Hire For Strengths, Not Lack Of Weaknesses</a>

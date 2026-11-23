@@ -7,9 +7,9 @@ categories: [software-dev]
 ---
 
 <img src="/images/external/cdn-images-1.medium.com/1_rBUKCpSMh2n0fjTFZK1Tbw.jpeg" data-recalc-dims="1" decoding="async" />
-<figcaption>Bobsleigh team. <a href="https://flic.kr/p/8WWbjz" target="_blank" rel="noopener">https://flic.kr/p/8WWbjz</a></figcaption>
+<figcaption>Bobsleigh team. <a href="https://flic.kr/p/8WWbjz" target="_blank" rel="noopener noreferrer">https://flic.kr/p/8WWbjz</a></figcaption>
 
-<a href="http://www.businessdictionary.com/definition/organizational-culture.html" target="_blank" rel="noopener">Organizational culture</a> is important for all kind of companies. For Startups, the high-risk ones, keeping it under control is mandatory. We can see the difference using Soccer and <a href="https://en.wikipedia.org/wiki/Bobsleigh" target="_blank" rel="noopener">Bobsleigh</a> teams.
+<a href="http://www.businessdictionary.com/definition/organizational-culture.html" target="_blank" rel="noopener noreferrer">Organizational culture</a> is important for all kind of companies. For Startups, the high-risk ones, keeping it under control is mandatory. We can see the difference using Soccer and <a href="https://en.wikipedia.org/wiki/Bobsleigh" target="_blank" rel="noopener noreferrer">Bobsleigh</a> teams.
 
 While for a soccer team, keeping the values, expectations and behaviors aligned is important. for a Bobsleigh team, any misalignment may be fatal.
 
@@ -19,11 +19,11 @@ For example, if someone doesn't follow the rules during one or few soccer matche
 
 You can find a lot of different definitions of organizational culture. Although accurate, most of these definitions are abstract, generating obstacles to understanding and applying.
 
-Quoting <a href="http://www.businessdictionary.com/definition/organizational-culture.html#ixzz4DEcsLNav" target="_blank" rel="noopener">Business dictionary</a>, organizational culture is:
+Quoting <a href="http://www.businessdictionary.com/definition/organizational-culture.html#ixzz4DEcsLNav" target="_blank" rel="noopener noreferrer">Business dictionary</a>, organizational culture is:
 
 > The values and behaviors that contribute to the unique social and psychological environment of an organization.
 
-A great and short definition was made by professor <a href="https://www.jbs.cam.ac.uk/faculty-research/faculty-a-z/philip-stiles/" target="_blank" rel="noopener">Philip Stiles</a>. He states:
+A great and short definition was made by professor <a href="https://www.jbs.cam.ac.uk/faculty-research/faculty-a-z/philip-stiles/" target="_blank" rel="noopener noreferrer">Philip Stiles</a>. He states:
 
 > Shared values, artifacts and underlying assumptions of a firm.
 
@@ -39,7 +39,7 @@ Let's make clear some important points:
 >
 > -- founders network (@foundersnetwork) [August 4, 2015](https://twitter.com/foundersnetwork/status/628596477707841536?ref_src=twsrc%5Etfw)
 
-I really agree with the statement that culture is the soul of a company. Like a soul, it always exists. Good sources to see how not handle the culture can affect negatively the company are the books: <a href="https://www.amazon.com/Power-Habit-What-Life-Business/dp/081298160X" target="_blank" rel="noopener">The power of habits</a> and <a href="https://www.amazon.com/Better-Mistake-Unexpected-Benefits-Being/dp/1594485674" target="_blank" rel="noopener">Better by mistakes</a>.
+I really agree with the statement that culture is the soul of a company. Like a soul, it always exists. Good sources to see how not handle the culture can affect negatively the company are the books: <a href="https://www.amazon.com/Power-Habit-What-Life-Business/dp/081298160X" target="_blank" rel="noopener noreferrer">The power of habits</a> and <a href="https://www.amazon.com/Better-Mistake-Unexpected-Benefits-Being/dp/1594485674" target="_blank" rel="noopener noreferrer">Better by mistakes</a>.
 
 > There are no habit-free organizations. There are just places where they aren't deliberately conceived and places where they are created with no planning.
 
@@ -101,9 +101,9 @@ Empowering employees. Create tools to support the team to help the clients. Give
 
 **Cases**
 
-You can see it in some companies such as <a href="https://disneyinstitute.com/about/our-core-competencies/culture/" target="_blank" rel="noopener">Disney</a> (advanced mode). They have an impressive and evolved organizational culture.
+You can see it in some companies such as <a href="https://disneyinstitute.com/about/our-core-competencies/culture/" target="_blank" rel="noopener noreferrer">Disney</a> (advanced mode). They have an impressive and evolved organizational culture.
 
-In a small scale, you can see it in a Brazilian company called <a href="https://www.drconsulta.com/" target="_blank" rel="noopener">Dr. Consulta</a>. This health company is changing the market in Brazil using a great organizational culture.
+In a small scale, you can see it in a Brazilian company called <a href="https://www.drconsulta.com/" target="_blank" rel="noopener noreferrer">Dr. Consulta</a>. This health company is changing the market in Brazil using a great organizational culture.
 
 ------------------------------------------------------------------------
 

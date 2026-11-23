@@ -8,7 +8,7 @@ categories: [software-dev]
 
 <figure class="wp-caption">
 <img src="https://cdn-images-1.medium.com/max/800/0*6svX2MlVCE22ZaU3" decoding="async" data-width="3000" data-height="2000" />
-<figcaption>Photo by <a href="https://unsplash.com/@patrickperkins?utm_source=medium&amp;utm_medium=referral" target="_blank" rel="noopener">Patrick Perkins</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" target="_blank" rel="noopener">Unsplash</a></figcaption>
+<figcaption>Photo by <a href="https://unsplash.com/@patrickperkins?utm_source=medium&amp;utm_medium=referral" target="_blank" rel="noopener noreferrer">Patrick Perkins</a> on <a href="https://unsplash.com?utm_source=medium&amp;utm_medium=referral" target="_blank" rel="noopener noreferrer">Unsplash</a></figcaption>
 </figure>
 
 **OKR** é uma metodologia não prescritiva e evolutiva. Normalmente quando começamos a usar OKRs, usamos de forma "errada", começamos com o que temos. Isso não é ruim, OKRs, como Kanban, ficam bons com consistência de uso, são processos de difícil domínio. Só que isso não é uma justificativa de não buscarmos o principal dessa metodologia -- **O acompanhamento de resultados que fazem a empresa avançar dentro de um timebox (curto).**
@@ -17,9 +17,9 @@ categories: [software-dev]
 
 Há algum tempo atrás, empresas eram desenvolvidas em contextos de poucas mudanças, modelos de negócio mais estáveis, e com menos possibilidade de disrupção. Nesse período, os processos eram em geral mais prescritivos, focavam na produtividade em contrapartida à eficácia.
 
-Então era comum projetos super longos, metodologias inspiradas na engenharia, metas de "longo prazo" (3 à 5 anos), <a href="https://resultadosdigitais.com.br/marketing/balanced-scorecard/" target="_blank" rel="noopener">Balance scorecard</a>, etc. Nesse momento, os direcionamentos em geral eram top-down.
+Então era comum projetos super longos, metodologias inspiradas na engenharia, metas de "longo prazo" (3 à 5 anos), <a href="https://resultadosdigitais.com.br/marketing/balanced-scorecard/" target="_blank" rel="noopener noreferrer">Balance scorecard</a>, etc. Nesse momento, os direcionamentos em geral eram top-down.
 
-Quando a incerteza virou o padrão, os métodos mudaram. O custo e o tempo para se colocar um negócio no ar diminuiu drasticamente, então os métodos mais prescritivos começaram a falhar (mais). Dois conceitos de mundo ajudam a entender o cenário que vivemos hoje -- <a href="https://www.siteware.com.br/gestao-estrategica/mundo-vuca-o-que-e/" target="_blank" rel="noopener">Mundo VUCA</a>, <a href="https://menvie.com.br/mundo-bani/" target="_blank" rel="noopener">Mundo BANI</a>. Era o fim de olhar entrega como resultado.
+Quando a incerteza virou o padrão, os métodos mudaram. O custo e o tempo para se colocar um negócio no ar diminuiu drasticamente, então os métodos mais prescritivos começaram a falhar (mais). Dois conceitos de mundo ajudam a entender o cenário que vivemos hoje -- <a href="https://www.siteware.com.br/gestao-estrategica/mundo-vuca-o-que-e/" target="_blank" rel="noopener noreferrer">Mundo VUCA</a>, <a href="https://menvie.com.br/mundo-bani/" target="_blank" rel="noopener noreferrer">Mundo BANI</a>. Era o fim de olhar entrega como resultado.
 
 #### A mudança para a visão de resultados
 
@@ -65,17 +65,17 @@ Temos limitações para paralelizar projetos, não conseguimos "agilizar" frente
 
 **3. Se você quer mais resultados, limite o WIP**
 
-Por isso OKRs tem limites de objetivos e KRs. Veja mais em <a href="https://pt.wikipedia.org/wiki/Teoria_das_restri%C3%A7%C3%B5es" target="_blank" rel="noopener">Teoria das restrições</a> e <a href="https://kanbanize.com/pt/recursos-kanban/primeiros-passos/o-que-e-wip" target="_blank" rel="noopener">Limite de WIP</a>. **Os dois maiores erros de gestão (de jr àsr) são paralelizar coisas e aumentar escopo (escopos grandes).**
+Por isso OKRs tem limites de objetivos e KRs. Veja mais em <a href="https://pt.wikipedia.org/wiki/Teoria_das_restri%C3%A7%C3%B5es" target="_blank" rel="noopener noreferrer">Teoria das restrições</a> e <a href="https://kanbanize.com/pt/recursos-kanban/primeiros-passos/o-que-e-wip" target="_blank" rel="noopener noreferrer">Limite de WIP</a>. **Os dois maiores erros de gestão (de jr àsr) são paralelizar coisas e aumentar escopo (escopos grandes).**
 
 #### Como estruturar um processo estratégico de curto prazo
 
-No começo, faça como puder fazer. Veja esse <a href="https://eleganthack.com/the-art-of-the-okr/" target="_blank" rel="noopener">site</a> que há uma diversidade de dicas de como fazer e não fazer.
+No começo, faça como puder fazer. Veja esse <a href="https://eleganthack.com/the-art-of-the-okr/" target="_blank" rel="noopener noreferrer">site</a> que há uma diversidade de dicas de como fazer e não fazer.
 
 Aqui, o foco é para times mais maduros que já rodaram pelo menos dois ciclos de OKRs.
 
 1.  **Definir OKRs**
 
-Diferente de outros métodos, OKRs não são definidos somente Top-down, ou seja, por uma definição do *management* da empresa. Normalmente <a href="https://teamtopologies.com/key-concepts" target="_blank" rel="noopener">times stream-aligned</a> têm uma dependência maior do *management* (perdão pelo inglês), mas outros não. A maioria dos times em uma empresa acabam sendo diferentes de stream-aligned.
+Diferente de outros métodos, OKRs não são definidos somente Top-down, ou seja, por uma definição do *management* da empresa. Normalmente <a href="https://teamtopologies.com/key-concepts" target="_blank" rel="noopener noreferrer">times stream-aligned</a> têm uma dependência maior do *management* (perdão pelo inglês), mas outros não. A maioria dos times em uma empresa acabam sendo diferentes de stream-aligned.
 
 Há diversas fontes para essa definição. Recomendo as seguintes perguntas para essa construção:
 
@@ -160,7 +160,7 @@ Muitos times acham que todo mundo tem que ter uma entrada no OKR. Nem sempre iss
 
 ------------------------------------------------------------------------
 
-OKRs são realmente difíceis de aplicar, essas dificuldade não podem ser justificativas de não tentar. No fim, usar OKRs errados é melhor que usar qualquer metodologia que foca em entregas. Desde a década de 70 já está claro os problemas de métodos prescritivos, não espere chegar no centenário da <a href="https://pt.wikipedia.org/wiki/Crise_do_software" target="_blank" rel="noopener">crise do software</a> pra mudar isso.
+OKRs são realmente difíceis de aplicar, essas dificuldade não podem ser justificativas de não tentar. No fim, usar OKRs errados é melhor que usar qualquer metodologia que foca em entregas. Desde a década de 70 já está claro os problemas de métodos prescritivos, não espere chegar no centenário da <a href="https://pt.wikipedia.org/wiki/Crise_do_software" target="_blank" rel="noopener noreferrer">crise do software</a> pra mudar isso.
 
 ------------------------------------------------------------------------
 
@@ -168,4 +168,4 @@ Minha perspectiva totalmente pessoal é que startups que não trabalham com outc
 
 ------------------------------------------------------------------------
 
-Quer trocar uma ideia? Eu tô no <a href="https://twitter.com/marcelioleal" target="_blank" rel="noopener">twitter</a> e no <a href="https://www.linkedin.com/in/marcelioleal/" target="_blank" rel="noopener">linkedin</a>.
+Quer trocar uma ideia? Eu tô no <a href="https://twitter.com/marcelioleal" target="_blank" rel="noopener noreferrer">twitter</a> e no <a href="https://www.linkedin.com/in/marcelioleal/" target="_blank" rel="noopener noreferrer">linkedin</a>.

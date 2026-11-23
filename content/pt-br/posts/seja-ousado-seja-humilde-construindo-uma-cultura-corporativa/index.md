@@ -10,7 +10,7 @@ categories: [software-dev]
 <img src="/images/external/cdn-images-1.medium.com/1_vviLBp4BsSndk_31dnA3Tw.png" data-recalc-dims="1" decoding="async" data-width="880" data-height="404" />
 </figure>
 
-Cultura é algo que pode ser guiado, mas não totalmente definido. É algo que é temporal, e que é constantemente modificado. No <a href="http://qedu.org.br" target="_blank" rel="noopener">QEdu</a> nós resolvemos estabelecer 5 valores pra começar a moldar nossa cultura, são eles: Confiança e Transparência (Trust and Transparency); Efetividade (Accountability); Aprendizado Constante (Lifelong Learning); Seja Ousado, seja Humilde (Be Bold, Be Humble); e Guiado por Dados (Data Driven). Nós tivemos várias influências pra escolher esses valores iniciais, dentre as quais eu posso citar a <a href="https://thenextweb.com/insider/2013/04/27/the-5-values-that-drive-500-startups/#.tnw_Hy8IMPsB" target="_blank" rel="noopener">500 Startups</a>, <a href="https://pt.slideshare.net/avarteq/kanban-kaizen-culture-of-continuous-improvement" target="_blank" rel="noopener">Kanban</a> e o <a href="https://twitter.com/bhorowitz?lang=pt" target="_blank" rel="noopener">Ben Horowitz</a>.
+Cultura é algo que pode ser guiado, mas não totalmente definido. É algo que é temporal, e que é constantemente modificado. No <a href="http://qedu.org.br" target="_blank" rel="noopener noreferrer">QEdu</a> nós resolvemos estabelecer 5 valores pra começar a moldar nossa cultura, são eles: Confiança e Transparência (Trust and Transparency); Efetividade (Accountability); Aprendizado Constante (Lifelong Learning); Seja Ousado, seja Humilde (Be Bold, Be Humble); e Guiado por Dados (Data Driven). Nós tivemos várias influências pra escolher esses valores iniciais, dentre as quais eu posso citar a <a href="https://thenextweb.com/insider/2013/04/27/the-5-values-that-drive-500-startups/#.tnw_Hy8IMPsB" target="_blank" rel="noopener noreferrer">500 Startups</a>, <a href="https://pt.slideshare.net/avarteq/kanban-kaizen-culture-of-continuous-improvement" target="_blank" rel="noopener noreferrer">Kanban</a> e o <a href="https://twitter.com/bhorowitz?lang=pt" target="_blank" rel="noopener noreferrer">Ben Horowitz</a>.
 
 Como são valores complexos, iniciamos um processo de debate onde cada um dos membros do time ficou responsável por falar sobre um valor. Eu fiquei responsável por falar sobre "Seja Ousado, Seja Humilde" e resolvi escrever este post explicando a importância desse valor e o que eu vejo como essencial nele.
 
@@ -18,13 +18,13 @@ Como são valores complexos, iniciamos um processo de debate onde cada um dos me
 
 > "We're about taking risks and making things happen: as individuals, as a team, and as a family. We should always think BIG and BIGGER about our strategies and our tactics." -- Dave Mcclure
 
-A principal influência pra definição desse valor foi a <a href="https://500.co/" target="_blank" rel="noopener">500 Startups</a>, que por sua vez se inspirou na Wikipedia. Esse valor traz duas palavras que podem parecer conflitantes, e por conta disso, é importante que sejam só um valor. Se assimiladas corretamente, pode-se ter uma boa base de entendimento de uma boa mentalidade de startup.
+A principal influência pra definição desse valor foi a <a href="https://500.co/" target="_blank" rel="noopener noreferrer">500 Startups</a>, que por sua vez se inspirou na Wikipedia. Esse valor traz duas palavras que podem parecer conflitantes, e por conta disso, é importante que sejam só um valor. Se assimiladas corretamente, pode-se ter uma boa base de entendimento de uma boa mentalidade de startup.
 
 É comum ver startups sendo muito ousadas, mas sem nenhuma humildade, o que resulta muitas vezes em algo muito próximo a culturas *ad hoc*, surrealistas, e baseadas em empreendedorismo de auto-ajuda.
 
 Por outro lado, é muito importante distinguir humildade de passividade. Já está bem claro a necessidade de resiliência pra um empreendedor. Passividade e falta de convicção levam a pouca resiliência, por isso é necessário entender como usar a humildade e construir confiança.
 
-<a href="https://www.slideshare.net/dmc500hats/startup-metrics-for-pirates-seedcamp-sept-2009/59-Be_Bold_Be_Humble_20" target="_blank" rel="noopener">Dave Mcclure</a> cita que em curto prazo esse valor pode ser traduzido em humildade e rigor analítico, e em longo prazo em audácia e inspiração criativa.
+<a href="https://www.slideshare.net/dmc500hats/startup-metrics-for-pirates-seedcamp-sept-2009/59-Be_Bold_Be_Humble_20" target="_blank" rel="noopener noreferrer">Dave Mcclure</a> cita que em curto prazo esse valor pode ser traduzido em humildade e rigor analítico, e em longo prazo em audácia e inspiração criativa.
 
 ### **Seja Humilde**
 
@@ -48,7 +48,7 @@ Humildade em startups pode se traduzir em alguns pontos, dentre eles:
 
 Uma das alternativas pra se ouvir melhor é tentar evitar o ímpeto da reação imediata, ou parar de trazer suas conclusões prévias na exposição de problemas ou oportunidades. Desta forma, você pode fazer isso posteriormente e tirar mais proveito do que foi lhe falado.
 
-Entender técnicas como <a href="https://papodehomem.com.br/comunicacao-nao-violenta-o-que-e-e-como-praticar/" target="_blank" rel="noopener">Comunicação não-violenta</a> é uma outra forma bem interessante de evoluir nesse aspecto. Talvez você consiga entender mais as necessidades e sentimentos por trás de uma afirmação.
+Entender técnicas como <a href="https://papodehomem.com.br/comunicacao-nao-violenta-o-que-e-e-como-praticar/" target="_blank" rel="noopener noreferrer">Comunicação não-violenta</a> é uma outra forma bem interessante de evoluir nesse aspecto. Talvez você consiga entender mais as necessidades e sentimentos por trás de uma afirmação.
 
 #### **Formalização**
 
@@ -56,7 +56,7 @@ Entender técnicas como <a href="https://papodehomem.com.br/comunicacao-nao-viol
 <img src="/images/external/cdn-images-1.medium.com/1_3R3J3RRtMj9QjTInVPY7YQ.png" data-recalc-dims="1" decoding="async" data-width="1058" data-height="274" />
 </figure>
 
-É quase impossível receber feedback se isso escrito e formalizado, afinal, não estamos lhe dando com coisas triviais. Por exemplo, dar qualquer dica pra uma startup sem entender o contexto geral dela, por exemplo ver um <a href="https://strategyzer.com/canvas/business-model-canvas" target="_blank" rel="noopener">Canvas</a>, pode levá-la a seguir um caminho bem errado.
+É quase impossível receber feedback se isso escrito e formalizado, afinal, não estamos lhe dando com coisas triviais. Por exemplo, dar qualquer dica pra uma startup sem entender o contexto geral dela, por exemplo ver um <a href="https://strategyzer.com/canvas/business-model-canvas" target="_blank" rel="noopener noreferrer">Canvas</a>, pode levá-la a seguir um caminho bem errado.
 
 Além disso, quando você estrutura o conhecimento fica muito mais difícil deixar passar um salto de fé, você é guiado à gerar coerência se segue um modelo mais formal. Por exemplo, quando você usa um Business Model Canvas você é guiado à usar áreas que tem uma semântica atrelada, isso já força você a não criar um modelo sem nexo.
 
@@ -88,15 +88,15 @@ O relacionamento com investidores também é bem importante nesse sentido. Inves
 
 </div>
 
-Meu conceito de ousadia e coragem foi atualizado quando eu vi um vídeo do <a href="https://steveblank.com/" target="_blank" rel="noopener">Steve Blank</a> durante o período que estive fazendo o curso dele. Ele falava que se você falar que não consegue entrevistas durante a semana do curso significa que você não está falando sério em empreender. Eu complemento que isso não deve ser somente coisa de fundador ou CEO, deve ser geral!
+Meu conceito de ousadia e coragem foi atualizado quando eu vi um vídeo do <a href="https://steveblank.com/" target="_blank" rel="noopener noreferrer">Steve Blank</a> durante o período que estive fazendo o curso dele. Ele falava que se você falar que não consegue entrevistas durante a semana do curso significa que você não está falando sério em empreender. Eu complemento que isso não deve ser somente coisa de fundador ou CEO, deve ser geral!
 
 <figure>
 <img src="/images/external/cdn-images-1.medium.com/1_CB1k5owjdynX8FC330VHaA.png" data-recalc-dims="1" decoding="async" data-width="858" data-height="285" />
 </figure>
 
-Não crie barreiras pra você mesmo, já existem muitas que vão aparecer e que você vai enfrentar, vide <a href="https://rafaelcosta.jusbrasil.com.br/artigos/454529208/o-jusbrasil-pode-acabar-em-6-meses-sim-definitivamente" target="_blank" rel="noopener">o post da Jusbrasil</a>. O dinheiro vai complicar, o investidor vai intervir, o cenário econômico vai mudar, o conservadorismo da sua área de atuação vai te atrapalhar, o servidor vai cair, etc. Então você não precisa criar mais desculpas. Vai lá e muda!
+Não crie barreiras pra você mesmo, já existem muitas que vão aparecer e que você vai enfrentar, vide <a href="https://rafaelcosta.jusbrasil.com.br/artigos/454529208/o-jusbrasil-pode-acabar-em-6-meses-sim-definitivamente" target="_blank" rel="noopener noreferrer">o post da Jusbrasil</a>. O dinheiro vai complicar, o investidor vai intervir, o cenário econômico vai mudar, o conservadorismo da sua área de atuação vai te atrapalhar, o servidor vai cair, etc. Então você não precisa criar mais desculpas. Vai lá e muda!
 
-Um exemplo de como não se bloquear é a dica do <a href="https://steveblank.com/" target="_blank" rel="noopener">Steve Blank</a> pra quebrar certas normais culturais. Se você faz algo mais agressivo e que não é muito apreciado culturalmente, diga que você é um empreendedor, que você aprendeu isso no USA, e que você se desculpa pelo que você está fazendo. Mas a única coisa que você não deve fazer é deixar as coisas como elas estão, ou desistir na primeira negação ou dificuldade.
+Um exemplo de como não se bloquear é a dica do <a href="https://steveblank.com/" target="_blank" rel="noopener noreferrer">Steve Blank</a> pra quebrar certas normais culturais. Se você faz algo mais agressivo e que não é muito apreciado culturalmente, diga que você é um empreendedor, que você aprendeu isso no USA, e que você se desculpa pelo que você está fazendo. Mas a única coisa que você não deve fazer é deixar as coisas como elas estão, ou desistir na primeira negação ou dificuldade.
 
 ### **A Implementação em uma Empresa**
 
@@ -116,10 +116,10 @@ Bold pode ser traduzido de diversas formas. Ousado, audacioso, corajoso, etc. Ac
 
 **Referências**
 
-- <a href="https://thenextweb.com/insider/2013/04/27/the-5-values-that-drive-500-startups/#.tnw_Hy8IMPsB" target="_blank" rel="noopener">500 Strong -- 500 Startups</a>
-- <a href="https://br.udacity.com/course/how-to-build-a-startup--ep245/" target="_blank" rel="noopener">How to build a Startup</a> -- Udacity
-- <a href="https://vimeo.com/groups/204136" target="_blank" rel="noopener">Customer Discovery</a> -- Vimeo
-- <a href="https://andromedayelton.com/2016/08/18/be-bold-be-humble-wikipedia-libraries-and-who-spoke/" target="_blank" rel="noopener">Uma visão crítica sobre a falta de diversidade e o valor "ousado"</a>
-- <a href="https://medium.com/one-side-project-challenge/lessons-from-ben-horowitz-on-building-a-business-a-synopsis-of-the-hard-thing-about-hard-things-4c8b0e97c60b" target="_blank" rel="noopener">O capítulo 2</a> de <a href="https://www.amazon.com.br/Hard-Thing-about-Things-Building/dp/0062273205" target="_blank" rel="noopener">Hard Things About Hard Things</a> -- <a href="https://www.amazon.com.br/s/ref=dp_byline_sr_book_1?ie=UTF8&amp;field-author=Ben+Horowitz&amp;search-alias=books" target="_blank" rel="noopener">Ben Horowitz</a>
-- <a href="https://www.slideshare.net/dmc500hats/startup-metrics-for-pirates-seedcamp-sept-2009/59-Be_Bold_Be_Humble_20" target="_blank" rel="noopener">Startup Metrics by Pirates</a> -- <a href="https://twitter.com/davemcclure?lang=pt" target="_blank" rel="noopener">Dave McClure</a>
-- <a href="https://pt.slideshare.net/marcelioleal/startup-developer-mindset-60131331" target="_blank" rel="noopener">Startup Developer Mindset</a>
+- <a href="https://thenextweb.com/insider/2013/04/27/the-5-values-that-drive-500-startups/#.tnw_Hy8IMPsB" target="_blank" rel="noopener noreferrer">500 Strong -- 500 Startups</a>
+- <a href="https://br.udacity.com/course/how-to-build-a-startup--ep245/" target="_blank" rel="noopener noreferrer">How to build a Startup</a> -- Udacity
+- <a href="https://vimeo.com/groups/204136" target="_blank" rel="noopener noreferrer">Customer Discovery</a> -- Vimeo
+- <a href="https://andromedayelton.com/2016/08/18/be-bold-be-humble-wikipedia-libraries-and-who-spoke/" target="_blank" rel="noopener noreferrer">Uma visão crítica sobre a falta de diversidade e o valor "ousado"</a>
+- <a href="https://medium.com/one-side-project-challenge/lessons-from-ben-horowitz-on-building-a-business-a-synopsis-of-the-hard-thing-about-hard-things-4c8b0e97c60b" target="_blank" rel="noopener noreferrer">O capítulo 2</a> de <a href="https://www.amazon.com.br/Hard-Thing-about-Things-Building/dp/0062273205" target="_blank" rel="noopener noreferrer">Hard Things About Hard Things</a> -- <a href="https://www.amazon.com.br/s/ref=dp_byline_sr_book_1?ie=UTF8&amp;field-author=Ben+Horowitz&amp;search-alias=books" target="_blank" rel="noopener noreferrer">Ben Horowitz</a>
+- <a href="https://www.slideshare.net/dmc500hats/startup-metrics-for-pirates-seedcamp-sept-2009/59-Be_Bold_Be_Humble_20" target="_blank" rel="noopener noreferrer">Startup Metrics by Pirates</a> -- <a href="https://twitter.com/davemcclure?lang=pt" target="_blank" rel="noopener noreferrer">Dave McClure</a>
+- <a href="https://pt.slideshare.net/marcelioleal/startup-developer-mindset-60131331" target="_blank" rel="noopener noreferrer">Startup Developer Mindset</a>

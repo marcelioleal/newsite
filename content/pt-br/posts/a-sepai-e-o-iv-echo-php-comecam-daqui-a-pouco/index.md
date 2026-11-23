@@ -6,7 +6,7 @@ wp_id: 16
 categories: [software-dev]
 ---
 
-A <a href="http://www.sepai.com.br/" target="_blank">XXI Semana Paraense de informática</a> começa daqui a menos de 24h.
+A <a href="http://www.sepai.com.br/" target="_blank" rel="noopener noreferrer">XXI Semana Paraense de informática</a> começa daqui a menos de 24h.
 
 
 

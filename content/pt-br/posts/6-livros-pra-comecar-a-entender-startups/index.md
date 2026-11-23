@@ -18,9 +18,9 @@ A primeira coisa a se aprender em Startups é a realidade. Uma das melhores form
 
 Nesse contexto, três livros que eu indico são:
 
-- <a href="https://www.goodreads.com/book/show/98233.Founders_at_Work?ac=1&amp;from_search=true" target="_blank" rel="noopener">Founders at Work</a> -- <a href="http://Jessica%20Livingston" target="_blank" rel="noopener">Jessica Livingston</a>
-- <a href="https://www.goodreads.com/book/show/13562816-the-rainforest" target="_blank" rel="noopener">The Rainforest</a> -- <a href="https://www.goodreads.com/author/show/5784741.Victor_W_Hwang" target="_blank" rel="noopener">Victor Hwang</a> (indicação do <a href="https://medium.com/u/b3acae56dc79" target="_blank" rel="noopener">Daniel Wildt</a>)
-- <a href="https://www.goodreads.com/book/show/37875.The_Art_of_the_Start?ac=1&amp;from_search=true" target="_blank" rel="noopener">The Art of Start </a>-- <a href="https://www.goodreads.com/author/show/21269.Guy_Kawasaki" target="_blank" rel="noopener">Guy Kawasaki</a>
+- <a href="https://www.goodreads.com/book/show/98233.Founders_at_Work?ac=1&amp;from_search=true" target="_blank" rel="noopener noreferrer">Founders at Work</a> -- <a href="http://Jessica%20Livingston" target="_blank" rel="noopener noreferrer">Jessica Livingston</a>
+- <a href="https://www.goodreads.com/book/show/13562816-the-rainforest" target="_blank" rel="noopener noreferrer">The Rainforest</a> -- <a href="https://www.goodreads.com/author/show/5784741.Victor_W_Hwang" target="_blank" rel="noopener noreferrer">Victor Hwang</a> (indicação do <a href="https://medium.com/u/b3acae56dc79" target="_blank" rel="noopener noreferrer">Daniel Wildt</a>)
+- <a href="https://www.goodreads.com/book/show/37875.The_Art_of_the_Start?ac=1&amp;from_search=true" target="_blank" rel="noopener noreferrer">The Art of Start </a>-- <a href="https://www.goodreads.com/author/show/21269.Guy_Kawasaki" target="_blank" rel="noopener noreferrer">Guy Kawasaki</a>
 
 #### A Estrutura e o Processo
 
@@ -28,9 +28,9 @@ Sabendo que Startups são negócios de alto risco, parte-se então pra métodos 
 
 Dentre os livros indicados aqui estão:
 
-- <a href="https://www.goodreads.com/book/show/7723797-business-model-generation?ac=1&amp;from_search=true" target="_blank" rel="noopener">Business Model Generation</a> -- <a href="https://www.goodreads.com/author/show/3309113.Alexander_Osterwalder" target="_blank" rel="noopener">Alexander Osterwalder</a>
-- <a href="https://www.goodreads.com/book/show/10127019-the-lean-startup?ac=1&amp;from_search=true" target="_blank" rel="noopener">The Lean Startup </a>-- <a href="https://www.goodreads.com/author/show/278960.Eric_Ries" target="_blank" rel="noopener">Eric Ries</a>
-- <a href="https://www.goodreads.com/book/show/13078769-running-lean" target="_blank" rel="noopener">Running Lean</a> -- <a href="https://www.goodreads.com/author/show/5339404.Ash_Maurya" target="_blank" rel="noopener">Ash Maurya</a>
+- <a href="https://www.goodreads.com/book/show/7723797-business-model-generation?ac=1&amp;from_search=true" target="_blank" rel="noopener noreferrer">Business Model Generation</a> -- <a href="https://www.goodreads.com/author/show/3309113.Alexander_Osterwalder" target="_blank" rel="noopener noreferrer">Alexander Osterwalder</a>
+- <a href="https://www.goodreads.com/book/show/10127019-the-lean-startup?ac=1&amp;from_search=true" target="_blank" rel="noopener noreferrer">The Lean Startup </a>-- <a href="https://www.goodreads.com/author/show/278960.Eric_Ries" target="_blank" rel="noopener noreferrer">Eric Ries</a>
+- <a href="https://www.goodreads.com/book/show/13078769-running-lean" target="_blank" rel="noopener noreferrer">Running Lean</a> -- <a href="https://www.goodreads.com/author/show/5339404.Ash_Maurya" target="_blank" rel="noopener noreferrer">Ash Maurya</a>
 
 ------------------------------------------------------------------------
 

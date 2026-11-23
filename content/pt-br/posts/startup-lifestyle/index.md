@@ -32,7 +32,7 @@ Estávamos no primeiro semestre de 2004, e um amigo de trabalho me chama e fala 
 
 Eu falei que sim, ai começou a corrida pra formar um time pra desenvolver um sistema de escopo de um ano ou mais em sete meses. Assim começava a Abstract, a primeira empresa que fui sócio.
 
-São diversas histórias durante esse período, mas algumas especialmente ficaram na minha memória. Por exemplo, no dia que homologamos a primeira parte do sistema na receita federal. Nós tinhamos 21, 22 anos na média, as empresas realmente arriscaram em nos contratar, mas tudo deu certo e foi nosso primeiro marco. Aquele fim de tarde na <a href="http://www.amazonbeer.com.br/" target="_blank" rel="noopener">Amazon Beer</a> vai ficar na memória por um bom tempo. **Até o pastel normal que eu comi tem um gosto diferente até hoje. Era o gosto de empreender, de entregar as coisas, de ver o esforço do time sendo concretizado.**
+São diversas histórias durante esse período, mas algumas especialmente ficaram na minha memória. Por exemplo, no dia que homologamos a primeira parte do sistema na receita federal. Nós tinhamos 21, 22 anos na média, as empresas realmente arriscaram em nos contratar, mas tudo deu certo e foi nosso primeiro marco. Aquele fim de tarde na <a href="http://www.amazonbeer.com.br/" target="_blank" rel="noopener noreferrer">Amazon Beer</a> vai ficar na memória por um bom tempo. **Até o pastel normal que eu comi tem um gosto diferente até hoje. Era o gosto de empreender, de entregar as coisas, de ver o esforço do time sendo concretizado.**
 
 E num outro dia que tinha uma entrega importante e uma palestra pra apresentar no mesmo dia. Fiquei até 2h da manhã no desenvolvimento (movido a café), depois fui "terminar" a palestra. Resultado: dormi 2 horas e fui palestrar. Tive a grande ideia de tomar um Red Bull as 8:30 da manha, daí simplesmente começou a disparar meu coração e eu não conseguia mais me controlar diante de 800 pessoas. Foi ruim, mas foi uma lição bem aprendida.
 
@@ -103,7 +103,7 @@ Até que voltou a ideia de que eu precisava de tempo, e apareceu um novo concurs
 #### Lições aprendidas
 
 - Se você acha que não tem tempo, realmente olhe pra outras pessoas e veja se isso é verdade.
-- Equilibre seu dia-a-dia, não deixe sua ocupação principal tomar sua vida de você. O Ev Williams resume algumas coisas bem legais <a href="https://medium.com/@ev/formula-for-entrepreneurial-success-ea0b02c504cd" target="_blank" rel="noopener">aqui</a>.
+- Equilibre seu dia-a-dia, não deixe sua ocupação principal tomar sua vida de você. O Ev Williams resume algumas coisas bem legais <a href="https://medium.com/@ev/formula-for-entrepreneurial-success-ea0b02c504cd" target="_blank" rel="noopener noreferrer">aqui</a>.
 - O nível enterprise tenta solucionar problemas TI que não deveriam existir por padrão, ai criam outros problemas, e isso segue de forma recursiva até a desistência. Quando você vê uma hierarquia muito grande lembre-se disso.
 
 ### Demorou mas eu achei
@@ -120,19 +120,19 @@ Depois de um tempo as hipóteses se mostraram falsas. Primeiro que eu não havia
 
 **Era isso que eu gostava: empreender, gerar valor e impactar pessoas, software, risco, ser lean/anorexic, etc.**
 
-Recebi um convite de dois amigos pra fazer uma consultoria pra uma startup que estava começando, a <a href="http://www.ons.ee/" target="_blank" rel="noopener">Onsee</a>. Depois de uns 6 meses comecei a experimentar paralelamente. Nessa época eu já estava lendo sem parar sobre tudo: Cauda Longa, Free, etc. Já tinha começado o fascínio.
+Recebi um convite de dois amigos pra fazer uma consultoria pra uma startup que estava começando, a <a href="http://www.ons.ee/" target="_blank" rel="noopener noreferrer">Onsee</a>. Depois de uns 6 meses comecei a experimentar paralelamente. Nessa época eu já estava lendo sem parar sobre tudo: Cauda Longa, Free, etc. Já tinha começado o fascínio.
 
 <figure>
 <img src="/images/external/cdn-images-1.medium.com/1_AqUJuRTlsx-i_nkoxh6VDA.png" data-recalc-dims="1" decoding="async" data-width="900" data-height="1350" />
 </figure>
 
-Até que lendo o livro Startup (<a href="http://www.amazon.com/Founders-Work-Stories-Startups-Early/dp/1430210788" target="_blank" rel="noopener">Founders at Work</a>) da Jéssica Livingston as coisas ficaram mais claras pra mim. Foi quando eu decidi que iria sair do SERPRO e aceitar a proposta full time da Onsee. Tentei me preparar e aguentar uns 3 meses pra juntar alguma coisa. Acabei nem conseguindo ficar esse tempo. Já não conseguia render no SERPRO e isso me afetava negativamente.
+Até que lendo o livro Startup (<a href="http://www.amazon.com/Founders-Work-Stories-Startups-Early/dp/1430210788" target="_blank" rel="noopener noreferrer">Founders at Work</a>) da Jéssica Livingston as coisas ficaram mais claras pra mim. Foi quando eu decidi que iria sair do SERPRO e aceitar a proposta full time da Onsee. Tentei me preparar e aguentar uns 3 meses pra juntar alguma coisa. Acabei nem conseguindo ficar esse tempo. Já não conseguia render no SERPRO e isso me afetava negativamente.
 
 Foi nesse período que também percebi que eu não estava guiando minha carreira, não havia um plano de médio/longo prazo, havia apenas uma busca pra melhorar minha condição e diminuir meus riscos dentro de um mercado instável e pequeno.
 
 A minha escolha de ir pra uma Startup foi algo consciente. Aquilo **estava alinhado com as minhas perspectivas de vida, dava sentido ao o que eu gostava de fazer.** Então nada mais justo do que parar e planejar a médio prazo.
 
-Como eu sabia que o risco era alto, era a minha primeira startup, criei alguns pontos pra tentar me proteger a médio prazo. Por exemplo, defini um "<a href="http://www.mundotrade.com.br/ordem-stop-loss" target="_blank" rel="noopener">stop loss</a>" de um ano. Caso não desse certo (no meu ponto de vista) eu iria partir pra um aprendizado profundo pra voltar e empreender novamente.
+Como eu sabia que o risco era alto, era a minha primeira startup, criei alguns pontos pra tentar me proteger a médio prazo. Por exemplo, defini um "<a href="http://www.mundotrade.com.br/ordem-stop-loss" target="_blank" rel="noopener noreferrer">stop loss</a>" de um ano. Caso não desse certo (no meu ponto de vista) eu iria partir pra um aprendizado profundo pra voltar e empreender novamente.
 
 **Enfim, fui tentar ser feliz fazendo o que eu gosto !**
 

@@ -44,7 +44,7 @@ Ai foi só correr pra mesa de frutas e pra piscina.
 
 
 
-Fomos a terceira equipe a chegar. E a quarta no <a href="http://www.kaluana.com/trekking/resultado_1_etapa_2007.asp" target="_blank">resultado geral</a> da etapa.
+Fomos a terceira equipe a chegar. E a quarta no <a href="http://www.kaluana.com/trekking/resultado_1_etapa_2007.asp" target="_blank" rel="noopener noreferrer">resultado geral</a> da etapa.
 
 Considerando a pontuação da temporada passada a classificação é a seguinte:
 

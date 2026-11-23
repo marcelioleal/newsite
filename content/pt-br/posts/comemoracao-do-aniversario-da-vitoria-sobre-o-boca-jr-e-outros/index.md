@@ -10,7 +10,7 @@ Ontem a noite fui comer uma isca de peixe no bar São Mateus, e alguns amigos fo
 
 Quando cheguei o bar já contava com a presença de Abnatal e Alexandre [Bluetooth](http://pt.wikipedia.org/wiki/Bluetooth).
 
-<a href="http://img102.imageshack.us/my.php?image=p1010048kh1.jpg" target="_blank"></a>
+<a href="http://img102.imageshack.us/my.php?image=p1010048kh1.jpg" target="_blank" rel="noopener noreferrer"></a>
 
 O bar estava bem vazio, já eram mais de 19h.
 
@@ -94,7 +94,7 @@ Tenho que registrar também que o Deuzinei, tentando mudar o setFocus(), ficava 
 
 Não devo concluir esse post sem voltar o setFocus... Deuzinei.setFocus() ... O detalhe que marcou a noite.
 
-<a href="http://img166.imageshack.us/my.php?image=detalhedeuwy1.jpg" target="_blank"></a>
+<a href="http://img166.imageshack.us/my.php?image=detalhedeuwy1.jpg" target="_blank" rel="noopener noreferrer"></a>
 
 Ah tah, espero que ele continue com seu projeto de estilo...
 

@@ -14,7 +14,7 @@ Já é sabido que a Wikipedia é uma fonte de informações que tem o objetivo d
 
 Em diversos fóruns na internet as pessoas estão discutindo a prova, aqui apresento algumas argumentações sobre a prova. Se os avaliadores dos recursos que foram enviados forem razoavelmente sensatos pelo menos 12 questões terão suas respostas modificadas ou anuladas, ou seja, pelo menos 10% da prova deve ser modificada.
 
-A prova do SERPRO para o cargo de Especialização em Desenvolvimento de Sistemas pode ser baixada <a href="http://www.cespe.unb.br/concursos/SERPRO2008/arquivos/SERPRO_CARGO_05.pdf" target="_blank">aqui</a>.
+A prova do SERPRO para o cargo de Especialização em Desenvolvimento de Sistemas pode ser baixada <a href="http://www.cespe.unb.br/concursos/SERPRO2008/arquivos/SERPRO_CARGO_05.pdf" target="_blank" rel="noopener noreferrer">aqui</a>.
 
 Questões
 
@@ -70,7 +70,7 @@ Dentre os erros pode-se citar:
 - O correto seria compilado para um código, e não em um código.
 - Uma máquina virtual não pode executar nenhum código, quem executa é a UCP do computador. A máquina virtual Java interpreta o bytecode gerado para código de máquina, este sim executado pela UCP (unidade Central de processamento).
 - A linguagem Java é uma linguagem interpretada por padrão, a questão leva o candidato à entender que ela é compilada. (compilada + executada e não compilada + interpretada)
-- A linguagem Java pode ser compilada para código de máquina sem precisar da máquina virtual com o GCJ \[1\]. \[1\] <a href="http://gcc.gnu.org/java/" target="_blank">http://gcc.gnu.org/java/</a> .
+- A linguagem Java pode ser compilada para código de máquina sem precisar da máquina virtual com o GCJ \[1\]. \[1\] <a href="http://gcc.gnu.org/java/" target="_blank" rel="noopener noreferrer">http://gcc.gnu.org/java/</a> .
 
 Acho que ela vai ser anulada mesmo.
 

@@ -25,12 +25,12 @@ Abaixo algumas fotos do evento.
 \
 ***A galera do PHP(Otávio, eu e o Guilherme).***
 
-Mais fotos estão num <a href="http://www.flickr.com/photos/48101388@N00/sets/72157601753475975/" target="_blank">albúm</a> do Flickr.
+Mais fotos estão num <a href="http://www.flickr.com/photos/48101388@N00/sets/72157601753475975/" target="_blank" rel="noopener noreferrer">albúm</a> do Flickr.
 
-Há <a href="http://www.flickr.com/photos/helder84/589647743/" target="_blank" title="Hangar">aqui uma foto,</a> muito estaile, do [Hangar - Centro de Convenções da Amazônia](http://www.hangarcentrodeconvencoes.com.br/), feita por Helder Viana, acho que durante o Fórum.
+Há <a href="http://www.flickr.com/photos/helder84/589647743/" target="_blank" title="Hangar" rel="noopener noreferrer">aqui uma foto,</a> muito estaile, do [Hangar - Centro de Convenções da Amazônia](http://www.hangarcentrodeconvencoes.com.br/), feita por Helder Viana, acho que durante o Fórum.
 
-Aqui deixo meus agradecimentos para todos que colaboraram de alguma maneira com o evento. Desde a organização local, onde destaco a participação dos meus amigos Deuzinei Miranda(<a href="http://www.abstractbi.com/PortalAbstract/home.php" target="_blank">Abstract</a>), Otávio Rodrigues e Jack Bauer(Andrey Coelho - [Tecnologia em Rede de Computadores FAP](http://www.fap-pa.edu.br/)), dos palestrantes, como o pessoal da <a href="http://www.ufpa.br" target="_blank" title="UFPA">UFPA</a>, <a href="http://www.iesam.com.br" target="_blank" title="IESAM">IESAM</a>, ao pessoal que veio de outras cidades, como Boa Vista, Brasília, São Paulo, Manaus, João Pessoa, Curitiba, ...
+Aqui deixo meus agradecimentos para todos que colaboraram de alguma maneira com o evento. Desde a organização local, onde destaco a participação dos meus amigos Deuzinei Miranda(<a href="http://www.abstractbi.com/PortalAbstract/home.php" target="_blank" rel="noopener noreferrer">Abstract</a>), Otávio Rodrigues e Jack Bauer(Andrey Coelho - [Tecnologia em Rede de Computadores FAP](http://www.fap-pa.edu.br/)), dos palestrantes, como o pessoal da <a href="http://www.ufpa.br" target="_blank" title="UFPA" rel="noopener noreferrer">UFPA</a>, <a href="http://www.iesam.com.br" target="_blank" title="IESAM" rel="noopener noreferrer">IESAM</a>, ao pessoal que veio de outras cidades, como Boa Vista, Brasília, São Paulo, Manaus, João Pessoa, Curitiba, ...
 
-Obrigado ao apoio da Tiago de Melo, da comunidade <a href="http://www.comunidadesol.org/portal/" target="_blank">SOL</a> de Manaus, Karlisson(o famoso criador do <a href="http://nerdson.com/blog/" target="_blank">Nerdson</a>), que fez até umas tirinhas com o pessoal do Açaí e do <a href="http://blog.bisna.com/" target="_blank">Guilherme Blanco</a>(<a href="http://www.prophp.com.br/" target="_blank">ProPHP</a>).
+Obrigado ao apoio da Tiago de Melo, da comunidade <a href="http://www.comunidadesol.org/portal/" target="_blank" rel="noopener noreferrer">SOL</a> de Manaus, Karlisson(o famoso criador do <a href="http://nerdson.com/blog/" target="_blank" rel="noopener noreferrer">Nerdson</a>), que fez até umas tirinhas com o pessoal do Açaí e do <a href="http://blog.bisna.com/" target="_blank" rel="noopener noreferrer">Guilherme Blanco</a>(<a href="http://www.prophp.com.br/" target="_blank" rel="noopener noreferrer">ProPHP</a>).
 
 Enfim, obrigado à todos os participantes.
