@@ -3,6 +3,7 @@ title: Ano novo…
 date: '2008-01-07T04:52:39'
 slug: ano-novo
 wp_id: 48
+categories: [outros]
 ---
 
 Já no Pará novamente...

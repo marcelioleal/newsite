@@ -3,6 +3,7 @@ title: Os princípios de liderança da Amazon
 date: '2022-07-07T09:42:15'
 slug: os-principios-de-lideranca-da-amazon
 wp_id: 338
+categories: [software-dev]
 ---
 
 <figure class="wp-caption">

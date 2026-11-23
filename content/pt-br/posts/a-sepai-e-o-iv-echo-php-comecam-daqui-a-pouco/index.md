@@ -3,6 +3,7 @@ title: A SEPAI e o IV Echo PHP começam daqui a pouco
 date: '2007-09-25T22:11:20'
 slug: a-sepai-e-o-iv-echo-php-comecam-daqui-a-pouco
 wp_id: 16
+categories: [software-dev]
 ---
 
 A <a href="http://www.sepai.com.br/" target="_blank">XXI Semana Paraense de informática</a> começa daqui a menos de 24h.

@@ -3,6 +3,7 @@ title: FISL 9.0 – Palestras da COBRA e do SERPRO
 date: '2008-04-23T21:52:27'
 slug: fisl-90-palestras-da-cobra-e-do-serpro
 wp_id: 74
+categories: [software-dev]
 ---
 
 Estive presente nas palestras da [Cobra](http://fisl.softwarelivre.org/9.0/papers/pub/programacao/680) e do [SERPRO](http://fisl.softwarelivre.org/9.0/papers/pub/programacao/670).

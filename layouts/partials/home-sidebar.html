@@ -1,0 +1,54 @@
+{{- /*
+  layouts/partials/home-sidebar.html — Home sidebar with two cards:
+    1. "O que eu recomendo" — children of /recomendacoes (or /recommendations),
+        filtered to pages with non-trivial body length, max 9 items.
+    2. "Posts por Assunto" — 3 taxonomy archive links.
+*/ -}}
+{{- $recRoot := cond (eq .Language.Lang "pt-br") "/recomendacoes" "/recommendations" -}}
+{{- $recPage := site.GetPage $recRoot -}}
+<aside class="pm-sidebar sidebar-sticky">
+  {{- with $recPage }}
+  <div class="pm-sidebar-card">
+    <h3>{{ i18n "sidebar_recommend_title" }}</h3>
+    <ul class="rec-vertical-list">
+      {{- $items := slice -}}
+      {{- range .Pages -}}
+        {{- $body := .Plain | strings.TrimSpace -}}
+        {{- if ge (len $body) 30 -}}
+          {{- $items = $items | append . -}}
+        {{- end -}}
+      {{- end -}}
+      {{- range first 9 $items }}
+      <li class="rec-vertical-item">
+        <a href="{{ .RelPermalink }}">
+          <span>{{ .Title }}</span>
+          <span class="arrow" aria-hidden="true">→</span>
+        </a>
+      </li>
+      {{- end }}
+    </ul>
+  </div>
+  {{- end }}
+
+  <div class="pm-sidebar-card">
+    <h3>{{ i18n "sidebar_topics_title" }}</h3>
+    <ul class="rec-vertical-list">
+      {{- $topicSlugs := slice "software-dev" "musica" "arte" -}}
+      {{- $topicLabels := dict
+            "software-dev" (i18n "filter_software_dev")
+            "musica"       (i18n "filter_musica")
+            "arte"         (i18n "filter_arte") -}}
+      {{- range $topicSlugs }}
+        {{- $cat := site.GetPage (printf "/categories/%s" .) -}}
+        {{- with $cat }}
+      <li class="rec-vertical-item">
+        <a href="{{ .RelPermalink }}">
+          <span>{{ index $topicLabels (path.Base .RelPermalink) }}</span>
+          <span class="arrow" aria-hidden="true">{{ .RelPermalink }}</span>
+        </a>
+      </li>
+        {{- end }}
+      {{- end }}
+    </ul>
+  </div>
+</aside>

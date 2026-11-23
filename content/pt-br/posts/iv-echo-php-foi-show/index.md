@@ -3,6 +3,7 @@ title: IV Echo PHP foi show
 date: '2007-10-01T22:58:26'
 slug: iv-echo-php-foi-show
 wp_id: 17
+categories: [software-dev, musica]
 ---
 
 A [XXI SEPAI](http://www.sepai.com.br) foi muito boa. Acompanhei a programação do IV Echo PHP.

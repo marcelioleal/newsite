@@ -3,6 +3,7 @@ title: Sounds of Quartzo
 date: '2024-06-08T04:01:23'
 slug: sounds-of-quartzo
 wp_id: 438
+categories: [musica, arte]
 ---
 
 A arte sempre esteve muito presente na minha vida, a música veio do [meu pai](https://www.instagram.com/lealmaurony/), as artes plásticas, da [minha mãe](https://www.instagram.com/celialeal_arte/). Essa presença só saiu da teoria no caso da primeira - música, artes plásticas é tipo culinária pra mim, o máximo que sei é apreciar.

@@ -3,6 +3,7 @@ title: 1º de Maio
 date: '2008-05-02T14:13:52'
 slug: 1%c2%ba-de-maio
 wp_id: 78
+categories: [outros]
 ---
 
 14 anos sem Airton Senna...

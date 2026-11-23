@@ -3,6 +3,7 @@ title: III Torneio de Bilhar Computação Futebol Clube
 date: '2007-12-14T17:44:47'
 slug: iii-torneio-de-bilhar-computacao-futebol-clube
 wp_id: 44
+categories: [software-dev]
 ---
 
 Mais uma vez o torneio foi um sucesso e muito bom.

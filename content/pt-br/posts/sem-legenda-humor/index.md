@@ -3,6 +3,7 @@ title: Sem Legenda :) Humor
 date: '2007-11-09T20:02:05'
 slug: sem-legenda-humor
 wp_id: 32
+categories: [outros]
 ---
 
 Copiado de ASF Web. -\> Noblat -\> LiberatiNews

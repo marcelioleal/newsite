@@ -3,6 +3,7 @@ title: Twitter, Ruby on Rails, Escalabilidade e outras coisas…
 date: '2008-05-05T20:36:14'
 slug: twitter-ruby-on-rails-escalabilidade-e-outras-coisas
 wp_id: 80
+categories: [software-dev]
 ---
 
 Pela lista [PHP-MG](http://groups.google.com.br/group/phpmg) vi a notícia que o [Twitter](http://twitter.com/) (grande case em [Ruby on Rails](http://www.rubyonrails.org/)) estava pensando em migrar para outra plataforma: PHP ou Java.

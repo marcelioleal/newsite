@@ -3,6 +3,7 @@ title: Web Services em PHP
 date: '2008-01-31T20:38:55'
 slug: web-services-em-php
 wp_id: 52
+categories: [software-dev]
 ---
 
 O blog [PHP Web Services](http://phpwebservices.blogspot.com/) publicou três posts bem interessantes pra quem quer implementar Web Services em PHP.

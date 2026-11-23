@@ -3,6 +3,7 @@ title: Queries em PHP – Operações assíncronas, paralelas e em backgroud.
 date: '2007-11-20T01:53:36'
 slug: queries-em-php-operacoes-assincronas-paralelas-e-em-backgroud
 wp_id: 38
+categories: [software-dev]
 ---
 
 O PHP puro não suporta atividades paralela. No caso geral dos Banco de Dados(BD), o PHP fica bloqueado enquanto o BD executa a query. A forma e o tempo desse bloqueio depende da interface do BD.

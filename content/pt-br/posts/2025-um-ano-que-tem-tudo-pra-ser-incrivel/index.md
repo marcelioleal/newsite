@@ -3,6 +3,7 @@ title: O processo, a sorte e um futuro bonito – 2025
 date: '2025-01-18T06:53:00'
 slug: 2025-um-ano-que-tem-tudo-pra-ser-incrivel
 wp_id: 705
+categories: [software-dev, musica]
 ---
 
 <div class="wp-block-image">

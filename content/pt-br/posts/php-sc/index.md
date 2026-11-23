@@ -3,6 +3,7 @@ title: PHP-SC
 date: '2008-06-03T15:33:21'
 slug: php-sc
 wp_id: 85
+categories: [software-dev]
 ---
 
 O Pessoal do PHP-SC estará realizando um evento show em Chapecó.

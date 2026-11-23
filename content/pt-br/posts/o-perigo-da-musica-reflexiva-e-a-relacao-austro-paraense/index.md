@@ -3,6 +3,7 @@ title: O perigo da música reflexiva e a relação austro-paraense
 date: '2025-09-28T01:19:17'
 slug: o-perigo-da-musica-reflexiva-e-a-relacao-austro-paraense
 wp_id: 1046
+categories: [musica]
 ---
 
 <a href="/images/2025/09/IMG_7134.jpg?ssl=1"><img src="/images/2025/09/IMG_7134-edited-1024x576.jpg?resize=1024%2C576&amp;ssl=1" class="wp-image-1077" style="aspect-ratio:1.7767522353619845;width:695px;height:auto" data-recalc-dims="1" loading="lazy" decoding="async" data-attachment-id="1077" data-permalink="https://marcelioleal.com/img_7134-2/" data-orig-file="/images/2025/09/IMG_7134-edited.jpg?fit=1114%2C627&amp;ssl=1" data-orig-size="1114,627" data-comments-opened="1" data-image-title="IMG_7134" data-image-description="" data-image-caption="" data-large-file="/images/2025/09/IMG_7134-edited.jpg?fit=1024%2C576&amp;ssl=1" srcset="/images/2025/09/IMG_7134-edited.jpg?resize=1024%2C576&amp;ssl=1 1024w, /images/2025/09/IMG_7134-edited.jpg?resize=300%2C169&amp;ssl=1 300w, /images/2025/09/IMG_7134-edited.jpg?resize=768%2C432&amp;ssl=1 768w, /images/2025/09/IMG_7134-edited.jpg?resize=1100%2C619&amp;ssl=1 1100w, /images/2025/09/IMG_7134-edited.jpg?w=1114&amp;ssl=1 1114w" sizes="auto, (max-width: 1024px) 100vw, 1024px" width="1024" height="576" alt="Um baterista se apresentando em um show ao vivo, com uma imagem projetada em grande tela atrás dele em tons de vermelho e uma multidão ao fundo." /></a>

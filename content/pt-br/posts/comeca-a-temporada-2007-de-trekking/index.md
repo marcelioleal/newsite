@@ -3,6 +3,7 @@ title: Começa a temporada 2007 de Trekking
 date: '2007-09-14T21:13:11'
 slug: comeca-a-temporada-2007-de-trekking
 wp_id: 14
+categories: [outros]
 ---
 
 Amanhã começa a [temporada paraense de trekking 2007](http://www.kaluana.com/TREKKING/calendario_2007.asp), organizada pela [Kaluanã.](http://www.kaluana.com/TREKKING/default.asp)

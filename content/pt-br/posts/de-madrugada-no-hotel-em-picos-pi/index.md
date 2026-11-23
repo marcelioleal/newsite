@@ -3,6 +3,7 @@ title: De madrugada no Hotel em Picos-PI
 date: '2007-12-27T04:18:44'
 slug: de-madrugada-no-hotel-em-picos-pi
 wp_id: 47
+categories: [outros]
 ---
 
 Chegamos as 21h aqui em Picos-PI.

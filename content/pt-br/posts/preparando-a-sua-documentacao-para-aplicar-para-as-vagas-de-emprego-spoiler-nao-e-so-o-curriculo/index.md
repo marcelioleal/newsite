@@ -4,6 +4,7 @@ title: 'Preparando a sua documentação para aplicar para as vagas de emprego 
 date: '2020-06-09T07:48:03'
 slug: preparando-a-sua-documentacao-para-aplicar-para-as-vagas-de-emprego-spoiler-nao-e-so-o-curriculo
 wp_id: 341
+categories: [software-dev]
 ---
 
 <figure class="wp-caption">

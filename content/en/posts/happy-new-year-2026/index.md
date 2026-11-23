@@ -3,6 +3,7 @@ title: Happy New Year – 2026!
 date: '2026-01-11T17:04:22'
 slug: happy-new-year-2026
 wp_id: 1182
+categories: [musica]
 ---
 
 <div class="wp-block-image">

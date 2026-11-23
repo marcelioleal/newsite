@@ -3,6 +3,7 @@ title: A vida é boa — suas lembranças não te deixam mentir
 date: '2019-05-20T05:27:49'
 slug: a-vida-e-boa-suas-lembrancas-nao-te-deixam-mentir
 wp_id: 342
+categories: [software-dev]
 ---
 
 > Impressiona o que pequenas lembranças, dias comuns, hábitos podem ser tão legais e inesquecíveis.

@@ -3,6 +3,7 @@ title: FISL 9 – Cada vez melhor
 date: '2008-04-17T19:30:40'
 slug: fisl-9-cada-vez-melhor
 wp_id: 64
+categories: [software-dev]
 ---
 
 De fato o FISL a cada ano vem melhorando o seu nível. Hoje, sem dúvidas, é o melhor evento de computação, em termos de qualidade das palestras.

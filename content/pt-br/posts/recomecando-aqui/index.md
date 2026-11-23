@@ -3,6 +3,7 @@ title: Recomeçando aqui…
 date: '2007-08-29T22:15:48'
 slug: recomecando-aqui
 wp_id: 4
+categories: [software-dev]
 ---
 
 Antigamente escrevia um pouco mais, mas recentemente achei algumas desculpas pra parar de escrever mesmo tendo vontade...Aqui vão ser encontrados post de quase tudo, principalmente de tecnologias, PHP, Software Livre, Desenvolvimento de software...

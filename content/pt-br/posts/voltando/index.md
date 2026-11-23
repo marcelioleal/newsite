@@ -3,6 +3,7 @@ title: Voltando…
 date: '2009-05-18T04:49:02'
 slug: voltando
 wp_id: 117
+categories: [software-dev]
 ---
 
 O ano começa agora pra mim. Novos projetos, continuação dos antigos e outras coisas que aconteceram comigo vou falar por aqui.

@@ -3,6 +3,7 @@ title: Lifelong Learning — GetYourGuide
 date: '2023-09-30T22:01:14'
 slug: lifelong-learning-getyourguide
 wp_id: 336
+categories: [software-dev]
 ---
 
 <figure class="wp-caption">

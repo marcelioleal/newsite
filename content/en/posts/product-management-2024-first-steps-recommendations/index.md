@@ -3,6 +3,7 @@ title: Product Management 2024 — First Steps Recommendations
 date: '2024-03-17T22:29:37'
 slug: product-management-2024-first-steps-recommendations
 wp_id: 331
+categories: [software-dev]
 ---
 
 <img src="https://cdn-images-1.medium.com/max/800/0*2DGL_swFhkn3gm0t" decoding="async" />

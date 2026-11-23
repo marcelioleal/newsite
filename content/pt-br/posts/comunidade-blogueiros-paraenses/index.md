@@ -3,6 +3,7 @@ title: Comunidade Blogueiros Paraenses
 date: '2008-06-02T17:27:54'
 slug: comunidade-blogueiros-paraenses
 wp_id: 83
+categories: [software-dev]
 ---
 
 Duas das figuras mais carimbadas na Blogosfera Paraense criaram a [Comunidade Blogueiros Paraenses](http://www.orkut.com/Community.aspx?cmm=54033045).

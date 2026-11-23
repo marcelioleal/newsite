@@ -3,6 +3,7 @@ title: Medir o que importa — Considerações sobre o uso de OKRs (intermed
 date: '2023-01-26T03:55:35'
 slug: medir-o-que-importa-consideracoes-sobre-o-uso-de-okrs-intermediario
 wp_id: 334
+categories: [software-dev]
 ---
 
 <figure class="wp-caption">

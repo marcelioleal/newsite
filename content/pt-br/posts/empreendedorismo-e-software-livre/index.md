@@ -3,6 +3,7 @@ title: Empreendedorismo e Software Livre
 date: '2007-08-30T00:09:23'
 slug: empreendedorismo-e-software-livre
 wp_id: 6
+categories: [software-dev]
 ---
 
 No começo de outubro teremos um evento no [IESAM](http://www.iesam.com.br) sobre Software Livre.\

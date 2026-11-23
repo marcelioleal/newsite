@@ -3,6 +3,7 @@ title: Resultado da primeira etapa do trekking
 date: '2007-09-19T15:04:22'
 slug: resultado-da-primeira-etapa-do-trekking
 wp_id: 15
+categories: [arte]
 ---
 
 

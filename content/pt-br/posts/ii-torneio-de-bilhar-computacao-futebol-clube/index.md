@@ -3,6 +3,7 @@ title: II Torneio de Bilhar Computação Futebol Clube
 date: '2007-12-11T18:38:54'
 slug: ii-torneio-de-bilhar-computacao-futebol-clube
 wp_id: 43
+categories: [musica]
 ---
 
 O torneio foi muito show.

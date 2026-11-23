@@ -3,6 +3,7 @@ title: Festival do Sul, Rock do Norte
 date: '2026-05-07T03:42:46'
 slug: festival-do-sul-rock-do-norte
 wp_id: 1292
+categories: [musica]
 ---
 
 <div class="wp-block-image">

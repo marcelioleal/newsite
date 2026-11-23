@@ -3,6 +3,7 @@ title: Olinda, o segundo pólo tecnologico de Pernanbuco/Grande Recife
 date: '2007-11-14T03:27:41'
 slug: olinda-o-segundo-polo-tecnologico-de-pernanbucogrande-recife
 wp_id: 34
+categories: [software-dev]
 ---
 
 <span class="texto">A cidade de Olinda (PE) terá um novo pólo tecnológico de visibilidade nacional e internacional. O projeto Olinda Digital, empreendimento que conta com o apoio do governo federal, por meio do Ministério da Ciência e Tecnologia (MCT), será inaugurado hoje (14) à tarde, no bairro do Varadouro. Estarão presentes o governador Eduardo Campos, e a prefeita da cidade, Luciana Santos, entre outras autoridades.</span>

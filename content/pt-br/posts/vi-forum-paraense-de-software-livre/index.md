@@ -3,6 +3,7 @@ title: VI Fórum Paraense de Software Livre
 date: '2008-10-13T17:32:41'
 slug: vi-forum-paraense-de-software-livre
 wp_id: 95
+categories: [software-dev]
 ---
 
 

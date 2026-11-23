@@ -3,6 +3,7 @@ title: ClickSushi e o Desafio Barca.
 date: '2008-05-14T15:05:46'
 slug: clicksushi-e-o-desafio-barca
 wp_id: 81
+categories: [software-dev]
 ---
 
 A onda agora é experimentar e curtir o mais novo place estaile de Belém, o [ClickSushi.](http://belem.clicksushi.com.br/pedido/) Aproveite o desafio A Barca de Quinta-feira e vá se deliciar com o saboroso Shake Jhou.

@@ -3,6 +3,7 @@ title: Voltando a atividade normal
 date: '2008-04-07T21:24:04'
 slug: voltando-a-atividade-normal
 wp_id: 63
+categories: [software-dev]
 ---
 
 Algumas coisas aconteceram nestes últimos tempos:

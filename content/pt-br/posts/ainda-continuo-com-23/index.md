@@ -3,6 +3,7 @@ title: Me sinto com 23 :)
 date: '2008-04-24T14:59:12'
 slug: ainda-continuo-com-23
 wp_id: 76
+categories: [software-dev]
 ---
 
 Hoje faço 26 anos, mas continuo me sentindo com 23...

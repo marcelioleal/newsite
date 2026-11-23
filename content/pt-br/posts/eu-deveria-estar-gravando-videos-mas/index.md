@@ -3,6 +3,7 @@ title: Mais uma newsletter em 2026
 date: '2026-05-12T04:25:54'
 slug: eu-deveria-estar-gravando-videos-mas
 wp_id: 1377
+categories: [musica, software-dev]
 ---
 
 ## Eu sei, eu deveria estar gravando vídeos, mas...

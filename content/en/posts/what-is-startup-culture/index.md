@@ -3,6 +3,7 @@ title: What is Startup Culture ?
 date: '2016-07-11T11:09:35'
 slug: what-is-startup-culture
 wp_id: 345
+categories: [software-dev]
 ---
 
 <img src="/images/external/cdn-images-1.medium.com/1_rBUKCpSMh2n0fjTFZK1Tbw.jpeg" data-recalc-dims="1" decoding="async" />

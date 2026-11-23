@@ -3,6 +3,7 @@ title: Aprenda a programar – Livro/site …
 date: '2008-02-12T00:41:37'
 slug: aprenda-a-programar-livrosite
 wp_id: 55
+categories: [software-dev]
 ---
 
 Muito interessante a iniciativa do [Fábio Akita](http://www.akitaonrails.com/) em traduzir o livro.

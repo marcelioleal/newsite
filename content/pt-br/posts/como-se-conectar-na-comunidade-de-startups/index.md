@@ -3,6 +3,7 @@ title: Como se conectar na comunidade de Startups
 date: '2016-10-17T20:25:46'
 slug: como-se-conectar-na-comunidade-de-startups
 wp_id: 357
+categories: [software-dev]
 ---
 
 <figure class="wp-caption">

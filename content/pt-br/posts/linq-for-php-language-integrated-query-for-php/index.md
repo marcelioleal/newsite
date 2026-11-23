@@ -3,6 +3,7 @@ title: LINQ for PHP (Language Integrated Query for PHP)
 date: '2008-02-14T16:08:55'
 slug: linq-for-php-language-integrated-query-for-php
 wp_id: 58
+categories: [software-dev]
 ---
 
 Interessante pra quem faz aplicativos assim... 🙂

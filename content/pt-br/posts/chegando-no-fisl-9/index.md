@@ -3,6 +3,7 @@ title: Chegando no FISL 9
 date: '2008-04-17T19:36:35'
 slug: chegando-no-fisl-9
 wp_id: 66
+categories: [software-dev]
 ---
 
 Realmente as minhas expectativas estavam corretas.

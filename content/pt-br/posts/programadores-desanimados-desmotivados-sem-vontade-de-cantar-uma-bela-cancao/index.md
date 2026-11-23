@@ -3,6 +3,7 @@ title: Programadores desanimados? desmotivados? sem vontade de cantar uma bela c
 date: '2007-09-03T05:07:41'
 slug: programadores-desanimados-desmotivados-sem-vontade-de-cantar-uma-bela-cancao
 wp_id: 12
+categories: [software-dev]
 ---
 
 Pow, achei muito engraçada essa frase que li no blog [fechaTag](http://blog.elcio.com.br/)(baseado no grande [Joseph Climber](http://desciclo.pedia.ws/wiki/Joseph_Climber)). Ela faz referência ao [Workshop Visie](http://visie.com.br/workshop/).

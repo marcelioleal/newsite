@@ -3,6 +3,7 @@ title: Morre Juvência Arruda
 date: '2009-07-14T00:26:37'
 slug: morre-juvencia-arruda
 wp_id: 120
+categories: [software-dev]
 ---
 
 É com muita tristeza que recebo a notícia que [Juvêncio Arruda faleceu](http://quintaemenda.blogspot.com/2009/07/prezados-amigos-irmaoscompanheiros-e.html).\

@@ -3,6 +3,7 @@ title: Editores PHP para desenvolvedores
 date: '2007-09-03T23:20:18'
 slug: editores-php-para-desenvolvedores
 wp_id: 10
+categories: [software-dev]
 ---
 
 Todo mundo procura um editor style pra desenvolver seu trabalho de forma otimizada, mas editor de código é igual arquitetura de sistema de informação, cada um teu seu preferido. 🙂

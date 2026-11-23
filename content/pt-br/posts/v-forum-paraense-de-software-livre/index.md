@@ -3,6 +3,7 @@ title: V Fórum Paraense de Software Livre
 date: '2007-08-29T22:38:15'
 slug: v-forum-paraense-de-software-livre
 wp_id: 5
+categories: [software-dev]
 ---
 
 O [V Fórum Paraense de Software Livre](http://www.ausla.org/) foi muito show.
