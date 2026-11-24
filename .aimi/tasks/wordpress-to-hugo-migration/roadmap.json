@@ -348,6 +348,50 @@
       "dir": "phase-3-seo-cutover",
       "status": "pending",
       "claim": null
+    },
+    {
+      "id": 3.5,
+      "name": "Custom Domain for Images CDN",
+      "slug": "images-custom-domain",
+      "goal": "Images served under https://images.marcelioleal.com instead of the Cloudflare-provided pub-XXX.r2.dev URL, so the brand's URLs are fully owned.",
+      "successCriteria": [
+        "HTTP GET to https://images.marcelioleal.com/profile/avatar.png returns the same image as the pub-XXX.r2.dev equivalent, with a valid TLS certificate on marcelioleal.com.",
+        "Every src/href in content/** and layouts/** pointing at pub-51dee957ac3e4a038150048d60e57b9c.r2.dev is rewritten to https://images.marcelioleal.com (idempotent sed script committed under scripts/).",
+        "GitHub secret R2_PUBLIC_URL is updated to https://images.marcelioleal.com so the upload-images.yml workflow emits the new URL in future step summaries.",
+        "README + docs/POSTING.md examples are updated to the new URL.",
+        "pub-XXX.r2.dev continues to resolve (Cloudflare does not deprecate it), so old content copies remain valid; the rewrite is a readability upgrade, not a correctness fix."
+      ],
+      "dependsOn": [
+        3
+      ],
+      "creates": [
+        {
+          "identity": "scripts/swap_images_domain.sh",
+          "description": "Idempotent sed replacing pub-51dee957ac3e4a038150048d60e57b9c.r2.dev with images.marcelioleal.com across content/, layouts/, i18n/, README.md, docs/POSTING.md."
+        }
+      ],
+      "needs": [
+        {
+          "identity": "r2_bucket",
+          "description": "marcelioleal-images bucket, already live under pub-XXX.r2.dev."
+        },
+        {
+          "identity": "dns_strategy",
+          "description": "Phase 3 decides whether DNS stays on WordPress.com, moves to Cloudflare, or moves elsewhere. That decision picks the path for custom domain: (a) DNS on Cloudflare → R2 Connect Domain is 1-click; (b) DNS elsewhere → Worker proxy at images.marcelioleal.com forwarding to the R2 bucket."
+        }
+      ],
+      "areas": [
+        "content/**",
+        "layouts/**",
+        "scripts/**",
+        "README.md",
+        "docs/POSTING.md"
+      ],
+      "notes": "Attempted during the Phase A R2 CDN migration (2026-11-24). The DNS CNAME images.marcelioleal.com -> pub-XXX.r2.dev was successfully added via WordPress.com DNS, but Cloudflare R2 would not finalize the custom domain bind from its own UI (presumably because the marcelioleal.com zone is not managed by Cloudflare). Deferred until the broader Phase 3 DNS strategy is settled.",
+      "branch": null,
+      "dir": "phase-3.5-images-custom-domain",
+      "status": "pending",
+      "claim": null
     }
   ]
 }
