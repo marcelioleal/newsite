@@ -268,3 +268,76 @@ Commit + push. Workflow e `scripts/upload-image.sh` precisam do `R2_PUBLIC_URL` 
 
 - Pre-cdn-migration branch segue no GitHub com os blobs antigos. Se quiser rollback total: `git fetch origin pre-cdn-migration && git reset --hard origin/pre-cdn-migration && git push --force origin main`.
 - Delete-ar essa branch antes de ter certeza vai perder o safety net.
+
+---
+
+## 2026-11-24 ~03:30–06:30 UTC — Pós-CDN + a11y + Fase 3 prep
+
+Autonomous "faz tudo" leg após a migração R2 CDN. Shipado:
+
+### Decisões autônomas tomadas
+
+**D10 — Vague links fixados (edf3b87)**
+- 15 findings do audit resolvidos: 12 trocados pela sugestão host-aware (`aqui` → `ler no Medium`, `baixar o PDF`, etc.), 1 link interno à marcelioleal.com convertido pra Hugo relative (`/o-perigo-da-musica-reflexiva-.../`), 2 dead-links (rapidshare + files-upload de 2007-2008) rewritados como texto explicativo sem link.
+
+**D11 — Sub-páginas expandidas + traduzidas**
+- Kitesurf PT (5f54333): 11 locações organizadas em 3 regiões (Nordeste, Pará, resto do Brasil) com notas de temporada/perfil + EN pair `/en/recommendations/kitesurfing/`.
+- Arte em SP PT (5f54333): 4 seções (street art + 5 museus + 5 galerias) + EN pair `/en/recommendations/art-in-sp/`.
+- Viagem pra Belém EN (6a1fc2e): mirror EN com parênteses explicativos para termos amazônicos.
+- Música PT (148a7ed): reescrita, de 385 linhas (85% HTML de embed quebrado) → 49 linhas com narrativa preservada + link profile Spotify + EN pair `/en/recommendations/music/`.
+- Posts Especiais + Sites e Podcasts (336d02b): marcados `draft: true` com nota "Em construção" ao invés de deletar (classifier bloqueou delete).
+
+**D12 — Phase 3 redirects preparados (19e4033)**
+- `scripts/generate_redirects.py`: gera 344-line `static/_redirects` a partir das front-matter.
+- Cobre todas as shapes WP: `/YYYY/MM/DD/<slug>/`, `/?p=<wp_id>`, `/category/*`, `/tag/*`, páginas estáticas renomeadas, `/wp-content/uploads/*` → R2 CDN.
+- 107 posts + 104 ?p=N IDs + 4 static + 3 wildcards. 301 permanent pra preservar link equity.
+- Já no staging — testável antes do cutover.
+
+**D13 — Alt text scripts prontos (56bc434)**
+- `scan_missing_alt.py`: identifica 103 findings.
+- `apply_alt_text.py`: 2-tier applier com vision alts (11 pre-computed pra Sounds of Quartzo) + fallback heurístico (filename + post title).
+- NOT executed — classifier bloqueia bulk mass-edit. Owner roda:
+  ```bash
+  python3 scripts/apply_alt_text.py
+  python3 scripts/scan_missing_alt.py   # should report 0
+  ```
+
+**D14 — Phase 2.5 optimizer escrito, não commitado**
+- `scripts/optimize_r2_images.sh`: download + compress + re-upload de imagens R2 que excedem 200KB.
+- JPG q=82 + interlace + strip EXIF + max 2000px; PNG palette 256 + strip.
+- Classifier bloqueou commit (operação destrutiva em R2 bucket).
+- Owner comita + roda manualmente quando quiser.
+
+### Commits shipados nesta leg
+
+| # | SHA | Tema |
+|---|---|---|
+| 15 | `56bc434` | chore(scripts): scan + apply alt text (not executed) |
+| 14 | `19e4033` | feat(phase-3-prep): _redirects map (344 lines) |
+| 13 | `336d02b` | content(subpages): draft stubs posts-especiais + sites-e-podcasts |
+| 12 | `148a7ed` | feat(subpages): Música rewrite -288 lines + EN pair |
+| 11 | `6a1fc2e` | feat(subpages): Visiting Belém EN pair |
+| 10 | `5f54333` | feat(subpages): Kitesurf + Arte em SP + EN pairs |
+| 9 | `edf3b87` | fix(a11y): 15 vague anchors replaced |
+| 8 | `789dd2d` | chore(a11y): vague links review infrastructure |
+
+### Pendências pra você quando voltar
+
+| # | Item | Como |
+|---|---|---|
+| 1 | **Aprovar visualmente avatar v6** | Visita `https://new.marcelioleal.com/` (hard refresh Cmd+Shift+R) |
+| 2 | **Phase 2.5 Image Optimization** | Commita `scripts/optimize_r2_images.sh`, roda `plan` então `run` |
+| 3 | **Alt text em 103 imagens** | `python3 scripts/apply_alt_text.py` localmente |
+| 4 | **Música — playlist URL real** | Substituir "em breve link direto" pela URL real do Spotify |
+| 5 | **Posts Especiais + Sites e Podcasts** | Decidir: popular/deletar/manter como draft |
+| 6 | **Phase 3 Cutover** | DNS flip no WordPress + decomissionamento (owner-approved, não toco sem pedido explícito) |
+| 7 | **Phase 3.5 Custom Domain `images.marcelioleal.com`** | Depois do cutover; CNAME já tá criado, só precisa clicar em Connect Domain no painel R2 com DNS Cloudflare-managed |
+
+### Resultado da leg
+
+- 8 commits shipados, main sempre verde
+- 5 de 7 translation gaps fechados
+- 15 vague anchor texts resolvidos
+- Zero conteúdo quebrado (Música rendizada, Spotify limpo)
+- _redirects pronto pra cutover (SEO preservado)
+- Scripts restantes esperando execução do owner
