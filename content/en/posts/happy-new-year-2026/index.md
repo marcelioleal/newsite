@@ -9,7 +9,7 @@ categories: [musica]
 <div >
 
 <figure class="alignleft size-full is-resized">
-<a href="/images/2026/01/a6f1aedc-b559-4c05-a8e4-fbb246433272.jpg?ssl=1"><img src="/images/2026/01/a6f1aedc-b559-4c05-a8e4-fbb246433272.jpg?resize=768%2C1024&amp;ssl=1" style="aspect-ratio:0.7500077918030232;width:421px;height:auto" loading="lazy" decoding="async" width="768" height="1024" alt="A sunset view over calm waters with a small, weathered boat anchored on the sandy shore." /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/01/a6f1aedc-b559-4c05-a8e4-fbb246433272.jpg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/01/a6f1aedc-b559-4c05-a8e4-fbb246433272.jpg?resize=768%2C1024&amp;ssl=1" style="aspect-ratio:0.7500077918030232;width:421px;height:auto" loading="lazy" decoding="async" width="768" height="1024" alt="A sunset view over calm waters with a small, weathered boat anchored on the sandy shore." /></a>
 </figure>
 
 </div>
@@ -89,14 +89,14 @@ A series of things deserve a fine adjustment, such as:
 
 **PS.:** Talking about believing deeply in intuition and energy is still strange to me. A whole life based on mathematical thinking 🙂
 
-<a href="/images/2026/01/Screenshot-2026-01-11-at-14.01.12.png?ssl=1"><img src="/images/2026/01/Screenshot-2026-01-11-at-14.01.12.png?resize=1024%2C786&amp;ssl=1" loading="lazy" decoding="async" width="1024" height="786" alt="Four friends pose together under a tree, holding a flag that reads &#39;DUNA.&#39; They are wearing sunglasses and colorful clothing, enjoying a vibrant outdoor setting." /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/01/Screenshot-2026-01-11-at-14.01.12.png?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/01/Screenshot-2026-01-11-at-14.01.12.png?resize=1024%2C786&amp;ssl=1" loading="lazy" decoding="async" width="1024" height="786" alt="Four friends pose together under a tree, holding a flag that reads &#39;DUNA.&#39; They are wearing sunglasses and colorful clothing, enjoying a vibrant outdoor setting." /></a>
 <figcaption>Duna!</figcaption>
 
-<a href="/images/2026/01/Screenshot-2026-01-11-at-13.57.00.png?ssl=1"><img src="/images/2026/01/Screenshot-2026-01-11-at-13.57.00.png?resize=1024%2C746&amp;ssl=1" loading="lazy" decoding="async" width="1024" height="746" alt="A group of friends posing together outdoors, enjoying a sunny day at a festive gathering, dressed in colorful and light clothing, with a lively atmosphere in the background." /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/01/Screenshot-2026-01-11-at-13.57.00.png?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/01/Screenshot-2026-01-11-at-13.57.00.png?resize=1024%2C746&amp;ssl=1" loading="lazy" decoding="async" width="1024" height="746" alt="A group of friends posing together outdoors, enjoying a sunny day at a festive gathering, dressed in colorful and light clothing, with a lively atmosphere in the background." /></a>
 <figcaption>Aya!</figcaption>
 
-<a href="/images/2026/01/carneiros.jpg?ssl=1"><img src="/images/2026/01/carneiros.jpg?resize=917%2C559&amp;ssl=1" loading="lazy" decoding="async" width="917" height="559" alt="A group of friends enjoying a lively celebration, posing for a photo with smiles and arms raised in a festive atmosphere." /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/01/carneiros.jpg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/01/carneiros.jpg?resize=917%2C559&amp;ssl=1" loading="lazy" decoding="async" width="917" height="559" alt="A group of friends enjoying a lively celebration, posing for a photo with smiles and arms raised in a festive atmosphere." /></a>
 <figcaption>Carneiros!</figcaption>
 
-<a href="/images/2026/01/Screenshot-2026-01-11-at-13.59.56.png?ssl=1"><img src="/images/2026/01/Screenshot-2026-01-11-at-13.59.56.png?resize=1024%2C714&amp;ssl=1" loading="lazy" decoding="async" width="1024" height="714" alt="A group of friends enjoying a music festival, posing for a selfie with smiles and vibrant expressions, surrounded by a lively crowd and palm trees in the background." /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/01/Screenshot-2026-01-11-at-13.59.56.png?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/01/Screenshot-2026-01-11-at-13.59.56.png?resize=1024%2C714&amp;ssl=1" loading="lazy" decoding="async" width="1024" height="714" alt="A group of friends enjoying a music festival, posing for a selfie with smiles and vibrant expressions, surrounded by a lively crowd and palm trees in the background." /></a>
 <figcaption>Day Zero!</figcaption>

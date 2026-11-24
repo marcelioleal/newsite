@@ -85,7 +85,7 @@ Há diversas fontes para essa definição. Recomendo as seguintes perguntas para
 - O que nossos parceiros precisam para terem melhores resultados?
 
 <figure >
-<img src="/images/external/cdn-images-1.medium.com/1_5yCmH2YwjI9cWaMze0DDhA.png" decoding="async" data-width="1706" data-height="686" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_5yCmH2YwjI9cWaMze0DDhA.png" decoding="async" data-width="1706" data-height="686" />
 <figcaption><strong>Sinais para a construção dos objetivos do ciclo.</strong></figcaption>
 </figure>
 
@@ -136,7 +136,7 @@ Muitas vezes a velocidade da empresa começa a baixar (metabolismo de produto le
 > Disclaimer: Isso aqui tá errado. Como um método não prescritivo, não deve existir um algoritmo para definição de OKRs. O ideal é entender o porquê da metodologia e aplicar de acordo com o seu contexto/maturidade. Não existe um jeito de fazer OKRs, existem jeitos melhores e piores pro seu contexto.
 
 <figure >
-<img src="/images/external/cdn-images-1.medium.com/1_GKdd8J5NendLt5uM3CeFpQ.png" decoding="async" data-width="896" data-height="872" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_GKdd8J5NendLt5uM3CeFpQ.png" decoding="async" data-width="896" data-height="872" />
 <figcaption><strong><em>Uma abordagem de criação de OKRs bottom-up</em></strong></figcaption>
 </figure>
 

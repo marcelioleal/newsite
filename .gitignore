@@ -13,6 +13,13 @@ static/videos/20250201095728000070.mp4
 # Node (pagefind devDependency; package-lock.json is tracked)
 node_modules/
 
+# R2 CDN — local staging area for images before upload. Never committed.
+# New images: drop in static/images-source/<year>/<month>/..., run
+# scripts/upload-image.sh (or the upload-images.yml GH Action picks them up),
+# then reference by R2 URL in the post (https://pub-XXX.r2.dev/<year>/<month>/...).
+static/images-source/
+.env.r2
+
 # Aimi session state (ephemeral, per-run)
 .aimi/.state.lock
 .aimi/cli-path

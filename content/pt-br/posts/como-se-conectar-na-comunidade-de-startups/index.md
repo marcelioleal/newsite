@@ -7,7 +7,7 @@ categories: [software-dev]
 ---
 
 <figure >
-<img src="/images/external/cdn-images-1.medium.com/1_rF2I2r_ah21naVWdI9NOrA.png" decoding="async" data-width="876" data-height="355" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_rF2I2r_ah21naVWdI9NOrA.png" decoding="async" data-width="876" data-height="355" />
 <figcaption>Ferramentas e eventos pra você se conectar!</figcaption>
 </figure>
 
@@ -64,7 +64,7 @@ Os métodos ágeis são um dos componentes básicos pra quem usa a abordagem Lea
 No site <a href="http://agilidade.org" target="_blank" rel="noopener noreferrer">Agilidade.org</a> você pode ver o <a href="http://agilidade.org/eventos/" target="_blank" rel="noopener noreferrer">calendário de eventos</a> e muitas outras informações. Além disso eles têm <a href="https://agilidade.typeform.com/to/A80enI" target="_blank" rel="noopener noreferrer">um formulário de como participar do slack de agilidade</a>, que eu explico mais no próximo tópico.
 
 <figure >
-<img src="/images/external/cdn-images-1.medium.com/1_oFxzqaIEMq-VSQZxlgSqGQ.png" decoding="async" data-width="1280" data-height="797" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_oFxzqaIEMq-VSQZxlgSqGQ.png" decoding="async" data-width="1280" data-height="797" />
 <figcaption>Slack de Agilidade</figcaption>
 </figure>
 

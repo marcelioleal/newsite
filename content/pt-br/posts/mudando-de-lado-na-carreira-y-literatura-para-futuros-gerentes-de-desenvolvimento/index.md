@@ -7,7 +7,7 @@ categories: [software-dev, musica]
 ---
 
 <figure >
-<img src="/images/external/cdn-images-1.medium.com/1_RY0p_Vv6ewrDiYk0tCSx1Q.jpeg" decoding="async" data-width="4272" data-height="2848" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_RY0p_Vv6ewrDiYk0tCSx1Q.jpeg" decoding="async" data-width="4272" data-height="2848" />
 <figcaption>Photo by <a href="https://unsplash.com/@amandagraphc?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Amanda Jones</a> on <a href="https://unsplash.com/s/photos/kindle?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a></figcaption>
 </figure>
 
@@ -22,7 +22,7 @@ Em geral, a partir destes aspectos, você pode ter uma noção de quais habilida
 ### **As "novas" habilidades**
 
 <figure >
-<img src="/images/external/cdn-images-1.medium.com/1_fY38d6rvlDpogWTszhoExw.jpeg" decoding="async" data-width="6016" data-height="4016" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_fY38d6rvlDpogWTszhoExw.jpeg" decoding="async" data-width="6016" data-height="4016" />
 <figcaption>Essa não vai ser sua realidade. É só uma figura pra motivar, caso você se motive por isso. Photo by <a href="https://unsplash.com/@icons8?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Icons8 Team</a> on <a href="https://unsplash.com/s/photos/manager?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText" target="_blank" rel="noopener noreferrer">Unsplash</a></figcaption>
 </figure>
 

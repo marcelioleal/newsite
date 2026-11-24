@@ -7,7 +7,7 @@ categories: [software-dev]
 ---
 
 <figure >
-<img src="/images/external/cdn-images-1.medium.com/1_d377OtMcA6FsjDjoUGenaA.jpeg" decoding="async" data-width="640" data-height="428" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_d377OtMcA6FsjDjoUGenaA.jpeg" decoding="async" data-width="640" data-height="428" />
 <figcaption><a href="https://www.flickr.com/photos/wocintechchat/" target="_blank" rel="noopener noreferrer">https://www.flickr.com/photos/wocintechchat/</a></figcaption>
 </figure>
 

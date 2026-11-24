@@ -8,7 +8,7 @@ categories: [musica, software-dev]
 
 ## Eu sei, eu deveria estar gravando vídeos, mas...
 
-<a href="/images/2026/05/Screenshot-2026-05-12-at-01.23.31.png?ssl=1"><img src="/images/2026/05/Screenshot-2026-05-12-at-01.23.31.png?resize=1018%2C484&amp;ssl=1" loading="lazy" decoding="async" width="1018" height="484" alt="Imagem de um código-fonte em uma tela escura, destacando trechos de programação em Python com várias cores." /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/05/Screenshot-2026-05-12-at-01.23.31.png?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/05/Screenshot-2026-05-12-at-01.23.31.png?resize=1018%2C484&amp;ssl=1" loading="lazy" decoding="async" width="1018" height="484" alt="Imagem de um código-fonte em uma tela escura, destacando trechos de programação em Python com várias cores." /></a>
 
 Eu sei, eu deveria estar gravando vídeos em 2026, mas nem sempre o caminho padrão é o que gostamos e seguimos.
 

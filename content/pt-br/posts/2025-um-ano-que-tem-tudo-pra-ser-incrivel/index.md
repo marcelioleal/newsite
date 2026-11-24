@@ -9,7 +9,7 @@ categories: [software-dev, musica]
 <div >
 
 <figure class="aligncenter size-large">
-<a href="/images/2025/01/cristo.jpg?ssl=1"><img src="/images/2025/01/cristo.jpg?resize=1024%2C524&amp;ssl=1" loading="lazy" decoding="async" width="1024" height="524" /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/cristo.jpg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/cristo.jpg?resize=1024%2C524&amp;ssl=1" loading="lazy" decoding="async" width="1024" height="524" /></a>
 <figcaption>E assim foi o primeiro fim de semana do ano.</figcaption>
 </figure>
 
@@ -28,7 +28,7 @@ Mas eu já aproveito pra deixar um Feliz 2025 pra todos!
 <div >
 
 <figure class="aligncenter size-large">
-<a href="/images/2025/01/IMG_20191227_164718-EFFECTS.jpg?ssl=1"><img src="/images/2025/01/IMG_20191227_164718-EFFECTS-1024x768.jpg?resize=1024%2C768&amp;ssl=1" loading="lazy" decoding="async" width="1024" height="768" /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/IMG_20191227_164718-EFFECTS.jpg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/IMG_20191227_164718-EFFECTS-1024x768.jpg?resize=1024%2C768&amp;ssl=1" loading="lazy" decoding="async" width="1024" height="768" /></a>
 <figcaption>Pipa 2019/2020 - Como foi bom passar esse ano novo aqui no Brasil.</figcaption>
 </figure>
 
@@ -70,7 +70,7 @@ E, de verdade, pelo menos umas 3 vezes parecia que jogaram uma luz absurda sobre
 <div class="is-style-rounded">
 
 <figure class="aligncenter size-large is-resized">
-<a href="/images/2025/01/DE81CF6F-4691-4BE8-BA79-AF6C3E960571.jpg?ssl=1"><img src="/images/2025/01/DE81CF6F-4691-4BE8-BA79-AF6C3E960571.jpg?resize=1024%2C1024&amp;ssl=1" style="width:359px;height:auto" loading="lazy" decoding="async" width="1024" height="1024" /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/DE81CF6F-4691-4BE8-BA79-AF6C3E960571.jpg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/DE81CF6F-4691-4BE8-BA79-AF6C3E960571.jpg?resize=1024%2C1024&amp;ssl=1" style="width:359px;height:auto" loading="lazy" decoding="async" width="1024" height="1024" /></a>
 <figcaption>Acredito que o primeiro passo pra uma kura é reconhecer o problema.</figcaption>
 </figure>
 
@@ -99,7 +99,7 @@ Como extra, eu consegui melhorar algo que eu já era relativamente bom - Ficar c
 <div >
 
 <figure class="aligncenter size-full is-resized">
-<a href="/images/2025/01/alterTodos.jpg?ssl=1"><img src="/images/2025/01/alterTodos.jpg?resize=951%2C520&amp;ssl=1" style="width:620px;height:auto" loading="lazy" decoding="async" width="951" height="520" /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/alterTodos.jpg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/alterTodos.jpg?resize=951%2C520&amp;ssl=1" style="width:620px;height:auto" loading="lazy" decoding="async" width="951" height="520" /></a>
 <figcaption>Como a gente falaria em Belém - "Égua da sorte reunir essa galera"</figcaption>
 </figure>
 
@@ -112,7 +112,7 @@ Mas esse, especialmente, me mudou profundamente. Foram dias incríveis com amigo
 <div >
 
 <figure class="alignleft size-large is-resized">
-<a href="/images/2025/01/IMG_20201231_184559.jpg?ssl=1"><img src="/images/2025/01/IMG_20201231_184559.jpg?resize=1024%2C768&amp;ssl=1" style="width:379px;height:auto" loading="lazy" decoding="async" width="1024" height="768" /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/IMG_20201231_184559.jpg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/IMG_20201231_184559.jpg?resize=1024%2C768&amp;ssl=1" style="width:379px;height:auto" loading="lazy" decoding="async" width="1024" height="768" /></a>
 <figcaption>Mais um pôr do sol em Alter do Chão</figcaption>
 </figure>
 
@@ -127,7 +127,7 @@ Só que um desses dias foi beeeem especial pra mim, a tarde que passamos na [Cas
 <div >
 
 <figure class="alignleft size-full is-resized">
-<a href="/images/2025/01/Aftersun.jpg?ssl=1"><img src="/images/2025/01/Aftersun-edited.jpg?resize=206%2C305&amp;ssl=1" style="width:255px;height:auto" loading="lazy" decoding="async" width="206" height="305" /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/Aftersun.jpg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/Aftersun-edited.jpg?resize=206%2C305&amp;ssl=1" style="width:255px;height:auto" loading="lazy" decoding="async" width="206" height="305" /></a>
 <figcaption>Que filme!</figcaption>
 </figure>
 
@@ -144,7 +144,7 @@ Foi numa dessas noites que eu vi o filme [Aftersun](https://www.imdb.com/title/t
 <div >
 
 <figure class="alignleft size-large is-resized">
-<a href="/images/2025/01/IMG_0188.jpg?ssl=1"><img src="/images/2025/01/IMG_0188.jpg?resize=671%2C1024&amp;ssl=1" style="width:236px;height:auto" loading="lazy" decoding="async" width="671" height="1024" /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/IMG_0188.jpg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/IMG_0188.jpg?resize=671%2C1024&amp;ssl=1" style="width:236px;height:auto" loading="lazy" decoding="async" width="671" height="1024" /></a>
 </figure>
 
 </div>
@@ -172,7 +172,7 @@ Aí lá em 2023 eu percebi uma mudança profunda em mim. Aconteceu durante um fe
 <div >
 
 <figure class="alignleft size-large is-resized">
-<a href="/images/2025/01/musicaMusica.jpg?ssl=1"><img src="/images/2025/01/musicaMusica.jpg?resize=1024%2C936&amp;ssl=1" style="width:429px;height:auto" loading="lazy" decoding="async" width="1024" height="936" /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/musicaMusica.jpg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/musicaMusica.jpg?resize=1024%2C936&amp;ssl=1" style="width:429px;height:auto" loading="lazy" decoding="async" width="1024" height="936" /></a>
 <figcaption>Mais uma vez que o não planejado criou um dia incrível.</figcaption>
 </figure>
 
@@ -187,7 +187,7 @@ Percebi também que o ambiente estava influenciando fortemente em tudo que estav
 <div >
 
 <figure class="alignleft size-large is-resized">
-<a href="/images/2025/01/IMG_8706.jpg?ssl=1"><img src="/images/2025/01/IMG_8706.jpg?resize=768%2C1024&amp;ssl=1" style="width:237px;height:auto" loading="lazy" decoding="async" width="768" height="1024" /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/IMG_8706.jpg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/IMG_8706.jpg?resize=768%2C1024&amp;ssl=1" style="width:237px;height:auto" loading="lazy" decoding="async" width="768" height="1024" /></a>
 <figcaption>A arte em SP está em todo lugar.</figcaption>
 </figure>
 
@@ -200,7 +200,7 @@ Dado que as coisas estavam caminhando pra um caminho muito positivo, eu resolvi 
 <div >
 
 <figure class="alignleft size-large is-resized">
-<a href="/images/2025/01/warungDay.jpg?ssl=1"><img src="/images/2025/01/warungDay.jpg?resize=942%2C1024&amp;ssl=1" style="width:397px;height:auto" loading="lazy" decoding="async" width="942" height="1024" /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/warungDay.jpg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/warungDay.jpg?resize=942%2C1024&amp;ssl=1" style="width:397px;height:auto" loading="lazy" decoding="async" width="942" height="1024" /></a>
 <figcaption>O melhor dia do ano, muito bem acompanhado.</figcaption>
 </figure>
 
@@ -213,7 +213,7 @@ Intensificar isso também gerou momentos de frustração, também me levou pra l
 <div >
 
 <figure class="alignleft size-large is-resized">
-<a href="/images/2025/01/IMG_9820.jpg?ssl=1"><img src="/images/2025/01/IMG_9820.jpg?resize=768%2C1024&amp;ssl=1" style="width:227px;height:auto" loading="lazy" decoding="async" width="768" height="1024" /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/IMG_9820.jpg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/IMG_9820.jpg?resize=768%2C1024&amp;ssl=1" style="width:227px;height:auto" loading="lazy" decoding="async" width="768" height="1024" /></a>
 <figcaption>Minhas terças, quartas e quintas acabam aqui.</figcaption>
 </figure>
 
@@ -234,7 +234,7 @@ Mas ela cita [alguns fatores da sorte](https://youtu.be/w6gY8EouXzE) que eu acho
 <div >
 
 <figure class="aligncenter size-large is-resized">
-<a href="/images/2025/01/carneiros2.jpg?ssl=1"><img src="/images/2025/01/carneiros2.jpg?resize=1024%2C755&amp;ssl=1" style="width:494px;height:auto" loading="lazy" decoding="async" width="1024" height="755" /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/carneiros2.jpg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/carneiros2.jpg?resize=1024%2C755&amp;ssl=1" style="width:494px;height:auto" loading="lazy" decoding="async" width="1024" height="755" /></a>
 <figcaption>Nessa praia eu tive sorte</figcaption>
 </figure>
 
@@ -247,7 +247,7 @@ Eu não consigo não chamar de sorte uma sequência como: sounds of quartzo, uma
 <div >
 
 <figure class="aligncenter size-full is-resized">
-<a href="/images/2025/01/Screenshot-2025-01-18-at-22.55.48.png?ssl=1"><img src="/images/2025/01/Screenshot-2025-01-18-at-22.55.48.png?resize=976%2C386&amp;ssl=1" style="width:521px;height:auto" loading="lazy" decoding="async" width="976" height="386" /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/Screenshot-2025-01-18-at-22.55.48.png?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/Screenshot-2025-01-18-at-22.55.48.png?resize=976%2C386&amp;ssl=1" style="width:521px;height:auto" loading="lazy" decoding="async" width="976" height="386" /></a>
 <figcaption>E não é?</figcaption>
 </figure>
 
@@ -258,7 +258,7 @@ Eu não consigo não chamar de sorte uma sequência como: sounds of quartzo, uma
 <div >
 
 <figure class="alignleft size-large is-resized">
-<a href="/images/2025/01/carneiros-1.jpg?ssl=1"><img src="/images/2025/01/carneiros-1.jpg?resize=1024%2C886&amp;ssl=1" style="width:479px;height:auto" loading="lazy" decoding="async" width="1024" height="886" /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/carneiros-1.jpg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/01/carneiros-1.jpg?resize=1024%2C886&amp;ssl=1" style="width:479px;height:auto" loading="lazy" decoding="async" width="1024" height="886" /></a>
 <figcaption>Mais um ano começando da melhor forma</figcaption>
 </figure>
 

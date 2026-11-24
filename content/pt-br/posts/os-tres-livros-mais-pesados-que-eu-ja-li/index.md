@@ -6,7 +6,7 @@ wp_id: 348
 categories: [musica]
 ---
 
-[<img src="/images/external/media2.giphy.com/giphy.gif" loading="lazy" decoding="async" width="600" height="338" alt="Don&#39;T Know Thinking GIF by 1LIVE - Find &amp; Share on GIPHY" />](https://giphy.com/gifs/1live-wdr-philipp-isterewicz-l41Yh5Xt2vTny6UfK)
+[<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/media2.giphy.com/giphy.gif" loading="lazy" decoding="async" width="600" height="338" alt="Don&#39;T Know Thinking GIF by 1LIVE - Find &amp; Share on GIPHY" />](https://giphy.com/gifs/1live-wdr-philipp-isterewicz-l41Yh5Xt2vTny6UfK)
 
 Eu gosto de ler bons livros aos poucos, quando possível vagarosamente. Normalmente eu paro pra pensar sobre as implicações das coisas que eu estou lendo. Sei que parece estranho, mas funciona bem pra mim. Consigo, desta forma, assimilar muito o conteúdo e fazer conexões com outras coisas.
 
@@ -17,7 +17,7 @@ Há uma característica comum entre os três livros, os títulos são sensaciona
 ### As Veias Abertas da América Latina
 
 <figure>
-<img src="/images/external/cdn-images-1.medium.com/1_aLbuMJ4cnEQzHwzFlrZxbA.jpeg" decoding="async" data-width="314" data-height="475" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_aLbuMJ4cnEQzHwzFlrZxbA.jpeg" decoding="async" data-width="314" data-height="475" />
 </figure>
 
 <a href="https://www.goodreads.com/book/show/10281090-as-veias-abertas-da-am-rica-latina" target="_blank" rel="noopener noreferrer">O livro de Eduardo Galeano</a> é um clássico, é muito difícil reunir tanta informação sobre a América Latina de uma vez. Este livro explica muitos pontos sobre como evoluímos até chegar onde estamos, origem de vários hábitos que temos até hoje, origem de algumas de nossas mazelas. Mas também não é um livro fácil de ler, temos que entender algumas tentativas de casualidade, o contexto e a época que ele foi escrito, isso influência muito na sua interpretação (é óbvio, mas é bom ressaltar pra não ter nenhuma reação política/ideológica desproporcional aqui).
@@ -39,7 +39,7 @@ PS.: Sempre deixava esse livro na lista pra ser lido, até que uma conversa em S
 ### The Hard Thing About The Hard Things
 
 <figure>
-<img src="/images/external/cdn-images-1.medium.com/1_y5RWCJCSvql9azdXfirvsg.jpeg" decoding="async" data-width="265" data-height="400" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_y5RWCJCSvql9azdXfirvsg.jpeg" decoding="async" data-width="265" data-height="400" />
 </figure>
 
 Esse livro tem um dos títulos mais legais de livros que eu já vi! A <a href="https://www.goodreads.com/book/show/28186053-o-lado-dif-cil-das-situa-es-dif-ceis" target="_blank" rel="noopener noreferrer">versão em português</a> merecia um título melhor do que a tradução pura. Podiam se inspirar em "No Country for Old Men" ou "Onde os Fracos não Têm Vez". Dois títulos sensacionais.
@@ -61,7 +61,7 @@ Mas é uma frase do primeiro capítulo que pra mim é uma das mais impactantes d
 ### Pssica
 
 <figure>
-<img src="/images/external/cdn-images-1.medium.com/1_O-gQjeLtalrSPtPHcRUSjQ.jpeg" decoding="async" data-width="318" data-height="442" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_O-gQjeLtalrSPtPHcRUSjQ.jpeg" decoding="async" data-width="318" data-height="442" />
 </figure>
 
 O Pará é o caos. Pro bem e pro mal. É impressionante como se deu a evolução desse estado, eu não sei se estamos ficando mais caóticos ou se sempre foi assim. Os ciclos econômicos(ou de caos) baseados em booms de recursos naturais trazem muita gente de fora, concentram muitas pessoas em cidades, na maioria das vezes, sem estrutura. E isso só aumenta com o fim do ciclo. Belém, por exemplo, era chamada de Nova Delhi pelo grande blogueiro <a href="http://www.ver-o-fato.com.br/2016/07/sete-anos-sem-juvencio-arruda-palmas.html" target="_blank" rel="noopener noreferrer">Juvêncio Arruda</a>. Essa complexidade amazônica é pouco entendida por quem nunca viveu lá, mas os livros do <a href="http://www.boitempoeditorial.com.br/v3/Autores/visualizar/edyr-augusto-proenca" target="_blank" rel="noopener noreferrer">Edyr</a> mostram muito esse lado não tão conhecido.

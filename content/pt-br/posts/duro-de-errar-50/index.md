@@ -14,13 +14,13 @@ Foi muito show, lotada a sala e o com a preseça de diversos amigos e celebridad
 
 <figure class="gallery-item">
 <div class="gallery-icon landscape">
-<a href="https://marcelioleal.com/2008/04/22/duro-de-errar-50/p1010027b/"><img src="/images/2008/04/p1010027b.jpg?resize=150%2C150&amp;ssl=1" class="attachment-thumbnail size-thumbnail" loading="lazy" decoding="async" width="150" height="150" /></a>
+<a href="https://marcelioleal.com/2008/04/22/duro-de-errar-50/p1010027b/"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2008/04/p1010027b.jpg?resize=150%2C150&amp;ssl=1" class="attachment-thumbnail size-thumbnail" loading="lazy" decoding="async" width="150" height="150" /></a>
 </div>
 </figure>
 
 <figure class="gallery-item">
 <div class="gallery-icon landscape">
-<a href="https://marcelioleal.com/2008/04/22/duro-de-errar-50/p1010030b/"><img src="/images/2008/04/p1010030b.jpg?resize=150%2C150&amp;ssl=1" class="attachment-thumbnail size-thumbnail" loading="lazy" decoding="async" data-comments-count="1" width="150" height="150" /></a>
+<a href="https://marcelioleal.com/2008/04/22/duro-de-errar-50/p1010030b/"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2008/04/p1010030b.jpg?resize=150%2C150&amp;ssl=1" class="attachment-thumbnail size-thumbnail" loading="lazy" decoding="async" data-comments-count="1" width="150" height="150" /></a>
 </div>
 </figure>
 
@@ -290,7 +290,7 @@ A apresentação encontra-se no slideshare:
 
 </div>
 
-<span class="icon J9mFQG_icon J9mFQG_mask" role="img" aria-label="chevron-left icon" style="--size:16px;--icon:url(/images/next/svg/chevron-left.svg?v=055d2ca7d39d236f49b7f50b49dce097825ca61d)"></span>
+<span class="icon J9mFQG_icon J9mFQG_mask" role="img" aria-label="chevron-left icon" style="--size:16px;--icon:url(https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/next/svg/chevron-left.svg?v=055d2ca7d39d236f49b7f50b49dce097825ca61d)"></span>
 
 <div class="TaKO7G_slideCountContainer">
 
@@ -298,11 +298,11 @@ A apresentação encontra-se no slideshare:
 
 </div>
 
-<span class="icon J9mFQG_icon J9mFQG_mask" role="img" aria-label="chevron-right icon" style="--size:16px;--icon:url(/images/next/svg/chevron-right.svg?v=055d2ca7d39d236f49b7f50b49dce097825ca61d)"></span>
+<span class="icon J9mFQG_icon J9mFQG_mask" role="img" aria-label="chevron-right icon" style="--size:16px;--icon:url(https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/next/svg/chevron-right.svg?v=055d2ca7d39d236f49b7f50b49dce097825ca61d)"></span>
 
-<span class="icon J9mFQG_icon J9mFQG_mask" role="img" aria-label="share-dot icon" style="--size:16px;--icon:url(/images/next/svg/share-dot.svg?v=055d2ca7d39d236f49b7f50b49dce097825ca61d)"></span>
+<span class="icon J9mFQG_icon J9mFQG_mask" role="img" aria-label="share-dot icon" style="--size:16px;--icon:url(https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/next/svg/share-dot.svg?v=055d2ca7d39d236f49b7f50b49dce097825ca61d)"></span>
 
-<span class="icon J9mFQG_icon J9mFQG_mask" role="img" aria-label="maximize icon" style="--size:16px;--icon:url(/images/next/svg/maximize.svg?v=055d2ca7d39d236f49b7f50b49dce097825ca61d)"></span>
+<span class="icon J9mFQG_icon J9mFQG_mask" role="img" aria-label="maximize icon" style="--size:16px;--icon:url(https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/next/svg/maximize.svg?v=055d2ca7d39d236f49b7f50b49dce097825ca61d)"></span>
 
 </div>
 

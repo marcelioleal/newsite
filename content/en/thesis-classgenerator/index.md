@@ -10,8 +10,8 @@ In February 2005 I defended my undergraduate thesis in Computer Science at the F
 
 Here's a summary of the work, the PDF if you want to read all of it, and why I think a topic that looked like a 2000s thing is back now that AI writes code.
 
-- [English translation (PDF, 73 pages)](/images/2026/11/ClassGenerator-Thesis-EN.pdf)
-- [Original thesis in Portuguese (PDF, 76 pages)](/images/2008/08/tccfinal.pdf)
+- [English translation (PDF, 73 pages)](https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/11/ClassGenerator-Thesis-EN.pdf)
+- [Original thesis in Portuguese (PDF, 76 pages)](https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2008/08/tccfinal.pdf)
 
 ## What ClassGenerator is
 

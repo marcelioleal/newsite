@@ -14,6 +14,6 @@ Esse [post](http://blog.ulf-wendel.de/?p=170) do blog "Internet Super Hero" apre
 
 Abaixo uma figura de como funciona o novo processo paralelo.
 
-<img src="/images/external/blog.ulf-wendel.de/background_fetch.gif" decoding="async" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/blog.ulf-wendel.de/background_fetch.gif" decoding="async" />
 
 Muita onda!!!

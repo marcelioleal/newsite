@@ -7,7 +7,7 @@ categories: [software-dev]
 ---
 
 <figure>
-<img src="/images/external/cdn-images-1.medium.com/1_mqE0ClsfDPjRMpdzPT3rpg.png" decoding="async" data-width="786" data-height="678" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_mqE0ClsfDPjRMpdzPT3rpg.png" decoding="async" data-width="786" data-height="678" />
 </figure>
 
 Toda vez que eu vejo proatividade sendo encorajada em um ambiente de trabalho criativo, eu tento entender se isso faz sentido e quase sempre não faz. Normalmente vejo mais prejuízo nesse tipo de comportamento do que benefício.
@@ -31,7 +31,7 @@ E no geral, esse comportamento é exigido de pessoas que estão no nível de exe
 #### Proatividade e a falta de maestria
 
 <figure >
-<img src="/images/external/cdn-images-1.medium.com/1_jp7cqSAtTTAEr1R-YQ-EDg.jpeg" decoding="async" data-width="520" data-height="390" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_jp7cqSAtTTAEr1R-YQ-EDg.jpeg" decoding="async" data-width="520" data-height="390" />
 <figcaption>Restauração proativa</figcaption>
 </figure>
 
@@ -82,7 +82,7 @@ No geral, minha recomendação é controlar a ansiedade e criar uma cultura onde
 #### A proatividade e o desfoque
 
 <figure >
-<img src="/images/external/cdn-images-1.medium.com/1_EVavb-_KVXZu2i5SNayH2Q.png" decoding="async" data-width="783" data-height="508" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_EVavb-_KVXZu2i5SNayH2Q.png" decoding="async" data-width="783" data-height="508" />
 <figcaption>Quando você toma uma decisão sozinho, você corre esse risco.</figcaption>
 </figure>
 

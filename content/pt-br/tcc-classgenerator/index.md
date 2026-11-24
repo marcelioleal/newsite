@@ -10,8 +10,8 @@ Em fevereiro de 2005 eu defendi meu Trabalho de Conclusão de Curso em Ciência 
 
 Aqui eu deixo um resumo do trabalho, o PDF pra quem quiser ler inteiro e um pouco do porquê eu acho que esse assunto, que parecia coisa dos anos 2000, voltou com tudo agora que a IA escreve código.
 
-- [TCC original em português (PDF, 76 páginas)](/images/2008/08/tccfinal.pdf)
-- [Tradução em inglês (PDF, 73 páginas)](/images/2026/11/ClassGenerator-Thesis-EN.pdf)
+- [TCC original em português (PDF, 76 páginas)](https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2008/08/tccfinal.pdf)
+- [Tradução em inglês (PDF, 73 páginas)](https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/11/ClassGenerator-Thesis-EN.pdf)
 
 ## O que é o ClassGenerator
 

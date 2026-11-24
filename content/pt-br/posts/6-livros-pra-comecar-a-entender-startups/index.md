@@ -7,7 +7,7 @@ categories: [musica, software-dev]
 ---
 
 <figure>
-<img src="/images/external/cdn-images-1.medium.com/1_E2GmufsSmKJ5oq7BNRDjdw.png" decoding="async" data-width="834" data-height="592" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_E2GmufsSmKJ5oq7BNRDjdw.png" decoding="async" data-width="834" data-height="592" />
 </figure>
 
 Várias pessoas do mercado tradicional quando têm o primeiro contato com o mundo de startups entendem que precisam se aprofundar e me pedem algumas recomendações. Há várias formas de traçar um plano de estudo pra isso, mas existem alguns aspectos que são importantes independentemente do perfil e da estratégia de entrada na área.

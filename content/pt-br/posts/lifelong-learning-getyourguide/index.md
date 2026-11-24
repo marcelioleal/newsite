@@ -7,7 +7,7 @@ categories: [software-dev]
 ---
 
 <figure >
-<img src="/images/external/cdn-images-1.medium.com/1_XWYLFUwRKGA-stVh5Za-Kg.png" decoding="async" data-width="600" data-height="300" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_XWYLFUwRKGA-stVh5Za-Kg.png" decoding="async" data-width="600" data-height="300" />
 <figcaption>É muito provável que você veja essa bandeirinha laranja em vários lugares turísticos do mundo.</figcaption>
 </figure>
 
@@ -16,7 +16,7 @@ Acabo de voltar de umas férias (e que férias!). Foi daquelas viagens que você
 ### **Contexto**
 
 <figure >
-<img src="/images/external/cdn-images-1.medium.com/1_lv0D7VuPIHnFNFrCaE9A7w.jpeg" decoding="async" data-width="2993" data-height="1949" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_lv0D7VuPIHnFNFrCaE9A7w.jpeg" decoding="async" data-width="2993" data-height="1949" />
 <figcaption>Sunset visto de Friedrichshain, em Berlin.</figcaption>
 </figure>
 
@@ -29,7 +29,7 @@ Uma nova cidade e cultura, uma startup em alta velocidade (<a href="https://tech
 ### **Aprendizados**
 
 <figure >
-<img src="/images/external/cdn-images-1.medium.com/1_M1IOOmV5S9XKWIYKE9mnbg.jpeg" decoding="async" data-width="4032" data-height="3024" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_M1IOOmV5S9XKWIYKE9mnbg.jpeg" decoding="async" data-width="4032" data-height="3024" />
 <figcaption>O escritório e as salas de reunião da GetYourGuide eram incríveis! -- Foto de 2019</figcaption>
 </figure>
 
@@ -52,7 +52,7 @@ Dois casos foram bem emblemáticos para mim. O primeiro foi quando meu manager m
 O segundo caso foi quando eu descobri que escrever (no meu "inglês" rudimentar) "is he the responsible one for this?" era agressivo. A vantagem foi que eu descobri um problema de relacionamento maior do que o que essa frase causou. Naturalmente, eu pedi mil desculpas e usei a vantagem de levantar e ir até a cadeira da pessoa pessoalmente para fazer isso.
 
 <figure >
-<img src="/images/external/cdn-images-1.medium.com/1_zLO2eQUdXFa6DPiVB90-8Q.jpeg" decoding="async" data-width="2400" data-height="1592" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_zLO2eQUdXFa6DPiVB90-8Q.jpeg" decoding="async" data-width="2400" data-height="1592" />
 <figcaption>Se os sistemas fossem feitos de post-its, seríamos mais felizes. Leandro Lages conduzindo um Event Storming na GYG.</figcaption>
 </figure>
 
@@ -107,7 +107,7 @@ Um time com cientistas, uma belo lake de dados, e boas ferramentas me fizeram ex
 Por exemplo, **a maioria dos deploys usavam feature flags, abordagens de testes (como o A/B), além do trabalho prévio de construção de hipóteses e levantamento de dados** (te amo Databricks). Definitivamente, sou outra pessoa depois de ter participado dessas entregas, não foi só o meu lado profissional que foi afetado.
 
 <figure >
-<img src="/images/external/cdn-images-1.medium.com/1_y-lHaXYRcZas81FFOalYhA.jpeg" decoding="async" data-width="4229" data-height="2819" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_y-lHaXYRcZas81FFOalYhA.jpeg" decoding="async" data-width="4229" data-height="2819" />
 <figcaption>Sempre fico me perguntando como os Designers desenham quadrados tão bonitinhos no papel. <a href="https://unsplash.com/photos/qC2n6RQU4Vw" target="_blank" rel="noopener noreferrer">Fonte da Imagem</a>.</figcaption>
 </figure>
 
@@ -124,7 +124,7 @@ Como resultado, ficamos depois desse mês de trabalho com um backlog extenso e q
 #### Bonus Track
 
 <figure >
-<img src="/images/external/cdn-images-1.medium.com/1_kSHE0agJzMRkweaoFGRNYw.jpeg" decoding="async" data-width="3024" data-height="4032" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_kSHE0agJzMRkweaoFGRNYw.jpeg" decoding="async" data-width="3024" data-height="4032" />
 <figcaption>Tudo pelo engajamento. Bastidores de um curso de drinks em Berlin.</figcaption>
 </figure>
 

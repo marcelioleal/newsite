@@ -13,7 +13,7 @@ Tenho um [amigo](http://php.leandrolages.com/) bastante parecido com o Homem ara
 
 Hoje, um menino anunciou sua identidade e salvou uma criança do fogo.
 
-<img src="/images/external/g1.globo.com/0__11894278-EX_00.jpg" loading="lazy" decoding="async" width="213" height="133" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/g1.globo.com/0__11894278-EX_00.jpg" loading="lazy" decoding="async" width="213" height="133" />
 
 O nome dele é de argentino: Riquelme.
 

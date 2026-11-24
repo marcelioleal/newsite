@@ -6,7 +6,7 @@ wp_id: 345
 categories: [software-dev]
 ---
 
-<img src="/images/external/cdn-images-1.medium.com/1_rBUKCpSMh2n0fjTFZK1Tbw.jpeg" decoding="async" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_rBUKCpSMh2n0fjTFZK1Tbw.jpeg" decoding="async" />
 <figcaption>Bobsleigh team. <a href="https://flic.kr/p/8WWbjz" target="_blank" rel="noopener noreferrer">https://flic.kr/p/8WWbjz</a></figcaption>
 
 <a href="http://www.businessdictionary.com/definition/organizational-culture.html" target="_blank" rel="noopener noreferrer">Organizational culture</a> is important for all kind of companies. For Startups, the high-risk ones, keeping it under control is mandatory. We can see the difference using Soccer and <a href="https://en.wikipedia.org/wiki/Bobsleigh" target="_blank" rel="noopener noreferrer">Bobsleigh</a> teams.

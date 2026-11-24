@@ -6,7 +6,7 @@ wp_id: 1046
 categories: [musica]
 ---
 
-<a href="/images/2025/09/IMG_7134.jpg?ssl=1"><img src="/images/2025/09/IMG_7134-edited-1024x576.jpg?resize=1024%2C576&amp;ssl=1" style="aspect-ratio:1.7767522353619845;width:695px;height:auto" loading="lazy" decoding="async" width="1024" height="576" alt="Um baterista se apresentando em um show ao vivo, com uma imagem projetada em grande tela atrás dele em tons de vermelho e uma multidão ao fundo." /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/09/IMG_7134.jpg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/09/IMG_7134-edited-1024x576.jpg?resize=1024%2C576&amp;ssl=1" style="aspect-ratio:1.7767522353619845;width:695px;height:auto" loading="lazy" decoding="async" width="1024" height="576" alt="Um baterista se apresentando em um show ao vivo, com uma imagem projetada em grande tela atrás dele em tons de vermelho e uma multidão ao fundo." /></a>
 
 <figure class="video"><video src="/videos/img_3124.mov" controls preload="metadata" class="w-full" style="max-width:720px"></video><figcaption>Amanhecendo no Vale do Anhangabaú, SP, com &ME & Adam Port.</figcaption></figure>
 
@@ -169,7 +169,7 @@ Dito isso, alguém já viu alguém falando: "eu vou no show dos 'Backs'!" Não n
 
 **Foi nessa música que todo meu preconceito caiu por terra.**
 
-<a href="/images/2025/09/IMG_7174.jpg?ssl=1"><img src="/images/2025/09/IMG_7174.jpg?resize=1024%2C768&amp;ssl=1" loading="lazy" decoding="async" width="1024" height="768" alt="Grupo de amigos posando em um festival com um palco iluminado ao fundo, enquanto se divertem com copos em mãos." /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/09/IMG_7174.jpg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2025/09/IMG_7174.jpg?resize=1024%2C768&amp;ssl=1" loading="lazy" decoding="async" width="1024" height="768" alt="Grupo de amigos posando em um festival com um palco iluminado ao fundo, enquanto se divertem com copos em mãos." /></a>
 <figcaption>Amigos no Lolla/2024, pós Rufus.</figcaption>
 
 Como diria, Carl Gustav Jung, ***o que é pra ser seu, vai te encontrar.*** <span style="margin: 0px; padding: 0px;">As coisas começaram a mudar quando o meu amigo, Felipe Baiano, que recentemente nos deixou (obrigado por tudo, meu amigo), me mandou um <a href="https://soundcloud.com/ritmodascomunidadesrj/mc-poze-do-rodo-eu-vou-tomar-um-tacaca-prod-dj-sorriso-bxd-tik-tok" target="_blank" rel="noopener noreferrer">á</a></span>[udio com o MC Poze do Rodo cantando a música Voando pro Pará.](https://soundcloud.com/ritmodascomunidadesrj/mc-poze-do-rodo-eu-vou-tomar-um-tacaca-prod-dj-sorriso-bxd-tik-tok) Vou te dizer que me surpreendeu muito o quanto ele estava se divertindo com isso. Ali foi o primeiro momento em que eu passei a olhar a Joelma mais como uma cantora pop do que de brega calypso. Passei a entender mais o impacto dela, passei a admirar mais essa artista incrível.

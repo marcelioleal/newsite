@@ -7,7 +7,7 @@ categories: [software-dev]
 ---
 
 <figure >
-<img src="/images/external/cdn-images-1.medium.com/1_HFUizBmqnAR9Afjc4-IA4Q.jpeg" decoding="async" data-width="1200" data-height="800" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_HFUizBmqnAR9Afjc4-IA4Q.jpeg" decoding="async" data-width="1200" data-height="800" />
 <figcaption>Markus Spiske / <a href="http://raumrot.com" target="_blank" rel="noopener noreferrer">raumrot.com</a></figcaption>
 </figure>
 
@@ -38,7 +38,7 @@ Em geral, vejo um CTO mais preparado vindo de uma experiência dentro de startup
 A carreira impacta diretamente na remuneração. Enquanto um CTO vindo de startups tende a aumentar a remuneração, um CTO/CFO/CMO que vem de uma grande empresa, em geral, vai ter um salário menor do que tinha antes. Isso se deve principalmente pela experiência específica nesse contexto de negócio. E pode apostar, isso faz uma diferença gritante.
 
 <figure >
-<img src="/images/external/cdn-images-1.medium.com/1_-gmanKUk1MawUuyMj5wQuA.png" decoding="async" data-width="856" data-height="588" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_-gmanKUk1MawUuyMj5wQuA.png" decoding="async" data-width="856" data-height="588" />
 <figcaption>Salário x Qualidade de vida de um desenvolvedor/CTO de Startup</figcaption>
 </figure>
 
@@ -47,7 +47,7 @@ A qualidade de vida também é relativa. Enquanto um C Level que vem de uma gran
 No geral, um bom CTO ou técnico pra startup vai refletir em maior remuneração. Por isso diversas Startups tentam "amenizar" isto investindo pesado em melhorias para qualidade de vida como: trabalho remoto; ótimo ambiente de trabalho; ótimo potencial de aprendizado; benefícios diversos; etc.
 
 <figure >
-<img src="/images/external/cdn-images-1.medium.com/1_ZNJTYAU3Uhl2w_k-zBkaiQ.png" decoding="async" data-width="935" data-height="324" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_ZNJTYAU3Uhl2w_k-zBkaiQ.png" decoding="async" data-width="935" data-height="324" />
 <figcaption>Benefícios na EventMobi. Pontos cada vez mais comuns em startups.</figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ Dois grandes casos brasileiros de culturas produtivas e com bom potencial de qua
 #### Os Perfis de CTOs
 
 <figure >
-<img src="/images/external/cdn-images-1.medium.com/1_RzNjGWuLMn5qMYKlqvqDkg.jpeg" decoding="async" data-width="920" data-height="675" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_RzNjGWuLMn5qMYKlqvqDkg.jpeg" decoding="async" data-width="920" data-height="675" />
 <figcaption>O Wozniac é um cara fueda. Quer entender um pouco mais a mente dele, leia o capítulo da Apple no <a href="http://www.foundersatwork.com/" target="_blank" rel="noopener noreferrer">livro Founders at Work</a>. <a href="http://ww3.hdnux.com/photos/05/72/61/1551486/3/920x920.jpg" target="_blank" rel="noopener noreferrer">http://ww3.hdnux.com/photos/05/72/61/1551486/3/920×920.jpg</a></figcaption>
 </figure>
 
@@ -82,7 +82,7 @@ Outro ponto crítico é a contratação. Esse perfil tende a contratar pessoas c
 ***Diria que este perfil é mais próximo a startups que têm tecnologia como diferencial.***
 
 <figure >
-<img src="/images/external/cdn-images-1.medium.com/1_N-sWjQsa6X1UiIOLtvPyhw.jpeg" decoding="async" data-width="640" data-height="428" />
+<img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/external/cdn-images-1.medium.com/1_N-sWjQsa6X1UiIOLtvPyhw.jpeg" decoding="async" data-width="640" data-height="428" />
 <figcaption>Gestor. Boa organização, menos conhecimento técnico. <a href="https://www.flickr.com/photos/wocintechchat/25720964030/" target="_blank" rel="noopener noreferrer">https://www.flickr.com/photos/wocintechchat/25720964030/</a></figcaption>
 </figure>
 

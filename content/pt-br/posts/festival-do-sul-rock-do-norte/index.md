@@ -9,7 +9,7 @@ categories: [musica]
 <div >
 
 <figure class="alignleft size-large is-resized">
-<a href="/images/2026/05/CFA5E276-DE9D-4B2D-8DC1-14C47A4C5AD5.jpg?ssl=1"><img src="/images/2026/05/CFA5E276-DE9D-4B2D-8DC1-14C47A4C5AD5.jpg?resize=576%2C1024&amp;ssl=1" style="aspect-ratio:0.563056762129132;width:285px;height:auto" loading="lazy" decoding="async" width="576" height="1024" alt="Vista interna de uma cúpula de estrutura metálica com revestimento vermelho translúcido, formando um padrão radial." /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/05/CFA5E276-DE9D-4B2D-8DC1-14C47A4C5AD5.jpg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/05/CFA5E276-DE9D-4B2D-8DC1-14C47A4C5AD5.jpg?resize=576%2C1024&amp;ssl=1" style="aspect-ratio:0.563056762129132;width:285px;height:auto" loading="lazy" decoding="async" width="576" height="1024" alt="Vista interna de uma cúpula de estrutura metálica com revestimento vermelho translúcido, formando um padrão radial." /></a>
 <figcaption>Ópera de Arame. Photo by: @ekatekp.</figcaption>
 </figure>
 
@@ -33,7 +33,7 @@ Neste post, eu vou explorar essa conexão com a música, o momento inicial em qu
 <div >
 
 <figure class="alignleft size-full is-resized">
-<a href="/images/2026/05/IMG_0276.jpeg?ssl=1"><img src="/images/2026/05/IMG_0276.jpeg?resize=453%2C462&amp;ssl=1" style="width:411px;height:auto" loading="lazy" decoding="async" width="453" height="462" alt="Homem sentado em uma mesa de gravação, usando fones de ouvido e ajustando um equipamento de áudio, vestido com uma camisa com padrões coloridos." /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/05/IMG_0276.jpeg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/05/IMG_0276.jpeg?resize=453%2C462&amp;ssl=1" style="width:411px;height:auto" loading="lazy" decoding="async" width="453" height="462" alt="Homem sentado em uma mesa de gravação, usando fones de ouvido e ajustando um equipamento de áudio, vestido com uma camisa com padrões coloridos." /></a>
 <figcaption>Papai (@lealmaurony) mixando raiz!</figcaption>
 </figure>
 
@@ -61,7 +61,7 @@ Daí, foi só ir pros lugares certos (já em Belém), como o Se Rasgum, The Pub,
 
 ## **O Festival do Sul**
 
-<a href="/images/2026/05/76055F71-9FA6-46FC-9FF3-371DF189C975_1_105_c-e1778121755808.jpeg?ssl=1"><img src="/images/2026/05/76055F71-9FA6-46FC-9FF3-371DF189C975_1_105_c-e1778121755808.jpeg?resize=1024%2C536&amp;ssl=1" style="width:757px;height:auto" loading="lazy" decoding="async" width="1024" height="536" alt="Público assistindo a um show em um espaço coberto com estrutura de vidro. Luzes vermelhas iluminam o ambiente e um grande telão exibe imagens ao fundo." /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/05/76055F71-9FA6-46FC-9FF3-371DF189C975_1_105_c-e1778121755808.jpeg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/05/76055F71-9FA6-46FC-9FF3-371DF189C975_1_105_c-e1778121755808.jpeg?resize=1024%2C536&amp;ssl=1" style="width:757px;height:auto" loading="lazy" decoding="async" width="1024" height="536" alt="Público assistindo a um show em um espaço coberto com estrutura de vidro. Luzes vermelhas iluminam o ambiente e um grande telão exibe imagens ao fundo." /></a>
 <figcaption>Aquela sensação boa ao chegar no Warung Day 2026.</figcaption>
 
 Adoro ouvir música, se minha vida profissional não fosse hoje 80% reuniões, eu bateria recordes e recordes de ouvir música no spotify/soundcloud. Acho também que ouvir música com um bom sistema de som e usando uma mídia física é uma experiência diferente, uma das que valem a pena reunir amigos, apreciar. Pegar um LP Abbey Road original pra ouvir é como se você passasse por outra versão dessa maravilha. Música é experiência! 
@@ -95,7 +95,7 @@ Assim, pra você, meu amigo, que nunca ouviu os artistas aqui listados, o que eu
 <div >
 
 <figure class="alignleft size-full is-resized">
-<a href="/images/2026/05/0DECC57F-EC31-4F02-8565-ED5C90144CC3_1_105_c.jpeg?ssl=1"><img src="/images/2026/05/0DECC57F-EC31-4F02-8565-ED5C90144CC3_1_105_c-e1778123136442.jpeg?resize=657%2C750&amp;ssl=1" style="aspect-ratio:0.7500038855473182;width:368px;height:auto" loading="lazy" decoding="async" width="657" height="750" alt="Grupo de amigos sorrindo em um evento no Warung Beach Club, com luzes coloridas ao fundo e todos usando óculos escuros." /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/05/0DECC57F-EC31-4F02-8565-ED5C90144CC3_1_105_c.jpeg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/05/0DECC57F-EC31-4F02-8565-ED5C90144CC3_1_105_c-e1778123136442.jpeg?resize=657%2C750&amp;ssl=1" style="aspect-ratio:0.7500038855473182;width:368px;height:auto" loading="lazy" decoding="async" width="657" height="750" alt="Grupo de amigos sorrindo em um evento no Warung Beach Club, com luzes coloridas ao fundo e todos usando óculos escuros." /></a>
 <figcaption>Diria que essas pessoas aí estão no top 1% do público do WD. Não é porque são meus amigos, não. 🙂</figcaption>
 </figure>
 
@@ -115,7 +115,7 @@ Nunca vou esquecer nossa galera no ano passado (2025) numa track do Black Coffee
 <div >
 
 <figure class="alignleft size-full">
-<a href="/images/2026/05/images.jpeg?ssl=1"><img src="/images/2026/05/images.jpeg?resize=225%2C225&amp;ssl=1" loading="lazy" decoding="async" width="225" height="225" alt="Arte de capa de álbum com a frase &#39;fique online&#39; e o nome &#39;dkukas&#39;, apresentando uma ilustração em tons de cinza e detalhes coloridos em verde e roxo." /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/05/images.jpeg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/05/images.jpeg?resize=225%2C225&amp;ssl=1" loading="lazy" decoding="async" width="225" height="225" alt="Arte de capa de álbum com a frase &#39;fique online&#39; e o nome &#39;dkukas&#39;, apresentando uma ilustração em tons de cinza e detalhes coloridos em verde e roxo." /></a>
 </figure>
 
 </div>
@@ -143,7 +143,7 @@ O álbum é legal no geral, mas curti bastante 3 tracks: Poesia, show de vocal! 
 <div >
 
 <figure class="alignleft size-full is-resized">
-<a href="/images/2026/05/marcelio-leal-69fbfad853046-e1778121782483.png?ssl=1"><img src="/images/2026/05/marcelio-leal-69fbfad853046-e1778121782483.png?resize=723%2C770&amp;ssl=1" style="aspect-ratio:0.9389991476926823;width:190px;height:auto" loading="lazy" decoding="async" width="723" height="770" alt="Increase overall brightness, keep natural tones" /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/05/marcelio-leal-69fbfad853046-e1778121782483.png?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/05/marcelio-leal-69fbfad853046-e1778121782483.png?resize=723%2C770&amp;ssl=1" style="aspect-ratio:0.9389991476926823;width:190px;height:auto" loading="lazy" decoding="async" width="723" height="770" alt="Increase overall brightness, keep natural tones" /></a>
 <figcaption>Eu dando umas dicas de vida pra o meu amigo Mohamad no segundo after. Com certeza ele vai ser uma outra pessoa depois dessas dicas.</figcaption>
 </figure>
 
@@ -157,7 +157,7 @@ Ouvir álbuns inteiros no avião é uma experiência. Foram várias grandes desc
 
 Quem já foi pra after sabe que muitas vezes você cai em lugares onde você se pergunta por que você tomou essa decisão bastante questionável. Só que tem um ponto, no fim do arco-íris dos afters, tem um pote de ouro. Só quem insiste aprende e está pronto para receber essa recompensa.
 
-<a href="/images/2026/05/43F8158D-B23C-4066-9E73-5DB5F573662D_1_105_c-e1778124311339.jpeg?ssl=1"><img src="/images/2026/05/43F8158D-B23C-4066-9E73-5DB5F573662D_1_105_c-e1778124311339.jpeg?resize=942%2C628&amp;ssl=1" loading="lazy" decoding="async" width="942" height="628" alt="Pés de pessoas usando chinelos laranjas e pantufas azuis, com calças largas, em um ambiente interno." /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/05/43F8158D-B23C-4066-9E73-5DB5F573662D_1_105_c-e1778124311339.jpeg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/05/43F8158D-B23C-4066-9E73-5DB5F573662D_1_105_c-e1778124311339.jpeg?resize=942%2C628&amp;ssl=1" loading="lazy" decoding="async" width="942" height="628" alt="Pés de pessoas usando chinelos laranjas e pantufas azuis, com calças largas, em um ambiente interno." /></a>
 <figcaption>After é bem calçado. Começando pelos DJs - @julia_cruvinel b2b @patrick.cwb</figcaption>
 
 Nesse ano não foi diferente, saímos por volta da meia-noite e fomos pra mais música boa. Diferente de um grande festival, os afters são pequenos, ali, o público importa mais ainda. Mas como expliquei acima, a diferença é grande numa cidade onde as pessoas são fluentes em eletrônico. Incontável o número de amigos que eu fiz nos afters do WD, incontável o número de gente da maior qualidade em que eu esbarrei por lá.
@@ -181,7 +181,7 @@ PS.3: Obrigado a todos os DJs **@d2ble, @julia_cruvinel, @patrick.cwb, @phellipc
 <div >
 
 <figure class="aligncenter size-full is-resized">
-<a href="/images/2026/05/C0D40ADD-8005-4485-8A69-DC727B06B2B9_1_105_c-e1778124399514.jpeg?ssl=1"><img src="/images/2026/05/C0D40ADD-8005-4485-8A69-DC727B06B2B9_1_105_c-e1778124399514.jpeg?resize=690%2C445&amp;ssl=1" style="width:404px;height:auto" loading="lazy" decoding="async" width="690" height="445" alt="Selfie de duas pessoas em um show, com uma multidão ao fundo e luzes do palco iluminando o ambiente." /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/05/C0D40ADD-8005-4485-8A69-DC727B06B2B9_1_105_c-e1778124399514.jpeg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/05/C0D40ADD-8005-4485-8A69-DC727B06B2B9_1_105_c-e1778124399514.jpeg?resize=690%2C445&amp;ssl=1" style="width:404px;height:auto" loading="lazy" decoding="async" width="690" height="445" alt="Selfie de duas pessoas em um show, com uma multidão ao fundo e luzes do palco iluminando o ambiente." /></a>
 <figcaption>Eu e a Sheila Mello.</figcaption>
 </figure>
 
@@ -190,7 +190,7 @@ PS.3: Obrigado a todos os DJs **@d2ble, @julia_cruvinel, @patrick.cwb, @phellipc
 <div >
 
 <figure class="aligncenter size-full is-resized">
-<a href="/images/2026/05/C6F8F930-1364-4661-AA28-B85FEAB8ECD4_1_105_c.jpeg?ssl=1"><img src="/images/2026/05/C6F8F930-1364-4661-AA28-B85FEAB8ECD4_1_105_c.jpeg?resize=768%2C1024&amp;ssl=1" style="width:335px;height:auto" loading="lazy" decoding="async" width="768" height="1024" alt="Um homem sorridente usando óculos de sol, segurando dois cães fofos: um Pomerânia branco e um poodle marrom." /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/05/C6F8F930-1364-4661-AA28-B85FEAB8ECD4_1_105_c.jpeg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/05/C6F8F930-1364-4661-AA28-B85FEAB8ECD4_1_105_c.jpeg?resize=768%2C1024&amp;ssl=1" style="width:335px;height:auto" loading="lazy" decoding="async" width="768" height="1024" alt="Um homem sorridente usando óculos de sol, segurando dois cães fofos: um Pomerânia branco e um poodle marrom." /></a>
 <figcaption>Eu e os cachorrinhos bonitinhos dos meus amigos Brendha e Felipe. Claro que isso é pra eu conseguir likes.</figcaption>
 </figure>
 
@@ -199,7 +199,7 @@ PS.3: Obrigado a todos os DJs **@d2ble, @julia_cruvinel, @patrick.cwb, @phellipc
 <div >
 
 <figure class="aligncenter size-large is-resized">
-<a href="/images/2026/05/WhatsApp-Image-2026-05-08-at-03.00.27.jpeg?ssl=1"><img src="/images/2026/05/WhatsApp-Image-2026-05-08-at-03.00.27.jpeg?resize=1024%2C768&amp;ssl=1" style="width:584px;height:auto" loading="lazy" decoding="async" width="1024" height="768" alt="Homem segurando a caixa de um aparelho, com uma etiqueta que diz &#39;não pise&#39;, em um ambiente externo." /></a>
+<a href="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/05/WhatsApp-Image-2026-05-08-at-03.00.27.jpeg?ssl=1"><img src="https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/05/WhatsApp-Image-2026-05-08-at-03.00.27.jpeg?resize=1024%2C768&amp;ssl=1" style="width:584px;height:auto" loading="lazy" decoding="async" width="1024" height="768" alt="Homem segurando a caixa de um aparelho, com uma etiqueta que diz &#39;não pise&#39;, em um ambiente externo." /></a>
 <figcaption>Somente uma regra no after - Não pise na CDJ! by Manso.</figcaption>
 </figure>
 
