@@ -1,0 +1,116 @@
+name: Upload new images to R2
+
+# Trigger: push to main that adds/modifies files under static/images-source/
+#
+# Behaviour:
+#   1. Reads the diff for files added/modified under static/images-source/.
+#   2. Uploads each to r2:marcelioleal-images, preserving the subpath relative
+#      to static/images-source/ as the R2 key.
+#   3. Posts a step summary with CDN URLs for every uploaded file so the
+#      author can copy-paste into the post markdown.
+#
+# Secrets required (set in GitHub Settings → Secrets → Actions):
+#   R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY, R2_ENDPOINT, R2_PUBLIC_URL
+#
+# After uploading:
+#   - Reference the images in your post as <R2_PUBLIC_URL>/<year>/<month>/pic.jpg
+#   - The staging dir static/images-source/ is gitignored, so the raw image
+#     never lands in a commit. The CDN URL in the post is the only trace.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'static/images-source/**'
+  workflow_dispatch:
+    inputs:
+      dir:
+        description: 'Optional: sync an entire subdir instead of the push diff (e.g. 2026/11)'
+        required: false
+        type: string
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: upload-images-${{ github.ref }}
+      cancel-in-progress: false
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # needed to diff against the previous commit
+
+      - name: Install rclone
+        run: |
+          curl -fsSL https://rclone.org/install.sh | sudo bash
+
+      - name: Configure rclone remote via env
+        env:
+          R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          R2_ENDPOINT: ${{ secrets.R2_ENDPOINT }}
+        run: |
+          mkdir -p ~/.config/rclone
+          cat > ~/.config/rclone/rclone.conf <<EOF
+          [r2]
+          type = s3
+          provider = Cloudflare
+          access_key_id = ${R2_ACCESS_KEY_ID}
+          secret_access_key = ${R2_SECRET_ACCESS_KEY}
+          endpoint = ${R2_ENDPOINT}
+          EOF
+
+      - name: Collect files to upload
+        id: collect
+        run: |
+          set -euo pipefail
+          # Manual dispatch: sync a whole subdir under static/images-source/
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ -n "${{ inputs.dir }}" ]; then
+            SRC="static/images-source/${{ inputs.dir }}"
+            [ -d "$SRC" ] || { echo "::error::Directory $SRC does not exist"; exit 1; }
+            find "$SRC" -type f > /tmp/files.txt
+          else
+            # Push: diff vs previous commit, only files under static/images-source/
+            git diff --name-only --diff-filter=AM HEAD~1 HEAD -- static/images-source/ > /tmp/files.txt || true
+          fi
+          COUNT=$(wc -l < /tmp/files.txt)
+          echo "count=$COUNT" >> "$GITHUB_OUTPUT"
+          echo "Files to upload: $COUNT"
+          cat /tmp/files.txt || true
+
+      - name: Upload to R2
+        if: steps.collect.outputs.count != '0'
+        run: |
+          set -euo pipefail
+          while read -r f; do
+            [ -f "$f" ] || continue
+            # Strip static/images-source/ prefix for the R2 key
+            key="${f#static/images-source/}"
+            echo "Uploading $f → r2:marcelioleal-images/$key"
+            rclone copyto "$f" "r2:marcelioleal-images/$key" \
+              --s3-no-check-bucket \
+              --progress
+          done < /tmp/files.txt
+
+      - name: Post CDN URLs to step summary
+        if: steps.collect.outputs.count != '0'
+        env:
+          R2_PUBLIC_URL: ${{ secrets.R2_PUBLIC_URL }}
+        run: |
+          {
+            echo "## Images uploaded to R2"
+            echo ""
+            echo "Public URLs — copy into your post markdown:"
+            echo ""
+            while read -r f; do
+              [ -f "$f" ] || continue
+              key="${f#static/images-source/}"
+              echo "- \`${R2_PUBLIC_URL}/${key}\`"
+            done < /tmp/files.txt
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: No-op notice
+        if: steps.collect.outputs.count == '0'
+        run: echo "No image changes under static/images-source/ — nothing to do."

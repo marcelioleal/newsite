@@ -42,6 +42,41 @@ HUGO_ENV=staging hugo --gc --minify --baseURL "https://new.marcelioleal.com/"
 netlify deploy --prod --dir=public --message "manual deploy: <reason>"
 ```
 
+## Images (Cloudflare R2 CDN)
+
+All post images are served from Cloudflare R2 at `https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/...` (bucket: `marcelioleal-images`). The `static/images/` directory is deliberately **not tracked in git** — images never land in the repo.
+
+### Adding a new image
+
+1. Drop the file under `static/images-source/<year>/<month>/<filename>` — this directory is gitignored, so the raw image is only ever local.
+2. Commit any post changes and push. The `.github/workflows/upload-images.yml` workflow detects new files under `static/images-source/`, uploads them to R2 with the same subpath as the key, and posts the public CDN URLs in the workflow's step summary.
+3. Copy the URL from the summary into your post markdown:
+   ```
+   ![Caption](https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/11/my-photo.jpg)
+   ```
+4. Optionally delete the local file under `static/images-source/` after upload — the CDN is the source of truth.
+
+### Adding an image locally (no CI round-trip)
+
+Use `./scripts/upload-image.sh <path>`. It uploads via rclone with the same env vars and prints the CDN URL.
+
+```bash
+# Requires an .env.r2 file (gitignored) or the env vars exported:
+#   R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY, R2_ENDPOINT, R2_PUBLIC_URL
+
+./scripts/upload-image.sh static/images-source/2026/11/my-photo.jpg
+# → outputs: https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/2026/11/my-photo.jpg
+```
+
+### Bulk one-shot migration (already done)
+
+- `scripts/migrate_images_to_r2.sh` — initial upload of the WordPress migration backlog (123 files / ~52MB, 2026-11-24).
+- `scripts/rewrite_images_to_r2.py` — rewrote `/images/*` references in content/ and layouts/ to the CDN URL.
+
+### Future: custom domain
+
+Current serving URL is `pub-XXX.r2.dev` because the user's DNS does not sit on Cloudflare. Phase B of the migration will add a CNAME at the registrar pointing `images.marcelioleal.com` → the R2 bucket, then a single `sed` rewrites all references. The workflow and `upload-image.sh` need `R2_PUBLIC_URL` updated at that point.
+
 ## Search (Pagefind)
 
 Search is built by [Pagefind](https://pagefind.app/) as a post-Hugo step. The Netlify build runs:
