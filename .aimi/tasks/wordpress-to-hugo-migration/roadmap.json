@@ -269,6 +269,47 @@
       "claim": null
     },
     {
+      "id": 2.5,
+      "name": "Image Optimization on R2",
+      "slug": "image-optimization",
+      "goal": "Every image served from Cloudflare R2 is right-sized and format-optimized for web, so the site's weight on the client drops dramatically without visual degradation.",
+      "successCriteria": [
+        "No single image on R2 exceeds 500KB except where the original resolution is genuinely required (archive-quality photos, intentional large displays).",
+        "Screenshots (PNG) under 1MB each: lossless-to-near-lossless compression via oxipng or pngquant; where visible quality allows, convert to WebP at quality 85 for 50-70% size reduction.",
+        "Photos (JPG) under 500KB each: max dimension 2000px, quality 82, progressive encoding, stripped of EXIF/metadata.",
+        "The top 10 heaviest images (pre-optimization) reduce by at least 70% in aggregate bytes with visual fidelity confirmed via before/after sampling.",
+        "scripts/optimize_r2_images.sh re-runs idempotently: downloads from R2, optimizes in-place, re-uploads only if the compressed version is smaller than the original. Writes a report (before/after bytes, savings)."
+      ],
+      "dependsOn": [
+        2.4
+      ],
+      "creates": [
+        {
+          "identity": "scripts/optimize_r2_images.sh",
+          "description": "Idempotent image optimizer: downloads from R2, compresses PNG/JPG/WebP, re-uploads if smaller."
+        },
+        {
+          "identity": "optimization_report",
+          "description": "Before/after size report committed under .aimi/tasks/wordpress-to-hugo-migration/phase-2.5-image-optimization/"
+        }
+      ],
+      "needs": [
+        {
+          "identity": "r2_bucket",
+          "description": "marcelioleal-images bucket created in Phase A of the CDN migration (post-Phase 2.4 polish round)."
+        }
+      ],
+      "areas": [
+        "scripts/**",
+        "r2:marcelioleal-images/**"
+      ],
+      "notes": "Many originals (notably post-migration WordPress uploads 2024-2026) are 2-22MB screenshots/photos. Compressing them in-place on R2 is lossy-on-disk but safe: user holds master copies locally on their Mac. R2 is the source of truth for images now.",
+      "branch": null,
+      "dir": "phase-2.5-image-optimization",
+      "status": "pending",
+      "claim": null
+    },
+    {
       "id": 3,
       "name": "SEO Preservation and Cutover",
       "slug": "seo-cutover",
