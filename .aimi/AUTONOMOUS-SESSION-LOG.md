@@ -208,3 +208,63 @@ Tried to run `magick -strip -quality 82` on the 2 big referenced images (7.7MB J
 - 4 scripts live in `scripts/` as reviewable tools (rel_noopener, fix_wp_block_embeds, upgrade_http_to_https, strip_wp_cruft, remove_dead_external_images, prune_orphan_images). All idempotent, all safe to re-run.
 - **7 items await your decision** (listed in "Needs your decision" section above). None blocks continued work.
 - **Phase 3 cutover** untouched. Waiting on you.
+
+---
+
+## 2026-11-24 ~02:20–05:50 UTC — R2 CDN migration (Fase A)
+
+**Decisão arquitetural:** imagens saem do git, vão pra Cloudflare R2 servindo via `pub-51dee957ac3e4a038150048d60e57b9c.r2.dev`. Fase B (custom domain `images.marcelioleal.com`) fica pendente até criar CNAME no registrar atual (não-Cloudflare).
+
+### Shipado nesta sessão (3 commits)
+
+| SHA | O quê |
+|---|---|
+| `c7b16f1` | feat(cdn): migrate 123 images (52MB) para R2, delete static/images/, rewrite 196 refs em 39 files. Working tree limpo. |
+| `848d1e8` | chore(cdn): GitHub Action upload-images.yml + scripts/upload-image.sh + README docs do novo workflow |
+
+### Resultados
+
+- `.git/` de **469MB → 123MB** (346MB expurgados via `git filter-repo --path static/images/ --invert-paths --force`)
+- Clone da mesma branch hoje puxa <1min (antes era ~2-3min)
+- Imagens servidas de Cloudflare edge (cache global, latência minúscula)
+- `static/images-source/` como staging area local, gitignored
+
+### Como adicionar imagem nova agora (duas formas)
+
+**Via GitHub Action (default):**
+1. Drop em `static/images-source/2026/11/foo.jpg`
+2. Commit + push
+3. Action detecta, sobe pra R2, imprime URL CDN no step summary
+4. Copia URL do summary pro markdown do post
+
+**Local (pulando CI):** `./scripts/upload-image.sh static/images-source/2026/11/foo.jpg` → imprime URL.
+
+Credenciais: salvas no GitHub Secrets (R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY, R2_ENDPOINT, R2_PUBLIC_URL) + opcionalmente num `.env.r2` local (gitignored).
+
+### Decisões tomadas
+
+- Phase A sem custom domain → URL interina `pub-XXX.r2.dev` pra desbloquear migração
+- Prune dos 66 órfãos ANTES do upload (economia direta de ~147MB em R2)
+- `--s3-no-check-bucket` + no-ACL: token de Object R/W não tem bucket admin, R2 ignora ACL por objeto
+- `filter-repo --force` + force-push: SHAs mudam, branch `pre-cdn-migration` no GitHub é a safety net
+- GitHub Action usa rclone (instalado via `curl | sudo bash` no runner) com config via env vars
+
+### Fase B (pendente, quando você quiser)
+
+Adicionar 1 CNAME no registrar DNS atual:
+```
+images  CNAME  pub-51dee957ac3e4a038150048d60e57b9c.r2.dev
+```
+
+Depois rodar o sed já planejado:
+```bash
+grep -rl 'pub-51dee957ac3e4a038150048d60e57b9c\.r2\.dev' content/ layouts/ i18n/ | \
+  xargs sed -i '' 's|https://pub-51dee957ac3e4a038150048d60e57b9c\.r2\.dev|https://images.marcelioleal.com|g'
+```
+
+Commit + push. Workflow e `scripts/upload-image.sh` precisam do `R2_PUBLIC_URL` atualizado também.
+
+### Risco documentado
+
+- Pre-cdn-migration branch segue no GitHub com os blobs antigos. Se quiser rollback total: `git fetch origin pre-cdn-migration && git reset --hard origin/pre-cdn-migration && git push --force origin main`.
+- Delete-ar essa branch antes de ter certeza vai perder o safety net.
