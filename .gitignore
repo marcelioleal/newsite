@@ -27,3 +27,5 @@ static/images-source/
 .aimi/current-tasks
 .aimi/last-result
 .aimi/default-branch-*
+__pycache__
+scripts/missing-alt.json
