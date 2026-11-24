@@ -14,6 +14,6 @@ Tô sempre online como marcelioleal em alguma rede. As que mais uso são:
 
 » <a href="https://www.instagram.com/marcelioleal/" target="_blank" rel="noopener noreferrer">Instagram</a>
 
-Mas, tem algumas outras <a href="https://about.me/marcelioleal" target="_blank" rel="noopener noreferrer">aqui</a>.
+Mas, tem algumas outras <a href="https://about.me/marcelioleal" target="_blank" rel="noopener noreferrer">ver em about.me</a>.
 
 Ou se preferir, entre em contato via e-mail: ***contato@marcelioleal.com***

@@ -33,7 +33,7 @@ Aqui não vou citar comunidades locais nem associações. Vou listar eventos e f
 
 **Startup Digest**
 
-O <a href="https://www.startupdigest.com/" target="_blank" rel="noopener noreferrer">Startup Digest</a> reune os principais eventos relacionados com as startups. Você pode escolher sua região, cidade ou eventos espalhados no Brasil. <a href="https://www.startupdigest.com/digests/brazil" target="_blank" rel="noopener noreferrer">Aqui</a> por exemplo você vê o calendário de eventos.
+O <a href="https://www.startupdigest.com/" target="_blank" rel="noopener noreferrer">Startup Digest</a> reune os principais eventos relacionados com as startups. Você pode escolher sua região, cidade ou eventos espalhados no Brasil. <a href="https://www.startupdigest.com/digests/brazil" target="_blank" rel="noopener noreferrer">ver em startupdigest.com</a> por exemplo você vê o calendário de eventos.
 
 Dentre as opções disponíveis você tem: Brazil; Brazil -- Sul; Brazil -- São Paulo; Brazil-Rio de Janeiro; etc. Você vai receber, normalmente, um e-mail (geralmente) toda segunda com a programação da semana.
 

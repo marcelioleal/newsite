@@ -316,6 +316,6 @@ A apresentação encontra-se no slideshare:
 
 </div>
 
-Os códigos-fonte utilizados estão disponíveis [aqui](http://rapidshare.com/files/109601562/teste.zip.html).
+Os códigos-fonte eram publicados no RapidShare — o serviço fechou em 2015 e o arquivo original (de 2008) não está mais disponível.
 
 Mais uma vez obrigado a todos que me ajudaram, em especial para a [Abstract BI](http://www.abstractbi.com) e [COBRA Tecnologia](http://www.cobra.com.br).

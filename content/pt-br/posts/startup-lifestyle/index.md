@@ -103,7 +103,7 @@ Até que voltou a ideia de que eu precisava de tempo, e apareceu um novo concurs
 #### Lições aprendidas
 
 - Se você acha que não tem tempo, realmente olhe pra outras pessoas e veja se isso é verdade.
-- Equilibre seu dia-a-dia, não deixe sua ocupação principal tomar sua vida de você. O Ev Williams resume algumas coisas bem legais <a href="https://medium.com/@ev/formula-for-entrepreneurial-success-ea0b02c504cd" target="_blank" rel="noopener noreferrer">aqui</a>.
+- Equilibre seu dia-a-dia, não deixe sua ocupação principal tomar sua vida de você. O Ev Williams resume algumas coisas bem legais <a href="https://medium.com/@ev/formula-for-entrepreneurial-success-ea0b02c504cd" target="_blank" rel="noopener noreferrer">ler no Medium</a>.
 - O nível enterprise tenta solucionar problemas TI que não deveriam existir por padrão, ai criam outros problemas, e isso segue de forma recursiva até a desistência. Quando você vê uma hierarquia muito grande lembre-se disso.
 
 ### Demorou mas eu achei

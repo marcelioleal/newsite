@@ -174,7 +174,7 @@ O que eu espero? Eu espero ter mais e mais experiências como essas. Como as que
 
 P.S.: O pessoal me avisou, mas eu fui teimoso em dançar descalço. Resultado: resfriado. Ouça seus amigos de Curitiba; *eles conhecem a temperatura do chão.*
 
-PS.2: Eu já falei de eletrônico e música paraense [aqui](https://marcelioleal.com/2025/09/28/o-perigo-da-musica-reflexiva-e-a-relacao-austro-paraense/) também. Prometo que vou parar. 🙂
+PS.2: Eu já falei de eletrônico e música paraense [no post sobre música reflexiva](/o-perigo-da-musica-reflexiva-e-a-relacao-austro-paraense/) também. Prometo que vou parar. 🙂
 
 PS.3: Obrigado a todos os DJs **@d2ble, @julia_cruvinel, @patrick.cwb, @phellipcarvalho, @drmatheusguedes, @micheleabreus e @wendelcubas! Sou fã de vocês!** E também ao meu amigo da seleção sueca de ski e grande apreciador de tacacá, **@atauaaa**.
 

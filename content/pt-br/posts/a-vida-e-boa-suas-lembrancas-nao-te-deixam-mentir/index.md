@@ -57,7 +57,7 @@ Lembro de vários dias que aquela comida me salvou, e que tava deliciosa! Seloko
 
 #### Café das Vila Madalena
 
-Eles tem um lugar especial no meu coração. Dá pra listar: Ekoa, Le pain quotidien, Cupping, Tastemade, Santo Grão, etc. Dá uma olhada <a href="https://sprudge.com/the-sprudge-guide-to-sao-paulos-vila-madalena-neighborhood-127584.html" target="_blank" rel="noopener noreferrer">aqui</a>. Porém, eu vou falar apenas dos que me marcaram, não necessariamente só pelo café, mas pelo que eles significaram.
+Eles tem um lugar especial no meu coração. Dá pra listar: Ekoa, Le pain quotidien, Cupping, Tastemade, Santo Grão, etc. Dá uma olhada <a href="https://sprudge.com/the-sprudge-guide-to-sao-paulos-vila-madalena-neighborhood-127584.html" target="_blank" rel="noopener noreferrer">ver em sprudge.com</a>. Porém, eu vou falar apenas dos que me marcaram, não necessariamente só pelo café, mas pelo que eles significaram.
 
 #### O Aeropress e o Coffee Lab
 

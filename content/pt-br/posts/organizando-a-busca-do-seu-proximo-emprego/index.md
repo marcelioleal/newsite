@@ -36,7 +36,7 @@ Finalmente com uma lista de vagas ou possíveis empresas, você pode tomar umas 
 3.  Tente extrair as principais habilidades e competências para pode trabalhar nas empresas listadas.
 4.  Por fim, defina uma linha do tempo para aplicar. Desta forma você pode participar dos principais processos, além de não fazer as empresas esperarem por muito tempo no caso de uma resposta para mais de uma posição.
 
-Pronto, utilize essa planilha como motivador nesse período difícil. Pense positivo e se prepare. O próximo passo é organizar a documentação para aplicar nos processo, e <a href="https://medium.com/@marcelioleal/preparando-a-sua-documenta%C3%A7%C3%A3o-para-aplicar-para-as-vagas-de-emprego-spoiler-n%C3%A3o-%C3%A9-s%C3%B3-o-curr%C3%ADculo-545bd0fc2f79" target="_blank" rel="noopener noreferrer">aqui</a> eu compartilho um pouco mais sobre isso.
+Pronto, utilize essa planilha como motivador nesse período difícil. Pense positivo e se prepare. O próximo passo é organizar a documentação para aplicar nos processo, e <a href="https://medium.com/@marcelioleal/preparando-a-sua-documenta%C3%A7%C3%A3o-para-aplicar-para-as-vagas-de-emprego-spoiler-n%C3%A3o-%C3%A9-s%C3%B3-o-curr%C3%ADculo-545bd0fc2f79" target="_blank" rel="noopener noreferrer">ler no Medium</a> eu compartilho um pouco mais sobre isso.
 
 ------------------------------------------------------------------------
 

@@ -10,4 +10,4 @@ Muito interessante a iniciativa do [Fábio Akita](http://www.akitaonrails.com/) 
 
 Tá bem interessante mesmo pra quem quer aprender a programar, ele utiliza como base a [linguagem Ruby](http://www.ruby-lang.org/en/), que é uma boa linguagem pra aprender também.
 
-Quem tá iniciando, vale dar uma lida [aqui](http://aprendaaprogramar.rubyonrails.pro.br/introducao).
+Quem tá iniciando, vale dar uma lida [ver em aprendaaprogramar.rubyonrails.pro.br](http://aprendaaprogramar.rubyonrails.pro.br/introducao).

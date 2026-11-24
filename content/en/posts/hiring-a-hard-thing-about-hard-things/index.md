@@ -161,7 +161,7 @@ Any thoughts about this post? Let me know at twitter @marcelioleal or send an em
 
 ### References
 
-- GitLab has an amazing material for hiring. Take a look <a href="https://handbook.gitlab.com/handbook/hiring/" target="_blank" rel="noopener noreferrer">here</a>.
+- GitLab has an amazing material for hiring. Take a look <a href="https://handbook.gitlab.com/handbook/hiring/" target="_blank" rel="noopener noreferrer">see at handbook.gitlab.com</a>.
 - <a href="https://www.amazon.com.br/Elegant-Puzzle-Systems-Engineering-Management-ebook/dp/B07QYCHJ7V" target="_blank" rel="noopener noreferrer">An Elegant Puzzle: Systems of Engineering Management</a>
 - <a href="https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205" target="_blank" rel="noopener noreferrer">The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers</a>
 - <a href="https://www.amazon.com.br/Psicometria-Teoria-testes-psicologia-educa%C3%A7%C3%A3o/dp/8532628893" target="_blank" rel="noopener noreferrer">(Portuguese) Psicometria: Teoria dos testes na psicologia e na educação</a>

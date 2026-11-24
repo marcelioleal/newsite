@@ -35,7 +35,7 @@ E no geral, esse comportamento é exigido de pessoas que estão no nível de exe
 <figcaption>Restauração proativa</figcaption>
 </figure>
 
-Em 2012, uma senhora espanhola, como uma boa cidadã, decidiu ser proativa e restaurar uma obra de Elías García Martínez. Como ela não tinha o conhecimento e a técnica exigida, acabou gerando o resultado acima. Se quiser entender melhor o quanto ela falhou, veja <a href="http://g1.globo.com/planeta-bizarro/noticia/2012/08/idosa-tenta-restaurar-pintura-mas-distorce-obra-do-sec-xix-na-espanha.html" target="_blank" rel="noopener noreferrer">aqui</a>.
+Em 2012, uma senhora espanhola, como uma boa cidadã, decidiu ser proativa e restaurar uma obra de Elías García Martínez. Como ela não tinha o conhecimento e a técnica exigida, acabou gerando o resultado acima. Se quiser entender melhor o quanto ela falhou, veja <a href="http://g1.globo.com/planeta-bizarro/noticia/2012/08/idosa-tenta-restaurar-pintura-mas-distorce-obra-do-sec-xix-na-espanha.html" target="_blank" rel="noopener noreferrer">ver em g1.globo.com</a>.
 
 Pra mim esse é um ótimo exemplo ilustrativo dos problemas que podem acontecer quando não se tem maestria pra executar um trabalho complexo. E é mais ou menos isso que acontece quando um desenvolvedor de software, sem o conhecimento necessário, começa a mexer no produto por conta própria. Ou mesmo, quando gerentes de produto, sem muita demanda e visão, começam a criar soluções inovadoras que mudam totalmente um produto.
 

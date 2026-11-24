@@ -30,7 +30,7 @@ O Modelo de Dados desenvolvido é muito simples, no decorrer do post vamos expli
 \
 *Figura 1 - Modelo de Dados.*
 
-Para baixar o modelo de dados desenvolvido no [DBDesigner](http://fabforce.net/dbdesigner4/) é só clicar [aqui](http://2.download-1.files-upload.com/50/2007/11/15/22-40/0/model.xml).
+O modelo de dados foi desenvolvido no [DBDesigner](http://fabforce.net/dbdesigner4/) — o arquivo original (de 2007) não está mais disponível.
 
 As senhas serão armazenadas utilizando o algoritmo de encriptação [MD5](https://pt.wikipedia.org/wiki/MD5).
 
@@ -100,7 +100,7 @@ Abaixo o código do método *login* na classe *FrontController*.
 
 
 
-Na linha 25 chamamos o método *loginUser* da classe *Fachada*, que a interface única com o BD. Esse método recebe como parâmetros o login e a senha encriptada(utilizando o md5). O método *Util::forString()* (método stático - para saber mais [clique aqui](http://www.php.net/manual/pt_BR/keyword.paamayim-nekudotayim.php)) formata a string para formar o SQL.
+Na linha 25 chamamos o método *loginUser* da classe *Fachada*, que a interface única com o BD. Esse método recebe como parâmetros o login e a senha encriptada(utilizando o md5). O método *Util::forString()* (método stático - para saber mais [ver em php.net](http://www.php.net/manual/pt_BR/keyword.paamayim-nekudotayim.php)) formata a string para formar o SQL.
 
 Se o retorno do método *loginUser* for um objeto então os seguintes passos são executados:
 

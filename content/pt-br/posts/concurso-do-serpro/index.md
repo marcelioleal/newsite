@@ -14,7 +14,7 @@ Já é sabido que a Wikipedia é uma fonte de informações que tem o objetivo d
 
 Em diversos fóruns na internet as pessoas estão discutindo a prova, aqui apresento algumas argumentações sobre a prova. Se os avaliadores dos recursos que foram enviados forem razoavelmente sensatos pelo menos 12 questões terão suas respostas modificadas ou anuladas, ou seja, pelo menos 10% da prova deve ser modificada.
 
-A prova do SERPRO para o cargo de Especialização em Desenvolvimento de Sistemas pode ser baixada <a href="http://www.cespe.unb.br/concursos/SERPRO2008/arquivos/SERPRO_CARGO_05.pdf" target="_blank" rel="noopener noreferrer">aqui</a>.
+A prova do SERPRO para o cargo de Especialização em Desenvolvimento de Sistemas pode ser baixada <a href="http://www.cespe.unb.br/concursos/SERPRO2008/arquivos/SERPRO_CARGO_05.pdf" target="_blank" rel="noopener noreferrer">baixar o PDF</a>.
 
 Questões
 

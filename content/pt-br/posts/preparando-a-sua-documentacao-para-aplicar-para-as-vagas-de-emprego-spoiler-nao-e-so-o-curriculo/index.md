@@ -59,7 +59,7 @@ Se você tem uma carreira longa, eu focaria mais na experiência profissional re
 
 Pense em tudo que o que você está adicionando no currículo. Por exemplo, não adicione coisas como inglês básico, pois provavelmente isso não é relevante. Às vezes, vale também customizar o seu currículo para alguma vaga específica, removendo conteúdo que não está relacionado.
 
-<a href="https://docs.google.com/document/d/1T3NSkY7yhQRxDCjw6ABapt3ChxwJyKage6N3hf4393M/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Aqui</a> você tem um modelo de currículo baseado no currículo de dois amigos (<a href="https://www.linkedin.com/in/eriksencosta/" target="_blank" rel="noopener noreferrer">Eriksen</a> e <a href="https://www.linkedin.com/in/fevilanova/" target="_blank" rel="noopener noreferrer">Fernando</a>).
+<a href="https://docs.google.com/document/d/1T3NSkY7yhQRxDCjw6ABapt3ChxwJyKage6N3hf4393M/edit?usp=sharing" target="_blank" rel="noopener noreferrer">ver no Google Docs</a> você tem um modelo de currículo baseado no currículo de dois amigos (<a href="https://www.linkedin.com/in/eriksencosta/" target="_blank" rel="noopener noreferrer">Eriksen</a> e <a href="https://www.linkedin.com/in/fevilanova/" target="_blank" rel="noopener noreferrer">Fernando</a>).
 
 ### LinkedIn
 
@@ -98,7 +98,7 @@ Mas isso depende muito do caso. Às vezes, somente a experiência já proporcion
 
 Eu normalmente recomendo desenvolvedores no começo de carreira colocar um projeto no GitHub. É mais fácil convencer que você é capaz de entregar uma aplicação de ponta à ponta se compartilhá-la publicamente.
 
-Para outros papéis, como Designers, há outras plataformas como o <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">Behance</a>, ou outras mais <a href="https://www.hongkiat.com/blog/online-portfolios-for-designers/" target="_blank" rel="noopener noreferrer">aqui</a>.
+Para outros papéis, como Designers, há outras plataformas como o <a href="https://www.behance.net/" target="_blank" rel="noopener noreferrer">Behance</a>, ou outras mais <a href="https://www.hongkiat.com/blog/online-portfolios-for-designers/" target="_blank" rel="noopener noreferrer">ver em hongkiat.com</a>.
 
 ### Carta de Apresentação
 
