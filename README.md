@@ -42,6 +42,10 @@ HUGO_ENV=staging hugo --gc --minify --baseURL "https://new.marcelioleal.com/"
 netlify deploy --prod --dir=public --message "manual deploy: <reason>"
 ```
 
+## Writing posts
+
+For the one-page cheatsheet on creating a new post (incl. front-matter template and the image workflow), see [`docs/POSTING.md`](docs/POSTING.md).
+
 ## Images (Cloudflare R2 CDN)
 
 All post images are served from Cloudflare R2 at `https://pub-51dee957ac3e4a038150048d60e57b9c.r2.dev/...` (bucket: `marcelioleal-images`). The `static/images/` directory is deliberately **not tracked in git** — images never land in the repo.
