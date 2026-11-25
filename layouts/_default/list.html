@@ -45,10 +45,21 @@
 </div>
 {{- else }}
 {{- $cats := .Site.Data.rec_categories -}}
-<article class="post-single section-single">
+<article class="post-single section-single{{ with .Params.hero_image }} has-page-hero{{ end }}">
+  {{- with .Params.hero_image }}
+  <header class="page-hero" style="background-image:url({{ . | safeURL }});" role="banner">
+    <span class="page-hero-shade" aria-hidden="true"></span>
+    <div class="page-hero-inner">
+      <h1 class="page-hero-title">{{ $.Title }}</h1>
+      {{- with $.Params.hero_image_caption }}<p class="page-hero-caption">{{ . }}</p>{{- end }}
+    </div>
+    {{- with $.Params.hero_image_credit }}<span class="page-hero-credit">{{ . | safeHTML }}</span>{{- end }}
+  </header>
+  {{- else }}
   <header class="post-header">
     <h1 class="post-title">{{ .Title }}</h1>
   </header>
+  {{- end }}
 
   {{- if .Pages }}
   {{- /* Rotating hero banner — picks a random child category client-side on each page load. */ -}}
