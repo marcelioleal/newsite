@@ -1,0 +1,82 @@
+# Per-category metadata for /recomendacoes/ (and /en/recommendations/) hero + cards.
+# Key = the folder name (slug) under content/{pt-br/recomendacoes,en/recommendations}.
+# icon: a name resolved by layouts/partials/rec-icon.html (SVG library).
+# gradient: CSS gradient used as hero background (and as fallback when no image).
+# image: optional background photo URL (R2, Unsplash, etc.) — leave empty for gradient-only hero.
+# Add an image URL whenever you have a representative shot for the category.
+
+# PT slugs
+arte-em-sp:
+  icon: palette
+  gradient: "linear-gradient(135deg, #7c3aed, #4c1d95)"
+  image: ""
+artigos-tech:
+  icon: code
+  gradient: "linear-gradient(135deg, #0891b2, #075985)"
+  image: ""
+cafes:
+  icon: coffee
+  gradient: "linear-gradient(135deg, #a16207, #78350f)"
+  image: ""
+kitesurf:
+  icon: wind
+  gradient: "linear-gradient(135deg, #0ea5e9, #0369a1)"
+  image: ""
+livros:
+  icon: book
+  gradient: "linear-gradient(135deg, #059669, #064e3b)"
+  image: ""
+musica:
+  icon: music
+  gradient: "linear-gradient(135deg, #db2777, #9d174d)"
+  image: ""
+posts-especiais:
+  icon: star
+  gradient: "linear-gradient(135deg, #eab308, #a16207)"
+  image: ""
+restaurantes-sp:
+  icon: utensils
+  gradient: "linear-gradient(135deg, #d9541b, #a63f12)"
+  image: ""
+sites-e-podcasts:
+  icon: mic
+  gradient: "linear-gradient(135deg, #64748b, #1e293b)"
+  image: ""
+viagem-pra-belem:
+  icon: map-pin
+  gradient: "linear-gradient(135deg, #d97706, #92400e)"
+  image: ""
+
+# EN slugs (mirror)
+art-in-sp:
+  icon: palette
+  gradient: "linear-gradient(135deg, #7c3aed, #4c1d95)"
+  image: ""
+tech-articles:
+  icon: code
+  gradient: "linear-gradient(135deg, #0891b2, #075985)"
+  image: ""
+coffee:
+  icon: coffee
+  gradient: "linear-gradient(135deg, #a16207, #78350f)"
+  image: ""
+kitesurfing:
+  icon: wind
+  gradient: "linear-gradient(135deg, #0ea5e9, #0369a1)"
+  image: ""
+books:
+  icon: book
+  gradient: "linear-gradient(135deg, #059669, #064e3b)"
+  image: ""
+music:
+  icon: music
+  gradient: "linear-gradient(135deg, #db2777, #9d174d)"
+  image: ""
+restaurants-sp:
+  icon: utensils
+  gradient: "linear-gradient(135deg, #d9541b, #a63f12)"
+  image: ""
+visiting-belem:
+  icon: map-pin
+  gradient: "linear-gradient(135deg, #d97706, #92400e)"
+  image: ""

@@ -44,19 +44,52 @@
   </div>
 </div>
 {{- else }}
+{{- $cats := .Site.Data.rec_categories -}}
 <article class="post-single section-single">
   <header class="post-header">
     <h1 class="post-title">{{ .Title }}</h1>
   </header>
+
+  {{- if .Pages }}
+  {{- /* Rotating hero banner — picks a random child category client-side on each page load. */ -}}
+  <section class="rec-hero" aria-label="{{ i18n "random_recommendation" | default "Destaque aleatório" }}">
+    {{- range $i, $p := .Pages.ByWeight }}
+    {{- $slug := path.Base $p.File.Dir }}
+    {{- $meta := index $cats $slug -}}
+    {{- $icon := "star" -}}{{- with $meta }}{{- with .icon }}{{ $icon = . }}{{- end }}{{- end -}}
+    {{- $gradient := "linear-gradient(135deg, var(--accent), var(--accent-hover))" -}}{{- with $meta }}{{- with .gradient }}{{ $gradient = . }}{{- end }}{{- end -}}
+    {{- $image := "" -}}{{- with $meta }}{{- with .image }}{{ $image = . }}{{- end }}{{- end -}}
+    <a href="{{ $p.RelPermalink }}" class="rec-hero-slide" data-rec-slide{{ if ne $i 0 }} hidden{{ end }} style="background:{{ $gradient | safeCSS }};">
+      {{- if $image }}
+      <span class="rec-hero-image" style="background-image:url({{ $image | safeURL }});"></span>
+      <span class="rec-hero-scrim" aria-hidden="true"></span>
+      {{- end }}
+      <span class="rec-hero-body">
+        <span class="rec-hero-eyebrow">Destaque</span>
+        <span class="rec-hero-title">
+          <span class="rec-hero-icon">{{ partial "rec-icon.html" $icon }}</span>
+          {{ $p.Title }}
+        </span>
+        <span class="rec-hero-cta">Ver recomendações <span aria-hidden="true">→</span></span>
+      </span>
+    </a>
+    {{- end }}
+  </section>
+  {{- end }}
+
   {{- with .Content }}
   <div class="post-content md-content">{{ . }}</div>
   {{- end }}
+
   {{- if .Pages }}
   <nav class="section-children" aria-label="{{ .Title }}">
     <ul class="section-children-list">
       {{- range .Pages.ByWeight }}
+      {{- $slug := path.Base .File.Dir }}
+      {{- $icon := "star" -}}{{- with (index $cats $slug) }}{{- with .icon }}{{ $icon = . }}{{- end }}{{- end }}
       <li class="section-child">
         <a href="{{ .RelPermalink }}">
+          <span class="section-child-icon" aria-hidden="true">{{ partial "rec-icon.html" $icon }}</span>
           <span class="section-child-title">{{ .Title }}</span>
           <span class="section-child-arrow" aria-hidden="true">→</span>
         </a>
@@ -64,6 +97,16 @@
       {{- end }}
     </ul>
   </nav>
+  <script>
+  (function(){
+    var slides = document.querySelectorAll('[data-rec-slide]');
+    if (slides.length < 2) return;
+    var pick = Math.floor(Math.random() * slides.length);
+    slides.forEach(function(s, i){
+      if (i === pick) s.removeAttribute('hidden'); else s.setAttribute('hidden', '');
+    });
+  })();
+  </script>
   {{- end }}
 </article>
 {{- end }}
