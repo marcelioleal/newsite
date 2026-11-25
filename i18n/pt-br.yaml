@@ -8,9 +8,8 @@ back_to_home: "Voltar ao início"
 
 # Home hero
 hero_name: "Marcelio Leal"
-hero_bio: "Paraense de Belém vivendo em São Paulo. Líder de Engenharia no Google e cofundador da Beyond Tech Conference. Escrevo aqui sobre tecnologia, liderança, música, café, arte e kitesurf."
+hero_bio: "De Belém, hoje em São Paulo. Líder de Engenharia de Software, que curte combinar processo, governança e pessoas pra construir produtos que impactam a sociedade. Cofundador da Beyond Tech Conference. Escrevo aqui sobre tudo, mas gosto de misturar tecnologia, liderança, música, café, arte e Paysandú."
 hero_badge_place: "📍 Belém → SP"
-hero_badge_role: '💼 <a href="https://www.linkedin.com/company/google/" rel="noopener noreferrer" target="_blank">Google</a> — Former (<a href="https://www.linkedin.com/company/amazon/" rel="noopener noreferrer" target="_blank">Amazon</a>, <a href="https://www.linkedin.com/company/nubank/" rel="noopener noreferrer" target="_blank">Nubank</a>)'
 hero_badge_passions: "❤️ Kitesurf, Café, Música"
 hero_cta_about: "Sobre mim →"
 hero_cta_newsletter: "Newsletter"

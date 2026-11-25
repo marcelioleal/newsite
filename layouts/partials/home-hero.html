@@ -1,6 +1,6 @@
 {{- /*
   layouts/partials/home-hero.html — Home hero block.
-  Layout: avatar + bio + 3-in-a-row badges (place, role, passions) + CTA + socials.
+  Layout: avatar + bio + badges (place, passions) + CTA + socials.
   i18n-driven: all user-facing text lives in i18n/*.yaml.
 */ -}}
 <section class="pm-home-info" aria-labelledby="home-hero-bio">
@@ -10,7 +10,6 @@
     <p id="home-hero-bio">{{ i18n "hero_bio" }}</p>
     <div class="pm-badges" aria-hidden="true">
       <span class="pm-badge">{{ i18n "hero_badge_place" }}</span>
-      <span class="pm-badge">{{ i18n "hero_badge_role" | safeHTML }}</span>
       <span class="pm-badge">{{ i18n "hero_badge_passions" }}</span>
     </div>
     <div class="pm-ctas">

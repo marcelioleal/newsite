@@ -8,9 +8,8 @@ back_to_home: "Back to home"
 
 # Home hero
 hero_name: "Marcelio Leal"
-hero_bio: "Brazilian from Pará (the Amazon), now in São Paulo. Engineering Lead at Google and co-founder of Beyond Tech. I write here about technology, leadership, music, coffee, art and kitesurfing."
+hero_bio: "From Belém, now in São Paulo. Software Engineering Lead who likes combining process, governance and people to build products that matter for society. Co-founder of the Beyond Tech Conference. I write here about pretty much everything — but I like mixing technology, leadership, music, coffee, art and Paysandu."
 hero_badge_place: "📍 Belém → SP"
-hero_badge_role: '💼 <a href="https://www.linkedin.com/company/google/" rel="noopener noreferrer" target="_blank">Google</a> — Former (<a href="https://www.linkedin.com/company/amazon/" rel="noopener noreferrer" target="_blank">Amazon</a>, <a href="https://www.linkedin.com/company/nubank/" rel="noopener noreferrer" target="_blank">Nubank</a>)'
 hero_badge_passions: "❤️ Kitesurfing, Coffee, Music"
 hero_cta_about: "About me →"
 hero_cta_newsletter: "Newsletter"
