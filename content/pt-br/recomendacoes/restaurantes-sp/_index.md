@@ -7,7 +7,33 @@ translationKey: restaurants-sp
 
 São Paulo me acolheu, mas meu paladar continua sendo do Norte. Nesta página deixo recomendações de restaurantes paraenses e de culinária amazônica em SP — lugares onde eu encontro o sabor de casa (tacacá, maniçoba, pato no tucupi, pirarucu, filhote, jambu, tucupi) sem precisar pegar um avião.
 
-<iframe src="https://maps.google.com/maps?q=restaurantes+paraenses+em+sao+paulo&t=&z=12&ie=UTF8&iwloc=&output=embed" width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<div id="rest-map" style="height:440px;width:100%;border:1px solid var(--border);border-radius:8px;margin:1.8em 0;background:var(--entry);"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+(function(){
+  if(!document.getElementById('rest-map')||!window.L)return;
+  L.Icon.Default.imagePath='https://unpkg.com/leaflet@1.9.4/dist/images/';
+  var r=[
+    ['Sororoca Bar','Vila Madalena',-23.5552,-46.6881,'https://www.google.com/maps/search/?api=1&query=Sororoca+Bar+Rua+Harmonia+321+Vila+Madalena'],
+    ['Combu — Produtos da Amazônia','Bela Vista',-23.5596,-46.6411,'https://www.google.com/maps/search/?api=1&query=Combu+Produtos+da+Amazonia+Rua+Martiniano+de+Carvalho+97+Bela+Vista'],
+    ['DaSelva (Centro)','Centro',-23.5480,-46.6417,'https://www.google.com/maps/search/?api=1&query=DaSelva+Peixaria+Amazonica+Rua+da+Consolacao+41'],
+    ['DaSelva (V. N. Conceição)','Vila Nova Conceição',-23.5974,-46.6682,'https://www.google.com/maps/search/?api=1&query=DaSelva+Avenida+Helio+Pellegrino+204+Vila+Nova+Conceicao'],
+    ['Quintal Paraense','Casa Verde',-23.5141,-46.6633,'https://www.google.com/maps/search/?api=1&query=Quintal+Paraense+Rua+Horacio+Vergueiro+Rudge+535+Casa+Verde'],
+    ['Namazônia','Vila Mariana',-23.5875,-46.6452,'https://www.google.com/maps/search/?api=1&query=Namazonia+Rua+Aurea+361+Vila+Mariana'],
+    ['Amazônia Casa Brasileira','Bela Vista (Bixiga)',-23.5574,-46.6456,'https://www.google.com/maps/search/?api=1&query=Amazonia+Casa+Brasileira+Rua+Rui+Barbosa+218+Bela+Vista']
+  ];
+  var map=L.map('rest-map',{scrollWheelZoom:false}).setView([-23.56,-46.65],12);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',maxZoom:19}).addTo(map);
+  var g=L.featureGroup();
+  r.forEach(function(x){
+    var html='<strong>'+x[0]+'</strong><br><span style="color:#6b7280;font-size:12px">'+x[1]+'</span><br><a href="'+x[4]+'" target="_blank" rel="noopener">Abrir no Google Maps →</a>';
+    g.addLayer(L.marker([x[2],x[3]]).bindPopup(html));
+  });
+  g.addTo(map);
+  map.fitBounds(g.getBounds().pad(0.08));
+})();
+</script>
 
 ## Culinária Paraense / Amazônica
 
