@@ -123,13 +123,16 @@ def generate() -> list[str]:
         if wp_id and isinstance(wp_id, int):
             wp_id_lookup[wp_id] = target
 
-    # Legacy ?p=<wp_id> short URLs
-    # Netlify Query matcher uses '=' between key and value, not ':'.
+    # Legacy ?p=<wp_id> short URLs.
+    # WordPress legacy permalinks hit the site root with a ?p=N query, so match
+    # the exact root path, not `/*`. Netlify's Query= matcher is documented to
+    # work with specific paths; wildcard + Query interaction was unreliable
+    # in testing (rule did not fire against Query=p=N).
     # Reference: https://docs.netlify.com/routing/redirects/redirect-options/#query-parameters
     lines.append("")
     lines.append("# --- Legacy ?p=<wp_id> short URLs ---")
     for wp_id, target in sorted(wp_id_lookup.items()):
-        lines.append(f"/*  {target}  301!  Query=p={wp_id}")
+        lines.append(f"/  {target}  301!  Query=p={wp_id}")
 
     # Categories and tags (WP → Hugo differ in path name)
     lines.append("")
