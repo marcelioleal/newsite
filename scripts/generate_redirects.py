@@ -93,13 +93,17 @@ def date_parts(date_str: str) -> tuple[str, str, str] | None:
 
 def hugo_url(lang: str, slug: str) -> str:
     prefix = "/en" if lang == "en" else ""
-    # Some WP slugs carry percent-encoded UTF-8 (e.g. `1%c2%ba-de-maio` for
-    # "1º de maio"). Hugo renders those at the decoded path (/1º-de-maio/),
-    # so the redirect *target* must decode too — otherwise the 301 lands on
-    # a URL that 404s. The redirect *source* keeps the original encoding so
-    # inbound links still match. Netlify serves UTF-8 paths fine.
     from urllib.parse import unquote
     return f"{prefix}/{unquote(slug)}/"
+
+
+def redirect_slug(slug: str) -> str:
+    """Decode percent-encoded UTF-8 in a slug for use as a Netlify rule source.
+    Netlify's path matcher normalises incoming request paths (decoded) but
+    matches rule sources byte-for-byte, so an encoded source (%c2%ba) never
+    matches a decoded request (º). Emit the decoded form on both sides."""
+    from urllib.parse import unquote
+    return unquote(slug)
 
 
 def generate() -> list[str]:
@@ -122,9 +126,9 @@ def generate() -> list[str]:
         if dp:
             y, m, d = dp
             # Dated post URL → flat permalink
-            lines.append(f"/{y}/{m}/{d}/{slug}/  {target}  301")
+            lines.append(f"/{y}/{m}/{d}/{redirect_slug(slug)}/  {target}  301")
             # Child attachment pages (WordPress nested attachments)
-            lines.append(f"/{y}/{m}/{d}/{slug}/*  {target}  301")
+            lines.append(f"/{y}/{m}/{d}/{redirect_slug(slug)}/*  {target}  301")
 
         if wp_id and isinstance(wp_id, int):
             wp_id_lookup[wp_id] = target
