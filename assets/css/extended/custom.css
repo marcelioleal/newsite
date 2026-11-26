@@ -834,6 +834,171 @@ input:focus-visible,
 }
 .post-content .place-grid a:hover { border-bottom-color: var(--accent); }
 
+/* -- Place card — expand/collapse for restaurants/bars/cafés -------------- */
+.post-content .place-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--entry);
+  margin: 10px 0;
+  overflow: hidden;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+.post-content .place-card[open] {
+  border-color: var(--accent);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+.post-content .place-card-highlight {
+  border-left: 3px solid var(--accent);
+}
+.post-content .place-card summary.place-summary {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+.post-content .place-card summary.place-summary::-webkit-details-marker { display: none; }
+.post-content .place-head {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+}
+.post-content .place-name {
+  font-size: 16px;
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  color: var(--primary);
+  transition: color 0.15s;
+}
+.post-content .place-bairro {
+  font-size: 13px;
+  color: var(--secondary);
+  font-weight: 400;
+  letter-spacing: -0.005em;
+}
+.post-content .place-card summary:hover .place-name { color: var(--accent); }
+.post-content .place-card[open] .place-name { color: var(--accent); }
+.post-content .place-toggle {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--secondary);
+  transition: color 0.15s, transform 0.2s;
+}
+.post-content .place-toggle::before,
+.post-content .place-toggle::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background: currentColor;
+  border-radius: 1px;
+}
+.post-content .place-toggle::before {
+  width: 12px;
+  height: 2px;
+  transform: translate(-50%, -50%);
+}
+.post-content .place-toggle::after {
+  width: 2px;
+  height: 12px;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s;
+}
+.post-content .place-card[open] .place-toggle {
+  color: var(--accent);
+  transform: rotate(180deg);
+}
+.post-content .place-card[open] .place-toggle::after { opacity: 0; }
+.post-content .place-card summary:hover .place-toggle { color: var(--accent); }
+.post-content .place-body {
+  padding: 2px 18px 14px;
+  border-top: 1px dashed var(--border);
+  margin-top: 0;
+}
+.post-content .place-body > p:first-child { margin-top: 12px; }
+.post-content .place-body > p:last-child { margin-bottom: 0; }
+
+/* -- Goodreads shelf grid (livros page) ----------------------------------- */
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 22px 16px;
+  margin: 1.6em 0;
+}
+.book-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--primary);
+  text-decoration: none;
+  transition: transform 0.15s;
+}
+.book-card:hover { transform: translateY(-2px); }
+.book-cover {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+  background: var(--entry);
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.15s, border-color 0.15s;
+}
+.book-card:hover .book-cover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  border-color: var(--accent);
+}
+.book-title {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.005em;
+  color: var(--primary);
+}
+.book-card:hover .book-title { color: var(--accent); }
+.book-author {
+  font-size: 12px;
+  color: var(--secondary);
+  letter-spacing: -0.005em;
+}
+.book-rating {
+  display: inline-flex;
+  gap: 1px;
+  font-size: 12px;
+  color: var(--accent);
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+.books-shelf-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  margin-top: 10px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--secondary);
+  transition: border-color 0.15s, color 0.15s;
+}
+.books-shelf-link:hover { border-color: var(--accent); color: var(--accent); }
+.books-shelf-missing {
+  padding: 14px 18px;
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+  background: var(--entry);
+  color: var(--secondary);
+  font-size: 14px;
+}
+
 /* -- Recomendações hero banner (random category each page load) ----------- */
 .rec-hero {
   max-inline-size: 72ch;

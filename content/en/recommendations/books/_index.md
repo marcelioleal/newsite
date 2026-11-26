@@ -6,6 +6,6 @@ wp_id: 323
 translationKey: books
 ---
 
-<div id="gr_custom_widget_3892232" class="wp-block-jetpack-goodreads">
+I read for pleasure and for the pressure of reading more. The "read" shelf below comes straight from my Goodreads, sorted by my own rating — top picks first.
 
-</div>
+{{< goodreads-shelf user="51111987" shelf="read" sort="rating" limit="30" >}}

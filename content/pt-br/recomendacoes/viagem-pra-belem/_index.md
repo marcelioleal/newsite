@@ -40,99 +40,99 @@ Belém é minha cidade natal. Essa página junta os lugares em que eu sempre vol
 
 ## Culinária paraense
 
-### Casa do Saulo — Cidade Velha ★
-
+{{% place name="Casa do Saulo ★" bairro="Cidade Velha" highlight="true" %}}
 Comando do chef Saulo Jennings, representa o Pará contemporâneo no melhor cenário possível — os casarões da Cidade Velha. O **filé de pirarucu grelhado no molho de castanha-do-pará com banana da terra e camarão rosa** é obrigatório. Tem duas unidades: **Onze Janelas** (Rua Siqueira Mendes, s/n, Cidade Velha) e **Quinta de Pedras** (Rua Doutor Assis, 834, dentro do Hotel Atrium).
 
 [Instagram](https://www.instagram.com/casadosauloparaoficial/) · [Maps (Onze Janelas)](https://www.google.com/maps/search/?api=1&query=Casa+do+Saulo+Onze+Janelas+Rua+Siqueira+Mendes+Cidade+Velha) · [Maps (Quinta de Pedras)](https://www.google.com/maps/search/?api=1&query=Casa+do+Saulo+Quinta+de+Pedras+Rua+Doutor+Assis+834)
+{{% /place %}}
 
-### Remanso do Peixe — Marco
-
+{{% place name="Remanso do Peixe" bairro="Marco" %}}
 Família Castanho (Thiago Castanho), referência em peixes amazônicos. Casa simples, cardápio direto: moquecas, caldeiradas, casquinha de caranguejo. Ir no almoço de terça a sábado e no domingo (fecha segunda). Travessa Barão do Triunfo, 2590, Marco.
 
 [Instagram](https://www.instagram.com/remansodopeixe/) · [Maps](https://www.google.com/maps/search/?api=1&query=Remanso+do+Peixe+Travessa+Barao+do+Triunfo+2590+Marco+Belem)
+{{% /place %}}
 
-### Shinko Sushi — Humaitá / Vileta
-
+{{% place name="Shinko Sushi" bairro="Humaitá / Vileta" %}}
 Japonês perto de casa, Travessa Vileta esquina com 25 de Setembro / Humaitá. Faz o japonês com qualidade brasileira paraense — tem combinados generosos e peixe fresco.
 
 [Maps](https://www.google.com/maps/search/?api=1&query=Shinko+Sushi+Travessa+Vileta+2501+Belem)
+{{% /place %}}
 
-### Armazém Belém — Shopping Boulevard
-
+{{% place name="Armazém Belém" bairro="Shopping Boulevard" %}}
 Fica logo na entrada do Shopping Boulevard. Eu adoro o **café** de lá e o **peixe paraense** é bem feito — vale tanto pra um café da tarde quanto pra um almoço. Padaria também, bom pra um pão fresco.
 
 [Maps](https://www.google.com/maps/search/?api=1&query=Armazem+Belem+Shopping+Boulevard+Avenida+Visconde+de+Souza+Franco)
+{{% /place %}}
 
 ## Bares que não falham
 
-### Muamba Bar — Vila Container (Umarizal) ★
-
+{{% place name="Muamba Bar ★" bairro="Vila Container (Umarizal)" highlight="true" %}}
 **Melhor bar de drinks que eu fui nos últimos anos** e minha parada obrigatória em Belém. Coquetelaria autoral com ingredientes amazônicos sob a batuta do Yvens Penna — tem chicória, cumaru, jambu, bacuri, taperebá no cardápio. O Ariramba (gin com jambu e coentro) e o Urucum Pisco Sour são imperdíveis.
 
 [Instagram](https://www.instagram.com/muamba.bar/) · [Maps](https://www.google.com/maps/search/?api=1&query=Muamba+Bar+Vila+Container+Belem)
+{{% /place %}}
 
-### Puba Bar — Cidade Velha
-
+{{% place name="Puba Bar" bairro="Cidade Velha" %}}
 Projeto do Thiago Castanho e Gustavo Rodrigues. Carta de vinhos única em Belém, drinks autorais, e um cardápio inteiro construído em cima da **mandioca** em todas as formas (puba inclusive). Ter a sáb, 19h–23h30. Rua Veiga Cabral, 649, Cidade Velha.
 
 [Instagram](https://www.instagram.com/pubabar.belem/) · [Maps](https://www.google.com/maps/search/?api=1&query=Puba+Bar+Rua+Veiga+Cabral+649+Cidade+Velha+Belem)
+{{% /place %}}
 
-### Amazon Beer
-
+{{% place name="Amazon Beer" %}}
 Ótimo chope artesanal e um bom exemplar do **filhote na crosta de castanha** acompanhado de arroz no tucupi.
 
 [Instagram](https://www.instagram.com/amazonbeer/)
+{{% /place %}}
 
-### Black Dog
-
+{{% place name="Black Dog" %}}
 Beba um bom chope e dê um abraço pro meu amigo Iuri.
 
 [Instagram](https://www.instagram.com/blackdoghenglishpubb/)
+{{% /place %}}
 
-### Cosanostra
-
+{{% place name="Cosanostra" %}}
 **Melhor carpaccio do mundo.** Pizza ótima e chope super honesto.
 
 [Instagram](https://www.instagram.com/cosanostra_pub/)
+{{% /place %}}
 
 ## Cafés
 
-### Mousi Café — Piedade 45 / Reduto ★
-
+{{% place name="Mousi Café ★" bairro="Piedade 45 / Reduto" highlight="true" %}}
 Fica no piso do prédio Piedade 45 (onde funcionava a Housi). **Café absurdo de bom** — torrefação da Alquimista, máquina Sanremo Zoe, tudo pensado. Vale o deslocamento mesmo que você não esteja hospedado perto.
 
 [Maps](https://www.google.com/maps/search/?api=1&query=Mousi+Cafe+Travessa+Piedade+Reduto+Belem)
+{{% /place %}}
 
-### Amazon Deli — Braz de Aguiar
-
+{{% place name="Amazon Deli" bairro="Braz de Aguiar" %}}
 Café confort, no sentido literal. Tem presença de casa do bairro — bom pra um café da tarde sem pressa ou pra trabalhar uma manhã. Av. Braz de Aguiar, 400.
 
 [Instagram](https://www.instagram.com/amazon_deli/) · [Maps](https://www.google.com/maps/search/?api=1&query=Amazon+Deli+Avenida+Bras+de+Aguiar+400+Belem)
+{{% /place %}}
 
-### Marcelino Café — Braz de Aguiar
-
+{{% place name="Marcelino Café" bairro="Braz de Aguiar" %}}
 Café pequeno, torra especializada, atendimento bom. O que eu chamo de "competente" — você entra, pede, sai satisfeito. Av. Braz de Aguiar, 653.
 
 [Instagram](https://www.instagram.com/marcelinocafe/) · [Maps](https://www.google.com/maps/search/?api=1&query=Marcelino+Cafe+Avenida+Bras+de+Aguiar+653+Belem)
+{{% /place %}}
 
-### Delicidade — Braz de Aguiar
-
+{{% place name="Delicidade" bairro="Braz de Aguiar" %}}
 Nostalgia pura — café com tapioca na sombra das mangueiras. Ver detalhe na [página de cafés](/recomendacoes/cafes/#belém-).
+{{% /place %}}
 
 ## Tacacá e açaí — os clássicos
 
-### Tacacá do Renato (ex-Tacacá do Leandro)
-
+{{% place name="Tacacá do Renato (ex-Tacacá do Leandro)" %}}
 Ponto clássico de tacacá. [Instagram](https://www.instagram.com/tacacadorenatoficial/)
+{{% /place %}}
 
-### Point do Açaí
-
+{{% place name="Point do Açaí" %}}
 [Instagram](https://www.instagram.com/pointdoacaibelem/)
+{{% /place %}}
 
-### Bliss
-
+{{% place name="Bliss" %}}
 [Instagram](https://www.instagram.com/bliss.belem/)
+{{% /place %}}
 
 ## Me confirma / preciso dos detalhes
 

@@ -1,0 +1,28 @@
+{{- /*
+  Expand/collapse "card" for a place (restaurant, bar, café).
+  Usage (note the % delimiters — required so Inner is markdown-processed):
+    {{% place name="Sororoca Bar" bairro="Vila Madalena" %}}
+    Description paragraph here, with [a link](https://...).
+    [Instagram](...) · [Maps](...)
+    {{% /place %}}
+
+  Optional attributes:
+    highlight="true"   Adds accent-colored border (for ★ picks).
+    id="custom-slug"   Override the auto-generated id (default: anchorize of name).
+*/ -}}
+{{- $name := .Get "name" | default "" -}}
+{{- $bairro := .Get "bairro" | default "" -}}
+{{- $highlight := eq (.Get "highlight") "true" -}}
+{{- $id := .Get "id" | default (anchorize $name) -}}
+<details class="place-card{{ if $highlight }} place-card-highlight{{ end }}"{{ with $id }} id="{{ . }}"{{ end }}>
+<summary class="place-summary">
+<span class="place-head">
+{{- with $name }}<strong class="place-name">{{ . | safeHTML }}</strong>{{- end -}}
+{{- with $bairro }}<span class="place-bairro">{{ . }}</span>{{- end }}
+</span>
+<span class="place-toggle" aria-hidden="true"></span>
+</summary>
+<div class="place-body">
+{{ .Inner }}
+</div>
+</details>

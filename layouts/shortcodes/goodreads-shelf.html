@@ -1,0 +1,71 @@
+{{- /*
+  Goodreads shelf renderer — fetches the RSS feed at BUILD time and renders
+  books as a 3-column grid of covers. Needs the user's personal RSS key
+  (visible when logged in → go to any shelf → click "subscribe to feed"
+  at the bottom; the URL contains ?key=xxx).
+
+  Usage:
+    {{< goodreads-shelf user="51111987" key="RSS_KEY_HERE" shelf="read" sort="rating" limit="30" >}}
+
+  Parameters:
+    user   — Goodreads numeric user id (required)
+    key    — personal RSS key (required — Goodreads returns 404 without it)
+    shelf  — shelf name (default: "read")
+    sort   — one of: rating, date_read, date_added, title (default: "rating")
+    limit  — max books to show (default: 30)
+
+  Falls back gracefully when the fetch fails: shows a styled "shelf
+  unavailable, see on Goodreads" link instead of erroring the build.
+*/ -}}
+{{- $user := .Get "user" -}}
+{{- $key := .Get "key" -}}
+{{- $shelf := .Get "shelf" | default "read" -}}
+{{- $sort := .Get "sort" | default "rating" -}}
+{{- $limit := int (.Get "limit" | default "30") -}}
+{{- $profileURL := printf "https://www.goodreads.com/user/show/%s" $user -}}
+
+{{- if or (not $user) (not $key) -}}
+<div class="books-shelf-missing">
+  <strong>Shelf não configurada.</strong>
+  Pra ativar o grid de livros preciso do <code>user id</code> e da <code>RSS key</code> do Goodreads.
+  <br>
+  <small>Como pegar a key: entra em goodreads.com logado → sua shelf "read" → rola até o fim → "Subscribe to list via RSS" → copia o parâmetro <code>?key=</code> da URL.</small>
+</div>
+{{- else -}}
+{{- $rssURL := printf "https://www.goodreads.com/review/list_rss/%s?key=%s&shelf=%s&sort=%s&per_page=100" $user $key $shelf $sort -}}
+{{- $resp := resources.GetRemote $rssURL -}}
+{{- if or (not $resp) $resp.Err -}}
+<div class="books-shelf-missing">
+  <strong>Goodreads shelf indisponível no momento.</strong>
+  Veja a estante completa diretamente no <a href="{{ $profileURL }}" rel="noopener" target="_blank">meu perfil do Goodreads →</a>
+</div>
+{{- else -}}
+{{- $xml := $resp.Content | transform.Unmarshal -}}
+{{- $items := slice -}}
+{{- with $xml.channel -}}
+  {{- with .item -}}
+    {{- $items = . -}}
+  {{- end -}}
+{{- end -}}
+<div class="books-grid">
+  {{- range first $limit $items }}
+  {{- $cover := .book_large_image_url | default .book_image_url -}}
+  {{- $title := .title -}}
+  {{- $author := .author_name -}}
+  {{- $rating := int (.user_rating | default "0") -}}
+  <a class="book-card" href="{{ .link | safeURL }}" rel="noopener" target="_blank" title="{{ $title }}{{ with $author }} — {{ . }}{{ end }}{{ if gt $rating 0 }} · {{ $rating }}/5{{ end }}">
+    <img class="book-cover" src="{{ $cover }}" alt="Cover: {{ $title }}" loading="lazy">
+    <span class="book-title">{{ $title }}</span>
+    {{- with $author }}<span class="book-author">{{ . }}</span>{{- end }}
+    {{- if gt $rating 0 }}
+    <span class="book-rating" aria-label="Rated {{ $rating }} of 5">
+      {{- range seq 1 $rating }}★{{ end -}}
+      {{- range seq 1 (sub 5 $rating) }}<span style="color:var(--border)">★</span>{{ end -}}
+    </span>
+    {{- end }}
+  </a>
+  {{- end }}
+</div>
+<a class="books-shelf-link" href="{{ $profileURL }}" rel="noopener" target="_blank">Ver estante completa no Goodreads →</a>
+{{- end -}}
+{{- end -}}

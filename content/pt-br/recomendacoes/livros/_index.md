@@ -6,6 +6,6 @@ wp_id: 247
 translationKey: books
 ---
 
-<div id="gr_custom_widget_6001069" class="wp-block-jetpack-goodreads">
+Leio por prazer e por pressão de ler mais. A estante "read" aqui embaixo vem direto do meu Goodreads, ordenada por nota — primeiro os que eu mais curti.
 
-</div>
+{{< goodreads-shelf user="51111987" shelf="read" sort="rating" limit="30" >}}
