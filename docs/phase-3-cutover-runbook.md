@@ -14,10 +14,11 @@ Cut itself is a ~30-min window on a weeknight (never Friday evening).
 
 ## Known gaps (accepted pre-cut)
 
-1. **`/2008/05/02/1%c2%ba-de-maio/` → 404.** Netlify's redirect matcher behaves inconsistently with UTF-8 ordinal `º` in the path. Low severity: 2008 post, no known external backlinks. Mitigation: monitor Search Console; if it shows up, add a manual rule or rename the slug.
-2. **`/?p=N` short-links don't 301.** Netlify's `Query=p=N` matcher doesn't fire (tried every syntax variant). WordPress's canonical URL has always been `/YYYY/MM/DD/slug/`, so `?p=N` was only used in the admin and rarely indexed. Mitigation: same — monitor Search Console.
+1. **`/2008/05/02/1%c2%ba-de-maio/` → 404.** Netlify's redirect matcher silently ignores rule sources containing UTF-8 (the `º` ordinal). Rule is correctly byte-encoded in `_redirects` but doesn't fire. Low severity: 2008 post, no known external backlinks. Mitigation: monitor Search Console; if it shows up, add a manual rule using a wildcard pattern or rename the slug.
+2. **`/?p=N` short-links don't 301.** Netlify's `Query=p=N` matcher doesn't fire (tried both `/*` and `/` source paths, plus `Query=` before/after the status code). WordPress's canonical URL has always been `/YYYY/MM/DD/slug/`, so `?p=N` was only used in the admin and rarely indexed. Mitigation: same — monitor Search Console.
+3. **Missing migrated image: `/wp-content/uploads/2013/12/victoreleo.jpg`.** The `/wp-content/uploads/*` → R2 redirect fires correctly, but this specific file was never uploaded to R2 during Phase 2 — the migration script skipped it. Referenced by the post `startup-e-cto-as-solucoes-para-um-bom-casamento`. Mitigation: either find the original and `./scripts/upload-image.sh`, or edit the post to remove the broken `<img>` reference.
 
-Both are fixable in-flight if Search Console surfaces them. Neither blocks the cut.
+None of these block the cut. (1) and (2) are fixable in-flight if Search Console surfaces them; (3) is cosmetic.
 
 ---
 
@@ -94,26 +95,14 @@ Nameservers
 ### D-7.7 Audit crawl re-run
 ```bash
 cd ~/workspace/newsite
-# Re-crawl the critical 107 dated URLs
-PATH=/usr/bin:/bin /opt/homebrew/bin/python3 - <<'EOF' > /tmp/pre-cut-crawl.txt
-import re
-with open('static/_redirects') as f:
-    for line in f:
-        s = line.strip()
-        if s.startswith('#') or not s: continue
-        parts = s.split()
-        src = parts[0]
-        if re.match(r'^/\d{4}/\d{2}/\d{2}/[^/]+/$', src):
-            print(src)
-EOF
-pass=0; fail=0
-while IFS= read -r src; do
-  code=$(/usr/bin/curl -sIL --max-redirs 5 -w "%{http_code}" "https://new.marcelioleal.com$src" 2>/dev/null | /usr/bin/tail -1)
-  if [ "$code" = "200" ]; then pass=$((pass+1)); else fail=$((fail+1)); echo "FAIL $src → $code"; fi
-done < /tmp/pre-cut-crawl.txt
-echo "Pass: $pass  Fail: $fail"
+./scripts/preflight_crawl.sh
 ```
-Expect: **106 pass, 1 fail** (the `1º-de-maio` known gap). Any new failure → investigate before D-day.
+Expect: **121 pass, 1 fail** — the fail should be exactly the known `1º-de-maio` UTF-8 gap. Any other failure → investigate before D-day. The script also flags the `?p=N` as a known gap (does not count toward pass/fail).
+
+After the cut, re-run against the apex to confirm production parity:
+```bash
+BASE_URL=https://marcelioleal.com ./scripts/preflight_crawl.sh
+```
 
 ### D-7.8 Smoke-test the site end to end
 Open `https://new.marcelioleal.com/` and manually hit:
@@ -142,14 +131,21 @@ Expect: zero build errors, warnings OK.
 - [ ] Netlify dashboard → Deploys → last build is green.
 - [ ] If red: fix before D-day.
 
-### D-1.3 Verify TTL dropped to 300
+### D-1.3 Re-run pre-flight crawl
+```bash
+cd ~/workspace/newsite
+./scripts/preflight_crawl.sh
+```
+Expect: 121 pass, 1 fail (`1º-de-maio` known gap). If any OTHER failure appears, debug before D-day — do not cut with a regression.
+
+### D-1.4 Verify TTL dropped to 300
 ```bash
 dig +short marcelioleal.com @8.8.8.8 | /usr/bin/head -3
 dig marcelioleal.com @8.8.8.8 | /usr/bin/grep -A1 "ANSWER SECTION"
 ```
 Expect: current A records with TTL `300` (or less by now).
 
-### D-1.4 Prep a terminal with the DNS and Netlify tabs open
+### D-1.5 Prep a terminal with the DNS and Netlify tabs open
 D-day is faster if you're not clicking around.
 
 ---
